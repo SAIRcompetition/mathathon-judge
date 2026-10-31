@@ -1,0 +1,11 @@
+# Private source materials (organizers' draft, advisor suggestions, course page)
+reference/
+
+# Internal design plan
+round1_judging_plan.md
+
+# macOS
+.DS_Store
+
+# Word exports for collaborators
+export/
