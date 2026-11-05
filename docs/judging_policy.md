@@ -10,18 +10,19 @@ Appendices A–E contain the details. Items marked **[TBD]** are still to be dec
 
 ## Round 1 Process
 
-**Problems.** Teams choose a problem from the published problem list, with at most 4 teams per problem. A team may switch problems during the event until its problem is locked, shortly before the end [TBD]. Each team presents one problem. *(Appendix A)*
+**Problems.** Teams choose a problem from the published problem list, with at most 4 teams per problem. A team may switch problems at any time until the submission deadline, when its problem is locked. Each team presents one problem. *(Appendix A)*
 
-**Submission.** At the end of the 40 hours (T0), each team submits:
+**Submission.** The event starts on Nov 13 at 6:00 PM. At the end of the 40 hours (T0: Nov 15, 10:00 AM), each team submits:
+- a talk abstract;
 - a report of about 10 pages, in LaTeX;
 - its slides;
 - optionally, a repository with Lean code or numerics.
 
-The report must contain everything in the slides. It must also state the status of each main claim and disclose the team's sources and AI use. *(Appendix B; Lean Verification Rules)*
+The report must contain everything in the slides. It must also state the status of each main claim and disclose the team's sources and AI use. *(Appendix B; for Lean, Automated Review §2)*
 
-**Talks.** The teams are divided into six sessions. Each team submits an abstract when its problem is locked, then gives a talk of at most 20 minutes followed by at most 10 minutes of questions. Organizers assign 2–5 judges to each talk, including at least one from the team's field wherever possible. *(Appendix C)*
+**Talks.** The talks run on Nov 15 from 12:00 PM and end by 5:00 PM. The teams are divided into six sessions. Each team gives a talk of at most 20 minutes followed by at most 10 minutes of questions. Organizers assign 2–5 judges to each talk, including at least one from the team's field wherever possible. *(Appendix C)*
 
-**Two views.** Human judges score the talk and the Q&A using the guidelines and rubric below. In parallel, a panel of seven LLMs scores the written report on the same dimensions, plus Attribution and Novelty (LLM Judge Workflow). Human judges submit their scores before they see any LLM output. A human checks every critical issue the LLMs flag before it can count against a team.
+**Two views.** Human judges score the talk and the Q&A using the guidelines and rubric below. In parallel, a panel of seven LLMs scores the written report on the same dimensions, plus Attribution and Novelty, and any Lean code is checked automatically (Automated Review). Human judges submit their scores before they see any LLM output. A human checks every critical issue the LLMs flag before it can count against a team.
 
 **Deliberation.** The shortlist is made up of:
 - the top teams by human scores;
@@ -67,7 +68,7 @@ As in Round 1, judges score each guideline from 1 to 5 with a short justificatio
 
 ## Rubric
 
-Score each dimension from 1 to 5. Fractional scores are allowed. Justify each score in at least one sentence. "Expected" means what a team can do in 40 hours, not a finished research paper.
+Score each dimension as a whole number from 1 to 5. Justify each score in at least one sentence. "Expected" means what a team can do in 40 hours, not a finished research paper.
 
 | | 5 · Excellent | 4 · Good | 3 · Acceptable | 2 · Unsatisfactory | 1 · Highly unsatisfactory | Notes |
 |---|---|---|---|---|---|---|
@@ -85,25 +86,25 @@ Score each dimension from 1 to 5. Fractional scores are allowed. Justify each sc
 
 ## Appendix A: Problem selection
 
-- **Submission.** Participants, sponsors, judges, community members, and others may submit problems before the event [TBD deadline]. No problems are accepted once the event starts.
+- **Submission.** Participants, sponsors, judges, community members, and others may submit problems before the event. No problems are accepted once the event starts.
 - **Review.**
   - Judges review the submitted problems, contribute resources and desired outcomes, and indicate which problems they are able to judge.
   - A problem may be left out if it is far outside the judges' expertise, or if it does not fit the event (for example, an open problem).
   - Organizers contact the submitter about any unclear submission before publishing the problem.
 - **The list.**
-  - All participants see the same list, published before the event together with any official Lean statements (Lean Verification Rules).
+  - All participants see the same list, published before the event together with any official Lean statements (Automated Review §2.1).
   - Problems are published on the Mathathon website and on social media; full details may be omitted.
   - Any team may work on any problem. Only problems on the list are judged.
 - **Choosing.**
   - Each team is signed up for exactly one problem at a time and may change problems at any time.
   - At most 4 teams may be signed up for the same problem at once.
   - A team that submitted a problem starts the event signed up for it. A team that submitted several problems chooses one of them.
-- **Lock.** Each team's problem is locked at [TBD, e.g. several hours before T0], so that talks and judges can be scheduled. Each team presents, and is judged on, that one problem.
+- **Lock.** Each team's problem is locked at T0. Each team presents, and is judged on, that one problem.
 - **What each problem carries.** For judging, each problem on the list carries:
   - a track, if tracks are adopted (Appendix E.1);
   - the judges able to judge it;
   - optionally, references to its known proofs;
-  - optionally, an official Lean statement (Lean Verification Rules).
+  - optionally, an official Lean statement (Automated Review §2.1).
 
 ## Appendix B: Written submission
 
@@ -111,12 +112,12 @@ Score each dimension from 1 to 5. Fractional scores are allowed. Justify each sc
 
 | Item | Required | Deadline |
 |---|---|---|
-| Talk abstract | Yes | At the problem lock |
+| Talk abstract | Yes | T0 |
 | Report: LaTeX source and PDF | Yes | T0 |
 | Slides (PDF) | Yes | T0 |
-| Repository (Lean, code, numerics) | No | Frozen at T0 (see Lean Verification Rules) |
+| Repository (Lean, code, numerics) | No | Frozen at T0 (see Automated Review §2.1) |
 
-- **T0.** The end of the 40-hour working period, before the first talk session [TBD exact time].
+- **T0.** Nov 15 at 10:00 AM: the end of the 40-hour working period, which starts on Nov 13 at 6:00 PM. The talks start at 12:00 PM the same day.
 - **Late reports.** A report that arrives after T0 is treated as missing for the LLM review.
 - **Terms.** Every team member must accept the Mathathon Terms of Service and Privacy Policy before the team submits.
 
@@ -127,7 +128,7 @@ Score each dimension from 1 to 5. Fractional scores are allowed. Justify each sc
 - **The report is the authoritative record.** It must contain everything in the slides. Anything that appears only in the talk is assessed by the human judges only.
 - **Figures and links.** Describe every key figure in words. Links are pointers, not content.
 - **Team identity.** Names, affiliations, and the repository link go in the title block only. The title block is removed before LLM review.
-- **LLM review.** The report is reviewed as text. If it exceeds the review length limit, the appendix is trimmed from the end (LLM Judge Workflow §4). Do not include instructions addressed to AI reviewers: attempts to manipulate the LLM review can lead to disqualification.
+- **LLM review.** The report is reviewed as text. If it exceeds the review length limit, the appendix is trimmed from the end (Automated Review §5). Do not include instructions addressed to AI reviewers: attempts to manipulate the LLM review can lead to disqualification.
 
 ### B.3 Required sections
 
@@ -148,8 +149,8 @@ An abstract and a "Limitations and next steps" section are recommended.
 | Label | Meaning |
 |---|---|
 | Proved | A complete argument is given in the report |
-| Lean-verified | Verified in Lean (see Lean Verification Rules) |
-| Lean-conditional | Derived in Lean from listed unproved lemmas (Lean Verification Rules) |
+| Lean-verified | Verified in Lean (see Automated Review §2.2) |
+| Lean-conditional | Derived in Lean from listed unproved lemmas (Automated Review §2.3) |
 | Numerically checked | Supported by computation; say what was computed and over what range |
 | Conjectural | Not proved; say why you believe it |
 | Known (cited) | Established in the literature; give the reference |
@@ -216,7 +217,7 @@ Conjecture 5.1 & Conjectural & Section 5 \\
 
 \appendix
 \section{Figures and computations}           % describe every key figure in words
-\section{Formal statements}                  % if Lean is used: see Lean Verification Rules
+\section{Formal statements}                  % if Lean is used: see Automated Review §2.1
 \end{document}
 ```
 
@@ -227,7 +228,7 @@ Conjecture 5.1 & Conjectural & Section 5 \\
 - Organizers assign judges to talks. They use the problem list's information on which judges can judge which problems.
 - Each team gets 2–5 judges, with at least one from the team's field or track wherever possible.
 - Each judge attends at most one talk per session, so at most six talks in total.
-- **Capacity.** With 100 teams, 2 judges per team, and up to 6 talks per judge, we recommend 34 or more judges in total, with twice as many judges as talks in each session. [TBD: confirm the roster by about Nov 6, and agree a fallback in advance.]
+- **Capacity.** With 100 teams, 2 judges per team, and up to 6 talks per judge, we recommend 34 or more judges in total, with twice as many judges as talks in each session. [TBD: confirm the roster before the event, and agree a fallback in advance.]
 
 ### C.2 Conflicts of interest
 
@@ -257,7 +258,7 @@ Before Session 1, a 10–15 minute briefing covers:
   - what the AI did, and whether the team understands it;
   - how sure the team is of its claims.
 - **Submitting.** Submit the scoring form (C.6) right after the talk, and no later than T2.
-- **LLM-suggested questions.** By default, judges do not receive LLM-suggested questions before talks: they could not be ready for Session 1, and every session should be treated the same way. [TBD]
+- **LLM-suggested questions.** Judges do not receive LLM-suggested questions before talks: they could not be ready for Session 1, and every session should be treated the same way.
 
 ### C.5 Notes on scoring
 
@@ -271,14 +272,14 @@ Before Session 1, a 10–15 minute briefing covers:
 
 - **No credit by itself.** None of these earns credit on its own:
   - length;
-  - using Lean (it is evidence for Correctness, and only for what it verifies; see Lean Verification Rules);
+  - using Lean (it is evidence for Correctness, and only for what it verifies; see Automated Review §2);
   - using AI, or not using it;
   - saying that something is an open problem.
 
 ### C.6 Scoring form
 
 For each talk:
-- each of the four dimensions, with a score from 1 to 5 (fractions allowed) and at least one sentence of justification;
+- each of the four dimensions, with a whole-number score from 1 to 5 and at least one sentence of justification;
 - a shortlist nomination, yes or no, with a one-sentence reason if yes;
 - feedback for the team;
 - a recommendation on continuing in Round 2: yes, maybe, or no.
@@ -311,10 +312,10 @@ Should this project continue in Round 2?  yes / maybe / no
 ### D.1 Scores and shortlist
 
 1. **Human signal.** For each judge, take the mean of their four scores. The team's human signal is the mean of these values across its judges.
-2. **LLM signal.** For each of the five merit dimensions (Correctness, Clarity, Motivation, Interest, Novelty), take the panel median. The LLM signal is the mean of these medians. If any of the five is not assessable, the team has no LLM signal (LLM Judge Workflow §5.2).
+2. **LLM signal.** For each of the five merit dimensions (Correctness, Clarity, Motivation, Interest, Novelty), take the panel median. The LLM signal is the mean of these medians. If any of the five is not assessable, the team has no LLM signal (Automated Review §6.2).
    - Attribution is not part of the signal. It is a flag that sends the team to human triage.
 3. **Shortlist.** The shortlist is the top K teams by human signal ∪ the top K teams by LLM signal ∪ every team nominated by at least one judge.
-   - **K.** With tracks, K = 3 per track for each signal [TBD]. Without tracks, K = 10 for each signal [TBD].
+   - **K.** K = 10 for each signal.
    - **Ties.** All teams tied at the K boundary are included.
    - **Nominations.** Nominations close at T2. During deliberation, any judge may still add a nomination, with a reason, until the vote.
    - **No LLM signal.** A team without an LLM signal can still enter the shortlist through the human signal or a nomination.
@@ -322,7 +323,7 @@ Should this project continue in Round 2?  yes / maybe / no
 
 ### D.2 Evidence Summary
 
-Each shortlisted team has a one-page Evidence Summary. One is available for any other team on request. LLM Judge Workflow, Appendix C, has a template. The Evidence Summary contains:
+Each shortlisted team has a one-page Evidence Summary. One is available for any other team on request. Automated Review, Appendix C, has a template. The Evidence Summary contains:
 
 1. **Human judges:** each judge's scores and comments, and the human signal.
 2. **LLM panel:**
@@ -337,7 +338,7 @@ Each shortlisted team has a one-page Evidence Summary. One is available for any 
    - the merged issues, with their source IDs;
    - suggested questions.
 4. **Critical issues,** each with its triage status: unverified, rejected, or confirmed.
-5. **Lean:** the declared level, and the organizers' result for each declaration (Lean Verification Rules).
+5. **Lean:** the automated check results for each declaration (Automated Review §2.4).
 6. **Notes:** missing or late materials, and any corrections.
 
 ### D.3 Deliberation details
@@ -352,37 +353,37 @@ Each shortlisted team has a one-page Evidence Summary. One is available for any 
 
 **Before the event**
 
-| By | What |
-|---|---|
-| [TBD] | Problem submissions close; judges review the problems and indicate which ones they can judge |
-| ~Nov 6 | Rules, rubric, Terms of Service, and Privacy Policy announced to participants and frozen; judge roster confirmed |
-| ~Nov 10 | Problem list published to all participants, with official formal statements for selected problems (Lean Verification Rules) |
-| ~Nov 11 | LLM pilot complete; prompts frozen (LLM Judge Workflow) |
+- Problem submissions close; judges review the problems and indicate which ones they can judge.
+- Rules, rubric, Terms of Service, and Privacy Policy are announced to participants and frozen; the judge roster is confirmed.
+- The problem list is published to all participants, with official formal statements for selected problems (Automated Review §2.1).
+- The LLM pilot is complete and the prompts are frozen (Automated Review §12).
 
-**Event day.** Exact times are [TBD]. The organizers name an owner for each step before the event.
+**During the event.** The sessions run on Nov 15 from 12:00 PM and end by 5:00 PM. The organizers name an owner for each step before the event.
 
 | Step | When | What happens |
 |---|---|---|
-| Lock | [TBD, before T0] | Problems locked and talk abstracts submitted; talk schedule and judge assignments finalized |
-| T0 | End of the 40 hours, before Session 1 | Submissions freeze |
+| Start | Nov 13, 6:00 PM | The 40-hour working period begins |
+| T0 | Nov 15, 10:00 AM | Submissions freeze; problems are locked |
+| Session 1 | Nov 15, 12:00 PM | Talks and judging begin; the talk schedule and judge assignments are final by then |
 | T1 | Fixed deadline | All LLM evaluations and summaries are in |
-| T2 | End of the last session | Human scores and nominations are in; shortlist formed |
+| T2 | End of the last session, by 5:00 PM | Human scores and nominations are in; shortlist formed |
 | T3 | After T2 | Human triage of critical issues for shortlisted teams is complete |
 | T4 | After T3 | Deliberation |
+| Results | After T4 | Announced at the closing ceremony |
 
 ### D.5 Special cases
 
 1. **Missing or late report.** The team still presents and is judged on its talk. It has no LLM signal, and the gap is noted in its Evidence Summary. Whether it remains eligible for prizes is [TBD by the organizers].
-2. **Missing LLM results.** These are handled as described in LLM Judge Workflow. A technical failure never counts against a team, and judges can always nominate the team directly.
+2. **Missing LLM results.** These are handled as described in Automated Review §7. A technical failure never counts against a team, and judges can always nominate the team directly.
 3. **Corrections after T0.** No new content is accepted. Corrections of errors are recorded separately, shown to judges next to the original, and not re-evaluated by the LLM panel.
 
 ### D.6 Integrity
 
 - **LLM flags** are leads, not findings. Humans decide.
 - **Attribution problems** are checked by an in-field judge or an organizer before any action is taken.
-- **Misrepresented Lean verification:** see Lean Verification Rules.
-- **Attempts to manipulate the LLM judges:** see LLM Judge Workflow. Two human leads with no conflict of interest decide, after hearing from the team.
-- **Consequences** range from a note in deliberation to disqualification [TBD by the organizers].
+- **Misrepresented Lean verification:** see Automated Review §2.4.
+- **Attempts to manipulate the LLM panel:** see Automated Review §8. Two human leads with no conflict of interest decide, after hearing from the team.
+- **Consequences** range from a note in deliberation to disqualification.
 
 ## Appendix E: Notes for organizers
 
@@ -408,7 +409,7 @@ The Caltech organizing team and the faculty advisors decide. Judges first delibe
 
 ### E.2 Design notes
 
-- **Short dimension names on a common scale.** Each dimension has a short name and is scored from 1 to 5. Fractions are allowed, and every score needs a written justification. This makes scores comparable across judges while keeping each one explainable.
+- **Short dimension names on a common scale.** Each dimension has a short name and is scored as a whole number from 1 to 5. Every score needs a written justification. This makes scores comparable across judges while keeping each one explainable.
 - **Scores are suggestive.** Scores are used to extract a shortlist and to structure the discussion. The final deliberation does not rely blindly on the numbers and stays as holistic as possible.
 - **Division of labor.** Human judging time is limited, so human judges focus on the presentation. The LLM panel assesses the written technical materials for correctness, attribution, and novelty. Both feed into the deliberation.
 - **Verifiable evidence.** Three things add evidence that does not depend on presentation skill:
@@ -428,20 +429,15 @@ The Caltech organizing team and the faculty advisors decide. Judges first delibe
 - **Process choices.**
   - Organizers assign judges, so that each team has a judge from its field wherever possible.
   - Talks are fixed at ≤ 20 minutes plus ≤ 10 minutes of questions.
-  - Problems are locked before T0, so that talks can be scheduled by problem.
+  - Problems are locked at T0, so that teams can switch problems throughout the 40 hours.
 - **Presentation emphasis.** The Round 1 format gives the talk considerable weight. Public descriptions of the event should say so openly.
 
 ## Appendix F: Open decisions [TBD]
 
 | Item | Where | Proposed default |
 |---|---|---|
-| Problem submission deadline | A, D.4 | — |
-| Problem lock time | A, D.4 | Several hours before T0 |
-| Exact T0 and session schedule | B.1, D.4 | T0 just before Session 1 |
-| LLM-suggested questions before talks | C.4 | None, so that every session is treated the same |
 | Prize eligibility without a report | D.5 | Organizers decide |
-| Tracks and K | D.1, E.1 | 4 field tracks; K = 3 per track per signal |
+| Tracks | E.1 | 4 field tracks |
 | Special awards | E.1 | — |
 | Voting rule | D.3 | Set by the organizers |
-| Judge roster and fallback | C.1 | Confirm by about Nov 6 |
-| Consequences of integrity violations | D.6 | From a note in deliberation to disqualification |
+| Judge roster and fallback | C.1 | Confirm before the event |
