@@ -29,7 +29,7 @@ Lean is optional. Not using it costs nothing, and using it earns nothing by itse
 
 - **Toolchain.** Lean v4.35.0 and the Mathlib release tagged `v4.35.0`. Any other library must be pinned to a fixed version and declared in the report; it is checked like the team's own code.
 - **Freeze.** The repository is frozen at T0 (Judging Policy, Appendix B.1) and must be accessible to the organizers then. Give the commit hash in the report's title block, next to the repository link. The repository is published with the rest of the submission.
-- **Official statements.** For selected problems, the organizers publish an official formal statement with the problem list. A team that claims to have formalized the main theorem of such a problem must prove the official statement unmodified.
+- **Official statements.** For selected problems, the organizers publish an official formal statement with the problem list (`problems/lean/` in this repository; each problem page also links to any existing Lean proof, which a team's proof must not use or copy). A team that claims to have formalized the main theorem of such a problem must prove the official statement unmodified.
 - **Formalization table.** For every Lean declaration that the report relies on, the report's appendix gives the claim it supports, the formal statement with all its hypotheses and every definition it uses that is not in Mathlib, its label (§2.3), and any difference from the informal claim, such as covering only a special case. A difference that is explained honestly is acceptable and is judged as part of the work. The repository README lists the same declarations.
 
 | Report claim | Lean declaration | File | Label | Notes |

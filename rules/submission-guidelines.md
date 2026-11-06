@@ -75,7 +75,8 @@ Not using Lean costs nothing. Using it earns nothing by itself: a Lean result is
 
 - **Submitting.** A repository link with its full commit hash (§4).
 - **Version.** Lean v4.35.0 with the Mathlib release tagged `v4.35.0`. Pin any other library to a fixed version and name it in the report.
-- **Official statements.** Some problems on the list come with an official Lean statement. If you claim to have formalized the main theorem of such a problem, prove the official statement without changing it.
+- **Official statements.** Some problems on the list come with an official Lean statement, shown on the problem's page ([problem list](../problems/README.md)). If you claim to have formalized the main theorem of such a problem, prove the official statement without changing it.
+- **Existing proofs.** If the problem's page links to an existing Lean proof of the official statement, a Lean-verified claim must not use or copy it.
 - **Formalization table.** In the report's appendix, list every Lean declaration the report relies on. For each one, give:
   - the claim it supports;
   - its formal statement, with all its hypotheses and every definition it uses that is not in Mathlib;

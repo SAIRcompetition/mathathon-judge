@@ -12,3 +12,6 @@ export/
 
 # Product flow designs (Chinese, internal)
 design/
+
+# Lean build output for the problem statements
+problems/lean/.lake/
