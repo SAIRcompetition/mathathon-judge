@@ -37,12 +37,12 @@ All times are Pacific Time.
 
    | Field | Type | Required |
    |---|---|---|
-   | Talk abstract | Text | Yes |
    | Report source | One `.tex` file | Yes |
    | Report PDF | PDF | Yes |
    | Slides | PDF | Yes |
-   | Repository link | URL | No |
-   | Commit | Commit hash; recorded automatically at the deadline if possible | If a link is given |
+   | Supplementary materials | ZIP file or repository URL | No |
+   | Lean project | Repository URL | If the team did formal verification |
+   | Commit | Commit hash for each repository URL; recorded automatically at the deadline if possible | If a repository URL is given |
 
 4. **Withdrawal.** With the current setting, any member can withdraw the whole team's submission minutes before the deadline. We recommend limiting withdrawal to the Owner and Admins.
 5. **Teams without a submission.** Participants are asked to submit on time. Under the Judging Policy (D.5), a team with no report still gives its talk and is judged on it, but the current flow takes a team with no valid submission out of review. Organizers need a way to create judge tasks for such a team.

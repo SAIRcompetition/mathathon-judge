@@ -13,10 +13,10 @@ Appendices A–E contain the details. Items marked **[TBD]** are still to be dec
 **Problems.** Teams choose a problem from the published problem list, with at most 4 teams per problem. A team may switch problems at any time until the submission deadline, when its problem is locked. Each team presents one problem. *(Appendix A)*
 
 **Submission.** The event starts on Nov 13 at 6:00 PM. At the end of the 40 hours (T0: Nov 15, 10:00 AM), each team submits:
-- a talk abstract;
 - a report of about 10 pages, in LaTeX;
 - its slides;
-- optionally, a repository with Lean code or numerics.
+- optionally, supplementary materials (code, numerics, data);
+- if it did formal verification, its Lean project.
 
 The report must contain everything in the slides. It must also state the status of each main claim and disclose the team's sources and AI use. *(Appendix B; for Lean, Automated Review §2)*
 
@@ -112,10 +112,10 @@ Score each dimension as a whole number from 1 to 5. Justify each score in at lea
 
 | Item | Required | Deadline |
 |---|---|---|
-| Talk abstract | Yes | T0 |
 | Report: LaTeX source and PDF | Yes | T0 |
 | Slides (PDF) | Yes | T0 |
-| Repository (Lean, code, numerics) | No | Frozen at T0 (see Automated Review §2.1) |
+| Supplementary materials (code, numerics, data): a ZIP file or a repository | No | T0; a repository is frozen at T0 |
+| Lean project: a repository | If the team did formal verification | Frozen at T0 (see Automated Review §2.1) |
 
 - **T0.** Nov 15 at 10:00 AM: the end of the 40-hour working period, which starts on Nov 13 at 6:00 PM. The talks start at 12:00 PM the same day.
 - **Late reports.** A report that arrives after T0 is treated as missing for the LLM review.

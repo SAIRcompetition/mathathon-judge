@@ -1,6 +1,8 @@
-# Mathathon Round 1: Rules for Participants
+# Mathathon Round 1: Participant Rules
 
-Round 1 is a 40-hour onsite event at Caltech. Your team picks one problem from the problem list and works on it. Then you submit a written report and slides, and give a talk to a panel of judges.
+Round 1 is a 40-hour onsite event at Caltech, from Nov 13 at 6:00 PM to Nov 15 at 10:00 AM. Your team picks one problem from the problem list and works toward an alternative proof, a clearer exposition, or a new connection. By the deadline you submit a report and slides, together with any supplementary materials and, if you did formal verification, your Lean project. On the afternoon of Nov 15 you present your work in a talk to a panel of judges.
+
+The judges score your talk. A panel of AI models reviews your report, and its scores are advisory. The judges decide the winners.
 
 All times are Pacific Time.
 
@@ -51,18 +53,19 @@ Submit on the platform by **Nov 15, 10:00 AM**.
 
 | Item | Required | Format |
 |---|---|---|
-| Talk abstract | Yes | A short paragraph of text |
-| Report source | Yes | One `.tex` file (§5) |
-| Report PDF | Yes | The PDF compiled from that file |
+| Report | Yes | One `.tex` file (§5) and the PDF compiled from it |
 | Slides | Yes | PDF |
-| Repository link | No | A link to your Lean, code, or numerics repository |
-| Commit hash | Yes, if you give a repository link | The full commit hash of the version to be judged |
+| Supplementary materials | No | Code, numerics, data, or anything else that supports the report. Upload a ZIP file or give a repository link. |
+| Lean project | Yes, if you did formal verification | A repository link (§8) |
+| Commit hash | Yes, for every repository link | The full commit hash of the version to be judged |
 
+- **What is reviewed.** The LLM panel reads only the report. Supplementary materials and the Lean project support the report; they do not replace it. Put every result you want judged in the report.
+- **One repository** can hold both your supplementary materials and your Lean project.
 - **Who.** Any team member can submit.
 - **Before the deadline,** you can replace your submission, or withdraw it and submit again. The version in place at the deadline is the one that is judged.
 - **After the deadline,** nothing can be submitted or changed, and a missing report gets no LLM review. Submit on time.
 - **Errors found after the deadline.** Tell the organizers. They show your correction to the judges next to the original. The LLM panel does not review it.
-- **Repository.** It must be accessible to the organizers at the deadline. It is published with your submission.
+- **Repositories** must be accessible to the organizers at the deadline. They are published with your submission.
 
 ## 5. The report
 
@@ -160,6 +163,7 @@ Interest and Novelty are different. Novelty asks whether the work differs from w
 
 Lean is optional. Not using it costs nothing. Using it earns nothing by itself: a Lean result is evidence for Correctness, and only for the claims it verifies.
 
+- **Submitting.** If you did formal verification, submit your Lean project as a repository link with its full commit hash (§4).
 - **Version.** Lean v4.35.0 with the Mathlib release tagged `v4.35.0`. Pin any other library to a fixed version and name it in the report.
 - **Official statements.** Some problems on the list come with an official Lean statement. If you claim to have formalized the main theorem of such a problem, prove the official statement without changing it.
 - **Formalization table.** In the report's appendix, list every Lean declaration the report relies on. For each one, give:

@@ -1,8 +1,8 @@
-# Mathathon Round 1: Guide for Judges
+# Mathathon Round 1: Judge Rules
 
 In Round 1 you score the talks of the teams assigned to you, together with their Q&A. Separately, a panel of seven AI models (the LLM panel) reviews each team's written report. Its scores are advisory. Scores are used only to build a shortlist, and the judges decide the winners.
 
-The participants' rules are in [Round 1: Rules for Participants](round1.md). All times are Pacific Time.
+The participants' rules are in [Participant Rules](participant-rules.md). All times are Pacific Time.
 
 ## 1. Key dates
 
@@ -19,7 +19,7 @@ The participants' rules are in [Round 1: Rules for Participants](round1.md). All
 
 - **Getting in.** Open the invitation email or the competition page, then sign up or log in with your SAIR ID. Accept the judge agreement. The review entry then appears on the website.
 - **Choosing problems.** Once the problem list is final, choose every problem you are able to judge. You can also describe, in the optional text box, the kinds of problems you would most like to judge. The organizers start from your choices and then balance the assignments so that every talk has enough judges. You may be assigned a problem you did not choose.
-- **Your talks.** The organizers assign talks after the submission deadline, Nov 15 at 10:00 AM. Each assigned talk shows the team's problem, abstract, report, and slides. You get an email when scoring opens at 12:00 PM.
+- **Your talks.** The organizers assign talks after the submission deadline, Nov 15 at 10:00 AM. Each assigned talk shows the team's problem, report, and slides, and any supplementary materials or Lean project. You get an email when scoring opens at 12:00 PM.
 - **Other submissions.** After the deadline you can read every team's submission. You score only the talks assigned to you.
 - **Scoring.** Fill in the scoring form (§4) on the platform. You can save drafts, and you can edit your submitted scores until scoring closes at the end of the last session. After that, a score can be changed only if the organizers reopen it.
 
