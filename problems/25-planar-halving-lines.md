@@ -1,4 +1,4 @@
-# 25 · Planar Halving Lines
+# 25 · Planar halving lines
 
 **Tracks:** Geometry · **Area:** Combinatorial geometry
 

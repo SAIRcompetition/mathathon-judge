@@ -18,4 +18,12 @@ A proof of the inequality using toric geometry, in which mixed volumes become in
 
 ## Official Lean statement
 
-This problem has no official Lean statement.
+`Mathathon.P76.stanley_inequality` in [`lean/MathathonProblems/P76_StanleyInequality.lean`](lean/MathathonProblems/P76_StanleyInequality.lean).
+
+```lean
+theorem stanley_inequality (α : Type*) [PartialOrder α] [Fintype α] (a : α) (k : ℕ) :
+    numLinearExtensionsAt α a k * numLinearExtensionsAt α a (k + 2) ≤
+      numLinearExtensionsAt α a (k + 1) ^ 2
+```
+
+Source: written for Mathathon; not taken from an existing formalization.

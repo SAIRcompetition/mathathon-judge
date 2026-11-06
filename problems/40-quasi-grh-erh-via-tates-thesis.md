@@ -1,4 +1,4 @@
-# 40 · Quasi-GRH/ERH via Tate's Thesis
+# 40 · Quasi-GRH/ERH via Tate's thesis
 
 **Tracks:** Algebra/Number Theory · **Area:** Number theory
 

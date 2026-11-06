@@ -1,4 +1,4 @@
-# 17 · Hodge Modules
+# 17 · Hodge modules
 
 **Tracks:** Geometry · **Area:** Algebraic geometry
 
@@ -16,4 +16,4 @@ Visualizations to better understand an existing result.
 
 ## Official Lean statement
 
-This problem has no official Lean statement.
+This problem has no official Lean statement: a faithful statement needs mixed Hodge modules, which Mathlib does not have yet.

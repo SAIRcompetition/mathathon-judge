@@ -1,8 +1,8 @@
-# 15 · Kepler’s Theorem
+# 15 · Kepler's theorem
 
 **Tracks:** Geometry · **Area:** Discrete geometry; sphere packing; computational geometry
 
-**See also:** [Problem 68](68-new-simplified-proof-of-the-kepler-conjecture.md)
+**See also:** [Problem 68](68-simpler-proof-of-the-kepler-conjecture.md)
 
 ## Description
 
@@ -19,4 +19,10 @@ A novel exposition or an extension to a related packing problem.
 
 ## Official Lean statement
 
-This problem has no official Lean statement.
+`Mathathon.P15.kepler` in [`lean/MathathonProblems/P15_Kepler.lean`](lean/MathathonProblems/P15_Kepler.lean).
+
+```lean
+theorem kepler : SpherePackingConstant 3 = ENNReal.ofReal (Real.pi / Real.sqrt 18)
+```
+
+Source: <https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/803f1623539ece84a19b2b6805764b8dea9ea6e6/SpherePacking/Basic/SpherePacking.lean> (adapted as described in the file header).

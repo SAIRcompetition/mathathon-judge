@@ -1,4 +1,4 @@
-# 20 · Hoeffding's D Statistic
+# 20 · Hoeffding's D statistic
 
 **Tracks:** Computation/Applied Math, Analysis · **Area:** Nonparametric statistics, biostatistics
 
@@ -17,4 +17,4 @@ An intuitive or more accessible description of the statistic, which could includ
 
 ## Official Lean statement
 
-This problem has no official Lean statement.
+This problem has no official Lean statement: it asks for an explanation of the D statistic and of its null distribution, not for the proof of one theorem.

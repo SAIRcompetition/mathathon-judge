@@ -18,4 +18,4 @@ A novel proof of a central component, such as a denominator identity, a replicat
 
 ## Official Lean statement
 
-This problem has no official Lean statement.
+This problem has no official Lean statement: a faithful statement needs the Monster group and its moonshine module, which Mathlib does not have yet.
