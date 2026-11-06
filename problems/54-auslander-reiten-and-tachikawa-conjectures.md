@@ -1,6 +1,15 @@
 # 54 · Auslander–Reiten and Tachikawa conjectures
 
-**Tracks:** Algebra/Number Theory · **Area:** Representation theory of finite-dimensional algebras, homological algebra, category theory
+- **Status:** Counterexamples to both are claimed in two OpenAI preprints (September 2026), not yet refereed; the conjectures date from Tachikawa (1973) and Auslander–Reiten (1975).
+- **Task:** An accessible exposition of the construction; simpler or more conceptual counterexamples.
+- **Tracks:** Algebra/Number Theory · **Area:** Representation theory of finite-dimensional algebras, homological algebra, category theory
+- **Key reference:** [An explicit counterexample to the Auslander–Reiten conjecture](https://github.com/openai/math/blob/main/preprints/An-explicit-counterexample-to-the-Auslander-Reiten-conjecture-September-23-2026/paper.pdf), OpenAI, preprint, September 23, 2026.
+- **Lean:** Official statement; a Lean proof already exists.
+
+## Notes
+
+- arXiv 2609.19172 (H. Enomoto, R. Marczinzik) proves ARC, the Nakayama and generalized Nakayama conjectures and both Tachikawa conjectures globally equivalent: over a fixed commutative artinian ring they hold for all Artin algebras or fail together, not algebra by algebra.
+- Tang's note (Hexagon 2610.00143, by its own statement AI-generated and offered for independent review) extends the construction to more fields and claims counterexamples to the little and big finitistic dimension conjectures (OpenAI claims the little one separately). The page links version 1; version 5 (October 23, 2026) is current. None of these preprints is refereed.
 
 ## Description
 
@@ -10,6 +19,34 @@ The Auslander-Reiten and the Second Tachikawa conjectures belong to a web of hom
 
 The primary outcome would be a self-contained, accessible exposition of the construction pipeline, verifying key arguments, explaining the fundamental ideas, and identifying precedents in the literature. This account should clarify which ingredients are essential and where simplifications or generalizations are possible. More ambitious goals include finding new, simpler counterexamples and interpreting the constructions through derived noncommutative algebraic geometry.
 
+## The result
+
+Auslander–Reiten conjecture (ARC): if $A$ is an Artin algebra, $M$ is finitely generated and $\mathrm{Ext}^i_A(M,M\oplus A)=0$ for all $i>0$, then $M$ is projective. Tachikawa's second conjecture (TC2) is the self-injective case. Claims (OpenAI, 2026), over $k=\mathbb F_2(q,H_1,H_2)$: (i) a split algebra $\Lambda$ with 8 simple modules, $(\mathrm{rad}\,\Lambda)^4\ne0$, and a nonprojective Gorenstein-projective module $Z$ with
+$$\mathrm{Ext}^i_\Lambda(Z,Z)=\mathrm{Ext}^i_\Lambda(Z,\Lambda)=0\qquad(i\ge1);$$
+(ii) a symmetric algebra with a nonprojective module without positive self-extensions. Both persist under every field extension.
+
+## How the known proof works
+
+Structure as given in the Auslander–Reiten preprint (Section 1.2, Figure 1):
+- Conversion principle (Section 3): a stable map $v\colon X\to F\otimes_A X$ over a symmetric algebra $A$ gives a module over $\Lambda=\begin{pmatrix}A&0\\F&A\end{pmatrix}$ whose positive self-extensions are governed by two actions of self-extensions of $X$ on $v$.
+- Sections 4–5: a 10-dimensional algebra $C$ with simple module $s$; for $T=C\ltimes DC$, $\mathrm{Ext}^*_T(s,s)=k[\tau]$ with $|\tau|=3$ (an explicit Hochschild cocycle); then $A=T\otimes T$, $X=s\otimes s$.
+- Sections 6–8: twisting $DC$ by $H$ scales degree-$3m$ classes by $H^{-m}$; the fibre $F$ of two twisted maps gives $v$, and the matrix $\begin{pmatrix}H_1^{-m}&1\\H_2^{-m}&1\end{pmatrix}$ is invertible for $m>0$.
+- The Tachikawa preprint builds a related pair $(\Lambda,Z)$ and transfers it to the symmetric algebra $\Lambda\ltimes D\Lambda$ (Proposition 3.2), which also needs negative complete self-extensions to vanish.
+
+## Background
+
+- Classical global equivalences: ARC with the generalized Nakayama conjecture (Auslander–Reiten 1975); the Nakayama conjecture with TC1 and TC2 together (Müller 1968, Tachikawa 1973).
+- Known positive cases include radical cube zero (Zhang–Zhou) and quantum complete intersections (Xia). Schulz (1994) gave a nonprojective module without self-extensions over an algebra over a skew field; his quantum exterior algebra examples supply the parameter shifting reused here.
+- The commutative case is not resolved by these constructions. Tang's Corollary 1.2 covers every field of characteristic zero and every positive-characteristic field not algebraic over its prime field.
+
+## Where to start
+
+- [An explicit counterexample to the Auslander–Reiten conjecture](https://github.com/openai/math/blob/main/preprints/An-explicit-counterexample-to-the-Auslander-Reiten-conjecture-September-23-2026/paper.pdf), OpenAI, 2026: Sections 1–3, history, outline, conversion principle.
+- [On the homological conjectures for Artin algebras](https://arxiv.org/abs/2609.19172), H. Enomoto, R. Marczinzik, 2026: statements and implications.
+- [A note on counterexamples to homological conjectures](https://hexagonmath.org/2610.00143), Q. Tang, 2026: other fields.
+
+Prerequisites: finite-dimensional algebras, Ext, symmetric algebras, stable module categories, trivial extensions, basic Hochschild cohomology.
+
 ## References
 
 - Short formulations of the two conjectures (bottom of page 1 and top of page 2), and a proof that they are equivalent, in the slightly more general setting of Artin algebras: <https://arxiv.org/pdf/2609.19172>
@@ -18,7 +55,14 @@ The primary outcome would be a self-contained, accessible exposition of the cons
 - Qiyue Tang, an AI-assisted and generalized exposition: <https://hexagonmath.org/2610.00143v1>
 - The original references for the conjectures of Auslander–Reiten and of Tachikawa: <https://www.jstor.org/stable/2040102> and <https://link.springer.com/book/10.1007/BFb0059997>
 
-## Official Lean statement
+Further references:
+
+- R. Schulz, "A non-projective module without self-extensions", Arch. Math. 62 (1994), 497–500. <https://doi.org/10.1007/BF01193735>
+- OpenAI, "An algebra of infinite little finitistic dimension", preprint, September 23, 2026. <https://github.com/openai/math/blob/main/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/paper.pdf>
+
+## Lean
+
+### Official statement
 
 `OAI.ArExplicit.Statement.main` in [`lean/MathathonProblems/P54_AuslanderReiten.lean`](lean/MathathonProblems/P54_AuslanderReiten.lean).
 
@@ -39,3 +83,17 @@ theorem main_theorem : Counterexample
 Source: <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Tachikawa.lean> (copied unchanged).
 
 A Lean proof of this statement already exists: <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RingTheory/Tachikawa/Counterexample.lean>. A Lean-verified claim must not use or copy it.
+
+### Related Lean formalizations
+
+- [tachikawa-characteristic-zero](https://github.com/KitaKen1/tachikawa-characteristic-zero/tree/46963814be5cc80f781fd78a3c27d3d93d2c2bd3): a Lean proof of a counterexample over ℚ, a variant of the official statement.
+
+Projects outside the Palomar registry are described as their authors describe them; the organizers have not checked their proofs.
+
+### Mathlib
+
+Mathlib has module categories and Ext (`ModuleCat`, `CategoryTheory.Abelian.Ext`), projective and injective modules (`Module.Projective`, `Module.Injective`), the Jacobson radical (`Ring.jacobson`), duals (`Module.Dual`), tensor products of algebras and square-zero extensions (`TrivSqZeroExt`). It has no Gorenstein-projective modules, stable module categories, dominant dimension or Hochschild cohomology.
+
+---
+
+*Description and Desired outcome are the proposer's text. The other sections were written by the organizers from the literature.*
