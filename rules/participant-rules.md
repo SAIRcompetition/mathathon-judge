@@ -1,6 +1,6 @@
 # Mathathon Round 1: Participant Rules
 
-Round 1 is a 40-hour onsite event at Caltech, from Nov 13 at 6:00 PM to Nov 15 at 10:00 AM. Your team picks one problem from the problem list and works toward an alternative proof, a clearer exposition, or a new connection. By the deadline you submit a report and slides, together with any supplementary materials and, if you did formal verification, your Lean project. On the afternoon of Nov 15 you present your work to a panel of judges.
+Round 1 is a 40-hour onsite event at Caltech, from Nov 13 at 6:00 PM to Nov 15 at 10:00 AM. Your team picks one problem from the problem list and works toward an alternative proof, a clearer exposition, or a new connection. By the deadline you submit a report and slides, plus, optionally, supplementary materials and a Lean project. On the afternoon of Nov 15 you present your work to a panel of judges.
 
 The judges score your presentation. A panel of AI models reviews your report, and its scores are advisory. The judges decide the winners.
 
@@ -20,19 +20,19 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
 ## 1. Registration
 
 - **When.** Registration is open until Round 1 starts, on Nov 13 at 6:00 PM.
-- **Where.** On the SAIR competition platform, with a SAIR ID. Teams, problem selection, and submission also take place there.
+- **Where.** On the SAIR competition platform. Teams, problem selection, and submission also take place there.
 - **Invitation only.** Sign up or log in with a SAIR ID that uses the email address your invitation was sent to. Other addresses cannot register.
 - **Terms.** When you register, you accept the Mathathon Terms of Service and Privacy Policy.
 
 ## 2. Teams
 
 - **When.** Until Round 1 starts, on Nov 13 at 6:00 PM. From then on, teams are fixed: no one can join, leave, or change teams.
-- **Size.** At most 4 members.
-- **Joining a team.** There are four ways:
-  - the organizers place you in a team;
-  - you create a team;
-  - you ask to join a team that has a free place, and its Owner approves;
-  - you accept an invitation from a team's Owner.
+- **Size.** At most 4 members. You can be on only one team.
+- **Joining a team.** There are four ways to be on a team:
+  - **Your team is already set up.** If you formed a team when you applied to Mathathon, the organizers enter it on the platform for you. You see your team as soon as you log in, and you do not need to do anything.
+  - **Create a team.** You become its Owner, and you can invite others to join.
+  - **Ask to join a team** that has fewer than 4 members. You join once its Owner approves.
+  - **Accept an invitation** from a team's Owner.
 - **Roles.** The Owner is the person who created the team, or the person named by the organizers. The Owner can make any member an Admin.
 
   | | Owner | Admin | Member |
@@ -47,9 +47,9 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
 - **Who.** The Owner or an Admin.
 - **One problem.** Your team is signed up for exactly one problem at a time. You present, and are judged on, only that problem.
 - **From the list only.** Only problems on the published list are judged. No new problems are accepted after Round 1 starts.
-- **At most 4 teams per problem,** first come, first served. A full problem cannot be selected until a team leaves it.
 - **Proposed problems.** If your team proposed a problem that is on the list, your team starts Round 1 signed up for it. If it proposed several, it chooses one of them.
-- **Switching.** Until the deadline, you can switch to any problem that has a free place. Your old place is released at once.
+- **At most 4 teams per problem.** Places are first come, first served. A problem is full when 4 teams are signed up for it, including any team that proposed it. A full problem cannot be selected until one of its teams switches to another problem.
+- **Switching.** Until the deadline, you can switch to any problem that is not full. Your old place is released at once.
 
 ## 4. Submission
 
@@ -62,15 +62,13 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
 |---|---|---|
 | Report | Yes | One `.tex` file and the PDF compiled from it (see below) |
 | Slides | Yes | PDF |
-| Supplementary materials | No | Code, numerics, data, or anything else that supports the report. Upload a ZIP file or give a repository link. |
-| Lean project | Yes, if you did formal verification | A repository link (§4.3) |
+| Supplementary materials | Optional | Code, numerics, data, or anything else that supports the report. Upload a ZIP file or give a repository link. |
+| Lean project | Optional | A repository link (§4.3). Needed for any claim labeled Lean-verified or Lean-conditional. |
 | Commit hash | Yes, for every repository link | The full commit hash of the version to be judged |
 
-- **What is reviewed.** The LLM panel reads only the report. Supplementary materials and the Lean project support the report; they do not replace it. Put every result you want judged in the report.
-- **One repository** can hold both your supplementary materials and your Lean project.
-- **Repositories** must be accessible to the organizers at the deadline. They are published with your submission.
+**Repositories.** One repository can hold both your supplementary materials and your Lean project. Every repository must be accessible to the organizers at the deadline, and is published with your submission.
 
-**The report** is the official record of your work. It must contain everything in your slides. Anything that appears only in your presentation is judged by the human judges only.
+**The report** is the official record of your work. Put every result you want judged in it, including everything in your slides. The LLM panel reads only the report: supplementary materials and the Lean project support it, but do not replace it. Anything that appears only in your presentation is judged by the human judges only.
 
 **Report format**
 
@@ -79,23 +77,10 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
 - Names, affiliations, and the repository link go only in the title block. The title block is removed before the LLM review.
 - Describe every key figure in words. Links are pointers, not content.
 - The LLM panel reads the report as text. The main body is always read in full. If the whole report is longer than the review limit, which is announced before Round 1, the appendix is cut from the end.
-- Do not write instructions to AI reviewers. Trying to manipulate the LLM review can lead to disqualification.
 
-**Report: required sections**
+**Suggested outline.** The structure is up to you. A report usually covers the problem and its known proofs, your motivation, your contribution and main arguments, the work done during the event, the status of claims, references, and AI use and acknowledgements. Make clear what you did during the 40 hours: prior work may be used, but it does not count as event work.
 
-| Section | What it contains |
-|---|---|
-| Problem and known proof(s) | The problem, and how it is known to be proved or treated, with sources |
-| Motivation | What is unsatisfying about the known approach, or why your connection, exposition, example, or exploration is useful |
-| Contribution and main arguments | What you did, and the arguments behind it |
-| Work done during the event | What you had before the event, and what you did during the 40 hours. Prior work may be used, but it does not count as event work. |
-| Status of claims | One label for each main claim (see below) |
-| References | Every source you actually used |
-| AI use and acknowledgements | Which AI tools you used, what for, and how you checked their output; any help from people |
-
-An abstract and a "Limitations and next steps" section are recommended.
-
-**Report: status of claims.** Give each main claim exactly one label:
+**Status of claims.** Give each main claim exactly one label:
 
 | Label | Meaning |
 |---|---|
@@ -114,9 +99,9 @@ Labeling a claim honestly as conjectural costs nothing. Labeling an unproved cla
 - **After the deadline,** nothing can be submitted or changed, and a missing report gets no LLM review. Submit on time.
 - **Errors found after the deadline.** Tell the organizers. They show your correction to the judges next to the original. The LLM panel does not review it.
 
-### 4.3 Lean project (if you did formal verification)
+### 4.3 Lean project (optional)
 
-Lean is optional. Not using it costs nothing. Using it earns nothing by itself: a Lean result is evidence for Correctness, and only for the claims it verifies.
+Not using Lean costs nothing. Using it earns nothing by itself: a Lean result is evidence for Correctness, and only for the claims it verifies.
 
 - **Submitting.** Submit your Lean project as a repository link with its full commit hash (§4.1).
 - **Version.** Lean v4.35.0 with the Mathlib release tagged `v4.35.0`. Pin any other library to a fixed version and name it in the report.
