@@ -82,4 +82,4 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
   - how sure you are of your claims.
 - **How you are judged:**
   - how judges score your presentation, with the guidelines and the rubric: [Judge Guidelines](judge-guidelines.md);
-  - the LLM panel's review of your report, the shortlist, and how the winners are chosen: [Judge Rules §4](judge-rules.md#4-after-scoring).
+  - how the LLM judge reviews your report: [Judge Rules §4](judge-rules.md#4-llm-judge).

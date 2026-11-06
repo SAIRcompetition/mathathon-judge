@@ -1,6 +1,6 @@
 # Mathathon Round 1: Judge Guidelines
 
-These guidelines explain how to score a presentation and how to read the Evidence Summary. When and where you score are in the [Judge Rules](judge-rules.md). Participants can read this page too: it is how their work is judged.
+These guidelines explain how to score a presentation. When and where you score are in the [Judge Rules](judge-rules.md). Participants can read this page too: it is how their work is judged.
 
 ## 1. Dimensions
 
@@ -56,6 +56,8 @@ Useful topics for the Q&A:
 - what the AI did, and whether the team understands it;
 - how sure the team is of its claims.
 
+<!-- §5 is commented out together with Judge Rules §4 (After scoring).
+
 ## 5. Reading the Evidence Summary
 
 Each shortlisted team has a one-page Evidence Summary. One is available for any other team on request. It contains:
@@ -78,3 +80,5 @@ How to read it:
 - **Triage status.** A confirmed issue counts. A rejected issue is dropped. An unverified issue is an open question, not a finding.
 - **Lean.** A declaration is verified only if the project builds, nothing it depends on uses `sorry` or a non-standard axiom, and its formal statement matches the claim in the report. A successful build alone verifies nothing, and `native_decide` does not count. Lean shows nothing about whether a proof is new or interesting.
 - **Missing LLM results** never count against a team.
+
+-->
