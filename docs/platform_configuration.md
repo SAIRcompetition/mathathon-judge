@@ -40,8 +40,8 @@ All times are Pacific Time.
    | Report source | One `.tex` file | Yes |
    | Report PDF | PDF | Yes |
    | Slides | PDF | Yes |
-   | Supplementary materials | ZIP file or repository URL | No |
-   | Lean project | Repository URL | If the team did formal verification |
+   | Supplementary materials | ZIP file or repository URL | Optional |
+   | Lean project | Repository URL | Optional |
    | Commit | Commit hash for each repository URL; recorded automatically at the deadline if possible | If a repository URL is given |
 
 4. **Withdrawal.** With the current setting, any member can withdraw the whole team's submission minutes before the deadline. We recommend limiting withdrawal to the Owner and Admins.

@@ -114,8 +114,8 @@ Score each dimension as a whole number from 1 to 5. Justify each score in at lea
 |---|---|---|
 | Report: LaTeX source and PDF | Yes | T0 |
 | Slides (PDF) | Yes | T0 |
-| Supplementary materials (code, numerics, data): a ZIP file or a repository | No | T0; a repository is frozen at T0 |
-| Lean project: a repository | If the team did formal verification | Frozen at T0 (see Automated Review §2.1) |
+| Supplementary materials (code, numerics, data): a ZIP file or a repository | Optional | T0; a repository is frozen at T0 |
+| Lean project: a repository | Optional; needed for any Lean-verified or Lean-conditional claim | Frozen at T0 (see Automated Review §2.1) |
 
 - **T0.** Nov 15 at 10:00 AM: the end of the 40-hour working period, which starts on Nov 13 at 6:00 PM. The talks start at 12:00 PM the same day.
 - **Late reports.** A report that arrives after T0 is treated as missing for the LLM review.
@@ -130,7 +130,9 @@ Score each dimension as a whole number from 1 to 5. Justify each score in at lea
 - **Team identity.** Names, affiliations, and the repository link go in the title block only. The title block is removed before LLM review.
 - **LLM review.** The report is reviewed as text. If it exceeds the review length limit, the appendix is trimmed from the end (Automated Review §5). Do not include instructions addressed to AI reviewers: attempts to manipulate the LLM review can lead to disqualification.
 
-### B.3 Required sections
+### B.3 Suggested outline
+
+The structure is up to the team. The table lists what a report usually covers; it is a suggestion, not a requirement.
 
 | Section | What it contains |
 |---|---|
@@ -142,7 +144,7 @@ Score each dimension as a whole number from 1 to 5. Justify each score in at lea
 | References | Every source you actually used |
 | AI use and acknowledgements | Which AI tools you used, what for, and how you checked their output; any help from people |
 
-An abstract and a "Limitations and next steps" section are recommended.
+An abstract and a "Limitations and next steps" section are also useful.
 
 ### B.4 Status of claims
 
@@ -197,11 +199,11 @@ Example:
 \end{abstract}
 \maketitle
 
-\section{Problem and known proofs}           % required
-\section{Motivation}                         % required
-\section{Contribution and main arguments}    % required
-\section{Work done during the event}         % required: before the event vs. during the 40 hours
-\section{Status of claims}                   % required
+\section{Problem and known proofs}
+\section{Motivation}
+\section{Contribution and main arguments}
+\section{Work done during the event}         % before the event vs. during the 40 hours
+\section{Status of claims}
 \begin{tabular}{lll}
 Claim & Status & Where \\ \hline
 Theorem 3.1 & Proved & Section 3 \\
@@ -209,9 +211,9 @@ Lemma 3.2 & Lean-verified & Appendix B, \texttt{Mathathon.lemma32} \\
 Conjecture 5.1 & Conjectural & Section 5 \\
 \end{tabular}
 \section{Limitations and next steps}
-\section*{AI use and acknowledgements}       % required
+\section*{AI use and acknowledgements}
 
-\begin{thebibliography}{9}                   % required; no separate .bib file
+\begin{thebibliography}{9}                   % no separate .bib file
 \bibitem{ref1} <Author>, \emph{<Title>}, <Journal> (<Year>).
 \end{thebibliography}
 
@@ -422,7 +424,7 @@ The Caltech organizing team and the faculty advisors decide. Judges first delibe
   - notation defined early;
   - acknowledgement of all assistance.
 - **Not dimensions.**
-  - **Effort.** Effort cannot be observed in a talk. It is replaced by the "Work done during the event" section and the AI-use disclosure.
+  - **Effort.** Effort cannot be observed in a talk. It is replaced by what the report says about work done during the event, and by the AI-use disclosure.
   - **Impact and open-problem difficulty.** These conflict with the theme, and impact on the community is unrealistic to expect after 40 hours. Motivation covers the part of impact that is relevant here.
   - **Verifiability.** This counts as evidence for Correctness.
   - **Presentation.** This is covered by Clarity, with the Q&A counted under Correctness and Clarity.

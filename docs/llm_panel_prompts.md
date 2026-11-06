@@ -78,7 +78,7 @@ In the report, check:
 4. INTEREST
 Guideline: "The participants should do something interesting during the mathathon event, related to the mathematical contribution they want to make. This can mean doing numerics, proving a lemma, or scaffolding a plan of attack. This interesting thing should demonstrate creativity and critical thinking."
 In the report, check:
-- Use the section on work done during the event. Work the team had before the event does not count as event work.
+- Use what the report says about work done during the event. Work the team had before the event does not count as event work.
 - Does the event work show creativity, critical thinking, and depth beyond surface-level considerations?
 - Applying known methods counts if it produces real understanding.
 
