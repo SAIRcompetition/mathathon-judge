@@ -19,6 +19,13 @@ This repository holds the judging policy, the rubric, and the automated review (
 | [`rules/judge-rules.md`](rules/judge-rules.md) | Round 1 rules in three steps: registration, problem selection (with conflicts of interest), and scoring (the scoring form). Then the LLM judge: the seven-model panel that reviews each report. | Judges |
 | [`rules/judge-guidelines.md`](rules/judge-guidelines.md) | How to score: the dimensions and their guidelines, the rubric, notes, and questions to ask. The Evidence Summary section is commented out for now. Participants can read it to see how their work is judged. | Judges, participants |
 
+**Problems** (`problems/`)
+
+| File | What it is | Audience |
+|---|---|---|
+| [`problems/README.md`](problems/README.md) | The Round 1 problem list: one page per problem, with tracks, area, description, desired outcome, references, and the official Lean statement if there is one | Everyone |
+| [`problems/lean/`](problems/lean/) | The official Lean statements, as a Lean project for Lean v4.35.0 and Mathlib `v4.35.0` (configuration files and statements only) | Participants, LLM operator |
+
 **Internal** (`docs/`)
 
 | File | What it is | Audience |

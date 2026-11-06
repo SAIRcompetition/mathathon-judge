@@ -45,7 +45,7 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
 - **When.** From Nov 13 at 6:00 PM until the submission deadline, Nov 15 at 10:00 AM. At the deadline your problem is locked.
 - **Who.** The Owner or an Admin.
 - **One problem.** Your team is signed up for exactly one problem at a time. You present, and are judged on, only that problem.
-- **From the list only.** Only problems on the published list are judged. No new problems are accepted after Round 1 starts.
+- **From the list only.** Only problems on the published [problem list](../problems/README.md) are judged. No new problems are accepted after Round 1 starts.
 - **Proposed problems.** If your team proposed a problem that is on the list, your team starts Round 1 signed up for it. If it proposed several, it chooses one of them.
 - **At most 4 teams per problem.** Places are first come, first served. A problem is full when 4 teams are signed up for it, including any team that proposed it. A full problem cannot be selected until one of its teams switches to another problem.
 - **Switching.** Until the deadline, you can switch to any problem that is not full. Your old place is released at once.
