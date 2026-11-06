@@ -1,4 +1,4 @@
-# 11 · Mazur's Collatz Paper
+# 11 · Mazur's Collatz paper
 
 **Tracks:** Algebra/Number Theory, Analysis · **Area:** Number theory, Probability theory
 
@@ -17,4 +17,14 @@ A human-readable paper which explains the ideas behind this new breakthrough. Pr
 
 ## Official Lean statement
 
-This problem has no official Lean statement.
+`CollatzPositiveDensity.exists_positive_density` in [`lean/MathathonProblems/P11_CollatzPositiveDensity.lean`](lean/MathathonProblems/P11_CollatzPositiveDensity.lean).
+
+```lean
+theorem exists_positive_density :
+    ∃ c : ℝ, 0 < c ∧ ∃ X₀ : ℕ, ∀ X : ℕ, X₀ ≤ X →
+      c * X ≤ (countBelow (523 / 50) X : ℝ)
+```
+
+Source: <https://www.proofatlas.ai/sources/positive-density-log-time-collatz/commits/830b9d3f38f2a8da8cd921bf6a9310dd69336fd0/CollatzPositiveDensity.lean> (adapted as described in the file header).
+
+A Lean proof of this statement already exists: <https://www.proofatlas.ai/sources/positive-density-log-time-collatz/commits/830b9d3f38f2a8da8cd921bf6a9310dd69336fd0/>. A Lean-verified claim must not use or copy it.

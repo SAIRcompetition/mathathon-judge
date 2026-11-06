@@ -1,4 +1,4 @@
-# 28 · Singularity Expansion of Scattered Waves
+# 28 · Singularity expansion of scattered waves
 
 **Tracks:** Analysis · **Area:** PDE theory
 
@@ -16,4 +16,4 @@ A more understandable or elementary proof, simple enough for practitioners to se
 
 ## Official Lean statement
 
-This problem has no official Lean statement.
+This problem has no official Lean statement: a faithful statement needs time-domain scattering theory for the wave equation, which Mathlib does not have yet.

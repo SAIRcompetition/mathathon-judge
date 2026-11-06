@@ -1,4 +1,4 @@
-# 42 · Selmer Groups and Euler Systems
+# 42 · Selmer groups and Euler systems
 
 **Tracks:** Algebra/Number Theory · **Area:** Algebraic number theory
 
@@ -17,4 +17,4 @@ An interactive environment in which learners can easily work examples and ask qu
 
 ## Official Lean statement
 
-This problem has no official Lean statement.
+This problem has no official Lean statement: a faithful statement needs Galois cohomology, Selmer groups, and Euler systems, which Mathlib does not have yet.

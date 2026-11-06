@@ -1,4 +1,4 @@
-# 71 · Monochromatic Triangles in the Plane
+# 71 · Monochromatic triangles in the plane
 
 **Tracks:** Geometry · **Area:** Discrete Geometry
 
@@ -24,4 +24,11 @@ The Godot game engine is recommended for building the application.
 
 ## Official Lean statement
 
-This problem has no official Lean statement.
+`Erdos96.erdos_96` in [`lean/MathathonProblems/P71_ConvexUnitDistances.lean`](lean/MathathonProblems/P71_ConvexUnitDistances.lean).
+
+```lean
+theorem erdos_96 :
+    ¬ (fun n => (maxConvexUnitDistances n : ℝ)) =O[atTop] fun n => (n : ℝ)
+```
+
+Source: <https://github.com/google-deepmind/formal-conjectures/blob/3f4490479b53386e1c18d2cccf4f1164c16655ca/FormalConjectures/ErdosProblems/96.lean>, <https://github.com/google-deepmind/formal-conjectures/blob/3f4490479b53386e1c18d2cccf4f1164c16655ca/FormalConjecturesForMathlib/Geometry/Metric.lean>, <https://github.com/google-deepmind/formal-conjectures/blob/3f4490479b53386e1c18d2cccf4f1164c16655ca/FormalConjecturesForMathlib/Geometry/2d.lean> (adapted as described in the file header).

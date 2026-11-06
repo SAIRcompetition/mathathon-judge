@@ -1,4 +1,4 @@
-# 6 · abc conjecture
+# 6 · The abc conjecture
 
 **Tracks:** Algebra/Number Theory · **Area:** Number theory
 

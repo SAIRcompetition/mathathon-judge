@@ -16,4 +16,12 @@ Use AI to come up with a more explicit definition of the jump in the partial ord
 
 ## Official Lean statement
 
-This problem has no official Lean statement.
+`Mathathon.P03.turing_jump_definable` in [`lean/MathathonProblems/P03_TuringJumpDefinable.lean`](lean/MathathonProblems/P03_TuringJumpDefinable.lean).
+
+```lean
+theorem turing_jump_definable :
+    ∃ φ : FirstOrder.Language.order.Formula (Fin 2),
+      ∀ a b : Degree, φ.Realize ![a, b] ↔ b = degreeJump a
+```
+
+Source: written for Mathathon; not taken from an existing formalization.

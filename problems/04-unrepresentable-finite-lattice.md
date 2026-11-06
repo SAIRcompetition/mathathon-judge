@@ -1,4 +1,4 @@
-# 4 · Unrepresentable finite lattice
+# 4 · An unrepresentable finite lattice
 
 **Tracks:** Algebra/Number Theory · **Area:** Universal algebra
 
@@ -16,4 +16,11 @@ A specific upper bound like maybe n<=10^{10^10} with an understandable proof.
 
 ## Official Lean statement
 
-This problem has no official Lean statement.
+`Mathathon.P04.exists_not_representable` in [`lean/MathathonProblems/P04_UnrepresentableLattice.lean`](lean/MathathonProblems/P04_UnrepresentableLattice.lean).
+
+```lean
+theorem exists_not_representable :
+    ∃ (L : Type) (_ : Lattice L), Finite L ∧ Nonempty L ∧ ¬ Representable L
+```
+
+Source: <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/Universal/Congruence.lean> (adapted as described in the file header).

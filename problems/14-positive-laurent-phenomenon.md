@@ -19,4 +19,12 @@ For scattering diagrams: an understanding of the rather difficult “induction o
 
 ## Official Lean statement
 
-This problem has no official Lean statement.
+`Mathathon.P14.positive_laurent_phenomenon` in [`lean/MathathonProblems/P14_PositiveLaurentPhenomenon.lean`](lean/MathathonProblems/P14_PositiveLaurentPhenomenon.lean).
+
+```lean
+theorem positive_laurent_phenomenon {n f : ℕ} (B : Matrix (Idx n f) (Fin n) ℤ)
+    (hB : IsSkewSymmetrizable (B.submatrix Sum.inl id)) (z : AmbientField n f)
+    (hz : IsClusterVariable B z) : IsPositiveLaurentPolynomial z
+```
+
+Source: written for Mathathon; not taken from an existing formalization.

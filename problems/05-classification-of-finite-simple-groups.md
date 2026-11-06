@@ -16,4 +16,6 @@ Bring the CFSG in from the cold by formalizing large parts of it in Lean, or by 
 
 ## Official Lean statement
 
-This problem has no official Lean statement.
+This problem has no official Lean statement in this folder. The public Lean statement of the CFSG is `TauCeti.ClassificationStatement` in TauCetiProject/TauCeti: <https://github.com/TauCetiProject/TauCeti/blob/6e0c6acab5f4c6f42e5f5bab9bd5e4e84f74c380/TauCeti/GroupTheory/SpecificGroups/CFSG/Classification.lean>. It is not copied here because it depends on about 750 files of group constructions and on a different Mathlib version.
+
+Axiom Math has published a Lean proof of that statement: <https://github.com/AxiomMath/CFSG/tree/69cb972f587a3ecc035e092253167ff2e303c962>. A Lean-verified claim must not use or copy it.
