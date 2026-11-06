@@ -52,7 +52,7 @@ Lean is optional. Not using it costs nothing, and using it earns nothing by itse
 
 ### 2.3 Claim labels
 
-These are the Lean labels for the report's "Status of claims" table (Judging Policy, Appendix B.4):
+These are the Lean labels a report uses for its claims (Judging Policy, Appendix B.4):
 
 | Label | Meaning |
 |---|---|

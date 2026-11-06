@@ -59,7 +59,7 @@ Guideline: "The participants should be able to discuss the mathematics relevant 
 In the report, check:
 - Are the statements and arguments correct?
 - Are the objects defined, not just named?
-- Is uncertainty conveyed accurately? Compare the "Status of claims" section with the body: is it clear what is proved, what is Lean-verified, what is checked numerically, what is conjectural, and what is cited?
+- Is uncertainty conveyed accurately? Compare what the report says about the status of its claims with the body: is it clear what is proved, what is Lean-verified, what is checked numerically, what is conjectural, and what is cited?
 Partial results that are honestly labeled must not be penalized. Overstated claims must be.
 
 2. CLARITY

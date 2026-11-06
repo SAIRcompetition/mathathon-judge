@@ -140,13 +140,15 @@ The structure is up to the team. The table lists what a report usually covers; i
 | Motivation | What is unsatisfying about the known approach, or why your connection, exposition, example, or exploration is useful |
 | Contribution and main arguments | What you did, and the arguments behind it |
 | Work done during the event | What you had before the event, and what you did during the 40 hours. Prior work may be used, but it does not count as event work. |
-| Status of claims | One label for each main claim (B.4) |
+| Status of claims | How each main claim is supported (B.4) |
 | References | Every source you actually used |
 | AI use and acknowledgements | Which AI tools you used, what for, and how you checked their output; any help from people |
 
 An abstract and a "Limitations and next steps" section are also useful.
 
 ### B.4 Status of claims
+
+For each main claim, the report says how it is supported. The labels below are suggested wording, not a required format, except that Lean-verified and Lean-conditional have the fixed meanings in Automated Review §2.3.
 
 | Label | Meaning |
 |---|---|
