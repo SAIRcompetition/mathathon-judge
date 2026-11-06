@@ -14,8 +14,8 @@ This repository holds the judging policy, the rubric, and the automated review (
 | File | What it is | Audience |
 |---|---|---|
 | [`rules/overview.md`](rules/overview.md) | The introduction and FAQ from the Mathathon website | Everyone |
-| [`rules/participant-rules.md`](rules/participant-rules.md) | Round 1 rules: key dates, registration and teams, choosing a problem, submission, the report, talks, judging, Lean, integrity, and what happens after Round 1 | Participants |
-| [`rules/judge-rules.md`](rules/judge-rules.md) | Round 1 rules: key dates, the platform, conflicts of interest, scoring and the rubric, the Evidence Summary, shortlist and deliberation, and triage | Judges |
+| [`rules/participant-rules.md`](rules/participant-rules.md) | Round 1 rules in four steps: registration, teams, problem selection, and submission (the report, the Lean project, integrity). Then the presentation and what happens after Round 1. How work is judged is in the judge rules. | Participants |
+| [`rules/judge-rules.md`](rules/judge-rules.md) | Round 1 rules in three steps: registration, problem selection (with conflicts of interest), and scoring (the form and the rubric). Then the LLM panel and the shortlist, triage, the Evidence Summary, and deliberation. | Judges |
 
 **Internal** (`docs/`)
 
