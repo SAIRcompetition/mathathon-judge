@@ -15,3 +15,9 @@ design/
 
 # Lean build output for the problem statements
 problems/lean/.lake/
+
+# API keys (never commit)
+keys/
+
+# LLM judge test data and runs (internal)
+llm_judge_test/
