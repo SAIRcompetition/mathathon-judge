@@ -66,8 +66,7 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
 - **Errors found after the deadline.** Tell the organizers. They show your correction to the judges next to the original. The LLM panel does not review it.
 - **Integrity.** The following are violations. Consequences range from a note in the judges' discussion to disqualification.
   - presenting known work as your own;
-  - calling a claim Lean-verified when it fails the checks, or hiding a mismatch between a formal statement and its claim;
-  - trying to manipulate the LLM review, for example with text addressed to AI reviewers. Discussing such attacks as part of your mathematics is allowed.
+  - calling a claim Lean-verified when it fails the checks, or hiding a mismatch between a formal statement and its claim.
 
 ## 5. Presentation
 
