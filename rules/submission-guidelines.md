@@ -6,6 +6,7 @@ These guidelines explain how to prepare each item you submit. When and how to su
 
 | Item | Required | Format | Who uses it |
 |---|---|---|---|
+| Track | Yes | Specify which of the 5 tracks you would like to compete in. These are Algebra/Number Theory, Analysis, Combinatorics, Computation/Applied Math, and Geometry. |
 | Report | Yes | One `.tex` file and the PDF compiled from it | The LLM panel reviews it. Judges may read it. |
 | Slides | Yes | PDF | Judges see them at your presentation and on the platform. |
 | Supplementary materials | Optional | Files in your submission | The LLM panel reads them. Judges may read them. |
@@ -48,7 +49,6 @@ These guidelines explain how to prepare each item you submit. When and how to su
 
 - **PDF.**
 - **Covered by the report.** Everything in your slides must also be in the report.
-- **Specify track.** Teams should specify **one** track that they wish to compete in at the beginning of their presentation. This may or may not be one of the suggested tracks for the problem (depending on the direction of the team's work).
 
 **Suggestions**
 
