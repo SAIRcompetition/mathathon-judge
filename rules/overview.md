@@ -23,7 +23,7 @@ Mathathon is a registered student organization at Caltech. Its decisions are mad
 
 **Faculty Advisors:** Sergei Gukov, Terence Tao, Tony Yue Yu.
 
-The Foundation of Science and AI Research (SAIR) administers grants and travel reimbursements on behalf of Mathathon.
+The Foundation for Science and AI Research (SAIR) administers grants and travel reimbursements on behalf of Mathathon.
 
 ### Who can apply?
 
