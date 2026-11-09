@@ -70,7 +70,7 @@ Supplementary materials are code, numerics, data, or anything else that supports
 
 ## 5. Lean project (optional)
 
-Lean is optional and earns no credit by itself. A Lean proof is evidence for Correctness, and only for the claims it verifies. For problems where a Lean formalization is listed as a desired outcome, this may also contribute to Motivation/Interest. However, teams should plan to produce work beyond a Lean formalization, even in the event that this is the main suggested direction.
+Lean is optional and earns no credit by itself. A Lean proof is evidence for Correctness, and only for the claims it verifies. For problems where a Lean formalization is listed as a desired outcome, this may also contribute to Motivation/Interest. However, teams should plan to produce work beyond a Lean formalization, even in the event that this is the main suggested direction. Teams should consider this when selecting a problem.
 
 **Requirements**
 
