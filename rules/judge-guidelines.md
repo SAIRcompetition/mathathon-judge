@@ -33,13 +33,6 @@ Score each dimension as a whole number from 1 to 5. "Expected" means what a team
 
 - The Q&A counts as part of the presentation, and should be reflected in the judging.
 - Partial results that are honestly labeled are not penalized.
-- **Interest and Novelty are different.** Novelty asks whether the work differs from what already exists. Interest asks whether the work is worthwhile and was well executed during the event.
-
-  | Example | Interest | Novelty |
-  |---|---|---|
-  | A known proof re-explained through new worked examples that make a hard step transparent | High | Low |
-  | A genuinely different proof that is longer and less illuminating than the known ones | Low | High |
-
 - **None of these earns credit by itself:**
   - length;
   - using Lean (it is evidence for Correctness, and only for what it verifies);
