@@ -50,7 +50,6 @@ Fill in one form for each presentation, on the platform:
 
 - **When to submit.** After each presentation, before scoring closes.
 - **Drafts and edits.** You can save drafts, and you can edit your submitted scores until scoring closes.
-- **Privacy.** Your scores and comments are never published.
 
 ## 4. LLM panel
 
