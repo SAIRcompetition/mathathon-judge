@@ -69,30 +69,13 @@ Supplementary materials are code, numerics, data, or anything else that supports
 
 ## 5. Lean project (optional)
 
-Not using Lean costs nothing. Using it earns nothing by itself: a Lean result is evidence for Correctness, and only for the claims it verifies.
+Lean is optional and earns no credit by itself. A Lean proof is evidence for Correctness, and only for the claims it verifies.
 
 **Requirements**
 
-- **Submitting.** Put the Lean project in your submission repository, or, if you submit a ZIP file, give its repository link and full commit hash in the report's title block (§4).
-- **Version.** Lean v4.35.0 with the Mathlib release tagged `v4.35.0`. Pin any other library to a fixed version and name it in the report.
-- **Official statements.** Some problems on the list come with an official Lean statement, shown on the problem's page. If you claim to have formalized the main theorem of such a problem, prove the official statement without changing it.
-- **Existing proofs.** If the problem's page links to an existing Lean proof of the official statement, a Lean-verified claim must not use or copy it.
-- **Formalization table.** In the report's appendix, list every Lean declaration the report relies on. For each one, give:
-  - the claim it supports;
-  - its formal statement, with all its hypotheses and every definition it uses that is not in Mathlib;
-  - whether it is Lean-verified or Lean-conditional;
-  - any difference from the claim in the report, such as covering only a special case. An honestly explained difference is acceptable.
-
-  The repository README lists the same declarations.
-
-**What counts as verified**
-
-- **Lean-verified.** A declaration is Lean-verified only if all three of these hold, for it and for everything it depends on:
-  1. the project builds with the version above;
-  2. nothing uses `sorry`, and no axioms are used other than `propext`, `Classical.choice`, and `Quot.sound`;
-  3. its formal statement, with its hypotheses and definitions, says what the report claims.
-
-  A successful build alone is not enough. A proof that uses `native_decide` is not Lean-verified; present that computation as a numerical check instead.
-- **Lean-conditional.** The claim is derived in Lean from lemmas that are left unproved, for example cited results stated with `sorry`. List every one of these lemmas.
-- **A statement without a proof** is neither Lean-verified nor Lean-conditional.
-- **Automated check.** At the deadline, an automated check builds your repository and records what each listed declaration depends on. If its results differ from what your report says, its results count.
+- **Submitting.** Put the Lean project in your submission repository. If you submit a ZIP file, give the project's repository link and full commit hash in the report's title block.
+- **Version.** Lean v4.35.0 and Mathlib `v4.35.0`. Pin any other library to a fixed version.
+- **Official statements.** If your problem has an official Lean statement (shown on its page) and you claim to have formalized its main theorem, prove that statement unchanged. Do not use or copy an existing Lean proof linked on the page.
+- **In the report.** List each Lean declaration the report relies on, the claim it supports, and any difference between the two.
+- **Lean-verified** means that the project builds; that the declaration and everything it uses have no `sorry` and no axioms beyond `propext`, `Classical.choice`, and `Quot.sound`; and that its statement says what the report claims. `native_decide` does not count. If some lemmas are left as `sorry`, name them and call the claim Lean-conditional.
+- **Automated check.** At the deadline, an automated check builds your project. If its results differ from your report, its results count.
