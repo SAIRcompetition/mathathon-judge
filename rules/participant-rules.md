@@ -1,6 +1,6 @@
 # Mathathon Round 1: Participant Rules
 
-Round 1 is a 40-hour onsite event at Caltech, from Nov 13 at 8:00 PM to Nov 15 at 12:00 PM. Your team picks one problem from the problem list and works toward an alternative proof, a clearer exposition, or a new connection. By the submission deadline, Nov 15 at 12:00 PM, you submit a report and slides, plus, optionally, supplementary materials and a Lean project. On the afternoon of Nov 15 you present your work to a panel of judges.
+Round 1 is an onsite event at Caltech. Teams work for 40 hours, from Nov 13 at 8:00 PM until the submission deadline, Nov 15 at 12:00 PM. Your team picks one problem from the problem list and works toward an alternative proof, a clearer exposition, or a new connection. By the deadline you submit a report and slides, plus, optionally, supplementary materials and a Lean project. On the afternoon of Nov 15 you present your work to a panel of judges.
 
 The judges score your presentation. A panel of AI models reviews your report, and its scores are advisory. The judges decide the winners.
 
@@ -19,7 +19,7 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
 
 ## 1. Registration
 
-- **When.** Register before Round 1 starts, on Nov 13 at 8:00 PM. After that, teams are fixed and you cannot join one.
+- **When.** Before Round 1 starts, on Nov 13 at 8:00 PM.
 - **Where.** On the SAIR competition platform. Teams, problem selection, and submission also take place there.
 - **Invitation only.** Sign up or log in with a SAIR ID that uses the email address your invitation was sent to. Other addresses cannot register.
 - **Terms.** When you register, you accept the Mathathon Terms of Service and Privacy Policy.
@@ -59,11 +59,11 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
 - **What to submit:**
   - a report, as one `.tex` file and its PDF (required);
   - slides, as a PDF (required);
-  - supplementary materials, as a ZIP file or a repository link (optional);
-  - a Lean project, as a repository link (optional).
+  - supplementary materials (optional);
+  - a Lean project (optional).
 
-  Give the full commit hash for every repository link. How to prepare each item is in the [Submission Guidelines](submission-guidelines.md).
-- **One submission per team.** The platform takes either one ZIP file or one GitHub repository link with its full commit hash. Put the report, the slides, and any supplementary materials in it. If you submit a ZIP file and have a Lean project, give the Lean repository's link and full commit hash in the report's title block. The maximum file size is [TBD].
+  How to prepare each item is in the [Submission Guidelines](submission-guidelines.md).
+- **One submission per team.** Submit either one ZIP file or one GitHub repository link with its full commit hash. Put every item in it. A Lean project must be a repository: if you submit a ZIP file, give the Lean repository's link and full commit hash in the report's title block instead. The maximum file size is [TBD].
 - **Before the deadline,** you can replace your submission, or withdraw it and submit again. The version in place at the deadline is the one that is judged.
 - **After the deadline,** nothing can be submitted or changed, and a missing report gets no LLM review. Submit on time.
 - **Integrity.** The following are violations. Consequences range from a note in the judges' discussion to disqualification.
