@@ -13,7 +13,7 @@ You score the presentation and its Q&A on Correctness, Clarity, Motivation, and 
 | **Motivation** | The participants should be able to explain what mathematical contribution they hope to make. If their project is about finding a new approach to an old result, they need to be able to explain what is unsatisfying about the old approach. If their approach is about crystalizing the connection between two related settings, then they should be able to explain why this crystallization would be useful to the relevant mathematical community. Saying that doing something is an open problem ("finding a proof of [bla] that avoids [bla] technique is an open problem") is not sufficient - they need to explain why [bla] technique is undesirable. |
 | **Interest** | The participants should do something interesting during the mathathon event, related to the mathematical contribution they want to make. This can mean doing numerics, proving a lemma, or scaffolding a plan of attack. This interesting thing should demonstrate creativity and critical thinking. |
 | **Attribution** (LLM panel only) | Sources are credited, and known results are not presented as new. AI use is disclosed and is consistent with the rest of the report. |
-| **Novelty** (LLM panel only) | How the proof, exposition, or connection differs from known work. Failing to find a precedent does not show that something is new. |
+| **Novelty** (LLM panel only) | How the proof, exposition, or connection differs from known work. |
 
 ## 2. Rubric
 
@@ -31,7 +31,7 @@ Score each dimension as a whole number from 1 to 5. "Expected" means what a team
 
 ## 3. Notes
 
-- The Q&A counts toward Correctness and Clarity.
+- The Q&A counts as part of the presentation, and should be reflected in the judging.
 - Partial results that are honestly labeled are not penalized.
 - **Interest and Novelty are different.** Novelty asks whether the work differs from what already exists. Interest asks whether the work is worthwhile and was well executed during the event.
 
