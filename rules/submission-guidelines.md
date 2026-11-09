@@ -48,6 +48,7 @@ These guidelines explain how to prepare each item you submit. When and how to su
 
 - **PDF.**
 - **Covered by the report.** Everything in your slides must also be in the report.
+- **Specify track.** Teams should specify **one** track that they wish to compete in at the beginning of their presentation. This may or may not be one of the suggested tracks for the problem (depending on the direction of the team's work).
 
 **Suggestions**
 
