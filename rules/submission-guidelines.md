@@ -8,8 +8,10 @@ These guidelines explain how to prepare each item you submit. When and how to su
 |---|---|---|---|
 | Report | Yes | One `.tex` file and the PDF compiled from it | The LLM panel reviews it. Judges may read it. |
 | Slides | Yes | PDF | Judges see them at your presentation and on the platform. |
-| Supplementary materials | Optional | A ZIP file or a repository link | Judges may read them. The LLM panel does not see them. |
-| Lean project | Optional | A repository link | An automated check builds it. The results go to the judges and the LLM panel. |
+| Supplementary materials | Optional | Files in your submission | Judges may read them. The LLM panel does not see them. |
+| Lean project | Optional | A repository with its full commit hash | An automated check builds it. The results go to the judges and the LLM panel. |
+
+**All items go in one submission:** one ZIP file or one repository link ([Participant Rules §4](participant-rules.md#4-submission)).
 
 **The report is the official record of your work.** Put every result you want judged in it, including everything in your slides. Supplementary materials and the Lean project support the report; they do not replace it. Anything that appears only in your presentation is judged by the human judges only.
 
@@ -58,7 +60,7 @@ Supplementary materials are code, numerics, data, or anything else that supports
 
 **Requirements**
 
-- **Format.** Upload a ZIP file on the platform, or give a repository link.
+- **Format.** Put them in your submission: the ZIP file or the repository.
 - **Commit hash.** For every repository link, give the full commit hash of the version to be judged. Put the link and the hash in the report's title block too.
 - **Access.** Every repository must be accessible to the organizers at the deadline.
 
@@ -72,7 +74,7 @@ Not using Lean costs nothing. Using it earns nothing by itself: a Lean result is
 
 **Requirements**
 
-- **Submitting.** A repository link with its full commit hash (§4).
+- **Submitting.** Put the Lean project in your submission repository, or, if you submit a ZIP file, give its repository link and full commit hash in the report's title block (§4).
 - **Version.** Lean v4.35.0 with the Mathlib release tagged `v4.35.0`. Pin any other library to a fixed version and name it in the report.
 - **Official statements.** Some problems on the list come with an official Lean statement, shown on the problem's page ([problem list](../problems/README.md)). If you claim to have formalized the main theorem of such a problem, prove the official statement without changing it.
 - **Existing proofs.** If the problem's page links to an existing Lean proof of the official statement, a Lean-verified claim must not use or copy it.
