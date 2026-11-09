@@ -44,7 +44,6 @@ You take three steps on the SAIR competition platform: registration (§1), probl
 ### 3.2 The scoring form
 
 Fill in one form for each presentation, on the platform:
-- the team's declared track
 - Correctness, Clarity, Motivation, and Interest: a whole number from 1 to 5 each, following the [Judge Guidelines](judge-guidelines.md), with a comment on each;
 - an overall comment.
 
