@@ -8,14 +8,11 @@ You take three steps on the SAIR competition platform: registration (§1), probl
 
 | When | What you do |
 |---|---|
-| By Nov 11 | Complete the initial problem survey (§2). |
-| Before Nov 13 | Register and accept the judge agreement (§1). Rate the problems you can judge on the platform, and report any conflict of interest (§2). |
-| Nov 14, 11:59 PM | Problem selection deadline: teams' problems are locked. The organizers then plan your presentations (§2). |
+| Before Nov 13 | Register and accept the judge agreement (§1). |
+| By midnight Nov 13 | Rate the problems you can judge, and report any conflict of interest (§2). |
 | Nov 15, 10:30 AM | Judges' briefing, on site. You get your assigned presentations (§2). |
-| Nov 15, 12:00 PM | Submission deadline. Your presentations appear on the platform (§2). |
-| Nov 15, 12:00 PM to 3:30 PM | Attend your assigned presentations, at most one per session. Score each one after it (§3). |
+| Nov 15, 12:00 PM to 3:30 PM | Your presentations appear on the platform. Attend them, at most one per session, and score each one after it (§3). |
 | Nov 15, 3:30 PM to 5:00 PM | Scoring closes after the last session. Judges deliberate to decide the winners. |
-| Nov 15, 5:00 PM to 6:00 PM | Closing ceremony. Results are announced. |
 
 ## 1. Registration
 
@@ -25,9 +22,8 @@ You take three steps on the SAIR competition platform: registration (§1), probl
 
 ## 2. Problem preferences
 
-- **When.** Complete the initial survey by midnight Nov 11. Then update your preferences on the SAIR platform by midnight Nov 13.
-- **Initial survey.** From the list of candidate problems, select any that you would be interested in judging. You are not expected to be an expert in the area, only to have some familiarity with and interest in the topic. The organizers use the survey to choose the final problem list.
-- **Rating on the platform.** Your survey answers are carried over to the final problem list on the platform. Until midnight Nov 13 you can update them: rate each problem you are able to judge from 1 (willing) to 5 (most preferred), and leave problems you cannot judge at 0. You can also describe, in the optional text box, the kinds of problems you would most like to judge.
+- **When.** By midnight Nov 13, on the SAIR platform.
+- **Rating.** Rate each problem you are able to judge from 1 (willing) to 5 (most preferred), and leave problems you cannot judge at 0. You do not need to be an expert in the area, only familiar with and interested in the topic. You can also describe, in the optional text box, the kinds of problems you would most like to judge.
 - **Balancing.** The organizers start from your ratings and then balance the assignments so that every presentation has enough judges. You may be assigned a problem you did not rate.
 - **Presentations you judge.** The organizers plan presentations after teams' problems are locked, on Nov 14 at 11:59 PM, and give you your assignments at the judges' briefing. They appear on the platform after the submission deadline, Nov 15 at 12:00 PM. Assignments are final before the first session. Each presentation has 2 to 5 judges. When possible, at least one of them is an expert in the problem's field. You have at most one presentation per session. Each assigned presentation shows the team's problem and submission. Before you score a presentation, look only at its slides; you may read the report and supplementary materials afterwards.
 - **Conflicts of interest.** Tell the organizers about any relationship with a team that could affect impartiality.
