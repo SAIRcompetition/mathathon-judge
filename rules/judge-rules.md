@@ -9,6 +9,7 @@ You take three steps on the SAIR competition platform: registration (§1), probl
 | When | What you do |
 |---|---|
 | Before Nov 13 | Register and accept the judge agreement (§1). Choose the problems you can judge, and report any conflict of interest (§2). |
+| [TBD] | Problem selection deadline: teams' problems are locked. Your presentations are then assigned (§2). |
 | Nov 15, 10:00 AM | Submission deadline. Your presentations are assigned (§2). |
 | Nov 15, 10:30 AM | Attend the judges' briefing. Check your assigned presentations on the platform. |
 | Nov 15, 12:00 PM to 3:30 PM | Attend your assigned presentations, at most one per session. Score each presentation right after it (§3). |
@@ -28,7 +29,7 @@ You take three steps on the SAIR competition platform: registration (§1), probl
 - **Initial Survey.** From the list of proposed problems, select any that you would be interested in judging. You are not expected to be an expert in a subject area, only to have some familiarity with and interest in the topic. This survey allows us to choose a final list of problems for the competition. Please complete the survey by midnight Nov 11.
 - **Preference Updates.** Your responses to the initial survey will be added to the final problem list on SAIR's platform. You are free to update this selection until midnight Nov 13.
 - **Balancing.** The organizers start from your choices and then balance the assignments so that every presentation has enough judges. You may be assigned a problem you did not choose.
-- **Your presentations.** The organizers assign presentations after the submission deadline, Nov 15 at 10:00 AM. Each presentation has 2 to 5 judges, including at least one from the team's field when possible, and you have at most one presentation per session. Each assigned presentation shows the team's problem slides.
+- **Your presentations.** The organizers assign presentations after teams' problems are locked, at the problem selection deadline [TBD]. Assignments are final before the first session. Each presentation has 2 to 5 judges, including at least one from the team's field when possible, and you have at most one presentation per session. Each assigned presentation shows the team's problem and slides. You may access teams' report and supplementary information after judging their presentation.
 - **Conflicts of interest.** Tell the organizers about any relationship with a team that could affect impartiality.
   - **Recuse** from a team if you have a close personal or professional relationship with one of its members, such as family, an advisor or advisee, the same research group, or a close collaborator. Also recuse if you helped the team substantively during the event.
   - If you are assigned a team you have a conflict with, tell the organizers before the presentation.
@@ -61,7 +62,7 @@ Fill in one form for each presentation, on the platform:
 ## 4. LLM judge
 
 - **The panel.** The LLM judge is a panel of seven AI models: Claude Opus 5.5, GPT 6.1 sol, Gemini 4, DeepSeek 4.1 Flash, Kimi K3.1, Muse Spark (open), and Mistral Large 4.
-- **What it reads.** Each model reads the team's report, without its title block. The models do not see the slides, the supplementary materials, or the presentation.
+- **What it reads.** Each model reads the problem statement and its references, the team's report without its title block, and the results of the automated Lean check if the team submitted a Lean project. The models do not see the slides, the supplementary materials, or the presentation.
 - **What it scores.** Correctness, Clarity, Motivation, and Interest, with the same guidelines and rubric as you ([Judge Guidelines](judge-guidelines.md)), plus Attribution and Novelty.
 - **Advisory only.** LLM scores do not replace yours, and the judges decide the winners. An issue raised by a model counts against a team only after a human has checked it.
 - **Independence.** You see no LLM output until you have submitted all your scores (§3.1).

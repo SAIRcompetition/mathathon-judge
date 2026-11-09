@@ -10,7 +10,7 @@ You score the presentation and its Q&A on Correctness, Clarity, Motivation, and 
 |---|---|
 | **Correctness** | The participants should be able to discuss the mathematics relevant to their presentation in a clear, correct, and sophisticated way. They should accurately convey their uncertainty and be truthful. They should be able to define the mathematical objects under consideration. |
 | **Clarity** | They should be able to form clean, correct sentences about the relevant objects, which go beyond surface level considerations. |
-| **Motivation** | The participants should be able to explain what mathematical contribution they hope to make. If their project is about finding a new approach to an old result, they need to be able to explain what is unsatisfying about the old approach. If their approach is about crystalizing the connection between two related settings, then they should be able to explain why this crystallization would be useful to the relevant mathematical community. Saying that doing something is an open problem ("finding a proof of [bla] that avoids [bla] technique is an open problem") is not sufficient - they need to explain why [bla] technique is undesirable. |
+| **Motivation** | The participants should be able to explain what mathematical contribution they hope to make. If their project is about finding a new approach to an old result, they need to be able to explain what is unsatisfying about the old approach. If their approach is about crystalizing the connection between two related settings, then they should be able to explain why this crystallization would be useful to the relevant mathematical community. Saying that something is an open problem ("finding a proof of the four color theorem that avoids computer-assisted case checking is an open problem") is not sufficient: they need to explain what is unsatisfying about computer-assisted case checking. |
 | **Interest** | The participants should do something interesting during the mathathon event, related to the mathematical contribution they want to make. This can mean doing numerics, proving a lemma, or scaffolding a plan of attack. This interesting thing should demonstrate creativity and critical thinking. |
 | **Attribution** (LLM panel only) | Sources are credited, and known results are not presented as new. AI use is disclosed and is consistent with the rest of the report. |
 | **Novelty** (LLM panel only) | How the proof, exposition, or connection differs from known work. |
@@ -55,30 +55,3 @@ Useful topics for the Q&A:
 - what is new and what is already known;
 - what the AI did, and whether the team understands it;
 - how sure the team is of its claims.
-
-<!-- §5 is commented out together with Judge Rules §4 (After scoring).
-
-## 5. Reading the Evidence Summary
-
-Each shortlisted team has a one-page Evidence Summary. One is available for any other team on request. It contains:
-
-1. **Human judges:** each judge's scores and comments, and the human signal. The human signal is each judge's mean of the four scores, averaged over the team's judges.
-2. **LLM panel:**
-   - the median of the models' scores for each dimension, and the medians of the proprietary and open models;
-   - disagreement flags, raised when the models' highest and lowest scores differ by 2 or more;
-   - the LLM signal: the mean of the medians for Correctness, Clarity, Motivation, Interest, and Novelty;
-   - any missing models.
-3. **LLM summary:** where the models agree, where they disagree, the merged issues, and suggested questions.
-4. **Critical issues,** each with its triage status ([Judge Rules §4.2](judge-rules.md#42-triage-in-field-judges)).
-5. **Lean:** the automated check results for each declaration.
-6. **Notes:** missing or late materials, and any corrections.
-
-How to read it:
-
-- **Different artifacts.** You judged the presentation; the LLM panel judged the report. A strong difference between the two views is worth discussing, not averaging away.
-- **The models are not independent.** They share much of their training data, so agreement among them is a signal, not proof.
-- **Triage status.** A confirmed issue counts. A rejected issue is dropped. An unverified issue is an open question, not a finding.
-- **Lean.** A declaration is verified only if the project builds, nothing it depends on uses `sorry` or a non-standard axiom, and its formal statement matches the claim in the report. A successful build alone verifies nothing, and `native_decide` does not count. Lean shows nothing about whether a proof is new or interesting.
-- **Missing LLM results** never count against a team.
-
--->
