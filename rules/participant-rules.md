@@ -1,6 +1,6 @@
 # Mathathon Round 1: Participant Rules
 
-Round 1 is an onsite event at Caltech, from Nov 13 at 8:00 PM to Nov 15 at 10:00 AM. Your team picks one problem from the problem list and works toward an alternative proof, a clearer exposition, or a new connection. By the deadline you submit a report and slides, plus, optionally, supplementary materials and a Lean project. On the afternoon of Nov 15 you present your work to a panel of judges.
+Round 1 is a 40-hour onsite event at Caltech, from Nov 13 at 8:00 PM until the presentations begin on Nov 15 at 12:00 PM. Your team picks one problem from the problem list and works toward an alternative proof, a clearer exposition, or a new connection. By the submission deadline, Nov 15 at 10:00 AM, you submit a report and slides, plus, optionally, supplementary materials and a Lean project. On the afternoon of Nov 15 you present your work to a panel of judges.
 
 The judges score your presentation. A panel of AI models reviews your report, and its scores are advisory. The judges decide the winners.
 
