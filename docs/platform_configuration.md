@@ -26,14 +26,13 @@ All times are Pacific Time.
 | 5 | Changing teams | On, for all members, until the event starts (Nov 13, 6:00 PM). Teams are fixed after that. Rejoin through Teams or an Owner invitation. | |
 | 6 | Owner manages roles | On | |
 | 7 | Problem selection | Owner and Admin. **4 teams per problem.** Opens Nov 13, 6:00 PM; locks Nov 15, 10:00 AM. **Changes before the lock: yes.** | Policy, Round 1 Process; Appendix A |
-| 8 | Submission | All members. Form as in §2.1, item 3. Opens Nov 13, 6:00 PM; closes Nov 15, 10:00 AM. Replace before the deadline: yes. Withdraw before the deadline: yes; recommended for Owner and Admin only. | Policy B.1 |
+| 8 | Submission | All members. Form as in §2.1, item 2. Opens Nov 13, 6:00 PM; closes Nov 15, 10:00 AM. Replace before the deadline: yes. Withdraw before the deadline: yes; recommended for Owner and Admin only. | Policy B.1 |
 | — | Team size | At most 4 members | |
 
 ### 2.1 Changes to the participant flow
 
 1. **Switching problems before the lock.** The current flow has no way to change a selected problem. Until the lock, the Owner or an Admin must be able to move the team to another problem with a free place. The old place is released immediately.
-2. **Proposers start signed up.** A team that proposed a problem starts the event signed up for it; a team that proposed several chooses one. The organizers need to set these before selection opens, and they count toward the limit of 4.
-3. **Submission form.** Replace the choice between a GitHub link and a file upload with one form:
+2. **Submission form.** Replace the choice between a GitHub link and a file upload with one form:
 
    | Field | Type | Required |
    |---|---|---|
@@ -44,8 +43,8 @@ All times are Pacific Time.
    | Lean project | Repository URL | Optional |
    | Commit | Commit hash for each repository URL; recorded automatically at the deadline if possible | If a repository URL is given |
 
-4. **Withdrawal.** With the current setting, any member can withdraw the whole team's submission minutes before the deadline. We recommend limiting withdrawal to the Owner and Admins.
-5. **Teams without a submission.** Participants are asked to submit on time. Under the Judging Policy (D.5), a team with no report still gives its talk and is judged on it, but the current flow takes a team with no valid submission out of review. Organizers need a way to create judge tasks for such a team.
+3. **Withdrawal.** With the current setting, any member can withdraw the whole team's submission minutes before the deadline. We recommend limiting withdrawal to the Owner and Admins.
+4. **Teams without a submission.** Participants are asked to submit on time. Under the Judging Policy (D.5), a team with no report still gives its talk and is judged on it, but the current flow takes a team with no valid submission out of review. Organizers need a way to create judge tasks for such a team.
 
 ## 3. Judge side
 

@@ -86,7 +86,7 @@ Score each dimension as a whole number from 1 to 5. Justify each score in at lea
 
 ## Appendix A: Problem selection
 
-- **Submission.** Participants, sponsors, judges, community members, and others may submit problems before the event. No problems are accepted once the event starts.
+- **Submission.** Sponsors, judges, community members, and others may submit problems before the event. No problems are accepted once the event starts.
 - **Review.**
   - Judges review the submitted problems, contribute resources and desired outcomes, and indicate which problems they are able to judge.
   - A problem may be left out if it is far outside the judges' expertise, or if it does not fit the event (for example, an open problem).
@@ -98,7 +98,6 @@ Score each dimension as a whole number from 1 to 5. Justify each score in at lea
 - **Choosing.**
   - Each team is signed up for exactly one problem at a time and may change problems at any time.
   - At most 4 teams may be signed up for the same problem at once.
-  - A team that submitted a problem starts the event signed up for it. A team that submitted several problems chooses one of them.
 - **Lock.** Each team's problem is locked at T0. Each team presents, and is judged on, that one problem.
 - **What each problem carries.** For judging, each problem on the list carries:
   - a track, if tracks are adopted (Appendix E.1);
