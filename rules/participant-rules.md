@@ -11,22 +11,23 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
 | When | What happens |
 |---|---|
 | Before Nov 13, 6:00 PM | Register (§1) and form your team (§2). The problem list is published. |
-| **Nov 13, 6:00 PM** | Round 1 starts. Registration closes and teams are fixed. Problem selection (§3) and submission (§4) open. |
+| **Nov 13, 8:00 PM** | Round 1 starts. Registration closes and teams are fixed. Problem selection (§3) and submission (§4) open. |
 | **[TBD]** | **Problem selection deadline.** Problems are locked. |
 | **Nov 15, 10:00 AM** | **Submission deadline.** |
-| **Nov 15, 12:00 PM to 5:00 PM** | Presentations, in six sessions (§5). |
-| Nov 15, after the presentations | Closing ceremony. Results are announced. |
+| **Nov 15, 12:00 PM to 3:30 PM** | Presentations, in six sessions (§5). |
+| **Nov 15, 5:00 PM to 6:00 PM** | Closing ceremony. Results are announced. |
+| **Nov 15, 6:30 PM to 8:30 PM** | Dinner for Winners, Judges, and Sponsors at the Athenaeum. |
 
 ## 1. Registration
 
-- **When.** Registration is open until Round 1 starts, on Nov 13 at 6:00 PM.
+- **When.** Registration is open until Round 1 starts, on Nov 13 at 8:00 PM.
 - **Where.** On the SAIR competition platform. Teams, problem selection, and submission also take place there.
 - **Invitation only.** Sign up or log in with a SAIR ID that uses the email address your invitation was sent to. Other addresses cannot register.
 - **Terms.** When you register, you accept the Mathathon Terms of Service and Privacy Policy.
 
 ## 2. Teams
 
-- **When.** Until Round 1 starts, on Nov 13 at 6:00 PM. From then on, teams are fixed: no one can join, leave, or change teams.
+- **When.** Until Round 1 starts, on Nov 13 at 8:00 PM. From then on, teams are fixed: no one can join, leave, or change teams.
 - **Size.** At most 4 members. You can be on only one team.
 - **Joining a team.** There are four ways to be on a team:
   - **Your team is already set up.** If you formed a team when you applied to Mathathon, the organizers enter it on the platform for you. You see your team as soon as you log in, and you do not need to do anything.
@@ -43,17 +44,17 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
 
 ## 3. Problem selection
 
-- **When.** From Nov 13 at 6:00 PM until the problem selection deadline, [TBD]. At that deadline your problem is locked.
+- **When.** From Nov 13 at 8:00 PM until the problem selection deadline, [TBD]. At that deadline your problem is locked.
 - **Who.** The Owner or an Admin.
 - **One problem.** Your team is signed up for exactly one problem at a time. You present, and are judged on, only that problem.
 - **From the list only.** Only problems on the published [problem list](../problems/README.md) are judged.
 - **At most 4 teams per problem.** Places are first come, first served. A problem is full when 4 teams are signed up for it. A full problem cannot be selected until one of its teams switches to another problem.
 - **Switching.** Until the problem selection deadline, you can switch to any problem that is not full. Your old place is released at once.
-- **No problem at the deadline.** If your team has no problem at the problem selection deadline, [TBD].
+- **No problem at the deadline.** If your team has no problem at the problem selection deadline, you will not be assigned a presentation slot, and will not be judged.
 
 ## 4. Submission
 
-- **When.** From Nov 13 at 6:00 PM until **Nov 15 at 10:00 AM**.
+- **When.** From Nov 13 at 8:00 PM until **Nov 15 at 10:00 AM**.
 - **Who.** Any team member.
 - **What to submit:**
   - a report, as one `.tex` file and its PDF (required);
@@ -64,16 +65,17 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
   Give the full commit hash for every repository link. How to prepare each item is in the [Submission Guidelines](submission-guidelines.md).
 - **Before the deadline,** you can replace your submission, or withdraw it and submit again. The version in place at the deadline is the one that is judged.
 - **After the deadline,** nothing can be submitted or changed, and a missing report gets no LLM review. Submit on time.
-- **Errors found after the deadline.** Tell the organizers. They show your correction to the judges next to the original. The LLM panel does not review it.
+- **Errors found after the deadline.** Tell the organizers. They may show your correction to the judges next to the original. The LLM panel does not review it.
 - **Integrity.** The following are violations. Consequences range from a note in the judges' discussion to disqualification.
   - presenting known work as your own;
   - calling a claim Lean-verified when it fails the checks, or hiding a mismatch between a formal statement and its claim.
+  - trying to manipulate the LLM review, for example with text addressed to AI reviewers.
 
 ## 5. Presentation
 
-- **When.** Nov 15, from 12:00 PM to 5:00 PM, in six sessions. Your session, time, and room are announced after problems are locked (§3).
+- **When.** Nov 15, from 12:00 PM to 3:30 PM, in six sessions. Your session, time, and room are announced after problems are locked (§3).
 - **Length.** At most 20 minutes of presentation, followed by at most 10 minutes of questions (Q&A).
-- **Judges.** Each presentation has 2 to 5 judges, including at least one from your field when possible. They score the presentation and the Q&A, and they may read your report.
+- **Judges.** Each presentation has 2 to 5 judges, including at least one from your field when possible. They score the presentation and the Q&A. They may view your report and other materials after scoring your presentation, but before making final decisions.
 - **Questions to expect:**
   - definitions;
   - the key step;
