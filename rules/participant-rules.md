@@ -12,7 +12,8 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
 |---|---|
 | Before Nov 13, 6:00 PM | Register (§1) and form your team (§2). The problem list is published. |
 | **Nov 13, 6:00 PM** | Round 1 starts. Registration closes and teams are fixed. Problem selection (§3) and submission (§4) open. |
-| **Nov 15, 10:00 AM** | **Submission deadline.** Problems are locked. |
+| **[TBD]** | **Problem selection deadline.** Problems are locked. |
+| **Nov 15, 10:00 AM** | **Submission deadline.** |
 | **Nov 15, 12:00 PM to 5:00 PM** | Presentations, in six sessions (§5). |
 | Nov 15, after the presentations | Closing ceremony. Results are announced. |
 
@@ -42,12 +43,12 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
 
 ## 3. Problem selection
 
-- **When.** From Nov 13 at 6:00 PM until the submission deadline, Nov 15 at 10:00 AM. At the deadline your problem is locked.
+- **When.** From Nov 13 at 6:00 PM until the problem selection deadline, [TBD]. At that deadline your problem is locked.
 - **Who.** The Owner or an Admin.
 - **One problem.** Your team is signed up for exactly one problem at a time. You present, and are judged on, only that problem.
 - **From the list only.** Only problems on the published [problem list](../problems/README.md) are judged.
 - **At most 4 teams per problem.** Places are first come, first served. A problem is full when 4 teams are signed up for it. A full problem cannot be selected until one of its teams switches to another problem.
-- **Switching.** Until the deadline, you can switch to any problem that is not full. Your old place is released at once.
+- **Switching.** Until the problem selection deadline, you can switch to any problem that is not full. Your old place is released at once.
 
 ## 4. Submission
 
