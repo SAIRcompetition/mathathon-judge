@@ -29,7 +29,6 @@ You take three steps on the SAIR competition platform: registration (§1), probl
 - **Your presentations.** The organizers assign presentations after the submission deadline, Nov 15 at 10:00 AM. Each presentation has 2 to 5 judges, including at least one from the team's field when possible, and you have at most one presentation per session. Each assigned presentation shows the team's problem, report, and slides, and any supplementary materials or Lean project.
 - **Conflicts of interest.** Tell the organizers about any relationship with a team that could affect impartiality.
   - **Recuse** from a team if you have a close personal or professional relationship with one of its members, such as family, an advisor or advisee, the same research group, or a close collaborator. Also recuse if you helped the team substantively during the event.
-  - **Declare** if you proposed the team's problem. This does not mean automatic recusal; the organizers decide.
   - If you are assigned a team you have a conflict with, tell the organizers before the presentation.
 
 ## 3. Scoring

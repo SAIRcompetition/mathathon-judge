@@ -86,11 +86,6 @@ Score each dimension as a whole number from 1 to 5. Justify each score in at lea
 
 ## Appendix A: Problem selection
 
-- **Submission.** Sponsors, judges, community members, and others may submit problems before the event. No problems are accepted once the event starts.
-- **Review.**
-  - Judges review the submitted problems, contribute resources and desired outcomes, and indicate which problems they are able to judge.
-  - A problem may be left out if it is far outside the judges' expertise, or if it does not fit the event (for example, an open problem).
-  - Organizers contact the submitter about any unclear submission before publishing the problem.
 - **The list.**
   - All participants see the same list, published before the event together with any official Lean statements (Automated Review §2.1).
   - Problems are published on the Mathathon website and on social media; full details may be omitted.
@@ -238,7 +233,6 @@ Conjecture 5.1 & Conjectural & Section 5 \\
 Judges must tell the organizers about any relationship with a team that could affect impartiality.
 
 - **Recuse** from a team if you have a close personal or professional relationship with one of its members, such as family, an advisor or advisee, the same research group, or a close collaborator. Also recuse if you helped the team substantively during the event.
-- **Declare** if you proposed the team's problem. This does not mean automatic recusal; the organizers decide.
 
 ### C.3 Briefing
 
@@ -356,7 +350,7 @@ Each shortlisted team has a one-page Evidence Summary. One is available for any 
 
 **Before the event**
 
-- Problem submissions close; judges review the problems and indicate which ones they can judge.
+- Judges indicate which problems they can judge.
 - Rules, rubric, Terms of Service, and Privacy Policy are announced to participants and frozen; the judge roster is confirmed.
 - The problem list is published to all participants, with official formal statements for selected problems (Automated Review §2.1).
 - The LLM pilot is complete and the prompts are frozen (Automated Review §12).

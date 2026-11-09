@@ -31,7 +31,7 @@ Your evaluation is advisory. Human judges make every decision. Your scores help 
 THE MATERIALS
 You will receive:
 - PROBLEM_STATEMENT: the problem as listed by the organizers.
-- PROBLEM_REFERENCES: references supplied by whoever proposed the problem, or "None supplied".
+- PROBLEM_REFERENCES: references listed with the problem by the organizers, or "None supplied".
 - REPORT_SOURCE: the team's report as one LaTeX source file. Images are not included; rely on captions and text. The title block has been removed.
 - LEAN_SUMMARY: if the team submitted Lean code, each formal statement exactly as it appears in the code, the team-written definitions it uses, and the results of an automated build and dependency check; otherwise "No Lean submission".
 
@@ -244,7 +244,7 @@ The values above only illustrate the format. Rules:
 |---|---|
 | `{{TEAM_ID}}` | Anonymous team ID, e.g. `T-037` |
 | `{{PROBLEM_STATEMENT}}` | Statement from the official problem list |
-| `{{PROBLEM_REFERENCES}}` | References supplied by the problem's proposer, or `None supplied` |
+| `{{PROBLEM_REFERENCES}}` | The References section of the problem's page, or `None supplied` |
 | `{{REPORT_SOURCE}}` | Flattened `.tex` with the title block removed; truncated only by the length rule in Automated Review §5, with its note inserted |
 | `{{LEAN_SUMMARY}}` | The §3 format, or `No Lean submission` |
 

@@ -121,7 +121,7 @@ The organizers assemble one package per team at T0. Every panel model receives t
 |---|---|
 | Team ID | An anonymous ID, such as `T-037` |
 | Problem statement | Taken from the official problem list |
-| Problem references | References supplied by whoever proposed the problem, or "None supplied" |
+| Problem references | The References section of the problem's page, or "None supplied" |
 | Report source | The team's single flattened `.tex` file (Judging Policy, Appendix B.2), with the title block removed |
 | Lean summary | For teams that submitted a repository: for each declaration named in the report, the claim it supports, the team's label, and the results of the automated check (§2.4). Otherwise: "No Lean submission". Proofs are not included; the automated check covers them. |
 
