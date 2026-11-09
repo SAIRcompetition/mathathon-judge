@@ -57,4 +57,3 @@ Fill in one form for each presentation, on the platform:
 - **The panel.** The LLM panel consists of seven AI models: Claude Opus 5.5, GPT 6.1 sol, Gemini 4, DeepSeek 4.1 Flash, Kimi K3.1, Muse Spark (open), and Mistral Large 4.
 - **What it reads.** Each model reads the problem statement and its references, the team's report without its title block, any supplementary materials, and the results of the automated Lean check if the team submitted a Lean project. The models do not see the slides or the presentation.
 - **What it scores.** Correctness, Clarity, Motivation, and Interest, with the same guidelines and rubric as you ([Judge Guidelines](judge-guidelines.md)), plus Attribution and Novelty.
-- **Independence.** Judges receive nothing from the LLM panel while judging (§3.1).
