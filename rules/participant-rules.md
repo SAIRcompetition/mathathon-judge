@@ -41,6 +41,7 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
   | Set roles | ✓ | | |
   | Select or switch the problem (§3) | ✓ | ✓ | |
   | Submit, replace, or withdraw the submission (§4) | ✓ | ✓ | ✓ |
+
 - **Open models.** Once your team is formed, it can apply for one team account on [openmathmodel.org](https://www.openmathmodel.org/). The account gives your team access, during the event, to open frontier models deployed by SAIR and to related tools.
 
 ## 3. Problem selection
