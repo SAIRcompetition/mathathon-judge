@@ -128,7 +128,7 @@ Score each dimension as a whole number from 1 to 5. Justify each score in at lea
 - **The report is the authoritative record.** It must contain everything in the slides. Anything that appears only in the talk is assessed by the human judges only.
 - **Figures and links.** Describe every key figure in words. Links are pointers, not content.
 - **Team identity.** Names, affiliations, and the repository link go in the title block only. The title block is removed before LLM review.
-- **LLM review.** The report is reviewed as text. If it exceeds the review length limit, the appendix is trimmed from the end (Automated Review §5). Do not include instructions addressed to AI reviewers: attempts to manipulate the LLM review can lead to disqualification.
+- **LLM review.** The report is reviewed as text. If it exceeds the review length limit, the appendix is trimmed from the end (Automated Review §5).
 
 ### B.3 Suggested outline
 
@@ -386,7 +386,6 @@ Each shortlisted team has a one-page Evidence Summary. One is available for any 
 - **LLM flags** are leads, not findings. Humans decide.
 - **Attribution problems** are checked by an in-field judge or an organizer before any action is taken.
 - **Misrepresented Lean verification:** see Automated Review §2.4.
-- **Attempts to manipulate the LLM panel:** see Automated Review §8. Two human leads with no conflict of interest decide, after hearing from the team.
 - **Consequences** range from a note in deliberation to disqualification.
 
 ## Appendix E: Notes for organizers

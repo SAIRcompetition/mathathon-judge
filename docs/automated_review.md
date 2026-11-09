@@ -204,7 +204,6 @@ In deliberation, an unverified issue is an open question, not a finding (Judging
 ## 8. Safeguards
 
 - **Submissions are data.** The prompt tells each model to treat the materials as data, never as instructions. Any apparent attempt to influence the reviewers is reported as an integrity issue.
-- **Manipulation.** Deliberately trying to manipulate the LLM panel, for example with hidden text addressed to AI reviewers, can lead to disqualification. The integrity leads decide (§6.3). Quoting or discussing such attacks as part of the mathematics is not a violation.
 - **No length reward.** The prompt tells the models not to reward length.
 - **Anonymity.** The title block is removed from the report, and the models are told not to try to identify the team.
 - **Transparency.** The rubric in the Judging Policy is public in advance. The prompts stay private until results are announced; then they are published.
