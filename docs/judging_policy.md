@@ -13,7 +13,7 @@ Appendices A–E contain the details. Items marked **[TBD]** are still to be dec
 **Problems.** Teams choose a problem from the published problem list, with at most 4 teams per problem. A team may switch problems until the problem selection deadline [TBD], when its problem is locked. Each team presents one problem. *(Appendix A)*
 
 **Submission.** The event starts on Nov 13 at 6:00 PM. At the end of the 40 hours (T0: Nov 15, 10:00 AM), each team submits:
-- a report of about 10 pages, in LaTeX;
+- a report, in LaTeX;
 - its slides;
 - optionally, supplementary materials (code, numerics, data);
 - if it did formal verification, its Lean project.
@@ -117,12 +117,12 @@ Score each dimension as a whole number from 1 to 5. Justify each score in at lea
 
 ### B.2 Format
 
-- **Length.** The main body is about 10 pages. An appendix is allowed. Length earns no credit by itself.
+- **Length.** There is no length limit. Length earns no credit by itself.
 - **One file.** Submit a single self-contained `.tex` file that includes the appendix and the bibliography entries, with no `\input` and no separate `.bib` file. Also submit the PDF.
 - **The report is the authoritative record.** It must contain everything in the slides. Anything that appears only in the talk is assessed by the human judges only.
 - **Figures and links.** Describe every key figure in words. Links are pointers, not content.
 - **Team identity.** Names, affiliations, and the repository link go in the title block only. The title block is removed before LLM review.
-- **LLM review.** The report is reviewed as text. If it exceeds the review length limit, the appendix is trimmed from the end (Automated Review §5).
+- **LLM review.** The report is reviewed as text.
 
 ### B.3 Suggested outline
 

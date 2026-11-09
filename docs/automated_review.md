@@ -127,8 +127,6 @@ The organizers assemble one package per team at T0. Every panel model receives t
 
 **Not included:** slides, the talk, human scores, team identity, the repository link.
 
-**Length rule.** There is one maximum length for every model. It is set during the pilot so that every panel model can read a whole package, and it is announced before the event. A longer package is cut the same way for every model: the main body is kept in full, the appendix is trimmed from the end, and a note marks the cut. Packages are never truncated silently.
-
 ## 6. Workflow
 
 ### 6.1 Steps
@@ -275,7 +273,7 @@ To be completed before the event.
    - "not assessable" is used sensibly;
    - the summarizer covers every issue ID and reflects the evaluations faithfully;
    - the chain fits between T0 and T1.
-4. **Fix** the prompts, the length limit, and the timing.
+4. **Fix** the prompts and the timing.
 5. **Freeze** the prompts and fill in the model record table.
 
 ## 13. Roles
