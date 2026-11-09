@@ -2,7 +2,7 @@
 
 This repository holds the Round 1 rules, the judging guidelines and rubric, and the problem list for the [Caltech Mathathon](https://mathathonchallenge.com/), whose theme is *Old Problems, New Proofs*. The Mathathon has two rounds:
 
-- **Round 1** is an onsite event at Caltech (Nov 13–15) with about 100 teams.
+- **Round 1** is a 40-hour onsite event at Caltech (Nov 13–15) with about 100 teams.
 - **Round 2** is a two-month project with a mentor.
 
 **Status:** This is a draft and has not yet been adopted. Items marked **[TBD]** need a decision from the organizers.
