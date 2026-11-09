@@ -68,8 +68,7 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
 - **After the deadline,** nothing can be submitted or changed, and a missing report gets no LLM review. Submit on time.
 - **Integrity.** The following are violations. Consequences range from a note in the judges' discussion to disqualification.
   - presenting known work as your own;
-  - calling a claim Lean-verified when it fails the checks, or hiding a mismatch between a formal statement and its claim;
-  - trying to manipulate the LLM review, for example with text addressed to AI reviewers.
+  - calling a claim Lean-verified when it fails the checks, or hiding a mismatch between a formal statement and its claim.
 
 ## 5. Presentation
 
