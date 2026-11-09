@@ -10,7 +10,7 @@ You take three steps on the SAIR competition platform: registration (§1), probl
 |---|---|
 | Before Nov 13 | Register and accept the judge agreement (§1). Choose the problems you can judge, and report any conflict of interest (§2). |
 | [TBD] | Problem selection deadline: teams' problems are locked. Your presentations are then assigned (§2). |
-| Nov 15, 10:00 AM | Submission deadline. Your presentations are assigned (§2). |
+| Nov 15, 10:00 AM | Submission deadline. |
 | Nov 15, 10:30 AM | Attend the judges' briefing. Check your assigned presentations on the platform. |
 | Nov 15, 12:00 PM to 3:30 PM | Attend your assigned presentations, at most one per session. Score each presentation right after it (§3). |
 | Nov 15, 3:30 PM to 5:00 PM | Scoring closes after the last presentation session. Judges deliberate to determine winning teams. |
