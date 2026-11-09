@@ -26,7 +26,6 @@ These guidelines explain how to prepare each item you submit. When and how to su
 - **How each claim is supported.** For each main claim, say whether it is proved in the report, verified in Lean (§5), checked by computation (say what you computed and over what range), cited from the literature, or still a conjecture. An honestly stated conjecture costs nothing; presenting an unproved claim as proved is a Correctness problem.
 - **AI use.** You may use AI tools. Say which tools you used, what for, and how you checked their output. You must be able to explain everything you submit. Using AI, or not using it, does not change your score by itself.
 - **Sources.** Credit every source and every kind of help you used. If your argument closely follows a known one, say so.
-- **No instructions to AI reviewers.** Text addressed to AI reviewers, hidden or not, is an integrity violation ([Participant Rules §4](participant-rules.md#4-submission)).
 
 **Suggestions**
 
