@@ -5,8 +5,6 @@ This repository holds the Round 1 rules, the judging guidelines and rubric, and 
 - **Round 1** is an onsite event at Caltech (Nov 13–15) with about 100 teams and 40 hours of work.
 - **Round 2** is a two-month project with a mentor.
 
-**Status:** Items marked **[TBD]** still need a decision from the organizers.
-
 ## Contents
 
 **For the website** (`rules/`)

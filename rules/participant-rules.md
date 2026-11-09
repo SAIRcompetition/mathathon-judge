@@ -63,7 +63,7 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
   - a Lean project (optional).
 
   How to prepare each item is in the [Submission Guidelines](submission-guidelines.md).
-- **One submission per team.** Submit either one ZIP file or one GitHub repository link with its full commit hash. Put every item in it. A Lean project must be a repository: if you submit a ZIP file, give the Lean repository's link and full commit hash in the report's title block instead. The maximum file size is [TBD].
+- **One submission per team.** Submit either one ZIP file or one GitHub repository link with its full commit hash. Put every item in it. A Lean project must be a repository: if you submit a ZIP file, give the Lean repository's link and full commit hash in the report's title block instead.
 - **Before the deadline,** you can replace your submission, or withdraw it and submit again. The version in place at the deadline is the one that is judged.
 - **After the deadline,** nothing can be submitted or changed, and a missing report gets no LLM review. Submit on time.
 - **Integrity.** The following are violations. Consequences range from a note in the judges' discussion to disqualification.
