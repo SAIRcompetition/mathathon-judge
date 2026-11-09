@@ -1,6 +1,6 @@
 # Mathathon Round 1: Participant Rules
 
-Round 1 is a 40-hour onsite event at Caltech, from Nov 13 at 8:00 PM until the presentations begin on Nov 15 at 12:00 PM. Your team picks one problem from the problem list and works toward an alternative proof, a clearer exposition, or a new connection. By the submission deadline, Nov 15 at 10:00 AM, you submit a report and slides, plus, optionally, supplementary materials and a Lean project. On the afternoon of Nov 15 you present your work to a panel of judges.
+Round 1 is a 40-hour onsite event at Caltech, from Nov 13 at 8:00 PM to Nov 15 at 12:00 PM. Your team picks one problem from the problem list and works toward an alternative proof, a clearer exposition, or a new connection. By the submission deadline, Nov 15 at 12:00 PM, you submit a report and slides, plus, optionally, supplementary materials and a Lean project. On the afternoon of Nov 15 you present your work to a panel of judges.
 
 The judges score your presentation. A panel of AI models reviews your report, and its scores are advisory. The judges decide the winners.
 
@@ -12,11 +12,10 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
 |---|---|
 | Before Nov 13, 8:00 PM | Register (§1) and form your team (§2). The problem list is published. |
 | **Nov 13, 8:00 PM** | Round 1 starts. Teams are fixed. Problem selection (§3) and submission (§4) open. |
-| **[TBD]** | **Problem selection deadline.** Problems are locked. |
-| **Nov 15, 10:00 AM** | **Submission deadline.** |
+| **Nov 14, 11:59 PM** | **Problem selection deadline.** Problems are locked. |
+| **Nov 15, 12:00 PM** | **Submission deadline.** |
 | **Nov 15, 12:00 PM to 3:30 PM** | Presentations, in six sessions (§5). |
 | **Nov 15, 5:00 PM to 6:00 PM** | Closing ceremony. Results are announced. |
-| **Nov 15, 6:30 PM to 8:30 PM** | Dinner for winners, judges, and sponsors at the Athenaeum. |
 
 ## 1. Registration
 
@@ -45,7 +44,7 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
 
 ## 3. Problem selection
 
-- **When.** From Nov 13 at 8:00 PM until the problem selection deadline, [TBD]. At that deadline your problem is locked.
+- **When.** From Nov 13 at 8:00 PM until the problem selection deadline, **Nov 14 at 11:59 PM**. At that deadline your problem is locked.
 - **Who.** The Owner or an Admin.
 - **One problem.** Your team is signed up for exactly one problem at a time. You present, and are judged on, only that problem.
 - **From the list only.** Only problems on the published [problem list](../problems/README.md) are judged.
@@ -55,7 +54,7 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
 
 ## 4. Submission
 
-- **When.** From Nov 13 at 8:00 PM until **Nov 15 at 10:00 AM**.
+- **When.** From Nov 13 at 8:00 PM until **Nov 15 at 12:00 PM**.
 - **Who.** Any team member.
 - **What to submit:**
   - a report, as one `.tex` file and its PDF (required);
