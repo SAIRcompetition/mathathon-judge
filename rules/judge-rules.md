@@ -1,6 +1,6 @@
 # Mathathon Round 1: Judge Rules
 
-In Round 1 you score the presentations of the teams assigned to you, together with their Q&A. Separately, a panel of seven AI models (the LLM panel) reviews each team's written report. Its scores are advisory. The judges decide the winners.
+In Round 1 you score the presentations of the teams assigned to you, together with their Q&A. Separately, a panel of seven AI models (the LLM panel) reviews each team's written report. The judges decide the winners.
 
 You take three steps on the SAIR competition platform: registration (§1), problem preferences (§2), and scoring (§3). The LLM panel is described in §4. How to score, with the guidelines and the rubric, is in the [Judge Guidelines](judge-guidelines.md). The participants' rules are in [Participant Rules](participant-rules.md). All times are Pacific Time.
 
@@ -50,7 +50,7 @@ Fill in one form for each presentation, on the platform:
 
 - **When to submit.** After each presentation, before scoring closes.
 - **Drafts and edits.** You can save drafts, and you can edit your submitted scores until scoring closes.
-- **Privacy.** Your scores and comments are seen only by the organizers. They are never published.
+- **Privacy.** Until scoring closes at 3:30 PM, only the organizers see your scores and comments. After that, the organizers and all judges can see them, to decide the winners. They are never published.
 
 ## 4. LLM panel
 
