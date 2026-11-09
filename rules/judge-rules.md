@@ -47,13 +47,13 @@ You take three steps on the SAIR competition platform: registration (§1), probl
 
 ### 3.2 The scoring form
 
-Fill in one form for each presentation, on the platform:
+- Fill in one form for each presentation, on the platform:
 
-- Correctness, Clarity, Motivation, and Interest: a whole number from 1 to 5 each, following the [Judge Guidelines](judge-guidelines.md), with at least one sentence of justification;
-- shortlist nomination: yes or no, with a one-sentence reason if yes;
-- feedback for the team;
-- whether the project should continue in Round 2: yes, maybe, or no;
-- any conflict of interest.
+  - Correctness, Clarity, Motivation, and Interest: a whole number from 1 to 5 each, following the [Judge Guidelines](judge-guidelines.md), with at least one sentence of justification;
+  - shortlist nomination: yes or no, with a one-sentence reason if yes;
+  - feedback for the team;
+  - whether the project should continue in Round 2: yes, maybe, or no;
+  - any conflict of interest.
 
 - **When to submit.** Right after the presentation, and no later than the end of the last session.
 - **Drafts and edits.** You can save drafts, and you can edit your submitted scores until scoring closes. After that, a score can be changed only if the organizers reopen it.
