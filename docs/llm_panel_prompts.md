@@ -70,7 +70,7 @@ In the report, check:
 - Is notation defined before, or very shortly after, it is first used?
 
 3. MOTIVATION
-Guideline: "The participants should be able to explain what mathematical contribution they hope to make. If their project is about finding a new approach to an old result, they need to be able to explain what is unsatisfying about the old approach. If their approach is about crystalizing the connection between two related settings, then they should be able to explain why this crystallization would be useful to the relevant mathematical community. Saying that doing something is an open problem ("finding a proof of [bla] that avoids [bla] technique is an open problem") is not sufficient - they need to explain why [bla] technique is undesirable."
+Guideline: "The participants should be able to explain what mathematical contribution they hope to make. If their project is about finding a new approach to an old result, they need to be able to explain what is unsatisfying about the old approach. If their approach is about crystalizing the connection between two related settings, then they should be able to explain why this crystallization would be useful to the relevant mathematical community. Saying that something is an open problem ("finding a proof of the four color theorem that avoids computer-assisted case checking is an open problem") is not sufficient: they need to explain what is unsatisfying about computer-assisted case checking."
 In the report, check:
 - Does it state the intended contribution clearly?
 - Does it give a convincing reason why the contribution matters, suited to the type of project? For an exposition, example, or exploration: why is it useful?
