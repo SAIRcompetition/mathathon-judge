@@ -10,7 +10,7 @@ Appendices A–E contain the details. Items marked **[TBD]** are still to be dec
 
 ## Round 1 Process
 
-**Problems.** Teams choose a problem from the published problem list, with at most 4 teams per problem. A team may switch problems at any time until the submission deadline, when its problem is locked. Each team presents one problem. *(Appendix A)*
+**Problems.** Teams choose a problem from the published problem list, with at most 4 teams per problem. A team may switch problems until the problem selection deadline [TBD], when its problem is locked. Each team presents one problem. *(Appendix A)*
 
 **Submission.** The event starts on Nov 13 at 6:00 PM. At the end of the 40 hours (T0: Nov 15, 10:00 AM), each team submits:
 - a report of about 10 pages, in LaTeX;
@@ -91,9 +91,9 @@ Score each dimension as a whole number from 1 to 5. Justify each score in at lea
   - Problems are published on the Mathathon website and on social media; full details may be omitted.
   - Any team may work on any problem. Only problems on the list are judged.
 - **Choosing.**
-  - Each team is signed up for exactly one problem at a time and may change problems at any time.
+  - Each team is signed up for exactly one problem at a time and may change problems until the problem selection deadline.
   - At most 4 teams may be signed up for the same problem at once.
-- **Lock.** Each team's problem is locked at T0. Each team presents, and is judged on, that one problem.
+- **Lock.** Each team's problem is locked at the problem selection deadline [TBD]. Each team presents, and is judged on, that one problem.
 - **What each problem carries.** For judging, each problem on the list carries:
   - a track, if tracks are adopted (Appendix E.1);
   - the judges able to judge it;
@@ -360,7 +360,8 @@ Each shortlisted team has a one-page Evidence Summary. One is available for any 
 | Step | When | What happens |
 |---|---|---|
 | Start | Nov 13, 6:00 PM | The 40-hour working period begins |
-| T0 | Nov 15, 10:00 AM | Submissions freeze; problems are locked |
+| Problem lock | [TBD] | Problem selection closes; each team's problem is locked |
+| T0 | Nov 15, 10:00 AM | Submissions freeze |
 | Session 1 | Nov 15, 12:00 PM | Talks and judging begin; the talk schedule and judge assignments are final by then |
 | T1 | Fixed deadline | All LLM evaluations and summaries are in |
 | T2 | End of the last session, by 5:00 PM | Human scores and nominations are in; shortlist formed |
@@ -425,7 +426,7 @@ The Caltech organizing team and the faculty advisors decide. Judges first delibe
 - **Process choices.**
   - Organizers assign judges, so that each team has a judge from its field wherever possible.
   - Talks are fixed at ≤ 20 minutes plus ≤ 10 minutes of questions.
-  - Problems are locked at T0, so that teams can switch problems throughout the 40 hours.
+  - The problem selection deadline is [TBD]. A later lock gives teams more time to switch; an earlier one gives organizers more time to assign judges.
 - **Presentation emphasis.** The Round 1 format gives the talk considerable weight. Public descriptions of the event should say so openly.
 
 ## Appendix F: Open decisions [TBD]
@@ -437,3 +438,4 @@ The Caltech organizing team and the faculty advisors decide. Judges first delibe
 | Special awards | E.1 | — |
 | Voting rule | D.3 | Set by the organizers |
 | Judge roster and fallback | C.1 | Confirm before the event |
+| Problem selection deadline | A, D.4 | No later than T0 |

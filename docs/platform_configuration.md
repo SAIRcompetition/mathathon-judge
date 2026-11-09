@@ -9,7 +9,8 @@ All times are Pacific Time.
 | What | When |
 |---|---|
 | Registration and team changes close; problem selection and submission open | Nov 13, 6:00 PM |
-| Submission deadline and problem lock | Nov 15, 10:00 AM |
+| Problem selection deadline and problem lock | [TBD] |
+| Submission deadline | Nov 15, 10:00 AM |
 | Judge assignments final | Before Nov 15, 12:00 PM |
 | Scoring opens (Session 1 starts) | Nov 15, 12:00 PM |
 | Last session ends; scoring closes | By Nov 15, 5:00 PM |
@@ -25,7 +26,7 @@ All times are Pacific Time.
 | 4 | Owner invites teammates | On | |
 | 5 | Changing teams | On, for all members, until the event starts (Nov 13, 6:00 PM). Teams are fixed after that. Rejoin through Teams or an Owner invitation. | |
 | 6 | Owner manages roles | On | |
-| 7 | Problem selection | Owner and Admin. **4 teams per problem.** Opens Nov 13, 6:00 PM; locks Nov 15, 10:00 AM. **Changes before the lock: yes.** | Policy, Round 1 Process; Appendix A |
+| 7 | Problem selection | Owner and Admin. **4 teams per problem.** Opens Nov 13, 6:00 PM; locks [TBD]. **Changes before the lock: yes.** | Policy, Round 1 Process; Appendix A |
 | 8 | Submission | All members. Form as in §2.1, item 2. Opens Nov 13, 6:00 PM; closes Nov 15, 10:00 AM. Replace before the deadline: yes. Withdraw before the deadline: yes; recommended for Owner and Admin only. | Policy B.1 |
 | — | Team size | At most 4 members | |
 
@@ -61,7 +62,7 @@ All times are Pacific Time.
 
 ### 3.1 Changes to the judge flow
 
-1. **When judges choose problems.** In the judge flow, judges choose problems once "problems are locked". This must mean the problem list is final, before the event. Waiting for teams to lock their problems at the submission deadline is too late.
+1. **When judges choose problems.** In the judge flow, judges choose problems once "problems are locked". This must mean the problem list is final, before the event. Waiting until teams' problems are locked is too late.
 2. **Conflicts of interest.** Add a conflict-of-interest declaration to the judge agreement, and let a judge declare a conflict on any assigned task. The organizers then reassign the task.
 3. **Personal ranking.** After the last session, each judge ranks the talks they attended. This spans several tasks, so it needs its own form, or it is collected outside the platform.
 4. **LLM outputs stay hidden.** Judges must not see any LLM output before they have submitted all their scores. If LLM evaluations or Evidence Summaries are loaded into the platform, show them only after scoring closes.
@@ -126,3 +127,4 @@ The organizer flow can reopen a review or edit a score directly, both during sco
 | Who can withdraw a submission | Owner and Admin |
 | Draft judge assignment before the deadline | Yes |
 | Rules for changing scores | §4.3 |
+| Problem selection deadline | No later than the submission deadline |
