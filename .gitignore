@@ -21,3 +21,6 @@ keys/
 
 # LLM judge test data and runs (internal)
 llm_judge_test/
+
+# Internal judging documents (policy, automated review, prompts, platform notes)
+docs/
