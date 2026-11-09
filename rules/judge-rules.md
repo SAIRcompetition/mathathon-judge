@@ -37,7 +37,7 @@ You take three steps on the SAIR competition platform: registration (§1), probl
 
 ### 3.1 At each presentation
 
-- **Independence.** Do not look at any LLM output until you have submitted all your scores. You do not receive LLM-suggested questions before presentations.
+- **Independence.** Each judge scores independently. While judging, you receive nothing from the LLM panel, so that your scores stay independent.
 - **Shared problems.** You will be told which teams worked on the same problem.
 - **Questions.** Suggested questions are in the [Judge Guidelines](judge-guidelines.md#4-questions-to-ask).
 
@@ -58,4 +58,4 @@ Fill in one form for each presentation, on the platform:
 - **What it reads.** Each model reads the problem statement and its references, the team's report without its title block, any supplementary materials, and the results of the automated Lean check if the team submitted a Lean project. The models do not see the slides or the presentation.
 - **What it scores.** Correctness, Clarity, Motivation, and Interest, with the same guidelines and rubric as you ([Judge Guidelines](judge-guidelines.md)), plus Attribution and Novelty.
 - **Advisory only.** LLM scores do not replace yours, and the judges decide the winners. An issue raised by a model counts against a team only after a human has checked it.
-- **Independence.** You see no LLM output until you have submitted all your scores (§3.1).
+- **Independence.** Judges receive nothing from the LLM panel while judging (§3.1).
