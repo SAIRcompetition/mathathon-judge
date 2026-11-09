@@ -10,10 +10,11 @@ You take three steps on the SAIR competition platform: registration (§1), probl
 |---|---|
 | Before Nov 13 | Register and accept the judge agreement (§1). Choose the problems you can judge, and report any conflict of interest (§2). |
 | Nov 15, 10:00 AM | Submission deadline. Your presentations are assigned (§2). |
-| Nov 15, before 12:00 PM | Attend the judges' briefing (10–15 minutes). Check your assigned presentations on the platform. |
-| Nov 15, 12:00 PM to 5:00 PM | Attend your assigned presentations, at most one per session. Score each presentation right after it (§3). |
-| End of the last session | Scoring closes. All your scores, nominations, and your personal ranking are in. |
-| Closing ceremony | Results are announced. |
+| Nov 15, 10:30 AM | Attend the judges' briefing. Check your assigned presentations on the platform. |
+| Nov 15, 12:00 PM to 3:30 PM | Attend your assigned presentations, at most one per session. Score each presentation right after it (§3). |
+| Nov 15, 3:30 PM to 5:00 PM | Scoring closes after the last presentation session. Judges deliberate to determine winning teams. |
+| Nov 15, 5:00 PM to 6:00 PM | Closing ceremony - Results are announced. |
+| Nov 15, 6:30 PM to 8:30 PM | (Optional) Dinner for Winners, Judges, and Sponsors at the Athenaeum. |
 
 ## 1. Registration
 
@@ -23,18 +24,19 @@ You take three steps on the SAIR competition platform: registration (§1), probl
 
 ## 2. Problem selection
 
-- **When.** Once the problem list is final, before Nov 13.
-- **Choosing.** Choose every problem you are able to judge. You can also describe, in the optional text box, the kinds of problems you would most like to judge.
+- **When.** Complete the initial survey by Nov 11. Submit your updated problem preference through SAIR's platform by Nov 13.
+- **Initial Survey.** From the list of proposed problems, select any that you would be interested in judging. You are not expected to be an expert in a subject area, only to have some familiarity with and interest in the topic. This survey allows us to choose a final list of problems for the competition. Please complete the survey by midnight Nov 11.
+- **Preference Updates.** Your responses to the initial survey will be added to the final problem list on SAIR's platform. You are free to update this selection until midnight Nov 13.
 - **Balancing.** The organizers start from your choices and then balance the assignments so that every presentation has enough judges. You may be assigned a problem you did not choose.
-- **Your presentations.** The organizers assign presentations after the submission deadline, Nov 15 at 10:00 AM. Each presentation has 2 to 5 judges, including at least one from the team's field when possible, and you have at most one presentation per session. Each assigned presentation shows the team's problem, report, and slides, and any supplementary materials or Lean project.
+- **Your presentations.** The organizers assign presentations after the submission deadline, Nov 15 at 10:00 AM. Each presentation has 2 to 5 judges, including at least one from the team's field when possible, and you have at most one presentation per session. Each assigned presentation shows the team's problem slides.
 - **Conflicts of interest.** Tell the organizers about any relationship with a team that could affect impartiality.
   - **Recuse** from a team if you have a close personal or professional relationship with one of its members, such as family, an advisor or advisee, the same research group, or a close collaborator. Also recuse if you helped the team substantively during the event.
   - If you are assigned a team you have a conflict with, tell the organizers before the presentation.
 
 ## 3. Scoring
 
-- **When.** Scoring opens at 12:00 PM on Nov 15, when you get an email, and closes at the end of the last session.
-- **What you score.** Only the presentations assigned to you: the presentation and its Q&A. You may read the team's report, but you do not have to. After the deadline you can read every team's submission.
+- **When.** Scoring opens at 12:00 PM on Nov 15, when you get an email, and closes at the end of the last session (3:30 PM).
+- **What you score.** Only the presentations assigned to you: the presentation and its Q&A. After the presentation scores are submitted you may read teams' full reports.
 
 ### 3.1 At each presentation
 
@@ -54,7 +56,6 @@ Fill in one form for each presentation, on the platform:
 
 - **When to submit.** Right after the presentation, and no later than the end of the last session.
 - **Drafts and edits.** You can save drafts, and you can edit your submitted scores until scoring closes. After that, a score can be changed only if the organizers reopen it.
-- **Personal ranking.** By the end of the last session, also submit a personal ranking of the presentations you attended.
 - **Privacy.** Your scores, justifications, and feedback are sent to the team privately. They are never published.
 
 ## 4. LLM judge
