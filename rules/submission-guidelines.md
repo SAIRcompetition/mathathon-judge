@@ -9,9 +9,9 @@ These guidelines explain how to prepare each item you submit. When and how to su
 | Report | Yes | One `.tex` file and the PDF compiled from it | The LLM panel reviews it. Judges may read it. |
 | Slides | Yes | PDF | Judges see them at your presentation and on the platform. |
 | Supplementary materials | Optional | Files in your submission | The LLM panel reads them. Judges may read them. |
-| Lean project | Optional | A repository with its full commit hash | An automated check builds it. The results go to the judges and the LLM panel. |
+| Lean project | Optional | A repository: your submission repository, or its own if you submit a ZIP file | An automated check builds it. The results go to the judges and the LLM panel. |
 
-**All items go in one submission:** one ZIP file or one repository link ([Participant Rules §4](participant-rules.md#4-submission)).
+**One submission.** Everything goes in one ZIP file or one repository. If you submit a ZIP file, the Lean project stays in its own repository, linked from the report's title block ([Participant Rules §4](participant-rules.md#4-submission)).
 
 **The report is the official record of your work.** Put every result you want judged in it, including everything in your slides. Supplementary materials and the Lean project support the report; they do not replace it. Anything that appears only in your presentation is judged by the human judges only.
 

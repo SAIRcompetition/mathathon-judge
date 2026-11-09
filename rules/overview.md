@@ -4,7 +4,7 @@ Mathathon is centered around one question: how can we use AI to augment human un
 
 Consider the four color theorem, the ABC conjecture, or the Navier-Stokes problem. Many mathematicians find their proofs—or claimed proofs—difficult to understand or unsatisfying. We invite our participants to pick a problem with an unintuitive solution, develop an alternative proof or exposition, then present it to their peers. The event consists of two rounds:
 
-- **Round 1:** Onsite, 40 hours. Teams will make preliminary progress and give live talks before judges and other contestants.
+- **Round 1:** Onsite, 40 hours. Teams will make preliminary progress and give live presentations before judges and other contestants.
 - **Round 2:** Remote, 2 months. Teams will produce an online explainer and a GitHub repository. The explainer can take any form: a draft paper, a video, an interactive game, et cetera. The repository will store whatever was used to produce the explainer—LLM chat histories, code used to produce visualizations, and more.
 
 By shifting the focus from open problems, we want to encourage Mathathon participants to explore everything else we do to make sense of mathematics: generalizations, new notations and techniques, connections to other problems. These innovations can be more exciting than solving individual problems.

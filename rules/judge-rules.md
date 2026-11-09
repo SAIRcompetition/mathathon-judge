@@ -9,7 +9,7 @@ You take three steps on the SAIR competition platform: registration (§1), probl
 | When | What you do |
 |---|---|
 | Before Nov 13 | Register and accept the judge agreement (§1). |
-| By midnight Nov 13 | Rate the problems you can judge, and report any conflict of interest (§2). |
+| Nov 13, 11:59 PM | Rate the problems you can judge, and report any conflict of interest (§2). |
 | Nov 15, 10:30 AM | Judges' briefing, on site. You get your assigned presentations (§2). |
 | Nov 15, 12:00 PM to 3:30 PM | Your presentations appear on the platform. Attend them, at most one per session, and score each one after it (§3). |
 | Nov 15, 3:30 PM to 5:00 PM | Scoring closes after the last session. Judges deliberate to decide the winners. |
@@ -18,11 +18,11 @@ You take three steps on the SAIR competition platform: registration (§1), probl
 
 - **When.** Before Nov 13.
 - **Invitation only.** The organizers appoint the judges. Open the invitation email or the competition page, then sign up or log in with your SAIR ID.
-- **Judge agreement.** Accept it on the platform. It includes the conflict-of-interest rules (§2) and the independence rule (§3.1). The review entry then appears on the website.
+- **Judge agreement.** Accept it on the platform. It includes the conflict-of-interest rules (§2) and the independence rule (§3.1). After you accept it, you can access judging on the platform.
 
 ## 2. Problem preferences
 
-- **When.** By midnight Nov 13, on the SAIR platform.
+- **When.** By Nov 13 at 11:59 PM, on the SAIR platform.
 - **Rating.** Rate each problem you are able to judge from 1 (willing) to 5 (most preferred), and leave problems you cannot judge at 0. You do not need to be an expert in the area, only familiar with and interested in the topic. You can also describe, in the optional text box, the kinds of problems you would most like to judge.
 - **Balancing.** The organizers start from your ratings and then balance the assignments so that every presentation has enough judges. You may be assigned a problem you did not rate.
 - **Presentations you judge.** The organizers plan presentations after teams' problems are locked, on Nov 14 at 11:59 PM, and give you your assignments at the judges' briefing. They appear on the platform after the submission deadline, Nov 15 at 12:00 PM. Assignments are final before the first session. Each presentation has 2 to 5 judges. When possible, at least one of them is an expert in the problem's field. You have at most one presentation per session. Each assigned presentation shows the team's problem and submission. Before you score a presentation, look only at its slides; you may read the report and supplementary materials afterwards.
@@ -56,4 +56,4 @@ Fill in one form for each presentation, on the platform:
 
 - **The panel.** The LLM panel consists of seven AI models: Claude Opus 5.5, GPT 6.1 sol, Gemini 4, DeepSeek 4.1 Flash, Kimi K3.1, Muse Spark (open), and Mistral Large 4.
 - **What it reads.** Each model reads the problem statement and its references, the team's report without its title block, any supplementary materials, and the results of the automated Lean check if the team submitted a Lean project. The models do not see the slides or the presentation.
-- **What it scores.** Correctness, Clarity, Motivation, and Interest, with the same guidelines and rubric as you ([Judge Guidelines](judge-guidelines.md)), plus Attribution and Novelty.
+- **What it scores.** The written report, on the same four dimensions and 1–5 scale as you ([Judge Guidelines](judge-guidelines.md)), plus Attribution and Novelty.
