@@ -11,16 +11,16 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
 | When | What happens |
 |---|---|
 | Before Nov 13, 6:00 PM | Register (§1) and form your team (§2). The problem list is published. |
-| **Nov 13, 8:00 PM** | Round 1 starts. Registration closes and teams are fixed. Problem selection (§3) and submission (§4) open. |
+| **Nov 13, 8:00 PM** | Round 1 starts. Teams are fixed. Problem selection (§3) and submission (§4) open. |
 | **[TBD]** | **Problem selection deadline.** Problems are locked. |
 | **Nov 15, 10:00 AM** | **Submission deadline.** |
 | **Nov 15, 12:00 PM to 3:30 PM** | Presentations, in six sessions (§5). |
 | **Nov 15, 5:00 PM to 6:00 PM** | Closing ceremony. Results are announced. |
-| **Nov 15, 6:30 PM to 8:30 PM** | Dinner for Winners, Judges, and Sponsors at the Athenaeum. |
+| **Nov 15, 6:30 PM to 8:30 PM** | Dinner for winners, judges, and sponsors at the Athenaeum. |
 
 ## 1. Registration
 
-- **When.** Registration is open until Round 1 starts, on Nov 13 at 8:00 PM.
+- **When.** Register before Round 1 starts, on Nov 13 at 8:00 PM. After that, teams are fixed and you cannot join one.
 - **Where.** On the SAIR competition platform. Teams, problem selection, and submission also take place there.
 - **Invitation only.** Sign up or log in with a SAIR ID that uses the email address your invitation was sent to. Other addresses cannot register.
 - **Terms.** When you register, you accept the Mathathon Terms of Service and Privacy Policy.
@@ -32,13 +32,14 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
 - **Joining a team.** There are four ways to be on a team:
   - **Your team is already set up.** If you formed a team when you applied to Mathathon, the organizers enter it on the platform for you. You see your team as soon as you log in, and you do not need to do anything.
   - **Create a team.** You become its Owner, and you can invite others to join.
-  - **Ask to join a team** that has fewer than 4 members. You join once its Owner approves.
-  - **Accept an invitation** from a team's Owner.
+  - **Ask to join a team** that has fewer than 4 members. You join once the team accepts your request.
+  - **Accept an invitation** from a team's Owner or Admin.
 - **Roles.** The Owner is the person who created the team, or the person named by the organizers. The Owner can make any member an Admin.
 
   | | Owner | Admin | Member |
   |---|---|---|---|
-  | Invite members and set roles | ✓ | | |
+  | Invite members | ✓ | ✓ | |
+  | Set roles | ✓ | | |
   | Select or switch the problem (§3) | ✓ | ✓ | |
   | Submit, replace, or withdraw the submission (§4) | ✓ | ✓ | ✓ |
 
@@ -63,19 +64,20 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
   - a Lean project, as a repository link (optional).
 
   Give the full commit hash for every repository link. How to prepare each item is in the [Submission Guidelines](submission-guidelines.md).
+- **One submission per team.** The platform takes either one ZIP file or one GitHub repository link with its full commit hash. Put the report, the slides, and any supplementary materials in it. If you submit a ZIP file and have a Lean project, give the Lean repository's link and full commit hash in the report's title block. The maximum file size is [TBD].
 - **Before the deadline,** you can replace your submission, or withdraw it and submit again. The version in place at the deadline is the one that is judged.
 - **After the deadline,** nothing can be submitted or changed, and a missing report gets no LLM review. Submit on time.
 - **Errors found after the deadline.** Tell the organizers. They may show your correction to the judges next to the original. The LLM panel does not review it.
 - **Integrity.** The following are violations. Consequences range from a note in the judges' discussion to disqualification.
   - presenting known work as your own;
-  - calling a claim Lean-verified when it fails the checks, or hiding a mismatch between a formal statement and its claim.
+  - calling a claim Lean-verified when it fails the checks, or hiding a mismatch between a formal statement and its claim;
   - trying to manipulate the LLM review, for example with text addressed to AI reviewers.
 
 ## 5. Presentation
 
 - **When.** Nov 15, from 12:00 PM to 3:30 PM, in six sessions. Your session, time, and room are announced after problems are locked (§3).
 - **Length.** At most 20 minutes of presentation, followed by at most 10 minutes of questions (Q&A).
-- **Judges.** Each presentation has 2 to 5 judges, including at least one from your field when possible. They score the presentation and the Q&A. They may view your report and other materials after scoring your presentation, but before making final decisions.
+- **Judges.** Each presentation has 2 to 5 judges. When possible, at least one of them is an expert in your problem's field. They score the presentation and the Q&A. They may view your report and other materials after scoring your presentation, but before making final decisions.
 - **Questions to expect:**
   - definitions;
   - the key step;
@@ -84,4 +86,4 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
   - how sure you are of your claims.
 - **How you are judged:**
   - how judges score your presentation, with the guidelines and the rubric: [Judge Guidelines](judge-guidelines.md);
-  - how the LLM judge reviews your report: [Judge Rules §4](judge-rules.md#4-llm-judge).
+  - how the LLM panel reviews your report: [Judge Rules §4](judge-rules.md#4-llm-panel).
