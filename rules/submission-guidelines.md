@@ -23,7 +23,7 @@ These guidelines explain how to prepare each item you submit. When and how to su
 - **Length.** The main body is about 10 pages. An appendix is allowed. Length earns no credit.
 - **Team identity.** Names, affiliations, and the repository link go only in the title block. The title block is removed before the LLM review.
 - **Text, not images.** The LLM panel reads the report as text. Describe every key figure in words. Links are pointers, not content.
-- **Review limit.** The main body is always read in full. If the whole report is longer than the review limit, which is announced before Round 1, the appendix is cut from the end.
+<!-- - **Review limit.** The main body is always read in full. If the whole report is longer than the review limit, which is announced before Round 1, the appendix is cut from the end. -->
 - **Work done during the event.** Make clear what you did during the 40 hours. Prior work may be used, but it does not count as event work.
 - **How each claim is supported.** For each main claim, say whether it is proved in the report, verified in Lean (§5), checked by computation (say what you computed and over what range), cited from the literature, or still a conjecture. An honestly stated conjecture costs nothing; presenting an unproved claim as proved is a Correctness problem.
 - **AI use.** You may use AI tools. Say which tools you used, what for, and how you checked their output. You must be able to explain everything you submit. Using AI, or not using it, does not change your score by itself.
