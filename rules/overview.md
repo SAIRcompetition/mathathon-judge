@@ -27,7 +27,7 @@ The Foundation of Science and AI Research (SAIR) administers grants and travel r
 
 ### Who can apply?
 
-[Participant applications](https://mathathonchallenge.com/participate.html) are closed, including the waitlist. Those who have completed a PhD in mathematics or adjacent fields may still apply as a [judge](https://mathathonchallenge.com/judges.html).
+[Participant applications](https://mathathonchallenge.com/participate.html) are closed, including the waitlist. Those who have completed a PhD in mathematics or adjacent fields may still apply as a [judge](https://mathathonchallenge.com/judges.html) until Nov 10 at midnight PST.
 
 ### Can I participate in just Round 1?
 
