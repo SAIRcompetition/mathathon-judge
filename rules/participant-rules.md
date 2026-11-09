@@ -47,7 +47,7 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
 - **When.** From Nov 13 at 8:00 PM until the problem selection deadline, **Nov 14 at 11:59 PM**. At that deadline your problem is locked.
 - **Who.** The Owner or an Admin.
 - **One problem.** Your team is signed up for exactly one problem at a time. You present, and are judged on, only that problem.
-- **From the list only.** Only problems on the published [problem list](../problems/README.md) are judged.
+- **From the list only.** Only problems on the published problem list are judged.
 - **At most 4 teams per problem.** Places are first come, first served. A problem is full when 4 teams are signed up for it. A full problem cannot be selected until one of its teams switches to another problem.
 - **Switching.** Until the problem selection deadline, you can switch to any problem that is not full. Your old place is released at once.
 - **No problem at the deadline.** If your team has no problem at the problem selection deadline, you will not be assigned a presentation slot, and will not be judged.
@@ -66,7 +66,6 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
 - **One submission per team.** The platform takes either one ZIP file or one GitHub repository link with its full commit hash. Put the report, the slides, and any supplementary materials in it. If you submit a ZIP file and have a Lean project, give the Lean repository's link and full commit hash in the report's title block. The maximum file size is [TBD].
 - **Before the deadline,** you can replace your submission, or withdraw it and submit again. The version in place at the deadline is the one that is judged.
 - **After the deadline,** nothing can be submitted or changed, and a missing report gets no LLM review. Submit on time.
-- **Errors found after the deadline.** Tell the organizers. They may show your correction to the judges next to the original. The LLM panel does not review it.
 - **Integrity.** The following are violations. Consequences range from a note in the judges' discussion to disqualification.
   - presenting known work as your own;
   - calling a claim Lean-verified when it fails the checks, or hiding a mismatch between a formal statement and its claim;
