@@ -1,5 +1,5 @@
 /-
-Mathathon Round 1, Problems 15 and 68: official Lean statement.
+Mathathon Round 1, Problem 15: official Lean statement.
 
 Source (thefundamentaltheor3m/Sphere-Packing-Lean, Apache License 2.0):
   https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/803f1623539ece84a19b2b6805764b8dea9ea6e6/SpherePacking/Basic/SpherePacking.lean

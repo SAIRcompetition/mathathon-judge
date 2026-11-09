@@ -1,5 +1,5 @@
 /-
-Mathathon Round 1, Problems 16 and 82: official Lean statement.
+Mathathon Round 1, Problem 16: official Lean statement.
 
 Source (RBarish-UTokyo/FourColorTheorem-Lean4, Apache License 2.0):
   https://github.com/RBarish-UTokyo/FourColorTheorem-Lean4/blob/20fa34599f5189dd569d96dd22f306c94ab1c446/Challenge.lean

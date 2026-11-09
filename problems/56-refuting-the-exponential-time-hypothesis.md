@@ -12,7 +12,7 @@
 
 ## Description
 
-The Exponential Time Hypothesis (ETH) states that 3-SAT cannot be solved in subexponential time. In October 2026, OpenAI and Anthropic independently released claimed disproofs of ETH, each providing a subexponential-time algorithm. The problem is to simplify these proofs.
+A 3-SAT problem is a long list of logical conditions joined together. To solve it, one must assign TRUE or FALSE to every variable so that the whole formula evaluates to TRUE. 3-SAT is NP-complete, so an efficient algorithm for it would give P = NP. The Exponential Time Hypothesis (ETH) states that 3-SAT cannot be solved in subexponential time. In October 2026, OpenAI and Anthropic independently released claimed disproofs of ETH, each providing a subexponential-time algorithm. The problem is to simplify these proofs.
 
 ## Desired outcome
 

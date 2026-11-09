@@ -1,22 +1,27 @@
 # 33 · The plane is not 5-colorable
 
 - **Status:** Proved in an OpenAI preprint dated 23 September 2026 (released 6 October 2026), not yet refereed; the problem goes back to E. Nelson (1950).
-- **Task:** A simpler, more conceptual proof of the transfer theorem and main result.
+- **Task:** A simpler, more conceptual proof of the transfer theorem and main result, or an independent check of the key lemmas.
 - **Tracks:** Combinatorics · **Area:** Combinatorics, discrete geometry, measure theory
 - **Key reference:** [OpenAI, "The Euclidean plane is not five-colorable", preprint, 23 September 2026](https://github.com/openai/math/blob/main/preprints/The-Euclidean-plane-is-not-five-colorable-September-23-2026/paper.pdf)
 - **Lean:** Official statement; a Lean proof already exists.
+- **See also:** [Problem 93](93-erdos-problem-173-on-congruent-triangles.md)
 
 ## Notes
 
 - The result is a preprint, available only in the OpenAI repository (not on arXiv), and has not been refereed.
+- By de Bruijn–Erdős compactness, some finite unit-distance graph is not 5-colourable; the preprint obtains it only existentially (proof of Corollary 1.5).
 
 ## Description
 
-The Hadwiger–Nelson problem asks how many colors are needed to color the plane so that points at unit distance have different colors. OpenAI recently proved that five colors are insufficient, leaving six or seven as possibilities. An unexpected ingredient is a transfer theorem: a proper k-coloring exists if and only if a measurable k-coloring exists that avoids monochromatic unit-distance pairs almost everywhere. The proposal is to explore this surprising connection and to seek simpler proofs or explanations of the result.
+The Hadwiger–Nelson problem asks how many colors are needed to color the plane so that points at unit distance have different colors. Since 1950 it has been known to be 4, 5, 6 or 7. De Grey (2018) showed it is at least 5. OpenAI recently proved that five colors are insufficient, leaving six or seven as possibilities. An unexpected ingredient is a transfer theorem: a proper k-coloring exists if and only if a measurable k-coloring exists that avoids monochromatic unit-distance pairs almost everywhere. The proposal is to explore this surprising connection and to seek simpler proofs or explanations of the result.
 
 ## Desired outcome
 
-A simpler, more conceptual proof or explanation of the transfer theorem connecting arbitrary and measurable colorings. Ideally, the proof that the plane is not five-colorable would also be simplified, making its key ideas more accessible.
+- An independent human check of the proof’s key lemmas, with any gaps identified.
+- A shorter or more conceptual proof, especially an explanation of the transfer theorem connecting arbitrary and measurable colorings.
+- A Lean formalization, if the existing one is incomplete.
+- An explicit finite 6-chromatic unit-distance graph, which must exist by the de Bruijn–Erdős theorem if the result is true; such a proof would rely more on computers and be less comprehensible than OpenAI’s.
 
 ## The result
 
@@ -49,12 +54,12 @@ Prerequisites: Lebesgue density theorem, Pontryagin duality, basic ergodic theor
 
 ## References
 
-- <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/preprints/The-Euclidean-plane-is-not-five-colorable-September-23-2026/paper.pdf>
-- <https://github.com/openai/math/blob/main/preprints/The-Euclidean-plane-is-not-five-colorable-September-23-2026/paper.pdf>
+- OpenAI, “The Euclidean plane is not five-colorable,” preprint dated 23 September 2026. <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/preprints/The-Euclidean-plane-is-not-five-colorable-September-23-2026/paper.pdf>
+- A. D. N. J. de Grey, “The chromatic number of the plane is at least 5,” Geombinatorics 28 (2018), 18–31. <https://arxiv.org/abs/1804.02385>
+- A. Soifer, *The New Mathematical Coloring Book: Mathematics of Coloring and the Colorful Life of Its Creators*, 2nd ed., Springer, New York (2024). <https://doi.org/10.1007/978-1-0716-3597-1>
 
 Further references:
 
-- A. D. N. J. de Grey, “The chromatic number of the plane is at least 5”, Geombinatorics 28 (2018), 18–31. <https://arxiv.org/abs/1804.02385>
 - K. J. Falconer, “The realization of distances in measurable subsets covering $\mathbb{R}^n$”, J. Combin. Theory Ser. A 31 (1981), 184–189. <https://doi.org/10.1016/0097-3165(81)90014-5>
 - J. Parts, “The chromatic number of the plane is at least 5 – a human-verifiable proof”, Geombinatorics 30 (2020), 77–102. <https://arxiv.org/abs/2010.12661>
 - J. Davies, “Measurable obstructions for unmeasurable colourings” (2026). <https://arxiv.org/abs/2610.12301>

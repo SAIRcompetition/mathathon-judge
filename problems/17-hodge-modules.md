@@ -16,7 +16,7 @@ Hodge modules were introduced by Saito, in connection with the most general form
 
 ## Desired outcome
 
-Visualizations to better understand an existing result.
+Visualizations and expositions to better understand an existing result.
 
 ## The result
 

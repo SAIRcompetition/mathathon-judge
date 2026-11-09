@@ -1,52 +1,51 @@
 # 15 · Kepler's theorem
 
-- **Status:** Proved by T. C. Hales with S. P. Ferguson (announced 1998, published 2005–2006); formal proof completed by the Flyspeck project (2014, published 2017).
-- **Task:** An exposition of part of the proof, or extension to related packings.
-- **Tracks:** Geometry · **Area:** Discrete geometry; sphere packing; computational geometry
+- **Status:** Proved by T. C. Hales with S. P. Ferguson (announced 1998, published 2005–2006) using large computations; formal proof completed by the Flyspeck project (2014, published 2017).
+- **Task:** A proof with less computation or a Viazovska-style proof; or an exposition of part of the proof, or an extension to related packings.
+- **Tracks:** Algebra/Number Theory, Geometry · **Area:** Discrete geometry; sphere packing; computational geometry
 - **Key reference:** [T. Hales et al., A formal proof of the Kepler conjecture, Forum Math. Pi 5 (2017), e2](https://arxiv.org/abs/1501.02155)
 - **Lean:** Official statement.
-- **See also:** [Problem 68](68-simpler-proof-of-the-kepler-conjecture.md)
 
 ## Notes
 
-- Problems 15 and 68 share this theorem and its official Lean statement; 15 asks for an exposition or an extension, 68 for a proof with less computation.
+- The Cohn–Elkies linear programming bound, which settled dimensions 8 and 24, cannot prove the Kepler conjecture: its numerically optimized value in dimension 3 is about 0.7797, and R. Li (Adv. Math., 2024) proved that it stays away from $\pi/\sqrt{18}$.
 
 ## Description
 
-Kepler’s theorem states that the maximum density of a packing of identical spheres in three-dimensional Euclidean space is π/√18. Although proved and formally verified, its proof remains difficult to understand. Can participants develop a clearer exposition of a significant part of the argument, or investigate how its geometric ideas extend to related packing problems? Possible directions include visualizing local density bounds and geometric decompositions, simplifying selected arguments, or exploring analogous questions in higher dimensions or constrained regions.
+Kepler’s theorem states that the maximum density of a packing of identical spheres in three-dimensional Euclidean space is π/√18. Although proved and formally verified, its proof remains difficult to understand. The original proof relies on reducing the problem to a nonlinear optimization problem in ~150 variables. The final solution involved numerically solving around 100,000 auxiliary linear optimization problems. Using modular forms, Maryna Viazovska provided a relatively short proof of the analogous problem in dimension 8 and, with several collaborators, in dimension 24. Can participants develop a clearer exposition of a significant part of the argument, or investigate how its geometric ideas extend to related packing problems? Possible directions include visualizing local density bounds and geometric decompositions, simplifying selected arguments, or exploring analogous questions in higher dimensions or constrained regions.
 
 ## Desired outcome
 
-A novel exposition or an extension to a related packing problem.
+A modified proof of the Kepler conjecture with less reliance on numerical verification (e.g. reduction to a simpler optimization problem) or a structurally simpler proof of the conjecture using different techniques altogether in the spirit of Maryna Viazovska's work in 8 dimensions.
 
 ## The result
 
 The Kepler conjecture: no packing of congruent balls in $\mathbb R^3$ has density greater than that of the face-centred cubic packing,
 $$\delta_3=\frac{\pi}{\sqrt{18}}\approx 0.7405 .$$
-The hexagonal close packing and other layered packings reach the same density. Hales's proof, completed with Ferguson, appeared in Ann. of Math. 162 (2005) and in full in Discrete Comput. Geom. 36 (2006), without complete certification by the referees. The Flyspeck project then verified a revised proof in HOL Light and Isabelle. The official Lean statement defines the density of a packing as the limit superior of the covered fraction of balls about the origin, and states that its supremum over all packings is $\pi/\sqrt{18}$.
+The hexagonal close packing and other layered packings reach the same density. Hales's proof, completed with Ferguson (Ann. of Math. 162, 2005; in full in Discrete Comput. Geom. 36, 2006), reduces the problem to a global optimization in nearly 150 variables settled by large computations; it was published without complete certification by the referees. The Flyspeck project then verified a revised proof in HOL Light and Isabelle.
+
+Dimensions 8 and 24 were solved (Viazovska; Cohn, Kumar, Miller, Radchenko and Viazovska; Ann. of Math. 185, 2017) with the Cohn–Elkies bound: if a Schwartz function $f$ on $\mathbb R^n$ has $f(0)=\hat f(0)>0$, $\hat f\ge 0$ and $f(x)\le 0$ for $|x|\ge r$, then every packing has density
+$$\Delta\le \operatorname{vol}B^n_{r/2}.$$
 
 ## How the known proof works
 
-- A partition of space (Marchal cells; decomposition stars in the original proof) and a cell cluster inequality reduce the problem to a local annulus inequality: for packings $V$ in $\{2\le\|x\|\le 2.52\}$, $\sum_{v\in V}(2.52-\|v\|)/0.52\le 12$, with at most 15 points to consider.
-- By compactness a counterexample can be assumed to have a special ("contravening") form, which gives a tame plane graph (planar hypermap).
-- A computer lists all tame plane graphs up to isomorphism (18 762 in the revised proof's archive).
-- For each graph, linear relaxations of the nonlinear conditions are shown infeasible (43 078 linear programs in the formal proof).
-- Several hundred nonlinear inequalities, split into more than 23 000 cases, are proved by interval arithmetic; their formal verification took about 5000 processor-hours.
+- A partition of space (Marchal cells in the revised proof, decomposition stars in the original) and a cell cluster inequality reduce the problem to a local annulus inequality: for packings $V$ in $\{2\le\|x\|\le 2.52\}$, $\sum_{v\in V}(2.52-\|v\|)/0.52\le 12$, with at most 15 points.
+- By compactness a counterexample can be taken in a special ("contravening") form, which gives a tame plane graph; a computer lists them all (18 762 in the revised proof).
+- For each graph, linear relaxations are shown infeasible (some $10^5$ linear programs in the original proof, 43 078 in the formal proof); several hundred nonlinear inequalities, split into more than 23 000 cases, are proved by interval arithmetic.
+- The many cases come from local maxima close to the global one; Boerdijk's pentagonal prism arrangement needed a separate paper.
 
 ## Background
 
-- Kepler stated the conjecture in 1611; it is part of Hilbert's 18th problem. Thue proved the planar analogue (1892, second proof 1910); L. Fejes Tóth (1953) proposed the first programme aimed at reducing the problem to finitely many variables.
-- Expositions by Hales: "An overview of the Kepler conjecture" (1998) and the book "Dense Sphere Packings: a blueprint for formal proofs" (2012), the revised proof that Flyspeck formalized.
-- The local annulus inequality has also been used to prove Bezdek's strong dodecahedral conjecture and Fejes Tóth's contact conjecture.
-- The sphere packing problem is also solved in dimensions 8 (Viazovska, 2017) and 24 (Cohn, Kumar, Miller, Radchenko and Viazovska, 2017), by a different method (Problem 68).
+- Kepler stated the conjecture in 1611; it is part of Hilbert's 18th problem. L. Fejes Tóth (1953) proposed the first programme aimed at reducing the problem to finitely many variables.
+- Cohn notes that linear programming bounds do not seem sharp in any dimension $n>2$ other than 8 and 24; the three-point bound of Cohn, de Laat and Salmon (2022) gives 0.770271 in dimension 3.
 
 ## Where to start
 
 - [An overview of the Kepler conjecture](https://arxiv.org/abs/math/9811071), T. C. Hales, 1998: history, strategy and why the problem is hard.
-- [A formal proof of the Kepler conjecture](https://arxiv.org/abs/1501.02155), T. Hales et al., 2015: Section 4.2 outlines the revised proof; Sections 5, 7 and 9 describe the three computations.
-- [A revision of the proof of the Kepler conjecture](https://arxiv.org/abs/0902.0350), T. C. Hales et al., 2009: the structure of the original proof and its code, with errata.
+- [A formal proof of the Kepler conjecture](https://arxiv.org/abs/1501.02155), T. Hales et al., 2015: Section 4.2 outlines the revised proof; Sections 5, 7 and 9 the three computations.
+- [A conceptual breakthrough in sphere packing](https://arxiv.org/abs/1611.01685), H. Cohn, 2016: the linear programming bound and Viazovska's construction.
 
-Prerequisites: Euclidean and spherical geometry, Voronoi and Delaunay decompositions, planar graphs, linear programming, interval arithmetic.
+Prerequisites: Voronoi and Delaunay decompositions, planar graphs, linear programming, interval arithmetic; for the Viazovska route, Fourier analysis and modular forms.
 
 ## References
 
@@ -56,10 +55,13 @@ Prerequisites: Euclidean and spherical geometry, Voronoi and Delaunay decomposit
 Further references:
 
 - T. C. Hales, “An overview of the Kepler conjecture,” arXiv:math/9811071 (1998). <https://arxiv.org/abs/math/9811071>
-- T. C. Hales, J. Harrison, S. McLaughlin, T. Nipkow, S. Obua and R. Zumkeller, “A revision of the proof of the Kepler conjecture,” Discrete Comput. Geom. 44 (2010), 1–34. <https://arxiv.org/abs/0902.0350>
-- T. C. Hales, Dense Sphere Packings: A Blueprint for Formal Proofs, London Math. Soc. Lecture Note Series 400, Cambridge University Press (2012). <https://doi.org/10.1017/CBO9781139193894>
-- C. Marchal, “Study of the Kepler's conjecture: the problem of the closest packing,” Math. Z. 267 (2011), 737–765. <https://doi.org/10.1007/s00209-009-0644-2>
+- T. C. Hales, Dense Sphere Packings: A Blueprint for Formal Proofs, London Math. Soc. Lecture Note Series 400, Cambridge University Press (2012): the revised proof. <https://doi.org/10.1017/CBO9781139193894>
 - H. Cohn, “A conceptual breakthrough in sphere packing,” Notices Amer. Math. Soc. 64 (2017), 102–115. <https://arxiv.org/abs/1611.01685>
+- M. Viazovska, “The sphere packing problem in dimension 8,” Annals of Mathematics 185 (2017), 991–1015. <https://arxiv.org/abs/1603.04246>
+- H. Cohn and N. Elkies, “New upper bounds on sphere packings I,” Annals of Mathematics 157 (2003), 689–714. <https://arxiv.org/abs/math/0110009>
+- H. Cohn, A. Kumar, S. D. Miller, D. Radchenko and M. Viazovska, “The sphere packing problem in dimension 24,” Annals of Mathematics 185 (2017), 1017–1033. <https://arxiv.org/abs/1603.06518>
+- R. Li, “Dual linear programming bounds for sphere packing via discrete reductions,” Advances in Mathematics 460 (2024), 110043. <https://arxiv.org/abs/2206.09876>
+- H. Cohn, D. de Laat and A. Salmon, “Three-point bounds for sphere packing,” arXiv:2206.15373 (2022). <https://arxiv.org/abs/2206.15373>
 
 ## Lean
 
@@ -82,7 +84,7 @@ Projects outside the Palomar registry are described as their authors describe th
 
 ### Mathlib
 
-Mathlib has Euclidean space, balls and their volumes (`EuclideanSpace.volume_ball`), Lebesgue measure and `Filter.limsup`, which the official statement uses to define packings and density itself. It has no sphere packings, Voronoi or Delaunay decompositions, face-centred cubic lattice or Kepler theorem.
+Mathlib has Euclidean balls and their volumes (`EuclideanSpace.volume_ball`), the Fourier transform with one-dimensional Poisson summation (`Real.tsum_eq_tsum_fourier_of_rpow_decay`), and modular forms with Eisenstein series (`ModularForm`, `EisensteinSeries`). It has `Filter.limsup`, which the official statement uses to define density, but no sphere packings (the statement defines them), no Voronoi or Delaunay decompositions, no Cohn–Elkies bound and no Kepler theorem.
 
 ---
 

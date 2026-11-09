@@ -2,7 +2,7 @@
 
 - **Status:** Counterexamples to both are claimed in two OpenAI preprints (September 2026), not yet refereed; the conjectures date from Tachikawa (1973) and Auslander–Reiten (1975).
 - **Task:** An accessible exposition of the construction; simpler or more conceptual counterexamples.
-- **Tracks:** Algebra/Number Theory · **Area:** Representation theory of finite-dimensional algebras, homological algebra, category theory
+- **Tracks:** Algebra/Number Theory · **Area:** Representation theory of finite-dimensional algebras, homological algebra, category theory, ring theory
 - **Key reference:** [An explicit counterexample to the Auslander–Reiten conjecture](https://github.com/openai/math/blob/main/preprints/An-explicit-counterexample-to-the-Auslander-Reiten-conjecture-September-23-2026/paper.pdf), OpenAI, preprint, September 23, 2026.
 - **Lean:** Official statement; a Lean proof already exists.
 
@@ -15,9 +15,16 @@
 
 The Auslander-Reiten and the Second Tachikawa conjectures belong to a web of homological conjectures which have strong influence on the development of the representation theory of finite-dimensional algebras for decades. Recently, OpenAI gave an intricate multi-step construction of rather special counterexamples, which are yet neither digested nor canonicalized. This project aims to verify key arguments, understand the underlying mechanisms, and seek simpler, more conceptual constructions. Guiding questions are whether these counterexamples are isolated phenomena or instances of a broader family, and where the mathematical novelty of the AI-generated constructions lies.
 
+Tachikawa's second conjecture: let $A$ be a finite-dimensional self-injective algebra over a field $k$, and let $M$ be a finitely generated $A$-module. If $M$ has no nontrivial self-extensions in any positive degree, that is, if $\mathrm{Ext}^i_A(M,M)=0$ for every $i>0$, then $M$ is projective.
+
 ## Desired outcome
 
 The primary outcome would be a self-contained, accessible exposition of the construction pipeline, verifying key arguments, explaining the fundamental ideas, and identifying precedents in the literature. This account should clarify which ingredients are essential and where simplifications or generalizations are possible. More ambitious goals include finding new, simpler counterexamples and interpreting the constructions through derived noncommutative algebraic geometry.
+
+A further goal is to understand OpenAI's proposed counterexample to Tachikawa's second conjecture from both a ring-theoretic and a categorical perspective:
+
+1. How is the counterexample constructed in terms of the structure of the finite-dimensional self-injective algebra $A$ and the module $M$? What ring-theoretic intuition allows all higher self-extension groups $\mathrm{Ext}^i_A(M,M)$ to vanish while $M$ remains nonprojective?
+2. How does the counterexample look in the stable module category of $A$, where $M$ is an object with no positive-degree self-extensions that is not isomorphic to the zero object?
 
 ## The result
 
