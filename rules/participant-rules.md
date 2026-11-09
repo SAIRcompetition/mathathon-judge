@@ -49,6 +49,7 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
 - **From the list only.** Only problems on the published [problem list](../problems/README.md) are judged.
 - **At most 4 teams per problem.** Places are first come, first served. A problem is full when 4 teams are signed up for it. A full problem cannot be selected until one of its teams switches to another problem.
 - **Switching.** Until the problem selection deadline, you can switch to any problem that is not full. Your old place is released at once.
+- **No problem at the deadline.** If your team has no problem at the problem selection deadline, [TBD].
 
 ## 4. Submission
 
@@ -70,7 +71,7 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
 
 ## 5. Presentation
 
-- **When.** Nov 15, from 12:00 PM to 5:00 PM, in six sessions. Your session, time, and room are announced after the submission deadline.
+- **When.** Nov 15, from 12:00 PM to 5:00 PM, in six sessions. Your session, time, and room are announced after problems are locked (§3).
 - **Length.** At most 20 minutes of presentation, followed by at most 10 minutes of questions (Q&A).
 - **Judges.** Each presentation has 2 to 5 judges, including at least one from your field when possible. They score the presentation and the Q&A, and they may read your report.
 - **Questions to expect:**

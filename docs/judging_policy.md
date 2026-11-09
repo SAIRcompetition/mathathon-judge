@@ -93,7 +93,7 @@ Score each dimension as a whole number from 1 to 5. Justify each score in at lea
 - **Choosing.**
   - Each team is signed up for exactly one problem at a time and may change problems until the problem selection deadline.
   - At most 4 teams may be signed up for the same problem at once.
-- **Lock.** Each team's problem is locked at the problem selection deadline [TBD]. Each team presents, and is judged on, that one problem.
+- **Lock.** Each team's problem is locked at the problem selection deadline [TBD]. Each team presents, and is judged on, that one problem. What happens to a team with no problem at that deadline is [TBD].
 - **What each problem carries.** For judging, each problem on the list carries:
   - a track, if tracks are adopted (Appendix E.1);
   - the judges able to judge it;
@@ -360,7 +360,7 @@ Each shortlisted team has a one-page Evidence Summary. One is available for any 
 | Step | When | What happens |
 |---|---|---|
 | Start | Nov 13, 6:00 PM | The 40-hour working period begins |
-| Problem lock | [TBD] | Problem selection closes; each team's problem is locked |
+| Problem lock | [TBD] | Problem selection closes; each team's problem is locked; judge assignment begins |
 | T0 | Nov 15, 10:00 AM | Submissions freeze |
 | Session 1 | Nov 15, 12:00 PM | Talks and judging begin; the talk schedule and judge assignments are final by then |
 | T1 | Fixed deadline | All LLM evaluations and summaries are in |
@@ -439,3 +439,4 @@ The Caltech organizing team and the faculty advisors decide. Judges first delibe
 | Voting rule | D.3 | Set by the organizers |
 | Judge roster and fallback | C.1 | Confirm before the event |
 | Problem selection deadline | A, D.4 | No later than T0 |
+| Team with no problem at the selection deadline | A | — |

@@ -92,7 +92,7 @@ Each talk's judges must satisfy all of these:
 - no judge with a conflict of interest;
 - judges come from those who chose the problem, wherever possible.
 
-**Timing.** The platform allows assignment only after the submission deadline, which leaves two hours before Session 1. We recommend allowing a draft assignment before the deadline, based on the teams' current problem selections, and finalizing it after the lock. If the platform cannot do this, prepare the draft outside the platform.
+**Timing.** The platform allows assignment only after the submission deadline, which leaves two hours before Session 1. Assignment depends only on each team's problem, so we recommend allowing it as soon as problems are locked, at the problem selection deadline [TBD]. If the platform cannot do this, prepare the assignment outside the platform and enter it after the submission deadline.
 
 **Coverage check.** Before the event, check that every problem on the list has been chosen by at least two judges, ideally including one from its field.
 
@@ -125,6 +125,6 @@ The organizer flow can reopen a review or edit a score directly, both during sco
 | Decision | Recommendation |
 |---|---|
 | Who can withdraw a submission | Owner and Admin |
-| Draft judge assignment before the deadline | Yes |
+| Judge assignment from the problem lock, before the submission deadline | Yes |
 | Rules for changing scores | §4.3 |
 | Problem selection deadline | No later than the submission deadline |
