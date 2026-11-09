@@ -50,7 +50,7 @@ Fill in one form for each presentation, on the platform:
 
 - **When to submit.** After each presentation, before scoring closes.
 - **Drafts and edits.** You can save drafts, and you can edit your submitted scores until scoring closes.
-- **Privacy.** Until scoring closes at 3:30 PM, only the organizers see your scores and comments. After that, the organizers and all judges can see them, to decide the winners. They are never published.
+- **Privacy.** Your scores and comments are never published.
 
 ## 4. LLM panel
 
