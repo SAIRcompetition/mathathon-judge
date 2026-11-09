@@ -22,8 +22,8 @@ Problems marked ✓ have an official Lean statement. If you claim to have formal
 | 12 | [Withheld](12-withheld.md) | Algebra/Number Theory, Geometry | — | — |
 | 13 | [Hassett divisors and cubic fourfolds](13-hassett-divisors-and-cubic-fourfolds.md) | Geometry | Not a single theorem | — |
 | 14 | [Positive Laurent phenomenon](14-positive-laurent-phenomenon.md) | Algebra/Number Theory | Proved | ✓ |
-| 15 | [Kepler's theorem](15-keplers-theorem.md) | Geometry | Proved | ✓ |
-| 16 | [A human-checkable four color proof](16-human-checkable-four-color-proof.md) | Combinatorics | Proved | ✓ |
+| 15 | [Kepler's theorem](15-keplers-theorem.md) | Algebra/Number Theory, Geometry | Proved | ✓ |
+| 16 | [The four color theorem](16-four-color-theorem.md) | Combinatorics | Proved | ✓ |
 | 17 | [Hodge modules](17-hodge-modules.md) | Geometry | Proved | — |
 | 18 | [The positive rates conjecture](18-positive-rates-conjecture.md) | Analysis | Disproved | ✓ |
 | 19 | [Beyond Endoscopy for GL(2)](19-beyond-endoscopy-for-gl-2.md) | Algebra/Number Theory | Not a single theorem | — |
@@ -75,18 +75,30 @@ Problems marked ✓ have an official Lean statement. If you claim to have formal
 | 65 | [Nilpotency index of nil algebras](65-nilpotency-index-of-nil-algebras.md) | Algebra/Number Theory | Proved | ✓ |
 | 66 | [The Enflo–Read counterexamples](66-enflo-read-counterexamples.md) | Analysis | Disproved | ✓ |
 | 67 | [Monsky's theorem and Stein's conjecture](67-monskys-theorem-and-steins-conjecture.md) | Combinatorics, Geometry | Partly solved | ✓ |
-| 68 | [A simpler proof of the Kepler conjecture](68-simpler-proof-of-the-kepler-conjecture.md) | Algebra/Number Theory, Geometry | Proved | ✓ |
-| 69 | [Nonparametric Bernstein–von Mises](69-nonparametric-bernstein-von-mises.md) | Analysis | Not a single theorem | — |
-| 70 | [The inverse Galois problem](70-inverse-galois-problem.md) | Geometry | Open | ✓ |
-| 71 | [Monochromatic triangles in the plane](71-monochromatic-triangles-in-the-plane.md) | Geometry | Disproved (preprint) | ✓ |
-| 72 | [The core of approval-based committees](72-core-of-approval-based-committees.md) | Computation/Applied Math | Proved (preprint) | ✓ |
-| 73 | [Cayley's formula](73-cayleys-formula.md) | Combinatorics | Proved | ✓ |
-| 74 | [Lagrange inversion](74-lagrange-inversion.md) | Combinatorics | Proved | ✓ |
-| 75 | [The cap set problem](75-cap-set-problem.md) | Combinatorics | Proved | ✓ |
-| 76 | [Stanley's poset inequality](76-stanleys-poset-inequality.md) | Combinatorics, Computation/Applied Math, Geometry | Proved | ✓ |
-| 77 | [The circulant Hadamard conjecture](77-circulant-hadamard-conjecture.md) | Combinatorics, Algebra/Number Theory | Proved (preprint) | ✓ |
-| 78 | [The strong Macdonald conjecture](78-strong-macdonald-conjecture.md) | Algebra/Number Theory, Geometry | Proved | — |
-| 79 | [Fast matrix multiplication](79-fast-matrix-multiplication.md) | Computation/Applied Math | Proved (preprint) | ✓ |
-| 80 | [The Painlevé paradox](80-painleve-paradox.md) | Analysis, Computation/Applied Math | Not a single theorem | — |
-| 81 | [Surface intersection topology](81-surface-intersection-topology.md) | Geometry, Computation/Applied Math | Not a single theorem | — |
-| 82 | [The four color theorem via algebra](82-four-color-theorem-via-algebra.md) | Combinatorics | Proved | ✓ |
+| 68 | [Nonparametric Bernstein–von Mises](68-nonparametric-bernstein-von-mises.md) | Analysis | Not a single theorem | — |
+| 69 | [The inverse Galois problem](69-inverse-galois-problem.md) | Geometry | Open | ✓ |
+| 70 | [Monochromatic triangles in the plane](70-monochromatic-triangles-in-the-plane.md) | Geometry | Disproved (preprint) | ✓ |
+| 71 | [The core of approval-based committees](71-core-of-approval-based-committees.md) | Computation/Applied Math | Proved (preprint) | ✓ |
+| 72 | [Cayley's formula](72-cayleys-formula.md) | Combinatorics | Proved | ✓ |
+| 73 | [Lagrange inversion](73-lagrange-inversion.md) | Combinatorics | Proved | ✓ |
+| 74 | [The cap set problem](74-cap-set-problem.md) | Combinatorics | Proved | ✓ |
+| 75 | [Stanley's poset inequality](75-stanleys-poset-inequality.md) | Combinatorics, Computation/Applied Math, Geometry | Proved | ✓ |
+| 76 | [The circulant Hadamard conjecture](76-circulant-hadamard-conjecture.md) | Combinatorics, Algebra/Number Theory | Proved (preprint) | ✓ |
+| 77 | [The strong Macdonald conjecture](77-strong-macdonald-conjecture.md) | Algebra/Number Theory, Geometry | Proved | — |
+| 78 | [Fast matrix multiplication](78-fast-matrix-multiplication.md) | Computation/Applied Math | Proved (preprint) | ✓ |
+| 79 | [The Painlevé paradox](79-painleve-paradox.md) | Analysis, Computation/Applied Math | Not a single theorem | — |
+| 80 | [Surface intersection topology](80-surface-intersection-topology.md) | Geometry, Computation/Applied Math | Not a single theorem | — |
+| 81 | [The two-point Chowla conjecture](81-two-point-chowla-conjecture.md) | Algebra/Number Theory | Proved (preprint) | ✓ |
+| 82 | [Kadison's generator problem](82-kadisons-generator-problem.md) | Algebra/Number Theory | Proved (preprint) | ✓ |
+| 83 | [Cannon's conjecture](83-cannons-conjecture.md) | Geometry | Proved (preprint) | ✓ |
+| 84 | [Exotic hyperbolic groups from 2-complexes](84-exotic-hyperbolic-groups-from-2-complexes.md) | Algebra/Number Theory, Geometry | Not a single theorem | — |
+| 85 | [Same Brownian limit, different equations](85-same-brownian-limit-different-equations.md) | Analysis | Not a single theorem | — |
+| 86 | [Ulam's floating body problem](86-ulams-floating-body-problem.md) | Analysis, Geometry | Partly solved | — |
+| 87 | [Nonnesting and noncrossing partitions in type B](87-nonnesting-and-noncrossing-partitions-in-type-b.md) | Combinatorics | Partly solved | — |
+| 88 | [Classification of minimal cones](88-classification-of-minimal-cones.md) | Analysis | Open | — |
+| 89 | [Motivating irrationality and transcendence proofs](89-motivating-irrationality-and-transcendence.md) | Algebra/Number Theory, Analysis | Not a single theorem | — |
+| 90 | [Gieseker moduli on ℙ² without GIT](90-gieseker-moduli-on-p2-without-git.md) | Geometry, Algebra/Number Theory | Proved | — |
+| 91 | [Gittins index with time-varying holding costs](91-gittins-index-with-time-varying-holding-costs.md) | Computation/Applied Math | Partly solved | — |
+| 92 | [Finite Euclidean Ramsey configurations](92-finite-euclidean-ramsey-configurations.md) | Combinatorics | Proved (preprint) | ✓ |
+| 93 | [Erdős Problem #173 on congruent triangles](93-erdos-problem-173-on-congruent-triangles.md) | Combinatorics | Proved (preprint) | ✓ |
+| 94 | [Short gaps between primes](94-short-gaps-between-primes.md) | Algebra/Number Theory | Proved (preprint) | ✓ |
