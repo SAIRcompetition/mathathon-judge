@@ -1,6 +1,6 @@
 # Mathathon Round 1: Judge Rules
 
-In Round 1 you score the presentations of the teams assigned to you, together with their Q&A. Separately, a panel of seven AI models (the LLM panel) reviews each team's written report. The judges decide the winners.
+In Round 1 you score the presentations of the teams assigned to you, together with their Q&A. Separately, a panel of five AI models (the LLM panel) reviews each team's written report. The judges decide the winners.
 
 You take three steps on the SAIR competition platform: registration (§1), problem preferences (§2), and scoring (§3). The LLM panel is described in §4. How to score, with the guidelines and the rubric, is in the [Judge Guidelines](judge-guidelines.md). The participants' rules are in [Participant Rules](participant-rules.md). All times are Pacific Time.
 
@@ -52,6 +52,6 @@ Fill in one form for each presentation, on the platform:
 
 ## 4. LLM panel
 
-- **The panel.** The LLM panel consists of seven AI models: Claude Opus 5.5, GPT 6.1 sol, Gemini 4, DeepSeek 4.1 Flash, Kimi K3.1, Muse Spark (open), and Mistral Large 4.
+- **The panel.** The LLM panel consists of five AI models: Claude Opus 5.5, GPT 6.1 sol, Kimi K3.1, DeepSeek V4.1 Flash 1017, and Mistral Large 4.
 - **What it reads.** Each model reads the problem statement and its references, the team's report without its title block, any supplementary materials, and the results of the automated Lean check if the team submitted a Lean project. The models do not see the slides or the presentation.
 - **What it scores.** The written report, on the same four dimensions and 1–5 scale as you ([Judge Guidelines](judge-guidelines.md)), plus Attribution and Novelty.

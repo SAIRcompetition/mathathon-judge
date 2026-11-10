@@ -14,7 +14,7 @@ This repository holds the Round 1 rules, the judging guidelines and rubric, and 
 | [`rules/overview.md`](rules/overview.md) | The introduction and FAQ from the Mathathon website | Everyone |
 | [`rules/participant-rules.md`](rules/participant-rules.md) | Round 1 rules in four steps: registration, teams, problem selection, and submission (items, deadline, integrity). Then the presentation. How work is judged is in the judge rules. | Participants |
 | [`rules/submission-guidelines.md`](rules/submission-guidelines.md) | How to prepare each item: the report, slides, supplementary materials and repositories, and the Lean project. Requirements and suggestions are kept apart. | Participants |
-| [`rules/judge-rules.md`](rules/judge-rules.md) | Round 1 rules in three steps: registration, problem preferences (with conflicts of interest), and scoring (the scoring form). Then the LLM panel: the seven models that review each report. | Judges |
+| [`rules/judge-rules.md`](rules/judge-rules.md) | Round 1 rules in three steps: registration, problem preferences (with conflicts of interest), and scoring (the scoring form). Then the LLM panel: the five models that review each report. | Judges |
 | [`rules/judge-guidelines.md`](rules/judge-guidelines.md) | How to score: the dimensions and their guidelines, the rubric, notes, and questions to ask. Participants can read it to see how their work is judged. | Judges, participants |
 
 **Problems** (`problems/`)
@@ -29,7 +29,7 @@ The overview reproduces the Mathathon website.
 ## Round 1 judging in brief
 
 - **Human judges** score each presentation and its Q&A on four dimensions: Correctness, Clarity, Motivation, and Interest. Each score is a whole number from 1 to 5, with a comment.
-- **A panel of seven AI models** reviews each written report on the same four dimensions plus Attribution and Novelty.
+- **A panel of five AI models** reviews each written report on the same four dimensions plus Attribution and Novelty.
 - **Lean is optional.** An automated check builds each Lean project and records what each declared result depends on. A Lean result is evidence for Correctness, and only for the claims it verifies.
 - **The judges decide the winners.**
 
