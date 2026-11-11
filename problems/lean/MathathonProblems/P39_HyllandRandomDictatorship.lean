@@ -1,7 +1,7 @@
 /-
-Mathathon Round 1, Problem 39: official Lean statement.
+Mathathon Round 1, Problem 39: official Lean statement, prepared by AI. It may contain errors.
 
-Written for Mathathon; not taken from an existing formalization.
+Written by AI for Mathathon; not taken from an existing formalization.
 It states Hylland's random dictatorship theorem (A. Hylland, 1980, Theorems 1 and 1*; see also
 Dutta, Peters and Sen, Social Choice and Welfare 2007 and erratum 2008) in the form on the problem
 page: with finitely many voters and at least three alternatives, a strategy-proof decision scheme

@@ -1,5 +1,5 @@
 /-
-Mathathon Round 1, Problem 36: official Lean statement.
+Mathathon Round 1, Problem 36: official Lean statement, prepared by AI. It may contain errors.
 
 Source (NoahW314/KostkaNumbers, Apache License 2.0):
   https://github.com/NoahW314/KostkaNumbers/blob/135e49269833f4a760717b30777046d9629240df/KostkaNumbers/HookLength/HookLengthFormula.lean

@@ -1,7 +1,7 @@
 /-
-Mathathon Round 1, Problem 07: official Lean statement.
+Mathathon Round 1, Problem 07: official Lean statement, prepared by AI. It may contain errors.
 
-Written for Mathathon; not taken from an existing formalization.
+Written by AI for Mathathon; not taken from an existing formalization.
 It states that protein folding in the HP model is NP-complete on the square lattice ℤ²
 (Crescenzi, Goldman, Papadimitriou, Piccolboni and Yannakakis, "On the complexity of protein
 folding", J. Comput. Biol. 1998) and on the cubic lattice ℤ³ (Berger and Leighton, "Protein
@@ -51,7 +51,7 @@ def NPVerifier.Accepts (V : NPVerifier) (input : List Bool) : Prop :=
 def InNP (language : List Bool → Prop) : Prop :=
   ∃ V : NPVerifier, ∀ input, language input ↔ V.Accepts input
 
-/-! ### NP-completeness (written for Mathathon) -/
+/-! ### NP-completeness (written by AI for Mathathon) -/
 
 /-- A polynomial-time many-one (Karp) reduction from `L` to `L'`: a map on bit strings computed
 in polynomial time by a finite-alphabet machine, with `L x ↔ L' (f x)`. -/
@@ -65,7 +65,7 @@ structure PolyTimeReduction (L L' : List Bool → Prop) where
 def NPComplete (L : List Bool → Prop) : Prop :=
   InNP L ∧ ∀ L' : List Bool → Prop, InNP L' → Nonempty (PolyTimeReduction L' L)
 
-/-! ### The HP model (written for Mathathon) -/
+/-! ### The HP model (written by AI for Mathathon) -/
 
 /-- Two points of the lattice `ℤ^d` are neighbours: they differ by 1 in one coordinate. -/
 def LatticeAdjacent {d : ℕ} (x y : Fin d → ℤ) : Prop := ∑ i, |x i - y i| = 1

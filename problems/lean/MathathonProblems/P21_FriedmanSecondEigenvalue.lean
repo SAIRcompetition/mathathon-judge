@@ -1,7 +1,7 @@
 /-
-Mathathon Round 1, Problem 21: official Lean statement.
+Mathathon Round 1, Problem 21: official Lean statement, prepared by AI. It may contain errors.
 
-Written for Mathathon; not taken from an existing formalization.
+Written by AI for Mathathon; not taken from an existing formalization.
 It states Friedman's second eigenvalue theorem (J. Friedman, "A proof of Alon's second eigenvalue
 conjecture and related problems", Mem. Amer. Math. Soc. 195 (2008)) in the form of Theorem 1 of
 C. Bordenave, "A new proof of Friedman's second eigenvalue Theorem and its extension to random

@@ -1,5 +1,5 @@
 /-
-Mathathon Round 1, Problem 62: official Lean statement.
+Mathathon Round 1, Problem 62: official Lean statement, prepared by AI. It may contain errors.
 
 Source (google-deepmind/formal-conjectures, Apache License 2.0):
   https://github.com/google-deepmind/formal-conjectures/blob/3f4490479b53386e1c18d2cccf4f1164c16655ca/FormalConjectures/Wikipedia/BoundedBurnsideProblem.lean

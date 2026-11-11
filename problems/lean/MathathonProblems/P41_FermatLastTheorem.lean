@@ -1,5 +1,5 @@
 /-
-Mathathon Round 1, Problem 41: official Lean statement.
+Mathathon Round 1, Problem 41: official Lean statement, prepared by AI. It may contain errors.
 
 Source (Mathlib v4.35.0, Apache License 2.0): the definition `FermatLastTheorem` in
   https://github.com/leanprover-community/mathlib4/blob/v4.35.0/Mathlib/NumberTheory/FLT/Basic.lean

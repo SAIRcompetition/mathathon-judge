@@ -1,5 +1,5 @@
 /-
-Mathathon Round 1, Problem 94: official Lean statement.
+Mathathon Round 1, Problem 94: official Lean statement, prepared by AI. It may contain errors.
 
 Source (openai/PrimeGaps186, Apache License 2.0):
   https://github.com/openai/PrimeGaps186/blob/61340d0b74163003b32756bb16e91d9209a5e330/Challenge.lean

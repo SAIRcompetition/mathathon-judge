@@ -1,7 +1,7 @@
 /-
-Mathathon Round 1, Problem 47: official Lean statement.
+Mathathon Round 1, Problem 47: official Lean statement, prepared by AI. It may contain errors.
 
-Written for Mathathon; not taken from an existing formalization.
+Written by AI for Mathathon; not taken from an existing formalization.
 It states the Ajtai–Komlós–Szemerédi theorem (M. Ajtai, J. Komlós, E. Szemerédi, "An
 O(n log n) sorting network", STOC 1983; "Sorting in c log n parallel steps", Combinatorica 3
 (1983)): there is a constant `C` such that for every `n` some comparator network on `n` wires of

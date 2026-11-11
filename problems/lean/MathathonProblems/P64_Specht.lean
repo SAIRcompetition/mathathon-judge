@@ -1,7 +1,7 @@
 /-
-Mathathon Round 1, Problem 64: official Lean statement.
+Mathathon Round 1, Problem 64: official Lean statement, prepared by AI. It may contain errors.
 
-Written for Mathathon; not taken from an existing formalization.
+Written by AI for Mathathon; not taken from an existing formalization.
 It states the two theorems of the problem page. (a) Over every infinite field of positive
 characteristic there is a T-ideal that is not finitely based (A. Ya. Belov, "Counterexamples
 to the Specht problem", Sb. Math. 191 (2000); see also A. V. Grishin and V. V. Shchigolev,

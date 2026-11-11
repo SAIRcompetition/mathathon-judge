@@ -1,7 +1,7 @@
 /-
-Mathathon Round 1, Problem 03: official Lean statement.
+Mathathon Round 1, Problem 03: official Lean statement, prepared by AI. It may contain errors.
 
-Written for Mathathon; not taken from an existing formalization.
+Written by AI for Mathathon; not taken from an existing formalization.
 It states that the Turing jump is first-order definable in the partial order of the Turing
 degrees (Shore and Slaman, "Defining the Turing jump", Math. Res. Lett. 6 (1999)): one formula
 `φ(x, y)` in the language of partial orders, without parameters, holds of two degrees `a, b`

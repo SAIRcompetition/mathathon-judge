@@ -1,7 +1,7 @@
 /-
-Mathathon Round 1, Problem 27: official Lean statement.
+Mathathon Round 1, Problem 27: official Lean statement, prepared by AI. It may contain errors.
 
-Written for Mathathon; not taken from an existing formalization.
+Written by AI for Mathathon; not taken from an existing formalization.
 It states the algebraic half of desired outcome (a): the category of crossed modules is
 equivalent to the category of cat¹-groups (R. Brown and C. B. Spencer, "G-groupoids, crossed
 modules and the fundamental groupoid of a topological group", Indag. Math. 38 (1976);

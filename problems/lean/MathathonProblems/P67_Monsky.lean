@@ -1,5 +1,5 @@
 /-
-Mathathon Round 1, Problem 67: official Lean statement.
+Mathathon Round 1, Problem 67: official Lean statement, prepared by AI. It may contain errors.
 
 Source (dhyan-aranha/Monsky, Apache License 2.0):
   https://github.com/dhyan-aranha/Monsky/blob/355f153f9007dbbbd0c2eed127dc194a5c1ef10f/Monsky/main_statement.lean

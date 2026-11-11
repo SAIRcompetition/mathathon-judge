@@ -2,7 +2,7 @@
 
 Each team chooses one problem from this list ([Participant Rules §3](../rules/participant-rules.md#3-problem-selection)). At most 4 teams can sign up for each problem.
 
-Each problem's page gives its status, the main result and its background, what to read first, and related Lean formalizations. The Description and Desired outcome on each page are the proposer's text; the other sections were written by the organizers from the literature.
+On each problem's page, everything except the section **From the proposer** is AI-generated and may contain errors. So are the short problem titles, the Status and Lean columns below, and the official Lean statements in [`lean/`](lean/).
 
 Problems marked ✓ have an official Lean statement. If you claim to have formalized the main theorem of such a problem, prove the official statement without changing it ([Submission Guidelines §5](../rules/submission-guidelines.md#5-lean-project-optional)). The statements are in [`lean/`](lean/), a Lean project for Lean v4.35.0 and Mathlib `v4.35.0`. To check them, run `lake exe cache get` and then `lake build` in that folder.
 

@@ -1,7 +1,7 @@
 /-
-Mathathon Round 1, Problem 08: official Lean statement.
+Mathathon Round 1, Problem 08: official Lean statement, prepared by AI. It may contain errors.
 
-Written for Mathathon; not taken from an existing formalization.
+Written by AI for Mathathon; not taken from an existing formalization.
 It states weak factorization for H¹ of the bidisc, Corollary 1.3 of S. H. Ferguson and
 M. T. Lacey, "A characterization of product BMO by commutators", Acta Math. 189 (2002), with the
 remark after it: there is a constant C such that every h in H¹(T²) is a sum Σ fⱼ gⱼ, converging

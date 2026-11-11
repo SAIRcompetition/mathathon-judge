@@ -1,5 +1,5 @@
 /-
-Mathathon Round 1, Problem 25: official Lean statement.
+Mathathon Round 1, Problem 25: official Lean statement, prepared by AI. It may contain errors.
 
 Source (openai/math, Apache License 2.0):
   https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HalvingLines.lean

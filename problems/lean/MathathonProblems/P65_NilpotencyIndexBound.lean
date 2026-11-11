@@ -1,7 +1,7 @@
 /-
-Mathathon Round 1, Problem 65: official Lean statement.
+Mathathon Round 1, Problem 65: official Lean statement, prepared by AI. It may contain errors.
 
-Written for Mathathon; not taken from an existing formalization.
+Written by AI for Mathathon; not taken from an existing formalization.
 It states the subexponential bound on the nilpotency index of nil algebras of bounded index
 (A. Ya. Belov and M. I. Kharitonov, "Subexponential estimates in Shirshov's theorem on
 height", Sb. Math. 203 (2012), Corollary 1.5 of arXiv:1207.2987): if `l, d` are positive
