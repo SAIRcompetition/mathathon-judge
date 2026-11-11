@@ -1,7 +1,7 @@
 /-
-Mathathon Round 1, Problem 63: official Lean statement.
+Mathathon Round 1, Problem 63: official Lean statement, prepared by AI. It may contain errors.
 
-Written for Mathathon; not taken from an existing formalization.
+Written by AI for Mathathon; not taken from an existing formalization.
 It states that there is an infinite finitely presented nilsemigroup, answering a question of
 L. N. Shevrin and M. V. Sapir (I. A. Ivanov-Pogodaev and A. Ya. Kanel-Belov: announced in
 "Construction of infinite finitely presented nilsemigroup", Doklady Mathematics 101 (2020),

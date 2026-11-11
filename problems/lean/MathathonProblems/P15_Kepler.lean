@@ -1,5 +1,5 @@
 /-
-Mathathon Round 1, Problem 15: official Lean statement.
+Mathathon Round 1, Problem 15: official Lean statement, prepared by AI. It may contain errors.
 
 Source (thefundamentaltheor3m/Sphere-Packing-Lean, Apache License 2.0):
   https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/blob/803f1623539ece84a19b2b6805764b8dea9ea6e6/SpherePacking/Basic/SpherePacking.lean
@@ -7,7 +7,7 @@ Adapted: the definitions `SpherePacking`, `SpherePacking.balls`, `SpherePacking.
 `SpherePacking.density` and `SpherePackingConstant` are copied unchanged into
 `namespace Mathathon.P15`, except that the sentence "See also `<TODO>` ..." is left out of the
 docstring of `SpherePackingConstant`. The source's imports are replaced by `import Mathlib`.
-The theorem `kepler` is written for Mathathon, in the same form as the source project's
+The theorem `kepler` is written by AI for Mathathon, in the same form as the source project's
 dimension-8 theorem `SpherePacking.MainTheorem`. It states the Kepler conjecture (T. Hales,
 "A proof of the Kepler conjecture", Ann. of Math. 162 (2005)): the largest density of a packing
 of equal balls in ℝ³ is π/√18. The density of a packing is the limit superior, as R → ∞, of the

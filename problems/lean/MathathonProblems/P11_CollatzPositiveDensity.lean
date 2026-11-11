@@ -1,5 +1,5 @@
 /-
-Mathathon Round 1, Problem 11: official Lean statement.
+Mathathon Round 1, Problem 11: official Lean statement, prepared by AI. It may contain errors.
 
 Source (Lech Mazur, ProofAtlas, Apache License 2.0):
   https://www.proofatlas.ai/sources/positive-density-log-time-collatz/commits/830b9d3f38f2a8da8cd921bf6a9310dd69336fd0/CollatzPositiveDensity.lean

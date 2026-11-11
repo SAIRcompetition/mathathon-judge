@@ -1,5 +1,5 @@
 /-
-Mathathon Round 1, Problem 04: official Lean statement.
+Mathathon Round 1, Problem 04: official Lean statement, prepared by AI. It may contain errors.
 
 Source (openai/math, Apache License 2.0):
   https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/Universal/Congruence.lean
@@ -7,7 +7,7 @@ Adapted: the definitions `Algebra`, `Compatible`, `Congruence` (with its `Partia
 instance) and `Representable` are copied unchanged, with their docstrings, into
 `namespace Mathathon.P04`. The same definitions appear in the source's statement file
 `lean/ComparatorChallenges/FiniteCongruenceGraph.lean`, whose theorem is only the
-colored-graph criterion. The theorem `exists_not_representable` is written for Mathathon.
+colored-graph criterion. The theorem `exists_not_representable` is written by AI for Mathathon.
 It states the main result of OpenAI, "A negative solution to the finite lattice
 representation problem" (2026): there is a finite nonempty lattice that is not isomorphic to
 the congruence lattice of any finite nonempty algebra of finite signature. The hypothesis

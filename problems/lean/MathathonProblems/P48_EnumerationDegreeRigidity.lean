@@ -1,7 +1,7 @@
 /-
-Mathathon Round 1, Problem 48: official Lean statement.
+Mathathon Round 1, Problem 48: official Lean statement, prepared by AI. It may contain errors.
 
-Written for Mathathon; not taken from an existing formalization.
+Written by AI for Mathathon; not taken from an existing formalization.
 It states that the enumeration degrees are rigid: the partial order (D_e, ≤) has no
 automorphism other than the identity (a consequence of the rigidity of the Turing degrees and
 the definability of the total degrees in D_e, Cai, Ganchev, Lempp, Miller and Soskova, JAMS 2016).

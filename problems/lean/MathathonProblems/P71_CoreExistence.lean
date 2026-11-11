@@ -1,5 +1,5 @@
 /-
-Mathathon Round 1, Problem 71: official Lean statement.
+Mathathon Round 1, Problem 71: official Lean statement, prepared by AI. It may contain errors.
 
 Source (DominikPeters/ABCVotingLean, MIT License):
   https://github.com/DominikPeters/ABCVotingLean/blob/1cdea847e12f50c9905b045649ada808263fc8ea/ABCVoting/Basic.lean

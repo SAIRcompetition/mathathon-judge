@@ -1,5 +1,5 @@
 /-
-Mathathon Round 1, Problem 93: official Lean statement.
+Mathathon Round 1, Problem 93: official Lean statement, prepared by AI. It may contain errors.
 
 Source (google-deepmind/formal-conjectures, Apache License 2.0):
   https://github.com/google-deepmind/formal-conjectures/blob/7db2ea3b91bfbd0ab620215163e6c488bbb916d5/FormalConjectures/ErdosProblems/173.lean

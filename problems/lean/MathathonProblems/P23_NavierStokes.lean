@@ -1,5 +1,5 @@
 /-
-Mathathon Round 1, Problem 23: official Lean statement.
+Mathathon Round 1, Problem 23: official Lean statement, prepared by AI. It may contain errors.
 
 Source (openai/NavierStokesAndEuler, Apache License 2.0):
   https://github.com/openai/NavierStokesAndEuler/blob/f9e8bc5b38b6e212696e8a30e3e91517af887bbd/ComparatorChallenges/NavierStokes.lean

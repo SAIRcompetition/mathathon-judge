@@ -1,5 +1,5 @@
 /-
-Mathathon Round 1, Problem 74: official Lean statement.
+Mathathon Round 1, Problem 74: official Lean statement, prepared by AI. It may contain errors.
 
 Source (lean-forward/cap_set_problem, Apache License 2.0 as stated in its file headers; Lean 3):
   https://github.com/lean-forward/cap_set_problem/blob/095a2f18f81c551a0053f2e65806de751e438fc4/src/section_13b.lean

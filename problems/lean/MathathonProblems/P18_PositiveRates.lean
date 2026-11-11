@@ -1,7 +1,7 @@
 /-
-Mathathon Round 1, Problem 18: official Lean statement.
+Mathathon Round 1, Problem 18: official Lean statement, prepared by AI. It may contain errors.
 
-Written for Mathathon; not taken from an existing formalization.
+Written by AI for Mathathon; not taken from an existing formalization.
 It states the refutation of the positive rates conjecture (P. Gács, "Reliable cellular automata
 with self-organization", J. Stat. Phys. 103 (2001); see also L. Gray, "A reader's guide to
 P. Gács's 'positive rates' paper", same volume): there is a one-dimensional probabilistic cellular

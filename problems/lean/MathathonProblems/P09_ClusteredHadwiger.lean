@@ -1,7 +1,7 @@
 /-
-Mathathon Round 1, Problem 09: official Lean statement.
+Mathathon Round 1, Problem 09: official Lean statement, prepared by AI. It may contain errors.
 
-Written for Mathathon; not taken from an existing formalization.
+Written by AI for Mathathon; not taken from an existing formalization.
 It states the Clustered Hadwiger theorem (V. Dujmović, L. Esperet, P. Morin, D. R. Wood,
 "Proof of the Clustered Hadwiger Conjecture", FOCS 2023, arXiv:2306.06224, Theorem 1): for
 every `t` there is `c` such that every finite `K_t`-minor-free graph has a `(t - 1)`-colouring

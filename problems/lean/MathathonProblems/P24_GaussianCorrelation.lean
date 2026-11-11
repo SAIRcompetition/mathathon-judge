@@ -1,7 +1,7 @@
 /-
-Mathathon Round 1, Problem 24: official Lean statement.
+Mathathon Round 1, Problem 24: official Lean statement, prepared by AI. It may contain errors.
 
-Written for Mathathon; not taken from an existing formalization.
+Written by AI for Mathathon; not taken from an existing formalization.
 It states the Gaussian correlation inequality (T. Royen, "A simple proof of the Gaussian
 correlation conjecture extended to some multivariate gamma distributions", Far East J. Theor.
 Stat. 48 (2014)), in the form of Theorem 1 of R. Latała and D. Matlak, "Royen's proof of the

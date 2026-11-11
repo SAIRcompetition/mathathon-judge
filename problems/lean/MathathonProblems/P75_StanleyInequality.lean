@@ -1,7 +1,7 @@
 /-
-Mathathon Round 1, Problem 75: official Lean statement.
+Mathathon Round 1, Problem 75: official Lean statement, prepared by AI. It may contain errors.
 
-Written for Mathathon; not taken from an existing formalization.
+Written by AI for Mathathon; not taken from an existing formalization.
 It states Stanley's inequality (R. Stanley, "Two combinatorial applications of the
 Aleksandrov–Fenchel inequalities", J. Combin. Theory Ser. A 31 (1981), Theorem 3.1). A linear
 extension of a finite poset `α` with `n` elements is an order-preserving bijection

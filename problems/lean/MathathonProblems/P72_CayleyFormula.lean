@@ -1,5 +1,5 @@
 /-
-Mathathon Round 1, Problem 72: official Lean statement.
+Mathathon Round 1, Problem 72: official Lean statement, prepared by AI. It may contain errors.
 
 Source (ProofAtlas, Advameg, Inc., Apache License 2.0):
   https://www.proofatlas.ai/sources/cayley-tree-formula/commits/f31d011b2b8860bfc9990007697b773f9bc96831/AtlasKnownTheorems/CayleyTreeFormula/Basic.lean

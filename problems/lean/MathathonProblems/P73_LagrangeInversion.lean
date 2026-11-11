@@ -1,5 +1,5 @@
 /-
-Mathathon Round 1, Problem 73: official Lean statement.
+Mathathon Round 1, Problem 73: official Lean statement, prepared by AI. It may contain errors.
 
 Source (manman4/mathlib4, head of the open Mathlib pull request #43871; Apache License 2.0):
   https://github.com/manman4/mathlib4/blob/21d5273c20a3771ded85855b0f429fdc76c1b080/Mathlib/RingTheory/PowerSeries/LagrangeInversion.lean

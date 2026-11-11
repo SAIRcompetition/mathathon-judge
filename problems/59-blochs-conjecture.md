@@ -1,30 +1,44 @@
 # 59 · Bloch's conjecture
 
-- **Status:** Claimed proved by an OpenAI preprint (September 2026), not yet refereed; known before for non-general-type surfaces (Bloch–Kas–Lieberman 1976) and for many families.
-- **Task:** Check and explain the claimed proof; compare with classical methods.
-- **Tracks:** Geometry · **Area:** Algebraic and complex geometry
-- **Key reference:** [OpenAI, “Bloch's conjecture for surfaces with $p_g=0$” (preprint, 2026)](https://github.com/openai/math/blob/main/preprints/Blochs-Conjecture-for-Surfaces-with-pg-equals-q-equals-0-September-24-2026/paper.pdf)
-- **Lean:** No official statement.
+> Everything on this page except the section **From the proposer** is AI-generated and may contain errors.
 
-## Notes
+## From the proposer
 
-- Other recent preprints also claim proofs: V. Guletskiĭ (arXiv:2512.12451, the case $p_g=q=0$) and K. Banerjee (arXiv:2508.13594, surfaces with $p_g=q=0$, $K^2=9$).
+- **Title:** Digesting openAI's claimed proof of Bloch's conjecture
+- **Area:** Algebraic and complex geometry
+- **Tracks:** Geometry
 
-## Description
+### Description
 
 Bloch's conjecture predicts that for a smooth connected projective complex surface X with geometric genus p_g(X) = 0, the Albanese homomorphism on degree-zero zero-cycles CH_0(X)_{deg=0} -> Alb(X) is an isomorphism.
 
-## Desired outcome
+### Desired outcome
 
 Carefully digest and verify the AI-generated proof of Bloch's conjecture. For example, participants can give an exposition for the main strategy of the proof, and check whether the steps hold rigorously or contain subtle gaps. They can optionally formalize key lemmas in Lean. Participants can compare the approach to classical methods, identify which parts of the proof uses existing techniques, and which parts provides new techniques. Finally, they can provide some comments on whether the new techniques are helpful for proving higher dimensional analogs of Bloch's conjecture beyond surfaces.
 
-## The result
+### References
+
+- For problem and background: Bloch's 'Lectures on Algebraic Cycles'
+- OpenAI's claimed solution: <https://github.com/openai/math/blob/main/preprints/Blochs-Conjecture-for-Surfaces-with-pg-equals-q-equals-0-September-24-2026/paper.pdf>
+
+## AI-generated notes
+
+- **Status:** Claimed proved by an OpenAI preprint (September 2026), not yet refereed; known before for non-general-type surfaces (Bloch–Kas–Lieberman 1976) and for many families.
+- **Task:** Check and explain the claimed proof; compare with classical methods.
+- **Key reference:** [OpenAI, “Bloch's conjecture for surfaces with $p_g=0$” (preprint, 2026)](https://github.com/openai/math/blob/main/preprints/Blochs-Conjecture-for-Surfaces-with-pg-equals-q-equals-0-September-24-2026/paper.pdf)
+- **Lean:** No official statement.
+
+### Notes
+
+- Other recent preprints also claim proofs: V. Guletskiĭ (arXiv:2512.12451, the case $p_g=q=0$) and K. Banerjee (arXiv:2508.13594, surfaces with $p_g=q=0$, $K^2=9$).
+
+### The result
 
 Let $S$ be a smooth connected projective complex surface with $p_g(S)=h^0(\omega_S)=0$, and $\mathrm{CH}_0(S)^0$ the group of degree-zero zero-cycles modulo rational equivalence (integral coefficients). Bloch's conjecture: the Albanese map $\mathrm{alb}_S\colon\mathrm{CH}_0(S)^0\to\mathrm{Alb}(S)(\mathbb C)$ is an isomorphism. Mumford (1969) showed that $p_g>0$ makes $\mathrm{CH}_0$ infinite-dimensional; Bloch's conjecture is the converse. For surfaces of general type $p_g=0$ forces $q=0$, so the open case was
 $$p_g=q=0\ \Longrightarrow\ \deg\colon \mathrm{CH}_0(S)\xrightarrow{\ \sim\ }\mathbb Z .$$
 The OpenAI preprint (September 2026) claims this with no minimality, fundamental-group or construction hypothesis, and hence the full conjecture by Bloch–Kas–Lieberman.
 
-## How the known proof works
+### How the known proof works
 
 - Goal: a relation $0=c[\Delta_X]+\Gamma$ in $\mathrm{CH}^2(X\times X)_{\mathbb Q}$ with $c\ne0$ and $\Gamma$ a sum of external products, on a minimal model or a point blow-up $X$; this gives $\mathrm{CH}_0(X)^0\otimes\mathbb Q=0$.
 - The relation comes from torus localization on a Quot scheme of rank-zero quotients of $L_1\oplus L_2$ with fixed determinant, with a derived determinant constraint and obstruction theory (§§3–4).
@@ -32,26 +46,27 @@ The OpenAI preprint (September 2026) claims this with no minimality, fundamental
 - $c\neq0$: for $K^2\le 8$ a lattice class $\alpha$ with $\alpha^2<0$ gives $0=c\alpha^2+\sum(\alpha H)^2$ (§6); for $K^2=9$ a comparison with the Cartwright–Steger surface ($p_g=q=1$) gives $c>0$ (§7).
 - Roitman's torsion theorem and $q=0$ then remove torsion, giving the integral statement.
 
-## Background
+### Background
 
 - Proved cases before 2025: all surfaces not of general type (Bloch–Kas–Lieberman); surfaces rationally dominated by a product of curves (Kimura's finite-dimensional motives); group-action methods (Inose–Mizukami 1979, Barlow 1985, Bauer 2014, Pedrini–Weibel 2016); general Catanese and Barlow surfaces (Voisin, J. Differential Geom. 2014), via families and correspondences.
 - Controlling zero-cycles through relations for the diagonal goes back to Bloch–Srinivas (1983).
 - The preprint also derives that $h(S)_{\mathbb Q}$ is Kimura finite-dimensional with $t_2(S)=0$, and pure Tate when $q=0$.
 - General form (Voisin's Conjecture 0.1): for a surface $X$ and a correspondence $\Gamma\in\mathrm{CH}^2(Y\times X)$ with $[\Gamma]^*=0$ on $H^{2,0}(X)$, $\Gamma_*$ vanishes on the Albanese kernel $\mathrm{CH}_0(Y)_{\rm alb}$.
 
-## Where to start
+### Where to start
 
 - [Bloch's conjecture for Catanese and Barlow surfaces](https://arxiv.org/abs/1210.3935), C. Voisin, 2012: the general form of the conjecture and the known cases in 2012.
 - [Hodge Theory and Complex Algebraic Geometry II](https://doi.org/10.1017/CBO9780511615177), C. Voisin, 2003: chapters “Mumford's theorem and its generalisations” and “The Bloch conjecture and its generalisations”.
 - [Segre classes and Hilbert schemes of points](https://arxiv.org/abs/1507.00688), A. Marian, D. Oprea, R. Pandharipande, 2015: Quot schemes of surfaces and their virtual classes, the setting of the new proof.
+
 Prerequisites: Chow groups and correspondences, surfaces of general type, Hilbert and Quot schemes, virtual fundamental classes and torus localization.
 
-## References
+### References, with links
 
 - Background: S. Bloch, *Lectures on Algebraic Cycles*. <https://doi.org/10.1017/CBO9780511760693>
 - OpenAI's claimed solution: <https://github.com/openai/math/blob/main/preprints/Blochs-Conjecture-for-Surfaces-with-pg-equals-q-equals-0-September-24-2026/paper.pdf>
 
-Further references:
+### Further references
 
 - S. Bloch, A. Kas, D. Lieberman, “Zero cycles on surfaces with p_g = 0,” Compositio Math. 33 (1976), 135–145. <http://www.numdam.org/item/CM_1976__33_2_135_0/>
 - C. Voisin, “Bloch's conjecture for Catanese and Barlow surfaces,” J. Differential Geom. 97 (2014), 149–175. <https://arxiv.org/abs/1210.3935>
@@ -59,16 +74,12 @@ Further references:
 - A. A. Roitman, “The torsion of the group of 0-cycles modulo rational equivalence,” Ann. of Math. 111 (1980), 553–569. <https://doi.org/10.2307/1971109>
 - C. Voisin, *Hodge Theory and Complex Algebraic Geometry II*, Cambridge Univ. Press (2003). <https://doi.org/10.1017/CBO9780511615177>
 
-## Lean
+### Lean
 
-### Official statement
+#### Official statement
 
 This problem has no official Lean statement: a faithful statement needs Chow groups of zero-cycles and the Albanese map, which Mathlib does not have yet.
 
-### Mathlib
+#### Mathlib
 
 Mathlib has algebraic cycles on schemes with a degree map (`AlgebraicGeometry.AlgebraicCycle`, `AlgebraicCycle.degree`), orders of vanishing of rational functions (`AlgebraicGeometry.Scheme.ord`) and sheaf cohomology on sites (`CategoryTheory.Sheaf.H`). It has no rational equivalence or Chow groups, no Albanese variety and no geometric genus of a surface.
-
----
-
-*Description and Desired outcome are the proposer's text. The other sections were written by the organizers from the literature.*

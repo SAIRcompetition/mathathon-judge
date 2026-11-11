@@ -1,7 +1,7 @@
 /-
-Mathathon Round 1, Problem 02: official Lean statement.
+Mathathon Round 1, Problem 02: official Lean statement, prepared by AI. It may contain errors.
 
-Written for Mathathon; not taken from an existing formalization.
+Written by AI for Mathathon; not taken from an existing formalization.
 It states the graph minor theorem (Wagner's conjecture; N. Robertson and P. D. Seymour,
 "Graph Minors. XX. Wagner's conjecture", J. Combin. Theory Ser. B 92 (2004)) for finite simple
 graphs, in two equivalent forms: `minor_wellQuasiOrdered`, the form proved in Graph Minors XX

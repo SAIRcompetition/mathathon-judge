@@ -1,7 +1,7 @@
 /-
-Mathathon Round 1, Problem 14: official Lean statement.
+Mathathon Round 1, Problem 14: official Lean statement, prepared by AI. It may contain errors.
 
-Written for Mathathon; not taken from an existing formalization.
+Written by AI for Mathathon; not taken from an existing formalization.
 It states positivity of the Laurent phenomenon for skew-symmetrizable cluster algebras of
 geometric type (M. Gross, P. Hacking, S. Keel, M. Kontsevich, "Canonical bases for cluster
 algebras", J. Amer. Math. Soc. 31 (2018), Corollary 0.4; the skew-symmetric case is due to

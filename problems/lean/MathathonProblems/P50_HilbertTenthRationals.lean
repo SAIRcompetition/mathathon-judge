@@ -1,7 +1,7 @@
 /-
-Mathathon Round 1, Problem 50: official Lean statement.
+Mathathon Round 1, Problem 50: official Lean statement, prepared by AI. It may contain errors.
 
-Written for Mathathon; not taken from an existing formalization.
+Written by AI for Mathathon; not taken from an existing formalization.
 It states the negative answer to Hilbert's tenth problem over ℚ (OpenAI, "Hilbert's tenth
 problem over the rational numbers", 2026, Theorem 1.1): no algorithm decides whether a
 polynomial with integer coefficients, in any number of variables, has a rational zero.
