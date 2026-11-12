@@ -1,32 +1,13 @@
 # 132 · An Interactive Computational Laboratory for Spatial Stochastic Processes and Scaling Limits
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/132-an-interactive-computational-laboratory-for-spatial.md`](../problems_original/132-an-interactive-computational-laboratory-for-spatial.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Probability, statistical mechanics, and scientific computing
+- **Tracks:** Computation/Applied Mathematics, Analysis
 
-An Interactive Computational Laboratory for Spatial Stochastic Processes and Scaling Limits
-
-### Short description of problem (100 words or less)
+### Description
 
 Modern research in probability studies discrete stochastic systems—such as critical percolation, KPZ random growth models, and determinantal point processes—and their universal continuum scaling limits. However, exploring these systems computationally typically requires writing bespoke simulation code for each model and observable. How can we design a unified, mathematically rigorous web platform where researchers can configure discrete spatial processes, vary parameters and scaling regimes, and interactively inspect both individual trajectories and empirical Monte Carlo distributions of key observables (such as crossing probabilities, height fluctuations, and pair correlation functions)?
-
-### Submitted Area
-
-Probability, statistical mechanics, and scientific computing
-
-### Proposed Tracks
-
-Computation/Applied Mathematics, Analysis
-
-### Reference/source material
-
-1. Geoffrey Grimmett, "Percolation," 2nd ed., Grundlehren der mathematischen Wissenschaften 321, Springer (1999), Chapters 1–2 and 11; alongside M. E. J. Newman and R. M. Ziff, "Fast Monte Carlo algorithm for site or bond percolation," Physical Review E 64 (2001), 016706 (Sections II–III specify the O(N) union-find algorithm for computing crossing probabilities and cluster-size observables across all p simultaneously).
-
-2. Ivan Corwin, "The Kardar–Parisi–Zhang Equation and Universality Class," Random Matrices: Theory and Applications 1 (2012), 1130001 (arXiv:1106.1596). Section 1.1 and Section 2 define corner growth, TASEP, and PNG droplet dynamics, the 1:2:3 KPZ scaling exponents, and limit fluctuation statistics.
-
-3. J. Ben Hough, Manjunath Krishnapur, Yuval Peres, and Bálint Virág, "Determinantal Processes and Independence," Probability Surveys 3 (2006), 206–229 (arXiv:math/0503110). Sections 1–4 establish the spectral projection algorithm for exact sampling of determinantal point processes and define intensity and k-point correlation observables.
 
 ### Desired outcome
 
@@ -40,11 +21,17 @@ We would like participants to build a modular, browser-based simulation and stat
 
 3. Observable & Statistical Inspection: Users select functional observables—such as box-crossing probabilities, largest-cluster volume, interface height profiles, radial pair correlation functions g(r), or nearest-neighbor spacing—and inspect empirical histograms, sample moments, finite-size scaling curves, and overlays against known asymptotic distributions (e.g., Tracy–Widom, Gaussian, or Cardy's formula).
 
+### References
+
+1. Geoffrey Grimmett, "Percolation," 2nd ed., Grundlehren der mathematischen Wissenschaften 321, Springer (1999), Chapters 1–2 and 11; alongside M. E. J. Newman and R. M. Ziff, "Fast Monte Carlo algorithm for site or bond percolation," Physical Review E 64 (2001), 016706 (Sections II–III specify the O(N) union-find algorithm for computing crossing probabilities and cluster-size observables across all p simultaneously).
+
+2. Ivan Corwin, "The Kardar–Parisi–Zhang Equation and Universality Class," Random Matrices: Theory and Applications 1 (2012), 1130001 (arXiv:1106.1596). Section 1.1 and Section 2 define corner growth, TASEP, and PNG droplet dynamics, the 1:2:3 KPZ scaling exponents, and limit fluctuation statistics.
+
+3. J. Ben Hough, Manjunath Krishnapur, Yuval Peres, and Bálint Virág, "Determinantal Processes and Independence," Probability Surveys 3 (2006), 206–229 (arXiv:math/0503110). Sections 1–4 establish the spectral projection algorithm for exact sampling of determinantal point processes and define intensity and k-point correlation observables.
+
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Not a single theorem: a software-design task; the reference curves the platform should overlay come from proved limit theorems (Kesten 1980 and Smirnov 2001 for percolation, Baik–Deift–Johansson 1999 and Johansson 2000 for KPZ growth, Ginibre 1965 and Hough–Krishnapur–Peres–Virág 2006 for determinantal processes).
 - **Task:** A browser-based platform to simulate percolation, random growth and spatial point processes, with single-sample views and Monte Carlo statistics compared against known limit laws.

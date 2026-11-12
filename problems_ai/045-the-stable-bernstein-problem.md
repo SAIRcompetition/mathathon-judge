@@ -1,26 +1,21 @@
 # 45 · The stable Bernstein problem
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/045-the-stable-bernstein-problem.md`](../problems_original/045-the-stable-bernstein-problem.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Differential Geometry / Geometric Analysis
+- **Tracks:** Geometry
 
-The stable Bernstein problem
-
-### Short description of problem (100 words or less)
+### Description
 
 In September 2026, Han Hong, Haizhong Li, and Gaoming Wang proved the last remaining case of the stable Bernstein problem: every smooth, complete, connected stable minimal hypersurface in (\mathbb{R}^7), without boundary and admitting a global unit normal, is a hyperplane. Their proof combines extensive analytic estimates and algebraic verification. The proposed theme is to find an alternative, more conceptual proof, without adding curvature or volume growth assumptions.
 
-### Submitted Area
+### Desired outcome
 
-Differential Geometry / Geometric Analysis
+An alternative proof of the theorem using substantially different geometric or analytic techniques. Ideally, the proof would reveal a geometric mechanism through which stability forces flatness and develop ideas that could also be applied to other geometric rigidity problems.
 
-### Proposed Tracks
+Proofs that are conceptually quite different, in lower dimensions, are also very welcome.
 
-Geometry
-
-### Reference/source material
+### References
 
 1. Han Hong, Haizhong Li, and Gaoming Wang. *The stable Bernstein theorem in \(\mathbb{R}^{7}\)* (2026). The recent paper proving the final case of the stable Bernstein problem.  
 [arXiv:2609.15720](https://arxiv.org/abs/2609.15720).
@@ -34,17 +29,9 @@ Geometry
 4. Otis Chodosh and Chao Li. *Stable anisotropic minimal hypersurfaces in \(\mathbb{R}^{4}\)*. Forum of Mathematics, Pi 11 (2023), e3. Includes an alternative proof of the stable Bernstein theorem in \(\mathbb{R}^{4}\) using \(\mu\) bubbles, a conformal change of metric, and techniques from positive scalar curvature.  
 [arXiv:2206.06394](https://arxiv.org/abs/2206.06394).
 
-### Desired outcome
-
-An alternative proof of the theorem using substantially different geometric or analytic techniques. Ideally, the proof would reveal a geometric mechanism through which stability forces flatness and develop ideas that could also be applied to other geometric rigidity problems.
-
-Proofs that are conceptually quite different, in lower dimensions, are also very welcome.
-
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by AI for the earlier problem list, where this was problem 45 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Last case ($\mathbb R^7$) proved by Hong, Li and Wang (arXiv, September 2026), not yet refereed; false in $\mathbb R^8$ and beyond.
 - **Task:** A conceptually different proof that stability forces flatness in $\mathbb R^7$.

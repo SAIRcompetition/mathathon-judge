@@ -1,32 +1,21 @@
 # 55 · A Simpler Counterexample to Hadwiger's Conjecture
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/055-a-simpler-counterexample-to-hadwigers-conjecture.md`](../problems_original/055-a-simpler-counterexample-to-hadwigers-conjecture.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Combinatorics and Graph Theory
+- **Tracks:** Combinatorics
 
-A Simpler Counterexample to Hadwiger's Conjecture
-
-### Short description of problem (100 words or less)
+### Description
 
 Hadwiger's conjecture states that every graph with chromatic number at least k contains a K_k minor. OpenAI released a counterexample in its October 6, 2026 proof dump. The problem is to simplify the counterexample and its proof.
-
-### Submitted Area
-
-Combinatorics and Graph Theory
-
-### Proposed Tracks
-
-Combinatorics
-
-### Reference/source material
-
-https://github.com/openai/math/blob/main/preprints/A-counterexample-to-Hadwigers-conjecture-September-23-2026/paper.pdf
 
 ### Desired outcome
 
 A simpler construction of a counterexample to Hadwiger's conjecture, ideally with a shorter and more elementary proof.
+
+### References
+
+https://github.com/openai/math/blob/main/preprints/A-counterexample-to-Hadwigers-conjecture-September-23-2026/paper.pdf
 
 ### Reference links
 
@@ -35,8 +24,6 @@ A simpler construction of a counterexample to Hadwiger's conjecture, ideally wit
 ## AI-generated notes
 
 <!-- status: Disproved (preprint) -->
-
-> Written by AI for the earlier problem list, where this was problem 55 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Disproved in an OpenAI preprint dated 23 September 2026 (released 6 October 2026), not yet refereed; conjectured by H. Hadwiger (1943).
 - **Task:** A simpler counterexample to Hadwiger's conjecture with a shorter, elementary proof.

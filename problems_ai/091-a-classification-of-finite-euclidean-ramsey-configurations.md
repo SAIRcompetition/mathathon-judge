@@ -1,30 +1,13 @@
 # 91 · A classification of finite Euclidean Ramsey configurations
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/091-a-classification-of-finite-euclidean-ramsey-configurations.md`](../problems_original/091-a-classification-of-finite-euclidean-ramsey-configurations.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Combinatorics / discrete geometry (Euclidean Ramsey theory)
+- **Tracks:** Combinatorics
 
-A classification of finite Euclidean Ramsey configurations
-
-### Short description of problem (100 words or less)
+### Description
 
 A finite set X ⊂ ℝⁿ is Ramsey if for every r, every r-colouring of ℝᵐ (m large) contains a monochromatic congruent copy of X. Erdős et al. (1973) showed Ramsey sets are spherical. Graham conjectured the converse, and Leader, Russell and Walters (2012) conjectured that Ramsey sets are exactly the subtransitive ones. OpenAI's publication claims a complete classification via a tensor condition over the coordinate fields. It follows that every subtransitive set and every set of at most five concyclic points is Ramsey, and that some Ramsey cyclic quadrilaterals are not subtransitive.
-
-### Submitted Area
-
-Combinatorics / discrete geometry (Euclidean Ramsey theory)
-
-### Proposed Tracks
-
-Combinatorics
-
-### Reference/source material
-
-OpenAI, “A classification of finite Euclidean Ramsey configurations”, preprint, 23 September 2026. https://github.com/openai/math/tree/main/preprints/A-classification-of-finite-Euclidean-Ramsey-configurations-September-23-2026 (Lean formalisation: lean/docs/172.md in the same repository, uses "sorry" everywhere)
-P. Erdős, R. L. Graham, P. Montgomery, B. L. Rothschild, J. Spencer, E. G. Straus, “Euclidean Ramsey theorems I”, J. Combin. Theory Ser. A 14 (1973), 341–363.
-I. Leader, P. A. Russell, M. Walters, “Transitive sets in Euclidean Ramsey theory”, J. Combin. Theory Ser. A 119 (2012), 382–396.
 
 ### Desired outcome
 
@@ -33,11 +16,15 @@ I. Leader, P. A. Russell, M. Walters, “Transitive sets in Euclidean Ramsey the
 - An explicit check of the counterexample: a concrete Ramsey cyclic quadrilateral that is not subtransitive, with a proof that it is not.
 - Maybe Lean formalization?
 
+### References
+
+OpenAI, “A classification of finite Euclidean Ramsey configurations”, preprint, 23 September 2026. https://github.com/openai/math/tree/main/preprints/A-classification-of-finite-Euclidean-Ramsey-configurations-September-23-2026 (Lean formalisation: lean/docs/172.md in the same repository, uses "sorry" everywhere)
+P. Erdős, R. L. Graham, P. Montgomery, B. L. Rothschild, J. Spencer, E. G. Straus, “Euclidean Ramsey theorems I”, J. Combin. Theory Ser. A 14 (1973), 341–363.
+I. Leader, P. A. Russell, M. Walters, “Transitive sets in Euclidean Ramsey theory”, J. Combin. Theory Ser. A 119 (2012), 382–396.
+
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by AI for the earlier problem list, where this was problem 92 (commit `1f49cd4`), and carried over; only links that depend on the problem numbering were updated.
 
 - **Status:** Classification claimed in an OpenAI preprint dated 23 September 2026 (released 6 October 2026; the repository states that its manuscripts were produced by an internal OpenAI model), not refereed. The question goes back to Erdős et al. (1973) and is Erdős Problem #174.
 - **Task:** An independent check and geometric reading of the tensor criterion, a self-contained proof of a special case, and an explicit Ramsey cyclic quadrilateral that is not subtransitive.

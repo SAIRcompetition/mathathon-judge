@@ -1,30 +1,13 @@
 # 123 · Schur Number Five
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/123-schur-number-five.md`](../problems_original/123-schur-number-five.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Combinatorics
+- **Tracks:** Combinatorics
 
-Schur Number Five
-
-### Short description of problem (100 words or less)
+### Description
 
 The Schur number S(n) is the largest integer N such that {1,...,N} can be colored with n colors without a monochromatic solution to a+b=c. In 1994, Geoffrey Exoo constructed a coloring to show that S(5) >= 160. In 2017, Marijn Heule proved S(5)=160 by encoding coloring constraints as Boolean formulas, using symmetry to reduce redundant cases, and applying SAT solvers to millions of subproblems. The resulting approximately two-petabyte proof certificate was validated using a formally verified checker.
-
-### Submitted Area
-
-Combinatorics
-
-### Proposed Tracks
-
-Combinatorics
-
-### Reference/source material
-
-1. Marijn J. H. Heule. Schur Number Five. Proceedings of the AAAI Conference on Artificial Intelligence 32(1), 6598–6606, 2018
-2. Exoo, G. (1994). A Lower Bound for Schur Numbers and Multicolor Ramsey Numbers. The Electronic Journal of Combinatorics, 1(1), #R8. https://doi.org/10.37236/1188
-3. De Loera, J., & Wesley, W. (2026). Ramsey Numbers Through the Lenses of Polynomial Ideals and Nullstellensätze. The Electronic Journal of Combinatorics, 33(1), #P1.1. https://doi.org/10.37236/12541
 
 ### Desired outcome
 
@@ -34,11 +17,15 @@ Possible outcomes include one or more of the following:
 - Formalize the correspondence between colorings and their Boolean or polynomial encodings, symmetry reductions, or new mathematical arguments.
 - Create an interactive explanation/visualization of the proof.
 
+### References
+
+1. Marijn J. H. Heule. Schur Number Five. Proceedings of the AAAI Conference on Artificial Intelligence 32(1), 6598–6606, 2018
+2. Exoo, G. (1994). A Lower Bound for Schur Numbers and Multicolor Ramsey Numbers. The Electronic Journal of Combinatorics, 1(1), #R8. https://doi.org/10.37236/1188
+3. De Loera, J., & Wesley, W. (2026). Ramsey Numbers Through the Lenses of Polynomial Ideals and Nullstellensätze. The Electronic Journal of Combinatorics, 33(1), #P1.1. https://doi.org/10.37236/12541
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Proved by M. J. H. Heule (arXiv 2017; AAAI 2018): $S(5)=160$, by massively parallel SAT solving with a two-petabyte proof certified by a checker formally verified in ACL2; the lower bound is G. Exoo's colouring (1994).
 - **Task:** Make parts of the computer proof of $S(5)=160$ understandable or formally checked: lemmas replacing families of cases, Nullstellensatz certificates, verified encodings and symmetry reductions, or an interactive explanation.

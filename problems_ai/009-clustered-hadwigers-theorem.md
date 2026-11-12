@@ -1,14 +1,11 @@
 # 9 · Clustered Hadwiger's theorem
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/009-clustered-hadwigers-theorem.md`](../problems_original/009-clustered-hadwigers-theorem.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Graph Theory
+- **Tracks:** Combinatorics
 
-Clustered Hadwiger's theorem
-
-### Short description of problem (100 words or less)
+### Description
 
 The Clustered Hadwiger's theorem, proved by Dujmović, Esperet, Morin and Wood asserts that for every positive integer $t$, every $K_t$-minor-free graph is $(t−1)$-colorable with monochromatic components of bounded size. 
 
@@ -16,22 +13,14 @@ The proof is complex and relies on Robertson-Seymour Graph Minor Structure theor
 
 The goal is to obtain a short proof of The Clustered Hadwiger's theorem that doesn't rely on Graph Minor Structure theorem.
 
-### Submitted Area
-
-Graph Theory
-
-### Proposed Tracks
-
-Combinatorics
-
-### Reference/source material
-
-The Clustered Hadwiger's theorem: https://arxiv.org/abs/2306.06224
-van den Heuvel and Wood proof: https://arxiv.org/abs/1704.06536
-
 ### Desired outcome
 
 The main goal is to obtain an elegant, self-contained proof of the Clustered Hadwiger's theorem. A weaker outcome would be an improvement  of van den Heuvel and Wood bound, which retains a short proof. A stronger outcome would be a self-contained proof of a strengthening The Clustered Hadwiger's theorem to list-colorings.
+
+### References
+
+The Clustered Hadwiger's theorem: https://arxiv.org/abs/2306.06224
+van den Heuvel and Wood proof: https://arxiv.org/abs/1704.06536
 
 ### Reference links
 
@@ -40,8 +29,6 @@ The main goal is to obtain an elegant, self-contained proof of the Clustered Had
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by AI for the earlier problem list (commit `1f49cd4`) and revised by Claude Opus 5.5 on 2026-11-11 to match the proposer's current text.
 
 - **Status:** Proved by V. Dujmović, L. Esperet, P. Morin and D. R. Wood (FOCS 2023; full version arXiv:2306.06224); asked by Edwards, Kang, Kim, Oum and Seymour (2015).
 - **Task:** A self-contained proof that avoids the Graph Minor Structure Theorem.

@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
 """Rebuild the proposer part of every page in problems_ai/ from problems_original/.
 
-Run after refreshing problems_original/ (python3 problems_original/source/split_sheet.py):
+Run after refreshing problems_original/ (python3 problems_original/split_sheet.py):
 
     python3 problems_ai/refresh_proposer_text.py
 
 For each problem in problems_original/, the page in problems_ai/ with the same Problem ID
-gets a new title line and "From the proposer" section, copied verbatim from the sheet.
-Its "AI-generated notes" section is kept exactly as it is; a new problem gets a placeholder.
+gets a new title line and "From the proposer" section built from the sheet text: title,
+area and tracks with surrounding spaces collapsed, and description, desired outcome and
+references unchanged (checked). Its "AI-generated notes" section is kept exactly as it is;
+a new problem gets a placeholder.
 The problem table in README.md (between the problem-index markers) is rebuilt.
 
 The notes are never changed by this script, so after a substantive change to a problem
@@ -45,32 +47,40 @@ def load_original():
     return out
 
 
+# Long sections of the page: (heading, index of the sheet field), in page order.
+SECTIONS = [("Description", 2), ("Desired outcome", 6), ("References", 5)]
+
+
 def render_page(pid, fname, fields, links, notes):
     parts = [
         f"# {pid} · {ws(fields[1])}\n\n",
-        "> Only the section **From the proposer** comes from the problem sheet; it is copied "
-        f"verbatim from [`problems_original/{fname}`](../problems_original/{fname}). "
-        f"Everything under **AI-generated notes** was written by AI and may contain errors.\n\n",
-        "## From the proposer\n",
+        "## From the proposer\n\n",
+        f"- **Area:** {ws(fields[3])}\n",
+        f"- **Tracks:** {ws(fields[4])}\n",
     ]
-    for name, value in zip(split_sheet.HEADER[1:], fields[1:]):
-        parts.append(f"\n### {name}\n\n{value}\n")
+    for name, i in SECTIONS:
+        parts.append(f"\n### {name}\n\n{fields[i]}\n")
     if links:
         parts.append(f"\n### {split_sheet.LINKS_HEADING}\n\n{links}")
     parts.append("\n" + notes.rstrip("\n") + "\n")
     return "".join(parts)
 
 
-def proposer_fields(page):
-    """The field values of a page's 'From the proposer' section (for checking)."""
+def proposer_ok(page, pid, fields):
+    """Check that a page's title line and 'From the proposer' section match the sheet."""
     # The section ends with the last value followed by exactly one added newline.
     body = page.split("\n## From the proposer\n", 1)[1].split("\n" + NOTES_HEADING, 1)[0]
-    values = []
-    for name in split_sheet.HEADER[1:]:
+    if page.split("\n", 1)[0] != f"# {pid} · {ws(fields[1])}":
+        return False
+    if (f"\n- **Area:** {ws(fields[3])}\n" not in body
+            or f"\n- **Tracks:** {ws(fields[4])}\n" not in body):
+        return False
+    for name, i in SECTIONS:
         start = body.index(f"\n### {name}\n\n") + len(f"\n### {name}\n\n")
         end = body.find("\n\n### ", start)
-        values.append(body[start:end] if end != -1 else body[start:-1])
-    return values
+        if (body[start:end] if end != -1 else body[start:-1]) != fields[i]:
+            return False
+    return True
 
 
 def notes_of(page):
@@ -110,8 +120,8 @@ def write_pages(notes_for):
         old_notes = notes_of(existing[0].read_text(encoding="utf-8")) if existing else None
         notes = notes_for(pid, old_notes)
         page = render_page(pid, fname, fields, links, notes)
-        if proposer_fields(page) != fields[1:]:
-            sys.exit(f"problem {pid}: proposer text would not be verbatim")
+        if not proposer_ok(page, pid, fields):
+            sys.exit(f"problem {pid}: proposer text would not match the sheet")
         for p in existing:
             p.unlink()
         (AI / fname).write_text(page, encoding="utf-8")
@@ -123,7 +133,7 @@ def write_pages(notes_for):
 def main():
     rows = write_pages(lambda pid, old: old if old is not None else PLACEHOLDER)
     missing = [r[0] for r in rows if r[4] == "—"]
-    print(f"rebuilt {len(rows)} pages; proposer text checked verbatim; "
+    print(f"rebuilt {len(rows)} pages; proposer text checked against the sheet; "
           f"pages without notes: {missing or 'none'}")
 
 

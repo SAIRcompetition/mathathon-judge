@@ -1,40 +1,27 @@
 # 25 · Planar Halving Lines
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/025-planar-halving-lines.md`](../problems_original/025-planar-halving-lines.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** combinatorial geometry
+- **Tracks:** Geometry
 
-Planar Halving Lines
-
-### Short description of problem (100 words or less)
+### Description
 
 We are given n points in the plane. A pair of points is a halving pair if its line (a halving line) leaves (n-2)/2 points on either side. How many halving lines are possible?
-
-### Submitted Area
-
-combinatorial geometry
-
-### Proposed Tracks
-
-Geometry
-
-### Reference/source material
-
-1. Tamal Dey's longstanding bound appears in: "Improved Bounds for Planar k -Sets and Related Problems." https://link.springer.com/content/pdf/10.1007/PL00009354.pdf
-2. A recent improvement on the bound from OpenAI: https://github.com/openai/math/blob/main/preprints/A-power-saving-for-planar-halving-lines-September-25-2026/main.pdf
-3. An open problems page describing the problem: https://jeffe.cs.illinois.edu/open/ksets.html
 
 ### Desired outcome
 
 As with many of the results in the recent OpenAI "drop", this improvement on the longstanding bound is difficult to decipher. Historically, arguments giving increasingly tight bounds for the problem have used a dual formulation and argued about arrangements of lines, and the recent proof also appears to do this. At minimum, the new results/techniques should be nicely visualizable. It would be quite a nice project to visualize the new techniques via this dual setup, and understand how precisely the new bound is obtained. Perhaps it might give us new ideas to improve bounds in combinatorial geometry more broadly.
 
+### References
+
+1. Tamal Dey's longstanding bound appears in: "Improved Bounds for Planar k -Sets and Related Problems." https://link.springer.com/content/pdf/10.1007/PL00009354.pdf
+2. A recent improvement on the bound from OpenAI: https://github.com/openai/math/blob/main/preprints/A-power-saving-for-planar-halving-lines-September-25-2026/main.pdf
+3. An open problems page describing the problem: https://jeffe.cs.illinois.edu/open/ksets.html
+
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by AI for the earlier problem list, where this was problem 25 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** The bound $O(n^{4/3-\varepsilon})$, improving Dey's $O(n^{4/3})$ (1998), is proved in a September 2026 preprint by OpenAI that is not yet refereed; the exact order of the maximum number of halving lines remains open.
 - **Task:** A visual explanation of the new bound, in the dual line-arrangement setting.

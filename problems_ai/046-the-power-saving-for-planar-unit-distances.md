@@ -1,38 +1,25 @@
 # 46 · The power saving for planar unit distances
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/046-the-power-saving-for-planar-unit-distances.md`](../problems_original/046-the-power-saving-for-planar-unit-distances.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Combinatorial geometry; arithmetic geometry; discrete geometry
+- **Tracks:** Combinatorics, Geometry
 
-The power saving for planar unit distances
-
-### Short description of problem (100 words or less)
+### Description
 
 OpenAI's 2026 preprint proves $u(n)=O(n^{4/3-\delta})$, the first exponent improvement since Spencer-Szemerédi-Trotter (1984). The proof combines cuttings, an entropy-based prediction lemma, heights at every place of a number field, and sign changes of square roots. Its also a proof by contradiction, and doesn't provide an explicit $\delta$. None of this resembles points and unit circles. Valtr's metric attains $n^{4/3}$, so the proof must use something specifically Euclidean.
-
-### Submitted Area
-
-Combinatorial geometry; arithmetic geometry; discrete geometry
-
-### Proposed Tracks
-
-Combinatorics, Geometry
-
-### Reference/source material
-
-(1) OpenAI, A power saving for planar unit distances (23 September 2026), https://github.com/openai/math/tree/main/preprints/A-power-saving-for-planar-unit-distances-September-23-2026 (2) J. Spencer, E. Szemerédi, W. Trotter, Unit distances in the Euclidean plane, in Graph Theory and Combinatorics (Academic Press, 1984), 293–303. (3) L. Székely, Crossing numbers and hard Erdős problems in discrete geometry, Combin. Probab. Comput. 6 (1997), 353–358.
 
 ### Desired outcome
 
 A human-readable account of the proof's architecture, a clear explanation of exactly where it uses Euclidean structure and fails for Valtr's metric, and an explicit delta in the power saving.
 
+### References
+
+(1) OpenAI, A power saving for planar unit distances (23 September 2026), https://github.com/openai/math/tree/main/preprints/A-power-saving-for-planar-unit-distances-September-23-2026 (2) J. Spencer, E. Szemerédi, W. Trotter, Unit distances in the Euclidean plane, in Graph Theory and Combinatorics (Academic Press, 1984), 293–303. (3) L. Székely, Crossing numbers and hard Erdős problems in discrete geometry, Combin. Probab. Comput. 6 (1997), 353–358.
+
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by AI for the earlier problem list, where this was problem 46 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved in an OpenAI preprint dated 23 September 2026 (released 6 October 2026), not yet refereed; the problem is Erdős's (1946).
 - **Task:** The proof's architecture, its Euclidean input, and an explicit δ.

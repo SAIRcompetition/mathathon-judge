@@ -2,14 +2,12 @@
 
 One page per problem of the Mathathon Round 1 problem sheet (140 problems). Each page has two parts:
 
-- **From the proposer**: the proposer's text, copied verbatim from [`../problems_original/`](../problems_original/), which is an exact copy of the problem sheet.
-- **AI-generated notes**: what is known, how the known proofs work, background, where to start, references with links, and the Lean status. These notes were written by AI and may contain errors.
+- **From the proposer**: the proposer's title, area, tracks, description, desired outcome and references, taken from the sheet without any change to the wording (only the spacing of the title, area and tracks lines is tidied), followed by any hyperlinks attached to the sheet's cells under **Reference links**. [`../problems_original/`](../problems_original/) has the exact copy of the sheet.
+- **AI-generated notes**: what is known, how the known proofs work, background, where to start, references with links, and the Lean status.
 
-Apart from the notes, the AI-generated material in this folder is the Status and Lean columns of the table below and the official Lean statements in [`lean/`](lean/). The title line of each page is the Problem ID and the proposer's title.
+**Everything under "AI-generated notes" was written by AI and may contain errors.** So were the Status and Lean columns of the table below and the official Lean statements in [`lean/`](lean/). Use them as a reference; the proposer's text is authoritative.
 
 ## Where the notes come from
-
-The first line of each notes section says where its notes come from.
 
 - **Carried over** from the earlier problem list (94 problems, in `problems/` at commit `1f49cd4`, 2026-11-10; that folder is no longer tracked): problems 1–93 except those listed below (85 problems). In 81 of them the notes are unchanged; in problems 33, 91, 92 and 93 only links that depend on the problem numbering were updated. For these problems the sheet text differs from the earlier list's copy at most in typo-level details (single characters, escaping, angle brackets around links), so the notes still apply.
 - **Revised** by Claude Opus 5.5 on 2026-11-11 because the sheet text differs substantially from the earlier list's copy: problems 2, 9, 34, 40, 54, 56 and 70.
@@ -33,7 +31,7 @@ To check the statements, run `lake exe cache get` and then `lake build` in `lean
 ## Updating after the sheet changes
 
 1. Download the sheet exports into `problems_original/source/` and run `python3 problems_original/split_sheet.py` (see [`../problems_original/README.md`](../problems_original/README.md)).
-2. Run `python3 problems_ai/refresh_proposer_text.py`. It rewrites the title line and the **From the proposer** section of every page from `../problems_original/`, checks that the copy is verbatim, adds a placeholder page for any new problem and rebuilds the table below. It never changes the notes.
+2. Run `python3 problems_ai/refresh_proposer_text.py`. It rewrites the title line and the **From the proposer** section of every page from `../problems_original/`, checks them against the sheet text, adds a placeholder page for any new problem and rebuilds the table below. It never changes the notes.
 3. Review the notes of every problem whose text changed, and write notes for the placeholders.
 
 ## Problems

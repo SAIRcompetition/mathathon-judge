@@ -1,32 +1,21 @@
 # 129 · Termination of flips for fourfolds
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/129-termination-of-flips-for-fourfolds.md`](../problems_original/129-termination-of-flips-for-fourfolds.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Algebraic geometry
+- **Tracks:** Geometry
 
-Termination of flips for fourfolds
-
-### Short description of problem (100 words or less)
+### Description
 
 Termination of log flips asks whether every sequence of flips for a log canonical pair eventually stops, a fundamental question in birational geometry. OpenAI manuscripts propose termination results for fourfolds. The arguments require further independent verification. Similarly, the proof bring several Hodge theoretic and topological tools that make it very hard to follow from the purely birational geometry perspective. The aim is trying to unify the mathematics used into a single framework and use it to simplify and or improve the proof.
-
-### Submitted Area
-
-Algebraic geometry
-
-### Proposed Tracks
-
-Geometry
-
-### Reference/source material
-
-https://github.com/openai/math/blob/main/preprints/Termination-of-generalized-log-canonical-flips-on-compact-Kahler-fourfolds-October-7-2026/termination-generalized-lc-kahler-fourfolds.pdf
 
 ### Desired outcome
 
 Develop a unified framework that clarifies the proof’s structure. Identify the steps that depend essentially on dimension four, isolate the main obstacles to extending the method to higher dimensions and formulate intermediate problems that could provide further progress.
+
+### References
+
+https://github.com/openai/math/blob/main/preprints/Termination-of-generalized-log-canonical-flips-on-compact-Kahler-fourfolds-October-7-2026/termination-generalized-lc-kahler-fourfolds.pdf
 
 ### Reference links
 
@@ -35,8 +24,6 @@ Develop a unified framework that clarifies the proof’s structure. Identify the
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Claimed in unrefereed OpenAI preprints: termination for projective log canonical fourfolds with rational boundary (24 September 2026) and for generalized log canonical flips on compact Kähler fourfolds (5–7 October 2026); earlier work covered only special cases (terminal, canonical, pseudo-effective, big boundary).
 - **Task:** A unified, more birational account of the termination proof that isolates what depends on dimension four and what blocks higher dimensions.

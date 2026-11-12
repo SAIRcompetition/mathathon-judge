@@ -1,38 +1,25 @@
 # 28 · Singularity Expansion of Scattered Waves
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/028-singularity-expansion-of-scattered-waves.md`](../problems_original/028-singularity-expansion-of-scattered-waves.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** PDE theory
+- **Tracks:** Analysis
 
-Singularity Expansion of Scattered Waves
-
-### Short description of problem (100 words or less)
+### Description
 
 Find a more understandable / elementary proof the expansion of the time domain field scattered from an obstacle. 
-
-### Submitted Area
-
-PDE theory
-
-### Proposed Tracks
-
-Analysis
-
-### Reference/source material
-
-The mathematical theory of scattering resonances by Zworski and Dyaltov. Chapter 7
 
 ### Desired outcome
 
 A more understandable / elementary proof. Something easy enough to practitioners to know how this applies. 
 
+### References
+
+The mathematical theory of scattering resonances by Zworski and Dyaltov. Chapter 7
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by AI for the earlier problem list, where this was problem 28 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved for non-trapping obstacles in odd dimensions (Dyatlov–Zworski Theorem 4.44, by Vainberg's method); a weaker expansion under strong trapping is due to Burq and Zworski (2001).
 - **Task:** A more elementary proof that practitioners can follow and apply.

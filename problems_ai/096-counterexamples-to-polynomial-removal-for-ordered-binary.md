@@ -1,14 +1,11 @@
 # 96 · Counterexamples to polynomial removal for ordered binary matrices
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/096-counterexamples-to-polynomial-removal-for-ordered-binary.md`](../problems_original/096-counterexamples-to-polynomial-removal-for-ordered-binary.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Combinatorics
+- **Tracks:** Combinatorics
 
-Counterexamples to polynomial removal for ordered binary matrices
-
-### Short description of problem (100 words or less)
+### Description
 
 In a manuscript released on October 6, 2026, OpenAI showed that polynomial removal fails for ordered binary matrices, answering a question of Alon, Fischer, and Newman (2007). They had proven that in the unordered case (both rows and columns can be permuted), the answer is yes. Alon and Ben-Eliezer (2020) showed that if you allow only row permutations, the answer is still yes.
 
@@ -16,31 +13,21 @@ OpenAI's counterexample is a 66x66 binary matrix. Five days later, Wang used sim
 
 Both proofs construct complicated host matrices, which we think could be better explained and simplified.
 
-### Submitted Area
-
-Combinatorics
-
-### Proposed Tracks
-
-Combinatorics
-
-### Reference/source material
-
-1. Noga Alon, Eldar Fischer and Ilan Newman, "Efficient Testing of Bipartite Graphs for Forbidden Induced Subgraphs", SIAM J. Comput. 37(3) (2007), 959–976. https://doi.org/10.1137/050627915
-2. OpenAI, "Polynomial removal fails for ordered binary matrices", OpenAI Math Release preprint, dated September 25, 2026, released October 6, 2026, Theorem 1.1. https://github.com/openai/math/blob/main/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/paper.pdf
-3. Zinan Wang, "A Four-by-Four Obstruction to Polynomial Removal for Ordered Binary Matrices", arXiv:2610.15370, October 11, 2026. https://arxiv.org/abs/2610.15370
-
 ### Desired outcome
 
 A short, human-readable proof that Wang's 4x4 matrix is a counterexample, with pictures of the first few host matrices. Connections to similar problems, for example, removal lemmas for ordered graphs or for permutation patterns, whose occurrences are ordered copies of permutation matrices.
 
 Both counterexamples come with Lean formalizations, so what is missing is understanding, not correctness.
 
+### References
+
+1. Noga Alon, Eldar Fischer and Ilan Newman, "Efficient Testing of Bipartite Graphs for Forbidden Induced Subgraphs", SIAM J. Comput. 37(3) (2007), 959–976. https://doi.org/10.1137/050627915
+2. OpenAI, "Polynomial removal fails for ordered binary matrices", OpenAI Math Release preprint, dated September 25, 2026, released October 6, 2026, Theorem 1.1. https://github.com/openai/math/blob/main/preprints/Polynomial-removal-fails-for-ordered-binary-matrices-September-25-2026/paper.pdf
+3. Zinan Wang, "A Four-by-Four Obstruction to Polynomial Removal for Ordered Binary Matrices", arXiv:2610.15370, October 11, 2026. https://arxiv.org/abs/2610.15370
+
 ## AI-generated notes
 
 <!-- status: Disproved (preprint) -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Disproved in an OpenAI preprint dated 25 September 2026 (released 6 October 2026) with a 66×66 pattern, and by Z. Wang (arXiv, 11 October 2026) with a 4×4 pattern; neither has been refereed. The question goes back to Alon, Fischer and Newman (2007).
 - **Task:** A short, human-readable proof that Wang's 4×4 matrix has no polynomial removal bound, pictures of the first host matrices, and connections to removal lemmas for ordered graphs and permutations.

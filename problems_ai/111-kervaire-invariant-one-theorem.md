@@ -1,26 +1,19 @@
 # 111 · Kervaire invariant one theorem
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/111-kervaire-invariant-one-theorem.md`](../problems_original/111-kervaire-invariant-one-theorem.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Algebraic topology, stable homotopy theory
+- **Tracks:** Geometry
 
-Kervaire invariant one theorem
-
-### Short description of problem (100 words or less)
+### Description
 
 Formalize the Hill-Hopkins-Ravenel theorem in Lean: no smooth framed manifold of dimension greater than 126 has Kervaire invariant one. Their proof uses equivariant stable homotopy theory and a large amount of spectral sequence machinery. A related target is the Lin-Wang-Xu proof that dimension 126 does admit such manifolds. Formalizing these arguments would check the topology and computations together and build tools for other stable homotopy problems.
 
-### Submitted Area
+### Desired outcome
 
-Algebraic topology, stable homotopy theory
+Prove the Hill-Hopkins-Ravenel nonexistence theorem in Lean and develop the equivariant spectra and spectral sequence tools it needs. Another goal is to verify the dimension-126 existence proof, including its computational steps.
 
-### Proposed Tracks
-
-Geometry
-
-### Reference/source material
+### References
 
 Hill, Hopkins and Ravenel, On the nonexistence of elements of Kervaire invariant one, Annals of Mathematics 184 (2016), 1-262.
 https://annals.math.princeton.edu/2016/184-1/p01
@@ -28,15 +21,9 @@ https://annals.math.princeton.edu/2016/184-1/p01
 Lin, Wang and Xu, On the Last Kervaire Invariant Problem.
 https://arxiv.org/abs/2412.10879
 
-### Desired outcome
-
-Prove the Hill-Hopkins-Ravenel nonexistence theorem in Lean and develop the equivariant spectra and spectral sequence tools it needs. Another goal is to verify the dimension-126 existence proof, including its computational steps.
-
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Proved: Hill, Hopkins and Ravenel showed that the Kervaire invariant one elements $\theta_j$ exist only for $j\le6$ (announced 2009, Annals 2016), so no framed manifold of dimension greater than 126 has Kervaire invariant one; Lin, Wang and Xu proved that dimension 126 does have one in a preprint (arXiv 2024).
 - **Task:** Formalize the Hill–Hopkins–Ravenel nonexistence theorem in Lean with the equivariant and spectral-sequence tools it needs, or verify the dimension-126 existence proof and its computations.

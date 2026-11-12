@@ -1,40 +1,27 @@
 # 42 · Selmer Groups and Euler Systems
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/042-selmer-groups-and-euler-systems.md`](../problems_original/042-selmer-groups-and-euler-systems.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Algebraic number theory
+- **Tracks:** Algebra/Number Theory
 
-Selmer Groups and Euler Systems
-
-### Short description of problem (100 words or less)
+### Description
 
 The method of Euler systems has been one of the forefront methods to control Selmer groups associated with Galois representations, which are perhaps most famous in the context of the Birch and Swinnerton-Dyer Conjecture. While the idea of “controlling Selmer groups” is quick to state, the construction of Euler systems is notoriously difficult and technical. The aim of this project is to develop interactive exposition of the theory in a particular setting that is rigorous, but aims to provide some intuitive understanding.
-
-### Submitted Area
-
-Algebraic number theory
-
-### Proposed Tracks
-
-Algebra/Number Theory
-
-### Reference/source material
-
-Euler Systems by Karl Rubin, Chapters I-III: https://swc-math.github.io/notes/files/99RubinES.pdf 
-Kolyvagin’s Work on Modular Elliptic Curves by Benedict Gross: https://wstein.org/papers/bib/gross-kolyvagins_work_on_modular_elliptic_curves.pdf 
-
 
 ### Desired outcome
 
 An interactive environment in which learners can easily work examples and ask questions about Euler systems and Selmer groups, possibly in a specific setting (e.g. the Euler system of cyclotomic units and its interaction with ideal class groups).
 
+### References
+
+Euler Systems by Karl Rubin, Chapters I-III: https://swc-math.github.io/notes/files/99RubinES.pdf 
+Kolyvagin’s Work on Modular Elliptic Curves by Benedict Gross: https://wstein.org/papers/bib/gross-kolyvagins_work_on_modular_elliptic_curves.pdf 
+
+
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->
-
-> Written by AI for the earlier problem list, where this was problem 42 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Expository; the Euler system method (Thaine, Kolyvagin, Rubin, Kato) is established theory.
 - **Task:** An interactive environment for examples of Euler systems and Selmer groups.

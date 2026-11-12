@@ -1,33 +1,22 @@
 # 133 · Simpson's conjecture
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/133-simpsons-conjecture.md`](../problems_original/133-simpsons-conjecture.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Category theory
+- **Tracks:** Number Theory/Algebra
 
-Simpson's conjecture
-
-### Short description of problem (100 words or less)
+### Description
 
 Omega-categories are in some ways the most abstract object that we have created in modern mathematics. Weak omega categories are critical objects of study in category theory. We suspect that these are equivalent to strict omega-categories, except for the unit laws. Proving this would allow for a massive simplification of categorical understanding, reducing our characterization of these structures to their simplest form.
-
-### Submitted Area
-
-Category theory
-
-### Proposed Tracks
-
-Number Theory/Algebra
-
-### Reference/source material
-
-https://ncatlab.org/nlab/show/Simpson's+conjecture
-https://arxiv.org/abs/1807.02627
 
 ### Desired outcome
 
 We want to prove the equivalence in Simpson's conjecture. Immediate applications follow as a result of Simon Henry's work, which would allow for a concrete modeling of homotopy types, which provides tools for analyzing higher-dimensional rewriting systems and polygraphs.
+
+### References
+
+https://ncatlab.org/nlab/show/Simpson's+conjecture
+https://arxiv.org/abs/1807.02627
 
 ### Reference links
 
@@ -36,8 +25,6 @@ We want to prove the equivalence in Simpson's conjecture. Immediate applications
 ## AI-generated notes
 
 <!-- status: Partly solved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Versions are proved for one-object 3-groupoids (A. Joyal and J. Kock, 2007) and, in a "regular" form, for ∞-groupoids (S. Henry, 2018 preprint); C. Chanavat and A. Hadzihasanovic claim a semi-strictification of $(\infty,n)$-categories in new models (2025 preprint, not yet refereed); Henry's "general" version is open.
 - **Task:** Prove Simpson's conjecture: every weak ω-category is equivalent to one that is strict except for the unit laws.

@@ -1,32 +1,13 @@
 # 26 · Kuroda’s Class Number Formula and Correcting the Computation of Unit Indices
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/026-kurodas-class-number-formula-and-correcting-the-computation.md`](../problems_original/026-kurodas-class-number-formula-and-correcting-the-computation.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Algebraic and computational number theory.
+- **Tracks:** Algebra/Number Theory
 
-Kuroda’s Class Number Formula and  Correcting the Computation of Unit Indices
-
-### Short description of problem (100 words or less)
+### Description
 
 We will revisit Charkani’s restriction on the possible values of Leopoldt’s unit index in totally real cyclic fields of degree pq. This restriction does not hold in full generality, and we aim to explain why, establish corrected bounds, and examine the consequences for the associated class-number statements. We will also discuss Lemmermeyer’s correction to Walter’s generalization of Kuroda’s class-number formula. The comparison will distinguish two separate issues: accounting for roots of unity in products of subfield unit groups, and understanding why a rational character decomposition need not give an integral decomposition of the unit lattice
-
-### Submitted Area
-
-Algebraic and computational number theory.
-
-### Proposed Tracks
-
-Algebra/Number Theory
-
-### Reference/source material
-
-1. M. E. Charkani, “On Leopoldt’s Index and Relative Class Number of a Real Cyclic Extension,” preprint, 1997.
-
-2. F. Lemmermeyer, “Kuroda’s Class Number Formula,” *Acta Arithmetica* **66**, no. 3 (1994), 245–260.
-
-3. H. W. Leopoldt, “Über Einheitengruppe und Klassenzahl reeller abelscher Zahlkörper,” *Abhandlungen der Deutschen Akademie der Wissenschaften zu Berlin*, Klasse für Mathematik und Allgemeine Naturwissenschaften, Jahrgang 1953, Nr. 2 (1954). Also submitted as a doctoral dissertation, University of Hamburg, 1954. (there is a french review on this)
 
 ### Desired outcome
 
@@ -38,11 +19,17 @@ To put this problem in context, we will discuss Lemmermeyer’s correction to Wa
 
 The intended outcome is a self-contained exposition, supported by examples and reproducible code. We will check the literature carefully, acknowledge the existing work, and distinguish known results from any new contributions. If time permits, we will also investigate which of the indices allowed by the corrected bounds actually occur for number fields.
 
+### References
+
+1. M. E. Charkani, “On Leopoldt’s Index and Relative Class Number of a Real Cyclic Extension,” preprint, 1997.
+
+2. F. Lemmermeyer, “Kuroda’s Class Number Formula,” *Acta Arithmetica* **66**, no. 3 (1994), 245–260.
+
+3. H. W. Leopoldt, “Über Einheitengruppe und Klassenzahl reeller abelscher Zahlkörper,” *Abhandlungen der Deutschen Akademie der Wissenschaften zu Berlin*, Klasse für Mathematik und Allgemeine Naturwissenschaften, Jahrgang 1953, Nr. 2 (1954). Also submitted as a doctoral dissertation, University of Hamburg, 1954. (there is a french review on this)
+
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->
-
-> Written by AI for the earlier problem list, where this was problem 26 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Concerns corrections to published results; Lemmermeyer (1994) showed that Walter's 1979 Kuroda-type formula can fail.
 - **Task:** Corrected unit-index bounds for real cyclic degree-pq fields, with a counterexample.

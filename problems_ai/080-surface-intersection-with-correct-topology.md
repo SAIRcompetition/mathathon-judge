@@ -1,32 +1,21 @@
 # 80 · Surface intersection with correct topology
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/080-surface-intersection-with-correct-topology.md`](../problems_original/080-surface-intersection-with-correct-topology.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Computational geometry, algebraic geometry, numerical analysis
+- **Tracks:** Geometry, Computation/Applied Math
 
-Surface intersection with correct topology
-
-### Short description of problem (100 words or less)
+### Description
 
 Two curved CAD surfaces can intersect in several disconnected curves, including small closed loops. Explain a published method that preserves the topology of the intersection while controlling approximation error. Identify the assumptions needed for its guarantee. Use simple surface families to show how tangency and singular points complicate the problem, and why a small geometric error alone does not establish correct connectivity.
-
-### Submitted Area
-
-Computational geometry, algebraic geometry, numerical analysis
-
-### Proposed Tracks
-
-Geometry, Computation/Applied Math
-
-### Reference/source material
-
-https://www.sciencedirect.com/science/article/pii/S0167839625000214?via%3Dihub
 
 ### Desired outcome
 
 An accessible explanation of the guarantee, an illustrated restricted case, and examples that expose the method’s limits.
+
+### References
+
+https://www.sciencedirect.com/science/article/pii/S0167839625000214?via%3Dihub
 
 ### Reference links
 
@@ -35,8 +24,6 @@ An accessible explanation of the guarantee, an illustrated restricted case, and 
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->
-
-> Written by AI for the earlier problem list, where this was problem 80 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Topology-guaranteed surface–surface intersection is an active CAD topic; the reference is a 2025 paper on curve tracing for it.
 - **Task:** Explain the method's guarantee, illustrate a restricted case, and show its limits.

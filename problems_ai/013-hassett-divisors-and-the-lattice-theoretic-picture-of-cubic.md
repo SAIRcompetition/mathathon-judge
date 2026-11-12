@@ -1,26 +1,19 @@
 # 13 · Hassett divisors and the lattice-theoretic picture of cubic fourfold rationality
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/013-hassett-divisors-and-the-lattice-theoretic-picture-of-cubic.md`](../problems_original/013-hassett-divisors-and-the-lattice-theoretic-picture-of-cubic.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Algebraic geometry (Hodge theory and lattice theory; cubic fourfolds and K3 surfaces)
+- **Tracks:** Geometry
 
-Hassett divisors and the lattice-theoretic picture of cubic fourfold rationality
-
-### Short description of problem (100 words or less)
+### Description
 
 A smooth cubic fourfold is special if it contains an algebraic surface not homologous to a complete intersection. Hassett showed these form a countable family of divisors C_d in the moduli space, nonempty iff d > 6 and d ≡ 0, 2 (mod 6), and that C_d has an associated K3 surface iff d is not divisible by 4, 9, or any odd prime ≡ 2 (mod 3). Intersections of these divisors are governed by lattice embeddings. The problem is to understand this lattice picture and its link to rationality.
 
-### Submitted Area
+### Desired outcome
 
-Algebraic geometry (Hodge theory and lattice theory; cubic fourfolds and K3 surfaces)
+An open-source implementation of the algorithm for the irreducible components of intersections of two Hassett divisors, validated against published cases (for example, five components for C8 ∩ C14 and eight for C8 ∩ C26). Also an interactive visualization of the divisors and their intersections, and a written explainer connecting the lattice picture to K3 associations and rationality questions.
 
-### Proposed Tracks
-
-Geometry
-
-### Reference/source material
+### References
 
 1. B. Hassett, “Special cubic fourfolds,” Compositio Mathematica 120 (2000), 1–23. See Theorem 1.0.1 (the divisors C_d; nonempty iff d > 6 and d ≡ 0, 2 mod 6) and Section 5 (associated K3 surfaces).
 
@@ -28,15 +21,9 @@ Geometry
 
 3. S. Zucker, “The Hodge conjecture for cubic fourfolds,” Compositio Mathematica 34 (1977), 199–209. See Theorem 3.2.
 
-### Desired outcome
-
-An open-source implementation of the algorithm for the irreducible components of intersections of two Hassett divisors, validated against published cases (for example, five components for C8 ∩ C14 and eight for C8 ∩ C26). Also an interactive visualization of the divisors and their intersections, and a written explainer connecting the lattice picture to K3 associations and rationality questions.
-
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->
-
-> Written by AI for the earlier problem list, where this was problem 13 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Hassett's description of the divisors $\mathcal C_d$ is proved (2000); rationality of very general cubic fourfolds is open.
 - **Task:** Open-source code for components of $\mathcal C_{d_1}\cap\mathcal C_{d_2}$, plus visualization and explainer.

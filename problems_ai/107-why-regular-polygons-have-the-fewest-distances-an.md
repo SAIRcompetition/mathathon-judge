@@ -1,30 +1,13 @@
 # 107 · Why regular polygons have the fewest distances: an illustrated guide to Altman's theorem
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/107-why-regular-polygons-have-the-fewest-distances-an.md`](../problems_original/107-why-regular-polygons-have-the-fewest-distances-an.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Discrete geometry (Euclidean plane geometry and extremal combinatorics)
+- **Tracks:** Geometry, Combinatorics
 
-Why regular polygons have the fewest distances: an illustrated guide to Altman's theorem
-
-### Short description of problem (100 words or less)
+### Description
 
 Erdős conjectured, and Altman proved in 1963, that the vertices of a convex n-gon determine at least ⌊n/2⌋ distinct distances; for odd n, only the regular n-gon has exactly that many. For even n ≥ 8, Fishburn showed in 1995 that the extremal polygons are the regular n-gon and the regular (n+1)-gon minus a vertex. The proofs use only elementary geometry but are dense with indices and cases, so few people know why the answers are what they are. The barrier to entry is low: everything needs only high-school geometry.
-
-### Submitted Area
-
-Discrete geometry (Euclidean plane geometry and extremal combinatorics)
-
-### Proposed Tracks
-
-Geometry, Combinatorics
-
-### Reference/source material
-
-1. E. Altman, "On a problem of P. Erdős", Amer. Math. Monthly 70 (1963) 148–157, doi:10.2307/2312883. The Theorem (p. 149), proved with Lemmas 1 and 2 (pp. 149–153); the theorem on regular (2N+1)-gons and Lemma 3 (pp. 153–157).
-2. E. Altman, "Some theorems on convex polygons", Canad. Math. Bull. 15 (1972) 329–340, doi:10.4153/CMB-1972-060-0. A second proof of the bound: §III, Lemma 1 and Theorem 2; §IV, Theorem 3.
-3. P. Fishburn, "Convex polygons with few intervertex distances", Comput. Geom. 5 (1995) 65–93, doi:10.1016/0925-7721(94)00020-V. Theorem 2, the even case, proved in §2 (hexagons) and §3 (n ≥ 8).
 
 ### Desired outcome
 
@@ -32,11 +15,15 @@ An explainer that a strong high-school student can follow, built around three pi
 
 Low barrier to entry: the statements are elementary, the two Altman papers are 10 and 12 pages, and small cases can be explored with a ruler or a few lines of code. Teams without research experience can make real progress in 40 hours, and stronger teams can go on to Fishburn's even case. The topic is visual by nature, which suits interactive explainers and animations.
 
+### References
+
+1. E. Altman, "On a problem of P. Erdős", Amer. Math. Monthly 70 (1963) 148–157, doi:10.2307/2312883. The Theorem (p. 149), proved with Lemmas 1 and 2 (pp. 149–153); the theorem on regular (2N+1)-gons and Lemma 3 (pp. 153–157).
+2. E. Altman, "Some theorems on convex polygons", Canad. Math. Bull. 15 (1972) 329–340, doi:10.4153/CMB-1972-060-0. A second proof of the bound: §III, Lemma 1 and Theorem 2; §IV, Theorem 3.
+3. P. Fishburn, "Convex polygons with few intervertex distances", Comput. Geom. 5 (1995) 65–93, doi:10.1016/0925-7721(94)00020-V. Theorem 2, the even case, proved in §2 (hexagons) and §3 (n ≥ 8).
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Proved: E. Altman (1963) showed that a convex $n$-gon has at least $\lfloor n/2\rfloor$ distinct distances between vertices, with equality for odd $n$ only for the regular $n$-gon; P. Fishburn (1995) characterized the extremal polygons for even $n$.
 - **Task:** An illustrated, interactive explainer of Altman's proof and of the extremal polygons that a strong high-school student can follow.

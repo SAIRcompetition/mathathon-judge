@@ -1,32 +1,21 @@
 # 5 · Classification of finite simple groups
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/005-classification-of-finite-simple-groups.md`](../problems_original/005-classification-of-finite-simple-groups.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Group theory
+- **Tracks:** Algebra/Number Theory
 
-Classification of finite simple groups
-
-### Short description of problem (100 words or less)
+### Description
 
 The CFSG is in principle a known theorem, but the proof is very long and I think partly disputed. The *statement* of the CFSG has been formalized in Lean. Is there an easier way to do it? Can large parts of it be formalized?
-
-### Submitted Area
-
-Group theory
-
-### Proposed Tracks
-
-Algebra/Number Theory
-
-### Reference/source material
-
-https://en.wikipedia.org/wiki/Classification_of_finite_simple_groups
 
 ### Desired outcome
 
 Bring the CFSG in from the cold by formalizing large parts of it in Lean, or by finding a simplification in the proofs of the classification.
+
+### References
+
+https://en.wikipedia.org/wiki/Classification_of_finite_simple_groups
 
 ### Reference links
 
@@ -35,8 +24,6 @@ Bring the CFSG in from the cold by formalizing large parts of it in Lean, or by 
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by AI for the earlier problem list, where this was problem 5 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Regarded as proved around 1980; the last serious gap, the quasithin case, was closed by Aschbacher and Smith (2004).
 - **Task:** Formalize large parts in Lean, or simplify parts of the proof.

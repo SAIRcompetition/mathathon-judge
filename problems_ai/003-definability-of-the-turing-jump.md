@@ -1,38 +1,25 @@
 # 3 · Definability of the Turing jump
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/003-definability-of-the-turing-jump.md`](../problems_original/003-definability-of-the-turing-jump.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Computability theory, mathematical logic
+- **Tracks:** Computation/Applied Math
 
-Definability of the Turing jump
-
-### Short description of problem (100 words or less)
+### Description
 
 Slaman and Shore (1999) proved that the Turing jump is definable in the first order theory of the Turing degrees. However, their proof is complicated and does not give a simple definition of the jump. Is there one? Conversely, how far can we go with negative results: prove that there is no Sigma_n definition for n=1,2,3,...?
-
-### Submitted Area
-
-Computability theory, mathematical logic
-
-### Proposed Tracks
-
-Computation/Applied Math
-
-### Reference/source material
-
-Shore and Slaman, Defining the Turing Jump, Math. Res. Lett. 6 (1999), no. 5-6, 711–722
 
 ### Desired outcome
 
 Use AI to come up with a more explicit definition of the jump in the partial order of the Turing degrees, or prove restrictions on any such definition.
 
+### References
+
+Shore and Slaman, Defining the Turing Jump, Math. Res. Lett. 6 (1999), no. 5-6, 711–722
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by AI for the earlier problem list, where this was problem 3 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Definability proved by R. Shore and T. Slaman (1999); a natural definition and definitions of lower quantifier complexity were posed as open questions by Shore (2007).
 - **Task:** A more explicit definition of the jump, or limits on its complexity.

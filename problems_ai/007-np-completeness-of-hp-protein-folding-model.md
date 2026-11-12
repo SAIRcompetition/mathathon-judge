@@ -1,32 +1,21 @@
 # 7 · NP-completeness of HP protein folding model
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/007-np-completeness-of-hp-protein-folding-model.md`](../problems_original/007-np-completeness-of-hp-protein-folding-model.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Theoretical computer science, mathematical biology
+- **Tracks:** Computation/Applied Math
 
-NP-completeness of HP protein folding model
-
-### Short description of problem (100 words or less)
+### Description
 
 Berger and Leighton (RECOMB 1998) and Papadimitriou et al. proved that optimality of an energy level in the hydrophobic-polar protein folding model has an NP-complete decision problem, in the 2D and 3D lattices. Can their complicated proofs be simplified?
-
-### Submitted Area
-
-Theoretical computer science, mathematical biology
-
-### Proposed Tracks
-
-Computation/Applied Math
-
-### Reference/source material
-
-https://dl.acm.org/doi/abs/10.1145/279069.279080
 
 ### Desired outcome
 
 Ideally a formalized proof in Lean; alternatively, a simplification of the construction(s).
+
+### References
+
+https://dl.acm.org/doi/abs/10.1145/279069.279080
 
 ### Reference links
 
@@ -35,8 +24,6 @@ Ideally a formalized proof in Lean; alternatively, a simplification of the const
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by AI for the earlier problem list, where this was problem 7 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved for the square lattice by Crescenzi, Goldman, Papadimitriou, Piccolboni and Yannakakis (1998) and for the cubic lattice by B. Berger and T. Leighton (1998).
 - **Task:** A formal proof, or simpler hardness reductions, for HP folding.

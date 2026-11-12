@@ -1,40 +1,27 @@
 # 67 · Monsky's theorem and Stein's conjecture on equal-area dissections
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/067-monskys-theorem-and-steins-conjecture-on-equal-area.md`](../problems_original/067-monskys-theorem-and-steins-conjecture-on-equal-area.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Combinatorial geometry; p-adic valuations
+- **Tracks:** Combinatorics, Geometry
 
-Monsky's theorem and Stein's conjecture on equal-area dissections
-
-### Short description of problem (100 words or less)
+### Description
 
 Monsky (1970) proved that a square cannot be cut into an odd number of equal-area triangles, via a 2-adic valuation and a Sperner-type coloring. Stein conjectured the same for centrally symmetric polygons (proved by Monsky, 1990) and for all "special" polygons, where known methods cover only rational coordinates. The proofs are short but non-constructive and unintuitive.
-
-### Submitted Area
-
-Combinatorial geometry; p-adic valuations
-
-### Proposed Tracks
-
-Combinatorics, Geometry
-
-### Reference/source material
-
-1. P. Monsky, "On dividing a square into triangles", Amer. Math. Monthly 77(2) (1970), 161-164.
-2. P. Monsky, "A conjecture of Stein on plane dissections", Math. Z. 205 (1990), 583-592.
-3. M. Aigner, G. M. Ziegler, Proofs from THE BOOK, chapter "One square and an odd number of triangles".
 
 ### Desired outcome
 
 A valuation-light or visual proof and clarity on which special polygons known methods cover.
 
+### References
+
+1. P. Monsky, "On dividing a square into triangles", Amer. Math. Monthly 77(2) (1970), 161-164.
+2. P. Monsky, "A conjecture of Stein on plane dissections", Math. Z. 205 (1990), 583-592.
+3. M. Aigner, G. M. Ziegler, Proofs from THE BOOK, chapter "One square and an odd number of triangles".
+
 ## AI-generated notes
 
 <!-- status: Partly solved -->
-
-> Written by AI for the earlier problem list, where this was problem 67 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Monsky's theorem was proved by P. Monsky (1970); Stein's conjecture (2000) for all special polygons is open, with partial cases proved.
 - **Task:** A valuation-light or visual proof; a map of the special polygons covered.

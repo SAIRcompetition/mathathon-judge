@@ -1,40 +1,27 @@
 # 101 · Unraveling Preiss' Geometry of Measures
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/101-unraveling-preiss-geometry-of-measures.md`](../problems_original/101-unraveling-preiss-geometry-of-measures.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** geometric measure theory; geometric analysis
+- **Tracks:** Geometry, Analysis
 
-Unraveling Preiss' Geometry of Measures
-
-### Short description of problem (100 words or less)
+### Description
 
 Preiss’s rectifiability theorem derives geometric structure from local density information, but its proof is notoriously difficult to navigate. We propose an interactive exposition combining a multiscale proof graph with geometric laboratories. Working through selected arguments, AI agents and human reviewers will reconstruct dependencies, clarify hypotheses, and develop alternative explanations. Initial modules will investigate tangent measures, the Kowalski–Preiss cone, and the passage from one flat tangent to flatness of all tangents under the appropriate hypotheses. The aim is to make the proof’s mechanisms explorable, while preserving precise statements, source attribution, and a transparent record of AI contributions.
-
-### Submitted Area
-
-geometric measure theory; geometric analysis
-
-### Proposed Tracks
-
-Geometry, Analysis
-
-### Reference/source material
-
-David Preiss, “Geometry of measures in (\mathbb R^n): Distribution, rectifiability, and densities,” Annals of Mathematics 125 (1987), 537–643. 
-
-Camillo De Lellis, Rectifiable Sets, Densities, and Tangent Measures, Zürich Lectures in Advanced Mathematics, EMS, 2008
 
 ### Desired outcome
 
 A carefully checked, interactive exposition that helps readers explain why the obvious proof fails and how Preiss repairs it. The initial deliverable will combine an overview graph, a detailed treatment of one central argument, and geometric demonstrations built from matlab (or other software). A reproducible repository will contain code, original explanatory material, source references, and relevant AI records. The two-month continuation will expand and refine the exposition. Alternative proofs or simplifications will also be sought.
 
+### References
+
+David Preiss, “Geometry of measures in (\mathbb R^n): Distribution, rectifiability, and densities,” Annals of Mathematics 125 (1987), 537–643. 
+
+Camillo De Lellis, Rectifiable Sets, Densities, and Tangent Measures, Zürich Lectures in Advanced Mathematics, EMS, 2008
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Proved by D. Preiss (Ann. of Math. 1987), completing work of Besicovitch, Marstrand and Mattila; C. De Lellis (EMS 2008) gives a self-contained account of the main case.
 - **Task:** An interactive, carefully checked exposition of Preiss's proof: a dependency graph, one central argument treated in detail, and geometric demonstrations.

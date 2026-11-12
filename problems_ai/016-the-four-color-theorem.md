@@ -1,28 +1,23 @@
 # 16 · The Four-Color Theorem
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/016-the-four-color-theorem.md`](../problems_original/016-the-four-color-theorem.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Combinatorics; graph theory
+- **Tracks:** Combinatorics
 
-The Four-Color Theorem
-
-### Short description of problem (100 words or less)
+### Description
 
 An arbitrary map can be colored using four colors such that every two regions sharing a boundary receive distinct colors. In graph theory, it is equivalent to say every planar graph has a proper 4-coloring.
 
 The Appel-Haken proof and later Robertson-Sanders-Seymour-Thomas proof rely on large computer-assisted case checks, and Gonthier formalized it in Coq (2005). Understanding and exposition remain hard. Is there a more conceptual route, for example via Kauffman’s or Tait-edge-coloring algebra, or a visualizable reducibility check?
 
-### Submitted Area
+### Desired outcome
 
-Combinatorics; graph theory
+The current proofs reduce the problem to a finite case checking and then use computer assistance to finish the last steps. A preferable outcome would be a human-checkable proof, though it may still be hard even with AI-assistance. AI might be able to help find deep connections with other subjects such as algebra and topology. An illuminating alternative proof strategy will be very good.
 
-### Proposed Tracks
+A readable tour of the unavoidable-set and reducibility machinery with interactive tools, or an independent verification of selected components.
 
-Combinatorics
-
-### Reference/source material
+### References
 
 K. Appel and W. Haken, Every Planar Map Is Four Colorable, A.M.S. Contemp. Math.
 98 (1989).
@@ -35,12 +30,6 @@ The 1976 Proof: https://projecteuclid.org/journals/illinois-journal-of-mathemati
 
 Gonthier's formalization: Gonthier, “Formal proof—the four-color theorem,” Notices of the AMS 55 (2008)
 
-### Desired outcome
-
-The current proofs reduce the problem to a finite case checking and then use computer assistance to finish the last steps. A preferable outcome would be a human-checkable proof, though it may still be hard even with AI-assistance. AI might be able to help find deep connections with other subjects such as algebra and topology. An illuminating alternative proof strategy will be very good.
-
-A readable tour of the unavoidable-set and reducibility machinery with interactive tools, or an independent verification of selected components.
-
 ### Reference links
 
 - <https://thomas.math.gatech.edu/FC/fourcolor.html>
@@ -48,8 +37,6 @@ A readable tour of the unavoidable-set and reducibility machinery with interacti
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by AI for the earlier problem list, where this was problem 16 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by K. Appel and W. Haken (1976, published 1977), again by Robertson, Sanders, Seymour and Thomas (1997); both proofs use computers.
 - **Task:** A human-checkable or conceptual proof; or a readable, interactive tour of unavoidability and reducibility, or independent checks of parts of the proof.

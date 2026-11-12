@@ -1,39 +1,26 @@
 # 127 · Rogers Ramanujan Identity
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/127-rogers-ramanujan-identity.md`](../problems_original/127-rogers-ramanujan-identity.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Combinatorics
+- **Tracks:** Combinatorics
 
-Rogers Ramanujan Identity 
-
-### Short description of problem (100 words or less)
+### Description
 
 The Rogers Ramanujan Identity states that the number of partitions of an integer into parts that are size 1 or 4 modulo 5 is equal to the number of partitions of the integer with the property that the difference between parts is at least 2. This was initially proven using generating functions. In 1981, Garsia and Milne gave a bijective proof, using their so-called Garsia Milne involution principle. However, this bijection is complicated and unnatural.
-
-### Submitted Area
-
-Combinatorics
-
-### Proposed Tracks
-
-Combinatorics
-
-### Reference/source material
-
-https://www.pnas.org/doi/10.1073/pnas.78.4.2026
-https://www.sciencedirect.com/science/article/pii/0097316581900625#article
 
 ### Desired outcome
 
 Find a more natural bijection for the Rogers Ramanujan Identity. 
 
+### References
+
+https://www.pnas.org/doi/10.1073/pnas.78.4.2026
+https://www.sciencedirect.com/science/article/pii/0097316581900625#article
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Proved: L. J. Rogers (1894), rediscovered by Ramanujan and by Schur (1917); the first bijective proof is due to Garsia and Milne (1981), and no direct bijection is known (Pak's survey, 2006).
 - **Task:** A more natural bijection between partitions into parts $\equiv\pm1\pmod 5$ and partitions whose parts differ by at least 2.

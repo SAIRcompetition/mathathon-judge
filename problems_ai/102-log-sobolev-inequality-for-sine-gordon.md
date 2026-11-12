@@ -1,32 +1,21 @@
 # 102 · Log Sobolev inequality for sine Gordon
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/102-log-sobolev-inequality-for-sine-gordon.md`](../problems_original/102-log-sobolev-inequality-for-sine-gordon.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Probability Theory
+- **Tracks:** Analysis
 
-Log Sobolev inequality for sine Gordon
-
-### Short description of problem (100 words or less)
+### Description
 
 Log sobolev inequality is a certain inequality that can be derived for certain classes of probability measures in statistical field theory, for sine Gordon for beta^2 < 6pi this was proven by Bauerschmidt, recently a preprint solving it for the subcritical regime has been uploaded, which, however was complete AI slop, in need of human understanding. 
-
-### Submitted Area
-
-Probability Theory 
-
-### Proposed Tracks
-
-Analysis
-
-### Reference/source material
-
-https://arxiv.org/abs/2611.01403
 
 ### Desired outcome
 
 A good understanding of the proof, which has been also longstanding for several years. 
+
+### References
+
+https://arxiv.org/abs/2611.01403
 
 ### Reference links
 
@@ -35,8 +24,6 @@ A good understanding of the proof, which has been also longstanding for several 
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Proved for $\beta<6\pi$ by R. Bauerschmidt and T. Bodineau (CPAM 2021); the whole subcritical range $0<\beta<8\pi$ is claimed in an unrefereed preprint by A. F. Radu (arXiv, 1 November 2026).
 - **Task:** Understand and explain the proof of the log-Sobolev inequality for sine-Gordon in the full subcritical regime.

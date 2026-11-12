@@ -1,26 +1,21 @@
 # 34 · Monstrous moonshine
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/034-monstrous-moonshine.md`](../problems_original/034-monstrous-moonshine.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Modular forms, theoretical physics
+- **Tracks:** Algebra/Number Theory, Computation/Applied Math
 
-Monstrous moonshine
-
-### Short description of problem (100 words or less)
+### Description
 
 the monstrous moonshine is an incredible connection between the Monster group, the largest sporadic simple group, and modular functions, through the lens of string theory. The existing proof brings together vertex algebras, infinite-dimensional Lie algebras, and the no-ghost theorem.
 
-### Submitted Area
+### Desired outcome
 
-Modular forms, theoretical physics
+a novel proof of a central componen such as a denominator identity, replication relation, or a key step toward the genus-zero property
 
-### Proposed Tracks
+Prove the monstrous moonshine theorem in Lean, including the constructions and identities that drive the proof. Build reusable tools for vertex algebras, the Monster Lie algebra, and its denominator identities.
 
-Algebra/Number Theory, Computation/Applied Math
-
-### Reference/source material
+### References
 
 1. **J. H. Conway and S. P. Norton (1979).** *Monstrous Moonshine*. Bulletin of the London Mathematical Society, 11(3), 308–339. Original formulation of the Monstrous Moonshine conjectures, connecting the Monster sporadic simple group to modular functions of genus zero.
 
@@ -34,17 +29,9 @@ Algebra/Number Theory, Computation/Applied Math
 
    https://math.berkeley.edu/~reb/papers/monster/monster.pdf
 
-### Desired outcome
-
-a novel proof of a central componen such as a denominator identity, replication relation, or a key step toward the genus-zero property
-
-Prove the monstrous moonshine theorem in Lean, including the constructions and identities that drive the proof. Build reusable tools for vertex algebras, the Monster Lie algebra, and its denominator identities.
-
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by AI for the earlier problem list (commit `1f49cd4`) and revised by Claude Opus 5.5 on 2026-11-11 to match the proposer's current text.
 
 - **Status:** Proved by R. E. Borcherds (1992); conjectured by Conway and Norton (1979).
 - **Task:** A new proof of a denominator identity, replication formula or genus-zero step; also a Lean proof of the theorem with reusable libraries for vertex algebras and the Monster Lie algebra.

@@ -1,40 +1,27 @@
 # 51 · Non-uniqueness or uniqueness of Glimm-Lax solutions
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/051-non-uniqueness-or-uniqueness-of-glimm-lax-solutions.md`](../problems_original/051-non-uniqueness-or-uniqueness-of-glimm-lax-solutions.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** fluid dynamics, PDE, compressible fluids
+- **Tracks:** Computation/Applied Math, Analysis
 
-Non-uniqueness or uniqueness of Glimm-Lax solutions
-
-### Short description of problem (100 words or less)
+### Description
 
 In hyperbolic conservation laws, the uniqueness or non-uniqueness of Glimm-Lax solutions has been open since they were first constructed 50 years ago. I have proven in recent work that all Sobolev data is unique AND I have a slop proof which shows uniqueness for ALL small L^\infty solutions outside a meagre set. We would like to understand and simplify our slop proof, and possibly extend it.
-
-### Submitted Area
-
-fluid dynamics, PDE, compressible fluids
-
-### Proposed Tracks
-
-Computation/Applied Math, Analysis
-
-### Reference/source material
-
-https://arxiv.org/abs/2601.01349
-[27] James Glimm and Peter D. Lax. Decay of solutions of systems of nonlinear hyperbolic conservation laws, volume No. 101 of Memoirs of the American Mathematical Society. American Mathematical Society, Providence, RI, 1970.
-Alberto Bressan, Elio Marconi, and Ganesh Vaidya. Uniqueness domains for L∞ solutions of 2 × 2 hyperbolic conservation laws. Arch. Ration. Mech. Anal., 249(6), December 2025.
 
 ### Desired outcome
 
 a human readable version of our slop proof of uniqueness outside a meagre set
 
+### References
+
+https://arxiv.org/abs/2601.01349
+[27] James Glimm and Peter D. Lax. Decay of solutions of systems of nonlinear hyperbolic conservation laws, volume No. 101 of Memoirs of the American Mathematical Society. American Mathematical Society, Providence, RI, 1970.
+Alberto Bressan, Elio Marconi, and Ganesh Vaidya. Uniqueness domains for L∞ solutions of 2 × 2 hyperbolic conservation laws. Arch. Ration. Mech. Anal., 249(6), December 2025.
+
 ## AI-generated notes
 
 <!-- status: Partly solved -->
-
-> Written by AI for the earlier problem list, where this was problem 51 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Open in general; uniqueness for initial data in fractional Sobolev spaces was proved by Cheng, Faile and Krupa (2026), building on Bressan–Marconi–Vaidya (2025).
 - **Task:** A readable version of the draft proof: uniqueness outside a meagre set.

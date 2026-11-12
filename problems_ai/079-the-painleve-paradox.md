@@ -1,32 +1,21 @@
 # 79 · The Painlevé paradox
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/079-the-painleve-paradox.md`](../problems_original/079-the-painleve-paradox.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Nonsmooth dynamics, differential equations
+- **Tracks:** Analysis, Computation/Applied Math
 
-The Painlevé paradox
-
-### Short description of problem (100 words or less)
+### Description
 
 A rigid rod moving on a rough surface can reach conditions where the equations predict either multiple motions or no valid motion. Explain how this occurs under Coulomb friction. Then explain how a compliant contact model changes the result. Develop a clear account of one published result, with diagrams that show the relevant parameter regimes and the assumptions behind the proof.
-
-### Submitted Area
-
-Nonsmooth dynamics, differential equations
-
-### Proposed Tracks
-
-Analysis, Computation/Applied Math
-
-### Reference/source material
-
-https://pmc.ncbi.nlm.nih.gov/articles/PMC5493941/
 
 ### Desired outcome
 
 A visual explanation and a worked proof for a restricted case. A small simulation would support the explanation.
+
+### References
+
+https://pmc.ncbi.nlm.nih.gov/articles/PMC5493941/
 
 ### Reference links
 
@@ -35,8 +24,6 @@ A visual explanation and a worked proof for a restricted case. A small simulatio
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->
-
-> Written by AI for the earlier problem list, where this was problem 79 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** The paradox goes back to Painlevé (1895–1905); Hogan and Kristiansen (2017) proved that with a compliant contact a rod started in a paradoxical state undergoes, in the rigid limit, an impact without collision (or, in part of the indeterminate case, lift-off).
 - **Task:** A visual explanation, a worked restricted-case proof, and a simulation.

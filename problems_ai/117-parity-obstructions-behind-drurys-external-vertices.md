@@ -1,39 +1,26 @@
 # 117 · Parity obstructions behind Drury’s external vertices conjecture: from n = 4 to n = 5
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/117-parity-obstructions-behind-drurys-external-vertices.md`](../problems_original/117-parity-obstructions-behind-drurys-external-vertices.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Linear algebra
+- **Tracks:** Combinatorics
 
-Parity obstructions behind Drury’s external vertices conjecture: from n = 4 to n = 5
-
-### Short description of problem (100 words or less)
+### Description
 
 The Marcus–de Oliveira conjecture places det(A+B), for normal A, B, in the convex hull of the vertex points v(σ) = ∏(a_i − b_σ(i)). Drury’s external vertices conjecture (1996): if all Re v(σ) ≥ 1, then Re v − 1 is a nonnegative combination of the indicators P_IJ(σ) = [σ(I) = J]. It yields the determinantal conjecture for every half-plane excluding the origin. Drury proved n = 4 in 2004 by analysing 210 roots. A new unpublised two-page proof sent to the organization shows the n = 4 case is a parity obstruction: positivity confines the phases of 57 root monomials to (−π/2, π/2), and an odd multiplicative relation whose double is a sum of flat relations cannot exist.
-
-### Submitted Area
-
-Linear algebra
-
-### Proposed Tracks
-
-Combinatorics
-
-### Reference/source material
-
-S. W. Drury, “The determinantal conjecture and Hadamard type inequalities,” Linear Algebra Appl. 246, 279–297 (1996). Sec. 3: the space D_n, the cone Γ, and External Vertices Conjectures I and II; Sec. 4: why EVC implies the determinantal conjecture for half-planes not containing the origin.
-S. W. Drury, “The external vertices conjecture in case n = 4,” Electron. J. Linear Algebra 11, 180–191 (2004). The original proof.
 
 ### Desired outcome
 
 (1) Reformulate the two-page proof as an invariant: define the lattice L of multiplicative relations among the root monomials, its sign character χ, and the flat sublattice F forced by the half-plane hypothesis; prove that nontriviality of χ on the 2-torsion of L/F implies the facet inequality; recompute the n = 4 case in this language, recovering the dodecagon, the minimality of twelve, and the order-three symmetry as structural facts rather than search results. (2) Implement the pipeline for general n: facets of Γ_n, positivity implications of each facet, L, F, χ, torsion search. (3) Run it at n = 5. The target is either a proof of EVC(5), which would be new, or the first facet where the obstruction vanishes, followed by a linear-programming search for a counterexample at that facet. (4) State precisely which half-planes EVC(n) controls and what region of the plane the full conjecture still has to exclude. Deliverables: an explainer readable after a first linear-algebra course, and a repository with the exact-arithmetic verification of the n = 4 proof and the n = 5 computation. No claim about the full n = 4 determinantal conjecture is expected.
 
+### References
+
+S. W. Drury, “The determinantal conjecture and Hadamard type inequalities,” Linear Algebra Appl. 246, 279–297 (1996). Sec. 3: the space D_n, the cone Γ, and External Vertices Conjectures I and II; Sec. 4: why EVC implies the determinantal conjecture for half-planes not containing the origin.
+S. W. Drury, “The external vertices conjecture in case n = 4,” Electron. J. Linear Algebra 11, 180–191 (2004). The original proof.
+
 ## AI-generated notes
 
 <!-- status: Open -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Open: Drury's external vertices conjecture (1996) is known for $n\le3$ and, by a computer-assisted proof, for $n=4$ (Drury, 2004); no result for $n=5$ was found, so it appears to be open, as is the Marcus–de Oliveira determinantal conjecture in general.
 - **Task:** Recast an unpublished two-page proof of the case $n=4$ as a parity (2-torsion) invariant of the multiplicative relations among root monomials, implement it for general $n$, and run it at $n=5$ to prove the conjecture there or find the first facet where the obstruction vanishes.

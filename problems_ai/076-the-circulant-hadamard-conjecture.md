@@ -1,38 +1,25 @@
 # 76 · The circulant Hadamard conjecture
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/076-the-circulant-hadamard-conjecture.md`](../problems_original/076-the-circulant-hadamard-conjecture.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Combinatorics; algebraic number theory
+- **Tracks:** Combinatorics, Algebra/Number Theory
 
-The circulant Hadamard conjecture
-
-### Short description of problem (100 words or less)
+### Description
 
 A real circulant Hadamard matrix has order 1 or 4, which also classifies Barker sequences. This problem about $\pm1$ sequences resisted decades of work. The new 15-page proof reduces to $n=4u^2$, then shows an alternating product of character values is an algebraic integer whose conjugates all have absolute value 1. Kronecker's theorem and analysis finish.
-
-### Submitted Area
-
-Combinatorics; algebraic number theory
-
-### Proposed Tracks
-
-Combinatorics, Algebra/Number Theory
-
-### Reference/source material
-
-(1) OpenAI, The circulant Hadamard conjecture (23 September 2026), https://github.com/openai/math/tree/main/preprints/The-circulant-Hadamard-conjecture-September-23-2026 (2) R. Turyn, Character sums and difference sets, Pacific J. Math. 15 (1965), 319–346. (3) B. Schmidt, Cyclotomic integers and finite geometry, J. AMS 12 (1999), 929–952.
 
 ### Desired outcome
 
 An explanation of where the "black magic" alternating product comes from and how it relates to earlier field-descent methods.
 
+### References
+
+(1) OpenAI, The circulant Hadamard conjecture (23 September 2026), https://github.com/openai/math/tree/main/preprints/The-circulant-Hadamard-conjecture-September-23-2026 (2) R. Turyn, Character sums and difference sets, Pacific J. Math. 15 (1965), 319–346. (3) B. Schmidt, Cyclotomic integers and finite geometry, J. AMS 12 (1999), 929–952.
+
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by AI for the earlier problem list, where this was problem 76 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved in a September 2026 preprint by OpenAI that is not yet refereed; the conjecture is traditionally attributed to H. J. Ryser (1963).
 - **Task:** Where the alternating product comes from, and its link to field descent.
