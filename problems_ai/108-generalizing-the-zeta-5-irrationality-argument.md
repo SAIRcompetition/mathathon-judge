@@ -25,7 +25,7 @@ https://ai.vixra.org/pdf/2609.0080v1.pdf
 - **Status:** Open for $\zeta(7)$: the irrationality of $\zeta(5)$ was proved by A. Fauzan (Zenodo preprint, 17 September 2026, not refereed) and has been formalized in Lean, while an attempted extension of his method to $\zeta(7)$ (P. Anand, Zenodo, September 2026) is marked by its author as containing an error.
 - **Task:** Find out which parts of Fauzan's Hankel-determinant argument extend to $\zeta(7)$ and other odd zeta values, or give a criterion for when the method works.
 - **Key reference:** [A. Fauzan, “ζ(5) is irrational”, Zenodo preprint (17 September 2026)](https://doi.org/10.5281/zenodo.22826419)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -86,7 +86,15 @@ Prerequisites: Apéry-type irrationality criteria, Hankel determinants and ortho
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for a method. The target statement, $\zeta(7)$ irrational, needs only `riemannZeta` and `Irrational` from Mathlib (formal-conjectures states it).
+`RiemannZetaValues.irrational_seven` in [`lean/MathathonProblems/P108_IrrationalZetaSeven.lean`](lean/MathathonProblems/P108_IrrationalZetaSeven.lean).
+
+```lean
+theorem irrational_seven : ∃ x, Irrational x ∧ riemannZeta 7 = x
+```
+
+The problem asks how far Fauzan's argument for $\zeta(5)$ extends, starting with $\zeta(7)$; the statement is that first target, which is open. A general criterion for when the method works, or an account of its obstacles, is not a single statement.
+
+Source: <https://github.com/google-deepmind/formal-conjectures/blob/a425ca3eb797fe927cb88c950565fdcbbbbada70/FormalConjectures/Wikipedia/RiemannZetaValues.lean> (Apache License 2.0). Adapted: only `irrational_seven` is kept, unchanged, without its attributes and the file's other declarations.
 
 #### Related Lean formalizations
 

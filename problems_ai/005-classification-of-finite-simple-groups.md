@@ -73,9 +73,7 @@ Prerequisites: Sylow theory, solvable groups, group actions, representation theo
 
 #### Official statement
 
-This problem has no official Lean statement in this folder. The public Lean statement of the CFSG is `TauCeti.ClassificationStatement` in TauCetiProject/TauCeti: <https://github.com/TauCetiProject/TauCeti/blob/6e0c6acab5f4c6f42e5f5bab9bd5e4e84f74c380/TauCeti/GroupTheory/SpecificGroups/CFSG/Classification.lean>. It is not copied here because it depends on about 750 files of group constructions and on a different Mathlib version.
-
-Axiom Math has published a Lean proof of that statement: <https://github.com/AxiomMath/CFSG/tree/69cb972f587a3ecc035e092253167ff2e303c962>. A Lean-verified claim must not use or copy it.
+This problem has no official Lean statement: the classification lists the finite groups of Lie type and the 26 sporadic groups, which Mathlib does not have, and the public Lean statement `TauCeti.ClassificationStatement` (<https://github.com/TauCetiProject/TauCeti/blob/6e0c6acab5f4c6f42e5f5bab9bd5e4e84f74c380/TauCeti/GroupTheory/SpecificGroups/CFSG/Classification.lean>, Apache License 2.0), of which Axiom Math has published a Lean proof (<https://github.com/AxiomMath/CFSG/tree/69cb972f587a3ecc035e092253167ff2e303c962>), builds them in 745 files of its own (about 210,000 lines), far too many to inline here.
 
 #### Related Lean formalizations
 

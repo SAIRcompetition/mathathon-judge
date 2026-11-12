@@ -32,7 +32,7 @@ Jarosław Włodarczyk, “Simple Hironaka resolution in characteristic zero,” 
 - **Status:** Proved by H. Hironaka (Ann. of Math. 1964) for varieties over fields of characteristic zero; constructive and canonical algorithms followed (Villamayor; Bierstone–Milman 1997; Włodarczyk 2005), and weighted blowups (Abramovich–Temkin–Włodarczyk, McQuillan, around 2019–2020) simplified the procedure further.
 - **Task:** An accessible exposition of a modern resolution algorithm: how centres are chosen, how progress is measured and why it terminates, with worked surface examples and a comparison of later simplifications.
 - **Key reference:** [H. Hauser, “The Hironaka theorem on resolution of singularities (or: A proof we always wanted to understand)”, Bull. Amer. Math. Soc. 40 (2003), 323–403](https://doi.org/10.1090/S0273-0979-03-00982-0)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -98,7 +98,18 @@ Prerequisites: affine and projective varieties, blowups and their charts, order 
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs blowups of schemes along closed subschemes, the strict transform and normal crossings, which Mathlib does not have.
+`AlgebraicGeometry.resolution_of_singularities_of_charZero` in [`lean/MathathonProblems/P100_ResolutionOfSingularities.lean`](lean/MathathonProblems/P100_ResolutionOfSingularities.lean).
+
+```lean
+theorem resolution_of_singularities_of_charZero (k : Type u) [Field k] [CharZero k]
+    {X : Scheme.{u}} (sX : X ⟶ Spec (.of k)) [IsIntegral X] [LocallyOfFiniteType sX]
+    [QuasiCompact sX] [IsSeparated sX] :
+    Scheme.HasResolution sX
+```
+
+`Scheme.HasResolution sX` asks for an integral scheme $Y$, smooth over $k$, with a proper morphism $Y\to X$ that is birational (Mathlib's `Scheme.BirationalOver`). This is the existence form of Hironaka's theorem quoted by the proposer, not the embedded form or the algorithm that the problem asks to explain.
+
+Source: <https://github.com/google-deepmind/formal-conjectures/blob/a425ca3eb797fe927cb88c950565fdcbbbbada70/FormalConjectures/Wikipedia/ResolutionOfSingularities.lean> (Apache License 2.0). Adapted: `Scheme.HasResolution` and the theorem are copied unchanged; attributes, the module header and the file's other declarations are left out.
 
 #### Related Lean formalizations
 

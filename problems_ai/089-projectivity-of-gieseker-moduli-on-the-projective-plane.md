@@ -80,7 +80,7 @@ Prerequisites: Gieseker stability, Castelnuovo–Mumford regularity, algebraic s
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs moduli of semistable sheaves on the projective plane, good moduli spaces and determinantal line bundles, which Mathlib does not have yet.
+This problem has no official Lean statement: it asks for a new proof, avoiding GIT, of a classical theorem (projectivity of the moduli space of Gieseker-semistable sheaves on $\mathbb P^2$), and the theorem needs moduli spaces of semistable sheaves, good moduli spaces of algebraic stacks and ample line bundles, which Mathlib does not have and which cannot be defined faithfully within a statement file.
 
 #### Mathlib
 

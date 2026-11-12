@@ -28,7 +28,7 @@ The primary objective is to develop a combinatorial proof of the exact (p)-adic 
 - **Status:** The valuation formula follows from Legendre's formula (M. Konvalinka, 2007, Proposition 2); a group-action proof including exactness exists for Catalan numbers, $q=2$ (E. Deutsch and B. E. Sagan, 2006), while for prime powers $q>2$ Konvalinka's tree symmetries prove only the divisibility, and no combinatorial proof of exactness was found.
 - **Task:** A combinatorial proof, through symmetries of $q$-ary trees, that the power of $p$ given by the digit-sum formula is exactly the power dividing the Fuss–Catalan number.
 - **Key reference:** [M. Konvalinka, "Divisibility of generalized Catalan numbers", J. Combin. Theory Ser. A 114 (2007), 1089–1100](https://doi.org/10.1016/j.jcta.2006.11.003)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -88,7 +88,17 @@ Prerequisites: Legendre's and Kummer's theorems, group actions and orbit countin
 
 #### Official statement
 
-This problem has no official Lean statement. The valuation formula itself can be stated with Mathlib; the requested combinatorial proof would also need $q$-ary plane trees and the action of the automorphism group of the complete $q$-ary tree, which Mathlib does not have.
+`Mathathon.P137.sub_one_mul_padicValNat_fussCatalan` in [`lean/MathathonProblems/P137_FussCatalanValuation.lean`](lean/MathathonProblems/P137_FussCatalanValuation.lean).
+
+```lean
+theorem sub_one_mul_padicValNat_fussCatalan (p k n : ℕ) [Fact p.Prime] (hk : 1 ≤ k) :
+    (p - 1) * padicValNat p (fussCatalan (p ^ k) n) =
+      (p.digits ((p ^ k - 1) * n + 1)).sum - 1
+```
+
+This is Konvalinka's Proposition 2, $\nu_p\big(C^{(q)}_n\big)=\frac{s_p((q-1)n+1)-1}{p-1}$ for $q=p^k$, multiplied by $p-1$ as in Mathlib's Legendre formula, with `fussCatalan q n` $=\binom{qn}{n}/((q-1)n+1)$. The problem asks for a combinatorial proof of this formula through symmetries of $q$-ary trees, which a Lean statement cannot require.
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Mathlib
 

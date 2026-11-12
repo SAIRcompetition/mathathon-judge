@@ -28,7 +28,7 @@ A direct approach to the stable distributions: https://arxiv.org/abs/1604.07350
 - **Status:** A formalization task with several possible targets; the two named ones are classical theorems, Marcinkiewicz's theorem (J. Marcinkiewicz, 1939) and Dufresne's identity (D. Dufresne, 1990).
 - **Task:** A Lean proof of a characterization or distributional identity, ideally Marcinkiewicz's theorem or Dufresne's identity, with tools reusable for related examples.
 - **Key reference:** [J. Marcinkiewicz, “Sur une propriété de la loi de Gauß”, Math. Z. 44 (1939), 612–618](https://doi.org/10.1007/BF01210677)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -89,7 +89,26 @@ Prerequisites: characteristic functions (uniqueness, analyticity), entire functi
 
 #### Official statement
 
-This problem has no official Lean statement: it lists several possible targets. Marcinkiewicz's theorem and Dufresne's identity can be stated with existing Mathlib definitions (`MeasureTheory.charFun`, `ProbabilityTheory.IsGaussian`, `ProbabilityTheory.IsBrownianReal`, `ProbabilityTheory.gammaMeasure`); stable and Pólya–Gamma laws would have to be defined.
+`Mathathon.P120.marcinkiewicz` in [`lean/MathathonProblems/P120_Marcinkiewicz.lean`](lean/MathathonProblems/P120_Marcinkiewicz.lean).
+
+```lean
+theorem marcinkiewicz (μ : Measure ℝ) [IsProbabilityMeasure μ] (P : Polynomial ℂ)
+    (hP : ∀ t : ℝ, charFun μ t = Complex.exp (P.eval (t : ℂ))) :
+    IsGaussian μ
+```
+
+`Mathathon.P120.dufresne` in [`lean/MathathonProblems/P120_Dufresne.lean`](lean/MathathonProblems/P120_Dufresne.lean).
+
+```lean
+theorem dufresne {Ω : Type*} [MeasurableSpace Ω] (P : Measure Ω) [IsProbabilityMeasure P]
+    (B : ℝ≥0 → Ω → ℝ) (hB : IsBrownianReal B P) (μ : ℝ) (hμ : 0 < μ) :
+    HasLaw (fun ω => ∫ s in Set.Ioi (0 : ℝ), Real.exp (2 * (B s.toNNReal ω - μ * s)))
+      ((gammaMeasure μ 1).map fun x => (2 * x)⁻¹) P
+```
+
+The problem lets participants choose a result and names these two as the ideal targets; the other directions it lists have no official statement. Mathlib's `IsGaussian` includes point masses, so the first conclusion reads "Gaussian or a point mass"; the second says that $\int_0^\infty e^{2(B_s-\mu s)}\,ds$ has the law of $1/(2\gamma_\mu)$ (Matsumoto–Yor, Theorem 6.2), with Mathlib's Brownian motion `IsBrownianReal` and gamma law `gammaMeasure μ 1`.
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Related Lean formalizations
 

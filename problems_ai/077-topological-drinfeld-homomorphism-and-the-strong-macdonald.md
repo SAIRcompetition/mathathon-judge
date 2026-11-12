@@ -69,7 +69,7 @@ Prerequisites: rational homotopy theory (Sullivan and Quillen models), Lie algeb
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs representation homology and the cohomology of truncated current Lie algebras, which Mathlib does not have yet.
+This problem has no official Lean statement: its main claim, that the Drinfeld homomorphism into $G$-invariant representation homology is an isomorphism for the spaces of Berest–Ramadoss–Yeung's Theorem 1.2, needs representation homology, Hodge components of $S^1$-equivariant free loop space homology and the Drinfeld trace map, which Mathlib does not have and which cannot be defined faithfully in a few hundred lines, and the requested topological proof method is not a statement.
 
 #### Mathlib
 

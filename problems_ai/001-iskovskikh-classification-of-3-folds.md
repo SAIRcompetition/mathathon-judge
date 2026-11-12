@@ -75,7 +75,7 @@ Prerequisites: divisors and linear systems, Riemann–Roch, del Pezzo and K3 sur
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs Fano threefolds and their invariants, which Mathlib does not have yet.
+This problem has no official Lean statement: the classification describes the deformation families of Fano threefolds (smooth projective threefolds with ample anticanonical bundle) through invariants such as the Picard rank and the anticanonical degree, and Mathlib has no canonical sheaf, ample line bundles, Picard group or intersection numbers of a variety, which cannot be defined faithfully within a statement file.
 
 #### Mathlib
 

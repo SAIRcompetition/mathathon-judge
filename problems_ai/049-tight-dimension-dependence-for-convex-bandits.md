@@ -61,7 +61,7 @@ the first lower bound above the $d\sqrt n$ of linear bandits. Upper bounds: $\ti
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for improved regret bounds, while the optimal bound is unknown, not for the proof of one theorem.
+This problem has no official Lean statement: it asks for any improvement of the known upper or lower regret bounds for bandit convex optimisation, whose optimal dimension dependence is unknown, not for the proof of one theorem.
 
 #### Mathlib
 

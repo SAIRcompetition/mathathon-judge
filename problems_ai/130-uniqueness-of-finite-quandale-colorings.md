@@ -26,7 +26,7 @@ https://jfuchs.hotell.kau.se/kurs/sgat/prst/s16_knqu.pdf
 - **Status:** Conjectured by L. Camacho, F. M. Dionísio and R. Picken (arXiv 2013; Kyungpook Math. J. 2016), who proved it for knots whose colouring matrices can be triangularized; we found no published proof of the general case.
 - **Task:** An exposition of knot theory through quandle colourings, centred on whether finite linear Alexander quandles separate knots with different Alexander polynomials.
 - **Key reference:** [L. Camacho, F. M. Dionísio, R. Picken, "Colourings and the Alexander polynomial", Kyungpook Math. J. 56 (2016), 1017–1045](https://doi.org/10.5666/KMJ.2016.56.3.1017) (arXiv:1303.5019)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -81,7 +81,18 @@ Prerequisites: knot diagrams and Reidemeister moves, the Alexander polynomial vi
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs knots (or knot diagrams up to Reidemeister moves), colourings and the Alexander polynomial, none of which Mathlib has.
+`Mathathon.P130.alexander_polynomial_conjecture` in [`lean/MathathonProblems/P130_AlexanderQuandleColourings.lean`](lean/MathathonProblems/P130_AlexanderQuandleColourings.lean).
+
+```lean
+theorem alexander_polynomial_conjecture {N N' : ℕ} [NeZero N] [NeZero N']
+    (D : KnotDiagram N) (D' : KnotDiagram N') (hD : D.IsPlanar) (hD' : D'.IsPlanar)
+    (hΔ : ¬ Associated (toLaurent D.alexander) (toLaurent D'.alexander)) :
+    ∃ (n : ℕ) (m : ℤ), 2 ≤ n ∧ Int.gcd m n = 1 ∧ D.numColourings n m ≠ D'.numColourings n m
+```
+
+This is the conjecture of Camacho, Dionísio and Picken (Kyungpook Math. J. 2016, §11). Mathlib has no knots, so the statement is about knot diagrams, given as planar diagram (PD) codes with $N\ge1$ crossings; `IsPlanar` says that the ribbon graph of the code has genus 0 ($N+2$ faces), which excludes virtual knots, and since colouring numbers and the Alexander polynomial can be computed from any diagram, this is equivalent to the conjecture for knots. Colourings are by the linear Alexander quandle $\mathbb Z_n$ with $a*b=ma+(1-m)b$, and `alexander` is a first minor of the colouring matrix over $\mathbb Z[t]$, so "different Alexander polynomials" means not associated in $\mathbb Z[t^{\pm1}]$, i.e. not equal up to $\pm t^j$.
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Mathlib
 

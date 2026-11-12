@@ -25,7 +25,7 @@ https://www.sciencedirect.com/science/article/pii/0097316581900625#article
 - **Status:** Proved: L. J. Rogers (1894), rediscovered by Ramanujan and by Schur (1917); the first bijective proof is due to Garsia and Milne (1981), and no direct bijection is known (Pak's survey, 2006).
 - **Task:** A more natural bijection between partitions into parts $\equiv\pm1\pmod 5$ and partitions whose parts differ by at least 2.
 - **Key reference:** [A. M. Garsia and S. C. Milne, "A Rogers–Ramanujan bijection", J. Combin. Theory Ser. A 31 (1981), 289–339](https://doi.org/10.1016/0097-3165(81)90062-5)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -87,7 +87,17 @@ Prerequisites: partitions and Ferrers diagrams, $q$-series ($q$-Pochhammer symbo
 
 #### Official statement
 
-This problem has no official Lean statement: a "natural" bijection is not a formal notion. The partition identity itself can be stated with Mathlib's `Nat.Partition`, once "parts differ by at least 2" is defined.
+`Mathathon.P127.rogers_ramanujan` in [`lean/MathathonProblems/P127_RogersRamanujan.lean`](lean/MathathonProblems/P127_RogersRamanujan.lean).
+
+```lean
+theorem rogers_ramanujan (n : ℕ) :
+    (Nat.Partition.restricted n (fun i => i % 5 = 1 ∨ i % 5 = 4)).card =
+      (gapTwoPartitions n).card
+```
+
+`gapTwoPartitions n` is the set of partitions of $n$ with no repeated part and no two consecutive integers as parts, that is, with parts differing by at least 2. A "natural" bijection is not a formal notion, so the statement is the equality of the two numbers, which any explicit bijection proves.
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Related Lean formalizations
 

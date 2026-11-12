@@ -25,7 +25,7 @@ https://webhomes.maths.ed.ac.uk/~v1ranick/papers/exotic.pdf
 - **Status:** Proved by J. Milnor (Annals 1956); Kervaire and Milnor (Annals 1963) showed that the group $\Theta_n$ of homotopy $n$-spheres is finite for $n\ne3$ and has order 28 for $n=7$.
 - **Task:** Construct an exotic 7-sphere in Lean and prove that it is homeomorphic but not diffeomorphic to $S^7$; more broadly, formalize the Kervaire–Milnor classification and the tools it uses.
 - **Key reference:** [J. Milnor, “On manifolds homeomorphic to the 7-sphere”, Ann. of Math. 64 (1956), 399–405](https://doi.org/10.2307/1969983)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -79,7 +79,18 @@ Prerequisites: smooth manifolds and vector bundles, Pontryagin classes and the s
 
 #### Official statement
 
-This problem has no official Lean statement. A faithful statement needs nothing Mathlib lacks: the Mathlib package already contains one, `proof_wanted exists_homeomorph_isEmpty_diffeomorph_sphere_seven` in `Wanted/Geometry/Manifold/PoincareConjecture.lean` (outside the `Mathlib/` folder).
+`Mathathon.P115.exists_homeomorph_isEmpty_diffeomorph_sphere_seven` in [`lean/MathathonProblems/P115_ExoticSevenSphere.lean`](lean/MathathonProblems/P115_ExoticSevenSphere.lean).
+
+```lean
+theorem exists_homeomorph_isEmpty_diffeomorph_sphere_seven :
+    ∃ (M : Type) (_ : TopologicalSpace M) (_ : ChartedSpace ℝ⁷ M)
+      (_ : IsManifold (𝓡 7) ∞ M) (_homeo : M ≃ₜ 𝕊⁷),
+      IsEmpty (M ≃ₘ⟮𝓡 7, 𝓡 7⟯ 𝕊⁷)
+```
+
+There is a smooth 7-manifold homeomorphic to the unit sphere $S^7\subseteq\mathbb R^8$ but not diffeomorphic to it with its standard smooth structure; `ℝ⁷` and `𝕊⁷` are local notations of the source file. The statement does not prescribe Milnor's $S^3$-bundles over $S^4$, and the Kervaire–Milnor classification is not included. The lean-eval benchmark's `milnor_exotic_sphere_seven` is the same statement.
+
+Source: <https://github.com/leanprover-community/mathlib4/blob/56a005855ea17e0b0958f73ec801ae140b0a1679/Wanted/Geometry/Manifold/PoincareConjecture.lean> (Mathlib v4.35.0, Apache License 2.0). Adapted: the statement of `proof_wanted exists_homeomorph_isEmpty_diffeomorph_sphere_seven` is copied unchanged as a theorem with `sorry` in `namespace Mathathon.P115`, with the file's `open` lines and local notations.
 
 #### Related Lean formalizations
 

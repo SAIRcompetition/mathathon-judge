@@ -25,7 +25,7 @@ The ideal goal is a proof of the nonnesting-noncrossing correspondence that expl
 - **Status:** Armstrong–Stump–Thomas (Trans. Amer. Math. Soc. 2013) give a uniformly stated equivariant bijection for bipartite Coxeter elements of every Weyl group, verified case by case; Dequêne et al. (J. London Math. Soc. 2024) give a natural one for all Coxeter elements in types A and C. Type B is open.
 - **Task:** A test of the proposed charmed-root definition in type B: computations for $B_3$, $B_4$, rules checked by computer up to $B_5$, ideally a proof for all $n$.
 - **Key reference:** [B. Dequêne et al., “Charmed roots and the Kroweras complement”, J. London Math. Soc. 110 (2024), e70025](https://arxiv.org/abs/2212.14831)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -71,7 +71,17 @@ Prerequisites: finite Coxeter groups and root systems, the absolute order, order
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs Coxeter elements, the absolute order and noncrossing partitions of Weyl groups, which Mathlib does not have yet.
+`Mathathon.P87.exists_unique_charm_typeB` in [`lean/MathathonProblems/P87_CharmedBijectionTypeB.lean`](lean/MathathonProblems/P87_CharmedBijectionTypeB.lean).
+
+```lean
+theorem exists_unique_charm_typeB (hn : 2 ≤ n) (σ : Equiv.Perm (Fin n)) :
+    ∃ f, IsCharmBijection n σ f ∧
+      ∀ g, IsCharmBijection n σ g → Set.EqOn g f (NC n σ)
+```
+
+This is the type B analogue of Theorem 1.5 (type A) and Corollary 7.1 (type C) of the key reference: for every standard Coxeter element $c$ of $W(B_n)$ there is a unique support-preserving bijection $\mathrm{Charm}_c\colon NC(W,c)\to NN(W)$ with $\mathrm{Charm}_c\circ\mathrm{Krew}_c=\mathrm{Krow}_c\circ\mathrm{Charm}_c$, the bijection that charmed-root rules should produce; that the rules be natural is not stated. $W(B_n)$ acts on $\mathbb Z^n$ by signed permutations, and the $c$-sorting word of $w_\circ$ is written directly as $c^n$, which it is in type $B_n$ ($w_\circ=-1=c^n$, of length $n^2$). A computer search made with the same definitions when this statement was prepared finds exactly one such bijection for every $c$ when $n\le5$, and reproduces Theorem 1.5 for $S_n$, $n\le6$, and Corollary 7.1 for $n\le5$; a separate reimplementation made during review found the same for every $c$ in $B_2$–$B_5$. The case $n\ge6$ is open.
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Mathlib
 

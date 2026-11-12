@@ -86,7 +86,7 @@ Prerequisites: blow-ups of $\mathbb P^2$, exceptional classes and Cremona transf
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for an exposition. Even the McDuff–Schlenk theorem would need symplectic manifolds and embeddings, and the algebraic side blow-ups and intersection theory on surfaces, none of which Mathlib has.
+This problem has no official Lean statement: it asks for an exposition and a geometric explanation of the eight exceptional classes rather than for a theorem, and the curves to be explained live on weighted blow-ups of the projective plane, whose cones of curves and intersection theory Mathlib lacks; a statement of McDuff–Schlenk's formula for the embedding function, on the symplectic side, would not capture what the problem asks.
 
 #### Mathlib
 

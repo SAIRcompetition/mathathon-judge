@@ -26,7 +26,7 @@ https://matwbn.icm.edu.pl/ksiazki/sm/sm7/sm7112.pdf 1/2 case
 - **Status:** Only the disk floats in every orientation at perimetral density 1/3, 1/4 (Bracho–Montejano–Oliveros 2004), 1/5, 2/5 (same authors, 2001–2004) and 1/6 (Asipchuk–Kosmakov–Zatitskii, IMRN 2026); 1/8 and 3/8 only for centrally symmetric bodies (same authors, arXiv 2026, not refereed); 1/7 and general 1/n are open.
 - **Task:** A method for rigidity at perimetral density 1/n that does not rely on symmetry reductions and extends to larger n.
 - **Key reference:** [O. Asipchuk, M. Kosmakov, P. Zatitskii, “Rigidity in the planar Ulam floating body problem with perimetral density σ=1/6”, Int. Math. Res. Not. IMRN 2026(18), rnag203](https://arxiv.org/abs/2604.10330)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -77,7 +77,19 @@ Prerequisites: plane convex curves, planar Hamiltonian systems and period functi
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for a method that works for larger n, and no source states the general case as a conjecture.
+`Mathathon.P86.eq_closedBall_of_floatsInEveryPosition` in [`lean/MathathonProblems/P86_UlamFloatingRigidity.lean`](lean/MathathonProblems/P86_UlamFloatingRigidity.lean).
+
+```lean
+theorem eq_closedBall_of_floatsInEveryPosition (n : ℕ) (hn : n = 3 ∨ n = 4 ∨ n = 5)
+    (K : Set ℝ²) (hcompact : IsCompact K) (hint : (interior K).Nonempty)
+    (hconvex : StrictConvex ℝ K) (hsmooth : HasUniqueSupportLines K) (ρ : ℝ)
+    (hρ : 0 < ρ ∧ ρ < 1) (hfloat : FloatsInEveryPosition K ρ (1 / (n : ℝ))) :
+    ∃ (z : ℝ²) (r : ℝ), K = Metric.closedBall z r
+```
+
+The statement covers the perimetral densities $1/3$, $1/4$ and $1/5$ of the title, under the hypotheses of Theorem 1 of the key reference (strictly convex, $C^1$ boundary, written as a unique supporting line at each boundary point). `FloatsInEveryPosition K ρ σ` says that for every direction of the vertical, the centroids of $K$ and of the part below the waterline cutting off area $\rho\,|K|$ lie on a vertical line, and that the boundary below the waterline has length $\sigma$ times the perimeter (one-dimensional Hausdorff measure). With $n=6$ the same statement is that theorem; for $1/5$ see the Notes on how complete the published proof is, and $n\ge7$ is open.
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Related Lean formalizations
 

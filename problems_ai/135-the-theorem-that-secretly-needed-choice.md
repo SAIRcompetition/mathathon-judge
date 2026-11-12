@@ -93,7 +93,7 @@ Prerequisites: basic category theory, ZF and the axiom of choice, dependent type
 
 #### Official statement
 
-This problem has no official Lean statement. Lean's logic includes the axiom `Classical.choice`, so the equivalence with the axiom of choice can only be expressed as an implication whose proof is checked with `#print axioms` not to use it; Mathlib has the category theory this needs.
+This problem has no official Lean statement: Lean's logic includes the axiom of choice (`Classical.choice`), so any Lean form of "over ZF, this theorem is equivalent to the axiom of choice" can be proved by using that axiom, and only a `#print axioms` check of the proof, which a statement cannot impose, would show the reduction is choice-free; the univalent, choice-free side would need univalence, which contradicts Lean's proof-irrelevant equality.
 
 #### Mathlib
 

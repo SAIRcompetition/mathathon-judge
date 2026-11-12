@@ -28,7 +28,7 @@ Michael Freedman, The topology of four-dimensional manifolds, Journal of Differe
 - **Status:** Proved by M. H. Freedman (J. Differential Geom., 1982); the disc embedding theorem for good fundamental groups is Theorem 5.1A of Freedman–Quinn (1990), expounded in detail by Behrens, Kalmár, Kim, Powell and Ray (eds., 2021), with its dual-sphere part supplied by Powell, Ray and Teichner (Selecta Math., 2025).
 - **Task:** Formalize the disc embedding theorem in Lean and derive the topological 4-dimensional Poincaré theorem from it.
 - **Key reference:** [S. Behrens, B. Kalmár, M. H. Kim, M. Powell and A. Ray (eds.), *The Disc Embedding Theorem*, Oxford University Press, 2021](https://doi.org/10.1093/oso/9780198841319.001.0001)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -82,7 +82,19 @@ Prerequisites: point-set topology and decomposition spaces, immersions and inter
 
 #### Official statement
 
-This problem has no official Lean statement. The Poincaré theorem can be stated with Mathlib's charted spaces, homotopy equivalences and homeomorphisms (as below); the disc embedding theorem also needs topological immersions, equivariant intersection numbers and good groups, which Mathlib lacks.
+`LeanEval.Topology.poincare_4d_topological` in [`lean/MathathonProblems/P119_Poincare4D.lean`](lean/MathathonProblems/P119_Poincare4D.lean).
+
+```lean
+theorem poincare_4d_topological
+    {M : Type*} [TopologicalSpace M] [T2Space M]
+    [ChartedSpace (EuclideanSpace ℝ (Fin 4)) M]
+    (_h : M ≃ₕ sphere (0 : EuclideanSpace ℝ (Fin 5)) 1) :
+    Nonempty (M ≃ₜ sphere (0 : EuclideanSpace ℝ (Fin 5)) 1)
+```
+
+Every Hausdorff topological 4-manifold homotopy equivalent to $S^4$ is homeomorphic to $S^4$ (Freedman); this is the case $n=4$ of Mathlib's `proof_wanted ContinuousMap.HomotopyEquiv.nonempty_homeomorph_sphere`. Only the Poincaré theorem is stated: the disc embedding theorem, which the problem also asks for, needs topological immersions, equivariant intersection numbers in $\mathbb Z[\pi_1]$ and good groups, which Mathlib lacks.
+
+Source: <https://github.com/leanprover/lean-eval/blob/85a88c37f80170d9f08651dc63ce6b81a8a48cb9/LeanEval/Topology/Poincare4DTopological.lean> (Apache License 2.0). Adapted: the file is copied unchanged except that the import of `EvalTools.Markers` and the attribute `@[eval_problem]` are left out.
 
 #### Related Lean formalizations
 

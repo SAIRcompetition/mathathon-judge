@@ -88,7 +88,7 @@ Prerequisites: strict ω-categories, polygraphs (computads) and pasting diagrams
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs strict ω-categories, polygraphs and a homotopy theory of non-unital higher categories, which Mathlib does not have yet.
+This problem has no official Lean statement: Simpson's conjecture has no single precise form (Henry shows that "non-unital ∞-category" can be made precise in inequivalent ways), and every precise form needs strict ω-categories, polygraphs and a homotopy theory of non-unital higher categories, which Mathlib does not have and which cannot be defined faithfully in a few hundred lines.
 
 #### Mathlib
 

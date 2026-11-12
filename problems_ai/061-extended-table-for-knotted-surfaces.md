@@ -69,7 +69,7 @@ Prerequisites: knot diagrams and Reidemeister moves, Morse theory and motion pic
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for a table and an encoding of knotted surfaces, not for the proof of one theorem.
+This problem has no official Lean statement: it asks for a table of knotted surfaces and a comparison of their complexity measures, not for the proof of one theorem.
 
 #### Mathlib
 

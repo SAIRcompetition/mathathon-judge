@@ -79,7 +79,7 @@ Prerequisites: algebraic number theory (units, class groups, class field theory)
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for a correction and comparison of several published results, not for the proof of one theorem.
+This problem has no official Lean statement: it asks for a corrected account of several published results, not for the proof of one theorem, and the claim to be corrected, Charkani's four-value restriction on Leopoldt's unit index for real cyclic fields of degree $pq$, is in an unpublished 1997 preprint whose exact statement could not be checked.
 
 #### Mathlib
 

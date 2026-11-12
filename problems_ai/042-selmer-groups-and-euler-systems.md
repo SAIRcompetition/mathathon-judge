@@ -62,7 +62,7 @@ Prerequisites: algebraic number theory and class field theory, Galois cohomology
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs Galois cohomology, Selmer groups, and Euler systems, which Mathlib does not have yet.
+This problem has no official Lean statement: it asks for an interactive exposition of Euler systems and Selmer groups, not for the proof of one theorem.
 
 #### Mathlib
 

@@ -73,7 +73,7 @@ Prerequisites: integral lattices and discriminant groups, Hodge structures of we
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs cubic fourfolds, their moduli space, and their Hodge structures, which Mathlib does not have yet.
+This problem has no official Lean statement: it asks for an implementation of Yang and Yu's algorithm, a visualization and an explainer, and the theorems behind them (Hassett's description of the divisors $\mathcal C_d$ and of their intersections) are about cubic fourfolds, their Hodge structures and their moduli space, which Mathlib does not have; a statement about lattices alone would not express them.
 
 #### Mathlib
 

@@ -28,7 +28,7 @@ https://www.sciencedirect.com/science/article/pii/S0001870885710237
 - **Status:** Proved by J. R. Stembridge (Adv. Math., 1995) with Pfaffians and determinants; the $q$-analogue conjectured by G. Andrews and D. Robbins was proved by C. Koutschan, M. Kauers and D. Zeilberger (PNAS, 2011) by a computer-assisted determinant evaluation; a bijective proof was still described as a wide open problem by C. Krattenthaler (2016).
 - **Task:** A more combinatorial, ideally bijective, proof of the formula for the number of totally symmetric plane partitions.
 - **Key reference:** [J. R. Stembridge, “The enumeration of totally symmetric plane partitions”, Adv. Math. 111 (1995), 227–243](https://doi.org/10.1006/aima.1995.1023)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -80,7 +80,17 @@ Prerequisites: plane partitions and lozenge tilings, the Lindström–Gessel–V
 
 #### Official statement
 
-This problem has no official Lean statement. The count can be stated with finite sets of cells, `IsLowerSet` and coordinate permutations, as in lean-eval's $q$-version below; Mathlib has no plane partitions.
+`Mathathon.P125.stembridge_tspp_count` in [`lean/MathathonProblems/P125_TSPPEnumeration.lean`](lean/MathathonProblems/P125_TSPPEnumeration.lean).
+
+```lean
+theorem stembridge_tspp_count (n : ℕ) :
+    ((tspps n).card : ℚ) =
+      ∏ c ∈ sortedTriples n, ((coordinateSum c + 2 : ℚ) / (coordinateSum c + 1))
+```
+
+`tspps n` is the set of totally symmetric plane partitions in the $n\times n\times n$ box, as order ideals of $\{0,\dots,n-1\}^3$ invariant under permutations of the coordinates; cells are numbered from 0, so the factor $(i+j+k-1)/(i+j+k-2)$ of Stembridge's formula becomes $(s+2)/(s+1)$, where $s$ is the coordinate sum of a cell of `sortedTriples n` ($i\le j\le k$). The problem asks for a more combinatorial proof of this count.
+
+Source: <https://github.com/leanprover/lean-eval/blob/85a88c37f80170d9f08651dc63ce6b81a8a48cb9/LeanEval/Combinatorics/QTSPP.lean> (Apache-2.0). Adapted: the definitions used here are copied unchanged from lean-eval's q-TSPP statement, and the theorem, Stembridge's count (the case $q=1$ after cancelling the factors $1-q$), is written by AI, since lean-eval states only the $q$-analogue.
 
 #### Related Lean formalizations
 

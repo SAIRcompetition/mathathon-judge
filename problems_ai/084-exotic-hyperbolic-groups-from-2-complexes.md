@@ -78,7 +78,7 @@ Prerequisites: presentation complexes, the link condition, CAT(0) and CAT(−1) 
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for a comparison of three constructions and code that builds them, not for the proof of one theorem.
+This problem has no official Lean statement: it asks how similar the constructions behind three different theorems are (hyperbolic groups that are not residually finite, not CAT(0) and not sofic) and for code that builds the complexes, not for the proof of one theorem; Lean statements of all three properties, with Lean proofs, are listed below.
 
 #### Existing Lean proofs
 

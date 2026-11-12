@@ -73,7 +73,7 @@ Prerequisites: perverse sheaves, $\mathcal D$-modules and Riemann–Hilbert, var
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs mixed Hodge modules, which Mathlib does not have yet.
+This problem has no official Lean statement: Saito's direct image and decomposition theorems are about polarizable Hodge modules, which are built from $\mathcal D$-modules, perverse sheaves, nearby cycles and variations of Hodge structure, none of which Mathlib has, and which cannot be defined faithfully within a statement file.
 
 #### Mathlib
 

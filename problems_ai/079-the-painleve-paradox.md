@@ -65,7 +65,7 @@ Prerequisites: planar rigid-body mechanics, Coulomb friction and complementarity
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for an explanation and a simulation of a paradox in mechanics, not for the proof of one theorem.
+This problem has no official Lean statement: it asks for an exposition with diagrams and a simulation, and the compliance result it centres on (Hogan–Kristiansen 2017, Theorems 3.1–3.2) is an asymptotic statement, with unquantified $O(\varepsilon)$ and $o(1)$ terms, about the forward flow of a Filippov system (Mathlib has no Filippov solutions), so a Lean version would have to fix uniformity and solution-concept choices that the paper leaves open.
 
 #### Mathlib
 

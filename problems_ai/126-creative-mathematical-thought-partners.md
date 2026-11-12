@@ -107,7 +107,7 @@ Prerequisites: an LLM agent framework and one proof assistant (Lean or Isabelle)
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for software and case studies, not for the proof of one theorem; both case-study theorems are already formalized in Lean.
+This problem has no official Lean statement: it asks for software and its evaluation, not for a theorem, and its two case studies (the infinitude of primes and Fermat's two-squares theorem) are already proved in Mathlib (`Nat.exists_infinite_primes`, `Nat.Prime.sq_add_sq`).
 
 #### Related Lean formalizations
 

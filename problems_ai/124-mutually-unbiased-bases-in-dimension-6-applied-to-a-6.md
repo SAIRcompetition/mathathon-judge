@@ -28,7 +28,7 @@ https://github.com/openai/math/blob/main/preprints/The-maximum-number-of-mutuall
 - **Status:** Claimed by an OpenAI preprint dated 24 September 2026, which its repository describes as produced by an internal OpenAI model: $N(6)=3$, with a computer-assisted upper bound that depends on floating-point arithmetic and compiler conditions; only the weaker bound $N(6)\le5$, from a companion preprint, has a Lean proof, and neither is refereed.
 - **Task:** Explain the quantum-information significance of mutually unbiased bases in dimension six, check pieces of the computational certificate, and separate the Lean-verified result from the headline claim.
 - **Key reference:** [OpenAI, “The maximum number of mutually unbiased bases in dimension six”, preprint, 24 September 2026](https://github.com/openai/math/blob/main/preprints/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026.pdf)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -84,7 +84,16 @@ Prerequisites: linear algebra over $\mathbb C$, complex Hadamard matrices, quant
 
 #### Official statement
 
-This problem has no official Lean statement. $N(6)$ can be stated with Mathlib's orthonormal bases of `EuclideanSpace ℂ (Fin 6)`, as formal-conjectures and openai/math do; nothing is missing.
+`OpenQuantumProblem13.mutuallyUnbiasedBases_dim6` in [`lean/MathathonProblems/P124_MUBDimensionSix.lean`](lean/MathathonProblems/P124_MUBDimensionSix.lean).
+
+```lean
+theorem mutuallyUnbiasedBases_dim6 :
+    IsMaxMUBCount 6 3
+```
+
+`IsMaxMUBCount 6 3` says that $\mathbb C^6$ has three pairwise mutually unbiased bases (known) and that no family of pairwise mutually unbiased bases has more than three members (the claim of the OpenAI preprint); a basis is given by the columns of a unitary matrix. The Lean-verified bound $N(6)\le5$ in openai/math is strictly weaker.
+
+Source: <https://github.com/google-deepmind/formal-conjectures/blob/a425ca3eb797fe927cb88c950565fdcbbbbada70/FormalConjectures/OpenQuantumProblems/13.lean> (Apache-2.0). Adapted: the definitions it uses and the theorem `mutuallyUnbiasedBases_dim6` are copied unchanged, except that its open answer (a `sorry` there, where the problem is listed as open) is replaced by the claimed value 3.
 
 #### Related Lean formalizations
 

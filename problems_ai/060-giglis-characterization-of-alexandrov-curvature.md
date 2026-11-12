@@ -75,7 +75,7 @@ Prerequisites: optimal transport and Wasserstein geodesics, Sobolev spaces on me
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs RCD spaces and Gigli's distributional curvature, which Mathlib does not have yet.
+This problem has no official Lean statement: Gigli's distributional Riemann tensor is built from the second-order calculus on RCD spaces (the tangent module, covariant derivatives of test vector fields and pointwise inner products of these $L^2$ tensors), which Mathlib lacks and which cannot be defined faithfully in a few hundred lines; the related openai/math file [`WeakHessian.lean`](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/WeakHessian.lean) (Apache-2.0) defines $\mathrm{RCD}(K,N)$ spaces but states only the companion theorem on weak Hessian bounds along geodesics.
 
 #### Mathlib
 

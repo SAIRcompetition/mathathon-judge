@@ -37,7 +37,7 @@ https://arxiv.org/abs/2205.13468
 - **Status:** Wright (1934) proved a full expansion for unrestricted partitions into $k$-th powers; for multiplicity at most $r$, Li and Zhou (2024) proved the leading-order asymptotic, and no proved higher-order expansion was found in the literature.
 - **Task:** An asymptotic expansion of $P_{k,r}(n)$ with effective error bounds.
 - **Key reference:** [C. O'Sullivan, Detailed asymptotic expansions for partitions into powers, Int. J. Number Theory 19 (2023), 2163–2196](https://arxiv.org/abs/2205.13468)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### The result
 
@@ -80,7 +80,16 @@ Prerequisites: Mellin transforms and the Riemann zeta function, the saddle-point
 
 #### Official statement
 
-This problem has no official Lean statement: the leading-order asymptotic of $P_{k,r}(n)$ is proved for every $r$ (Y.-L. Li and N. H. Zhou, Ramanujan J. 65 (2024), 241–261), but the higher-order expansion with effective error bounds that the problem asks for is not available in the literature for finite $r$, so there is no fixed statement to formalize.
+`Mathathon.P35.partitions_into_powers_asymptotic` in [`lean/MathathonProblems/P35_PartitionsIntoPowers.lean`](lean/MathathonProblems/P35_PartitionsIntoPowers.lean).
+
+```lean
+theorem partitions_into_powers_asymptotic (k r : ℕ) (hk : 1 ≤ k) (hr : 1 ≤ r) :
+    (fun n : ℕ => (P k r n : ℝ)) ~[atTop] fun n : ℕ => mainTerm k r n
+```
+
+Here `P k r n` is $P_{k,r}(n)$ and `mainTerm k r n` is $\dfrac{(\beta/n)^{(2k+1)/(2k+2)}}{\sqrt{2\pi(r+1)(1+1/k)\beta}}\exp\big((k+1)\beta^{k/(k+1)}n^{1/(k+1)}\big)$ with $\beta=\big(1-(r+1)^{-1/k}\big)\frac1k\Gamma(1+\frac1k)\zeta(1+\frac1k)$: the leading-order asymptotic proved by Li and Zhou (Theorem 1.2 of arXiv:2104.01886, case $\kappa=k$, $m=r$). Only the leading term is stated; the higher-order corrections and effective error bounds that the problem asks for, and the unrestricted case $r=\infty$ (Wright), are not part of the statement.
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Mathlib
 

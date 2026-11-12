@@ -85,7 +85,7 @@ Prerequisites: vector bundles and characteristic classes, Clifford algebras, ell
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for an exposition, and the index theorem itself would need K-theory of spaces, characteristic classes and elliptic operators on manifolds, which Mathlib does not have yet.
+This problem has no official Lean statement: it asks for an exposition, and the theorem at its centre, the Atiyah–Singer index theorem, needs topological K-theory, characteristic classes and elliptic (Dirac) operators on manifolds, which Mathlib does not have and which cannot be defined faithfully in a few hundred lines.
 
 #### Mathlib
 

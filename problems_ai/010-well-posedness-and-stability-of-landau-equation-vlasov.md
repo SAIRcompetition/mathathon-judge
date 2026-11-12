@@ -25,7 +25,7 @@ https://arxiv.org/pdf/2409.01183
 - **Status:** Global smooth solutions of the space-homogeneous Landau equation (Guillen–Silvestre, 2023) and Boltzmann equation (Imbert–Silvestre–Villani, 2024) are proved; the space-inhomogeneous theory for large data is still conditional.
 - **Task:** Lean formalizations of well-posedness and stability results for these equations.
 - **Key reference:** [N. Guillen and L. Silvestre, *The Landau equation does not blow up*, Acta Math. 234 (2025), 315–375](https://arxiv.org/abs/2311.09420)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -65,7 +65,19 @@ Prerequisites: multivariable calculus and integration by parts, convexity of the
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs the Landau and Boltzmann collision operators and the function spaces of their well-posedness theory, which Mathlib does not have yet.
+`Mathathon.P10.guillen_silvestre_fisher_information_antitone` in [`lean/MathathonProblems/P10_LandauFisherInformation.lean`](lean/MathathonProblems/P10_LandauFisherInformation.lean).
+
+```lean
+theorem guillen_silvestre_fisher_information_antitone (α : ℝ → ℝ)
+    (hα_nonneg : ∀ r > 0, 0 ≤ α r) (hα_diff : DifferentiableOn ℝ α (Set.Ioi 0))
+    (hα : ∀ r > 0, r * |deriv α r| ≤ √19 * α r)
+    (T : ℝ) (f : ℝ → ℝ³ → ℝ) (hf : IsClassicalSolution α T f) :
+    AntitoneOn (fun t => fisherInformation (f t)) (Set.Icc 0 T)
+```
+
+The problem asks for formalizations about three equations; this is the main theorem of its first reference (Guillen–Silvestre, Theorem 1.1): the Fisher information of a classical solution of the space-homogeneous Landau equation does not increase when $r|\alpha'(r)|\le\sqrt{19}\,\alpha(r)$, which covers $\alpha(r)=r^\gamma$ for $\gamma\in[-3,1]$. A classical solution is modelled as a smooth nonnegative solution on $[0,T]$ whose derivatives decay faster than every power of $|v|$, uniformly in $t$; the global existence theorem (Theorem 1.2), the Boltzmann analogue of Imbert, Silvestre and Villani, and the Vlasov–Landau system are not stated.
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Mathlib
 

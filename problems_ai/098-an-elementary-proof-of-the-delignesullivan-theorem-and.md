@@ -31,7 +31,7 @@ https://doi.org/10.2307/1970841
 - **Status:** Proved by D. Sullivan (IHES preprint 1978, published 1979) from the theorem of P. Deligne and D. Sullivan (C. R. Acad. Sci. Paris 1975) that flat complex vector bundles over finite complexes become trivial on finite covers; both proofs use étale homotopy theory.
 - **Task:** A more elementary proof that every compact hyperbolic manifold is virtually stably parallelizable, or a simpler proof of the Deligne–Sullivan theorem.
 - **Key reference:** [P. Deligne and D. Sullivan, “Fibrés vectoriels complexes à groupe structural discret”, C. R. Acad. Sci. Paris Sér. A 281 (1975), 1081–1083](https://publications.ias.edu/sites/default/files/28_FibresVectoriels.pdf)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -90,7 +90,18 @@ Prerequisites: vector bundles and characteristic classes, flat bundles and holon
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs compact hyperbolic manifolds of any dimension and stable triviality of their tangent bundles, which Mathlib does not have.
+`Mathathon.P98.virtually_stably_parallelizable` in [`lean/MathathonProblems/P98_VirtuallyStablyParallelizable.lean`](lean/MathathonProblems/P98_VirtuallyStablyParallelizable.lean).
+
+```lean
+theorem virtually_stably_parallelizable (n : ℕ) (Γ : Subgroup (GL (Fin (n + 1)) ℝ))
+    (hΓ : IsCompactHyperbolicManifoldGroup n Γ) :
+    ∃ Γ' : Subgroup (GL (Fin (n + 1)) ℝ), Γ' ≤ Γ ∧ Γ'.relIndex Γ ≠ 0 ∧
+      IsStablyParallelizable n Γ'
+```
+
+A compact hyperbolic manifold is modelled as the quotient $\Gamma\backslash\mathbb H^n$ of the hyperboloid by a discrete, torsion-free, cocompact group of Lorentz transformations, and a finite cover as the quotient by a subgroup of finite index. Stable parallelizability of $\Gamma'\backslash\mathbb H^n$ is expressed as a $\Gamma'$-equivariant continuous frame of $T\mathbb H^n\oplus\mathbb R^k$, which is a global frame of $T(\Gamma'\backslash\mathbb H^n)\oplus\varepsilon^k$. The problem asks for a more elementary proof; this is the theorem to be proved.
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Mathlib
 

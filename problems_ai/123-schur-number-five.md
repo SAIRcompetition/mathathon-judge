@@ -30,7 +30,7 @@ Possible outcomes include one or more of the following:
 - **Status:** Proved by M. J. H. Heule (arXiv 2017; AAAI 2018): $S(5)=160$, by massively parallel SAT solving with a two-petabyte proof certified by a checker formally verified in ACL2; the lower bound is G. Exoo's colouring (1994).
 - **Task:** Make parts of the computer proof of $S(5)=160$ understandable or formally checked: lemmas replacing families of cases, Nullstellensatz certificates, verified encodings and symmetry reductions, or an interactive explanation.
 - **Key reference:** [M. J. H. Heule, “Schur Number Five”, Proc. AAAI Conf. Artif. Intell. 32 (2018), 6598–6606](https://arxiv.org/abs/1711.08076)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -85,7 +85,15 @@ Prerequisites: propositional logic and CNF encodings, DRAT/LRAT proof formats, s
 
 #### Official statement
 
-This problem has no official Lean statement. $S(5)=160$ is easy to state with colourings of `Finset.Icc 1 n`; Mathlib does not define Schur numbers, but nothing else is missing.
+`Mathathon.P123.schur_number_five` in [`lean/MathathonProblems/P123_SchurNumberFive.lean`](lean/MathathonProblems/P123_SchurNumberFive.lean).
+
+```lean
+theorem schur_number_five : IsGreatest {N : ℕ | HasSchurColouring 5 N} 160
+```
+
+`HasSchurColouring 5 N` says that $\{1,\dots,N\}$ has a 5-colouring with no monochromatic solution of $a+b=c$, with $a=b$ allowed as in Heule's paper; the statement contains both Exoo's lower bound and Heule's upper bound. The problem asks for understandable or formally checked parts of the computer proof of this theorem.
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Related Lean formalizations
 

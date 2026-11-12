@@ -77,7 +77,7 @@ Prerequisites: CW complexes and cellular (co)homology, homotopy groups and the r
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs cellular or singular cohomology with coefficients in $\pi_nY$ and $n$-simple spaces, which Mathlib does not have yet.
+This problem has no official Lean statement: the main extension theorem (Davis–Kirk, Theorem 7.1) is about the obstruction cocycle and its class in the cellular cohomology $H^{n+1}(X,A;\pi_nY)$, and Mathlib has neither cohomology of spaces nor the cellular chain complex of a CW complex (incidence numbers of cells), which cannot be built faithfully in a short file.
 
 #### Related Lean formalizations
 

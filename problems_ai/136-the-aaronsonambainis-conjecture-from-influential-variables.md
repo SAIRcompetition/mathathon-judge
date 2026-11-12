@@ -40,7 +40,7 @@ https://eprint.iacr.org/2020/1589.pdf
 - **Status:** Proof claimed by D. Turturean (arXiv, 6 November 2026), with a Lean formalization that its repository reports as complete; the paper states that the proof was produced by AI models (instances of a non-public Anthropic model) and reviewed by the author; not yet refereed. Conjectured by S. Aaronson and A. Ambainis (arXiv 2009; Theory of Computing 2014).
 - **Task:** A self-contained exposition of the proof and of how it yields classical simulation of quantum query algorithms on most inputs, with parameters tracked, and a simplification or a new proof of a related statement.
 - **Key reference:** [D. Turturean, "A proof of the Aaronson–Ambainis conjecture", arXiv:2611.09773 (2026)](https://arxiv.org/abs/2611.09773)
-- **Lean:** No official statement.
+- **Lean:** Official statement; a Lean proof already exists.
 
 ### Notes
 
@@ -105,7 +105,15 @@ Prerequisites: Fourier analysis on the Boolean cube, decision trees and certific
 
 #### Official statement
 
-This problem has no official Lean statement. The influence bound can be stated with Mathlib alone (Turturean's repository does so); the simulation consequences would also need a model of quantum query algorithms, which Mathlib lacks.
+`AaronsonAmbainis.aaronson_ambainis` in [`lean/MathathonProblems/P136_AaronsonAmbainis.lean`](lean/MathathonProblems/P136_AaronsonAmbainis.lean).
+
+```lean
+theorem aaronson_ambainis : PrintedConjecture
+```
+
+`PrintedConjecture` is Conjecture 6 of Aaronson and Ambainis (arXiv:0911.0996) with the exponent 7 in place of $O(1)$, as in Turturean's Corollary 1.2: a real polynomial of total degree at most $d$ with values in $[0,1]$ on $\{0,1\}^N$ and variance at least $\varepsilon>0$ has a variable $i$ with $\mathrm{Inf}_i[p]\ge(\varepsilon/d)^7$. The consequences for classical simulation of quantum query algorithms are not stated.
+
+Source: <https://github.com/physical-superintelligence/aaronson-ambainis/blob/2a6ceaef872ae993708950f951989134084b851a/AaronsonAmbainis/Conjecture.lean>, <https://github.com/physical-superintelligence/aaronson-ambainis/blob/2a6ceaef872ae993708950f951989134084b851a/AaronsonAmbainis/Main.lean> (Apache-2.0). Adapted: `PrintedConjecture` and the statement of `aaronson_ambainis` are copied unchanged, with the proof replaced by `sorry`. The same repository contains a complete Lean proof (`AaronsonAmbainis.aaronson_ambainis` in `AaronsonAmbainis/Main.lean`; its README reports no `sorry` and no added axiom); it was not checked here.
 
 #### Related Lean formalizations
 

@@ -24,7 +24,7 @@ arXiv:math/0202159
 - **Status:** Proved by R. Apéry (announced 1978, published in Astérisque 1979), with later proofs by Beukers (1979), Nesterenko (1996) and Zudilin (2002); explaining where the recurrence comes from is an expository question.
 - **Task:** A satisfying explanation of the motivation behind Apéry's proof and the intuition behind its recurrence.
 - **Key reference:** [W. Zudilin, "An elementary proof of Apéry's theorem", arXiv:math/0202159 (2002)](https://arxiv.org/abs/math/0202159); journal version "Apéry's theorem. Thirty years after", Int. J. Math. Comput. Sci. 4 (2009), 9–19.
-- **Lean:** No official statement.
+- **Lean:** Official statement; a Lean proof already exists.
 
 ### Notes
 
@@ -84,7 +84,15 @@ Prerequisites: partial fractions, hypergeometric series and creative telescoping
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for an explanation of a known proof. The theorem itself is easy to state with Mathlib's `Irrational` and `riemannZeta`.
+`Mathathon.P131.zeta_3_irratoinal` in [`lean/MathathonProblems/P131_Zeta3Irrational.lean`](lean/MathathonProblems/P131_Zeta3Irrational.lean).
+
+```lean
+theorem zeta_3_irratoinal : ¬ ∃ r : ℚ , r = riemannZeta 3
+```
+
+The problem asks for an explanation of Apéry's proof; this is the theorem being explained: no rational number, cast to $\mathbb C$, equals $\zeta(3)$ (the misspelt name is the source's). The same claim is `RiemannZetaValues.irrational_three` in google-deepmind/formal-conjectures, stated as `∃ x, Irrational x ∧ riemannZeta 3 = x`.
+
+Source: <https://github.com/ahhwuhu/zeta_3_irrational/blob/e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1/Zeta3Irrational/Basic.lean> (Apache-2.0). Adapted: the statement is copied unchanged into `namespace Mathathon.P131`, with `import Mathlib` in place of the project's imports and the proof replaced by `sorry`. The same repository contains a Lean proof of it (Beukers' method, with no `sorry` in the repository's files; it uses the PrimeNumberTheoremAnd project for the prime number theorem); it was not checked here.
 
 #### Related Lean formalizations
 

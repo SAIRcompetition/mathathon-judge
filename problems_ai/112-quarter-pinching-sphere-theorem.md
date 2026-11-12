@@ -25,7 +25,7 @@ https://arxiv.org/abs/0705.0766
 - **Status:** Proved by S. Brendle and R. Schoen with Ricci flow (arXiv 2007, J. Amer. Math. Soc. 2009); the topological version under global pinching is due to Berger and Klingenberg (around 1960).
 - **Task:** Formalize the differentiable quarter-pinching sphere theorem in Lean, with reusable tools for Riemannian curvature and geometric evolution equations.
 - **Key reference:** [S. Brendle, R. Schoen, “Manifolds with 1/4-pinched curvature are space forms”, J. Amer. Math. Soc. 22 (2009), 287–307](https://arxiv.org/abs/0705.0766)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -85,7 +85,19 @@ Prerequisites: Levi-Civita connection and curvature tensors, algebraic curvature
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs the Riemann curvature tensor and sectional curvature, which Mathlib lacks (it has the Levi-Civita connection).
+`Mathathon.P112.differentiable_sphere_theorem` in [`lean/MathathonProblems/P112_QuarterPinchedSphere.lean`](lean/MathathonProblems/P112_QuarterPinchedSphere.lean).
+
+```lean
+theorem differentiable_sphere_theorem [I.Boundaryless] [CompactSpace M] [T2Space M]
+    [SimplyConnectedSpace M] (hdim : 4 ≤ Module.finrank ℝ E)
+    (hpinch : PointwiseQuarterPinched I M) :
+    Nonempty (M ≃ₘ⟮I, 𝓡 (Module.finrank ℝ E)⟯
+      sphere (0 : EuclideanSpace ℝ (Fin (Module.finrank ℝ E + 1))) 1)
+```
+
+This is Brendle–Schoen's Theorem 1 in the simply connected case: a closed, simply connected Riemannian manifold of dimension $n\ge4$ with strictly pointwise $1/4$-pinched sectional curvatures ($0<K(\pi_1)<4K(\pi_2)$ for 2-planes at the same point) is diffeomorphic to $S^n$. The curvature is that of Mathlib's Levi-Civita connection `CovariantDerivative.leviCivitaConnection`, with $K=\langle R(X,Y)Y,X\rangle$ for smooth vector fields orthonormal at the point; dimensions 2 and 3, excluded by Brendle–Schoen, are classical. The lean-eval benchmark's `differentiable_sphere_theorem` (see Related Lean formalizations) states the weaker globally pinched version, with all sectional curvatures in $(1,4]$.
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Related Lean formalizations
 

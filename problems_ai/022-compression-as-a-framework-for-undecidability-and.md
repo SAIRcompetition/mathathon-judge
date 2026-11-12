@@ -74,7 +74,7 @@ Compression maps, in polynomial time, a succinct description of an instance (a m
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for a framework for undecidability proofs, not for the proof of one theorem.
+This problem has no official Lean statement: it asks for a framework for undecidability proofs, pursued in three open-ended directions, not for the proof of one theorem.
 
 #### Related Lean formalizations
 

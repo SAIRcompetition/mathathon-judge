@@ -89,7 +89,7 @@ Prerequisites: stable homotopy groups and the Adams spectral sequence, framed bo
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs stable homotopy groups of spheres or framed bordism groups, and the Kervaire invariant, none of which Mathlib has.
+This problem has no official Lean statement: a faithful statement needs the Kervaire invariant of framed manifolds (or, through Browder's theorem, the Adams spectral sequence of the sphere), and Mathlib has no framed manifolds or framed bordism, no stable homotopy groups and no Steenrod algebra or Adams spectral sequence, none of which can be defined faithfully in a short file; the Kervaire126 project defines its `kervaireInvariant` by `sorry`, so its statements cannot be used.
 
 #### Related Lean formalizations
 

@@ -28,7 +28,7 @@ Wesley Pegden. 2011. Highly nonrepetitive sequences: Winning strategies from the
 - **Status:** Pegden proved the Lefthanded Local Lemma for quasi-orders with a compatibility condition (arXiv 2010; Random Structures Algorithms 2011); its combinatorial applications order events by right endpoints of intervals, and with tree orders it matches Shearer's optimal bound on chordal graphs (Pegden 2012).
 - **Task:** Explain the quasi-order condition in Pegden's lemma, and find an application where a quasi-order that is not linear helps.
 - **Key reference:** [W. Pegden, “Highly nonrepetitive sequences: winning strategies from the local lemma”, Random Structures Algorithms 38 (2011), 140–161](https://arxiv.org/abs/1010.5772)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -95,7 +95,21 @@ Prerequisites: the Lovász Local Lemma (general and lopsided forms) and its indu
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for an explanation and new applications. The lemma itself needs only finite probability spaces, conditional probability and quasi-orders, all of which Mathlib has.
+`Mathathon.P95.lefthanded_local_lemma` in [`lean/MathathonProblems/P95_LefthandedLocalLemma.lean`](lean/MathathonProblems/P95_LefthandedLocalLemma.lean).
+
+```lean
+theorem lefthanded_local_lemma [Fintype ι] [Preorder ι] (P : Measure Ω)
+    [IsProbabilityMeasure P] (A : ι → Set Ω) (hA : ∀ i, MeasurableSet (A i))
+    (Γ : ι → Finset ι) (h5 : Compatible Γ) (x : ι → ℝ) (hx : ∀ i, 0 < x i ∧ x i < 1)
+    (h6 : LefthandedBound P A Γ x) (𝒜₁ 𝒜₂ : Finset ι) (h12 : Disjoint 𝒜₁ 𝒜₂)
+    (hord : ∀ a₁ ∈ 𝒜₁, ∀ a₂ ∈ 𝒜₂, ¬ a₁ < a₂) :
+    (∏ a ∈ 𝒜₁, (1 - x a)) * P.real (⋂ a ∈ 𝒜₂, (A a)ᶜ) ≤
+      P.real ((⋂ a ∈ 𝒜₁, (A a)ᶜ) ∩ ⋂ a ∈ 𝒜₂, (A a)ᶜ)
+```
+
+The problem asks to explain the quasi-order condition of Pegden's Lefthanded Local Lemma (Theorem 3.1), which is stated here in Pegden's convention: `Compatible Γ` is his condition (5), `LefthandedBound P A Γ x` is (6), and the conclusion is (7), with conditional probabilities multiplied out. Taking every event in $\mathcal A_1$ and $\mathcal A_2=\emptyset$ gives $P(\bigcap_A\bar A)\ge\prod_A(1-x_A)>0$.
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Related Lean formalizations
 
