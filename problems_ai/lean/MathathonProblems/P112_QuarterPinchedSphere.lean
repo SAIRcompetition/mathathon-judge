@@ -14,7 +14,9 @@ Mathlib's Levi-Civita connection `CovariantDerivative.leviCivitaConnection`, wit
 (the round sphere has `K = 1`); the pinching condition is imposed on all smooth vector fields that
 are orthonormal at the point considered. Dimensions 2 and 3, excluded in Brendle–Schoen's theorem,
 are classical. The lean-eval benchmark's `LeanEval.Geometry.SphereTheorem.differentiable_sphere_theorem`
-states the weaker, globally pinched version (all sectional curvatures in `(1, 4]`).
+states a globally pinched version (all sectional curvatures in `(1, 4]`) in every dimension
+`n ≥ 2`, for a connection assumed torsion-free and metric-compatible; for `n ≥ 4` it follows
+from the statement here by the uniqueness of the Levi-Civita connection.
 -/
 
 import Mathlib

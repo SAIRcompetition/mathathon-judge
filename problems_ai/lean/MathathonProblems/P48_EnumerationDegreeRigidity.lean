@@ -7,8 +7,8 @@ automorphism other than the identity (a consequence of the rigidity of the Turin
 the definability of the total degrees in D_e, Cai, Ganchev, Lempp, Miller and Soskova, JAMS 2016).
 Enumeration reducibility is the standard one (Rogers): `A ≤_e B` when `A = Φ(B)` for an
 enumeration operator `Φ`, a c.e. set of pairs `(x, D)` with `D` finite; here `D` is a list. The
-degrees are built as in openai/math's `ComparatorChallenges/DegreeRigidity.lean` for the Turing
-degrees; the lemmas before the instance prove that `≤_e` is a preorder.
+degrees are built as in openai/math's `lean/ComparatorChallenges/DegreeRigidity.lean` for the
+Turing degrees; the lemmas before the instance prove that `≤_e` is a preorder.
 -/
 
 import Mathlib

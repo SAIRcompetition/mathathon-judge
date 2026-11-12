@@ -84,6 +84,8 @@ theorem positive_laurent_phenomenon {n f : â„•} (B : Matrix (Idx n f) (Fin n) â„
     (hz : IsClusterVariable B z) : IsPositiveLaurentPolynomial z
 ```
 
+This is positivity of the Laurent phenomenon (GHKK, Corollary 0.4), the subject of the title; the finite type classification and the rank reduction asked about in the Desired outcome are not stated.
+
 Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Related Lean formalizations

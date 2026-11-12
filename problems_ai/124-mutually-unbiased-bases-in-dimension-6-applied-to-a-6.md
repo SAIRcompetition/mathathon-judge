@@ -93,7 +93,7 @@ theorem mutuallyUnbiasedBases_dim6 :
 
 `IsMaxMUBCount 6 3` says that $\mathbb C^6$ has three pairwise mutually unbiased bases (known) and that no family of pairwise mutually unbiased bases has more than three members (the claim of the OpenAI preprint); a basis is given by the columns of a unitary matrix. The Lean-verified bound $N(6)\le5$ in openai/math is strictly weaker.
 
-Source: <https://github.com/google-deepmind/formal-conjectures/blob/a425ca3eb797fe927cb88c950565fdcbbbbada70/FormalConjectures/OpenQuantumProblems/13.lean> (Apache-2.0). Adapted: the definitions it uses and the theorem `mutuallyUnbiasedBases_dim6` are copied unchanged, except that its open answer (a `sorry` there, where the problem is listed as open) is replaced by the claimed value 3.
+Source: <https://github.com/google-deepmind/formal-conjectures/blob/a425ca3eb797fe927cb88c950565fdcbbbbada70/FormalConjectures/OpenQuantumProblems/13.lean> (Apache-2.0). Adapted: the definitions it uses and the theorem `mutuallyUnbiasedBases_dim6` are copied unchanged, except that its open answer (a `sorry` there, where the problem is listed as open) is replaced by the claimed value 3, and its docstring is reworded accordingly.
 
 #### Related Lean formalizations
 
