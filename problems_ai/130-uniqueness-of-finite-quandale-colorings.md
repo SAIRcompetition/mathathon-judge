@@ -52,7 +52,7 @@ For equal Alexander polynomials both answers occur: $6_1$ and $9_{46}$ are separ
 ### Background
 
 - Joyce (1982) and Matveev (1982) showed that the knot quandle is a complete invariant up to orientation-reversed mirror image; colourings by a quandle $X$ are quandle homomorphisms from the knot quandle to $X$. Fox $n$-colourings are colourings by the dihedral quandle, the case $m=-1$.
-- As CDP put it, by a theorem of Inoue (2001) the whole sequence of Alexander polynomials (equivalently the Alexander module) determines the number of colourings by every Alexander quandle; the conjecture asks for the converse statement for the first Alexander polynomial alone.
+- CDP attribute to Inoue (2001) the statement that the whole sequence of Alexander polynomials determines the number of colourings by every Alexander quandle. That statement is not correct as given: the number of colourings by an Alexander quandle $M$ is $|\operatorname{Hom}_\Lambda(\text{Alexander module}, M)|$, so it is determined by the Alexander module (equivalently its elementary ideals), not by the Alexander polynomials. L. Traldi, "Multivariate Alexander colorings" (arXiv:1805.02189), shows that the higher Alexander polynomials do not determine the count even for Fox tricolourings; the knots $6_1$ and $9_46$ discussed below are an example. The conjecture concerns what the first Alexander polynomial alone determines.
 - Related work: Kauffman and Lopes (2018) treat $(n,m)$-colourings by linear algebra, using Smith normal forms of colouring matrices, and study the minimal number of colours; Hayashi, Hayashi and Oshiro (2012) study linear $n$-colourings; Elhamdadi and Nelson's book introduces the subject.
 
 ### Where to start
