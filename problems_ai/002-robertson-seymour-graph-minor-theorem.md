@@ -38,7 +38,7 @@ A Lean proof of the graph minor theorem, including the structural results it dep
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list ([`problems/02-graph-minor-theorem.md`](../problems/02-graph-minor-theorem.md)) and revised by Claude Opus 5.5 on 2026-11-11 to match the proposer's current text.
+> Written by AI for the earlier problem list (commit `1f49cd4`) and revised by Claude Opus 5.5 on 2026-11-11 to match the proposer's current text.
 
 - **Status:** Proved by N. Robertson and P. D. Seymour in the Graph Minors series, completed in Graph Minors XX (2004); conjectured by K. Wagner.
 - **Task:** A shorter, simpler proof of the graph minor theorem, and a Lean proof of it with a reusable library for minors, tree decompositions and finite forbidden-minor characterizations.

@@ -34,7 +34,7 @@ As with many of the results in the recent OpenAI "drop", this improvement on the
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 25 ([`problems/25-planar-halving-lines.md`](../problems/25-planar-halving-lines.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 25 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** The bound $O(n^{4/3-\varepsilon})$, improving Dey's $O(n^{4/3})$ (1998), is proved in a September 2026 preprint by OpenAI that is not yet refereed; the exact order of the maximum number of halving lines remains open.
 - **Task:** A visual explanation of the new bound, in the dual line-arrangement setting.

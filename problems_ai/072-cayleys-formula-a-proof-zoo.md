@@ -35,7 +35,7 @@ Interactive visualization of bijections, formal verification of the Prüfer corr
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 72 ([`problems/72-cayleys-formula.md`](../problems/72-cayleys-formula.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 72 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** First proved by C. W. Borchardt (1860) with determinants; Cayley's paper is from 1889, and many proofs exist.
 - **Task:** Visualized bijections, a formalized Prüfer correspondence, and why the proofs agree.

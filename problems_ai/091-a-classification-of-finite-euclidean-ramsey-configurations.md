@@ -37,7 +37,7 @@ I. Leader, P. A. Russell, M. Walters, “Transitive sets in Euclidean Ramsey the
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 92 ([`problems/92-finite-euclidean-ramsey-configurations.md`](../problems/92-finite-euclidean-ramsey-configurations.md)), and carried over; only links that depend on the problem numbering were updated.
+> Written by AI for the earlier problem list, where this was problem 92 (commit `1f49cd4`), and carried over; only links that depend on the problem numbering were updated.
 
 - **Status:** Classification claimed in an OpenAI preprint dated 23 September 2026 (released 6 October 2026; the repository states that its manuscripts were produced by an internal OpenAI model), not refereed. The question goes back to Erdős et al. (1973) and is Erdős Problem #174.
 - **Task:** An independent check and geometric reading of the tensor criterion, a self-contained proof of a special case, and an explicit Ramsey cyclic quadrilateral that is not subtransitive.

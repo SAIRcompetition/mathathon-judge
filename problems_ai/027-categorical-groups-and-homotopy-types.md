@@ -32,7 +32,7 @@ A Lean formalization of the n=1 case: crossed modules, cat^1-groups, their equiv
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 27 ([`problems/27-categorical-groups-and-homotopy-types.md`](../problems/27-categorical-groups-and-homotopy-types.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 27 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by Loday (1982) with some details wrong; corrected proofs by Porter (1993) and Bullejos–Cegarra–Duskin (1993); the case $n=1$ goes back to Mac Lane and Whitehead (1950).
 - **Task:** A Lean formalization for $n=1$; an illustrated exposition of crossed squares.

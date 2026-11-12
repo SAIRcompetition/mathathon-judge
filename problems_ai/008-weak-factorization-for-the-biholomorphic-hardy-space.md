@@ -44,7 +44,7 @@ These hyperlinks are attached to cells of this row in the sheet. They are listed
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 8 ([`problems/08-weak-factorization-on-the-bidisc.md`](../problems/08-weak-factorization-on-the-bidisc.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 8 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by S. H. Ferguson and M. T. Lacey (Acta Math. 2002), the page's own reference.
 - **Task:** A new proof of the Ferguson–Lacey weak factorization on the bidisc.

@@ -33,7 +33,7 @@ A new approach to the construction of the Jacquet-Langlands functorial transfer 
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 30 ([`problems/30-jacquet-langlands-for-gl-2.md`](../problems/30-jacquet-langlands-for-gl-2.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 30 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by H. Jacquet and R. P. Langlands (1970) by comparing trace formulas.
 - **Task:** A new construction of the transfer and of its image.

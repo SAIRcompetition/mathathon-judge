@@ -33,7 +33,7 @@ An intuitive or more accessible description of the statistic, which could includ
 
 <!-- status: Not a single theorem -->
 
-> Written by AI for the earlier problem list, where this was problem 20 ([`problems/20-hoeffdings-d-statistic.md`](../problems/20-hoeffdings-d-statistic.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 20 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Hoeffding's D (1948) is a standard rank test of independence; for moderate $n$ its null law is usually approximated.
 - **Task:** An intuitive account of D; its null distribution for $n\ge8$.

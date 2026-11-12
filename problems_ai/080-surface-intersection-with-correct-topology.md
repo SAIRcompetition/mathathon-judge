@@ -38,7 +38,7 @@ These hyperlinks are attached to cells of this row in the sheet. They are listed
 
 <!-- status: Not a single theorem -->
 
-> Written by AI for the earlier problem list, where this was problem 80 ([`problems/80-surface-intersection-topology.md`](../problems/80-surface-intersection-topology.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 80 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Topology-guaranteed surface–surface intersection is an active CAD topic; the reference is a 2025 paper on curve tracing for it.
 - **Task:** Explain the method's guarantee, illustrate a restricted case, and show its limits.

@@ -34,7 +34,7 @@ A valuation-light or visual proof and clarity on which special polygons known me
 
 <!-- status: Partly solved -->
 
-> Written by AI for the earlier problem list, where this was problem 67 ([`problems/67-monskys-theorem-and-steins-conjecture.md`](../problems/67-monskys-theorem-and-steins-conjecture.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 67 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Monsky's theorem was proved by P. Monsky (1970); Stein's conjecture (2000) for all special polygons is open, with partial cases proved.
 - **Task:** A valuation-light or visual proof; a map of the special polygons covered.

@@ -32,7 +32,7 @@ Hopefully, we could classify the minimizing cones in Rn. I suspect that there wi
 
 <!-- status: Open -->
 
-> Written by AI for the earlier problem list, where this was problem 88 ([`problems/88-classification-of-minimal-cones.md`](../problems/88-classification-of-minimal-cones.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 88 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Taylor (1976) classified the two-dimensional minimal cones in $\mathbb R^3$; in $\mathbb R^4$ the two-dimensional ones include continuous families (Liang 2013), and the piecewise linear three-dimensional cones are classified up to two undecided candidates (Valfells, Math. Scand. 2024, corrected 2025).
 - **Task:** New minimal cones, or a classification of minimal cones, in $\mathbb R^4$ and beyond, possibly for anisotropic energies.

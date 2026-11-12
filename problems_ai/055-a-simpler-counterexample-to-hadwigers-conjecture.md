@@ -38,7 +38,7 @@ These hyperlinks are attached to cells of this row in the sheet. They are listed
 
 <!-- status: Disproved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 55 ([`problems/55-simpler-hadwiger-counterexample.md`](../problems/55-simpler-hadwiger-counterexample.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 55 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Disproved in an OpenAI preprint dated 23 September 2026 (released 6 October 2026), not yet refereed; conjectured by H. Hadwiger (1943).
 - **Task:** A simpler counterexample to Hadwiger's conjecture with a shorter, elementary proof.

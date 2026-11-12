@@ -36,7 +36,7 @@ A proof of the SLn P=W Conjecture without using \mathcal{H}_2. Instead, it shoul
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 37 ([`problems/37-p-w-for-sl-n-via-endoscopy.md`](../problems/37-p-w-for-sl-n-via-endoscopy.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 37 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Prime rank: de Cataldo–Maulik–Shen (2022) with the GLₙ theorem; composite rank: OpenAI preprint (September 2026), not yet refereed.
 - **Task:** An SLₙ P=W proof via global Springer theory and endoscopy.

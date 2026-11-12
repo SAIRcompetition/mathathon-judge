@@ -34,7 +34,7 @@ Figure out the "best" complexity measure for surface knots (crossing number vs c
 
 <!-- status: Not a single theorem -->
 
-> Written by AI for the earlier problem list, where this was problem 61 ([`problems/61-table-of-knotted-surfaces.md`](../problems/61-table-of-knotted-surfaces.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 61 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Yoshikawa (1994) tabulated surface-links of ch-index at most 10; several invariants of this table are now computed.
 - **Task:** Compare complexity measures for surface-links and compile known invariants.

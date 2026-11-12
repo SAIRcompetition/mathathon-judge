@@ -38,7 +38,7 @@ A rigorous proof of the existence of an infinite two-generated group of finite e
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 62 ([`problems/62-burnside-problem.md`](../problems/62-burnside-problem.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 62 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Infinite two-generated groups of finite exponent were found by Novikov and Adian (1968, odd $n\ge4381$); for which $n$ the group $B(2,n)$ is infinite is only partly known.
 - **Task:** A proof of existence with an explicit construction; more admissible exponents.

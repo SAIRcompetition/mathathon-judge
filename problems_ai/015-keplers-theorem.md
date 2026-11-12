@@ -34,7 +34,7 @@ A modified proof the Kepler conjecture with less reliance on numerical verificat
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 15 ([`problems/15-keplers-theorem.md`](../problems/15-keplers-theorem.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 15 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by T. C. Hales with S. P. Ferguson (announced 1998, published 2005–2006) using large computations; formal proof completed by the Flyspeck project (2014, published 2017).
 - **Task:** A proof with less computation or a Viazovska-style proof; or an exposition of part of the proof, or an extension to related packings.

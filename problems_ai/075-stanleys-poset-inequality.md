@@ -32,7 +32,7 @@ A proof of the inequality using toric geometry, in which mixed volumes become in
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 75 ([`problems/75-stanleys-poset-inequality.md`](../problems/75-stanleys-poset-inequality.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 75 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by R. Stanley (1981) with the Alexandrov–Fenchel inequality; conjectured by F. Chung, P. Fishburn and R. Graham (1980).
 - **Task:** A toric-geometry proof compared with Chan–Pak, or a combinatorial proof.

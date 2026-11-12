@@ -26,7 +26,6 @@ The Round 1 problem list has 140 problems and comes from the organizers' problem
 | [`problems_original/README.md`](problems_original/README.md) | The problem sheet copied verbatim: one file per problem with the proposer's title, short description, area, tracks, references and desired outcome, plus the sheet exports. Nothing in it is AI-generated or edited. | Everyone |
 | [`problems_ai/README.md`](problems_ai/README.md) | The problem list for reading: one page per problem with the proposer's text (verbatim) followed by clearly labelled AI-generated notes on what is known, how known proofs work, where to start, references with links, and the Lean status | Everyone |
 | [`problems_ai/lean/`](problems_ai/lean/) | The official Lean statements, written by AI, as a Lean project for Lean v4.35.0 and Mathlib `v4.35.0` (configuration files and statements only) | Participants, LLM operator |
-| [`problems/README.md`](problems/README.md) | The earlier problem list (94 problems, as of 2026-11-10). [`problems_ai/README.md`](problems_ai/README.md) lists what changed. | Organizers |
 
 The overview reproduces the Mathathon website.
 

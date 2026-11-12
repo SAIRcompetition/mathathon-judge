@@ -33,7 +33,7 @@ formalizations in lean
 
 <!-- status: Not a single theorem -->
 
-> Written by AI for the earlier problem list, where this was problem 10 ([`problems/10-landau-and-boltzmann-equations.md`](../problems/10-landau-and-boltzmann-equations.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 10 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Global smooth solutions of the space-homogeneous Landau equation (Guillen–Silvestre, 2023) and Boltzmann equation (Imbert–Silvestre–Villani, 2024) are proved; the space-inhomogeneous theory for large data is still conditional.
 - **Task:** Lean formalizations of well-posedness and stability results for these equations.

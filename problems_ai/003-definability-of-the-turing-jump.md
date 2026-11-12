@@ -32,7 +32,7 @@ Use AI to come up with a more explicit definition of the jump in the partial ord
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 3 ([`problems/03-definability-of-the-turing-jump.md`](../problems/03-definability-of-the-turing-jump.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 3 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Definability proved by R. Shore and T. Slaman (1999); a natural definition and definitions of lower quantifier complexity were posed as open questions by Shore (2007).
 - **Task:** A more explicit definition of the jump, or limits on its complexity.

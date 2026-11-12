@@ -44,7 +44,7 @@ Prove the monstrous moonshine theorem in Lean, including the constructions and i
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list ([`problems/34-monstrous-moonshine.md`](../problems/34-monstrous-moonshine.md)) and revised by Claude Opus 5.5 on 2026-11-11 to match the proposer's current text.
+> Written by AI for the earlier problem list (commit `1f49cd4`) and revised by Claude Opus 5.5 on 2026-11-11 to match the proposer's current text.
 
 - **Status:** Proved by R. E. Borcherds (1992); conjectured by Conway and Norton (1979).
 - **Task:** A new proof of a denominator identity, replication formula or genus-zero step; also a Lean proof of the theorem with reusable libraries for vertex algebras and the Monster Lie algebra.

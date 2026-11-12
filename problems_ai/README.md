@@ -11,7 +11,7 @@ Apart from the notes, the AI-generated material in this folder is the Status and
 
 The first line of each notes section says where its notes come from.
 
-- **Carried over** from the earlier problem list in [`../problems/`](../problems/) (94 problems, as of commit `1f49cd4`, 2026-11-10): problems 1–93 except those listed below (85 problems). In 81 of them the notes are unchanged; in problems 33, 91, 92 and 93 only links that depend on the problem numbering were updated. For these problems the sheet text differs from the earlier list's copy at most in typo-level details (single characters, escaping, angle brackets around links), so the notes still apply.
+- **Carried over** from the earlier problem list (94 problems, in `problems/` at commit `1f49cd4`, 2026-11-10; that folder is no longer tracked): problems 1–93 except those listed below (85 problems). In 81 of them the notes are unchanged; in problems 33, 91, 92 and 93 only links that depend on the problem numbering were updated. For these problems the sheet text differs from the earlier list's copy at most in typo-level details (single characters, escaping, angle brackets around links), so the notes still apply.
 - **Revised** by Claude Opus 5.5 on 2026-11-11 because the sheet text differs substantially from the earlier list's copy: problems 2, 9, 34, 40, 54, 56 and 70.
 - **New**, written by Claude Opus 5.5 on 2026-11-11: problems 12 and 94–140.
 
@@ -26,13 +26,13 @@ The links in the revised and new notes were checked on 2026-11-11. Three could n
 
 ## Lean
 
-[`lean/`](lean/) is a Lean project for Lean v4.35.0 and Mathlib `v4.35.0` with the official Lean statements, copied from `../problems/lean/`. The only changes are the renumbering of three files, `P92_EuclideanRamsey.lean` → `P91_…`, `P93_Erdos173.lean` → `P92_…` and `P94_PrimeGaps186.lean` → `P93_…`, and the problem number in their first comment line; namespaces and declarations are unchanged. The statements were written by AI for the earlier problem list; no statements have been written for the new problems. Problems marked ✓ in the table have an official statement. For problem 56 the official statement (OpenAI's running-time bound with polynomial space) is stronger than what the revised problem asks for; its page explains the difference. The statements of the other revised problems still match their text.
+[`lean/`](lean/) is a Lean project for Lean v4.35.0 and Mathlib `v4.35.0` with the official Lean statements, copied from the earlier list's `problems/lean/` (commit `1f49cd4`). The only changes are the renumbering of three files, `P92_EuclideanRamsey.lean` → `P91_…`, `P93_Erdos173.lean` → `P92_…` and `P94_PrimeGaps186.lean` → `P93_…`, and the problem number in their first comment line; namespaces and declarations are unchanged. The statements were written by AI for the earlier problem list; no statements have been written for the new problems. Problems marked ✓ in the table have an official statement. For problem 56 the official statement (OpenAI's running-time bound with polynomial space) is stronger than what the revised problem asks for; its page explains the difference. The statements of the other revised problems still match their text.
 
 To check the statements, run `lake exe cache get` and then `lake build` in `lean/`. On 2026-11-11 the build completed without errors; every statement is stated with `sorry`, as intended.
 
 ## Updating after the sheet changes
 
-1. Download the sheet exports into `../problems_original/source/` and run `python3 problems_original/source/split_sheet.py`.
+1. Download the sheet exports into `problems_original/source/` and run `python3 problems_original/split_sheet.py` (see [`../problems_original/README.md`](../problems_original/README.md)).
 2. Run `python3 problems_ai/refresh_proposer_text.py`. It rewrites the title line and the **From the proposer** section of every page from `../problems_original/`, checks that the copy is verbatim, adds a placeholder page for any new problem and rebuilds the table below. It never changes the notes.
 3. Review the notes of every problem whose text changed, and write notes for the placeholders.
 

@@ -34,7 +34,7 @@ A new geometric argument for Hylland's theorem and nice visualizations of this i
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 39 ([`problems/39-hyllands-random-dictatorship-theorem.md`](../problems/39-hyllands-random-dictatorship-theorem.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 39 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by A. Hylland (1980, unpublished) and S. Nandeibam (2013); the 2008 erratum of Dutta, Peters and Sen completes their 2007 proof only under an extra assumption.
 - **Task:** A new geometric proof of Hylland's theorem, with visualizations and exposition.

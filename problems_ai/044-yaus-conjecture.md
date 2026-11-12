@@ -39,7 +39,7 @@ Visualizations that make the mechanism tangible: nodal sets of the constructed e
 
 <!-- status: Disproved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 44 ([`problems/44-yaus-conjecture.md`](../problems/44-yaus-conjecture.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 44 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Lower bound proved by Logunov (2018); OpenAI preprints (September 2026, not yet refereed) claim the upper bound on surfaces and counterexamples in dimensions ≥ 3.
 - **Task:** A readable account of the 2D proof and the higher-dimensional counterexamples.

@@ -32,7 +32,7 @@ A more understandable / elementary proof. Something easy enough to practitioners
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 28 ([`problems/28-singularity-expansion-of-scattered-waves.md`](../problems/28-singularity-expansion-of-scattered-waves.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 28 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved for non-trapping obstacles in odd dimensions (Dyatlov–Zworski Theorem 4.44, by Vainberg's method); a weaker expansion under strong trapping is due to Burq and Zworski (2001).
 - **Task:** A more elementary proof that practitioners can follow and apply.

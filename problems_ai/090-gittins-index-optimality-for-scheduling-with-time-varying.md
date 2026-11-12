@@ -50,7 +50,7 @@ Participants could focus on a particular lemma or proof technique rather than re
 
 <!-- status: Partly solved -->
 
-> Written by AI for the earlier problem list, where this was problem 91 ([`problems/91-gittins-index-with-time-varying-holding-costs.md`](../problems/91-gittins-index-with-time-varying-holding-costs.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 91 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Index optimality is proved for two classes, one with constant holding cost, among non-decreasing index policies (Gurushankar et al., Queueing Systems 2026); the proposer's conditional result is unpublished and unrefereed.
 - **Task:** A simpler or more intuitive proof of the conditional Gittins-index optimality result, or a rigorous check of its key steps.

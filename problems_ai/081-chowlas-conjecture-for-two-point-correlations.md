@@ -51,7 +51,7 @@ These hyperlinks are attached to cells of this row in the sheet. They are listed
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 81 ([`problems/81-two-point-chowla-conjecture.md`](../problems/81-two-point-chowla-conjecture.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 81 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved in an OpenAI preprint dated 24 September 2026 (released 6 October 2026), which its repository describes as produced by an internal OpenAI model; not yet refereed. Conjectured by Chowla (1965).
 - **Task:** A survey of the proof: outline, key ideas, new techniques compared with earlier work; optionally a simpler proof.

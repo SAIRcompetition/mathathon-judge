@@ -43,7 +43,7 @@ These hyperlinks are attached to cells of this row in the sheet. They are listed
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list ([`problems/09-clustered-hadwiger-theorem.md`](../problems/09-clustered-hadwiger-theorem.md)) and revised by Claude Opus 5.5 on 2026-11-11 to match the proposer's current text.
+> Written by AI for the earlier problem list (commit `1f49cd4`) and revised by Claude Opus 5.5 on 2026-11-11 to match the proposer's current text.
 
 - **Status:** Proved by V. Dujmović, L. Esperet, P. Morin and D. R. Wood (FOCS 2023; full version arXiv:2306.06224); asked by Edwards, Kang, Kim, Oum and Seymour (2015).
 - **Task:** A self-contained proof that avoids the Graph Minor Structure Theorem.

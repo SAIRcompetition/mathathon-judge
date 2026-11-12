@@ -36,7 +36,7 @@ A formalisation of the above theorem +proof in lean.
 
 <!-- status: Not a single theorem -->
 
-> Written by AI for the earlier problem list, where this was problem 68 ([`problems/68-nonparametric-bernstein-von-mises.md`](../problems/68-nonparametric-bernstein-von-mises.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 68 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Nonparametric BvM theorems are proved model by model (Castillo–Nickl 2013, 2014; Nickl 2020, 2024).
 - **Task:** One BvM theorem whose hypotheses cover the known nonparametric ones.
