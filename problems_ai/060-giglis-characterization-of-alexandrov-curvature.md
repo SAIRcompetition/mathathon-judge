@@ -17,10 +17,6 @@ The goal is to provide understanding of the proof and the tools employed.
 
 https://github.com/openai/math/blob/main/preprints/Giglis-distributional-curvature-characterization-of-Alexandrov-spaces-September-24-2026/main.pdf
 
-### Reference links
-
-- <https://github.com/openai/math/blob/main/preprints/Giglis-distributional-curvature-characterization-of-Alexandrov-spaces-September-24-2026/main.pdf>
-
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
