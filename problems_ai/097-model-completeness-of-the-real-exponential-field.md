@@ -3,7 +3,7 @@
 ## From the proposer
 
 - **Area:** Mathematical Logic — Model Theory, O-minimality, Real Algebraic Geometry, and Exponential Fields.
-- **Tracks:** ?????
+- **Tracks:** Team's choice
 
 ### Description
 
