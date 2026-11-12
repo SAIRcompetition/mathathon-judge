@@ -17,10 +17,6 @@ Bring the CFSG in from the cold by formalizing large parts of it in Lean, or by 
 
 https://en.wikipedia.org/wiki/Classification_of_finite_simple_groups
 
-### Reference links
-
-- <https://en.wikipedia.org/wiki/Classification_of_finite_simple_groups>
-
 ## From the judges
 
 The Lean formalization has already been done now, by Axiom: https://cfsg.axiommath.ai/errata#abstract 
@@ -28,10 +24,6 @@ The Lean formalization has already been done now, by Axiom: https://cfsg.axiomma
 Probably a good outcome would be to try to map out clearly the main ideas of the proof and how everything connects together at a high level.
 
 Then also try to understand what (new?) definitions would make the whole proof more stream-lined and clear.
-
-### Links in the judge suggestions
-
-- <https://cfsg.axiommath.ai/errata#abstract>
 
 ## AI-generated notes
 

@@ -23,10 +23,6 @@ The answer to this problem and a new proof of the main theorem in the reference
 
 https://link.springer.com/article/10.1007/BF02392840
 
-### Reference links
-
-- <https://link.springer.com/article/10.1007/BF02392840>
-
 ## From the judges
 
 All I know for the moment is the Lacey Acta paper is wrong.

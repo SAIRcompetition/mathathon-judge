@@ -17,10 +17,6 @@ Explain intuitively the idea behind "Harmonic Entropy" (section 5 of the paper)
 
 https://arxiv.org/pdf/2609.11912
 
-### Reference links
-
-- <https://arxiv.org/pdf/2609.11912>
-
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->

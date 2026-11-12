@@ -17,10 +17,6 @@ A good understanding of the proof, which has been also longstanding for several 
 
 https://arxiv.org/abs/2611.01403
 
-### Reference links
-
-- <https://arxiv.org/abs/2611.01403>
-
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->

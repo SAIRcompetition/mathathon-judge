@@ -18,10 +18,6 @@ https://www.quantamagazine.org/statistician-proves-gaussian-correlation-inequali
 
 https://arxiv.org/abs/1512.08776
 
-### Reference links
-
-- <https://arxiv.org/abs/1512.08776>
-
 ## AI-generated notes
 
 <!-- status: Proved -->

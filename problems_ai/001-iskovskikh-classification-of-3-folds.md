@@ -26,10 +26,6 @@ https://doi.org/10.1070/IM1977v011n03ABEH001733
 There is some recent progress in dimension 4 due to Enrico Fatinghenti and collaborators, they created a webpage: https://sites.google.com/view/enricofatighenti/home 
 I think this would be of great inspiration for the people thinking about this direction.
 
-### Links in the judge suggestions
-
-- <https://sites.google.com/view/enricofatighenti/home>
-
 ## AI-generated notes
 
 <!-- status: Proved -->

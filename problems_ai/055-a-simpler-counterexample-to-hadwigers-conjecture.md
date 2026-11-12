@@ -17,10 +17,6 @@ A simpler construction of a counterexample to Hadwiger's conjecture, ideally wit
 
 https://github.com/openai/math/blob/main/preprints/A-counterexample-to-Hadwigers-conjecture-September-23-2026/paper.pdf
 
-### Reference links
-
-- <https://github.com/openai/math/blob/main/preprints/A-counterexample-to-Hadwigers-conjecture-September-23-2026/paper.pdf>
-
 ## AI-generated notes
 
 <!-- status: Disproved (preprint) -->

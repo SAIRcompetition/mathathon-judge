@@ -19,10 +19,6 @@ An expository write-up and/or video
 2. David Gabai, "Convergence groups are Fuchsian groups" @ https://www.projecteuclid.org/journalArticle/Download?urlid=bams%2F1183657188
 3. G. Christopher Hruska and Genevieve Walsh, "Relatively hyperbolic groups with planar boundaries" @ https://arxiv.org/html/2405.20428v1 re: some related statements and extensions
 
-### Reference links
-
-- <https://github.com/openai/math/tree/main/preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026?utm_source=chatgpt.com>
-
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->

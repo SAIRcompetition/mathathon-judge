@@ -37,10 +37,6 @@ Establishes index optimality for a special case in which one job class has const
 
 Talk submitted by the submitter: https://www.youtube.com/watch?v=KHqzHCZTiIc 
 
-### Reference links
-
-- <https://www.youtube.com/watch?v=KHqzHCZTiIc>
-
 ## AI-generated notes
 
 <!-- status: Partly solved -->

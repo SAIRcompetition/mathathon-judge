@@ -18,10 +18,6 @@ We want to prove the equivalence in Simpson's conjecture. Immediate applications
 https://ncatlab.org/nlab/show/Simpson's+conjecture
 https://arxiv.org/abs/1807.02627
 
-### Reference links
-
-- <https://arxiv.org/abs/1807.02627>
-
 ## AI-generated notes
 
 <!-- status: Partly solved -->

@@ -17,10 +17,6 @@ A simpler proof of Barnette's conjecture, ideally with a shorter and more elemen
 
 https://github.com/openai/math/blob/main/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/paper.pdf
 
-### Reference links
-
-- <https://github.com/openai/math/blob/main/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/paper.pdf>
-
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->

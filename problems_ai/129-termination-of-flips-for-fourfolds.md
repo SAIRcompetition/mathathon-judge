@@ -17,10 +17,6 @@ Develop a unified framework that clarifies the proof’s structure. Identify the
 
 https://github.com/openai/math/blob/main/preprints/Termination-of-generalized-log-canonical-flips-on-compact-Kahler-fourfolds-October-7-2026/termination-generalized-lc-kahler-fourfolds.pdf
 
-### Reference links
-
-- <https://github.com/openai/math/blob/main/preprints/Termination-of-generalized-log-canonical-flips-on-compact-Kahler-fourfolds-October-7-2026/termination-generalized-lc-kahler-fourfolds.pdf>
-
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->

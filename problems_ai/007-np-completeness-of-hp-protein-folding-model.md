@@ -17,10 +17,6 @@ Ideally a formalized proof in Lean; alternatively, a simplification of the const
 
 https://dl.acm.org/doi/abs/10.1145/279069.279080
 
-### Reference links
-
-- <https://dl.acm.org/doi/abs/10.1145/279069.279080>
-
 ## AI-generated notes
 
 <!-- status: Proved -->

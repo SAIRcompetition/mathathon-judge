@@ -17,10 +17,6 @@ An accessible explanation of the guarantee, an illustrated restricted case, and 
 
 https://www.sciencedirect.com/science/article/pii/S0167839625000214?via%3Dihub
 
-### Reference links
-
-- <https://www.sciencedirect.com/science/article/pii/S0167839625000214?via%3Dihub>
-
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->

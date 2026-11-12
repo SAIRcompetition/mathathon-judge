@@ -17,10 +17,6 @@ Explain its quantum-information significance; Check pieces of the computational 
 
 https://github.com/openai/math/blob/main/preprints/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026.pdf
 
-### Reference links
-
-- <https://github.com/openai/math/blob/main/preprints/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026.pdf>
-
 ## AI-generated notes
 
 <!-- status: Partly solved -->
