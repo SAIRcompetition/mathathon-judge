@@ -80,7 +80,7 @@ theorem turing_jump_definable :
       ∀ a b : Degree, φ.Realize ![a, b] ↔ b = degreeJump a
 ```
 
-Source: written by AI for Mathathon; not taken from an existing formalization.
+Source: <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DegreeRigidity.lean> and five files under `lean/OAI/Computability/DegreeRigidity/` in the same repository (Apache-2.0), for the Turing degrees and the jump, copied unchanged; `degreeJump`, the order structure on the degrees and the theorem are written by AI for Mathathon (see the file header).
 
 #### Related Lean formalizations
 

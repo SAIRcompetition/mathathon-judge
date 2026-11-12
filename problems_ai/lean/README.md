@@ -11,10 +11,10 @@ To check the statements, run `lake exe cache get` and then `lake build` in this 
 | Problem | File | Source |
 |---|---|---|
 | [2](../002-robertson-seymour-graph-minor-theorem.md) | [`P02_GraphMinorTheorem.lean`](MathathonProblems/P02_GraphMinorTheorem.lean) | written by AI |
-| [3](../003-definability-of-the-turing-jump.md) | [`P03_TuringJumpDefinable.lean`](MathathonProblems/P03_TuringJumpDefinable.lean) | written by AI |
+| [3](../003-definability-of-the-turing-jump.md) | [`P03_TuringJumpDefinable.lean`](MathathonProblems/P03_TuringJumpDefinable.lean) | adapted from openai/math |
 | [4](../004-unrepresentable-finite-lattice.md) | [`P04_UnrepresentableLattice.lean`](MathathonProblems/P04_UnrepresentableLattice.lean) | adapted from openai/math |
 | [6](../006-abc-conjecture.md) | [`P06_ABC.lean`](MathathonProblems/P06_ABC.lean) | adapted from google-deepmind/formal-conjectures |
-| [7](../007-np-completeness-of-hp-protein-folding-model.md) | [`P07_HPFoldingNPComplete.lean`](MathathonProblems/P07_HPFoldingNPComplete.lean) | written by AI |
+| [7](../007-np-completeness-of-hp-protein-folding-model.md) | [`P07_HPFoldingNPComplete.lean`](MathathonProblems/P07_HPFoldingNPComplete.lean) | adapted from openai/math |
 | [8](../008-weak-factorization-for-the-biholomorphic-hardy-space.md) | [`P08_BidiscWeakFactorization.lean`](MathathonProblems/P08_BidiscWeakFactorization.lean) | written by AI |
 | [9](../009-clustered-hadwigers-theorem.md) | [`P09_ClusteredHadwiger.lean`](MathathonProblems/P09_ClusteredHadwiger.lean) | written by AI |
 | [10](../010-well-posedness-and-stability-of-landau-equation-vlasov.md) | [`P10_LandauFisherInformation.lean`](MathathonProblems/P10_LandauFisherInformation.lean) | written by AI |
