@@ -108,7 +108,7 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 | 90 | [Gittins Index Optimality for Scheduling with Time-Varying Holding Costs](090-gittins-index-optimality-for-scheduling-with-time-varying.md) | Computation/Applied Math | Partly solved | — |
 | 91 | [A classification of finite Euclidean Ramsey configurations](091-a-classification-of-finite-euclidean-ramsey-configurations.md) | Combinatorics | Proved (preprint) | ✓ |
 | 92 | [Erdős Problem #173: monochromatic congruent triangles in 2-colourings of the plane](092-erdos-problem-173-monochromatic-congruent-triangles-in-2.md) | Combinatorics | Proved (preprint) | ✓ |
-| 93 | [An improvement towards bounded gaps between primes](093-an-improvement-towards-bounded-gaps-between-primes.md) | Numer Theory/Algebra | Proved (preprint) | ✓ |
+| 93 | [An improvement towards bounded gaps between primes](093-an-improvement-towards-bounded-gaps-between-primes.md) | Number Theory/Algebra | Proved (preprint) | ✓ |
 | 94 | [Summing multiplicative functions/counting primes](094-summing-multiplicative-functions-counting-primes.md) | Computation/Applied Math, Number Theory/Algebra | Not a single theorem | — |
 | 95 | [Quasi-Orders For the Lefthanded Lovász Local Lemma](095-quasi-orders-for-the-lefthanded-lovasz-local-lemma.md) | Combinatorics | Not a single theorem | — |
 | 96 | [Counterexamples to polynomial removal for ordered binary matrices](096-counterexamples-to-polynomial-removal-for-ordered-binary.md) | Combinatorics | Disproved (preprint) | — |
@@ -133,13 +133,13 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 | 115 | [Exotic spheres](115-exotic-spheres.md) | Geometry | Proved | — |
 | 116 | [LLM-assisted search for a new knot invariant](116-llm-assisted-search-for-a-new-knot-invariant.md) | Geometry | Not a single theorem | — |
 | 117 | [Parity obstructions behind Drury’s external vertices conjecture: from n = 4 to n = 5](117-parity-obstructions-behind-drurys-external-vertices.md) | Combinatorics | Open | — |
-| 118 | [Formalizing the AKLT spectral gap](118-formalizing-the-aklt-spectral-gap.md) | Computation/Applied mathematics | Partly solved | — |
+| 118 | [Formalizing the AKLT spectral gap](118-formalizing-the-aklt-spectral-gap.md) | Computation/Applied mathematics | Proved (preprint) | — |
 | 119 | [Freedman's disc embedding theorem and 4D Poincare](119-freedmans-disc-embedding-theorem-and-4d-poincare.md) | Geometry | Proved | — |
 | 120 | [Characterizations and identities for probability distributions](120-characterizations-and-identities-for-probability.md) | Analysis | Not a single theorem | — |
-| 121 | [Carleson' Theorem on convergence of Fourier series](121-carleson-theorem-on-convergence-of-fourier-series.md) | Analysis | Proved | — |
+| 121 | [Carleson's Theorem on convergence of Fourier series](121-carleson-theorem-on-convergence-of-fourier-series.md) | Analysis | Proved | — |
 | 122 | [Efficient Verification of Lean Proofs via Interaction](122-efficient-verification-of-lean-proofs-via-interaction.md) | Computation/Applied Mathematics | Not a single theorem | — |
 | 123 | [Schur Number Five](123-schur-number-five.md) | Combinatorics | Proved | — |
-| 124 | [Mutually unbiased bases in dimension 6, applied to a 6-dimensional quantum system](124-mutually-unbiased-bases-in-dimension-6-applied-to-a-6.md) | Computaiton/Applied Math | Partly solved | — |
+| 124 | [Mutually unbiased bases in dimension 6, applied to a 6-dimensional quantum system](124-mutually-unbiased-bases-in-dimension-6-applied-to-a-6.md) | Computation/Applied Math | Partly solved | — |
 | 125 | [Enumeration of totally symmetric plane partitions](125-enumeration-of-totally-symmetric-plane-partitions.md) | Combinatorics | Proved | — |
 | 126 | [Creative Mathematical Thought Partners](126-creative-mathematical-thought-partners.md) | Computation/Applied Mathematics | Not a single theorem | — |
 | 127 | [Rogers Ramanujan Identity](127-rogers-ramanujan-identity.md) | Combinatorics | Proved | — |

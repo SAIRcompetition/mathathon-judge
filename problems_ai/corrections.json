@@ -32,6 +32,62 @@
   "why": "misspelt name"
  },
  {
+  "id": 21,
+  "field": "Short description of problem (100 words or less)",
+  "old": "Brito-Ioana-Harris",
+  "new": "Brito-Dumitriu-Harris",
+  "count": 1,
+  "why": "wrong author name (arXiv:1804.07808)"
+ },
+ {
+  "id": 21,
+  "field": "Short description of problem (100 words or less)",
+  "old": "B-I-H",
+  "new": "B-D-H",
+  "count": 1,
+  "why": "abbreviation of the same author list; follows the correction above"
+ },
+ {
+  "id": 21,
+  "field": "Reference/source material",
+  "old": "Brito-Ioana-Harris",
+  "new": "Brito-Dumitriu-Harris",
+  "count": 1,
+  "why": "wrong author name (arXiv:1804.07808)"
+ },
+ {
+  "id": 28,
+  "field": "Reference/source material",
+  "old": "Zworski and Dyaltov",
+  "new": "Zworski and Dyatlov",
+  "count": 1,
+  "why": "misspelt name (Crossref doi:10.1090/gsm/200)"
+ },
+ {
+  "id": 29,
+  "field": "Short description of problem (100 words or less)",
+  "old": "are high complicated",
+  "new": "are highly complicated",
+  "count": 1,
+  "why": "typo (adverb form)"
+ },
+ {
+  "id": 29,
+  "field": "Desired outcome",
+  "old": "A easy to understand explanation",
+  "new": "An easy to understand explanation",
+  "count": 1,
+  "why": "typo (article before a vowel)"
+ },
+ {
+  "id": 32,
+  "field": "Reference/source material",
+  "old": "optimization methods: S. Das Gupta et al.\"",
+  "new": "optimization methods.\"",
+  "count": 1,
+  "why": "wrong title (Crossref doi:10.1007/s10107-023-01973-1)"
+ },
+ {
   "id": 33,
   "field": "Desired outcome",
   "old": "proof that OpenAI's",
@@ -40,10 +96,82 @@
   "why": "typo"
  },
  {
+  "id": 34,
+  "field": "Desired outcome",
+  "old": "a central componen such",
+  "new": "a central component such",
+  "count": 1,
+  "why": "typo"
+ },
+ {
+  "id": 37,
+  "field": "Short description of problem (100 words or less)",
+  "old": "one of the deepest conjecture in",
+  "new": "one of the deepest conjectures in",
+  "count": 1,
+  "why": "typo (plural after 'one of the')"
+ },
+ {
+  "id": 37,
+  "field": "Short description of problem (100 words or less)",
+  "old": "which I finds easier",
+  "new": "which I find easier",
+  "count": 1,
+  "why": "typo (verb form after 'I')"
+ },
+ {
+  "id": 46,
+  "field": "Short description of problem (100 words or less)",
+  "old": "Its also a proof by contradiction",
+  "new": "It's also a proof by contradiction",
+  "count": 1,
+  "why": "typo ('its' for 'it's')"
+ },
+ {
+  "id": 53,
+  "field": "Reference/source material",
+  "old": "raizet, M. (2008)",
+  "new": "Traizet, M. (2008)",
+  "count": 1,
+  "why": "misspelt name (first letter missing) (Crossref doi:10.4310/jdg/1211512641)"
+ },
+ {
+  "id": 54,
+  "field": "Desired outcome",
+  "old": "intuition allow all",
+  "new": "intuition allows all",
+  "count": 1,
+  "why": "typo (subject-verb agreement)"
+ },
+ {
+  "id": 59,
+  "field": "Desired outcome",
+  "old": "parts of the proof uses existing",
+  "new": "parts of the proof use existing",
+  "count": 1,
+  "why": "typo (subject-verb agreement)"
+ },
+ {
+  "id": 59,
+  "field": "Desired outcome",
+  "old": "which parts provides new",
+  "new": "which parts provide new",
+  "count": 1,
+  "why": "typo (subject-verb agreement)"
+ },
+ {
   "id": 68,
   "field": "Desired outcome",
   "old": "more general that all",
   "new": "more general than all",
+  "count": 1,
+  "why": "typo"
+ },
+ {
+  "id": 69,
+  "field": "Submitted Area",
+  "old": "Algebraic Geomtry",
+  "new": "Algebraic Geometry",
   "count": 1,
   "why": "typo"
  },
@@ -64,6 +192,46 @@
   "why": "typo"
  },
  {
+  "id": 84,
+  "field": "Short description of problem (100 words or less)",
+  "old": "an sufficiently flexible",
+  "new": "a sufficiently flexible",
+  "count": 1,
+  "why": "typo (article before a consonant)"
+ },
+ {
+  "id": 87,
+  "field": "Reference/source material",
+  "old": "C. Dequêne",
+  "new": "B. Dequêne",
+  "count": 1,
+  "why": "wrong author initial (arXiv:2212.14831)"
+ },
+ {
+  "id": 93,
+  "field": "Proposed Tracks",
+  "old": "Numer Theory/Algebra",
+  "new": "Number Theory/Algebra",
+  "count": 1,
+  "why": "typo (track name)"
+ },
+ {
+  "id": 95,
+  "field": "Short description of problem (100 words or less)",
+  "old": "how qausi-order",
+  "new": "how quasi-order",
+  "count": 1,
+  "why": "typo"
+ },
+ {
+  "id": 95,
+  "field": "Short description of problem (100 words or less)",
+  "old": "allows the the notion",
+  "new": "allows the notion",
+  "count": 1,
+  "why": "typo (repeated word)"
+ },
+ {
   "id": 113,
   "field": "Title/name of problem",
   "old": "Mcduff-Shlenk",
@@ -72,12 +240,52 @@
   "why": "misspelt names"
  },
  {
+  "id": 117,
+  "field": "Short description of problem (100 words or less)",
+  "old": "unpublised two-page proof",
+  "new": "unpublished two-page proof",
+  "count": 1,
+  "why": "typo"
+ },
+ {
+  "id": 121,
+  "field": "Title/name of problem",
+  "old": "Carleson' Theorem",
+  "new": "Carleson's Theorem",
+  "count": 1,
+  "why": "typo (possessive)"
+ },
+ {
+  "id": 121,
+  "field": "Short description of problem (100 words or less)",
+  "old": "series convergences pointwise",
+  "new": "series converges pointwise",
+  "count": 1,
+  "why": "typo (noun for verb)"
+ },
+ {
+  "id": 124,
+  "field": "Proposed Tracks",
+  "old": "Computaiton/Applied Math",
+  "new": "Computation/Applied Math",
+  "count": 1,
+  "why": "typo (track name)"
+ },
+ {
   "id": 128,
   "field": "Reference/source material",
   "old": "Annals of Probability 47 (2019), 1398–1419",
   "new": "Combinatorica 39 (2019), 933–960",
   "count": 1,
   "why": "wrong journal (Crossref: doi:10.1007/s00493-019-3817-6)"
+ },
+ {
+  "id": 129,
+  "field": "Short description of problem (100 words or less)",
+  "old": "the proof bring several",
+  "new": "the proof brings several",
+  "count": 1,
+  "why": "typo (subject-verb agreement)"
  },
  {
   "id": 130,
@@ -120,11 +328,27 @@
   "why": "misspelt term"
  },
  {
+  "id": 134,
+  "field": "Short description of problem (100 words or less)",
+  "old": "a foundamental relation",
+  "new": "a fundamental relation",
+  "count": 1,
+  "why": "typo"
+ },
+ {
   "id": 138,
   "field": "Reference/source material",
   "old": "2. Basile Coron, https://arxiv.org/abs/2604.04550v3.",
   "new": "2. Basile Coron, Luis Ferroni and Shiyue Li, https://arxiv.org/abs/2604.04550v3.",
   "count": 1,
   "why": "missing co-authors (arXiv listing)"
+ },
+ {
+  "id": 138,
+  "field": "Reference/source material",
+  "old": "develop build matroids",
+  "new": "develop built matroids",
+  "count": 1,
+  "why": "misspelt term (arXiv:2604.04550)"
  }
 ]

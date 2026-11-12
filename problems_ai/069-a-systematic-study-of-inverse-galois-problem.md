@@ -2,7 +2,7 @@
 
 ## From the proposer
 
-- **Area:** Algebraic Geomtry
+- **Area:** Algebraic Geometry
 - **Tracks:** Geometry
 
 ### Description

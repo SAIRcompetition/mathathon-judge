@@ -15,7 +15,7 @@ A more understandable / elementary proof. Something easy enough to practitioners
 
 ### References
 
-The mathematical theory of scattering resonances by Zworski and Dyaltov. Chapter 7
+The mathematical theory of scattering resonances by Zworski and Dyatlov. Chapter 7
 
 ## AI-generated notes
 

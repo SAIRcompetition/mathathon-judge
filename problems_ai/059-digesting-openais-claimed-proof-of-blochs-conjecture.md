@@ -11,7 +11,7 @@ Bloch's conjecture predicts that for a smooth connected projective complex surfa
 
 ### Desired outcome
 
-Carefully digest and verify the AI-generated proof of Bloch's conjecture. For example, participants can give an exposition for the main strategy of the proof, and check whether the steps hold rigorously or contain subtle gaps. They can optionally formalize key lemmas in Lean. Participants can compare the approach to classical methods, identify which parts of the proof uses existing techniques, and which parts provides new techniques. Finally, they can provide some comments on whether the new techniques are helpful for proving higher dimensional analogs of Bloch's conjecture beyond surfaces.
+Carefully digest and verify the AI-generated proof of Bloch's conjecture. For example, participants can give an exposition for the main strategy of the proof, and check whether the steps hold rigorously or contain subtle gaps. They can optionally formalize key lemmas in Lean. Participants can compare the approach to classical methods, identify which parts of the proof use existing techniques, and which parts provide new techniques. Finally, they can provide some comments on whether the new techniques are helpful for proving higher dimensional analogs of Bloch's conjecture beyond surfaces.
 
 ### References
 
