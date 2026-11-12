@@ -1,33 +1,22 @@
 # 24 · Proving the Gaussian correlation inequality
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/024-proving-the-gaussian-correlation-inequality.md`](../problems_original/024-proving-the-gaussian-correlation-inequality.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Mathematical Statistics
+- **Tracks:** Analysis
 
-Proving the Gaussian correlation inequality
-
-### Short description of problem (100 words or less)
+### Description
 
 The Gaussian correlation inequality is a famous inequality in mathematical statistics. The inequality was conjectured in 1955 and proved in 2014. 
-
-### Submitted Area
-
-Mathematical Statistics
-
-### Proposed Tracks
-
-Analysis
-
-### Reference/source material
-
-https://arxiv.org/abs/1512.08776
 
 ### Desired outcome
 
 The first proof was constructed using probabilistic arguments, but perhaps it is possible to construct a more intuitive and concise geometric proof of the inequality. As this Quanta article below shows, it has a nice geometric interpretation.
 https://www.quantamagazine.org/statistician-proves-gaussian-correlation-inequality-20170328/
+
+### References
+
+https://arxiv.org/abs/1512.08776
 
 ### Reference links
 
@@ -36,8 +25,6 @@ https://www.quantamagazine.org/statistician-proves-gaussian-correlation-inequali
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by AI for the earlier problem list, where this was problem 24 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by T. Royen (2014); the general conjecture was formulated by S. Das Gupta et al. (1972).
 - **Task:** A more intuitive and concise geometric proof.

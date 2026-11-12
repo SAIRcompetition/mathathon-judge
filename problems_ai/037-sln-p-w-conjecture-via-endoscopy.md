@@ -1,26 +1,19 @@
 # 37 · SLn P=W Conjecture via endoscopy
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/037-sln-p-w-conjecture-via-endoscopy.md`](../problems_original/037-sln-p-w-conjecture-via-endoscopy.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Algebraic geometry
+- **Tracks:** Geometry
 
-SLn P=W Conjecture via endoscopy
-
-### Short description of problem (100 words or less)
+### Description
 
 The celebrated P=W Conjecture is one of the deepest conjecture in Non Abelian Hodge Theory. Since 2022, it has been proved in three ways: by Maulik-Shen, by Hausel-Mellit-Minets-Schiffmann, and by Maulik-Shen-Yin. The P=W Conjecture has an SLn variant, which is proved by OpenAI in Oct 2026. OpenAI's proof builds via HMMS's approach. The goal of this project is to give a proof of the SLn P=W Conjecture via MS's approach, which I finds easier to understand for a geometer.
 
-### Submitted Area
+### Desired outcome
 
-Algebraic geometry
+A proof of the SLn P=W Conjecture without using \mathcal{H}_2. Instead, it should use global Springer theory and endoscopic decomposition.
 
-### Proposed Tracks
-
-Geometry
-
-### Reference/source material
+### References
 
 Maulik, Davesh, and Junliang Shen. "The P=W conjecture for GL_n." Annals of Mathematics 200, no. 2 (2024): 529-556.
 
@@ -28,15 +21,9 @@ Hausel, Tamas, Anton Mellit, Alexandre Minets, and Olivier Schiffmann. "$ P= W $
 
 OpenAI. "P=W in composite rank for fixed determinant." OpenAI Math Release preprint (2026). https://github.com/openai/math/tree/main/preprints/P-equals-W-in-composite-rank-for-fixed-determinant-September-24-2026.
 
-### Desired outcome
-
-A proof of the SLn P=W Conjecture without using \mathcal{H}_2. Instead, it should use global Springer theory and endoscopic decomposition.
-
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by AI for the earlier problem list, where this was problem 37 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Prime rank: de Cataldo–Maulik–Shen (2022) with the GLₙ theorem; composite rank: OpenAI preprint (September 2026), not yet refereed.
 - **Task:** An SLₙ P=W proof via global Springer theory and endoscopy.

@@ -1,40 +1,27 @@
 # 130 · Uniqueness of Finite Quandale Colorings
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/130-uniqueness-of-finite-quandale-colorings.md`](../problems_original/130-uniqueness-of-finite-quandale-colorings.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Knot theory, Quandale theory
+- **Tracks:** Geometry
 
-Uniqueness of Finite Quandale Colorings
-
-### Short description of problem (100 words or less)
+### Description
 
 Quandales provide a novel approach to analyzing structures in knot theory. We want to understand how well quandales describe knots, and in particular tackle the Alexander Polynomial Conjecture, which states that if two knots have different Alexander polynomials, then they can be distinguished by colorings via a suitable finite linear Alexander quandale. Previous work has shown this is true for triangularizable matrices, and we want to examine whether similar results hold in general.
-
-### Submitted Area
-
-Knot theory, Quandale theory
-
-### Proposed Tracks
-
-Geometry
-
-### Reference/source material
-
-https://kmj.knu.ac.kr/journal/view.html?volume=56&number=3&spage=1017
-https://arxiv.org/pdf/2209.05670
-https://jfuchs.hotell.kau.se/kurs/sgat/prst/s16_knqu.pdf
 
 ### Desired outcome
 
 We want to provide a novel exposition of the Alexander Polynomial Conjecture and explain knot theory through the perspective of quandales. Doing this will require proving several results about the distinguishing power of quandale colorings, which we intend to do in our work. Specifically, we need to show that quandale colorings are sufficient to distinguish certain types of knots, so it makes sense to study these knots from this perspective. This is analogous to how studying the root systems of semisimple Lie algebras can be more tractable than studying the algebras themselves. Our goal will be for participants to have a new understanding of the foundations of knot theory, based on Alexander polynomials and related notions in quandale theory.
 
+### References
+
+https://kmj.knu.ac.kr/journal/view.html?volume=56&number=3&spage=1017
+https://arxiv.org/pdf/2209.05670
+https://jfuchs.hotell.kau.se/kurs/sgat/prst/s16_knqu.pdf
+
 ## AI-generated notes
 
 <!-- status: Partly solved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Conjectured by L. Camacho, F. M. Dionísio and R. Picken (arXiv 2013; Kyungpook Math. J. 2016), who proved it for knots whose colouring matrices can be triangularized; we found no published proof of the general case.
 - **Task:** An exposition of knot theory through quandle colourings, centred on whether finite linear Alexander quandles separate knots with different Alexander polynomials.

@@ -1,42 +1,28 @@
 # 21 · Gaps in Spectral Gap Literature
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/021-gaps-in-spectral-gap-literature.md`](../problems_original/021-gaps-in-spectral-gap-literature.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Random graphs, random matrices, spectral gap
+- **Tracks:** Combinatorics, Analysis
 
-Gaps in Spectral Gap Literature
-
-### Short description of problem (100 words or less)
+### Description
 
 The first result in this area was an unreadable paper by Joel Friedman. Charles Bordenave wrote a more readable paper but it was still quite hard. Brito-Ioana-Harris wrote a yet more readable paper, but relied on a key lemma by Bordenave that they were unable to reprove in an intuitive way (Prop 28 in Bordenave's paper; Lemma 7 in B-I-H). (I haven't fully surveyed the field to see if there are newer papers that make this stuff clearer).
 
-### Submitted Area
+### Desired outcome
 
-Random graphs, random matrices, spectral gap
+An intuitive proof of Proposition 28 in Bordenave's paper; a deeper exploration of these papers, intricacies and gaps between them, explanation and commentary/visualizations to help those learning the theory.
 
-### Proposed Tracks
-
-Combinatorics, Analysis
-
-
-### Reference/source material
+### References
 
 Brito-Ioana-Harris, 2021: https://arxiv.org/pdf/1804.07808
 Bordenave, 2019: https://arxiv.org/pdf/1502.04482
 Friedman, 2004: https://arxiv.org/pdf/cs/0405020
 Friedman & Kohler, 2014: https://arxiv.org/pdf/1403.3462
 
-### Desired outcome
-
-An intuitive proof of Proposition 28 in Bordenave's paper; a deeper exploration of these papers, intricacies and gaps between them, explanation and commentary/visualizations to help those learning the theory.
-
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by AI for the earlier problem list, where this was problem 21 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by J. Friedman (arXiv 2004; Mem. Amer. Math. Soc. 2008); conjectured by N. Alon.
 - **Task:** An intuitive proof of Bordenave's Proposition 28, plus commentary on the proofs.

@@ -1,26 +1,19 @@
 # 19 · Beyond Endoscopy for GL_2: Reconstruction, Simplification, and Verification of Existing Proofs
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/019-beyond-endoscopy-for-gl-2-reconstruction-simplification-and.md`](../problems_original/019-beyond-endoscopy-for-gl-2-reconstruction-simplification-and.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Number Theory (Automorphic Forms and the Langlands Program), Representation Theory, and Harmonic Analysis.
+- **Tracks:** Algebra/Number Theory
 
-Beyond Endoscopy for GL_2: Reconstruction, Simplification, and Verification of Existing Proofs
-
-### Short description of problem (100 words or less)
+### Description
 
 Langlands’ Beyond Endoscopy program seeks to establish functoriality through the analytic properties of automorphic L-functions and trace formulas. Significant progress for GL_2 has been achieved through the work of Langlands, Venkatesh, Altug, and others. However, the existing proofs are technically demanding, scattered across multiple papers, and difficult to fully understand. This project aims to systematically reconstruct, summarize, simplify, and independently verify these proofs, potentially using AI-assisted tools. The ultimate goals are to develop a coherent, accessible exposition, discover more conceptual arguments, and identify techniques that may extend to higher-rank groups.
 
-### Submitted Area
+### Desired outcome
 
-Number Theory (Automorphic Forms and the Langlands Program), Representation Theory, and Harmonic Analysis.
+A comprehensive, self-contained, and accessible exposition of the existing proofs of Beyond Endoscopy for GL(2), with a clear explanation of the main ideas, technical arguments, and logical dependencies. Participants should independently verify key steps, identify and resolve any gaps or ambiguities, and explore opportunities to simplify the proofs or develop more conceptual alternative arguments. AI-assisted mathematical reasoning and formal verification tools may be employed where appropriate. Ideally, the project will produce a polished mathematical manuscript, potentially accompanied by computational or formal verification resources, and identify promising directions for extending the methods to higher-rank groups.
 
-### Proposed Tracks
-
-Algebra/Number Theory
-
-### Reference/source material
+### References
 
 1. R. P. Langlands, Beyond Endoscopy, in Contributions to Automorphic Forms, Geometry, and Number Theory, edited by H. Hida, D. Ramakrishnan, and F. Shahidi, Johns Hopkins University Press, 2004, pp. 611–697.
 
@@ -31,15 +24,9 @@ Algebra/Number Theory
 * Part II: Asymptotic Expansions of Fourier Transforms and Bounds Towards the Ramanujan Conjecture, American Journal of Mathematics 139 (2017), no. 4, 863–913.
 * Part III: The Standard Representation, Journal of the Institute of Mathematics of Jussieu 19 (2020), no. 4, 1349–1387.
 
-### Desired outcome
-
-A comprehensive, self-contained, and accessible exposition of the existing proofs of Beyond Endoscopy for GL(2), with a clear explanation of the main ideas, technical arguments, and logical dependencies. Participants should independently verify key steps, identify and resolve any gaps or ambiguities, and explore opportunities to simplify the proofs or develop more conceptual alternative arguments. AI-assisted mathematical reasoning and formal verification tools may be employed where appropriate. Ideally, the project will produce a polished mathematical manuscript, potentially accompanied by computational or formal verification resources, and identify promising directions for extending the methods to higher-rank groups.
-
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->
-
-> Written by AI for the earlier problem list, where this was problem 19 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Langlands' Beyond Endoscopy program (2004) is open in general; Altuğ carried out the first GL(2) case with the trace formula (2015–2020).
 - **Task:** A self-contained, verified exposition of Beyond Endoscopy for GL(2).

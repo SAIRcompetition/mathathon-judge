@@ -1,34 +1,23 @@
 # 83 · Cannon's conjecture and friends
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/083-cannons-conjecture-and-friends.md`](../problems_original/083-cannons-conjecture-and-friends.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Geometric topology
+- **Tracks:** Geometry
 
-Cannon's conjecture and friends
-
-### Short description of problem (100 words or less)
+### Description
 
 Cannon's conjecture, which OpenAI has apparently proven, states that any hyperbolic group with Gromov boundary homeomorphic to a 2-sphere is virtually isomorphic to a cocompact Kleinian group. The convergence group theorem of Gabai gives an analogous result for hyperbolic groups with boundary homeomorphic to the circle. In broad strokes, these can be regarded as rigidity results for group actions on low-dimensional spheres. Could we produce a more conceptual, digestible proof of Cannon's conjecture, and are there any unifying threads between the proofs of these and other related results?
-
-### Submitted Area
-
-Geometric topology
-
-### Proposed Tracks
-
-Geometry
-
-### Reference/source material
-
-1. OpenAI write-up @ https://github.com/openai/math/tree/main/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026 
-2. David Gabai, "Convergence groups are Fuchsian groups" @ https://www.projecteuclid.org/journalArticle/Download?urlid=bams%2F1183657188
-3. G. Christopher Hruska and Genevieve Walsh, "Relatively hyperbolic groups with planar boundaries" @ https://arxiv.org/html/2405.20428v1 re: some related statements and extensions
 
 ### Desired outcome
 
 An expository write-up and/or video
+
+### References
+
+1. OpenAI write-up @ https://github.com/openai/math/tree/main/preprints/A-Modulus-Proof-of-Cannons-Conjecture-September-23-2026 
+2. David Gabai, "Convergence groups are Fuchsian groups" @ https://www.projecteuclid.org/journalArticle/Download?urlid=bams%2F1183657188
+3. G. Christopher Hruska and Genevieve Walsh, "Relatively hyperbolic groups with planar boundaries" @ https://arxiv.org/html/2405.20428v1 re: some related statements and extensions
 
 ### Reference links
 
@@ -37,8 +26,6 @@ An expository write-up and/or video
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by AI for the earlier problem list, where this was problem 83 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved in an OpenAI preprint dated 23 September 2026 (released 6 October 2026; the repository states that its manuscripts were produced by an internal OpenAI model), not yet refereed; conjectured by Cannon (1991).
 - **Task:** An expository write-up or video: a more conceptual proof of Cannon's conjecture and common threads with Gabai's convergence group theorem.

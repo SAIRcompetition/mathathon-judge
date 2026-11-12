@@ -1,41 +1,13 @@
 # 126 · Creative Mathematical Thought Partners
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/126-creative-mathematical-thought-partners.md`](../problems_original/126-creative-mathematical-thought-partners.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Automated and interactive theorem proving and formalization; human–AI collaboration. Mathematical case studies may span any field.
+- **Tracks:** Computation/Applied Mathematics
 
-Creative Mathematical Thought Partners
-
-### Short description of problem (100 words or less)
+### Description
 
 Can creativity-focused AI agents help mathematicians find more illuminating proofs of established results? Build a model-agnostic harness that complements humans and formalization agents through literature-informed strategies: lemma abduction, analogy, inductive inference, and representation change. Users configure proof preferences, intervention triggers, and parallel exploration. Each suggestion identifies an obstruction, an actionable mathematical move, and a test. Persistent project memory preserves alternatives and failed attempts, while a reusable strategy library evolves through user-approved additions. Demonstrate the system on known theorems, distinguish heuristic promise from proof status, and evaluate its contribution to mathematical understanding.
-
-### Submitted Area
-
-Automated and interactive theorem proving and formalization; human–AI collaboration. Mathematical case studies may span any field.
-
-### Proposed Tracks
-
-Computation/Applied Mathematics
-
-### Reference/source material
-
-Yutaka Nagashima and Daniel Sebastian Goc, Proof By Abduction in Isabelle/HOL, AITP 2024. 
-- A concrete approach to recursively conjecturing auxiliary lemmas and proving them to establish a target theorem.
-
-Ben Goertzel, From AITP to AGITP: Toward a Neural-Symbolic Architecture for Creative Math Conjecturing, AITP 2026, presentation slides, especially slides 19-24 and 27-28.
-- An architectural proposal for persistent mathematical research combining creative operators, formal verification and evaluation of conjectured lemmas.
-
-Katherine M. Collins et al., Building Machines that Learn and Think with People (2024), arXiv:2408.03943. 
-- Conceptual background for designing AI thought partners that complement human reasoning, support collaborative exploration and adapt to their human collaborators.
-
-H. Furstenberg, On the Infinitude of Primes, American Mathematical Monthly 62 (1955), p. 353. 
-- A suggested mathematical case study for exploring alternative perspectives on an established theorem.
-
-Don Zagier, A One-Sentence Proof That Every Prime (p\equiv1\pmod4) Is a Sum of Two Squares, American Mathematical Monthly 97 (1990), p. 144. 
-- A suggested case study for exploring the relationship between proof brevity, explanation and understanding.
 
 ### Desired outcome
 
@@ -52,11 +24,26 @@ The system could include:
 
 A feasible 40-hour prototype would combine a small strategy library, one configurable intervention mechanism and a documented demonstration on one theorem. Over the following two months, participants could extend the case studies, test multiple model backends, implement user-approved library updates and publish a reproducible repository and explainer.
 
+### References
+
+Yutaka Nagashima and Daniel Sebastian Goc, Proof By Abduction in Isabelle/HOL, AITP 2024. 
+- A concrete approach to recursively conjecturing auxiliary lemmas and proving them to establish a target theorem.
+
+Ben Goertzel, From AITP to AGITP: Toward a Neural-Symbolic Architecture for Creative Math Conjecturing, AITP 2026, presentation slides, especially slides 19-24 and 27-28.
+- An architectural proposal for persistent mathematical research combining creative operators, formal verification and evaluation of conjectured lemmas.
+
+Katherine M. Collins et al., Building Machines that Learn and Think with People (2024), arXiv:2408.03943. 
+- Conceptual background for designing AI thought partners that complement human reasoning, support collaborative exploration and adapt to their human collaborators.
+
+H. Furstenberg, On the Infinitude of Primes, American Mathematical Monthly 62 (1955), p. 353. 
+- A suggested mathematical case study for exploring alternative perspectives on an established theorem.
+
+Don Zagier, A One-Sentence Proof That Every Prime (p\equiv1\pmod4) Is a Sum of Two Squares, American Mathematical Monthly 97 (1990), p. 144. 
+- A suggested case study for exploring the relationship between proof brevity, explanation and understanding.
+
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Not a single theorem: a software and evaluation project; both suggested case studies are classical results, Furstenberg's topological proof that there are infinitely many primes (1955) and Zagier's one-sentence proof of Fermat's two-squares theorem (1990).
 - **Task:** A model-agnostic harness of "creativity" agents (lemma abduction, analogy, induction, change of representation), demonstrated and evaluated on known theorems.

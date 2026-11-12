@@ -1,32 +1,13 @@
 # 100 · Hironaka’s Resolution of Singularity: Understanding the Algorithm and Its Later Simplifications
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/100-hironakas-resolution-of-singularity-understanding-the.md`](../problems_original/100-hironakas-resolution-of-singularity-understanding-the.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Algebraic Geometry
+- **Tracks:** Number Theory/Algebra, Geometry
 
-Hironaka’s Resolution of Singularity: Understanding the Algorithm and Its Later Simplifications
-
-### Short description of problem (100 words or less)
+### Description
 
 Hironaka’s theorem states that every algebraic variety over a field of characteristic zero admits a resolution of singularities. Develop an accessible explanation of how a modern resolution algorithm chooses blowup centers, measures progress, and guarantees termination. Use nontrivial worked examples to explain why naive choices can fail, and compare how later approaches, particularly those of Bierstone–Milman and Włodarczyk, clarified the construction and simplified its proof. The goal is to connect explicit local calculations with the logic of the general theorem.
-
-### Submitted Area
-
-Algebraic Geometry
-
-### Proposed Tracks
-
-Number Theory/Algebra, Geometry
-
-### Reference/source material
-
-Herwig Hauser, “The Hironaka theorem on resolution of singularities (or: A proof we always wanted to understand),” Bulletin of the American Mathematical Society 40 (2003).
-
-Edward Bierstone and Pierre D. Milman, “Resolution of Singularities,” Several Complex Variables, MSRI Publications 37 (1999).
-
-Jarosław Włodarczyk, “Simple Hironaka resolution in characteristic zero,” Journal of the American Mathematical Society 18 (2005).
 
 ### Desired outcome
 
@@ -36,11 +17,17 @@ A rigorous, accessible exposition of a modern proof of Hironaka’s theorem, sup
 - An explanation of the mechanism guaranteeing termination and how local constructions fit together.
 - A focused comparison of later improvements, distinguishing more systematic constructions, compatibility with coordinate changes, and simplifications of the proof.
 
+### References
+
+Herwig Hauser, “The Hironaka theorem on resolution of singularities (or: A proof we always wanted to understand),” Bulletin of the American Mathematical Society 40 (2003).
+
+Edward Bierstone and Pierre D. Milman, “Resolution of Singularities,” Several Complex Variables, MSRI Publications 37 (1999).
+
+Jarosław Włodarczyk, “Simple Hironaka resolution in characteristic zero,” Journal of the American Mathematical Society 18 (2005).
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Proved by H. Hironaka (Ann. of Math. 1964) for varieties over fields of characteristic zero; constructive and canonical algorithms followed (Villamayor; Bierstone–Milman 1997; Włodarczyk 2005), and weighted blowups (Abramovich–Temkin–Włodarczyk, McQuillan, around 2019–2020) simplified the procedure further.
 - **Task:** An accessible exposition of a modern resolution algorithm: how centres are chosen, how progress is measured and why it terminates, with worked surface examples and a comparison of later simplifications.

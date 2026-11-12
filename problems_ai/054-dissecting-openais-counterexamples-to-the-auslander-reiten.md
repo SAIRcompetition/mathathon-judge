@@ -1,28 +1,29 @@
 # 54 · Dissecting OpenAI’s counterexamples to the Auslander-Reiten and Second Tachikawa conjecture for finite-dimensional algebras
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/054-dissecting-openais-counterexamples-to-the-auslander-reiten.md`](../problems_original/054-dissecting-openais-counterexamples-to-the-auslander-reiten.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Representation theory of finite-dimensional algebras, homological algebra, category theory, ring theory
+- **Tracks:** Algebra/Number Theory
 
-Dissecting OpenAI’s counterexamples to the Auslander-Reiten and Second Tachikawa conjecture for finite-dimensional algebras
-
-### Short description of problem (100 words or less)
+### Description
 
 The Auslander-Reiten and the Second Tachikawa conjectures belong to a web of homological conjectures which have strong influence on the development of the representation theory of finite-dimensional algebras for decades. Recently, OpenAI gave an intricate multi-step construction of rather special counterexamples, which are yet neither digested nor canonicalized. This project aims to verify key arguments, understand the underlying mechanisms, and seek simpler, more conceptual constructions. Guiding questions are whether these counterexamples are isolated phenomena or instances of a broader family, and where the mathematical novelty of the AI-generated constructions lies.
 
 Tachikawa's second conjecture: Let A be a finite-dimensional self-injective algebra over a field k, and let M be a finitely generated A-module. Prove: if M has no nontrivial self-extensions in any positive degree, then M must be projective. In other words, if Ext^i_A(M, M) = 0 for every i > 0, then M is projective.
 
-### Submitted Area
+### Desired outcome
 
-Representation theory of finite-dimensional algebras, homological algebra, category theory, ring theory
+The primary outcome would be a self-contained, accessible exposition of the construction pipeline, verifying key arguments, explaining the fundamental ideas, and identifying precedents in the literature. This account should clarify which ingredients are essential and where simplifications or generalizations are possible. More ambitious goals include finding new, simpler counterexamples and interpreting the constructions through derived noncommutative algebraic geometry.
 
-### Proposed Tracks
+I would like to understand OpenAI's proposed counterexample to Tachikawa's Second Conjecture from both a ring-theoretic and a categorical perspective.
 
-Algebra/Number Theory
+In particular:
 
-### Reference/source material
+1. How is the counterexample constructed in terms of the structure of the finite-dimensional self-injective algebra A and the module M? What ring-theoretic intuition allow all higher self-extension groups Ext^i_A(M, M) to vanish while M remains nonprojective?
+
+2. Can you connect OpenAI's counterexample to the setting of a stable module category of A, an object with no positive-degree self-extensions M, and the zero object.
+
+### References
 
 Short formulations of the two conjectures can be found in the recent preprint, bottom of page 1 and top of page 2: 
 https://arxiv.org/pdf/2609.19172 
@@ -44,23 +45,9 @@ https://link.springer.com/book/10.1007/BFb0059997
 
 
 
-### Desired outcome
-
-The primary outcome would be a self-contained, accessible exposition of the construction pipeline, verifying key arguments, explaining the fundamental ideas, and identifying precedents in the literature. This account should clarify which ingredients are essential and where simplifications or generalizations are possible. More ambitious goals include finding new, simpler counterexamples and interpreting the constructions through derived noncommutative algebraic geometry.
-
-I would like to understand OpenAI's proposed counterexample to Tachikawa's Second Conjecture from both a ring-theoretic and a categorical perspective.
-
-In particular:
-
-1. How is the counterexample constructed in terms of the structure of the finite-dimensional self-injective algebra A and the module M? What ring-theoretic intuition allow all higher self-extension groups Ext^i_A(M, M) to vanish while M remains nonprojective?
-
-2. Can you connect OpenAI's counterexample to the setting of a stable module category of A, an object with no positive-degree self-extensions M, and the zero object.
-
 ## AI-generated notes
 
 <!-- status: Disproved (preprint) -->
-
-> Written by AI for the earlier problem list (commit `1f49cd4`) and revised by Claude Opus 5.5 on 2026-11-11 to match the proposer's current text.
 
 - **Status:** Counterexamples to both are claimed in two OpenAI preprints (September 2026), not yet refereed; the conjectures date from Tachikawa (1973) and Auslander–Reiten (1975).
 - **Task:** An accessible exposition of the construction and of its ring-theoretic and stable-category meaning; simpler or more conceptual counterexamples.

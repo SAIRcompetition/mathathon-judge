@@ -1,26 +1,19 @@
 # 89 · Projectivity of Gieseker Moduli on the Projective Plane without GIT
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/089-projectivity-of-gieseker-moduli-on-the-projective-plane.md`](../problems_original/089-projectivity-of-gieseker-moduli-on-the-projective-plane.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Algebraic Geometry/Moduli theory
+- **Tracks:** Geometry, Number Theory/Algebra
 
-Projectivity of Gieseker Moduli on the Projective Plane without GIT
-
-### Short description of problem (100 words or less)
+### Description
 
 Good moduli spaces offer a way to revisit classical moduli constructions without relying on geometric invariant theory (GIT) quotients. Following the blueprint of Alper and collaborators for vector bundles on curves, we aim to give a proof of projectivity for the moduli space of Gieseker-semistable torsion-free sheaves on the projective plane with arbitrary fixed rank and Chern classes. We will use AHLH '23 to obtain a proper good moduli space, construct a finite morphism to a Kronecker quiver moduli space, and prove projectivity by pulling back its ample determinantal line bundle.
 
-### Submitted Area
+### Desired outcome
 
-Algebraic Geometry/Moduli theory
+A short expository note giving a proof of projectivity for the moduli space of Gieseker-semistable torsion-free sheaves on the projective plane with arbitrary fixed rank and Chern classes, without using classical GIT quotients.
 
-### Proposed Tracks
-
-Geometry, Number Theory/Algebra
-
-### Reference/source material
+### References
 
 Jarod Alper, Daniel Halpern-Leistner, and Jochen Heinloth, “Existence of moduli spaces for algebraic stacks,” Inventiones Mathematicae 234 (2023)
 
@@ -28,15 +21,9 @@ Luis Álvarez-Cónsul and Alastair King, “A functorial construction of moduli 
 
 Pieter Belmans, Chiara Damiolini, Hans Franzen, Victoria Hoskins, Svetlana Makarova, and Tuomas Tajakka, “Projectivity and effective global generation of determinantal line bundles on quiver moduli,” Algebra & Number Theory 20 (2026), no. 4.
 
-### Desired outcome
-
-A short expository note giving a proof of projectivity for the moduli space of Gieseker-semistable torsion-free sheaves on the projective plane with arbitrary fixed rank and Chern classes, without using classical GIT quotients.
-
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by AI for the earlier problem list, where this was problem 90 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved with GIT (Gieseker 1977 for surfaces; Maruyama 1977–78; Simpson 1994). Alper–Halpern-Leistner–Heinloth (2023) give a proper good moduli space without GIT; no GIT-free proof of projectivity for sheaves on surfaces was found.
 - **Task:** A short expository note proving projectivity of Gieseker moduli on $\mathbb P^2$ without GIT quotients.

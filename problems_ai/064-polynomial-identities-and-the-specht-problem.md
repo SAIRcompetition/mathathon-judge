@@ -1,14 +1,11 @@
 # 64 · Polynomial Identities and the Specht Problem
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/064-polynomial-identities-and-the-specht-problem.md`](../problems_original/064-polynomial-identities-and-the-specht-problem.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Associative Algebra, Polynomial Identity Theory (PI-Algebras), Universal Algebra
+- **Tracks:** Algebra/Number Theory
 
-Polynomial Identities and the Specht Problem
-
-### Short description of problem (100 words or less)
+### Description
 
 A polynomial identity of an associative algebra is a noncommutative polynomial that vanishes under every substitution of algebra elements.
 
@@ -18,15 +15,11 @@ A polynomial identity of an associative algebra is a noncommutative polynomial t
 
 Investigate the connection with Specht's problem and T-ideals.
 
-### Submitted Area
+### Desired outcome
 
-Associative Algebra, Polynomial Identity Theory (PI-Algebras), Universal Algebra
+An explicit example of an infinitely based system of polynomial identities in an associative algebra, with a rigorous proof that no finite subsystem generates all the identities. Participants should also prove the finite basis property for systems involving a bounded number of variables under appropriate assumptions on the base field. Alternative constructions and extensions to different characteristics are welcome.
 
-### Proposed Tracks
-
-Algebra/Number Theory
-
-### Reference/source material
+### References
 
 A. Ya. Belov, Counterexamples to the Specht Problem. Sbornik: Mathematics, 191(3), 329–340 (2000). https://www.mathnet.ru/eng/sm460
 
@@ -34,15 +27,9 @@ A. R. Kemer, Identities of Finitely Generated Algebras over an Infinite Field. M
 
 N. I. Sandu, Infinite Independent Systems of the Identities of the Associative Algebra over an Infinite Field of Characteristic p > 0. Czechoslovak Mathematical Journal, 55(1), 1–23 (2005). https://dml.cz/handle/10338.dmlcz/127956
 
-### Desired outcome
-
-An explicit example of an infinitely based system of polynomial identities in an associative algebra, with a rigorous proof that no finite subsystem generates all the identities. Participants should also prove the finite basis property for systems involving a bounded number of variables under appropriate assumptions on the base field. Alternative constructions and extensions to different characteristics are welcome.
-
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by AI for the earlier problem list, where this was problem 64 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Part (a) was proved by Belov (1999–2000), with related examples by Grishin and Shchigolev; part (b) was proved by Kemer (1990, English translation 1991).
 - **Task:** Infinitely based identities in characteristic $p$; finite bases for boundedly many variables.

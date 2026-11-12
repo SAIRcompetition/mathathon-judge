@@ -1,38 +1,25 @@
 # 17 · Hodge Modules
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/017-hodge-modules.md`](../problems_original/017-hodge-modules.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** algebraic geometry
+- **Tracks:** Geometry
 
-Hodge Modules
-
-### Short description of problem (100 words or less)
+### Description
 
 Hodge Modules are created by Saito, concerning the most general form of decomposition theorem for projective direct image. But the original papers are hard to read, and very few people understand and use them. It would be good to have a better understanding or simplified proof.
-
-### Submitted Area
-
-algebraic geometry 
-
-### Proposed Tracks
-
-Geometry
-
-### Reference/source material
-
-Morihiko Saito. Modules de Hodge Polarisables. 
 
 ### Desired outcome
 
 visualizations and expositions to better understand an existing result
 
+### References
+
+Morihiko Saito. Modules de Hodge Polarisables. 
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by AI for the earlier problem list, where this was problem 17 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Theory and direct image theorem by M. Saito (Publ. RIMS 1988); mixed Hodge modules in a second paper (1990).
 - **Task:** Visualizations that make Saito's theory and its main theorem understandable.

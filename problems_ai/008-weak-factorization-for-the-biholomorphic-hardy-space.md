@@ -1,14 +1,11 @@
 # 8 · Weak factorization for the biholomorphic Hardy space
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/008-weak-factorization-for-the-biholomorphic-hardy-space.md`](../problems_original/008-weak-factorization-for-the-biholomorphic-hardy-space.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Analysis
+- **Tracks:** Analysis
 
-Weak factorization for the biholomorphic Hardy space
-
-### Short description of problem (100 words or less)
+### Description
 
 (Note: this is a shorted re-write of the original submission, which was long and mostly in LaTeX)
 
@@ -18,21 +15,13 @@ The open weak factorization problem for the bidisc is whether the converse norm 
 
 Currently we know H^2 ⊙ H^2 sits inside H^1 contractively. The open problem asks whether this containment reverses - whether ||h||{H^2⊙H^2} ≤ C||h||{H^1} for some constant C. This is the dual formulation of the bidisc Nehari problem.
 
-### Submitted Area
-
-Analysis
-
-### Proposed Tracks
-
-Analysis
-
-### Reference/source material
-
-https://link.springer.com/article/10.1007/BF02392840
-
 ### Desired outcome
 
 The answer to this problem and a new proof of the main theorem in the reference
+
+### References
+
+https://link.springer.com/article/10.1007/BF02392840
 
 ### Reference links
 
@@ -41,8 +30,6 @@ The answer to this problem and a new proof of the main theorem in the reference
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by AI for the earlier problem list, where this was problem 8 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by S. H. Ferguson and M. T. Lacey (Acta Math. 2002), the page's own reference.
 - **Task:** A new proof of the Ferguson–Lacey weak factorization on the bidisc.

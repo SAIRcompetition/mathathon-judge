@@ -1,14 +1,11 @@
 # 95 · Quasi-Orders For the Lefthanded Lovász Local Lemma
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/095-quasi-orders-for-the-lefthanded-lovasz-local-lemma.md`](../problems_original/095-quasi-orders-for-the-lefthanded-lovasz-local-lemma.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Combinatorics
+- **Tracks:** Combinatorics
 
-Quasi-Orders For the Lefthanded Lovász Local Lemma
-
-### Short description of problem (100 words or less)
+### Description
 
 Problem: Explain how qausi-order in the Lefthanded Lovász Local Lemma 
 
@@ -16,27 +13,17 @@ Description: The Lovász Local Lemma (LLL) is a theorem in the probabilistic met
 
 All known concrete applications of LLLL use a linear order to specify what "to the left" means. However, the theorem statement allows a quasi-order with a certain, somewhat opaque property. It would be nice to have a better understanding of what this property is and  what it buys us.  
 
-### Submitted Area
-
-Combinatorics
-
-### Proposed Tracks
-
-Combinatorics
-
-### Reference/source material
-
-Wesley Pegden. 2011. Highly nonrepetitive sequences: Winning strategies from the local lemma. Random Struct. Algorithms 38, 1–2 (January 2011), 140–161. https://doi.org/10.1002/rsa.20354  https://arxiv.org/pdf/1010.5772
-
 ### Desired outcome
 
 Any exposition of the quasi-order would be good. An application for which the quasi-order is not a linear order and an explanation of why the quasi-order helps would be very nice
 
+### References
+
+Wesley Pegden. 2011. Highly nonrepetitive sequences: Winning strategies from the local lemma. Random Struct. Algorithms 38, 1–2 (January 2011), 140–161. https://doi.org/10.1002/rsa.20354  https://arxiv.org/pdf/1010.5772
+
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Pegden proved the Lefthanded Local Lemma for quasi-orders with a compatibility condition (arXiv 2010; Random Structures Algorithms 2011); its combinatorial applications order events by right endpoints of intervals, and with tree orders it matches Shearer's optimal bound on chordal graphs (Pegden 2012).
 - **Task:** Explain the quasi-order condition in Pegden's lemma, and find an application where a quasi-order that is not linear helps.

@@ -1,26 +1,19 @@
 # 29 · Simplify Numerical PDE Algorithms
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/029-simplify-numerical-pde-algorithms.md`](../problems_original/029-simplify-numerical-pde-algorithms.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Numerical PDE
+- **Tracks:** Computation/Applied Math, Analysis
 
-Simplify Numerical PDE Algorithms
-
-### Short description of problem (100 words or less)
+### Description
 
 Many effective algorithms in numerical PDEs are high complicated such as the Fast Multipole Method, Fast Direct Solvers, and Butterfly Algorithms. Can AI make these more understandable or make simpler yet effective versions of these algorithms?
 
-### Submitted Area
+### Desired outcome
 
-Numerical PDE
+A easy to understand explanation, or an easier to understand version of the algorithm
 
-### Proposed Tracks
-
-Computation/Applied Math, Analysis
-
-### Reference/source material
+### References
 
 Cheng, Hongwei, et al. "A wideband fast multipole method for the Helmholtz equation in three dimensions." Journal of Computational Physics 216.1 (2006): 300-325. 
 
@@ -28,15 +21,9 @@ Sushnikova, Daria, et al. "FMM-LU: A fast direct solver for multiscale boundary 
 
 Li, Yingzhou, et al. "Butterfly factorization." Multiscale Modeling & Simulation 13.2 (2015): 714-732.
 
-### Desired outcome
-
-A easy to understand explanation, or an easier to understand version of the algorithm
-
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->
-
-> Written by AI for the earlier problem list, where this was problem 29 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** The three algorithms are established and implemented; the proposer asks for clearer explanations or simpler variants.
 - **Task:** An easy explanation, or a simpler but effective version, of one algorithm.

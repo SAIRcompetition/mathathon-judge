@@ -1,26 +1,19 @@
 # 137 · Tree Symmetries and the p-Adic Valuations of Fuss–Catalan Numbers
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/137-tree-symmetries-and-the-p-adic-valuations-of-fusscatalan.md`](../problems_original/137-tree-symmetries-and-the-p-adic-valuations-of-fusscatalan.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Enumerative combinatorics; combinatorial number theory; (p)-adic divisibility
+- **Tracks:** Combinatorics, Number Theory/Algebra
 
-Tree Symmetries and the p-Adic Valuations of Fuss–Catalan Numbers
-
-### Short description of problem (100 words or less)
+### Description
 
 For a prime (p) and (q=p^k), the Fuss–Catalan numbers have a known exact (p)-adic valuation formula involving base-(p) digit sums. Konvalinka established this formula arithmetically and developed a combinatorial argument using group actions on (q)-ary trees, which proves the corresponding divisibility bound but not its exactness. The goal is to investigate whether these tree symmetries can be used to construct a fully combinatorial proof of the exact valuation formula. We may explore alternative group actions, analyze minimal orbits, or establish special cases, related to the properties of Fuss–Catalan numbers.
 
-### Submitted Area
+### Desired outcome
 
-Enumerative combinatorics; combinatorial number theory; (p)-adic divisibility
+The primary objective is to develop a combinatorial proof of the exact (p)-adic valuation formula for Fuss–Catalan numbers when (q) is a prime power, building on Konvalinka's existing group-action approach. Ideally, the proof would explain how the structure and symmetries of (q)-ary trees give rise to the base-(p) digit-sum formula, without relying on factorial valuations. Possible intermediate outcomes include a characterization of the relevant tree orbits, alternative arguments for special cases or computational visualizations illustrating the connection between tree symmetries and divisibility. A further direction could involve extending the resulting techniques to weighted Fuss–Catalan numbers and maybe a multidimensional generalisation (ore ones, related to other statistics).
 
-### Proposed Tracks
-
-Combinatorics, Number Theory/Algebra
-
-### Reference/source material
+### References
 
 - Matjaž Konvalinka, “Divisibility of generalized Catalan numbers,” Journal of Combinatorial Theory, Series A 114 (2007), no. 6, 1089–1100. DOI: 10.1016/j.jcta.2006.11.003.
 
@@ -28,15 +21,9 @@ Combinatorics, Number Theory/Algebra
 
 - Alexander Postnikov and Bruce E. Sagan, “What power of two divides a weighted Catalan number?”, Journal of Combinatorial Theory, Series A 114 (2007), no. 5, 970–977. DOI: 10.1016/j.jcta.2006.09.007.
 
-### Desired outcome
-
-The primary objective is to develop a combinatorial proof of the exact (p)-adic valuation formula for Fuss–Catalan numbers when (q) is a prime power, building on Konvalinka's existing group-action approach. Ideally, the proof would explain how the structure and symmetries of (q)-ary trees give rise to the base-(p) digit-sum formula, without relying on factorial valuations. Possible intermediate outcomes include a characterization of the relevant tree orbits, alternative arguments for special cases or computational visualizations illustrating the connection between tree symmetries and divisibility. A further direction could involve extending the resulting techniques to weighted Fuss–Catalan numbers and maybe a multidimensional generalisation (ore ones, related to other statistics).
-
 ## AI-generated notes
 
 <!-- status: Open -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** The valuation formula follows from Legendre's formula (M. Konvalinka, 2007, Proposition 2); a group-action proof including exactness exists for Catalan numbers, $q=2$ (E. Deutsch and B. E. Sagan, 2006), while for prime powers $q>2$ Konvalinka's tree symmetries prove only the divisibility, and no combinatorial proof of exactness was found.
 - **Task:** A combinatorial proof, through symmetries of $q$-ary trees, that the power of $p$ given by the digit-sum formula is exactly the power dividing the Fuss–Catalan number.

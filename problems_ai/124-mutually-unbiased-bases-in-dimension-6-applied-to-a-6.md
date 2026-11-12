@@ -1,32 +1,21 @@
 # 124 · Mutually unbiased bases in dimension 6, applied to a 6-dimensional quantum system
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/124-mutually-unbiased-bases-in-dimension-6-applied-to-a-6.md`](../problems_original/124-mutually-unbiased-bases-in-dimension-6-applied-to-a-6.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Quantum information theory; linear algebra
+- **Tracks:** Computaiton/Applied Math
 
-Mutually unbiased bases in dimension 6, applied to a 6-dimensional quantum system
-
-### Short description of problem (100 words or less)
+### Description
 
 In quantum mechanics, two orthonormal bases are mutually unbiased if measuring a state prepared in one basis yields every outcome in the other with equal probability. The dimension-six MUB problem asks for the maximum number of pairwise mutually unbiased bases in C^6. A recent computer-assisted proof claims this maximum is three: three such bases exist, but four do not.
-
-### Submitted Area
-
-Quantum information theory; linear algebra
-
-### Proposed Tracks
-
-Computaiton/Applied Math
-
-### Reference/source material
-
-https://github.com/openai/math/blob/main/preprints/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026.pdf
 
 ### Desired outcome
 
 Explain its quantum-information significance; Check pieces of the computational certificate; Distinguish the formally verified result from the stronger headline claim.
+
+### References
+
+https://github.com/openai/math/blob/main/preprints/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026.pdf
 
 ### Reference links
 
@@ -35,8 +24,6 @@ Explain its quantum-information significance; Check pieces of the computational 
 ## AI-generated notes
 
 <!-- status: Partly solved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Claimed by an OpenAI preprint dated 24 September 2026, which its repository describes as produced by an internal OpenAI model: $N(6)=3$, with a computer-assisted upper bound that depends on floating-point arithmetic and compiler conditions; only the weaker bound $N(6)\le5$, from a companion preprint, has a Lean proof, and neither is refereed.
 - **Task:** Explain the quantum-information significance of mutually unbiased bases in dimension six, check pieces of the computational certificate, and separate the Lean-verified result from the headline claim.

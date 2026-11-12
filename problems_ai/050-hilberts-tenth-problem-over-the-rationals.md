@@ -1,32 +1,21 @@
 # 50 · Hilbert’s tenth problem over the rationals
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/050-hilberts-tenth-problem-over-the-rationals.md`](../problems_original/050-hilberts-tenth-problem-over-the-rationals.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Number theory
+- **Tracks:** Algebra/Number Theory
 
-Hilbert’s tenth problem over the rationals
-
-### Short description of problem (100 words or less)
+### Description
 
 Does an algorithm which determines whether an integer-coefficient polynomial in an arbitrary number of variables has a rational zero exist? This problem was recently resolved by OpenAI.
-
-### Submitted Area
-
-Number theory
-
-### Proposed Tracks
-
-Algebra/Number Theory
-
-### Reference/source material
-
-https://github.com/openai/math/blob/main/preprints/Hilberts-tenth-problem-over-the-rational-numbers-September-24-2026/main.pdf
 
 ### Desired outcome
 
 Verify the proof and write an exposition which is accessible to an undergraduate mathematics student.
+
+### References
+
+https://github.com/openai/math/blob/main/preprints/Hilberts-tenth-problem-over-the-rational-numbers-September-24-2026/main.pdf
 
 ### Reference links
 
@@ -35,8 +24,6 @@ Verify the proof and write an exposition which is accessible to an undergraduate
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by AI for the earlier problem list, where this was problem 50 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved in an OpenAI preprint (24 September 2026, revised 6 October 2026); not yet refereed.
 - **Task:** Verify the proof and write an undergraduate-level exposition.

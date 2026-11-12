@@ -1,36 +1,13 @@
 # 136 · The Aaronson–Ambainis Conjecture: From Influential Variables to Quantum Simulation
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/136-the-aaronsonambainis-conjecture-from-influential-variables.md`](../problems_original/136-the-aaronsonambainis-conjecture-from-influential-variables.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Quantum computing and theoretical computer science; analysis of Boolean functions; quantum cryptography.
+- **Tracks:** Computation/Applied Mathematics
 
-The Aaronson–Ambainis Conjecture: From Influential Variables to Quantum Simulation
-
-### Short description of problem (100 words or less)
+### Description
 
 Does every bounded, low-degree polynomial on the Boolean cube that varies substantially have an influential input bit—one whose flip changes the polynomial noticeably on average? The Aaronson–Ambainis conjecture asks for a quantitative influence bound independent of the number of variables. A recently released proof, accompanied by a Lean formalization, claims to establish this bound. Its implications include classical approximation of quantum acceptance probabilities on most uniformly random inputs, with polynomially many input queries. The challenge is to explain or simplify the proof and its connections to quantum-query simulation and cryptography.
-
-### Submitted Area
-
-Quantum computing and theoretical computer science; analysis of Boolean functions; quantum cryptography.
-
-### Proposed Tracks
-
-Computation/Applied Mathematics
-
-### Reference/source material
-
-1. Scott Aaronson and Andris Ambainis, “The Need for Structure in Quantum Speedups,” Theory of Computing 10 (2014), 133–166. See Conjecture 6 and Theorem 22 in the arXiv version:
-https://arxiv.org/pdf/0911.0996
-
-2. David Turturean, “A proof of the Aaronson–Ambainis conjecture” (2026). See Theorem 1.1 and Corollary 1.2. The paper and accompanying Lean formalization are available at:
-https://github.com/physical-superintelligence/aaronson-ambainis/blob/main/paper/aaronson_ambainis_paper.pdf
-https://github.com/physical-superintelligence/aaronson-ambainis
-
-3. Siyao Guo, Qian Li, Qipeng Liu, and Jiapeng Zhang, “Unifying Presampling via Concentration Bounds,” TCC 2021. See Section 2.6 and Appendix B for the simulation and bit-fixing statements:
-https://eprint.iacr.org/2020/1589.pdf
 
 ### Desired outcome
 
@@ -44,11 +21,21 @@ Create a self-contained explanation of the Aaronson–Ambainis proof and its con
 
 The final deliverable could combine annotated proofs, examples or visualizations, and a map distinguishing proved implications, conjectures, and open questions.
 
+### References
+
+1. Scott Aaronson and Andris Ambainis, “The Need for Structure in Quantum Speedups,” Theory of Computing 10 (2014), 133–166. See Conjecture 6 and Theorem 22 in the arXiv version:
+https://arxiv.org/pdf/0911.0996
+
+2. David Turturean, “A proof of the Aaronson–Ambainis conjecture” (2026). See Theorem 1.1 and Corollary 1.2. The paper and accompanying Lean formalization are available at:
+https://github.com/physical-superintelligence/aaronson-ambainis/blob/main/paper/aaronson_ambainis_paper.pdf
+https://github.com/physical-superintelligence/aaronson-ambainis
+
+3. Siyao Guo, Qian Li, Qipeng Liu, and Jiapeng Zhang, “Unifying Presampling via Concentration Bounds,” TCC 2021. See Section 2.6 and Appendix B for the simulation and bit-fixing statements:
+https://eprint.iacr.org/2020/1589.pdf
+
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Proof claimed by D. Turturean (arXiv, 6 November 2026), with a Lean formalization that its repository reports as complete; the paper states that the proof was produced by AI models (instances of a non-public Anthropic model) and reviewed by the author; not yet refereed. Conjectured by S. Aaronson and A. Ambainis (arXiv 2009; Theory of Computing 2014).
 - **Task:** A self-contained exposition of the proof and of how it yields classical simulation of quantum query algorithms on most inputs, with parameters tracked, and a simplification or a new proof of a related statement.

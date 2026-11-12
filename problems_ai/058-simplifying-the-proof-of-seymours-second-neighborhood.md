@@ -1,32 +1,21 @@
 # 58 · Simplifying the Proof of Seymour's Second-Neighborhood Conjecture
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/058-simplifying-the-proof-of-seymours-second-neighborhood.md`](../problems_original/058-simplifying-the-proof-of-seymours-second-neighborhood.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Graph theory, combinatorics
+- **Tracks:** Combinatorics
 
-Simplifying the Proof of Seymour's Second-Neighborhood Conjecture
-
-### Short description of problem (100 words or less)
+### Description
 
 Seymour's second-neighborhood conjecture states that every oriented graph has a vertex with at least as many second out-neighbors as first out-neighbors. OpenAI released a proof in its October 6, 2026 proof dump. The problem is to simplify this proof.
-
-### Submitted Area
-
-Graph theory, combinatorics
-
-### Proposed Tracks
-
-Combinatorics
-
-### Reference/source material
-
-https://github.com/openai/math/blob/main/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/paper.pdf
 
 ### Desired outcome
 
 A simpler proof of Seymour's second-neighborhood conjecture, ideally with a shorter and more elementary argument.
+
+### References
+
+https://github.com/openai/math/blob/main/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/paper.pdf
 
 ### Reference links
 
@@ -35,8 +24,6 @@ A simpler proof of Seymour's second-neighborhood conjecture, ideally with a shor
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by AI for the earlier problem list, where this was problem 58 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved in an OpenAI preprint dated 23 September 2026 (released 6 October 2026), not yet refereed; Seymour's conjecture, recorded by Dean and Latka (1995).
 - **Task:** A simpler, shorter and more elementary proof of the conjecture.

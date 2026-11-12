@@ -1,36 +1,15 @@
 # 90 · Gittins Index Optimality for Scheduling with Time-Varying Holding Costs
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/090-gittins-index-optimality-for-scheduling-with-time-varying.md`](../problems_original/090-gittins-index-optimality-for-scheduling-with-time-varying.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Applied probability, stochastic optimization, Markov decision processes, queueing theory, multi-armed bandits.
+- **Tracks:** Computation/Applied Math
 
-Gittins Index Optimality for Scheduling with Time-Varying Holding Costs
-
-### Short description of problem (100 words or less)
+### Description
 
 How should we schedule jobs when the cost of delaying them increases over time? Consider a single server processing two classes of randomly arriving jobs. Each class has an increasing holding-cost function (c_i(t)), specifying the cost incurred per unit time by a job that has waited (t) time units since arrival. Our goal is to minimize the total expected cost of delay (see Li et al., 2026, §3.1).
 
 This problem belongs to a notoriously difficult class of stochastic optimization problems called restless multi-armed bandits. We have developed a conditional result establishing the optimality of a Gittins-index scheduling policy. Can its proof be simplified or generalized?
-
-### Submitted Area
-
-Applied probability, stochastic optimization, Markov decision processes, queueing theory, multi-armed bandits.
-
-### Proposed Tracks
-
-Computation/Applied Math
-
-### Reference/source material
-
-Gurushankar, K. Threshold MDP and Index POMDP. Unpublished manuscript. Theorem 1.7 states the conditional Gittins-index optimality result, with the mathematical argument developed in Sections 2–3 and Appendix A. Available from the proposer.
-
-Li, Z., Gurushankar, K., Harchol-Balter, M., and Scheller-Wolf, A. (2026). Improving Upon the Generalized cμ Rule: A Whittle Approach. Operations Research. https://doi.org/10.1287/opre.2025.1987
-Sections 3.1–3.2 formally define the scheduling problem and its equivalent restless multi-armed bandit formulation.
-
-Gurushankar, K., Li, Z., Harchol-Balter, M., and Scheller-Wolf, A. (2026). LookAhead: The Optimal Non-decreasing Index Policy for a Time-Varying Holding Cost Problem. Queueing Systems, 110, Article 7. https://doi.org/10.1007/s11134-025-09967-w
-Establishes index optimality for a special case in which one job class has constant holding costs.
 
 ### Desired outcome
 
@@ -46,11 +25,19 @@ We would welcome alternative proofs that make these connections clearer, identif
 
 Participants could focus on a particular lemma or proof technique rather than reproducing the entire result.
 
+### References
+
+Gurushankar, K. Threshold MDP and Index POMDP. Unpublished manuscript. Theorem 1.7 states the conditional Gittins-index optimality result, with the mathematical argument developed in Sections 2–3 and Appendix A. Available from the proposer.
+
+Li, Z., Gurushankar, K., Harchol-Balter, M., and Scheller-Wolf, A. (2026). Improving Upon the Generalized cμ Rule: A Whittle Approach. Operations Research. https://doi.org/10.1287/opre.2025.1987
+Sections 3.1–3.2 formally define the scheduling problem and its equivalent restless multi-armed bandit formulation.
+
+Gurushankar, K., Li, Z., Harchol-Balter, M., and Scheller-Wolf, A. (2026). LookAhead: The Optimal Non-decreasing Index Policy for a Time-Varying Holding Cost Problem. Queueing Systems, 110, Article 7. https://doi.org/10.1007/s11134-025-09967-w
+Establishes index optimality for a special case in which one job class has constant holding costs.
+
 ## AI-generated notes
 
 <!-- status: Partly solved -->
-
-> Written by AI for the earlier problem list, where this was problem 91 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Index optimality is proved for two classes, one with constant holding cost, among non-decreasing index policies (Gurushankar et al., Queueing Systems 2026); the proposer's conditional result is unpublished and unrefereed.
 - **Task:** A simpler or more intuitive proof of the conditional Gittins-index optimality result, or a rigorous check of its key steps.

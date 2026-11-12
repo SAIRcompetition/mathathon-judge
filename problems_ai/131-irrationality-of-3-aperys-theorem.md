@@ -1,38 +1,25 @@
 # 131 · Irrationality of ζ(3) (Apery's Theorem)
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/131-irrationality-of-3-aperys-theorem.md`](../problems_original/131-irrationality-of-3-aperys-theorem.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Number Theory/Combinatorics
+- **Tracks:** Number Theory/Algebra
 
-Irrationality of ζ(3) (Apery's Theorem)
-
-### Short description of problem (100 words or less)
+### Description
 
 In 1978, Roger Apery proved irrationality of ζ(3) using a specific, complex recurrence relations. Although the proof works perfectly, there is a gap in an explanation of the construction of the recurrence, and this method fails to generalize to proving irrationality of ζ(5) or higher.
-
-### Submitted Area
-
-Number Theory/Combinatorics
-
-### Proposed Tracks
-
-Number Theory/Algebra
-
-### Reference/source material
-
-arXiv:math/0202159
 
 ### Desired outcome
 
 Give a satisfying explanation of the motivation of the proof. Find the intuition behind the complex recurrence relations.
 
+### References
+
+arXiv:math/0202159
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Proved by R. Apéry (announced 1978, published in Astérisque 1979), with later proofs by Beukers (1979), Nesterenko (1996) and Zudilin (2002); explaining where the recurrence comes from is an expository question.
 - **Task:** A satisfying explanation of the motivation behind Apéry's proof and the intuition behind its recurrence.

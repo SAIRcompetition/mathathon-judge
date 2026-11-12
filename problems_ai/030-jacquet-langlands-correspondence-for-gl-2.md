@@ -1,39 +1,26 @@
 # 30 · Jacquet-Langlands correspondence for GL(2)
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/030-jacquet-langlands-correspondence-for-gl-2.md`](../problems_original/030-jacquet-langlands-correspondence-for-gl-2.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Number Theory, Langlands Programme
+- **Tracks:** Algebra/Number Theory
 
-Jacquet-Langlands correspondence for GL(2)
-
-### Short description of problem (100 words or less)
+### Description
 
 The Jacquet–Langlands correspondence, established by Hervé Jacquet and Robert Langlands in 1970, is a foundational result in number theory and representation theory. It links automorphic representations of GL(2) with those of the multiplicative group of a quaternion algebra, matching representations that share the same local data and L-functions. As one of the earliest proven cases of Langlands functoriality, it became an essential tool in modern arithmetic, including work leading to the proof of Fermat’s Last Theorem.
-
-### Submitted Area
-
-Number Theory, Langlands Programme
-
-### Proposed Tracks
-
-Algebra/Number Theory
-
-### Reference/source material
-
-Jacquet, H.; Langlands, Robert P. (1970), Automorphic Forms on GL(2), Lecture Notes in Mathematics, vol. 114, Berlin, New York: Springer-Verlag, doi:10.1007/BFb0058988, ISBN 978-3-540-04903-6, MR 0401654
-Bergeron, N. (2016). Jacquet-Langlands Correspondence. In: The Spectrum of Hyperbolic Surfaces. Universitext. Springer, Cham. https://doi.org/10.1007/978-3-319-27666-3_8
 
 ### Desired outcome
 
 A new approach to the construction of the Jacquet-Langlands functorial transfer and the characterization of its image. If early attempts to a new approach bear no fruit, we could aim at a LEAN formalization of the trace formula proof, with an accompanying human-readable mathematically consistent writeup.
 
+### References
+
+Jacquet, H.; Langlands, Robert P. (1970), Automorphic Forms on GL(2), Lecture Notes in Mathematics, vol. 114, Berlin, New York: Springer-Verlag, doi:10.1007/BFb0058988, ISBN 978-3-540-04903-6, MR 0401654
+Bergeron, N. (2016). Jacquet-Langlands Correspondence. In: The Spectrum of Hyperbolic Surfaces. Universitext. Springer, Cham. https://doi.org/10.1007/978-3-319-27666-3_8
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by AI for the earlier problem list, where this was problem 30 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by H. Jacquet and R. P. Langlands (1970) by comparing trace formulas.
 - **Task:** A new construction of the transfer and of its image.

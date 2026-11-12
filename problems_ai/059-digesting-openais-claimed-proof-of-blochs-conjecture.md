@@ -1,39 +1,26 @@
 # 59 · Digesting openAI's claimed proof of Bloch's conjecture
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/059-digesting-openais-claimed-proof-of-blochs-conjecture.md`](../problems_original/059-digesting-openais-claimed-proof-of-blochs-conjecture.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Algebraic and complex geometry
+- **Tracks:** Geometry
 
-Digesting openAI's claimed proof of Bloch's conjecture
-
-### Short description of problem (100 words or less)
+### Description
 
 Bloch's conjecture predicts that for a smooth connected projective complex surface X with geometric genus p_g(X) = 0, the Albanese homomorphism on degree-zero zero-cycles CH_0(X)_{deg=0} -> Alb(X) is an isomorphism.
-
-### Submitted Area
-
-Algebraic and complex geometry
-
-### Proposed Tracks
-
-Geometry
-
-### Reference/source material
-
-For problem and background: Bloch's 'Lectures on Algebraic Cycles' 
-OpenAI's claimed solution: https://github.com/openai/math/blob/main/preprints/Blochs-Conjecture-for-Surfaces-with-pg-equals-q-equals-0-September-24-2026/paper.pdf
 
 ### Desired outcome
 
 Carefully digest and verify the AI-generated proof of Bloch's conjecture. For example, participants can give an exposition for the main strategy of the proof, and check whether the steps hold rigorously or contain subtle gaps. They can optionally formalize key lemmas in Lean. Participants can compare the approach to classical methods, identify which parts of the proof uses existing techniques, and which parts provides new techniques. Finally, they can provide some comments on whether the new techniques are helpful for proving higher dimensional analogs of Bloch's conjecture beyond surfaces.
 
+### References
+
+For problem and background: Bloch's 'Lectures on Algebraic Cycles' 
+OpenAI's claimed solution: https://github.com/openai/math/blob/main/preprints/Blochs-Conjecture-for-Surfaces-with-pg-equals-q-equals-0-September-24-2026/paper.pdf
+
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by AI for the earlier problem list, where this was problem 59 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Claimed proved by an OpenAI preprint (September 2026), not yet refereed; known before for non-general-type surfaces (Bloch–Kas–Lieberman 1976) and for many families.
 - **Task:** Check and explain the claimed proof; compare with classical methods.

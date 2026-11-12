@@ -1,40 +1,27 @@
 # 85 · Different Effective Equation with shared Brownian Limit
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/085-different-effective-equation-with-shared-brownian-limit.md`](../problems_original/085-different-effective-equation-with-shared-brownian-limit.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Probability, Stochastic Differential Equations, and Dynamical Systems.
+- **Tracks:** Analysis
 
-Different Effective Equation with shared Brownian Limit
-
-### Short description of problem (100 words or less)
+### Description
 
 Two microscopic random walks can converge to Brownian motions with identical covariance while producing different limiting equations when used as driving signals. Their iterated integrals retain an area correction invisible to ordinary path convergence. So a contribution could be a complete reproducible passage from transition probabilities to the effective equation (reconstructing it for a finite-state Markov model and its time reversal).
-
-### Submitted Area
-
-Probability, Stochastic Differential Equations, and Dynamical Systems.
-
-### Proposed Tracks
-
-Analysis
-
-### Reference/source material
-
-1. https://arxiv.org/abs/1709.04288 by Olga Lopusanschi and Damien Simon. Sections 1 and 2 establish enhanced convergence and identify the area correction.
-2. https://doi.org/10.3934/cpaa.2026046 by Maximilian Engel, Peter Friz, Tal Orenshtein. They have a nice discrete-time discussion.
-3. https://www.hairer.org/notes/RoughPaths.pdf by Peter Friz and Martin Hairer. Chapter 8 treats Ito-Lyons map's continuity and explains how enhanced driving signals determine solution limits.
 
 ### Desired outcome
 
 A worked proof and reproducible demonstration showing exactly where microscopic temporal asymmetry survives the limit. For example, use a stationary 3-state Markov chain with simple designed increments, and compare it with its time reversal. Or on piecewise-linear walks, calculate the limiting covariance and antisymmetric area correction exactly.
 
+### References
+
+1. https://arxiv.org/abs/1709.04288 by Olga Lopusanschi and Damien Simon. Sections 1 and 2 establish enhanced convergence and identify the area correction.
+2. https://doi.org/10.3934/cpaa.2026046 by Maximilian Engel, Peter Friz, Tal Orenshtein. They have a nice discrete-time discussion.
+3. https://www.hairer.org/notes/RoughPaths.pdf by Peter Friz and Martin Hairer. Chapter 8 treats Ito-Lyons map's continuity and explains how enhanced driving signals determine solution limits.
+
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->
-
-> Written by AI for the earlier problem list, where this was problem 85 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** An exposition task; the underlying theorem (hidden Markov walks converge in rough-path topology to Brownian motion with an area anomaly) is proved and refereed (Lopusanschi–Simon, Bernoulli 2020); Engel–Friz–Orenshtein (CPAA 2026) give Green–Kubo formulas for the limit.
 - **Task:** A worked, reproducible derivation of covariance, area correction and limit equation for a finite-state Markov walk and its time reversal.

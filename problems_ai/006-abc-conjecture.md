@@ -1,32 +1,21 @@
 # 6 · abc conjecture
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/006-abc-conjecture.md`](../problems_original/006-abc-conjecture.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Number theory
+- **Tracks:** Algebra/Number Theory
 
-abc conjecture
-
-### Short description of problem (100 words or less)
+### Description
 
 Mochizuki claims a proof of the abc conjecture, but the proof is complicated and not widely accepted. The very ambitious task is to contribute to a resolution of the situation by obtaining a brand new (AI-generated) idea.
-
-### Submitted Area
-
-Number theory
-
-### Proposed Tracks
-
-Algebra/Number Theory
-
-### Reference/source material
-
-https://en.wikipedia.org/wiki/Abc_conjecture
 
 ### Desired outcome
 
 Any progress on this notorious problem would be of value.
+
+### References
+
+https://en.wikipedia.org/wiki/Abc_conjecture
 
 ### Reference links
 
@@ -35,8 +24,6 @@ Any progress on this notorious problem would be of value.
 ## AI-generated notes
 
 <!-- status: Open -->
-
-> Written by AI for the earlier problem list, where this was problem 6 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Open; formulated by Masser and Oesterlé in 1985. Mochizuki's claimed proof (published 2021) is disputed.
 - **Task:** Any progress on the conjecture, ideally a new idea.

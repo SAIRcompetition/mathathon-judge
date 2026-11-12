@@ -1,30 +1,13 @@
 # 92 · Erdős Problem #173: monochromatic congruent triangles in 2-colourings of the plane
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/092-erdos-problem-173-monochromatic-congruent-triangles-in-2.md`](../problems_original/092-erdos-problem-173-monochromatic-congruent-triangles-in-2.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Combinatorics / discrete geometry (Euclidean Ramsey theory)
+- **Tracks:** Combinatorics
 
-Erdős Problem #173: monochromatic congruent triangles in 2-colourings of the plane
-
-### Short description of problem (100 words or less)
+### Description
 
 Erdős asked whether in every 2-colouring of the plane, every triangle with at most one exception has a monochromatic congruent copy. The conjectured exception is an equilateral triangle. In October 2026, Plasma AI released a claimed proof found by GPT-6 Astra and Claude Opus 5.5
-
-### Submitted Area
-
-Combinatorics / discrete geometry (Euclidean Ramsey theory)
-
-### Proposed Tracks
-
-Combinatorics
-
-### Reference/source material
-
-1. Plasma AI, Erdős Problem 173 (proof and Lean formalisation), October 2026: https://github.com/plasma-ai/erdos-173
-2. V. Jelínek, J. Kynčl, R. Stolař, T. Valla, “Monochromatic triangles in two-colored plane”, Combinatorica 29 (2009): https://doi.org/10.1007/s00493-009-2291-y
-3. P. Erdős et al., “Euclidean Ramsey theorems I”, J. Combin. Theory Ser. A 14 (1973): https://doi.org/10.1016/0097-3165(73)90011-3
 
 ### Desired outcome
 
@@ -32,11 +15,15 @@ Combinatorics
 - A readable proof of a self-contained part, e.g. the collinear (degenerate) triangles.
 - Checking the dependence on the unrefereed OpenAI preprint: exactly what is used, and whether it holds.
 
+### References
+
+1. Plasma AI, Erdős Problem 173 (proof and Lean formalisation), October 2026: https://github.com/plasma-ai/erdos-173
+2. V. Jelínek, J. Kynčl, R. Stolař, T. Valla, “Monochromatic triangles in two-colored plane”, Combinatorica 29 (2009): https://doi.org/10.1007/s00493-009-2291-y
+3. P. Erdős et al., “Euclidean Ramsey theorems I”, J. Combin. Theory Ser. A 14 (1973): https://doi.org/10.1016/0097-3165(73)90011-3
+
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by AI for the earlier problem list, where this was problem 93 (commit `1f49cd4`), and carried over; only links that depend on the problem numbering were updated.
 
 - **Status:** Proof claimed by Plasma AI in a public GitHub repository (October 2026), not refereed; the repository states that the AI models GPT-6 Astra and Claude Opus 5.5 found the proof, which uses results of an unrefereed OpenAI preprint. The conjecture is due to Erdős et al. (1973).
 - **Task:** Human verification of the reduction to equilateral triangles and of the two-scale equilateral case, a readable proof of a self-contained part, and a precise account of what is used from the OpenAI preprint.

@@ -1,32 +1,13 @@
 # 97 · Model Completeness of the Real Exponential Field
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/097-model-completeness-of-the-real-exponential-field.md`](../problems_original/097-model-completeness-of-the-real-exponential-field.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Mathematical Logic — Model Theory, O-minimality, Real Algebraic Geometry, and Exponential Fields.
+- **Tracks:** ?????
 
-Model Completeness of the Real Exponential Field
-
-### Short description of problem (100 words or less)
+### Description
 
 Consider the ordered real exponential field \(\mathbb{R}_{\exp}=(\mathbb{R};0,1,+,-,\cdot,<,\exp)\). The problem is to establish whether its complete first-order theory is model complete; that is, whether every embedding between models of this theory is elementary. Equivalently, can every first-order formula be expressed as an existential formula? Alex Wilkie proved this in 1996 using techniques involving restricted Pfaffian functions, quasipolynomial equations, o-minimality, and valuation theory. A central challenge is transferring solutions of exponential-polynomial equations between non-Archimedean models, particularly when solutions are unbounded.
-
-### Submitted Area
-
-Mathematical Logic — Model Theory, O-minimality, Real Algebraic Geometry, and Exponential Fields.
-
-### Proposed Tracks
-
-?????
-
-### Reference/source material
-
-1. A. J. Wilkie, *Model completeness results for expansions of the ordered field of real numbers by restricted Pfaffian functions and the exponential function*, Journal of the American Mathematical Society **9** (1996), no. 4, 1051–1094. https://doi.org/10.1090/S0894-0347-96-00216-0
-
-2. A. J. Wilkie, *Lectures on the Model Theory of Real and Complex Exponentiation*, lecture notes, July 17, 2012, especially Sections 1, 5–6. https://homepages.math.uic.edu/~marker/msri/wilkie.pdf
-
-3. A. J. Wilkie, *On the Theory of the Real Exponential Field*, Illinois Journal of Mathematics **33** (1989), no. 3, 384–408.
 
 ### Desired outcome
 
@@ -34,11 +15,17 @@ The primary goal is to explore alternative approaches to proving the model compl
 
 This is an established but technically challenging theorem, making it suitable for exploring mathematical proof techniques and formal verification. A complete alternative proof or Lean formalization may be ambitious, so partial results, formalization of intermediate lemmas, and identification of the main obstacles would also be valuable contributions. Participants are welcome to approach the problem from either a theoretical or a formalization-oriented perspective.
 
+### References
+
+1. A. J. Wilkie, *Model completeness results for expansions of the ordered field of real numbers by restricted Pfaffian functions and the exponential function*, Journal of the American Mathematical Society **9** (1996), no. 4, 1051–1094. https://doi.org/10.1090/S0894-0347-96-00216-0
+
+2. A. J. Wilkie, *Lectures on the Model Theory of Real and Complex Exponentiation*, lecture notes, July 17, 2012, especially Sections 1, 5–6. https://homepages.math.uic.edu/~marker/msri/wilkie.pdf
+
+3. A. J. Wilkie, *On the Theory of the Real Exponential Field*, Illinois Journal of Mathematics **33** (1989), no. 3, 384–408.
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Proved by A. J. Wilkie (J. Amer. Math. Soc. 1996); with Khovanskii's finiteness theorem it shows that $\mathbb R_{\exp}$ is o-minimal.
 - **Task:** Find alternative or simpler proofs of Wilkie's theorem, and formalize it, or the lemmas it rests on, in Lean.

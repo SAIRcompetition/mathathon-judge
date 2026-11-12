@@ -1,39 +1,26 @@
 # 10 · well-posedness and stability of Landau equation, Vlasov-Landau equations and Boltzmann equation.
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/010-well-posedness-and-stability-of-landau-equation-vlasov.md`](../problems_original/010-well-posedness-and-stability-of-landau-equation-vlasov.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** applied math, PDEs
+- **Tracks:** Computation/Applied Math, Analysis
 
-well-posedness and stability of Landau equation, Vlasov-Landau equations and Boltzmann equation.
-
-### Short description of problem (100 words or less)
+### Description
 
 well-posedness and stability of Landau equation, Vlasov-Landau equations and Boltzmann equation. Useful for nuclear fusion.
-
-### Submitted Area
-
-applied math, PDEs
-
-### Proposed Tracks
-
-Computation/Applied Math, Analysis
-
-### Reference/source material
-
-https://arxiv.org/abs/2311.09420
-https://arxiv.org/pdf/2409.01183
 
 ### Desired outcome
 
 formalizations in lean
 
+### References
+
+https://arxiv.org/abs/2311.09420
+https://arxiv.org/pdf/2409.01183
+
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->
-
-> Written by AI for the earlier problem list, where this was problem 10 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Global smooth solutions of the space-homogeneous Landau equation (Guillen–Silvestre, 2023) and Boltzmann equation (Imbert–Silvestre–Villani, 2024) are proved; the space-inhomogeneous theory for large data is still conditional.
 - **Task:** Lean formalizations of well-posedness and stability results for these equations.

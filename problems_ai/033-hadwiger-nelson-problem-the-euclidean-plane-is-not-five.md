@@ -1,32 +1,13 @@
 # 33 · Hadwiger-Nelson Problem - The Euclidean plane is not five-colorable
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/033-hadwiger-nelson-problem-the-euclidean-plane-is-not-five.md`](../problems_original/033-hadwiger-nelson-problem-the-euclidean-plane-is-not-five.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Combinatorics, discrete geometry, measure theory
+- **Tracks:** Combinatorics
 
-Hadwiger-Nelson Problem - The Euclidean plane is not five-colorable
-
-
-### Short description of problem (100 words or less)
+### Description
 
 The Hadwiger–Nelson problem asks how many colors are needed to color the plane so that points at unit distance have different colors. Since 1950 it has been known to be 4, 5, 6 or 7. De Grey (2018) showed it is at least 5. OpenAI recently proved that five colors are insufficient, leaving six or seven as possibilities. An unexpected ingredient is a transfer theorem: a proper k-coloring exists if and only if a measurable k-coloring exists that avoids monochromatic unit-distance pairs almost everywhere. We propose exploring this surprising connection and seeking simpler proofs or explanations of the result.
-
-### Submitted Area
-
-Combinatorics, discrete geometry, measure theory
-
-### Proposed Tracks
-
-Combinatorics
-
-### Reference/source material
-
-https://arxiv.org/pdf/2610.05291
-https://github.com/openai/math/blob/main/preprints/The-Euclidean-plane-is-not-five-colorable-September-23-2026/paper.pdf (The Lean formalisation is at lean/docs/158.md in the same repository but it only has "sorry".)
-A. D. N. J. de Grey, “The chromatic number of the plane is at least 5”, Geombinatorics 28 (2018), 18–31, arXiv:1804.02385.
-A. Soifer, The New Mathematical Coloring Book: Mathematics of Coloring and the Colorful Life of Its Creators, 2nd ed., Springer, New York, 2024. https://doi.org/10.1007/978-1-0716-3597-1
 
 ### Desired outcome
 
@@ -35,6 +16,13 @@ A. Soifer, The New Mathematical Coloring Book: Mathematics of Coloring and the C
 - They don't have Lean formalization (unless we count ""sorry"" instead of the whole theorem as the formalization) so that could be done.
 - Maybe try to find an explicit finite 6-chromatic unit-distance graph. By de Bruijn–Erdős one must exist if the theorem is true. Though that would be a more computerized proof and less comprehensible proof that OpenAI's, so idk :D"
 
+### References
+
+https://arxiv.org/pdf/2610.05291
+https://github.com/openai/math/blob/main/preprints/The-Euclidean-plane-is-not-five-colorable-September-23-2026/paper.pdf (The Lean formalisation is at lean/docs/158.md in the same repository but it only has "sorry".)
+A. D. N. J. de Grey, “The chromatic number of the plane is at least 5”, Geombinatorics 28 (2018), 18–31, arXiv:1804.02385.
+A. Soifer, The New Mathematical Coloring Book: Mathematics of Coloring and the Colorful Life of Its Creators, 2nd ed., Springer, New York, 2024. https://doi.org/10.1007/978-1-0716-3597-1
+
 ### Reference links
 
 - <https://github.com/openai/math/blob/main/preprints/The-Euclidean-plane-is-not-five-colorable-September-23-2026/paper.pdf>
@@ -42,8 +30,6 @@ A. Soifer, The New Mathematical Coloring Book: Mathematics of Coloring and the C
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by AI for the earlier problem list, where this was problem 33 (commit `1f49cd4`), and carried over; only links that depend on the problem numbering were updated.
 
 - **Status:** Proved in an OpenAI preprint dated 23 September 2026 (released 6 October 2026), not yet refereed; the problem goes back to E. Nelson (1950).
 - **Task:** A simpler, more conceptual proof of the transfer theorem and main result, or an independent check of the key lemmas.

@@ -1,14 +1,11 @@
 # 12 · Topological group extensions and the cohomology of classifying spaces
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/012-topological-group-extensions-and-the-cohomology-of.md`](../problems_original/012-topological-group-extensions-and-the-cohomology-of.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Algebraic topology
+- **Tracks:** Algebra/Number Theory, Geometry
 
-Topological group extensions and the cohomology of classifying spaces
-
-### Short description of problem (100 words or less)
+### Description
 
 Let G be a group and A be a G-module. My team will work on the problems of
 
@@ -18,15 +15,11 @@ Let G be a group and A be a G-module. My team will work on the problems of
 
 Partial progress was made towards these results in my Master's thesis, and the purpose of the project will be to improve the methods and generalize the results as a byproduct.
 
-### Submitted Area
+### Desired outcome
 
-Algebraic topology
+My team aims to provide a clean exposition of the problem in a way which reduces all the ideas down to undergraduate mathematics + elementary algebraic topology (e.g. Hatcher's book). We plan on making the final artefact easy to navigate at various levels of detail (from a summary for experts to a detailed exposition for advanced undergrads).
 
-### Proposed Tracks
-
-Algebra/Number Theory, Geometry
-
-### Reference/source material
+### References
 
 Jain, P. (2025). Central Extensions of Topological Groups and the Cohomology of Classifying Spaces [Master's thesis, IISER, Pune]. IISER Pune Digital Repository. https://dr.iiserpune.ac.in/handle/123456789/10020
 A copy can be downloaded here:
@@ -34,15 +27,9 @@ https://drive.google.com/file/d/1aLrZeLQ014gvvikD1G2gADeI3FxpJ5ea/view?usp=drive
 
 Jain, P., Joshi, R., Spallone, S. (2026). Central Extensions and Cohomology. arXiv preprint. arXiv:2307.14658
 
-### Desired outcome
-
-My team aims to provide a clean exposition of the problem in a way which reduces all the ideas down to undergraduate mathematics + elementary algebraic topology (e.g. Hatcher's book). We plan on making the final artefact easy to navigate at various levels of detail (from a summary for experts to a detailed exposition for advanced undergrads).
-
 ## AI-generated notes
 
 <!-- status: Partly solved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** For a discrete abelian group $A$, Joshi and Spallone (arXiv 2023; version 3 with Jain, 2026) proved that central extensions of a topological group $G$ that is a CW complex inject into $H^2(BG;A)$, bijectively in many cases; Jain's 2025 thesis treats non-discrete $A$ in part, and the version for Yoneda extensions is open.
 - **Task:** Extend the correspondences between Yoneda extensions, group extensions and the cohomology of $BG$ to topological groups, with an exposition that needs only undergraduate algebra and Hatcher-level topology.

@@ -1,39 +1,26 @@
 # 108 · Generalizing the zeta(5) irrationality argument
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/108-generalizing-the-zeta-5-irrationality-argument.md`](../problems_original/108-generalizing-the-zeta-5-irrationality-argument.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Number theory, Diophantine approximation
+- **Tracks:** Number Theory/Algebra
 
-Generalizing the zeta(5) irrationality argument
-
-### Short description of problem (100 words or less)
+### Description
 
 Explore whether the argument for irrationality of zeta(5) can be generalized to other odd zeta values, starting with zeta(7). Which parts of the determinant construction and estimates extend, and what is special about 5? The idea is to use the existing argument as a starting point for new results, with Lean helping check any proposed extensions.
-
-### Submitted Area
-
-Number theory, Diophantine approximation
-
-### Proposed Tracks
-
-Number Theory/Algebra
-
-### Reference/source material
-
-Chun Wing Lai, On Fauzan's Proof that zeta(5) is Irrational (2026).
-https://ai.vixra.org/pdf/2609.0080v1.pdf
 
 ### Desired outcome
 
 An extension to another odd zeta value, or a general criterion showing when this method works. Ideally a Lean-checked proof; a precise account of the obstacles and which estimates need improving would also be useful.
 
+### References
+
+Chun Wing Lai, On Fauzan's Proof that zeta(5) is Irrational (2026).
+https://ai.vixra.org/pdf/2609.0080v1.pdf
+
 ## AI-generated notes
 
 <!-- status: Open -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Open for $\zeta(7)$: the irrationality of $\zeta(5)$ was proved by A. Fauzan (Zenodo preprint, 17 September 2026, not refereed) and has been formalized in Lean, while an attempted extension of his method to $\zeta(7)$ (P. Anand, Zenodo, September 2026) is marked by its author as containing an error.
 - **Task:** Find out which parts of Fauzan's Hankel-determinant argument extend to $\zeta(7)$ and other odd zeta values, or give a criterion for when the method works.

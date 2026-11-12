@@ -1,39 +1,26 @@
 # 48 · Rigidity of enumeration degrees
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/048-rigidity-of-enumeration-degrees.md`](../problems_original/048-rigidity-of-enumeration-degrees.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Computability theory
+- **Tracks:** Computation/Applied Math
 
-Rigidity of enumeration degrees
-
-### Short description of problem (100 words or less)
+### Description
 
 OpenAI recently proved (in Lean) that the Turing degrees D_T are rigid. It is also known that the Turing degrees are definable in the enumeration degrees D_e, so that it follows that the enumeration degrees are rigid. But the definition of D_T in D_e is complicated, so it is not easy to obtain rigidity of D_e in Lean. The task is to find an easier way.
-
-### Submitted Area
-
-Computability theory
-
-### Proposed Tracks
-
-Computation/Applied Math
-
-### Reference/source material
-
-Cai, Ganchev, Lempp, Miller and Soskova (JAMS 2016)
-https://github.com/openai/math/tree/main/preprints/Rigidity-of-the-Turing-degrees-September-24-2026
 
 ### Desired outcome
 
 Simple proof and ideally a Lean formalization
 
+### References
+
+Cai, Ganchev, Lempp, Miller and Soskova (JAMS 2016)
+https://github.com/openai/math/tree/main/preprints/Rigidity-of-the-Turing-degrees-September-24-2026
+
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by AI for the earlier problem list, where this was problem 48 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Follows from the rigidity of the Turing degrees (OpenAI, 2026 preprint, not yet refereed) by Corollary 3.8 of Cai, Ganchev, Lempp, Miller and Soskova (2016).
 - **Task:** A simpler proof that the enumeration degrees are rigid, ideally formalized.

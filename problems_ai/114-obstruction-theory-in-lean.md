@@ -1,39 +1,26 @@
 # 114 · Obstruction theory in Lean
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/114-obstruction-theory-in-lean.md`](../problems_original/114-obstruction-theory-in-lean.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Algebraic topology, homotopy theory, cohomology
+- **Tracks:** Geometry
 
-Obstruction theory in Lean
-
-### Short description of problem (100 words or less)
+### Description
 
 Formalize some of the main results of obstruction theory in Lean, especially how cohomology tells us when we can extend a map. This would also help with other formalization projects in algebraic topology.
-
-### Submitted Area
-
-Algebraic topology, homotopy theory, cohomology
-
-### Proposed Tracks
-
-Geometry
-
-### Reference/source material
-
-James F. Davis and Paul Kirk, Lecture Notes in Algebraic Topology, Graduate Studies in Mathematics 35 (2001), Chapter 7: Obstruction Theory and Eilenberg-MacLane Spaces, especially the main extension theorem.
-https://doi.org/10.1090/gsm/035
 
 ### Desired outcome
 
 Prove the main extension theorem in Lean and work through a few applications. Could also look at obstructions to sections of fiber bundles.
 
+### References
+
+James F. Davis and Paul Kirk, Lecture Notes in Algebraic Topology, Graduate Studies in Mathematics 35 (2001), Chapter 7: Obstruction Theory and Eilenberg-MacLane Spaces, especially the main extension theorem.
+https://doi.org/10.1090/gsm/035
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Proved: the extension theorem of obstruction theory is classical (Eilenberg, 1940); the proposer's source states it as Theorem 7.1 of Davis–Kirk (2001).
 - **Task:** Formalize the main extension theorem of obstruction theory in Lean and work through some applications, possibly including obstructions to sections of fibre bundles.
