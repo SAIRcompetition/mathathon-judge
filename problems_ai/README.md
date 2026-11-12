@@ -1,8 +1,9 @@
 # Mathathon Round 1 problems
 
-The 140 Round 1 problems, one page per problem. Each page has two parts:
+The 126 Round 1 problems of the organizers' final problem sheet, one page per problem. Each page has two or three parts:
 
 - **From the proposer**: the problem as the proposer wrote it, with a few typos and wrong bibliographic details corrected (each listed in [`corrections.json`](corrections.json)). The exact text of the sheet is in [`problems_original`](../problems_original/README.md).
+- **From the judges** (on some pages): the judges' suggestions from the sheet, unchanged.
 - **AI-generated notes**: what is known, how the known proofs work, background, where to start, references with links, and the Lean status.
 
 > **The AI-generated notes, the Status and Lean columns below and the Lean statements were written by AI and may contain errors.** Use them as a reference; the proposer's text is authoritative.
@@ -23,7 +24,7 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 | 5 | [Classification of finite simple groups](005-classification-of-finite-simple-groups.md) | Algebra/Number Theory | Proved | — |
 | 6 | [abc conjecture](006-abc-conjecture.md) | Algebra/Number Theory | Open | ✓ |
 | 7 | [NP-completeness of HP protein folding model](007-np-completeness-of-hp-protein-folding-model.md) | Computation/Applied Math | Proved | ✓ |
-| 8 | [Weak factorization for the biholomorphic Hardy space](008-weak-factorization-for-the-biholomorphic-hardy-space.md) | Analysis | Proved | ✓ |
+| 8 | [Weak factorization for the biholomorphic Hardy space](008-weak-factorization-for-the-biholomorphic-hardy-space.md) | Analysis | Open | ✓ |
 | 9 | [Clustered Hadwiger's theorem](009-clustered-hadwigers-theorem.md) | Combinatorics | Proved | ✓ |
 | 10 | [well-posedness and stability of Landau equation, Vlasov-Landau equations and Boltzmann equation.](010-well-posedness-and-stability-of-landau-equation-vlasov.md) | Computation/Applied Math, Analysis | Not a single theorem | ✓ |
 | 11 | [Mazur's Collatz Paper](011-mazurs-collatz-paper.md) | Algebra/Number Theory, Analysis | Proved (preprint) | ✓ |
@@ -53,7 +54,6 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 | 35 | [Asymptotic Growth of Integer Partitions into Powers](035-asymptotic-growth-of-integer-partitions-into-powers.md) | Combinatorics, Algebra/Number Theory | Partly solved | ✓ |
 | 36 | [Probabilistic and Asymptotic Approaches to the Hook-Length Formula for Young Tableaux](036-probabilistic-and-asymptotic-approaches-to-the-hook-length.md) | Combinatorics, Analysis | Proved | ✓ |
 | 37 | [SLn P=W Conjecture via endoscopy](037-sln-p-w-conjecture-via-endoscopy.md) | Geometry | Proved (preprint) | — |
-| 38 | [Understanding a Proposed Counterexample to Reduced Baum–Connes Injectivity](038-understanding-a-proposed-counterexample-to-reduced.md) | Algebra/Number Theory | Disproved (preprint) | ✓ |
 | 39 | [Hylland's random dictatorship theorem for cardinal preferences](039-hyllands-random-dictatorship-theorem-for-cardinal.md) | Computation/Applied Math | Proved | ✓ |
 | 40 | [The Quasi-Riemann Hypothesis](040-the-quasi-riemann-hypothesis.md) | Algebra/Number Theory | Proved (preprint) | ✓ |
 | 41 | [Digesting Wiles’ proof of Fermat’s Last Theorem](041-digesting-wiles-proof-of-fermats-last-theorem.md) | Algebra/Number Theory | Proved | ✓ |
@@ -66,8 +66,6 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 | 48 | [Rigidity of enumeration degrees](048-rigidity-of-enumeration-degrees.md) | Computation/Applied Math | Proved (preprint) | ✓ |
 | 49 | [Tight Dimension Dependence for Convex Bandits](049-tight-dimension-dependence-for-convex-bandits.md) | Computation/Applied Math, Analysis | Open | — |
 | 50 | [Hilbert’s tenth problem over the rationals](050-hilberts-tenth-problem-over-the-rationals.md) | Algebra/Number Theory | Proved (preprint) | ✓ |
-| 51 | [Non-uniqueness or uniqueness of Glimm-Lax solutions](051-non-uniqueness-or-uniqueness-of-glimm-lax-solutions.md) | Computation/Applied Math, Analysis | Partly solved | — |
-| 52 | [Inviscid limit for 1-d compressible MHD](052-inviscid-limit-for-1-d-compressible-mhd.md) | Computation/Applied Math, Analysis | Open | — |
 | 53 | [Taxonomizing mathematics: an exploration with minimal surfaces](053-taxonomizing-mathematics-an-exploration-with-minimal.md) | Geometry | Not a single theorem | — |
 | 54 | [Dissecting OpenAI’s counterexamples to the Auslander-Reiten and Second Tachikawa conjecture for finite-dimensional algebras](054-dissecting-openais-counterexamples-to-the-auslander-reiten.md) | Algebra/Number Theory | Disproved (preprint) | ✓ |
 | 55 | [A Simpler Counterexample to Hadwiger's Conjecture](055-a-simpler-counterexample-to-hadwigers-conjecture.md) | Combinatorics | Disproved (preprint) | ✓ |
@@ -78,9 +76,6 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 | 60 | [Gigli’s characterization of Alexandrov curvature](060-giglis-characterization-of-alexandrov-curvature.md) | Geometry | Proved (preprint) | — |
 | 61 | [Extended table for knotted surfaces](061-extended-table-for-knotted-surfaces.md) | Algebra/Number Theory, Geometry | Not a single theorem | — |
 | 62 | [Infinite Two-Generated Groups of Bounded Exponent (Burnside Problem)](062-infinite-two-generated-groups-of-bounded-exponent-burnside.md) | Algebra/Number Theory | Proved | ✓ |
-| 63 | [Construction of an Infinite Finitely Presented Nilsemigroup](063-construction-of-an-infinite-finitely-presented-nilsemigroup.md) | Algebra/Number Theory | Proved | ✓ |
-| 64 | [Polynomial Identities and the Specht Problem](064-polynomial-identities-and-the-specht-problem.md) | Algebra/Number Theory | Proved | ✓ |
-| 65 | [Subexponential Upper Bounds for the Nilpotency Index of Associative Algebras](065-subexponential-upper-bounds-for-the-nilpotency-index-of.md) | Algebra/Number Theory | Proved | ✓ |
 | 66 | [Invariant subspace problem: the Enflo–Read counterexamples](066-invariant-subspace-problem-the-enfloread-counterexamples.md) | Analysis | Disproved | ✓ |
 | 67 | [Monsky's theorem and Stein's conjecture on equal-area dissections](067-monskys-theorem-and-steins-conjecture-on-equal-area.md) | Combinatorics, Geometry | Partly solved | ✓ |
 | 68 | [Non-parametric Bernstein von-Mises theorems](068-non-parametric-bernstein-von-mises-theorems.md) | Analysis | Not a single theorem | — |
@@ -97,7 +92,6 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 | 79 | [The Painlevé paradox](079-the-painleve-paradox.md) | Analysis, Computation/Applied Math | Not a single theorem | — |
 | 80 | [Surface intersection with correct topology](080-surface-intersection-with-correct-topology.md) | Geometry, Computation/Applied Math | Not a single theorem | — |
 | 81 | [Chowla’s conjecture for two-point correlations](081-chowlas-conjecture-for-two-point-correlations.md) | Number Theory/Algebra | Proved (preprint) | ✓ |
-| 82 | [Kadison's generator problem](082-kadisons-generator-problem.md) | Number Theory/Algebra | Proved (preprint) | ✓ |
 | 83 | [Cannon's conjecture and friends](083-cannons-conjecture-and-friends.md) | Geometry | Proved (preprint) | ✓ |
 | 84 | [Exotic hyperbolic groups from 2-complexes](084-exotic-hyperbolic-groups-from-2-complexes.md) | Number Theory/Algebra, Geometry | Not a single theorem | — |
 | 85 | [Different Effective Equation with shared Brownian Limit](085-different-effective-equation-with-shared-brownian-limit.md) | Analysis | Not a single theorem | — |
@@ -126,15 +120,9 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 | 108 | [Generalizing the zeta(5) irrationality argument](108-generalizing-the-zeta-5-irrationality-argument.md) | Number Theory/Algebra | Open | ✓ |
 | 109 | [Tightening the commutator-scaling Trotter error bound at fourth order](109-tightening-the-commutator-scaling-trotter-error-bound-at.md) | Computation/Applied Mathematics | Open | — |
 | 110 | [Statistical learning theory and neural network generalization bounds](110-statistical-learning-theory-and-neural-network.md) | Analysis, Computation/Applied Math | Proved | ✓ |
-| 111 | [Kervaire invariant one theorem](111-kervaire-invariant-one-theorem.md) | Geometry | Proved | — |
-| 112 | [Quarter-pinching sphere theorem](112-quarter-pinching-sphere-theorem.md) | Geometry | Proved | ✓ |
-| 113 | [Understanding sporadic curves in McDuff-Schlenk staircase](113-understanding-sporadic-curves-in-mcduff-shlenk-staircase.md) | Geometry | Not a single theorem | — |
 | 114 | [Obstruction theory in Lean](114-obstruction-theory-in-lean.md) | Geometry | Proved | — |
 | 115 | [Exotic spheres](115-exotic-spheres.md) | Geometry | Proved | ✓ |
-| 116 | [LLM-assisted search for a new knot invariant](116-llm-assisted-search-for-a-new-knot-invariant.md) | Geometry | Not a single theorem | — |
-| 117 | [Parity obstructions behind Drury’s external vertices conjecture: from n = 4 to n = 5](117-parity-obstructions-behind-drurys-external-vertices.md) | Combinatorics | Open | ✓ |
 | 118 | [Formalizing the AKLT spectral gap](118-formalizing-the-aklt-spectral-gap.md) | Computation/Applied mathematics | Proved (preprint) | ✓ |
-| 119 | [Freedman's disc embedding theorem and 4D Poincare](119-freedmans-disc-embedding-theorem-and-4d-poincare.md) | Geometry | Proved | ✓ |
 | 120 | [Characterizations and identities for probability distributions](120-characterizations-and-identities-for-probability.md) | Analysis | Not a single theorem | ✓ |
 | 121 | [Carleson's Theorem on convergence of Fourier series](121-carleson-theorem-on-convergence-of-fourier-series.md) | Analysis | Proved | ✓ |
 | 122 | [Efficient Verification of Lean Proofs via Interaction](122-efficient-verification-of-lean-proofs-via-interaction.md) | Computation/Applied Mathematics | Not a single theorem | — |
@@ -145,7 +133,6 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 | 127 | [Rogers Ramanujan Identity](127-rogers-ramanujan-identity.md) | Combinatorics | Proved | ✓ |
 | 128 | [Why Do Random Sorting Networks Draw Sine Curves?](128-why-do-random-sorting-networks-draw-sine-curves.md) | Computation/Applied Mathematics | Proved | ✓ |
 | 129 | [Termination of flips for fourfolds](129-termination-of-flips-for-fourfolds.md) | Geometry | Proved (preprint) | — |
-| 130 | [Uniqueness of Finite Quandle Colorings](130-uniqueness-of-finite-quandale-colorings.md) | Geometry | Partly solved | ✓ |
 | 131 | [Irrationality of ζ(3) (Apery's Theorem)](131-irrationality-of-3-aperys-theorem.md) | Number Theory/Algebra | Proved | ✓ |
 | 132 | [An Interactive Computational Laboratory for Spatial Stochastic Processes and Scaling Limits](132-an-interactive-computational-laboratory-for-spatial.md) | Computation/Applied Mathematics, Analysis | Not a single theorem | — |
 | 133 | [Simpson's conjecture](133-simpsons-conjecture.md) | Number Theory/Algebra | Partly solved | — |
@@ -160,7 +147,7 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 
 ## Lean statements
 
-91 problems have an official Lean statement (marked ✓ above); the other 49 have none, and their pages say why. [`lean/`](lean/README.md) is a Lean project for Lean v4.35.0 and Mathlib `v4.35.0` with one file per statement and an index of where each comes from: 42 were written by AI for Mathathon and 52 adapted from existing formalizations, which each file cites. Like the notes, the statements were prepared by AI and may contain errors, for example by missing a detail of the problem; the 38 added on 2026-11-11 were each checked against the work they state by a second, independent AI review. To check that they compile, run `lake exe cache get` and then `lake build` in `lean/`. For problem 56 the statement (OpenAI's running-time bound with polynomial space) is stronger than what the revised problem asks for; its page explains this. For problem 69 the statement is the inverse Galois problem for finite simple groups, the case its text asks for, rather than for all finite groups. Several statements state the known or claimed theorem behind a problem rather than what the problem asks for (an explicit bound, a new proof, a simpler construction); their pages say so.
+82 problems have an official Lean statement (marked ✓ above); the other 44 have none, and their pages say why. [`lean/`](lean/README.md) is a Lean project for Lean v4.35.0 and Mathlib `v4.35.0` with one file per statement and an index of where each comes from: 35 were written by AI for Mathathon and 50 adapted from existing formalizations, which each file cites. Like the notes, the statements were prepared by AI and may contain errors, for example by missing a detail of the problem; those added on 2026-11-11 were each checked against the work they state by a second, independent AI review, and all of them were reviewed again on 2026-11-12. To check that they compile, run `lake exe cache get` and then `lake build` in `lean/`. For problem 56 the statement (OpenAI's running-time bound with polynomial space) is stronger than what the revised problem asks for; its page explains this. For problem 69 the statement is the inverse Galois problem for finite simple groups, the case its text asks for, rather than for all finite groups. Several statements state the known or claimed theorem behind a problem rather than what the problem asks for (an explicit bound, a new proof, a simpler construction); their pages say so.
 
 ## About the notes
 
@@ -168,11 +155,12 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 - The notes of problems 2, 9, 34, 40, 54, 56 and 70 were revised, because their text in the sheet differs substantially from the earlier list, and the notes of problems 12 and 94–140 were written new, by Claude Opus 5.5 on 2026-11-11.
 - All 1,421 links in the notes were checked on 2026-11-11. One dead link was removed (problem 66); eight could not be checked automatically, because the sites refuse automated access (Oxford University Press, ACM, AMS, Math-Net.Ru, the Rényi Institute) or did not respond (ECCC, Kyungpook Mathematical Journal).
 - Compared with the earlier list, earlier problem 89 is not in the sheet, earlier problems 90–94 are now 89–93, problem 12 (withheld before) now has its text, and page titles are the proposers' own titles.
+- On 2026-11-12 the organizers' final problem sheet replaced the earlier one. Problems 38, 51, 52, 63, 64, 65, 82, 111, 112, 113, 116, 117, 119 and 130 are not in it; their pages and Lean statements were removed and remain in the git history. The sheet added judge suggestions to nine problems (shown under **From the judges**); the notes of problems 5, 8 and 90 were revised to match them and the manuscript attached to problem 90.
 
 ## For maintainers
 
 When the sheet changes:
 
 1. Update [`problems_original`](../problems_original/README.md) as described there.
-2. Run `python3 problems_ai/refresh_proposer_text.py`. It rewrites the **From the proposer** part of every page and the table above, applies [`corrections.json`](corrections.json), checks the text against the sheet, adds a placeholder page for any new problem, and never changes the notes.
+2. Run `python3 problems_ai/refresh_proposer_text.py`. It rewrites the **From the proposer** part of every page and the table above, applies [`corrections.json`](corrections.json), checks the text against the sheet, adds a placeholder page for any new problem, and never changes the notes. Pages of problems that are no longer in the sheet are not removed; delete them, their Lean statements and their entries in [`corrections.json`](corrections.json) and in [`lean/README.md`](lean/README.md) by hand.
 3. Review the notes of every problem whose text changed, and write notes for the placeholders.

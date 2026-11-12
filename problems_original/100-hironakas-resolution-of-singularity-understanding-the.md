@@ -35,3 +35,12 @@ A rigorous, accessible exposition of a modern proof of Hironaka’s theorem, sup
 - A contrasting example showing why a plausible but naive sequence of blowups fails.
 - An explanation of the mechanism guaranteeing termination and how local constructions fit together.
 - A focused comparison of later improvements, distinguishing more systematic constructions, compatibility with coordinate changes, and simplifications of the proof.
+
+## Judge Suggestions
+
+Suggested outcome: interactive code packages with illustrative examples
+
+A complete walkthough of a nontrivial surface example, etc is a good idea, but a 3-fold example would better illustrate the theorem. (For surfaces, one can take a normalization to reduce to the case where the singularities only occur at isolated points. The picture is more complicated for 3-folds because then the singularities can occur along a curve).
+
+Hauser also discusses what goes wrong in positive characteristic (someone only recently understood). A complete walkthrough of what can go wrong would be a challenging but interesting exercise. A very ambitious goal would be to produce a variety in positive characteristic where its unknown how to resolve singularities. 
+

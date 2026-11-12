@@ -19,6 +19,10 @@ For scattering diagrams: I'd like to understand the rather difficult "induction 
 Fomin-Zelevinsky: cluster algebras II, Inventiones Mathematicae (2003)
 Gross-Hacking-Keel-Kontsevich: canonical bases for cluster algebras, JAMS (2018)
 
+## From the judges
+
+There are couple article e.g. from Nathan Reading who is on this topics already. At the same time, I felt the proposed outcomes do not require AI as it has been quite well understood already. It may be nice if the group can consider the quantum or the generalized cluster algebra setting.
+
 ## AI-generated notes
 
 <!-- status: Proved -->

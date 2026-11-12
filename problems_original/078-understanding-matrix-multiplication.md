@@ -33,3 +33,7 @@ An exposition of an existing fast matrix multiplication construction.
 - An explicit analysis of how block dimensions, coefficient sizes, and operation counts depend on the chosen exponent, clarifying the gap between asymptotic efficiency and practical computation.
 
 Potentially a connection to numerical analysis that clarifies precision requirements too. Although the reference construction already includes an asymptotic bit-complexity analysis.
+
+## Judge Suggestions
+
+Suggested outcome: interactive code packages illustrating worked examples and/or analysis of finite costs.

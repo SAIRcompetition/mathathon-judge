@@ -28,6 +28,15 @@ https://doi.org/10.1070/IM1977v011n03ABEH001733
 
 The problem is to learn what Fano means, understand classification in Dimensions 1,2. Check classication in dimension 3, and finally see what prevents these methods from extending to higher dimensions.
 
+## Judge Suggestions
+
+There is some recent progress in dimension 4 due to Enrico Fatinghenti and collaborators, they created a webpage: https://sites.google.com/view/enricofatighenti/home 
+I think this would be of great inspiration for the people thinking about this direction.
+
 ## Reference links
 
 - <https://doi.org/10.1070/IM1977v011n03ABEH001733>
+
+## Links in Judge Suggestions
+
+- <https://sites.google.com/view/enricofatighenti/home>

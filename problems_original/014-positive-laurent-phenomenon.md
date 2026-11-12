@@ -29,3 +29,7 @@ Gross-Hacking-Keel-Kontsevich: canonical bases for cluster algebras, JAMS (2018)
 
 For the classification of cluster algebras: I'd like to see a more streamlined construction which explains why root systems enter and how the proof works
 For scattering diagrams: I'd like to understand the rather difficult "induction on rank" argument that allows to reduce the general problem to the rank 2 problem
+
+## Judge Suggestions
+
+There are couple article e.g. from Nathan Reading who is on this topics already. At the same time, I felt the proposed outcomes do not require AI as it has been quite well understood already. It may be nice if the group can consider the quantum or the generalized cluster algebra setting.

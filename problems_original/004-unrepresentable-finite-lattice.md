@@ -28,6 +28,14 @@ https://github.com/openai/math/tree/main/preprints/A-Negative-Solution-to-the-Fi
 
 A specific upper bound like maybe n<=10^{10^10} with an understandable proof.
 
+## Judge Suggestions
+
+Blogpost from William DeMeo discussing OpenAI claim: https://williamdemeo.org/blog/openai-flrp-claim/#how-the-negative-solution-is-assembled 
+
 ## Reference links
 
 - <https://github.com/openai/math/tree/main/preprints/A-Negative-Solution-to-the-Finite-Lattice-Representation-Problem-September-24-2026>
+
+## Links in Judge Suggestions
+
+- <https://williamdemeo.org/blog/openai-flrp-claim/#how-the-negative-solution-is-assembled>

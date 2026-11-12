@@ -25,6 +25,10 @@ https://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-
  https://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-October-5-2026/paper2.pdf
 
 
+## From the judges
+
+Maksym Radziwill gave a nice talk recently.
+
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->

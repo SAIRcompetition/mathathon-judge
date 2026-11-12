@@ -7,10 +7,13 @@ Run:  python3 problems_original/split_sheet.py
 The exports in source/ are not tracked in the repository; download them first
 (see source/README.txt, also untracked, or README.md).
 
-The text under each field heading is the CSV cell, unchanged.  Hyperlinks attached to
-cells are read from the HTML export and cross-checked against the XLSX export.  After
-writing, the script reads every file back and checks that each field is byte-identical
-to its CSV cell; it exits with an error otherwise.
+The problems are the first tab of the sheet; other tabs are not read.  The text under
+each field heading is the CSV cell, unchanged.  The column "Judge Suggestions" gets its
+own heading in the files where it is not empty.  Hyperlinks attached to cells are read
+from the HTML export and cross-checked against the XLSX export; those of the judge
+column are listed under their own heading.  After writing, the script reads every file
+back and checks that each field is byte-identical to its CSV cell; it exits with an
+error otherwise.
 """
 import csv
 import re
@@ -37,6 +40,9 @@ HEADER = [
     "Desired outcome",
 ]
 LINKS_HEADING = "Reference links"
+JUDGE = "Judge Suggestions"  # column 8; rendered only when not empty
+JUDGE_COL = len(HEADER)
+JUDGE_LINKS_HEADING = "Links in Judge Suggestions"
 INDEX_START = "<!-- problem-index:start -->"
 INDEX_END = "<!-- problem-index:end -->"
 
@@ -68,8 +74,10 @@ def slug(title):
 
 def read_csv():
     rows = list(csv.reader(open(CSV_FILE, newline="", encoding="utf-8")))
-    if rows[0][:7] != HEADER:
+    if rows[0][:7] != HEADER or rows[0][7:] not in ([], [""], [JUDGE]):
         sys.exit(f"unexpected header: {rows[0]}")
+    if any(c.strip() for r in rows for c in r[8:]):
+        sys.exit("the CSV has content beyond the column Judge Suggestions")
     # sheet row number (1-based, header = row 1) -> row
     return {i + 1: r for i, r in enumerate(rows) if i > 0 and any(c.strip() for c in r)}
 
@@ -83,6 +91,18 @@ def col_index(letters):
 
 M_NS = "{http://schemas.openxmlformats.org/spreadsheetml/2006/main}"
 R_NS = "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}"
+
+
+def first_tab():
+    """Name of the first tab (the problems); its XLSX part must be sheet1.xml."""
+    z = zipfile.ZipFile(XLSX_FILE)
+    wb = ET.fromstring(z.read("xl/workbook.xml"))
+    rels = {e.get("Id"): e.get("Target")
+            for e in ET.fromstring(z.read("xl/_rels/workbook.xml.rels"))}
+    first = next(wb.iter(M_NS + "sheet"))
+    if not rels[first.get(R_NS + "id")].endswith("worksheets/sheet1.xml"):
+        sys.exit("the first tab of the XLSX export is not sheet1.xml")
+    return first.get("name")
 
 
 def xlsx_sheet():
@@ -156,10 +176,16 @@ class SheetHTML(HTMLParser):
 def html_links():
     z = zipfile.ZipFile(HTML_ZIP)
     p = SheetHTML()
-    p.feed(z.read("Sheet1.html").decode("utf-8"))
+    p.feed(z.read(f"{first_tab()}.html").decode("utf-8"))
     hidden = hidden_columns()
     visible = [c for c in range(1000) if c not in hidden]
     return {(row, visible[col]): lst for (row, col), lst in p.links.items()}
+
+
+def judge_of(row):
+    """The Judge Suggestions cell, or '' when it is missing or blank."""
+    value = row[JUDGE_COL] if len(row) > JUDGE_COL else ""
+    return value if value.strip() else ""
 
 
 def render(row, links):
@@ -167,11 +193,28 @@ def render(row, links):
     parts = [f"# Problem {pid}\n"]
     for name, value in zip(HEADER, row[:7]):
         parts.append(f"\n## {name}\n\n{value}\n")
-    urls = list(dict.fromkeys(url for _, url, _ in links))  # in order, without repeats
-    if urls:
-        parts.append(f"\n## {LINKS_HEADING}\n\n")
-        parts.extend(f"- <{url}>\n" for url in urls)
+    if judge_of(row):
+        parts.append(f"\n## {JUDGE}\n\n{judge_of(row)}\n")
+    # in order, without repeats; links of the judge column under their own heading
+    for heading, urls in [
+        (LINKS_HEADING, [url for col, url, _ in links if col != JUDGE_COL]),
+        (JUDGE_LINKS_HEADING, [url for col, url, _ in links if col == JUDGE_COL]),
+    ]:
+        urls = list(dict.fromkeys(urls))
+        if urls:
+            parts.append(f"\n## {heading}\n\n")
+            parts.extend(f"- <{url}>\n" for url in urls)
     return "".join(parts)
+
+
+def parse_section(text, name):
+    """The text under the heading '## name', cut at the next heading; '' if absent."""
+    marker = f"\n## {name}\n\n"
+    if marker not in text:
+        return ""
+    start = text.index(marker) + len(marker)
+    end = text.find("\n\n## ", start)
+    return text[start:end] if end != -1 else text[start:-1]
 
 
 def parse_back(text):
@@ -188,9 +231,11 @@ def main():
     rows = read_csv()
     xl = xlsx_links()
     hl = html_links()
-    # Cross-check: same cells, same targets.
-    flat = {k: [u for u, _ in v] for k, v in hl.items()}
-    if set(flat) != set(xl) or any(xl[k] not in flat[k] for k in xl):
+    # Cross-check: same cells, same targets (the XLSX export drops a #fragment; the HTML
+    # export keeps it, and the HTML targets are the ones written).
+    defrag = lambda u: u.split("#", 1)[0]
+    flat = {k: [defrag(u) for u, _ in v] for k, v in hl.items()}
+    if set(flat) != set(xl) or any(defrag(xl[k]) not in flat[k] for k in xl):
         sys.exit(f"HTML and XLSX links disagree:\n{sorted(set(flat) ^ set(xl))}")
     for old in OUT.glob("[0-9][0-9][0-9]-*.md"):
         old.unlink()
@@ -203,7 +248,8 @@ def main():
         path.write_text(render(row, links), encoding="utf-8")
         written.append((path, row))
     bad = [p.name for p, row in written
-           if parse_back(p.read_text(encoding="utf-8")) != row[:7]]
+           if parse_back(p.read_text(encoding="utf-8")) != row[:7]
+           or parse_section(p.read_text(encoding="utf-8"), JUDGE) != judge_of(row)]
     if bad:
         sys.exit(f"round-trip check failed for: {bad}")
     write_index(written)

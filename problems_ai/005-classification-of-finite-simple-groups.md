@@ -21,11 +21,23 @@ https://en.wikipedia.org/wiki/Classification_of_finite_simple_groups
 
 - <https://en.wikipedia.org/wiki/Classification_of_finite_simple_groups>
 
+## From the judges
+
+The Lean formalization has already been done now, by Axiom: https://cfsg.axiommath.ai/errata#abstract 
+
+Probably a good outcome would be to try to map out clearly the main ideas of the proof and how everything connects together at a high level.
+
+Then also try to understand what (new?) definitions would make the whole proof more stream-lined and clear.
+
+### Links in the judge suggestions
+
+- <https://cfsg.axiommath.ai/errata#abstract>
+
 ## AI-generated notes
 
 <!-- status: Proved -->
 
-- **Status:** Regarded as proved around 1980; the last serious gap, the quasithin case, was closed by Aschbacher and Smith (2004).
+- **Status:** Regarded as proved around 1980; the last serious gap, the quasithin case, was closed by Aschbacher and Smith (2004). Axiom Math reports a complete Lean formalization (2026).
 - **Task:** Formalize large parts in Lean, or simplify parts of the proof.
 - **Key reference:** [The status of the classification of the finite simple groups](https://authors.library.caltech.edu/records/5b4mm-frv50/files/ASCnams04.pdf), M. Aschbacher, Notices of the AMS 51 (2004), 736–740.
 - **Lean:** No official statement.
@@ -34,6 +46,7 @@ https://en.wikipedia.org/wiki/Classification_of_finite_simple_groups
 
 - The page's only reference is Wikipedia; primary sources are listed below.
 - On disputed parts: Aschbacher (2004) names the quasithin case as the one serious gap. A 2026 preprint by Axiom Math, not yet refereed, reports counterexamples to a closure assertion used in one published route to the Unbalanced Group Theorem and gives an alternative argument; that theorem also has other proofs.
+- Axiom Math reports a complete Lean formalization of the classification that follows the first-generation proof (<https://cfsg.axiommath.ai>; see Lean below), so the formalization asked for in the task largely exists. A judge suggests instead mapping out the main ideas of the proof and how they connect, and finding definitions that would make it more streamlined (From the judges).
 
 ### The result
 
@@ -77,6 +90,7 @@ This problem has no official Lean statement: the classification lists the finite
 
 #### Related Lean formalizations
 
+- [AxiomMath/CFSG](https://github.com/AxiomMath/CFSG/tree/69cb972f587a3ecc035e092253167ff2e303c962), with the project site <https://cfsg.axiommath.ai>: a complete Lean formalization of the classification following the first-generation proof, as its authors describe it (about 43 million lines of Lean), with notes on where it departs from published arguments.
 - [odd-order](https://github.com/yawara/odd-order/tree/ba8ec35982ceecbd31ca987cbe0cee30477f4883): a Lean proof of the Feit–Thompson odd order theorem.
 - [Qiuzhen-CFSG/CFSG](https://github.com/Qiuzhen-CFSG/CFSG/tree/0c6635528a02dd46f2e93e2ade0c4ac647ad1eb7): Lean proofs of parts of the classification, including the odd order, Bender–Suzuki and Gorenstein–Walter theorems.
 

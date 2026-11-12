@@ -2,9 +2,10 @@
 Mathathon Round 1, Problem 08: official Lean statement, prepared by AI. It may contain errors.
 
 Written by AI for Mathathon; not taken from an existing formalization.
-It states weak factorization for H¹ of the bidisc, Corollary 1.3 of S. H. Ferguson and
-M. T. Lacey, "A characterization of product BMO by commutators", Acta Math. 189 (2002), with the
-remark after it: there is a constant C such that every h in H¹(T²) is a sum Σ fⱼ gⱼ, converging
+It states weak factorization for H¹ of the bidisc, as claimed in Corollary 1.3 of S. H. Ferguson
+and M. T. Lacey, "A characterization of product BMO by commutators", Acta Math. 189 (2002), with
+the remark after it (the proposer calls the problem open, and a judge reports that the paper is
+wrong): there is a constant C such that every h in H¹(T²) is a sum Σ fⱼ gⱼ, converging
 in L¹, with fⱼ, gⱼ ∈ H²(T²) and Σ ‖fⱼ‖₂ ‖gⱼ‖₂ ≤ C ‖h‖₁. The torus T² = (ℝ/ℤ)² carries its normalized Haar measure,
 as in Mathlib's `Mathlib/Analysis/Fourier/AddCircleMulti.lean`; Hᵖ(T²) is the set of elements of
 Lᵖ(T²) whose Fourier coefficient at (n₁, n₂) is zero whenever n₁ < 0 or n₂ < 0.
@@ -37,7 +38,7 @@ def WeakFactorization : Prop :=
     Summable (fun j => ‖f j‖ * ‖g j‖) ∧
     ∑' j, ‖f j‖ * ‖g j‖ ≤ C * ‖h‖
 
-/-- **Weak factorization for `H¹` of the bidisc** (Ferguson–Lacey, 2002). -/
+/-- **Weak factorization for `H¹` of the bidisc** (claimed by Ferguson–Lacey, 2002). -/
 theorem weak_factorization : WeakFactorization := by
   sorry
 
