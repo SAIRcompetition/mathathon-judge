@@ -117,6 +117,8 @@ Prerequisites: finite-dimensional algebras, Ext, symmetric algebras, stable modu
 theorem main : FullStatement.{v}
 ```
 
+`FullStatement` says that over $K=\mathbb F_2(t_1,t_2,t_3)$, with $t_1,t_2,t_3$ algebraically independent, there are a finite-dimensional algebra $A$ and a finite-dimensional $A$-module $Z$ that is not projective, is Gorenstein-projective (`TotallyAcyclicWitness`) and has $\mathrm{Ext}^i(Z,Z)=\mathrm{Ext}^i(Z,A)=0$ for all $i>0$, with $A/\mathrm{rad}\,A\cong K^8$ and $\mathrm{rad}(A)^4\ne0$; the same holds for $E\otimes_KA$ and $E\otimes_KZ$ over every field extension $E$ of $K$. Such a $Z$ is a counterexample to the Auslander–Reiten conjecture.
+
 Source: <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/AuslanderReiten.lean> (copied unchanged).
 
 A Lean proof of this statement already exists: <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/AuslanderReiten/All.lean>. A Lean-verified claim must not use or copy it.
@@ -126,6 +128,8 @@ A Lean proof of this statement already exists: <https://github.com/openai/math/b
 ```lean
 theorem main_theorem : Counterexample
 ```
+
+`Counterexample` says that over $k=\mathbb F_2(t_1,t_2,t_3)$ there are a finite-dimensional symmetric algebra $A$ and a finite-dimensional $A$-module $M$ that is not projective and has $\mathrm{Ext}^n(M,M)=0$ for all $n>0$, a counterexample to Tachikawa's second conjecture.
 
 Source: <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Tachikawa.lean> (copied unchanged).
 
