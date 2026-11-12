@@ -38,7 +38,7 @@ These hyperlinks are attached to cells of this row in the sheet. They are listed
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 60 ([`problems/60-alexandrov-curvature-via-gigli.md`](../problems/60-alexandrov-curvature-via-gigli.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 60 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Conjectured by Gigli (2019); claimed proved by an OpenAI preprint (September 2026), not yet refereed.
 - **Task:** Explain the proof and the tools it uses.

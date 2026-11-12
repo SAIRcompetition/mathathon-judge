@@ -38,7 +38,7 @@ Potentially a connection to numerical analysis that clarifies precision requirem
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 78 ([`problems/78-fast-matrix-multiplication.md`](../problems/78-fast-matrix-multiplication.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 78 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** $\omega\le 9/4$ proved by OpenAI (October 2026 preprint) and constructively by R. Pass (arXiv, October 2026); neither proof is yet refereed.
 - **Task:** An exposition of an existing fast matrix multiplication construction, with worked examples.

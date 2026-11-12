@@ -34,7 +34,7 @@ An explicit finite presentation of an infinite nilsemigroup, together with rigor
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 63 ([`problems/63-finitely-presented-nilsemigroups.md`](../problems/63-finitely-presented-nilsemigroups.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 63 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by I. A. Ivanov-Pogodaev and A. Ya. Kanel-Belov (announced 2020; full proof in three papers, 2021–2025), answering a question of Shevrin and Sapir.
 - **Task:** An explicit infinite finitely presented nilsemigroup, ideally simpler, with fewer relations.

@@ -40,7 +40,7 @@ Aside from the main problem, another possible direction could be to investigate 
 
 <!-- status: Open -->
 
-> Written by AI for the earlier problem list, where this was problem 32 ([`problems/32-low-memory-nesterov-acceleration.md`](../problems/32-low-memory-nesterov-acceleration.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 32 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Open in general; for convex quadratics and $L$-smooth convex functions the exactly optimal methods are known and keep only one auxiliary vector.
 - **Task:** Settings where a second auxiliary vector strictly helps, or proof it cannot.

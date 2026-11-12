@@ -32,7 +32,7 @@ Since the correctness of Gacs argument is in doubt, a formal verification is gen
 
 <!-- status: Disproved -->
 
-> Written by AI for the earlier problem list, where this was problem 18 ([`problems/18-positive-rates-conjecture.md`](../problems/18-positive-rates-conjecture.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 18 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Refuted by P. Gács: discrete time in 1986 (J. Comput. System Sci.), continuous time in 2001 (J. Stat. Phys.).
 - **Task:** A simpler, hand-checkable counterexample, or a formal verification of Gács's.

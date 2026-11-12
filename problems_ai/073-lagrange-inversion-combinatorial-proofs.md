@@ -35,7 +35,7 @@ Formalization of one combinatorial proof, with code verifying the cycle lemma an
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 73 ([`problems/73-lagrange-inversion.md`](../problems/73-lagrange-inversion.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 73 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Given by J.-L. Lagrange (1770); analytic, formal and combinatorial proofs exist.
 - **Task:** Formalize a combinatorial proof; code for the cycle lemma and tree counts.

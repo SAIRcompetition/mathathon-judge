@@ -36,7 +36,7 @@ The exposition should distinguish arguments that have been independently checked
 
 <!-- status: Disproved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 38 ([`problems/38-baum-connes-counterexample.md`](../problems/38-baum-connes-counterexample.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 38 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** A counterexample to rational injectivity of reduced coefficient-free assembly is claimed in an OpenAI preprint (September 2026), not yet refereed; the conjecture is due to Baum, Connes and Higson (1982–1994).
 - **Task:** A careful exposition of the claimed counterexample for graduate students.

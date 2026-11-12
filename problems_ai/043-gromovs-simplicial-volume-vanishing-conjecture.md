@@ -33,7 +33,7 @@ Would it be possible to extend the index theoretic techniques developed by Ma et
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 43 ([`problems/43-gromovs-simplicial-volume-conjecture.md`](../problems/43-gromovs-simplicial-volume-conjecture.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 43 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved for manifolds with spin universal cover by Ma–Wang–Xie–Yu–Zhu (arXiv 2026); claimed in full by an OpenAI preprint (September 2026); neither is refereed yet.
 - **Task:** Extend the Ma et al. index-theoretic method to OpenAI's rational-inessentiality theorem.

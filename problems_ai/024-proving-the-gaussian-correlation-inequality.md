@@ -39,7 +39,7 @@ These hyperlinks are attached to cells of this row in the sheet. They are listed
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 24 ([`problems/24-gaussian-correlation-inequality.md`](../problems/24-gaussian-correlation-inequality.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 24 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by T. Royen (2014); the general conjecture was formulated by S. Das Gupta et al. (1972).
 - **Task:** A more intuitive and concise geometric proof.

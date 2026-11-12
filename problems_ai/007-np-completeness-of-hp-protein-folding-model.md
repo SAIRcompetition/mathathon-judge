@@ -38,7 +38,7 @@ These hyperlinks are attached to cells of this row in the sheet. They are listed
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 7 ([`problems/07-np-completeness-of-hp-protein-folding.md`](../problems/07-np-completeness-of-hp-protein-folding.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 7 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved for the square lattice by Crescenzi, Goldman, Papadimitriou, Piccolboni and Yannakakis (1998) and for the cubic lattice by B. Berger and T. Leighton (1998).
 - **Task:** A formal proof, or simpler hardness reductions, for HP folding.

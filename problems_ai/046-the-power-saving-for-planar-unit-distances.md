@@ -32,7 +32,7 @@ A human-readable account of the proof's architecture, a clear explanation of exa
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 46 ([`problems/46-planar-unit-distances.md`](../problems/46-planar-unit-distances.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 46 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved in an OpenAI preprint dated 23 September 2026 (released 6 October 2026), not yet refereed; the problem is Erdős's (1946).
 - **Task:** The proof's architecture, its Euclidean input, and an explicit δ.

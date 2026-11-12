@@ -32,7 +32,7 @@ any tightening of the upper or lower bound would be helpful.
 
 <!-- status: Open -->
 
-> Written by AI for the earlier problem list, where this was problem 49 ([`problems/49-tight-bounds-for-convex-bandits.md`](../problems/49-tight-bounds-for-convex-bandits.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 49 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Open; in the stochastic setting the best bounds are $\Omega(d^{4/3}\sqrt n)$ (Rajaraman–Han, 2026 preprint, not yet refereed) and $\tilde O(d^{3/2}\sqrt n)$.
 - **Task:** Any improvement of the upper or lower regret bound.

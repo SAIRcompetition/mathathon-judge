@@ -39,7 +39,7 @@ We hope participants can develop a new or more intuitive explanation of the Hook
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 36 ([`problems/36-hook-length-formula.md`](../problems/36-hook-length-formula.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 36 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by J. S. Frame, G. de B. Robinson and R. M. Thrall (1954); many later proofs exist.
 - **Task:** A new or more intuitive explanation of the hook length formula.

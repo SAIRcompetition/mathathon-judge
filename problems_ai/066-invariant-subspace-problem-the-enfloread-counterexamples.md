@@ -34,7 +34,7 @@ A clear exposition of the counterexample constructions and of what prevents them
 
 <!-- status: Disproved -->
 
-> Written by AI for the earlier problem list, where this was problem 66 ([`problems/66-enflo-read-counterexamples.md`](../problems/66-enflo-read-counterexamples.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 66 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Counterexamples on Banach spaces by P. Enflo (Acta Math. 1987) and C. J. Read (1984; on ℓ1 1985); open on Hilbert space.
 - **Task:** A clear exposition of the constructions and why Hilbert spaces resist them.

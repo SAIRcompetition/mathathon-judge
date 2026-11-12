@@ -32,7 +32,7 @@ A human-readable account of the blowup construction that identifies the mechanis
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 23 ([`problems/23-forced-navier-stokes-blowup.md`](../problems/23-forced-navier-stokes-blowup.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 23 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by OpenAI in a paper released in September 2026; the paper is not yet refereed.
 - **Task:** A readable account of the mechanism and the role of the forcing.

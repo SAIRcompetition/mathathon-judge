@@ -38,7 +38,7 @@ These hyperlinks are attached to cells of this row in the sheet. They are listed
 
 <!-- status: Open -->
 
-> Written by AI for the earlier problem list, where this was problem 4 ([`problems/04-unrepresentable-finite-lattice.md`](../problems/04-unrepresentable-finite-lattice.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 4 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** The minimum size is open; the existence of an unrepresentable finite lattice is claimed in two OpenAI preprints (September 2026) that are not yet refereed.
 - **Task:** An explicit, much smaller upper bound with an understandable proof.

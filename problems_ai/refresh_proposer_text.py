@@ -19,7 +19,7 @@ from pathlib import Path
 
 AI = Path(__file__).resolve().parent
 ORIG = AI.parent / "problems_original"
-sys.path.insert(0, str(ORIG / "source"))
+sys.path.insert(0, str(ORIG))
 import split_sheet  # noqa: E402  (HEADER, parse_back, LINKS_HEADING)
 
 NOTES_HEADING = "## AI-generated notes"

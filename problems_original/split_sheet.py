@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Build the per-problem files in problems_original/ from the sheet exports in source/.
 
-Run:  python3 problems_original/source/split_sheet.py
+Run:  python3 problems_original/split_sheet.py
+
+The exports in source/ are not tracked in the repository; download them first
+(see source/README.txt, also untracked, or README.md).
 
 The text under each field heading is the CSV cell, unchanged.  Hyperlinks attached to
 cells are read from the HTML export and cross-checked against the XLSX export.  After
@@ -17,8 +20,8 @@ import zipfile
 from html.parser import HTMLParser
 from pathlib import Path
 
-SRC = Path(__file__).resolve().parent
-OUT = SRC.parent
+OUT = Path(__file__).resolve().parent
+SRC = OUT / "source"
 CSV_FILE = SRC / "mathathon-problem-sheet.csv"
 XLSX_FILE = SRC / "mathathon-problem-sheet.xlsx"
 HTML_ZIP = SRC / "mathathon-problem-sheet-html.zip"

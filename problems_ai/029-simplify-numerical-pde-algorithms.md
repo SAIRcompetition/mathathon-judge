@@ -36,7 +36,7 @@ A easy to understand explanation, or an easier to understand version of the algo
 
 <!-- status: Not a single theorem -->
 
-> Written by AI for the earlier problem list, where this was problem 29 ([`problems/29-simpler-numerical-pde-algorithms.md`](../problems/29-simpler-numerical-pde-algorithms.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 29 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** The three algorithms are established and implemented; the proposer asks for clearer explanations or simpler variants.
 - **Task:** An easy explanation, or a simpler but effective version, of one algorithm.

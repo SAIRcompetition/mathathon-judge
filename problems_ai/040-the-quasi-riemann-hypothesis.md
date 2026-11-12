@@ -40,7 +40,7 @@ Another goal is a shortened exposition of a proof of quasi-GRH, with extensions 
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list ([`problems/40-quasi-grh-erh-via-tates-thesis.md`](../problems/40-quasi-grh-erh-via-tates-thesis.md)) and revised by Claude Opus 5.5 on 2026-11-11 to match the proposer's current text.
+> Written by AI for the earlier problem list (commit `1f49cd4`) and revised by Claude Opus 5.5 on 2026-11-11 to match the proposer's current text.
 
 - **Status:** Proved in two OpenAI preprints, for $\operatorname{Re}s>7/8$ (30 September 2026) and for $\operatorname{Re}s>11/12$ (5 October 2026), not yet refereed; the 7/8 statement for $\zeta$ has a Lean proof.
 - **Task:** Simplify and better expound OpenAI's quasi-Riemann proofs, above all the nearly 200-page 7/8 paper; also a short proof of quasi-GRH that separates analytic from adelic inputs, with Hecke extensions or obstructions.

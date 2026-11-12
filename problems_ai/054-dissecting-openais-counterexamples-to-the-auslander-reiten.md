@@ -60,7 +60,7 @@ In particular:
 
 <!-- status: Disproved (preprint) -->
 
-> Written by AI for the earlier problem list ([`problems/54-auslander-reiten-and-tachikawa-conjectures.md`](../problems/54-auslander-reiten-and-tachikawa-conjectures.md)) and revised by Claude Opus 5.5 on 2026-11-11 to match the proposer's current text.
+> Written by AI for the earlier problem list (commit `1f49cd4`) and revised by Claude Opus 5.5 on 2026-11-11 to match the proposer's current text.
 
 - **Status:** Counterexamples to both are claimed in two OpenAI preprints (September 2026), not yet refereed; the conjectures date from Tachikawa (1973) and Auslander–Reiten (1975).
 - **Task:** An accessible exposition of the construction and of its ring-theoretic and stable-category meaning; simpler or more conceptual counterexamples.

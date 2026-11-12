@@ -34,7 +34,7 @@ For scattering diagrams: I'd like to understand the rather difficult "induction 
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 14 ([`problems/14-positive-laurent-phenomenon.md`](../problems/14-positive-laurent-phenomenon.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 14 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Finite type classification proved by Fomin and Zelevinsky (2003); positivity proved by Lee and Schiffler (skew-symmetric case, 2015) and Gross, Hacking, Keel and Kontsevich (2018).
 - **Task:** A streamlined finite type classification; understanding GHKK's reduction to rank 2.

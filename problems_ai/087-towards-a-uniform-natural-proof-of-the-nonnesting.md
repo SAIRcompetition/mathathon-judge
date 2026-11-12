@@ -33,7 +33,7 @@ The ideal goal is a proof of the nonnesting-noncrossing correspondence that expl
 
 <!-- status: Partly solved -->
 
-> Written by AI for the earlier problem list, where this was problem 87 ([`problems/87-nonnesting-and-noncrossing-partitions-in-type-b.md`](../problems/87-nonnesting-and-noncrossing-partitions-in-type-b.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 87 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Armstrong–Stump–Thomas (Trans. Amer. Math. Soc. 2013) give a uniformly stated equivariant bijection for bipartite Coxeter elements of every Weyl group, verified case by case; Dequêne et al. (J. London Math. Soc. 2024) give a natural one for all Coxeter elements in types A and C. Type B is open.
 - **Task:** A test of the proposed charmed-root definition in type B: computations for $B_3$, $B_4$, rules checked by computer up to $B_5$, ideally a proof for all $n$.

@@ -36,7 +36,7 @@ A human-readable paper which explains the ideas behind this new breakthrough. Pr
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 11 ([`problems/11-mazurs-collatz-paper.md`](../problems/11-mazurs-collatz-paper.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 11 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by L. Mazur in a 2026 preprint posted on ProofAtlas (version 2.1); not yet refereed.
 - **Task:** A human-readable, more conceptual account of Mazur's positive-density argument.

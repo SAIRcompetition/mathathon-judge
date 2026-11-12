@@ -32,7 +32,7 @@ An explanation of where the "black magic" alternating product comes from and how
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 76 ([`problems/76-circulant-hadamard-conjecture.md`](../problems/76-circulant-hadamard-conjecture.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 76 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved in a September 2026 preprint by OpenAI that is not yet refereed; the conjecture is traditionally attributed to H. J. Ryser (1963).
 - **Task:** Where the alternating product comes from, and its link to field descent.

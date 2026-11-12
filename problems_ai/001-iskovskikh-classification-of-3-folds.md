@@ -38,7 +38,7 @@ These hyperlinks are attached to cells of this row in the sheet. They are listed
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 1 ([`problems/01-classification-of-fano-3-folds.md`](../problems/01-classification-of-fano-3-folds.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 1 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Classified: Picard rank 1 by Iskovskikh (1977–78), Picard rank ≥ 2 by Mori and Mukai (1981, erratum 2003); 105 deformation families.
 - **Task:** Understand dimensions 1–2, check dimension 3, explain higher-dimensional obstacles.

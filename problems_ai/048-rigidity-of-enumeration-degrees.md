@@ -33,7 +33,7 @@ Simple proof and ideally a Lean formalization
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 48 ([`problems/48-rigidity-of-the-enumeration-degrees.md`](../problems/48-rigidity-of-the-enumeration-degrees.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 48 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Follows from the rigidity of the Turing degrees (OpenAI, 2026 preprint, not yet refereed) by Corollary 3.8 of Cai, Ganchev, Lempp, Miller and Soskova (2016).
 - **Task:** A simpler proof that the enumeration degrees are rigid, ideally formalized.

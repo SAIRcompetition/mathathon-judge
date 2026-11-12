@@ -38,7 +38,7 @@ These hyperlinks are attached to cells of this row in the sheet. They are listed
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 71 ([`problems/71-core-of-approval-based-committees.md`](../problems/71-core-of-approval-based-committees.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 71 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by P. Becker, M. Greger and D. Peters (2026 preprint, not yet refereed); open since Aziz et al. (2017).
 - **Task:** An intuitive explanation of harmonic entropy (Section 5 of the paper).

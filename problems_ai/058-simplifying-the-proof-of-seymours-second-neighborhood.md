@@ -38,7 +38,7 @@ These hyperlinks are attached to cells of this row in the sheet. They are listed
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 58 ([`problems/58-seymours-second-neighborhood-conjecture.md`](../problems/58-seymours-second-neighborhood-conjecture.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 58 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved in an OpenAI preprint dated 23 September 2026 (released 6 October 2026), not yet refereed; Seymour's conjecture, recorded by Dean and Latka (1995).
 - **Task:** A simpler, shorter and more elementary proof of the conjecture.

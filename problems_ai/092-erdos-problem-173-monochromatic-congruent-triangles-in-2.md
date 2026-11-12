@@ -36,7 +36,7 @@ Combinatorics
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 93 ([`problems/93-erdos-problem-173-on-congruent-triangles.md`](../problems/93-erdos-problem-173-on-congruent-triangles.md)), and carried over; only links that depend on the problem numbering were updated.
+> Written by AI for the earlier problem list, where this was problem 93 (commit `1f49cd4`), and carried over; only links that depend on the problem numbering were updated.
 
 - **Status:** Proof claimed by Plasma AI in a public GitHub repository (October 2026), not refereed; the repository states that the AI models GPT-6 Astra and Claude Opus 5.5 found the proof, which uses results of an unrefereed OpenAI preprint. The conjecture is due to Erdős et al. (1973).
 - **Task:** Human verification of the reduction to equilateral triangles and of the two-scale equilateral case, a readable proof of a self-contained part, and a precise account of what is used from the OpenAI preprint.

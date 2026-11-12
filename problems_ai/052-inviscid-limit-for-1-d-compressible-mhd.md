@@ -33,7 +33,7 @@ Can the Chen-Kang-Vasseur theory handle MHD?
 
 <!-- status: Open -->
 
-> Written by AI for the earlier problem list, where this was problem 52 ([`problems/52-inviscid-limit-for-1d-mhd.md`](../problems/52-inviscid-limit-for-1d-mhd.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 52 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Open; the inviscid limit is known for small-BV data with artificial viscosity for strictly hyperbolic systems (Bianchini–Bressan, 2005) and for barotropic Navier–Stokes (Chen–Kang–Vasseur, 2024 preprint, not yet refereed).
 - **Task:** Whether the Chen–Kang–Vasseur theory extends to the 1D MHD system.

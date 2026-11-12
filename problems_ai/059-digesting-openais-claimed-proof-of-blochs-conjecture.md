@@ -33,7 +33,7 @@ Carefully digest and verify the AI-generated proof of Bloch's conjecture. For ex
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 59 ([`problems/59-blochs-conjecture.md`](../problems/59-blochs-conjecture.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 59 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Claimed proved by an OpenAI preprint (September 2026), not yet refereed; known before for non-general-type surfaces (Bloch–Kas–Lieberman 1976) and for many families.
 - **Task:** Check and explain the claimed proof; compare with classical methods.

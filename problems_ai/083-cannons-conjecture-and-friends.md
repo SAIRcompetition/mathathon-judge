@@ -42,7 +42,7 @@ These hyperlinks are attached to cells of this row in the sheet. They are listed
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 83 ([`problems/83-cannons-conjecture.md`](../problems/83-cannons-conjecture.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 83 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved in an OpenAI preprint dated 23 September 2026 (released 6 October 2026; the repository states that its manuscripts were produced by an internal OpenAI model), not yet refereed; conjectured by Cannon (1991).
 - **Task:** An expository write-up or video: a more conceptual proof of Cannon's conjecture and common threads with Gabai's convergence group theorem.

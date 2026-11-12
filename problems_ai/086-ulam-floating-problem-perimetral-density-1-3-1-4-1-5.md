@@ -34,7 +34,7 @@ I would like to see a new framework for solving this problem that is less constr
 
 <!-- status: Partly solved -->
 
-> Written by AI for the earlier problem list, where this was problem 86 ([`problems/86-ulams-floating-body-problem.md`](../problems/86-ulams-floating-body-problem.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 86 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Only the disk floats in every orientation at perimetral density 1/3, 1/4 (Bracho–Montejano–Oliveros 2004), 1/5, 2/5 (same authors, 2001–2004) and 1/6 (Asipchuk–Kosmakov–Zatitskii, IMRN 2026); 1/8 and 3/8 only for centrally symmetric bodies (same authors, arXiv 2026, not refereed); 1/7 and general 1/n are open.
 - **Task:** A method for rigidity at perimetral density 1/n that does not rely on symmetry reductions and extends to larger n.

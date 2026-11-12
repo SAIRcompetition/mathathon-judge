@@ -47,7 +47,7 @@ Deliverables could include a self-contained exposition with worked examples, a s
 
 <!-- status: Not a single theorem -->
 
-> Written by AI for the earlier problem list, where this was problem 22 ([`problems/22-compression-and-undecidability.md`](../problems/22-compression-and-undecidability.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 22 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Research program on compression; Lin (2025) characterizes RE- and coRE-completeness by abstract compression conditions.
 - **Task:** Clarify compression as a reusable method for proving undecidability.

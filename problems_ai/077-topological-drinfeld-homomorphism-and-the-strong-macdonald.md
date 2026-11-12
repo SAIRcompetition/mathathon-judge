@@ -36,7 +36,7 @@ A direct topological construction of the Drinfeld homomorphism that agrees with 
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 77 ([`problems/77-strong-macdonald-conjecture.md`](../problems/77-strong-macdonald-conjecture.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 77 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by Fishel, Grojnowski and Teleman (Annals 2008); Berest, Ramadoss and Yeung (2022) used it for the Drinfeld isomorphism and left a topological proof for future work.
 - **Task:** A topological proof of the Drinfeld isomorphism, independent of Fishel–Grojnowski–Teleman.
