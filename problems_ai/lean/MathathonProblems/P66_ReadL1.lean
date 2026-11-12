@@ -4,8 +4,9 @@ Mathathon Round 1, Problem 66: official Lean statement, prepared by AI. It may c
 Source (google-deepmind/formal-conjectures, Apache License 2.0):
   https://github.com/google-deepmind/formal-conjectures/blob/3f4490479b53386e1c18d2cccf4f1164c16655ca/FormalConjectures/Wikipedia/InvariantSubspaceProblem.lean
 Adapted: the structure `ClosedInvariantSubspace` and the theorem `Invariant_subspace_problem_l1`
-are copied unchanged; the formal-conjectures imports, metadata attributes, linter option, and the
-other theorems of the file (the Hilbert-space cases) are left out.
+are copied unchanged; the formal-conjectures imports, metadata attributes, linter option, the
+other theorems of the file (the Hilbert-space and finite-dimensional cases) and an auxiliary lemma
+are left out.
 
 The source file carries this notice:
 
