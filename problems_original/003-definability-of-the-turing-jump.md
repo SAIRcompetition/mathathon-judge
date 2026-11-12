@@ -1,0 +1,31 @@
+# Problem 3
+
+> Verbatim copy of one row of the Mathathon problem sheet. The text under each heading is the cell text, unchanged. See [README.md](README.md).
+
+## Problem ID
+
+3
+
+## Title/name of problem
+
+Definability of the Turing jump
+
+## Short description of problem (100 words or less)
+
+Slaman and Shore (1999) proved that the Turing jump is definable in the first order theory of the Turing degrees. However, their proof is complicated and does not give a simple definition of the jump. Is there one? Conversely, how far can we go with negative results: prove that there is no Sigma_n definition for n=1,2,3,...?
+
+## Submitted Area
+
+Computability theory, mathematical logic
+
+## Proposed Tracks
+
+Computation/Applied Math
+
+## Reference/source material
+
+Shore and Slaman, Defining the Turing Jump, Math. Res. Lett. 6 (1999), no. 5-6, 711–722
+
+## Desired outcome
+
+Use AI to come up with a more explicit definition of the jump in the partial order of the Turing degrees, or prove restrictions on any such definition.
