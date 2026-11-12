@@ -17,10 +17,6 @@ A clear historical survey, efficient and readable implementations of the algorit
 
 https://arxiv.org/abs/2212.09857
 
-### Reference links
-
-- <https://arxiv.org/abs/2212.09857>
-
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->
