@@ -91,7 +91,7 @@ A Lean proof of this statement already exists: <https://github.com/zblore/fc-rea
 
 #### Related Lean formalizations
 
-- [jsp-000024-lomonosov-lean](https://github.com/baobingzhang/jsp-000024-lomonosov-lean/tree/8b43adc9781d70deb3d23bcdf38ec6195683669b): a Lean proof of Lomonosov's invariant subspace theorem.
+- jsp-000024-lomonosov-lean (GitHub user baobingzhang): a Lean proof of Lomonosov's invariant subspace theorem. The repository was no longer publicly available on 2026-11-11.
 
 Projects outside the Palomar registry are described as their authors describe them; their proofs have not been checked.
 

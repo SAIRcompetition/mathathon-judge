@@ -165,7 +165,8 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 ## About the notes
 
 - Problems 1–93, except those below, keep the notes of the earlier problem list (`problems/` at commit `1f49cd4`, 2026-11-10). Only links that depend on the problem numbering changed (problems 33 and 91–93).
-- The notes of problems 2, 9, 34, 40, 54, 56 and 70 were revised, because their text in the sheet differs substantially from the earlier list, and the notes of problems 12 and 94–140 were written new, by Claude Opus 5.5 on 2026-11-11. Their links were checked that day; three sites could not be reached automatically (an Oxford University Press book page, ECCC and the Kyungpook Mathematical Journal).
+- The notes of problems 2, 9, 34, 40, 54, 56 and 70 were revised, because their text in the sheet differs substantially from the earlier list, and the notes of problems 12 and 94–140 were written new, by Claude Opus 5.5 on 2026-11-11.
+- All 1,421 links in the notes were checked on 2026-11-11. One dead link was removed (problem 66); eight could not be checked automatically, because the sites refuse automated access (Oxford University Press, ACM, AMS, Math-Net.Ru, the Rényi Institute) or did not respond (ECCC, Kyungpook Mathematical Journal).
 - Compared with the earlier list, earlier problem 89 is not in the sheet, earlier problems 90–94 are now 89–93, problem 12 (withheld before) now has its text, and page titles are the proposers' own titles.
 
 ## For maintainers
