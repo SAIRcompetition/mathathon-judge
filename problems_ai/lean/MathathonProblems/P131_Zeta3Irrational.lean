@@ -13,6 +13,8 @@ theorem; it was not checked here. The same claim is `RiemannZetaValues.irrationa
 google-deepmind/formal-conjectures (commit a425ca3eb797fe927cb88c950565fdcbbbbada70,
 `FormalConjectures/Wikipedia/RiemannZetaValues.lean`), stated as
 `∃ x, Irrational x ∧ riemannZeta 3 = x`.
+
+The source file carries the line "Author: Junqi Liu and Jujian Zhang."
 -/
 
 import Mathlib

@@ -10,6 +10,25 @@ Adapted: the definition `HasMonochromaticCopy` and the theorem `erdos_173` are c
 header, the metadata attributes and the two variants are left out. The same two declarations
 appear, with the same text, in plasma-ai/erdos-173 (`Challenge.lean`, commit
 4a368a652753fab53272f7a747755876f04bc2cc).
+
+The source file `173.lean` carries this notice:
+
+    Copyright 2026 The Formal Conjectures Authors.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        https://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+`2d.lean` carries the same notice with the line
+"Copyright 2025 The Formal Conjectures Authors."
 -/
 
 import Mathlib

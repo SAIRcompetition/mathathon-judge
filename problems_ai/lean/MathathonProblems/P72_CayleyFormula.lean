@@ -8,6 +8,11 @@ statement of `cayleyTreeFormula` are copied unchanged; the proof is replaced by 
 `Fintype`/`Finite` instances, the Prüfer-code development, and all other lemmas of the source
 file are left out, as the statement does not use them, and so is the module docstring, which
 describes the proof.
+
+The source file carries this notice:
+
+    SPDX-FileCopyrightText: 2026 Advameg, Inc.
+    SPDX-License-Identifier: Apache-2.0
 -/
 
 import Mathlib.Combinatorics.SimpleGraph.Acyclic

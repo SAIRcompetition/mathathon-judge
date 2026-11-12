@@ -28,7 +28,7 @@ Low barrier to entry: the statements are elementary, the two Altman papers are 1
 - **Status:** Proved: E. Altman (1963) showed that a convex $n$-gon has at least $\lfloor n/2\rfloor$ distinct distances between vertices, with equality for odd $n$ only for the regular $n$-gon; P. Fishburn (1995) characterized the extremal polygons for even $n$.
 - **Task:** An illustrated, interactive explainer of Altman's proof and of the extremal polygons that a strong high-school student can follow.
 - **Key reference:** [E. Altman, “On a problem of P. Erdős”, Amer. Math. Monthly 70 (1963), 148–157](https://doi.org/10.2307/2312883)
-- **Lean:** Official statement.
+- **Lean:** Official statement; a Lean proof already exists.
 
 ### Notes
 
@@ -89,14 +89,17 @@ theorem erdos_93 (A : Finset ℝ²) (hA : ConvexIndep (A : Set ℝ²)) :
     A.card / 2 ≤ distinctDistances A
 ```
 
-This is Altman's bound: $n$ points in convex position in the plane determine at least $\lfloor n/2\rfloor$ distinct distances. The characterizations of the extremal polygons (Altman for odd $n$, Fishburn for even $n\ge8$) are not included. A Lean proof of the bound in a slightly different form (`Erdos93.altman_erdos` in [plby/lean-proofs](https://github.com/plby/lean-proofs/blob/1d7b3f00780b85ed0462e79a1cd5650ee9055655/src/v4.29.1/ErdosProblems/Erdos93.lean), for $n\ge3$ points in any two-dimensional real inner product space) exists and is linked from formal-conjectures; it was not checked here.
+This is Altman's bound: $n$ points in convex position in the plane determine at least $\lfloor n/2\rfloor$ distinct distances. The characterizations of the extremal polygons (Altman for odd $n$, Fishburn for even $n\ge8$) are not included.
 
 Source: <https://github.com/google-deepmind/formal-conjectures/blob/a425ca3eb797fe927cb88c950565fdcbbbbada70/FormalConjectures/ErdosProblems/93.lean>, <https://github.com/google-deepmind/formal-conjectures/blob/a425ca3eb797fe927cb88c950565fdcbbbbada70/FormalConjecturesForMathlib/Geometry/Metric.lean>, <https://github.com/google-deepmind/formal-conjectures/blob/a425ca3eb797fe927cb88c950565fdcbbbbada70/FormalConjecturesForMathlib/Geometry/2d.lean> (Apache License 2.0). Adapted: the theorem and the definitions it uses are copied unchanged, the definitions moved into `namespace Erdos93`, with `ℝ²` as a local notation.
 
+#### Existing Lean proofs
+
+- `Erdos93.altman_erdos` in [plby/lean-proofs](https://github.com/plby/lean-proofs/blob/1d7b3f00780b85ed0462e79a1cd5650ee9055655/src/v4.29.1/ErdosProblems/Erdos93.lean) (Lean and Mathlib v4.29.1) proves, with its own definition of the distance set, that $n\ge3$ convex-independent points in a real two-dimensional inner product space determine at least $\lfloor n/2\rfloor$ distinct distances; formal-conjectures links it as the formal proof of `erdos_93`, and the official statement follows from it. The file credits Altman as informal author, lists several AI systems and the user JoshuaB as formal authors, and records that the theorem depends only on the standard axioms. It was not compiled here. A Lean-verified claim must not use or copy it.
+
 #### Related Lean formalizations
 
-- `Erdos93.erdos_93` in [formal-conjectures](https://github.com/google-deepmind/formal-conjectures/blob/a425ca3eb797fe927cb88c950565fdcbbbbada70/FormalConjectures/ErdosProblems/93.lean): a Lean statement of Altman's bound for convex-independent finite subsets of $\mathbb R^2$, marked solved, with a link to the proof below.
-- `Erdos93.altman_erdos` in [plby/lean-proofs](https://github.com/plby/lean-proofs/blob/1d7b3f00780b85ed0462e79a1cd5650ee9055655/src/v4.29.1/ErdosProblems/Erdos93.lean) (Lean and Mathlib v4.29.1): a proof that $n\ge3$ convex-independent points in a real two-dimensional inner product space determine at least $\lfloor n/2\rfloor$ distances. The file credits Altman as informal author, lists several AI systems and the user JoshuaB as formal authors, and records that the theorem depends only on the standard axioms.
+- `Erdos93.erdos_93` in [formal-conjectures](https://github.com/google-deepmind/formal-conjectures/blob/a425ca3eb797fe927cb88c950565fdcbbbbada70/FormalConjectures/ErdosProblems/93.lean): a Lean statement of Altman's bound for convex-independent finite subsets of $\mathbb R^2$, marked solved, with a link to the proof above.
 
 Projects outside the Palomar registry are described as their authors describe them; their proofs have not been checked.
 

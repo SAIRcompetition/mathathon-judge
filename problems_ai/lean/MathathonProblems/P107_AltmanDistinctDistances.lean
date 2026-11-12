@@ -15,6 +15,25 @@ and in `EuclideanGeometry`) to avoid clashes with other files. The notation `ℝ
 `@[expose] public section`, the attributes of `erdos_93` (`category`, `AMS`, `formal_proof`),
 its `set_option` line and all other declarations are left out. In the docstring, [Al63] is
 E. Altman, "On a problem of P. Erdős", Amer. Math. Monthly 70 (1963), 148-157.
+
+The source file `93.lean` carries this notice:
+
+    Copyright 2026 The Formal Conjectures Authors.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        https://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+`Metric.lean` and `2d.lean` carry the same notice with the line
+"Copyright 2025 The Formal Conjectures Authors."
 -/
 
 import Mathlib

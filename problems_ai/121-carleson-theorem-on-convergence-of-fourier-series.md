@@ -86,7 +86,7 @@ theorem classical_carleson (f : ℝ → ℂ) (hper : Periodic f (2 * π))
 
 `CarlesonLT.fourierPartialSum f N x` is the partial sum $S_Nf(x)=\sum_{|n|\le N}\hat f(n)e^{inx}$, with Mathlib's Fourier coefficients `fourierCoeffOn` on $[0,2\pi]$. The problem asks for a new proof or an exposition of Carleson's theorem; this is the theorem in the $L^2$ form stated by the proposer.
 
-Source: <https://github.com/roos-j/lean-lt-carleson/blob/8dc5aac6926c9a8692e8790d1ef6008ed4d6b2a0/CarlesonLT/Theorems.lean>, <https://github.com/roos-j/lean-lt-carleson/blob/8dc5aac6926c9a8692e8790d1ef6008ed4d6b2a0/CarlesonLT/Defs.lean> (Apache-2.0). Adapted: `classical_carleson` and `CarlesonLT.fourierPartialSum` are copied unchanged, with the proof replaced by `sorry`. The same repository contains a complete Lean proof (`Auto.classical_carleson` in [`CarlesonLT/Auto/ClassicalCarleson.lean`](https://github.com/roos-j/lean-lt-carleson/blob/8dc5aac6926c9a8692e8790d1ef6008ed4d6b2a0/CarlesonLT/Auto/ClassicalCarleson.lean)); it was not checked here.
+Source: <https://github.com/roos-j/lean-lt-carleson/blob/8dc5aac6926c9a8692e8790d1ef6008ed4d6b2a0/CarlesonLT/Theorems.lean>, <https://github.com/roos-j/lean-lt-carleson/blob/8dc5aac6926c9a8692e8790d1ef6008ed4d6b2a0/CarlesonLT/Defs.lean> (Apache-2.0). Adapted: `classical_carleson` and `CarlesonLT.fourierPartialSum` are copied unchanged, with the proof replaced by `sorry`. The same repository contains a complete Lean proof (`Auto.classical_carleson` in [`CarlesonLT/Auto/ClassicalCarleson.lean`](https://github.com/roos-j/lean-lt-carleson/blob/8dc5aac6926c9a8692e8790d1ef6008ed4d6b2a0/CarlesonLT/Auto/ClassicalCarleson.lean)); it was not checked here. A Lean-verified claim must not use or copy it.
 
 #### Related Lean formalizations
 

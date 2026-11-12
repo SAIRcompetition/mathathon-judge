@@ -6,6 +6,22 @@ Source (google-deepmind/formal-conjectures, Apache License 2.0):
 Adapted: the structure `ClosedInvariantSubspace` and the theorem `Invariant_subspace_problem_l1`
 are copied unchanged; the formal-conjectures imports, metadata attributes, linter option, and the
 other theorems of the file (the Hilbert-space cases) are left out.
+
+The source file carries this notice:
+
+    Copyright 2025 The Formal Conjectures Authors.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        https://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
 -/
 
 import Mathlib

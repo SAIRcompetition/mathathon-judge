@@ -8,6 +8,12 @@ section variables it uses are written as explicit binders of the theorem, in the
 the statement can be read on its own; the proof is replaced by `sorry`. The `module` header, the other lemmas and
 theorems of the file, and `@[expose] public section` are left out, and the theorem is placed in
 `namespace Mathathon.P73` (with `open PowerSeries`) instead of `namespace PowerSeries`.
+
+The source file carries this notice:
+
+    Copyright (c) 2026 Seiichi Manyama. All rights reserved.
+    Released under Apache 2.0 license as described in the file LICENSE.
+    Authors: Seiichi Manyama
 -/
 
 import Mathlib

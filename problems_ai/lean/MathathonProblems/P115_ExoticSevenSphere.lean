@@ -11,6 +11,12 @@ structure); the module-system header, the imports, the variables and the other `
 statements are left out. The lean-eval benchmark poses the same statement
 (`LeanEval.Topology.milnor_exotic_sphere_seven` in `LeanEval/Topology/MilnorExoticSphereSeven.lean`,
 leanprover/lean-eval commit 85a88c37f80170d9f08651dc63ce6b81a8a48cb9).
+
+The source file carries this notice:
+
+    Copyright (c) 2024 Junyan Xu. All rights reserved.
+    Released under Apache 2.0 license as described in the file LICENSE.
+    Authors: Junyan Xu
 -/
 
 import Mathlib

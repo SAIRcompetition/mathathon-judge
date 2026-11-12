@@ -12,6 +12,9 @@ q-analogue (the q-TSPP theorem of Koutschan, Kauers and Zeilberger); it is not c
 the q-TSPP formula at q = 1 after cancelling the factors 1 - q. Cells are numbered from 0, so the
 factor (i+j+k-1)/(i+j+k-2) of the usual formula, with 1 ≤ i ≤ j ≤ k ≤ n, becomes
 (coordinateSum c + 2)/(coordinateSum c + 1) for the cells c of `sortedTriples n`.
+
+The source file has no notice of its own; the LICENSE file of the source repository carries the
+notice "Copyright 2026 Lean FRO, LLC".
 -/
 
 import Mathlib

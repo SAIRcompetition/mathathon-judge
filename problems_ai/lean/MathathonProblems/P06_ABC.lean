@@ -5,6 +5,22 @@ Source (google-deepmind/formal-conjectures, Apache License 2.0):
   https://github.com/google-deepmind/formal-conjectures/blob/3f4490479b53386e1c18d2cccf4f1164c16655ca/FormalConjectures/Wikipedia/ABC.lean
 Adapted: the definition `radical` and the theorem `abc` are copied unchanged; the
 formal-conjectures imports, metadata attributes, and test lemmas are left out.
+
+The source file carries this notice:
+
+    Copyright 2025 The Formal Conjectures Authors.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        https://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
 -/
 
 import Mathlib

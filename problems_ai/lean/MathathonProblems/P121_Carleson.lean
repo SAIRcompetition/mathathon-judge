@@ -12,6 +12,12 @@ module-system header, the imports, the unused `variable {n : ℕ}` lines and the
 of the two files (the notation `ℝ^n`, the anisotropic Carleson operator and its theorem) are left
 out. The source repository contains a complete Lean proof (`Auto.classical_carleson`
 in `CarlesonLT/Auto/ClassicalCarleson.lean`); it was not checked here.
+
+Each of the two source files carries this notice:
+
+    Copyright (c) 2026 Joris Roos. All rights reserved.
+    Released under Apache 2.0 license as described in the file LICENSE.
+    Authors: Joris Roos
 -/
 
 import Mathlib
