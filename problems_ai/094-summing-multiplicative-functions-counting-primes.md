@@ -1,32 +1,21 @@
 # 94 · Summing multiplicative functions/counting primes
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/094-summing-multiplicative-functions-counting-primes.md`](../problems_original/094-summing-multiplicative-functions-counting-primes.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Computational number theory
+- **Tracks:** Computation/Applied Math, Number Theory/Algebra
 
-Summing multiplicative functions/counting primes
-
-### Short description of problem (100 words or less)
+### Description
 
 Fast algorithms to compute the cumulative sum of a multiplicative function and to count the number of primes less than or equal to a given n
-
-### Submitted Area
-
-Computational number theory
-
-### Proposed Tracks
-
-Computation/Applied Math, Number Theory/Algebra
-
-### Reference/source material
-
-https://arxiv.org/abs/2212.09857
 
 ### Desired outcome
 
 A clear historical survey, efficient and readable implementations of the algorithms
+
+### References
+
+https://arxiv.org/abs/2212.09857
 
 ### Reference links
 
@@ -35,8 +24,6 @@ A clear historical survey, efficient and readable implementations of the algorit
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** A survey and implementation task; the fastest known elementary algorithm counts primes up to $N$ in $\tilde O(\sqrt N)$ time (Hirsch, Kessler and Mendlovic, arXiv 2022, Math. Comp. 2025), the exponent of the analytic method of Lagarias and Odlyzko (1987).
 - **Task:** A historical survey of algorithms for $\pi(N)$ and for summatory functions of multiplicative functions, with efficient and readable implementations.

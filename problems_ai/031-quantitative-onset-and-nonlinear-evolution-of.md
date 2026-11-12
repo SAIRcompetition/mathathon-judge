@@ -1,40 +1,27 @@
 # 31 · Quantitative Onset and Nonlinear Evolution of Tollmien–Schlichting Instabilities in Navier–Stokes Flows
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/031-quantitative-onset-and-nonlinear-evolution-of.md`](../problems_original/031-quantitative-onset-and-nonlinear-evolution-of.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Partial Differential Equations, Mathematical Fluid Dynamics, Hydrodynamic Stability, Spectral Theory, and Nonlinear Analysis
+- **Tracks:** Computation/Applied Math, Analysis
 
-Quantitative Onset and Nonlinear Evolution of Tollmien–Schlichting Instabilities in Navier–Stokes Flows
-
-### Short description of problem (100 words or less)
+### Description
 
 This project investigates whether analytical methods from Navier–Stokes regularity theory can quantitatively characterize the onset and nonlinear evolution of Tollmien–Schlichting instabilities in viscous shear flows. Using the Orr–Sommerfeld equation, spectral analysis, and perturbative energy estimates, participants will study Reynolds-number-dependent instability thresholds, disturbance growth rates, and nonlinear interactions. The project aims to connect rigorous PDE stability and instability estimates with the early stages of boundary-layer transition, distinguishing the onset of unstable modes from the development of sustained turbulence.
-
-### Submitted Area
-
-Partial Differential Equations, Mathematical Fluid Dynamics, Hydrodynamic Stability, Spectral Theory, and Nonlinear Analysis
-
-### Proposed Tracks
-
-Computation/Applied Math, Analysis
-
-### Reference/source material
-
-https://doi.org/10.1090/memo/1294
-http://dx.doi.org/10.1016/j.aim.2016.01.007
-DOI. 10.1137/22M1505773
 
 ### Desired outcome
 
 Participants will derive the perturbation equations for a selected laminar flow and establish or reproduce nonlinear energy estimates that quantify how stability depends on Reynolds number and perturbation amplitude. The project aims to obtain a rigorous stability bound, investigate transient growth, and compare theoretical thresholds with known transition behavior. A final report will explain the analytical methods, assumptions, and limitations of the resulting predictions.
 
+### References
+
+https://doi.org/10.1090/memo/1294
+http://dx.doi.org/10.1016/j.aim.2016.01.007
+DOI. 10.1137/22M1505773
+
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->
-
-> Written by AI for the earlier problem list, where this was problem 31 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Linear Tollmien–Schlichting instability is proved (Grenier–Guo–Nguyen, 2016); its nonlinear saturation is conjectured but not proved (Bian–Grenier, 2024).
 - **Task:** Perturbation equations and rigorous Reynolds-dependent stability bounds for one laminar flow.

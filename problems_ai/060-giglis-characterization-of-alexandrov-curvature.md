@@ -1,32 +1,21 @@
 # 60 · Gigli’s characterization of Alexandrov curvature
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/060-giglis-characterization-of-alexandrov-curvature.md`](../problems_original/060-giglis-characterization-of-alexandrov-curvature.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Differential geometry/Geometric analysis
+- **Tracks:** Geometry
 
-Gigli’s characterization of Alexandrov curvature
-
-### Short description of problem (100 words or less)
+### Description
 
 Gigli gave a notion of distributional curvature of a metric space.  OpenAI proved that (under the condition that the space is $RCD$) a metric space is Alexandrov (has sectional curvature bounded below by $k$ in the sense of triangular comparison) if and only if Gigli's distributional curvature is bounded below by $k$.
-
-### Submitted Area
-
-Differential geometry/Geometric analysis
-
-### Proposed Tracks
-
-Geometry
-
-### Reference/source material
-
-https://github.com/openai/math/blob/main/preprints/Giglis-distributional-curvature-characterization-of-Alexandrov-spaces-September-24-2026/main.pdf
 
 ### Desired outcome
 
 The goal is to provide understanding of the proof and the tools employed.
+
+### References
+
+https://github.com/openai/math/blob/main/preprints/Giglis-distributional-curvature-characterization-of-Alexandrov-spaces-September-24-2026/main.pdf
 
 ### Reference links
 
@@ -35,8 +24,6 @@ The goal is to provide understanding of the proof and the tools employed.
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by AI for the earlier problem list, where this was problem 60 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Conjectured by Gigli (2019); claimed proved by an OpenAI preprint (September 2026), not yet refereed.
 - **Task:** Explain the proof and the tools it uses.

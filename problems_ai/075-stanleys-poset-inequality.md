@@ -1,38 +1,25 @@
 # 75 · Stanley's poset inequality
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/075-stanleys-poset-inequality.md`](../problems_original/075-stanleys-poset-inequality.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Combinatorics; convex geometry; toric geometry; algorithms
+- **Tracks:** Combinatorics, Computation/Applied Math, Geometry
 
-Stanley's poset inequality
-
-### Short description of problem (100 words or less)
+### Description
 
 Let $N_k$ count the linear extensions of a poset that place a given element $a$ at position $k$. Stanley proved $N_k^2\ge N_{k-1}N_{k+1}$ by applying Alexandrov–Fenchel to order polytopes, and Kahn and Saks used this for a sorting theorem. A discrete count thus rests on deep convex geometry. Chan and Pak give a linear-algebraic proof.
-
-### Submitted Area
-
-Combinatorics; convex geometry; toric geometry; algorithms
-
-### Proposed Tracks
-
-Combinatorics, Computation/Applied Math, Geometry
-
-### Reference/source material
-
-(1) R. Stanley, Two combinatorial applications of the Aleksandrov–Fenchel inequalities, J. Combin. Theory Ser. A 31 (1981), 56–65. (2) J. Kahn, M. Saks, Balancing poset extensions, Order 1 (1984), 113–126. (3) S. H. Chan, I. Pak, Log-concave poset inequalities, arXiv:2110.10740.
 
 ### Desired outcome
 
 A proof of the inequality using toric geometry, in which mixed volumes become intersection numbers, compared against the Chan-Pak proof. Alternatively, find a purely combinatoric proof.
 
+### References
+
+(1) R. Stanley, Two combinatorial applications of the Aleksandrov–Fenchel inequalities, J. Combin. Theory Ser. A 31 (1981), 56–65. (2) J. Kahn, M. Saks, Balancing poset extensions, Order 1 (1984), 113–126. (3) S. H. Chan, I. Pak, Log-concave poset inequalities, arXiv:2110.10740.
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by AI for the earlier problem list, where this was problem 75 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by R. Stanley (1981) with the Alexandrov–Fenchel inequality; conjectured by F. Chung, P. Fishburn and R. Graham (1980).
 - **Task:** A toric-geometry proof compared with Chan–Pak, or a combinatorial proof.

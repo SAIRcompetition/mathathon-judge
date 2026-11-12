@@ -1,32 +1,21 @@
 # 125 · Enumeration of totally symmetric plane partitions
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/125-enumeration-of-totally-symmetric-plane-partitions.md`](../problems_original/125-enumeration-of-totally-symmetric-plane-partitions.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Combinatorics
+- **Tracks:** Combinatorics
 
-Enumeration of totally symmetric plane partitions
-
-### Short description of problem (100 words or less)
+### Description
 
 Stembridge proved the explicit formula for the number of totally symmetric plane partitions using determinants. 
-
-### Submitted Area
-
-Combinatorics
-
-### Proposed Tracks
-
-Combinatorics
-
-### Reference/source material
-
-https://www.sciencedirect.com/science/article/pii/S0001870885710237
 
 ### Desired outcome
 
 It would be interesting to find a more combinatorial proof. 
+
+### References
+
+https://www.sciencedirect.com/science/article/pii/S0001870885710237
 
 ### Reference links
 
@@ -35,8 +24,6 @@ It would be interesting to find a more combinatorial proof.
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Proved by J. R. Stembridge (Adv. Math., 1995) with Pfaffians and determinants; the $q$-analogue conjectured by G. Andrews and D. Robbins was proved by C. Koutschan, M. Kauers and D. Zeilberger (PNAS, 2011) by a computer-assisted determinant evaluation; a bijective proof was still described as a wide open problem by C. Krattenthaler (2016).
 - **Task:** A more combinatorial, ideally bijective, proof of the formula for the number of totally symmetric plane partitions.

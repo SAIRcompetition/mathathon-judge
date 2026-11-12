@@ -1,41 +1,28 @@
 # 41 · Digesting Wiles’ proof of Fermat’s Last Theorem
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/041-digesting-wiles-proof-of-fermats-last-theorem.md`](../problems_original/041-digesting-wiles-proof-of-fermats-last-theorem.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Algebraic number theory
+- **Tracks:** Algebra/Number Theory
 
-Digesting Wiles’ proof of Fermat’s Last Theorem
-
-### Short description of problem (100 words or less)
+### Description
 
 The work of Wiles and Taylor--Wiles which ultimately proved Fermat’s Last Theorem is infamously inaccessible to any who isn’t a technical expert in modular forms and Galois representations. Participants will design and populate an interactive way of exploring the proof, to aid in independent or collaborative learning on the subject, or even to explore alternate proofs.
 
-### Submitted Area
+### Desired outcome
 
-Algebraic number theory
+An interactive tool which aids in understanding the proof of Fermat’s Last Theorem.
 
-### Proposed Tracks
-
-Algebra/Number Theory
-
-### Reference/source material
+### References
 
 Wiles, Andrew (1995). "Modular elliptic curves and Fermat's Last Theorem". Annals of Mathematics. 141 (3): 443–551. doi:10.2307/2118559
 Richard Taylor and Andrew Wiles (May 1995). "Ring-theoretic properties of certain Hecke algebras". Annals of Mathematics. 141 (3): 553–572. doi:10.2307/2118560
 Mordell, Louis J. (1921). Three Lectures on Fermat's Last Theorem. Cambridge: Cambridge University Press.
 
 
-### Desired outcome
-
-An interactive tool which aids in understanding the proof of Fermat’s Last Theorem.
-
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by AI for the earlier problem list, where this was problem 41 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by A. Wiles (1995), with a key step by R. Taylor and A. Wiles (1995).
 - **Task:** An interactive tool for exploring the proof of Fermat's Last Theorem.

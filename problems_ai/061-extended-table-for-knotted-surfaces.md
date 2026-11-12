@@ -1,40 +1,27 @@
 # 61 · Extended table for knotted surfaces
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/061-extended-table-for-knotted-surfaces.md`](../problems_original/061-extended-table-for-knotted-surfaces.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** low dimensional topology, knotted surfaces in 4-manifolds
+- **Tracks:** Algebra/Number Theory, Geometry
 
-Extended table for knotted surfaces
-
-### Short description of problem (100 words or less)
+### Description
 
 1-dimensional knots have been classified to great detail with a wide range of invariance properties, with repositories such as https://knotinfo.org/. The classification of Surface Knots on the other hand is complicated by various factors. There's not even a consensus on what the notion of "crossing number" should be, although there are multiple proposed definitions from different angles. Another issue we encounter is the lack of unified computational methods to encode arbitrary surface knots. One possible path is to utilize bridge trisections and triplane diagrams, although there are other diagrammatic representations of surface knots that can be encoded computationally, such as CH diagrams and banded unlink diagrams. The most recent knot table I'm aware of is Yoshikawa's table for knots in R^4 with ch-index less than 10. 
-
-### Submitted Area
-
-low dimensional topology, knotted surfaces in 4-manifolds
-
-### Proposed Tracks
-
-Algebra/Number Theory, Geometry
-
-### Reference/source material
-
-https://arxiv.org/pdf/2205.11120 - compiles recent results on triple point number for knots in Yoshikawa's table. 
-https://projecteuclid.org/journals/osaka-journal-of-mathematics/volume-31/issue-3/An-enumeration-of-surfaces-in-four-space/ojm/1200785461.full - original source of Yoshikawa's table
-Conversations with Dr. Sarah Blackwell, Dr. David Gabai and Dr. Zoltan Szabo. 
 
 ### Desired outcome
 
 Figure out the "best" complexity measure for surface knots (crossing number vs ch-index vs bridge number vs others). Summarize all invariants from different mathematical tools and compile known computed invariants.
 
+### References
+
+https://arxiv.org/pdf/2205.11120 - compiles recent results on triple point number for knots in Yoshikawa's table. 
+https://projecteuclid.org/journals/osaka-journal-of-mathematics/volume-31/issue-3/An-enumeration-of-surfaces-in-four-space/ojm/1200785461.full - original source of Yoshikawa's table
+Conversations with Dr. Sarah Blackwell, Dr. David Gabai and Dr. Zoltan Szabo. 
+
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->
-
-> Written by AI for the earlier problem list, where this was problem 61 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Yoshikawa (1994) tabulated surface-links of ch-index at most 10; several invariants of this table are now computed.
 - **Task:** Compare complexity measures for surface-links and compile known invariants.

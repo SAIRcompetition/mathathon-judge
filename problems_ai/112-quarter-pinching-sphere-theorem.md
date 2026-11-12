@@ -1,39 +1,26 @@
 # 112 · Quarter-pinching sphere theorem
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/112-quarter-pinching-sphere-theorem.md`](../problems_original/112-quarter-pinching-sphere-theorem.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Differential geometry, geometric analysis, Ricci flow
+- **Tracks:** Geometry
 
-Quarter-pinching sphere theorem
-
-### Short description of problem (100 words or less)
+### Description
 
 Formalize Brendle and Schoen's differentiable sphere theorem in Lean. A closed, simply connected Riemannian manifold with strictly pointwise quarter-pinched positive sectional curvature is diffeomorphic to a sphere. Their proof uses Ricci flow to turn a local curvature condition into a global geometric conclusion. Formalizing it would check that argument and build reusable tools for geometric analysis.
-
-### Submitted Area
-
-Differential geometry, geometric analysis, Ricci flow
-
-### Proposed Tracks
-
-Geometry
-
-### Reference/source material
-
-Simon Brendle and Richard Schoen, Manifolds with 1/4-pinched curvature are space forms, Journal of the American Mathematical Society 22 (2009), 287-307.
-https://arxiv.org/abs/0705.0766
 
 ### Desired outcome
 
 Prove the differentiable quarter-pinching sphere theorem in Lean, including the curvature estimates and Ricci-flow arguments it needs. Build reusable definitions and lemmas for Riemannian curvature and geometric evolution equations.
 
+### References
+
+Simon Brendle and Richard Schoen, Manifolds with 1/4-pinched curvature are space forms, Journal of the American Mathematical Society 22 (2009), 287-307.
+https://arxiv.org/abs/0705.0766
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Proved by S. Brendle and R. Schoen with Ricci flow (arXiv 2007, J. Amer. Math. Soc. 2009); the topological version under global pinching is due to Berger and Klingenberg (around 1960).
 - **Task:** Formalize the differentiable quarter-pinching sphere theorem in Lean, with reusable tools for Riemannian curvature and geometric evolution equations.

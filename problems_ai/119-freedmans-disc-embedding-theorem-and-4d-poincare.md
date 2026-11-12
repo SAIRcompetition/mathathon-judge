@@ -1,26 +1,19 @@
 # 119 · Freedman's disc embedding theorem and 4D Poincare
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/119-freedmans-disc-embedding-theorem-and-4d-poincare.md`](../problems_original/119-freedmans-disc-embedding-theorem-and-4d-poincare.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Geometric topology, 4-manifolds
+- **Tracks:** Geometry
 
-Freedman's disc embedding theorem and 4D Poincare
-
-### Short description of problem (100 words or less)
+### Description
 
 Formalize Freedman's disc embedding theorem and use it to prove the topological 4D Poincare theorem in Lean. The proof uses difficult infinite constructions, and later accounts have filled in details and repaired gaps in related arguments. We'd follow the modern exposition and check the whole argument explicitly. This would also build a lot of useful machinery for 4-manifold topology.
 
-### Submitted Area
+### Desired outcome
 
-Geometric topology, 4-manifolds
+A Lean proof of the disc embedding theorem and the topological 4D Poincare theorem. Make the difficult constructions and dependencies explicit so other topology projects can use them.
 
-### Proposed Tracks
-
-Geometry
-
-### Reference/source material
+### References
 
 Behrens, Kalmar, Kim, Powell and Ray (eds.), The Disc Embedding Theorem (Oxford University Press, 2021): https://academic.oup.com/book/43693
 
@@ -28,15 +21,9 @@ The 4-dimensional disc embedding theorem and dual spheres: https://arxiv.org/abs
 
 Michael Freedman, The topology of four-dimensional manifolds, Journal of Differential Geometry 17 (1982), 357-453.
 
-### Desired outcome
-
-A Lean proof of the disc embedding theorem and the topological 4D Poincare theorem. Make the difficult constructions and dependencies explicit so other topology projects can use them.
-
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Proved by M. H. Freedman (J. Differential Geom., 1982); the disc embedding theorem for good fundamental groups is Theorem 5.1A of Freedman–Quinn (1990), expounded in detail by Behrens, Kalmár, Kim, Powell and Ray (eds., 2021), with its dual-sphere part supplied by Powell, Ray and Teichner (Selecta Math., 2025).
 - **Task:** Formalize the disc embedding theorem in Lean and derive the topological 4-dimensional Poincaré theorem from it.

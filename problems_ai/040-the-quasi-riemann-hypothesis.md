@@ -1,32 +1,13 @@
 # 40 · The Quasi-Riemann Hypothesis
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/040-the-quasi-riemann-hypothesis.md`](../problems_original/040-the-quasi-riemann-hypothesis.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Number theory
+- **Tracks:** Algebra/Number Theory
 
-The Quasi-Riemann Hypothesis
-
-### Short description of problem (100 words or less)
+### Description
 
 The Riemann hypothesis conjectures that all nontrivial zeros of the Riemann zeta function have real part 1/2. A quasi-Riemann hypothesis is a weaker version of this conjecture, a zero-free half-plane of the form Re(s)>sigma, for some sigma < 1. Last month, OpenAI published two papers establishing quasi-Riemann, one asserting a zero-free region Re(s)>11/12 and the other a zero-free region Re(s)>7/8. Much of the proof is implicitly operating in the realm of Tate's Thesis, and subsequent extensions to Dedekind Zeta Functions by AxiomMath further solidify these connections.
-
-### Submitted Area
-
-Number theory
-
-### Proposed Tracks
-
-Algebra/Number Theory
-
-### Reference/source material
-
-https://link.springer.com/book/10.1007/978-1-4757-3085-2
-https://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf
-
- https://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-October-5-2026/paper2.pdf
-
 
 ### Desired outcome
 
@@ -36,11 +17,17 @@ Another goal is a shortened exposition of a proof of quasi-GRH, with extensions 
 
 
 
+### References
+
+https://link.springer.com/book/10.1007/978-1-4757-3085-2
+https://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf
+
+ https://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-October-5-2026/paper2.pdf
+
+
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by AI for the earlier problem list (commit `1f49cd4`) and revised by Claude Opus 5.5 on 2026-11-11 to match the proposer's current text.
 
 - **Status:** Proved in two OpenAI preprints, for $\operatorname{Re}s>7/8$ (30 September 2026) and for $\operatorname{Re}s>11/12$ (5 October 2026), not yet refereed; the 7/8 statement for $\zeta$ has a Lean proof.
 - **Task:** Simplify and better expound OpenAI's quasi-Riemann proofs, above all the nearly 200-page 7/8 paper; also a short proof of quasi-GRH that separates analytic from adelic inputs, with Hecke extensions or obstructions.

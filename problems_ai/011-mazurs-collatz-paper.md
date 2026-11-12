@@ -1,26 +1,19 @@
 # 11 · Mazur's Collatz Paper
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/011-mazurs-collatz-paper.md`](../problems_original/011-mazurs-collatz-paper.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Number theory, Probability theory
+- **Tracks:** Algebra/Number Theory, Analysis
 
-Mazur's Collatz Paper
-
-### Short description of problem (100 words or less)
+### Description
 
 Recently, Mazur (using ChatGPT) proved that a positive proportion of positive integers iterate to 1 under the Collatz map, massively improving upon Tao's result. However, the paper is AI-generated and terribly written, so it would be valuable to understand this paper and perhaps rewrite it to be more conceptual.
 
-### Submitted Area
+### Desired outcome
 
-Number theory, Probability theory
+A human-readable paper which explains the ideas behind this new breakthrough. Preferably, a new way to phrase this argument which is more conceptually nice.
 
-### Proposed Tracks
-
-Algebra/Number Theory, Analysis
-
-### Reference/source material
+### References
 
 Mazur's paper:
 https://www.proofatlas.ai/papers/positive-density-log-time-collatz/Mazur_Explicit_Positive_Density_Collatz_Convergence_in_Logarithmic_Time_v2.pdf
@@ -28,15 +21,9 @@ https://www.proofatlas.ai/papers/positive-density-log-time-collatz/Mazur_Explici
 Tao's Collatz paper, which Mazur builds on:
 https://www.cambridge.org/core/journals/forum-of-mathematics-pi/article/almost-all-orbits-of-the-collatz-map-attain-almost-bounded-values/1008CC2DF91AF87F66D190C5E01C907F
 
-### Desired outcome
-
-A human-readable paper which explains the ideas behind this new breakthrough. Preferably, a new way to phrase this argument which is more conceptually nice.
-
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by AI for the earlier problem list, where this was problem 11 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by L. Mazur in a 2026 preprint posted on ProofAtlas (version 2.1); not yet refereed.
 - **Task:** A human-readable, more conceptual account of Mazur's positive-density argument.

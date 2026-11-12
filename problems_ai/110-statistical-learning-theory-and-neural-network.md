@@ -1,26 +1,19 @@
 # 110 · Statistical learning theory and neural network generalization bounds
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/110-statistical-learning-theory-and-neural-network.md`](../problems_original/110-statistical-learning-theory-and-neural-network.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Statistical learning theory, probability, machine learning
+- **Tracks:** Analysis, Computation/Applied Math
 
-Statistical learning theory and neural network generalization bounds
-
-### Short description of problem (100 words or less)
+### Description
 
 Formalize generalization bounds for neural networks in Lean. A main target is the Bartlett-Foster-Telgarsky spectral-norm margin bound, which relates test error to training margins and the network weights. Other options include nearly tight VC-dimension bounds for ReLU networks, size-independent sample complexity under norm constraints, Rademacher generalization bounds, and PAC-Bayes bounds. The point is to make the assumptions and constants explicit and build reusable tools for checking learning-theory arguments.
 
-### Submitted Area
+### Desired outcome
 
-Statistical learning theory, probability, machine learning
+A Lean proof of the spectral-norm margin bound, with reusable Rademacher complexity and covering-number machinery. Teams could also pursue the VC-dimension bounds, norm-based sample complexity bounds, or PAC-Bayes bounds with a certified nonvacuous example for a stochastic neural network.
 
-### Proposed Tracks
-
-Analysis, Computation/Applied Math
-
-### Reference/source material
+### References
 
 Bartlett, Foster and Telgarsky, Spectrally-normalized margin bounds for neural networks (2017).
 https://arxiv.org/abs/1706.08498
@@ -31,15 +24,9 @@ https://www.jmlr.org/papers/v20/17-612.html
 Golowich, Rakhlin and Shamir, Size-Independent Sample Complexity of Neural Networks (2018).
 https://proceedings.mlr.press/v75/golowich18a.html
 
-### Desired outcome
-
-A Lean proof of the spectral-norm margin bound, with reusable Rademacher complexity and covering-number machinery. Teams could also pursue the VC-dimension bounds, norm-based sample complexity bounds, or PAC-Bayes bounds with a certified nonvacuous example for a stochastic neural network.
-
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Proved: the spectral-norm margin bound is due to Bartlett, Foster and Telgarsky (NeurIPS 2017); the alternative targets are also published theorems (Golowich–Rakhlin–Shamir, COLT 2018; Bartlett–Harvey–Liaw–Mehrabian, JMLR 2019).
 - **Task:** Formalize the spectral-norm margin bound in Lean, with reusable Rademacher-complexity and covering-number tools, or one of the alternative bounds (VC dimension, norm-based, PAC-Bayes).

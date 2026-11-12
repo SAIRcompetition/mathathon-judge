@@ -1,38 +1,25 @@
 # 88 · Classification of minimal cones.
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/088-classification-of-minimal-cones.md`](../problems_original/088-classification-of-minimal-cones.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** GMT and PDE
+- **Tracks:** Analysis
 
-Classification of minimal cones.
-
-### Short description of problem (100 words or less)
+### Description
 
 A possible project is to extend Taylor’s classification of singularities for minimizing surfaces from R3 to Rn, beginning with R4. A second direction is to study anisotropic energies, where the angles between the planes need not be the same.
-
-### Submitted Area
-
-GMT and PDE
-
-### Proposed Tracks
-
-Analysis
-
-### Reference/source material
-
-(https://www.jstor.org/stable/1970950 ) The Structure of Singularities in Solutions to Ellipsoidal Variational Problems With Constraints in R3 by Jean Taylor, Vol. 103, No. 3 (May, 1976).
 
 ### Desired outcome
 
 Hopefully, we could classify the minimizing cones in Rn. I suspect that there will be n+1 many cones. Additionally, I am interested to know the other minimal candidates.
 
+### References
+
+(https://www.jstor.org/stable/1970950 ) The Structure of Singularities in Solutions to Ellipsoidal Variational Problems With Constraints in R3 by Jean Taylor, Vol. 103, No. 3 (May, 1976).
+
 ## AI-generated notes
 
 <!-- status: Open -->
-
-> Written by AI for the earlier problem list, where this was problem 88 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Taylor (1976) classified the two-dimensional minimal cones in $\mathbb R^3$; in $\mathbb R^4$ the two-dimensional ones include continuous families (Liang 2013), and the piecewise linear three-dimensional cones are classified up to two undecided candidates (Valfells, Math. Scand. 2024, corrected 2025).
 - **Task:** New minimal cones, or a classification of minimal cones, in $\mathbb R^4$ and beyond, possibly for anisotropic energies.

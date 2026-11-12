@@ -1,32 +1,21 @@
 # 1 · Iskovskikh classification of 3-folds
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/001-iskovskikh-classification-of-3-folds.md`](../problems_original/001-iskovskikh-classification-of-3-folds.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** algebraic geometry
+- **Tracks:** Geometry
 
-Iskovskikh classification of 3-folds
-
-### Short description of problem (100 words or less)
+### Description
 
 This is a famous old result, but a very complicated one and it may be a good idea to revisit it. Riemann surfaces fall into 3 classes - 1)  complex projective line also called Riemann sphere, 2) elliptic curves 3) curves of genus 2 and more, with spherical, flat and hyperbolic geometry respectively. In complex dimension two, the analogue of this is Kodaira's classification of surfaces, and the analogue of Riemann sphere are Del Pezzo surfaces. In dimension 3 and more they are called Fano 3,4,5..folds. Iskovitch classified Fano 3-folds in the seventies. 
-
-### Submitted Area
-
-algebraic geometry
-
-### Proposed Tracks
-
-Geometry
-
-### Reference/source material
-
-https://doi.org/10.1070/IM1977v011n03ABEH001733
 
 ### Desired outcome
 
 The problem is to learn what Fano means, understand classification in Dimensions 1,2. Check classication in dimension 3, and finally see what prevents these methods from extending to higher dimensions.
+
+### References
+
+https://doi.org/10.1070/IM1977v011n03ABEH001733
 
 ### Reference links
 
@@ -35,8 +24,6 @@ The problem is to learn what Fano means, understand classification in Dimensions
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by AI for the earlier problem list, where this was problem 1 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Classified: Picard rank 1 by Iskovskikh (1977–78), Picard rank ≥ 2 by Mori and Mukai (1981, erratum 2003); 105 deformation families.
 - **Task:** Understand dimensions 1–2, check dimension 3, explain higher-dimensional obstacles.

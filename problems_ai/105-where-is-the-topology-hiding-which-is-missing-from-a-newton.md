@@ -1,39 +1,26 @@
 # 105 · Where is the topology hiding, which is missing from a Newton polygon?
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/105-where-is-the-topology-hiding-which-is-missing-from-a-newton.md`](../problems_original/105-where-is-the-topology-hiding-which-is-missing-from-a-newton.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Algebraic geometry
+- **Tracks:** Geometry
 
-Where is the topology hiding, which is missing from a Newton polygon?
-
-### Short description of problem (100 words or less)
+### Description
 
 For a Newton-nondegenerate plane curve singularity germ, there is a known formula for the Milnor number of the singularity in terms of its Newton polygon. But for special choices of coefficients, the formula applied to the (unchanged) Newton polygon only yields a lower bound, and Gwozdziewicz proves a correction term. The project would be to explain this correction term in terms of a concrete topological operation connecting the Milnor fiber of the Newton-degenerate curve to that of the nondegenerate one.
-
-### Submitted Area
-
-Algebraic geometry
-
-### Proposed Tracks
-
-Geometry
-
-### Reference/source material
-
-1. Janusz Gwozdziewicz, Generalized Noether's Formulas for Plane Curves Singularities, Universitatis Iagellonicae Acta Mathematica 48 (2010), pp. 55–62. [PDF](https://ruj.uj.edu.pl/server/api/core/bitstreams/5759f599-8225-4c9b-8444-42ddb9550ec7/content)
-2. 3. Mutsuo Oka, Introduction to Plane Curve Singularity (Toric Resolution and Puiseux Pairs)
 
 ### Desired outcome
 
 The output would ideally be a brief paper establishing a geometric explanation for the correction term, exhibiting examples using illustrations throughout.
 
+### References
+
+1. Janusz Gwozdziewicz, Generalized Noether's Formulas for Plane Curves Singularities, Universitatis Iagellonicae Acta Mathematica 48 (2010), pp. 55–62. [PDF](https://ruj.uj.edu.pl/server/api/core/bitstreams/5759f599-8225-4c9b-8444-42ddb9550ec7/content)
+2. 3. Mutsuo Oka, Introduction to Plane Curve Singularity (Toric Resolution and Puiseux Pairs)
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** The correction formula is proved: J. Gwoździewicz (Univ. Iagel. Acta Math., 2010) generalizes Kouchnirenko's Newton-polygon formula (1976) to all convenient germs; a topological explanation of the correction term, as asked here, is not in the literature we found.
 - **Task:** Explain Gwoździewicz's correction term by a concrete topological operation relating the Milnor fibre of a Newton-degenerate curve to that of a nondegenerate one with the same Newton polygon.

@@ -1,32 +1,13 @@
 # 2 · Robertson-Seymour Graph Minor Theorem
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/002-robertson-seymour-graph-minor-theorem.md`](../problems_original/002-robertson-seymour-graph-minor-theorem.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Combinatorics/Graph Theory
+- **Tracks:** Combinatorics
 
-Robertson-Seymour Graph Minor Theorem
-
-### Short description of problem (100 words or less)
+### Description
 
 This foundational result in modern graph theory proves that any family of graphs which is closed under taking minors can be characterized by a finite set of forbidden minors.
-
-### Submitted Area
-
-Combinatorics/Graph Theory
-
-### Proposed Tracks
-
-Combinatorics
-
-### Reference/source material
-
-https://en.wikipedia.org/wiki/Robertson%E2%80%93Seymour_theorem
-This article summarizes the state of affairs; that the proof is distributed over a sequence of papers, titled "Graph Minors. N." for N ranging from 1 up 20, published in the 80s, 90s, and 2000s from Robertson and Seymour.
-
-e.g., "Neil Robertson and Paul Seymour, Graph Minors. XX. Wagner's conjecture, Journal of Combinatorial Theory, Series B 92 (2004), 325-357, and the earlier Graph Minors papers it relies on.
-https://web.math.princeton.edu/~pds/papers/GM20/GM20.pdf"
 
 ### Desired outcome
 
@@ -34,11 +15,17 @@ It would be good to shorten and simplify this long and complicated proof as much
 
 A Lean proof of the graph minor theorem, including the structural results it depends on. A reusable library for graph minors, tree decompositions, and the finite forbidden-minor characterization would also be valuable.
 
+### References
+
+https://en.wikipedia.org/wiki/Robertson%E2%80%93Seymour_theorem
+This article summarizes the state of affairs; that the proof is distributed over a sequence of papers, titled "Graph Minors. N." for N ranging from 1 up 20, published in the 80s, 90s, and 2000s from Robertson and Seymour.
+
+e.g., "Neil Robertson and Paul Seymour, Graph Minors. XX. Wagner's conjecture, Journal of Combinatorial Theory, Series B 92 (2004), 325-357, and the earlier Graph Minors papers it relies on.
+https://web.math.princeton.edu/~pds/papers/GM20/GM20.pdf"
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by AI for the earlier problem list (commit `1f49cd4`) and revised by Claude Opus 5.5 on 2026-11-11 to match the proposer's current text.
 
 - **Status:** Proved by N. Robertson and P. D. Seymour in the Graph Minors series, completed in Graph Minors XX (2004); conjectured by K. Wagner.
 - **Task:** A shorter, simpler proof of the graph minor theorem, and a Lean proof of it with a reusable library for minors, tree decompositions and finite forbidden-minor characterizations.

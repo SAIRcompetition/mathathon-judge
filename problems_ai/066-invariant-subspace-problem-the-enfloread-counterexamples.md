@@ -1,40 +1,27 @@
 # 66 · Invariant subspace problem: the Enflo–Read counterexamples
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/066-invariant-subspace-problem-the-enfloread-counterexamples.md`](../problems_original/066-invariant-subspace-problem-the-enfloread-counterexamples.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Functional analysis; operator theory
+- **Tracks:** Analysis
 
-Invariant subspace problem: the Enflo–Read counterexamples
-
-### Short description of problem (100 words or less)
+### Description
 
 The invariant subspace problem asks whether every bounded operator on a complex Banach space has a nontrivial closed invariant subspace. For general Banach spaces the answer is no. Enflo and Read constructed counterexamples, Read even on ℓ1. These constructions are long and technical and are known to few people, while the separable Hilbert space case remains open. A clearer understanding of why the counterexamples work, and what fails on Hilbert spaces, would make this classical negative result accessible.
-
-### Submitted Area
-
-Functional analysis; operator theory
-
-### Proposed Tracks
-
-Analysis
-
-### Reference/source material
-
-1. C. J. Read, "A solution to the invariant subspace problem", Bull. London Math. Soc. 16 (1984), 337-401.
-2. P. Enflo, "On the invariant subspace problem for Banach spaces", Acta Math. 158 (1987), 213-313.
-3. C. J. Read, "A solution to the invariant subspace problem on the space l1", Bull. London Math. Soc. 17 (1985), 305-317.
 
 ### Desired outcome
 
 A clear exposition of the counterexample constructions and of what prevents them from working on Hilbert spaces.
 
+### References
+
+1. C. J. Read, "A solution to the invariant subspace problem", Bull. London Math. Soc. 16 (1984), 337-401.
+2. P. Enflo, "On the invariant subspace problem for Banach spaces", Acta Math. 158 (1987), 213-313.
+3. C. J. Read, "A solution to the invariant subspace problem on the space l1", Bull. London Math. Soc. 17 (1985), 305-317.
+
 ## AI-generated notes
 
 <!-- status: Disproved -->
-
-> Written by AI for the earlier problem list, where this was problem 66 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Counterexamples on Banach spaces by P. Enflo (Acta Math. 1987) and C. J. Read (1984; on ℓ1 1985); open on Hilbert space.
 - **Task:** A clear exposition of the constructions and why Hilbert spaces resist them.

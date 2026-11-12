@@ -1,41 +1,28 @@
 # 116 · LLM-assisted search for a new knot invariant
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/116-llm-assisted-search-for-a-new-knot-invariant.md`](../problems_original/116-llm-assisted-search-for-a-new-knot-invariant.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Knot theory, low-dimensional topology
+- **Tracks:** Geometry
 
-LLM-assisted search for a new knot invariant
-
-### Short description of problem (100 words or less)
+### Description
 
 Use LLMs to help search for a new knot invariant and prove things with it. Try candidate constructions on examples, check whether they distinguish knots that familiar invariants miss, and use Lean to verify promising ideas. Build the knot theory library needed along the way.
 
-### Submitted Area
+### Desired outcome
 
-Knot theory, low-dimensional topology
+Find a useful new knot invariant, prove that it really is invariant, and use it to distinguish knots or prove other results. Ideally check the proofs in Lean.
 
-### Proposed Tracks
-
-Geometry
-
-### Reference/source material
+### References
 
 Colin Adams, The Knot Book: An Elementary Introduction to the Mathematical Theory of Knots, AMS (2004).
 
 Louis Kauffman, State models and the Jones polynomial, Topology 26 (1987), 395-407.
 https://webhomes.maths.ed.ac.uk/~v1ranick/papers/kauffmanjones.pdf
 
-### Desired outcome
-
-Find a useful new knot invariant, prove that it really is invariant, and use it to distinguish knots or prove other results. Ideally check the proofs in Lean.
-
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** An open-ended research task with no specific target theorem; its model is Kauffman's state-sum proof that the bracket polynomial gives the Jones polynomial (Topology 1987), and machine learning has already suggested relations between knot invariants that were then proved (Davies et al., Nature 2021).
 - **Task:** With LLM help, propose candidate knot invariants, test them on knot tables, prove invariance (ideally in Lean), and use a good one to distinguish knots or prove other results.

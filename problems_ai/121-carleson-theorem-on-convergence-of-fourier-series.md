@@ -1,39 +1,26 @@
 # 121 · Carleson' Theorem on convergence of Fourier series
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/121-carleson-theorem-on-convergence-of-fourier-series.md`](../problems_original/121-carleson-theorem-on-convergence-of-fourier-series.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Fourier/Harmonic analysis
+- **Tracks:** Analysis
 
-Carleson' Theorem on convergence of Fourier series
-
-### Short description of problem (100 words or less)
+### Description
 
 Fourier series and transform are commonly used objects in analysis and beyond. One of the famous problems since invention of Fourier series is determining for which functions its Fourier series convergences pointwise. Kolmogorov constructed integrable function with almost everywhere divergent Fourier series. Carleson famously showed that if a function is square-integrable then its Fourier series converges almost everywhere.
-
-### Submitted Area
-
-Fourier/Harmonic analysis 
-
-### Proposed Tracks
-
-Analysis
-
-### Reference/source material
-
-Lennart Carleson, “On convergence and growth of partial sums of Fourier series,” Acta Mathematica 116 (1966), 135–157.
-DOI: 10.1007/BF02392815.
 
 ### Desired outcome
 
 The main goal would be to find a simpler or conceptually different proof of Carleson’s theorem. Another nice outcome would be a clear exposition of Carleson’s original proof, explaining the guiding ideas, the motivation behind the main decompositions, and how one might arrive at the argument. Although several proofs are known, they remain difficult and technically demanding.
 
+### References
+
+Lennart Carleson, “On convergence and growth of partial sums of Fourier series,” Acta Mathematica 116 (1966), 135–157.
+DOI: 10.1007/BF02392815.
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Proved by L. Carleson (Acta Math., 1966) for $L^2$ and extended to $L^p$, $p>1$, by R. A. Hunt (1968); other proofs are due to C. Fefferman (1973) and M. Lacey and C. Thiele (2000), and the theorem has been formalized in Lean.
 - **Task:** A simpler or conceptually different proof of Carleson's theorem, or a clear exposition of Carleson's original proof that explains its main decompositions and how one might find them.

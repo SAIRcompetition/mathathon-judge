@@ -1,39 +1,26 @@
 # 43 · Gromov's Simplicial Volume Vanishing Conjecture
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/043-gromovs-simplicial-volume-vanishing-conjecture.md`](../problems_original/043-gromovs-simplicial-volume-vanishing-conjecture.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Geometry and Topology
+- **Tracks:** Geometry
 
-Gromov's Simplicial Volume Vanishing Conjecture
-
-### Short description of problem (100 words or less)
+### Description
 
 Gromov's simplicial volume is a number associated to a manifold through purely topological data. Gromov conjectured that if a closed manifold admits a Riemannian metric with positive scalar curvature, then its simplicial volume must vanish. The problem hopes to establish a relationship between a topological quantity (the simplicial volume) and a geometric quantity (scalar curvature). Problems of this flavour are central to geometry and topology (Atiyah-Singer Index theorem, for instance).
-
-### Submitted Area
-
-Geometry and Topology
-
-### Proposed Tracks
-
-Geometry
-
-### Reference/source material
-
-https://arxiv.org/pdf/2606.29135
-https://github.com/openai/math/blob/main/preprints/Positive-scalar-curvature-forces-rational-inessentiality-September-23-2026/paper.pdf
 
 ### Desired outcome
 
 Would it be possible to extend the index theoretic techniques developed by Ma et al in the first paper above to prove the theorem in OpenAI's preprint on the same problem? 
 
+### References
+
+https://arxiv.org/pdf/2606.29135
+https://github.com/openai/math/blob/main/preprints/Positive-scalar-curvature-forces-rational-inessentiality-September-23-2026/paper.pdf
+
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by AI for the earlier problem list, where this was problem 43 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved for manifolds with spin universal cover by Ma–Wang–Xie–Yu–Zhu (arXiv 2026); claimed in full by an OpenAI preprint (September 2026); neither is refereed yet.
 - **Task:** Extend the Ma et al. index-theoretic method to OpenAI's rational-inessentiality theorem.

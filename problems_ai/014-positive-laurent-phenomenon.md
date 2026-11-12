@@ -1,40 +1,27 @@
 # 14 · Positive Laurent phenomenon
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/014-positive-laurent-phenomenon.md`](../problems_original/014-positive-laurent-phenomenon.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Representation theory, algebraic combinatorics, mirror symmetry
+- **Tracks:** Algebra/Number Theory
 
-Positive Laurent phenomenon
-
-### Short description of problem (100 words or less)
+### Description
 
 The notion of cluster algebras was motivated by understanding Lusztig's canonical basis (Item 1). This has led to spectacular mathematics, including Fomin and Zelevinsky's classification of cluster algebras by root systems (Item 2) and Gross-Hacking-Kell-Kontsevich's proof of positive structure constants for theta functions (Item 3) in cluster algebras. All three items come with quite sophisticated ideas and proofs, which most researchers that I know in the area are happy to assume without knowing too much about. I'd like to explore these
-
-### Submitted Area
-
-Representation theory, algebraic combinatorics, mirror symmetry
-
-### Proposed Tracks
-
-Algebra/Number Theory
-
-### Reference/source material
-
-Fomin-Zelevinsky: cluster algebras II, Inventiones Mathematicae (2003)
-Gross-Hacking-Keel-Kontsevich: canonical bases for cluster algebras, JAMS (2018)
 
 ### Desired outcome
 
 For the classification of cluster algebras: I'd like to see a more streamlined construction which explains why root systems enter and how the proof works
 For scattering diagrams: I'd like to understand the rather difficult "induction on rank" argument that allows to reduce the general problem to the rank 2 problem
 
+### References
+
+Fomin-Zelevinsky: cluster algebras II, Inventiones Mathematicae (2003)
+Gross-Hacking-Keel-Kontsevich: canonical bases for cluster algebras, JAMS (2018)
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by AI for the earlier problem list, where this was problem 14 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Finite type classification proved by Fomin and Zelevinsky (2003); positivity proved by Lee and Schiffler (skew-symmetric case, 2015) and Gross, Hacking, Keel and Kontsevich (2018).
 - **Task:** A streamlined finite type classification; understanding GHKK's reduction to rank 2.

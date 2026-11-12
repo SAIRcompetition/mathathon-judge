@@ -1,39 +1,26 @@
 # 115 · Exotic spheres
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/115-exotic-spheres.md`](../problems_original/115-exotic-spheres.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Differential topology, geometry
+- **Tracks:** Geometry
 
-Exotic spheres
-
-### Short description of problem (100 words or less)
+### Description
 
 Formalize Milnor's construction of exotic 7-spheres in Lean: manifolds that are homeomorphic to the usual sphere but not diffeomorphic to it. This is a good example of how smooth and topological geometry can differ. Could also work towards the Kervaire-Milnor classification of homotopy spheres.
-
-### Submitted Area
-
-Differential topology, geometry
-
-### Proposed Tracks
-
-Geometry
-
-### Reference/source material
-
-John Milnor, On Manifolds Homeomorphic to the 7-Sphere, Annals of Mathematics 64 (1956), 399-405.
-https://webhomes.maths.ed.ac.uk/~v1ranick/papers/exotic.pdf
 
 ### Desired outcome
 
 Construct an exotic 7-sphere in Lean and prove that it is homeomorphic but not diffeomorphic to the standard sphere. A broader goal would be to formalize the classification results and the tools they use.
 
+### References
+
+John Milnor, On Manifolds Homeomorphic to the 7-Sphere, Annals of Mathematics 64 (1956), 399-405.
+https://webhomes.maths.ed.ac.uk/~v1ranick/papers/exotic.pdf
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Proved by J. Milnor (Annals 1956); Kervaire and Milnor (Annals 1963) showed that the group $\Theta_n$ of homotopy $n$-spheres is finite for $n\ne3$ and has order 28 for $n=7$.
 - **Task:** Construct an exotic 7-sphere in Lean and prove that it is homeomorphic but not diffeomorphic to $S^7$; more broadly, formalize the Kervaire–Milnor classification and the tools it uses.

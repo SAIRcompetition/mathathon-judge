@@ -1,38 +1,25 @@
 # 93 · An improvement towards bounded gaps between primes
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/093-an-improvement-towards-bounded-gaps-between-primes.md`](../problems_original/093-an-improvement-towards-bounded-gaps-between-primes.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Analytic number theory
+- **Tracks:** Numer Theory/Algebra
 
-An improvement towards bounded gaps between primes
-
-### Short description of problem (100 words or less)
+### Description
 
 Zhang (2013) proved that some prime gap occurs infinitely often. Later refinements brought the bound down: Maynard's multidimensional Selberg sieve gave H₁ ≤ 600, and Polymath 8b refined it to H₁ ≤ 246. That bound stood for more than a decade, then fell several times within days in 2026. Stadlmann proved 240 using an admissible 49-tuple, Axiom built on her work to reach 212, and OpenAI's "Improved Short Gaps Between Primes" proves DHL[40,2], giving 186, and attributes the proof to GPT-6 Astra. 
-
-### Submitted Area
-
-Analytic number theory
-
-### Proposed Tracks
-
-Numer Theory/Algebra
-
-### Reference/source material
-
-OpenAI, Improved Short Gaps Between Primes (Aug 2026), plus the GitHub repo openai/PrimeGaps186 (Lean 4 proof and Python-FLINT certificate)
 
 ### Desired outcome
 
 How the GPY and Maynard–Tao methods turn "two primes in a translate" into an optimization over sieve weights.
 
+### References
+
+OpenAI, Improved Short Gaps Between Primes (Aug 2026), plus the GitHub repo openai/PrimeGaps186 (Lean 4 proof and Python-FLINT certificate)
+
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by AI for the earlier problem list, where this was problem 94 (commit `1f49cd4`), and carried over; only links that depend on the problem numbering were updated.
 
 - **Status:** $H_1\le186$ is proved in an OpenAI preprint dated 30 August 2026 that attributes the proof to GPT 6 Astra; not yet refereed. The previous bound was 246 (Polymath 8b, 2014); Stadlmann independently proved 240 (preprint, 31 August 2026).
 - **Task:** An explanation of how the GPY and Maynard–Tao methods turn "two primes in a translate" into an optimization over sieve weights.

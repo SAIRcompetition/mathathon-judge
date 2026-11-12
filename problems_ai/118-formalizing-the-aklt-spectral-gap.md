@@ -1,40 +1,27 @@
 # 118 · Formalizing the AKLT spectral gap
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/118-formalizing-the-aklt-spectral-gap.md`](../problems_original/118-formalizing-the-aklt-spectral-gap.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Mathematical physics, quantum information
+- **Tracks:** Computation/Applied mathematics
 
-Formalizing the AKLT spectral gap
-
-### Short description of problem (100 words or less)
+### Description
 
 Formalize the proof that the AKLT quantum spin model on the hexagonal lattice has a nonzero spectral gap. The existing proofs combine mathematical arguments with numerical calculations. We want to check that whole chain in Lean, including rigorous bounds for the computational steps. This would give an important result in quantum many-body physics a fully checked foundation and build tools for similar proofs.
-
-### Submitted Area
-
-Mathematical physics, quantum information
-
-### Proposed Tracks
-
-Computation/Applied mathematics
-
-### Reference/source material
-
-Pomata and Wei, Demonstrating the AKLT spectral gap on 2D degree-3 lattices: https://arxiv.org/abs/1911.01410
-
-Lemm, Sandvik and Wang, Existence of a Spectral Gap in the Affleck-Kennedy-Lieb-Tasaki Model on the Hexagonal Lattice: https://arxiv.org/abs/1910.11810
 
 ### Desired outcome
 
 A Lean proof of the hexagonal AKLT spectral gap, including the numerical bounds the argument needs. Ideally make the tools useful for other quantum spin systems too.
 
+### References
+
+Pomata and Wei, Demonstrating the AKLT spectral gap on 2D degree-3 lattices: https://arxiv.org/abs/1911.01410
+
+Lemm, Sandvik and Wang, Existence of a Spectral Gap in the Affleck-Kennedy-Lieb-Tasaki Model on the Hexagonal Lattice: https://arxiv.org/abs/1910.11810
+
 ## AI-generated notes
 
 <!-- status: Partly solved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Established with computer assistance, independently, by M. Lemm, A. W. Sandvik and L. Wang and by N. Pomata and T.-C. Wei (both Phys. Rev. Lett. 124, 2020); both arguments rely on floating-point eigenvalue computations whose accuracy is not rigorously certified.
 - **Task:** A Lean proof of the spectral gap of the hexagonal AKLT model, with the numerical steps replaced by certified bounds, and tools reusable for other spin systems.

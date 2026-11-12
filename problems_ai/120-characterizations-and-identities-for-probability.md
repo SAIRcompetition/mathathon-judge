@@ -1,26 +1,19 @@
 # 120 · Characterizations and identities for probability distributions
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/120-characterizations-and-identities-for-probability.md`](../problems_original/120-characterizations-and-identities-for-probability.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Probability theory, statistics, stochastic processes
+- **Tracks:** Analysis
 
-Characterizations and identities for probability distributions
-
-### Short description of problem (100 words or less)
+### Description
 
 Formalize results that characterize probability distributions or identify the laws of interesting random variables. Two possible targets are Marcinkiewicz's theorem, which says a polynomial characteristic exponent forces a Gaussian or a point mass, and Dufresne's identity, which gives an inverse-gamma law for an integral of geometric Brownian motion. Other directions could include stable distributions, gamma characterizations, Polya-Gamma mixture identities, or distinct densities with the same moments. The idea is to pick a concrete theorem and check its proof and assumptions in Lean.
 
-### Submitted Area
+### Desired outcome
 
-Probability theory, statistics, stochastic processes
+A Lean proof of one or more of these results, ideally Marcinkiewicz's theorem or Dufresne's identity. Include the concrete distribution formula or characterization and its hypotheses, and build reusable tools for related examples.
 
-### Proposed Tracks
-
-Analysis
-
-### Reference/source material
+### References
 
 Quantitative Marcinkiewicz's theorem and central limit theorems: applications to spin systems and point processes: https://arxiv.org/abs/2107.08469
 
@@ -28,15 +21,9 @@ Perpetual integral functionals as hitting and occupation times (includes Dufresn
 
 A direct approach to the stable distributions: https://arxiv.org/abs/1604.07350
 
-### Desired outcome
-
-A Lean proof of one or more of these results, ideally Marcinkiewicz's theorem or Dufresne's identity. Include the concrete distribution formula or characterization and its hypotheses, and build reusable tools for related examples.
-
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** A formalization task with several possible targets; the two named ones are classical theorems, Marcinkiewicz's theorem (J. Marcinkiewicz, 1939) and Dufresne's identity (D. Dufresne, 1990).
 - **Task:** A Lean proof of a characterization or distributional identity, ideally Marcinkiewicz's theorem or Dufresne's identity, with tools reusable for related examples.

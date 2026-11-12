@@ -1,41 +1,27 @@
 # 72 · Cayley’s Formula: A Proof Zoo
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/072-cayleys-formula-a-proof-zoo.md`](../problems_original/072-cayleys-formula-a-proof-zoo.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Enumerative combinatorics
+- **Tracks:** Combinatorics
 
-Cayley’s Formula: A Proof Zoo
-
-### Short description of problem (100 words or less)
+### Description
 
 Cayley’s formula says there are n^(n-2) labeled trees on n vertices. Aigner and Ziegler’s Proofs from THE BOOK gives four proofs. Participants could build a unified framework relating them (Prüfer codes, Joyal’s doubly-rooted trees, double counting, linear algebra via the Matrix-Tree Theorem).
-
-### Submitted Area
-
-Enumerative combinatorics
-
-### Proposed Tracks
-
-Combinatorics
-
-
-### Reference/source material
-
-Cayley, “A theorem on trees,” Quarterly Journal of Mathematics 23 (1889)
-Aigner, Ziegler, Proofs from THE BOOK, chapter “Cayley’s formula for the number of trees”
-Joyal, “Une théorie combinatoire des séries formelles,” Advances in Mathematics 42 (1981)
 
 ### Desired outcome
 
 Interactive visualization of bijections, formal verification of the Prüfer correspondence, and an explanation of why all proofs agree.
 
+### References
+
+Cayley, “A theorem on trees,” Quarterly Journal of Mathematics 23 (1889)
+Aigner, Ziegler, Proofs from THE BOOK, chapter “Cayley’s formula for the number of trees”
+Joyal, “Une théorie combinatoire des séries formelles,” Advances in Mathematics 42 (1981)
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by AI for the earlier problem list, where this was problem 72 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** First proved by C. W. Borchardt (1860) with determinants; Cayley's paper is from 1889, and many proofs exist.
 - **Task:** Visualized bijections, a formalized Prüfer correspondence, and why the proofs agree.

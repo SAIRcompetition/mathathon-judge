@@ -1,30 +1,13 @@
 # 99 · Towards a combinatorial proof of Schur positivity for LLT polynomials of unit interval graphs
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/099-towards-a-combinatorial-proof-of-schur-positivity-for-llt.md`](../problems_original/099-towards-a-combinatorial-proof-of-schur-positivity-for-llt.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Algebraic combinatorics (symmetric functions)
+- **Tracks:** Combinatorics
 
-Towards a combinatorial proof of Schur positivity for LLT polynomials of unit interval graphs
-
-### Short description of problem (100 words or less)
+### Description
 
 LLT polynomials of unit interval graphs are known to be Schur positive: every Schur coefficient is a polynomial in q with nonnegative integer coefficients. The existing proofs are unsatisfying: Grojnowski-Haiman express the coefficients through Kazhdan-Lusztig theory of affine Hecke algebras, and Guay-Paquet's second proof uses Hessenberg varieties, which, as Alexandersson-Sulzgruber put it, gives positivity "but no combinatorial formula for the coefficients". Combinatorial rules are known only for special families (e.g. Roberts for maximum area at most 2, Huh-Nam-Yoo for melting lollipops), and none is known for unit interval graphs in general.
-
-### Submitted Area
-
-Algebraic combinatorics (symmetric functions)
-
-### Proposed Tracks
-
-Combinatorics
-
-### Reference/source material
-
-1. I. Grojnowski, M. Haiman, "Affine Hecke algebras and positivity of LLT and Macdonald polynomials", preprint (2007), available at math.berkeley.edu/~mhaiman.
-2. M. Guay-Paquet, "A second proof of the Shareshian-Wachs conjecture, by way of a new Hopf algebra" (2016), arXiv:1601.05498 (Schur positivity of unit interval graph LLT polynomials follows from this, as noted by Alexandersson-Sulzgruber, arXiv:2004.09198).
-3. A. Roberts, "Dual equivalence graphs revisited and the explicit Schur expansion of a family of LLT polynomials", J. Algebraic Combin. (2014), arXiv:1302.0319 (Theorem 4.3).
 
 ### Desired outcome
 
@@ -34,11 +17,15 @@ Fortunately we do already have natural starting points; combinatorial rules alre
 
 And even if the full problem is too much for the mathathon, we can start with a natural test case: K-chains (chains of cliques glued at single vertices), which are the simplest graphs containing a K_4 that no known rule covers. The interesting ones contain a K_4 with something attached on both sides (Roberts' rule fails on 11 of the 14 such graphs with 8 vertices, for example). Thus, we could start with establishing a rule that is correct on all K-chains with 8 vertices, and work towards a proof for the whole family.
 
+### References
+
+1. I. Grojnowski, M. Haiman, "Affine Hecke algebras and positivity of LLT and Macdonald polynomials", preprint (2007), available at math.berkeley.edu/~mhaiman.
+2. M. Guay-Paquet, "A second proof of the Shareshian-Wachs conjecture, by way of a new Hopf algebra" (2016), arXiv:1601.05498 (Schur positivity of unit interval graph LLT polynomials follows from this, as noted by Alexandersson-Sulzgruber, arXiv:2004.09198).
+3. A. Roberts, "Dual equivalence graphs revisited and the explicit Schur expansion of a family of LLT polynomials", J. Algebraic Combin. (2014), arXiv:1302.0319 (Theorem 4.3).
+
 ## AI-generated notes
 
 <!-- status: Partly solved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Schur positivity is proved (Grojnowski–Haiman, 2007 preprint; Guay-Paquet, arXiv 2016, via Hessenberg varieties), but explicit positive rules for the Schur coefficients are known only for special families: graphs without $K_4$ (Roberts 2014), melting lollipops (Huh–Nam–Yoo 2020) and two-headed melting lollipops (V. Wang, arXiv 2025).
 - **Task:** A combinatorial rule, with proof, for the Schur coefficients of the LLT polynomial of every unit interval graph; as a first step, a rule that is correct on all K-chains with 8 vertices.

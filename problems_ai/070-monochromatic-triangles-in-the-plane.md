@@ -1,31 +1,15 @@
 # 70 · Monochromatic Triangles in the Plane
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/070-monochromatic-triangles-in-the-plane.md`](../problems_original/070-monochromatic-triangles-in-the-plane.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Discrete Geometry
+- **Tracks:** Geometry
 
-Monochromatic Triangles in the Plane
-
-### Short description of problem (100 words or less)
+### Description
 
 The problem was to determine whether there is a universal constant C such that, for any n points in convex position, at most C*n pairs of points can be exactly distance 1 apart.
 
 This problem has now been solved: no such constant exists.
-
-### Submitted Area
-
-Discrete Geometry
-
-### Proposed Tracks
-
-Geometry
-
-### Reference/source material
-
-The proof exposition is found in the following paper:
-Unit distances in convex polygons - Liam Kruer, Jensen Kohlmeyer, and Liam Price - https://liamkruer.com/assets/work/erdos-96-97/96-97.pdf
 
 ### Desired outcome
 
@@ -37,11 +21,14 @@ The successful use of the medium of games may still be difficult, and it may be 
 
 I would prefer/recommend using Godot game engine for building the application.
 
+### References
+
+The proof exposition is found in the following paper:
+Unit distances in convex polygons - Liam Kruer, Jensen Kohlmeyer, and Liam Price - https://liamkruer.com/assets/work/erdos-96-97/96-97.pdf
+
 ## AI-generated notes
 
 <!-- status: Disproved (preprint) -->
-
-> Written by AI for the earlier problem list (commit `1f49cd4`) and revised by Claude Opus 5.5 on 2026-11-11 to match the proposer's current text.
 
 - **Status:** Disproved in a manuscript by L. Kruer, J. Kohlmeyer and L. Price (September 2026; the authors state that the argument originated with GPT 6 Astra), not yet refereed; conjectured by Erdős and Moser (Erdős Problem #96).
 - **Task:** A playable game that leads players to discover the construction.

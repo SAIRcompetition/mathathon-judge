@@ -1,32 +1,21 @@
 # 57 · Simplifying the Proof of Barnette's Conjecture
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/057-simplifying-the-proof-of-barnettes-conjecture.md`](../problems_original/057-simplifying-the-proof-of-barnettes-conjecture.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Graph theory, combinatorics
+- **Tracks:** Combinatorics
 
-Simplifying the Proof of Barnette's Conjecture
-
-### Short description of problem (100 words or less)
+### Description
 
 Barnette's conjecture states that every 3-connected cubic bipartite planar graph has a Hamiltonian cycle. OpenAI released a proof in its October 6, 2026 proof dump. The problem is to simplify this proof.
-
-### Submitted Area
-
-Graph theory, combinatorics
-
-### Proposed Tracks
-
-Combinatorics
-
-### Reference/source material
-
-https://github.com/openai/math/blob/main/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/paper.pdf
 
 ### Desired outcome
 
 A simpler proof of Barnette's conjecture, ideally with a shorter and more elementary argument.
+
+### References
+
+https://github.com/openai/math/blob/main/preprints/Paired-states-and-Hamiltonian-cycles-in-cubic-bipartite-planar-graphs-September-24-2026/paper.pdf
 
 ### Reference links
 
@@ -35,8 +24,6 @@ A simpler proof of Barnette's conjecture, ideally with a shorter and more elemen
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by AI for the earlier problem list, where this was problem 57 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved in an OpenAI preprint dated 24 September 2026 (released 6 October 2026), not yet refereed; conjectured by D. W. Barnette (recorded 1969).
 - **Task:** A simpler, shorter and more elementary proof of Barnette's conjecture.

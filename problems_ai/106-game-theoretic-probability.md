@@ -1,39 +1,26 @@
 # 106 · Game-theoretic probability
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/106-game-theoretic-probability.md`](../problems_original/106-game-theoretic-probability.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Probability, game theory
+- **Tracks:** Computation/Applied Math, Analysis
 
-Game-theoretic probability
-
-### Short description of problem (100 words or less)
+### Description
 
 Formalize major results in game-theoretic probability in Lean, such as the law of the iterated logarithm. This approach builds probability out of betting strategies rather than starting with a probability measure. It would be interesting to check these alternative proofs and connect them back to the usual measure-theoretic results.
-
-### Submitted Area
-
-Probability, game theory
-
-### Proposed Tracks
-
-Computation/Applied Math, Analysis
-
-### Reference/source material
-
-Glenn Shafer and Vladimir Vovk, Probability and Finance: It's Only a Game! (2001), Part I: the strong law, law of the iterated logarithm, and Lindeberg's theorem.
-https://www.probabilityandfinance.com/2001_book/chapters/toc.html
 
 ### Desired outcome
 
 A Lean formalization of the law of the iterated logarithm and the betting framework behind it. Other goals could include the strong law of large numbers, the game-theoretic central limit theorem, and recovering the usual measure-theoretic versions.
 
+### References
+
+Glenn Shafer and Vladimir Vovk, Probability and Finance: It's Only a Game! (2001), Part I: the strong law, law of the iterated logarithm, and Lindeberg's theorem.
+https://www.probabilityandfinance.com/2001_book/chapters/toc.html
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Proved: G. Shafer and V. Vovk (2001) prove game-theoretic versions of the strong law, the law of the iterated logarithm and Lindeberg's theorem; we found no Lean formalization of this framework.
 - **Task:** Formalize in Lean the betting framework and the game-theoretic law of the iterated logarithm; further goals are the strong law, the central limit theorem and recovering the measure-theoretic versions.

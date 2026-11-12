@@ -1,29 +1,13 @@
 # 78 · Understanding Matrix Multiplication
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/078-understanding-matrix-multiplication.md`](../problems_original/078-understanding-matrix-multiplication.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Algebraic Complexity Theory, Numerical Linear Algebra
+- **Tracks:** Computation/Applied Math
 
-Understanding Matrix Multiplication
-
-### Short description of problem (100 words or less)
+### Description
 
 Recent constructions achieve a matrix multiplication exponent approaching 9/4, yet their asymptotic operation counts conceal enormous finite costs. A starting point could be from the polynomial packing construction in Rafael Pass's paper, by investigating how its algebraic savings become a recursive algorithm. There are several things to consider, like polynomial packing, interpolation, approximate identities conversion, etc.
-
-### Submitted Area
-
-Algebraic Complexity Theory, Numerical Linear Algebra
-
-### Proposed Tracks
-
-Computation/Applied Math
-
-### Reference/source material
-
-1. https://arxiv.org/abs/2610.28627 by Rafael Pass. Primary reference for the construction and its conversion into an explicit recursive algorithm.
-2. https://arxiv.org/abs/math/0603207v3 by James Demmel, Ioana Dumitriu, Olga Holtz, and Robert Kleinberg. Reference for the relationship between fast multiplication and numerical stability.
 
 ### Desired outcome
 
@@ -34,11 +18,14 @@ An exposition of an existing fast matrix multiplication construction.
 
 Potentially a connection to numerical analysis that clarifies precision requirements too. Although the reference construction already includes an asymptotic bit-complexity analysis.
 
+### References
+
+1. https://arxiv.org/abs/2610.28627 by Rafael Pass. Primary reference for the construction and its conversion into an explicit recursive algorithm.
+2. https://arxiv.org/abs/math/0603207v3 by James Demmel, Ioana Dumitriu, Olga Holtz, and Robert Kleinberg. Reference for the relationship between fast multiplication and numerical stability.
+
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by AI for the earlier problem list, where this was problem 78 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** $\omega\le 9/4$ proved by OpenAI (October 2026 preprint) and constructively by R. Pass (arXiv, October 2026); neither proof is yet refereed.
 - **Task:** An exposition of an existing fast matrix multiplication construction, with worked examples.

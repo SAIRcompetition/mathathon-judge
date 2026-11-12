@@ -1,40 +1,27 @@
 # 113 · Understanding sporadic curves in Mcduff-Shlenk staircase
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/113-understanding-sporadic-curves-in-mcduff-shlenk-staircase.md`](../problems_original/113-understanding-sporadic-curves-in-mcduff-shlenk-staircase.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Algebraic & symplectic geometry
+- **Tracks:** Geometry
 
-Understanding sporadic curves in Mcduff-Shlenk staircase
-
-### Short description of problem (100 words or less)
+### Description
 
 The Nagata conjecture (recently proved by OpenAI) bounds the multiplicities with which a plane curve of fixed degree can pass through very general points. One can consider a weighted analogue which collapses these into a single point, and relates the bound to the cone of curves of a weighted blowup of the projective plane. In the range n/m (where n and m are the weights of the weighted blowup, X)  \in [7,9], symplectic geometers McDuff and Schlenk found eight sporadic steps of their ellipsoid embedding function, which correspond to eight extremal curve classes on the cone of curves of X. These curves are not yet fully understood, especially on the algebraic side. We want to know if we can give a geometric explanation for their existence.
-
-### Submitted Area
-
-Algebraic & symplectic geometry 
-
-### Proposed Tracks
-
-Geometry
-
-### Reference/source material
-
-The embedding capacity of $4$-dimensional symplectic ellipsoids, 
-https://doi.org/10.4007/annals.2012.175.3.5
-
 
 ### Desired outcome
 
 We'd like to see an exposition connecting the curve constructions, contracted surfaces, and symplectic embedding constraints.
 
+### References
+
+The embedding capacity of $4$-dimensional symplectic ellipsoids, 
+https://doi.org/10.4007/annals.2012.175.3.5
+
+
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** An exposition question: McDuff and Schlenk found the eight sporadic steps of the ellipsoid embedding function in $[7,9]$ (Annals 2012), and J. Evans (arXiv 2026) rebuilt all post-Fibonacci steps from curves on weighted blow-ups of $\mathbb P^2$; the proposer reports that the corresponding curves are still not well understood algebraically.
 - **Task:** An exposition explaining the eight exceptional classes geometrically, linking the curves, the contracted (weighted blow-up) surfaces and the symplectic embedding constraints.

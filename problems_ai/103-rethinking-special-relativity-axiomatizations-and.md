@@ -1,26 +1,19 @@
 # 103 · Rethinking Special Relativity: Axiomatizations and Underlying Mathematical Structures
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/103-rethinking-special-relativity-axiomatizations-and.md`](../problems_original/103-rethinking-special-relativity-axiomatizations-and.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Mathematical Physics, Category Theory, Foundations of Physics
+- **Tracks:** Computation/Applied Math
 
-Rethinking Special Relativity: Axiomatizations and Underlying Mathematical Structures
-
-### Short description of problem (100 words or less)
+### Description
 
 Special relativity can be derived from different sets of physical assumptions. What do these approaches reveal about its underlying mathematical structure? We propose to revisit its foundations through a categorical perspective, seeking deeper connections and unifying principles, with broader implications for Global Mathematics and the organization of mathematical knowledge.
 
-### Submitted Area
+### Desired outcome
 
-Mathematical Physics, Category Theory, Foundations of Physics
+A deeper and more unified understanding of the foundations of special relativity, revealing hidden connections, common mathematical structures, or new organizing principles across different derivations. 
 
-### Proposed Tracks
-
-Computation/Applied Math
-
-### Reference/source material
+### References
 
 A. Einstein, On the Electrodynamics of Moving Bodies (1905).
 
@@ -28,15 +21,9 @@ L. D. Landau and E. M. Lifshitz, The Classical Theory of Fields, Chapter 1.
 
 V. Ignatowsky, Some General Remarks on the Principle of Relativity (1910).
 
-### Desired outcome
-
-A deeper and more unified understanding of the foundations of special relativity, revealing hidden connections, common mathematical structures, or new organizing principles across different derivations. 
-
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Not a single theorem: deriving the Lorentz transformations from the relativity principle without the light postulate goes back to Ignatowsky (1910), and characterizations such as Zeeman's "causality implies the Lorentz group" (1964) are established.
 - **Task:** Compare derivations and axiomatizations of special relativity and look for common, possibly categorical, structure.

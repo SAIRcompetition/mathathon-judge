@@ -1,32 +1,13 @@
 # 138 · Koszulness and higher syzygies of generalized matroid Chow rings
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/138-koszulness-and-higher-syzygies-of-generalized-matroid-chow.md`](../problems_original/138-koszulness-and-higher-syzygies-of-generalized-matroid-chow.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Algebraic combinatorics, commutative algebra, matroid theory, combinatorial Hodge theory.
+- **Tracks:** Number Theory/Algebra
 
-Koszulness and higher syzygies of generalized matroid Chow rings
-
-### Short description of problem (100 words or less)
+### Description
 
 Generalized matroid Chow rings encode intersections in wonderful compactifications. Existing theorems establish Koszulness for important building sets, while the broader flag case remains conjectural. We would like to explain and extend the mechanisms behind these results by studying how building-set geometry controls higher syzygies. The goals are sharp combinatorial obstruction and repair criteria, a structural explanation of why natural recursive proofs fail, and hopefully a method for proving Koszulness or detecting its failure beyond known/established cases.
-
-### Submitted Area
-
-Algebraic combinatorics, commutative algebra, matroid theory, combinatorial Hodge theory.
-
-### Proposed Tracks
-
-Number Theory/Algebra
-
-### Reference/source material
-
-1. Basile Coron, https://arxiv.org/abs/2302.13072v3. Section 2.4 gives the standard-monomial framework and the Koszulness theorem. Section 3 develops the proof, Section 4 treats graphical applications, and Section 5.1 identifies more cycle cases.
-
-2. Basile Coron, https://arxiv.org/abs/2604.04550v3. Sections 2 and 3 develop build matroids and flag building sets. Section 9.1, especially Conjecture 9.2, formulates the broader Koszulness problem and connects it with positivity questions.
-
-3. Roberto Pagaria and Gian Marco Pezzoli, https://arxiv.org/abs/2105.04214v2. Section 4.2 describes annihilator quotients through truncation and restriction-contraction. These supply geometric and algebraic tools for investigating recursive proof strategies.
 
 ### Desired outcome
 
@@ -36,11 +17,17 @@ Establish sharp combinatorial criteria for minimal generators of distinguished a
 
 This could be used to develop an all-degree method beyond known cases. It is also important to keep the distinction between linear generation of an annihilator, a linear module resolution, and Koszulness of the ring. Hopefully a finished contribution would provide a researcher recognize which configurations obstruct some argument and apply the resulting theorem to another building set.
 
+### References
+
+1. Basile Coron, https://arxiv.org/abs/2302.13072v3. Section 2.4 gives the standard-monomial framework and the Koszulness theorem. Section 3 develops the proof, Section 4 treats graphical applications, and Section 5.1 identifies more cycle cases.
+
+2. Basile Coron, https://arxiv.org/abs/2604.04550v3. Sections 2 and 3 develop build matroids and flag building sets. Section 9.1, especially Conjecture 9.2, formulates the broader Koszulness problem and connects it with positivity questions.
+
+3. Roberto Pagaria and Gian Marco Pezzoli, https://arxiv.org/abs/2105.04214v2. Section 4.2 describes annihilator quotients through truncation and restriction-contraction. These supply geometric and algebraic tools for investigating recursive proof strategies.
+
 ## AI-generated notes
 
 <!-- status: Open -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** Koszulness is proved for maximal building sets (M. Mastroeni and J. McCullough, 2023), for the minimal building set of the braid matroid (V. Dotsenko, 2022) and for supersolvable built lattices (B. Coron, 2025); B. Coron, L. Ferroni and S. Li conjecture it for all flag built matroids (2026 preprint), and it is open in general.
 - **Task:** Explain how the known Koszulness proofs work and where they break, find combinatorial criteria for obstructions in the relations and syzygies, and develop a method to prove or refute Koszulness beyond the known cases.

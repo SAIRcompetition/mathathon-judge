@@ -1,35 +1,13 @@
 # 122 · Efficient Verification of Lean Proofs via Interaction
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/122-efficient-verification-of-lean-proofs-via-interaction.md`](../problems_original/122-efficient-verification-of-lean-proofs-via-interaction.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Mathematical logic, formal verification, computational complexity, interactive proof systems, algebra, and probability.
+- **Tracks:** Computation/Applied Mathematics
 
-Efficient Verification of Lean Proofs via Interaction
-
-### Short description of problem (100 words or less)
+### Description
 
 Large formal proofs can be expensive to recheck. Can randomized interaction with an untrusted prover let us verify an existing Lean proof using substantially less time or memory, with a rigorous bound on the probability of accepting an invalid proof? Investigate how established interactive proof protocols, such as sum-check and GKR, or newly designed ones, can be applied to proof checking, using an already formalized theorem as a case study. The project connects mathematical logic, algebra, probability, and computational complexity, aiming to make existing proofs easier to verify and interactive verification easier to understand.
-
-### Submitted Area
-
-Mathematical logic, formal verification, computational complexity, interactive proof systems, algebra, and probability.
-
-### Proposed Tracks
-
-Computation/Applied Mathematics
-
-### Reference/source material
-
-Shafi Goldwasser, Yael Tauman Kalai, and Guy N. Rothblum. Delegating Computation: Interactive Proofs for Muggles. STOC 2008, pp. 113–122. 
-- Introduces the GKR protocol, which allows a verifier to check a computation through randomized interaction with an untrusted prover.
-
-Graham Cormode, Michael Mitzenmacher, and Justin Thaler. Practical Verified Computation with Streaming Interactive Proofs. ITCS 2012; arXiv:1105.2003. 
-- Develops practical interactive verification techniques, including verification with limited working memory.
-
-Mario Carneiro. Lean4Lean: Verifying a Typechecker for Lean, in Lean. arXiv:2403.14064, revised 2025. 
-- Presents an external Lean proof checker and progress toward verifying its correctness, providing a concrete foundation for understanding the computation to be delegated.
 
 ### Desired outcome
 
@@ -41,11 +19,20 @@ An accessible explainer and reproducible demonstration connecting interactive pr
 
 A realistic target for the 40-hour event is a worked example, preliminary prototype, and explanation of the protocol. The two-month follow-up could extend the implementation, strengthen the soundness analysis, and benchmark larger examples. The central contribution would be a clearer understanding of when, and at what cost, interaction can make existing formal proofs easier to verify.
 
+### References
+
+Shafi Goldwasser, Yael Tauman Kalai, and Guy N. Rothblum. Delegating Computation: Interactive Proofs for Muggles. STOC 2008, pp. 113–122. 
+- Introduces the GKR protocol, which allows a verifier to check a computation through randomized interaction with an untrusted prover.
+
+Graham Cormode, Michael Mitzenmacher, and Justin Thaler. Practical Verified Computation with Streaming Interactive Proofs. ITCS 2012; arXiv:1105.2003. 
+- Develops practical interactive verification techniques, including verification with limited working memory.
+
+Mario Carneiro. Lean4Lean: Verifying a Typechecker for Lean, in Lean. arXiv:2403.14064, revised 2025. 
+- Presents an external Lean proof checker and progress toward verifying its correctness, providing a concrete foundation for understanding the computation to be delegated.
+
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->
-
-> Written by Claude Opus 5.5 on 2026-11-11 from the proposer's text above.
 
 - **Status:** An open-ended research and exposition task; the tools are established, notably the sum-check protocol (Lund, Fortnow, Karloff and Nisan, 1990–92) and the GKR protocol (Goldwasser, Kalai and Rothblum, 2008), but none of the cited sources applies them to Lean proof checking.
 - **Task:** Explain, prototype and analyse interactive protocols such as sum-check and GKR that let a verifier check an existing Lean proof with an untrusted prover's help, using less time or memory than the kernel, with a rigorous soundness bound.

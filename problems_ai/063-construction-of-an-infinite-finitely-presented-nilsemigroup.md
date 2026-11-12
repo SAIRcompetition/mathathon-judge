@@ -1,40 +1,27 @@
 # 63 · Construction of an Infinite Finitely Presented Nilsemigroup
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/063-construction-of-an-infinite-finitely-presented-nilsemigroup.md`](../problems_original/063-construction-of-an-infinite-finitely-presented-nilsemigroup.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Semigroup Theory, Combinatorial Algebra, Geometric Algebra
+- **Tracks:** Algebra/Number Theory
 
-Construction of an Infinite Finitely Presented Nilsemigroup
-
-### Short description of problem (100 words or less)
+### Description
 
 A semigroup with zero is called a nilsemigroup if every element is nilpotent, meaning that for each element x there exists a positive integer n such that x^n = 0. Construct an infinite finitely presented nilsemigroup and prove both its infinitude and the nilpotency of all its elements. In particular, investigate constructions satisfying a uniform identity x^n = 0 and the role of finite defining relations in guaranteeing these properties.
-
-### Submitted Area
-
-Semigroup Theory, Combinatorial Algebra, Geometric Algebra
-
-### Proposed Tracks
-
-Algebra/Number Theory
-
-### Reference/source material
-
-I. A. Ivanov-Pogodaev, A. Ya. Kanel-Belov, Construction of a Nilsemigroup of Paths in a Countable Family of Uniformly Elliptic Complexes. Algebra and Logic, 63(6), 410–438 (2025). https://doi.org/10.1007/s10469-025-09803-3
-
-I. A. Ivanov-Pogodaev, A. Ya. Kanel-Belov, Deterministic Coloring of a Family of Complexes. Fundamentalnaya i Prikladnaya Matematika, 24(2), 37–180 (2022).
 
 ### Desired outcome
 
 An explicit finite presentation of an infinite nilsemigroup, together with rigorous proofs that every element is nilpotent and that the semigroup is infinite. Participants are encouraged to explore simpler constructions, reduce the number of generators or defining relations, or establish stronger properties such as a uniform bound on nilpotency exponents.
 
+### References
+
+I. A. Ivanov-Pogodaev, A. Ya. Kanel-Belov, Construction of a Nilsemigroup of Paths in a Countable Family of Uniformly Elliptic Complexes. Algebra and Logic, 63(6), 410–438 (2025). https://doi.org/10.1007/s10469-025-09803-3
+
+I. A. Ivanov-Pogodaev, A. Ya. Kanel-Belov, Deterministic Coloring of a Family of Complexes. Fundamentalnaya i Prikladnaya Matematika, 24(2), 37–180 (2022).
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by AI for the earlier problem list, where this was problem 63 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by I. A. Ivanov-Pogodaev and A. Ya. Kanel-Belov (announced 2020; full proof in three papers, 2021–2025), answering a question of Shevrin and Sapir.
 - **Task:** An explicit infinite finitely presented nilsemigroup, ideally simpler, with fewer relations.

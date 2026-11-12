@@ -1,40 +1,27 @@
 # 15 · Kepler’s Theorem
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/015-keplers-theorem.md`](../problems_original/015-keplers-theorem.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Discrete geometry; sphere packing; computational geometry.
+- **Tracks:** Algebra/Number Theory, Geometry
 
-Kepler’s Theorem
-
-### Short description of problem (100 words or less)
+### Description
 
 Kepler’s theorem states that the maximum density of a packing of identical spheres in three-dimensional Euclidean space is π/√18. Although proved and formally verified, its proof remains difficult to understand. The original proof relies on reducing the problem to a nonlinear optimization problem in ~150 variables.  The final solution involved numerically solving around 100,000 auxiliary linear optimization problems. Using modular forms, Maryna Viazovska provided a relatively short proof of the analogous problem in dimension 8 and---with several collaborators---in dimension 24. Can participants develop a clearer exposition of a significant part of the argument, or investigate how its geometric ideas extend to related packing problems? Possible directions include visualizing local density bounds and geometric decompositions, simplifying selected arguments, or exploring analogous questions in higher dimensions or constrained regions.
-
-### Submitted Area
-
-Discrete geometry; sphere packing; computational geometry.
-
-### Proposed Tracks
-
-Algebra/Number Theory, Geometry
-
-### Reference/source material
-
-Thomas C. Hales, “A proof of the Kepler conjecture,” Annals of Mathematics 162 (2005), 1065–1185. Paper
-
-Thomas Hales et al., “A formal proof of the Kepler conjecture,” Forum of Mathematics, Pi 5 (2017), e2. Paper
 
 ### Desired outcome
 
 A modified proof the Kepler conjecture with less reliance on numerical verification (e.g. reduction to a simpler optimization problem) or a structurally simpler proof of the conjecture using different techniques altogether in the spirit of Maryna Viazovska's work in 8 dimensions.
 
+### References
+
+Thomas C. Hales, “A proof of the Kepler conjecture,” Annals of Mathematics 162 (2005), 1065–1185. Paper
+
+Thomas Hales et al., “A formal proof of the Kepler conjecture,” Forum of Mathematics, Pi 5 (2017), e2. Paper
+
 ## AI-generated notes
 
 <!-- status: Proved -->
-
-> Written by AI for the earlier problem list, where this was problem 15 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by T. C. Hales with S. P. Ferguson (announced 1998, published 2005–2006) using large computations; formal proof completed by the Flyspeck project (2014, published 2017).
 - **Task:** A proof with less computation or a Viazovska-style proof; or an exposition of part of the proof, or an extension to related packings.

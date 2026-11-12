@@ -1,32 +1,21 @@
 # 71 · Existence of the Core in Approval-Based Committee Elections
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/071-existence-of-the-core-in-approval-based-committee-elections.md`](../problems_original/071-existence-of-the-core-in-approval-based-committee-elections.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Voting Theory
+- **Tracks:** Computation/Applied Math
 
-Existence of the Core in Approval-Based Committee Elections
-
-### Short description of problem (100 words or less)
+### Description
 
 When voters approve candidates for a committee, it is always possible to choose representatives "fairly" (no group of voters can propose an alternative using only its proportional share of seats that every member of the group would prefer).
-
-### Submitted Area
-
-Voting Theory
-
-### Proposed Tracks
-
-Computation/Applied Math
-
-### Reference/source material
-
-https://arxiv.org/pdf/2609.11912
 
 ### Desired outcome
 
 Explain intuitively the idea behind "Harmonic Entropy" (section 5 of the paper)
+
+### References
+
+https://arxiv.org/pdf/2609.11912
 
 ### Reference links
 
@@ -35,8 +24,6 @@ Explain intuitively the idea behind "Harmonic Entropy" (section 5 of the paper)
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
-
-> Written by AI for the earlier problem list, where this was problem 71 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by P. Becker, M. Greger and D. Peters (2026 preprint, not yet refereed); open since Aziz et al. (2017).
 - **Task:** An intuitive explanation of harmonic entropy (Section 5 of the paper).

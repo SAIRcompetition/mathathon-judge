@@ -1,32 +1,21 @@
 # 4 · Unrepresentable finite lattice
 
-> Only the section **From the proposer** comes from the problem sheet; it is copied verbatim from [`problems_original/004-unrepresentable-finite-lattice.md`](../problems_original/004-unrepresentable-finite-lattice.md). Everything under **AI-generated notes** was written by AI and may contain errors.
-
 ## From the proposer
 
-### Title/name of problem
+- **Area:** Universal algebra
+- **Tracks:** Algebra/Number Theory
 
-Unrepresentable finite lattice
-
-### Short description of problem (100 words or less)
+### Description
 
 OpenAI solved the finite lattice representation problem by finding a finite lattice that is not isomorphic to the congruence lattice of any finite algebra. However, the minimum size of such a lattice is open. It is known that it is at least 8, and OpenAI gave some astronomical upper bounds. Can we narrow it down further?
-
-### Submitted Area
-
-Universal algebra
-
-### Proposed Tracks
-
-Algebra/Number Theory
-
-### Reference/source material
-
-https://github.com/openai/math/tree/main/preprints/A-Negative-Solution-to-the-Finite-Lattice-Representation-Problem-September-24-2026
 
 ### Desired outcome
 
 A specific upper bound like maybe n<=10^{10^10} with an understandable proof.
+
+### References
+
+https://github.com/openai/math/tree/main/preprints/A-Negative-Solution-to-the-Finite-Lattice-Representation-Problem-September-24-2026
 
 ### Reference links
 
@@ -35,8 +24,6 @@ A specific upper bound like maybe n<=10^{10^10} with an understandable proof.
 ## AI-generated notes
 
 <!-- status: Open -->
-
-> Written by AI for the earlier problem list, where this was problem 4 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** The minimum size is open; the existence of an unrepresentable finite lattice is claimed in two OpenAI preprints (September 2026) that are not yet refereed.
 - **Task:** An explicit, much smaller upper bound with an understandable proof.
