@@ -32,8 +32,8 @@ The overview reproduces the Mathathon website.
 
 ## Round 1 judging in brief
 
-- **Human judges** score each presentation and its Q&A on four dimensions: Correctness, Clarity, Motivation, and Interest. Each score is a whole number from 1 to 5, with a comment.
-- **A panel of five AI models** reviews each written report on the same four dimensions plus Attribution and Novelty.
+- **Human judges** score each presentation and its Q&A on six dimensions: Correctness, Clarity, Motivation, Interest, Attribution, and Novelty. Each score is a whole number from 1 to 5, with a comment.
+- **A panel of five AI models** reviews each written report on the same six dimensions.
 - **Lean is optional.** An automated check builds each Lean project and records what each declared result depends on. A Lean result is evidence for Correctness, and only for the claims it verifies.
 - **The judges decide the winners.**
 
