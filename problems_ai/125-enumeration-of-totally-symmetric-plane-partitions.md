@@ -36,9 +36,12 @@ https://www.sciencedirect.com/science/article/pii/S0001870885710237
 
 ### The result
 
-A plane partition in the $n\times n\times n$ box is a set $\pi\subseteq\{1,\dots,n\}^3$ of unit cubes that is an order ideal: if $(i,j,k)\in\pi$ and $(i',j',k')\le(i,j,k)$ coordinatewise, then $(i',j',k')\in\pi$. It is totally symmetric if it is invariant under all permutations of the coordinates. Stembridge proved that the number of totally symmetric plane partitions in the box is
+A plane partition in the $n\times n\times n$ box is a set $\pi\subseteq\lbrace1,\dots,n\rbrace^3$ of unit cubes that is an order ideal: if $(i,j,k)\in\pi$ and $(i',j',k')\le(i,j,k)$ coordinatewise, then $(i',j',k')\in\pi$. It is totally symmetric if it is invariant under all permutations of the coordinates. Stembridge proved that the number of totally symmetric plane partitions in the box is
+
 $$T(n)=\prod_{1\le i\le j\le k\le n}\frac{i+j+k-1}{i+j+k-2},$$
+
 so $T(1),\dots,T(4)=2,5,16,66$. The $q$-version (Koutschan–Kauers–Zeilberger) weights $\pi$ by $q^{|\pi/S_3|}$, the number of $S_3$-orbits of its cubes:
+
 $$\sum_{\pi}q^{|\pi/S_3|}=\prod_{1\le i\le j\le k\le n}\frac{1-q^{i+j+k-1}}{1-q^{i+j+k-2}}.$$
 
 ### How the known proof works
@@ -88,7 +91,7 @@ theorem stembridge_tspp_count (n : ℕ) :
       ∏ c ∈ sortedTriples n, ((coordinateSum c + 2 : ℚ) / (coordinateSum c + 1))
 ```
 
-`tspps n` is the set of totally symmetric plane partitions in the $n\times n\times n$ box, as order ideals of $\{0,\dots,n-1\}^3$ invariant under permutations of the coordinates; cells are numbered from 0, so the factor $(i+j+k-1)/(i+j+k-2)$ of Stembridge's formula becomes $(s+2)/(s+1)$, where $s$ is the coordinate sum of a cell of `sortedTriples n` ($i\le j\le k$). The problem asks for a more combinatorial proof of this count.
+`tspps n` is the set of totally symmetric plane partitions in the $n\times n\times n$ box, as order ideals of $\lbrace0,\dots,n-1\rbrace^3$ invariant under permutations of the coordinates; cells are numbered from 0, so the factor $(i+j+k-1)/(i+j+k-2)$ of Stembridge's formula becomes $(s+2)/(s+1)$, where $s$ is the coordinate sum of a cell of `sortedTriples n` ($i\le j\le k$). The problem asks for a more combinatorial proof of this count.
 
 Source: <https://github.com/leanprover/lean-eval/blob/85a88c37f80170d9f08651dc63ce6b81a8a48cb9/LeanEval/Combinatorics/QTSPP.lean> (Apache-2.0). Adapted: the definitions used here are copied unchanged from lean-eval's q-TSPP statement, and the theorem, Stembridge's count (the case $q=1$ after cancelling the factors $1-q$), is written by AI, since lean-eval states only the $q$-analogue.
 

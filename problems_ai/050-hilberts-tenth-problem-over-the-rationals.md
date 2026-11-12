@@ -38,7 +38,9 @@ https://github.com/openai/math/blob/main/preprints/Hilberts-tenth-problem-over-t
 ### The result
 
 OpenAI's Theorem 1.1: no algorithm decides, given $f\in\mathbb Z[X_1,\dots,X_n]$ with $n$ part of the input, whether
+
 $$f(x)=0\ \text{ for some } x\in\mathbb Q^n.$$
+
 Corollary 7.1: the problem has Turing degree $0'$, also for polynomials of degree at most four. The proof is a Turing reduction from the integer case (Davis–Putnam–Robinson 1961, Matiyasevich 1970). It gives no existential definition of $\mathbb Z$ in $\mathbb Q$, which Mazur's conjecture would rule out.
 
 ### How the known proof works
@@ -46,7 +48,7 @@ Corollary 7.1: the problem has Turing degree $0'$, also for polynomials of degre
 - Reduction (§2): for each $f$, an effective sequence of finite tests, each decided by finitely many rational-solvability queries, with $f$ having an integer zero if and only if every test succeeds.
 - If all tests succeed, compactness gives a model in an elementary extension of $\mathbb Q$; points $T_a=\eta(a)P$ on a rank-one elliptic curve over $\mathbb Q(\sqrt2)$ give an additive, injective index $\eta$ (§§2, 5).
 - Local comparisons via truncated elliptic logarithms at "contact primes" match ring values with their indices; a sieve-theoretic prime-pattern theorem supplies the primes (§§2, 6).
-- A five-point height estimate $h(s)\le H\,M(s)^c$ via abelian surfaces with quaternionic multiplication and modularity (§4), and a pole-parity condition via the 2-converse and the Cassels–Tate pairing (§3).
+- A five-point height estimate $h(s)\le H\thinspace M(s)^c$ via abelian surfaces with quaternionic multiplication and modularity (§4), and a pole-parity condition via the 2-converse and the Cassels–Tate pairing (§3).
 - Heights give $B^2\ll B$ for the largest root index $B$, so $f$ has an ordinary integer zero (§2.7).
 
 ### Background

@@ -35,21 +35,23 @@ Lemm, Sandvik and Wang, Existence of a Spectral Gap in the Affleck-Kennedy-Lieb-
 
 ### The result
 
-On the hexagonal lattice wrapped on an $m_1\times m_2$ torus, put a spin $3/2$ ($\mathbb C^4$) at each vertex and let $H=\sum_{\text{edges }jk}P^{(3)}_{jk}$, where $P^{(3)}_{jk}$ projects onto total spin $3$ of the two spins at the ends of the edge. $H\ge0$ is frustration-free (the AKLT valence-bond state lies in its kernel); its gap is $\gamma=\inf(\operatorname{spec}H\setminus\{0\})$.
+On the hexagonal lattice wrapped on an $m_1\times m_2$ torus, put a spin $3/2$ ($\mathbb C^4$) at each vertex and let $H=\sum_{\text{edges }jk}P^{(3)} _ {jk}$, where $P^{(3)} _ {jk}$ projects onto total spin $3$ of the two spins at the ends of the edge. $H\ge0$ is frustration-free (the AKLT valence-bond state lies in its kernel); its gap is $\gamma=\inf(\operatorname{spec}H\setminus\lbrace0\rbrace)$.
 
 Lemm–Sandvik–Wang: $\gamma\ge0.00646$ for all $m_1,m_2\ge12$. This follows from the finite-size criterion, valid for every $a\ge1$,
+
 $$\gamma\ \ge\ \frac{10+4a}{3a^2+2a+7}\Big(\gamma_F(a)-\frac{a^2-2a+3}{10+4a}\Big),$$
-where $\gamma_F(a)$ is the gap of $\sum_{e\in F}w_eP^{(3)}_e$ on a fixed 36-site patch $F$ with open boundary ($w_e=a$ on marked edges, $1$ elsewhere), and from the numerical input $\gamma_F(1.4)>0.145$ (threshold $\approx0.138$).
+
+where $\gamma_F(a)$ is the gap of $\sum_{e\in F}w_eP^{(3)} _ e$ on a fixed 36-site patch $F$ with open boundary ($w_e=a$ on marked edges, $1$ elsewhere), and from the numerical input $\gamma_F(1.4)\gt0.145$ (threshold $\approx0.138$).
 
 Pomata–Wei obtain a bound of about $0.0027$ by another criterion, and gaps for the square-octagon, star and cross lattices and the singly decorated honeycomb and square lattices. Kennedy, Lieb and Tasaki (1988) proved that the infinite-volume ground state is unique.
 
 ### How the known proof works
 
 - Since $H\ge0$ has a kernel, $\gamma\ge c$ if and only if $H^2\ge cH$.
-- Lemm–Sandvik–Wang (Supplemental Material, §I): $H^2=H+Q+R$, with $Q$ the anticommutators $\{P_e,P_{e'}\}$ of edges sharing a vertex and $R\ge0$; comparing with the sum of $H_F^2\ge\gamma_FH_F$ over all translates of the patch gives the criterion (Knabe's method with edge weights).
+- Lemm–Sandvik–Wang (Supplemental Material, §I): $H^2=H+Q+R$, with $Q$ the anticommutators $\lbrace P_e,P_{e'}\rbrace$ of edges sharing a vertex and $R\ge0$; comparing with the sum of $H_F^2\ge\gamma_FH_F$ over all translates of the patch gives the criterion (Knabe's method with edge weights).
 - Their numerics: SU(2)-symmetric DMRG on the patch, whose $3^{12}$-fold degenerate ground space (12 dangling effective spin-1 boundary spins) is projected out exactly; the smallest gap, extrapolated to $0.14599$, is in the total-spin sector $J=13$.
-- Pomata–Wei: replace edge terms by projections $\tilde H_i=1-\Pi_{\Gamma_i}$ onto the complements of the AKLT ground spaces of overlapping plaquette clusters $\Gamma_i$, show $H\ge\gamma_0\tilde H$ by diagonalizing smaller clusters, and bound $\{\tilde H_i,\tilde H_j\}\ge-\eta(\tilde H_i+\tilde H_j)$; with $z$ overlapping neighbours, $\tilde H^2\ge(1-z\eta)\tilde H$.
-- Here $1\pm\eta$ are the extreme non-integer eigenvalues of $\tilde H_i+\tilde H_j$, computed after reduction to dimension $2^{26}$; for the honeycomb $z=6$ and $\eta=0.1445\ldots<1/6$.
+- Pomata–Wei: replace edge terms by projections $\tilde H_i=1-\Pi_{\Gamma_i}$ onto the complements of the AKLT ground spaces of overlapping plaquette clusters $\Gamma_i$, show $H\ge\gamma_0\tilde H$ by diagonalizing smaller clusters, and bound $\lbrace\tilde H_i,\tilde H_j\rbrace\ge-\eta(\tilde H_i+\tilde H_j)$; with $z$ overlapping neighbours, $\tilde H^2\ge(1-z\eta)\tilde H$.
+- Here $1\pm\eta$ are the extreme non-integer eigenvalues of $\tilde H_i+\tilde H_j$, computed after reduction to dimension $2^{26}$; for the honeycomb $z=6$ and $\eta=0.1445\ldots\lt1/6$.
 
 ### Background
 
@@ -91,7 +93,7 @@ theorem aklt_hexagonal_spectral_gap :
       ∀ r ∈ spectrum ℝ (akltHamiltonian m₁ m₂), r = 0 ∨ γ ≤ r
 ```
 
-The AKLT Hamiltonian $\sum_{\text{edges }jk}P^{(3)}_{jk}$ on the hexagonal lattice wrapped on the $m_1\times m_2$ torus (the quotient by $m_1$ and $m_2$ times its two primitive translations) is a matrix indexed by spin-3/2 configurations, with $P^{(3)}$ written as a polynomial in the square of the total spin. The statement asks for a gap uniform in $m_1,m_2\ge N$ and fixes neither $\gamma$ nor $N$; Lemm–Sandvik–Wang report $\gamma\ge0.00646$ for $m_1,m_2\ge12$ on their tori.
+The AKLT Hamiltonian $\sum_{\text{edges }jk}P^{(3)} _ {jk}$ on the hexagonal lattice wrapped on the $m_1\times m_2$ torus (the quotient by $m_1$ and $m_2$ times its two primitive translations) is a matrix indexed by spin-3/2 configurations, with $P^{(3)}$ written as a polynomial in the square of the total spin. The statement asks for a gap uniform in $m_1,m_2\ge N$ and fixes neither $\gamma$ nor $N$; Lemm–Sandvik–Wang report $\gamma\ge0.00646$ for $m_1,m_2\ge12$ on their tori.
 
 The tori here are rhombic, while Lemm, Sandvik and Wang use rectangular ones, so this is not literally their theorem; their finite-size criterion is local and translation-invariant and is expected to apply to these tori once $N$ is large enough for the patch it uses to embed, but this has not been checked.
 

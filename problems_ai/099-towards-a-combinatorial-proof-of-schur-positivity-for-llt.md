@@ -36,34 +36,36 @@ And even if the full problem is too much for the mathathon, we can start with a 
 
 - The proposer's two descriptions of Roberts' family agree: in a unit interval graph the largest clique has one more vertex than the largest area value, so "maximum area at most 2" means "no $K_4$".
 - Reversing the vertex order does not change a unicellular LLT polynomial (Wang 2025, §2). A triangle with a tail is, up to reversal, the lollipop $P_2+K_3$ treated by Huh–Nam–Yoo, so the claimed failure of their rule presumably concerns applying the formula outside the family as stated, for example to the reversed graph. This, and the count of 11 failures among 14 K-chains with 8 vertices, were not checked here.
-- Wang (arXiv 2025, not refereed) gives a positive rule for two-headed melting lollipops $(K^{(k_1)}_{m_1})^{r}+P_{n+2}+K^{(k_2)}_{m_2}$ with $n\ge-1$, which include every chain of two cliques. The proposer's harder cases, a $K_4$ with something attached on both sides, need at least three cliques and are not covered.
+- Wang (arXiv 2025, not refereed) gives a positive rule for two-headed melting lollipops $(K^{(k_1)} _ {m_1})^{r}+P_{n+2}+K^{(k_2)} _ {m_2}$ with $n\ge-1$, which include every chain of two cliques. The proposer's harder cases, a $K_4$ with something attached on both sides, need at least three cliques and are not covered.
 - The Grojnowski–Haiman preprint is dated 22 May 2007 (Alexandersson–Sulzgruber cite it as 2006).
 
 ### The result
 
-A unit interval graph $G$ on $[n]$ is a graph such that $(i,j)\in E$ and $i\le k<l\le j$ imply $(k,l)\in E$. Its unicellular LLT polynomial is
-$$\mathrm{LLT}_G(x;q)=\sum_{\kappa:[n]\to\mathbb Z_{>0}}q^{\mathrm{asc}(\kappa)}\,x_{\kappa(1)}\cdots x_{\kappa(n)},\qquad \mathrm{asc}(\kappa)=\#\{(i,j)\in E:\ i<j,\ \kappa(i)<\kappa(j)\}.$$
-It is symmetric in $x$, and $\mathrm{LLT}_G=\sum_\lambda c_{G,\lambda}(q)\,s_\lambda$ with every $c_{G,\lambda}(q)\in\mathbb N[q]$ (Grojnowski–Haiman, for all LLT polynomials; Guay-Paquet for this case).
+A unit interval graph $G$ on $[n]$ is a graph such that $(i,j)\in E$ and $i\le k\lt l\le j$ imply $(k,l)\in E$. Its unicellular LLT polynomial is
+
+$$\mathrm{LLT} _ G(x;q)=\sum_{\kappa:[n]\to\mathbb Z_{\gt0}}q^{\mathrm{asc}(\kappa)}\thinspace x_{\kappa(1)}\cdots x_{\kappa(n)},\qquad \mathrm{asc}(\kappa)=\bigl\lvert\lbrace(i,j)\in E:\ i\lt j,\ \kappa(i)\lt\kappa(j)\rbrace\bigr\rvert.$$
+
+It is symmetric in $x$, and $\mathrm{LLT} _ G=\sum_\lambda c_{G,\lambda}(q)\thinspace s_\lambda$ with every $c_{G,\lambda}(q)\in\mathbb N[q]$ (Grojnowski–Haiman, for all LLT polynomials; Guay-Paquet for this case).
 
 Known positive rules:
 - Roberts (2014, Theorem 4.3): for tuples of skew shapes of "diameter" at most 3, which for unicellular LLT polynomials means graphs without $K_4$, $c_{G,\lambda}(q)=\sum_T q^{\mathrm{inv}(T)}$ over standard fillings $T$ whose shifted-content reading word is a standardized Yamanouchi word of shape $\lambda$. Remark 4.5 shows the formula fails for four mutually adjacent cells ($K_4$), at the coefficient of $q^2s_{22}$.
-- Huh–Nam–Yoo (2020): complete graphs, paths, lollipops and melting lollipops $P_{n+1}+K^{(k)}_m$, where $K^{(k)}_m$ is $K_m$ minus the edges $(1,m),\dots,(1,m-k+1)$. They also determine the coefficients of all hook shapes for every unit interval graph.
-- Wang (arXiv 2025): for (two-headed) melting lollipops, $\mathrm{LLT}_G=\sum_{\alpha}q^{b(\mathrm{set}(\alpha))}r_\alpha$, a sum of ribbon Schur functions $r_\alpha$ over compositions of $n$, with an explicit weight sequence $b$.
+- Huh–Nam–Yoo (2020): complete graphs, paths, lollipops and melting lollipops $P_{n+1}+K^{(k)} _ m$, where $K^{(k)} _ m$ is $K_m$ minus the edges $(1,m),\dots,(1,m-k+1)$. They also determine the coefficients of all hook shapes for every unit interval graph.
+- Wang (arXiv 2025): for (two-headed) melting lollipops, $\mathrm{LLT} _ G=\sum_{\alpha}q^{b(\mathrm{set}(\alpha))}r_\alpha$, a sum of ribbon Schur functions $r_\alpha$ over compositions of $n$, with an explicit weight sequence $b$.
 
-Signed formulas hold for every $G$: one via Egge–Loehr–Warrington, and $\mathrm{LLT}_G=\sum_\mu\sum_{\theta}(q-1)^{\mathrm{asc}(\theta)}K_{\mu',\lambda(\theta)}\,s_\mu$ over orientations $\theta$ of $G$ (Alexandersson–Sulzgruber, Corollary 6.2). The open problem is an explicit positive formula for all $G$.
+Signed formulas hold for every $G$: one via Egge–Loehr–Warrington, and $\mathrm{LLT} _ G=\sum_\mu\sum_{\theta}(q-1)^{\mathrm{asc}(\theta)}K_{\mu',\lambda(\theta)}\thinspace s_\mu$ over orientations $\theta$ of $G$ (Alexandersson–Sulzgruber, Corollary 6.2). The open problem is an explicit positive formula for all $G$.
 
 ### How the known proof works
 
 - Grojnowski–Haiman: LLT polynomials are expressed through the affine Hecke algebra of $GL_n$. Multiplication by a Kazhdan–Lusztig basis element has positive matrix coefficients in a "hybrid" basis (Theorem 3.2), which gives positivity of all LLT polynomials.
-- Guay-Paquet: $\mathrm{LLT}_G$ is the graded Frobenius series of the equivariant cohomology of a regular semisimple Hessenberg variety (Lemma 158 of his notes), so it is the character of a graded representation; the proof gives no description of the multiplicities.
-- Roberts: $\mathrm{LLT}_G$ is a sum of fundamental quasisymmetric functions over standard fillings. Elementary dual equivalences make these fillings into a graph; when every component satisfies Assaf's axioms (in Roberts' locally checkable form), it contributes one $q^{\mathrm{inv}}s_\lambda$.
-- Wang (following Huh–Nam–Yoo): for a path the colouring sum is directly $\sum_\alpha q^{a(\mathrm{set}(\alpha))}r_\alpha$. Lee's local linear relation $\mathrm{LLT}_a+q\,\mathrm{LLT}_{a''}=(1+q)\,\mathrm{LLT}_{a'}$ between area sequences, and $r_\alpha r_\beta=r_{\alpha\cdot\beta}+r_{\alpha\odot\beta}$ for disjoint unions, carry this form by induction to (two-headed) melting lollipops.
+- Guay-Paquet: $\mathrm{LLT} _ G$ is the graded Frobenius series of the equivariant cohomology of a regular semisimple Hessenberg variety (Lemma 158 of his notes), so it is the character of a graded representation; the proof gives no description of the multiplicities.
+- Roberts: $\mathrm{LLT} _ G$ is a sum of fundamental quasisymmetric functions over standard fillings. Elementary dual equivalences make these fillings into a graph; when every component satisfies Assaf's axioms (in Roberts' locally checkable form), it contributes one $q^{\mathrm{inv}}s_\lambda$.
+- Wang (following Huh–Nam–Yoo): for a path the colouring sum is directly $\sum_\alpha q^{a(\mathrm{set}(\alpha))}r_\alpha$. Lee's local linear relation $\mathrm{LLT} _ a+q\thinspace\mathrm{LLT} _ {a''}=(1+q)\thinspace\mathrm{LLT} _ {a'}$ between area sequences, and $r_\alpha r_\beta=r_{\alpha\cdot\beta}+r_{\alpha\odot\beta}$ for disjoint unions, carry this form by induction to (two-headed) melting lollipops.
 
 ### Background
 
 - LLT polynomials were introduced by Lascoux, Leclerc and Thibon (1997). They enter the Haglund–Haiman–Loehr formula for Macdonald polynomials and the shuffle theorem (Carlsson–Mellit 2018).
-- Unicellular LLT polynomials determine the chromatic quasisymmetric functions of unit interval graphs by a plethysm, $X_G(x;q)=(q-1)^{-n}\,\mathrm{LLT}_G[x(q-1);q]$ (Carlsson–Mellit, Prop. 3.5). The Shareshian–Wachs conjecture relating $X_G$ to Hessenberg varieties was proved by Brosnan–Chow (2018) and by Guay-Paquet.
-- In another basis the problem is solved: $\mathrm{LLT}_G(x;q+1)$ has an explicit expansion with nonnegative coefficients in elementary symmetric functions, counted by orientations of $G$ (D'Adderio 2020; Alexandersson–Sulzgruber 2022).
+- Unicellular LLT polynomials determine the chromatic quasisymmetric functions of unit interval graphs by a plethysm, $X_G(x;q)=(q-1)^{-n}\thinspace\mathrm{LLT} _ G[x(q-1);q]$ (Carlsson–Mellit, Prop. 3.5). The Shareshian–Wachs conjecture relating $X_G$ to Hessenberg varieties was proved by Brosnan–Chow (2018) and by Guay-Paquet.
+- In another basis the problem is solved: $\mathrm{LLT} _ G(x;q+1)$ has an explicit expansion with nonnegative coefficients in elementary symmetric functions, counted by orientations of $G$ (D'Adderio 2020; Alexandersson–Sulzgruber 2022).
 
 ### Where to start
 
@@ -99,7 +101,7 @@ theorem llt_schur_positive {n : ℕ} (G : SimpleGraph (Fin n)) (hG : IsUnitInter
       ∀ N : ℕ, lltPoly G N = ∑ μ ∈ S, C (c μ) * schurPoly N μ
 ```
 
-The LLT polynomial and the Schur polynomials (sums over semistandard fillings) are defined in $N$ variables with coefficients in $\mathbb N[q]$; one family of coefficients must work for every $N$, which is Schur positivity of the symmetric function $\mathrm{LLT}_G$. The problem asks for a combinatorial rule for the coefficients; this is the positivity theorem such a rule would explain.
+The LLT polynomial and the Schur polynomials (sums over semistandard fillings) are defined in $N$ variables with coefficients in $\mathbb N[q]$; one family of coefficients must work for every $N$, which is Schur positivity of the symmetric function $\mathrm{LLT} _ G$. The problem asks for a combinatorial rule for the coefficients; this is the positivity theorem such a rule would explain.
 
 Source: written by AI for Mathathon; not taken from an existing formalization.
 

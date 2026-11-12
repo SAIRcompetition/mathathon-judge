@@ -36,8 +36,10 @@ DOI. 10.1137/22M1505773
 ### The result
 
 Tollmien–Schlichting waves are the unstable normal modes of the linearized Navier–Stokes equations about a shear flow $U(z)$ at large Reynolds number $R$, studied since about 1930; they occur even when $U$ is stable for Euler, so the instability is due to viscosity. For a stream function $\psi=\phi(z)e^{i\alpha(y-ct)}$, $\phi$ solves the Orr–Sommerfeld equation
-$$\frac{1}{i\alpha R}\,(\partial_z^2-\alpha^2)^2\phi=(U-c)(\partial_z^2-\alpha^2)\phi-U''\phi.$$
-Grenier, Guo and Nguyen prove that every analytic channel profile symmetric about the centreline, with $U'(0)>0$ at the wall (e.g. plane Poiseuille flow), has, for $R\ge R_c$ and $\alpha$ between marginal curves $\alpha_{\rm low}\approx R^{-1/7}$ and $\alpha_{\rm up}\approx R^{-1/11}$, an unstable mode with growth rate $\alpha\operatorname{Im}c\approx(\alpha R)^{-1/2}$. The proposer asks for perturbation equations, energy estimates in $R$ and amplitude, and a comparison with observed transition.
+
+$$\frac{1}{i\alpha R}\thinspace(\partial_z^2-\alpha^2)^2\phi=(U-c)(\partial_z^2-\alpha^2)\phi-U''\phi.$$
+
+Grenier, Guo and Nguyen prove that every analytic channel profile symmetric about the centreline, with $U'(0)\gt0$ at the wall (e.g. plane Poiseuille flow), has, for $R\ge R_c$ and $\alpha$ between marginal curves $\alpha_{\rm low}\approx R^{-1/7}$ and $\alpha_{\rm up}\approx R^{-1/11}$, an unstable mode with growth rate $\alpha\operatorname{Im}c\approx(\alpha R)^{-1/2}$. The proposer asks for perturbation equations, energy estimates in $R$ and amplitude, and a comparison with observed transition.
 
 ### Background
 

@@ -37,34 +37,36 @@ Wesley Pegden. 2011. Highly nonrepetitive sequences: Winning strategies from the
 
 ### The result
 
-Let $\mathcal A$ be a finite family of events, $G$ a directed graph on $\mathcal A$ with out-neighbourhoods $\Gamma(A)$, and $\le$ a quasi-order (reflexive and transitive) on $\mathcal A$; write $C>A$ when $A\le C$ and $C\not\le A$.
+Let $\mathcal A$ be a finite family of events, $G$ a directed graph on $\mathcal A$ with out-neighbourhoods $\Gamma(A)$, and $\le$ a quasi-order (reflexive and transitive) on $\mathcal A$; write $C\gt A$ when $A\le C$ and $C\not\le A$.
 
 **Lefthanded Local Lemma** (Pegden 2011, Theorem 3.1). Assume
 
-(5) for every $A$, every $B\in\Gamma(A)$ and every $C\notin\Gamma(A)\cup\{A\}$: if $C>B$ then $C>A$;
+(5) for every $A$, every $B\in\Gamma(A)$ and every $C\notin\Gamma(A)\cup\lbrace A\rbrace$: if $C\gt B$ then $C\gt A$;
 
 (6) there are $x_A\in(0,1)$ such that
+
 $$\mathbb P\Big(A\ \Big|\ \bigcap_{C\in\mathcal C}\bar C\Big)\le x_A\prod_{B\in\Gamma(A)}(1-x_B)$$
-for every $A$ and every $\mathcal C\subseteq\mathcal A\setminus\Gamma(A)$ with no $C\in\mathcal C$ satisfying $C>A$.
 
-Then $\mathbb P\big(\bigcap_{A\in\mathcal A}\bar A\big)\ge\prod_{A}(1-x_A)>0$.
+for every $A$ and every $\mathcal C\subseteq\mathcal A\setminus\Gamma(A)$ with no $C\in\mathcal C$ satisfying $C\gt A$.
 
-If all events are equivalent, or pairwise incomparable, there is no $C>A$, (5) is vacuous and this is the lopsided Local Lemma of Erdős and Spencer. A linear order asks (6) only for families of events below $A$. Condition (5) says that a non-neighbour of $A$ lying strictly above some neighbour of $A$ must lie strictly above $A$.
+Then $\mathbb P\big(\bigcap_{A\in\mathcal A}\bar A\big)\ge\prod_{A}(1-x_A)\gt0$.
 
-Tree orders (Pegden 2012): a partial order is a tree order if the elements above any element form a chain. An undirected graph is lefthanded for a tree order if adjacent vertices are comparable and $w<u<v$, $v\sim w$ imply $v\sim u$. In this setting the lemma only needs $\mathbb P(A_v)\le x_v\prod_{u\sim v,\,u<v}(1-x_u)$. Lefthanded graphs are exactly the subtree intersection graphs, hence the chordal graphs (Gavril). Pegden's Theorem 1.10: on such a graph this condition is as strong as Shearer's necessary and sufficient condition. For example, for two adjacent events of probability $p$ the ordinary Local Lemma needs $p\le\frac14$, while the ordered version and Shearer's condition allow every $p<\frac12$.
+If all events are equivalent, or pairwise incomparable, there is no $C\gt A$, (5) is vacuous and this is the lopsided Local Lemma of Erdős and Spencer. A linear order asks (6) only for families of events below $A$. Condition (5) says that a non-neighbour of $A$ lying strictly above some neighbour of $A$ must lie strictly above $A$.
+
+Tree orders (Pegden 2012): a partial order is a tree order if the elements above any element form a chain. An undirected graph is lefthanded for a tree order if adjacent vertices are comparable and $w\lt u\lt v$, $v\sim w$ imply $v\sim u$. In this setting the lemma only needs $\mathbb P(A_v)\le x_v\prod_{u\sim v,\thinspace u\lt v}(1-x_u)$. Lefthanded graphs are exactly the subtree intersection graphs, hence the chordal graphs (Gavril). Pegden's Theorem 1.10: on such a graph this condition is as strong as Shearer's necessary and sufficient condition. For example, for two adjacent events of probability $p$ the ordinary Local Lemma needs $p\le\frac14$, while the ordered version and Shearer's condition allow every $p\lt\frac12$.
 
 The open question is what quasi-orders other than these buy in actual applications.
 
 ### How the known proof works
 
 - Pegden proves the stronger statement $\mathbb P(\bigcap_{\mathcal A_1}\bar A\mid\bigcap_{\mathcal A_2}\bar A)\ge\prod_{\mathcal A_1}(1-x_A)$ for disjoint $\mathcal A_1,\mathcal A_2$ with no element of $\mathcal A_2$ strictly above an element of $\mathcal A_1$, by induction on $|\mathcal A_1|+|\mathcal A_2|$, as in the standard proof of the Local Lemma.
-- $\mathcal A_1=\{A\}$: split $\mathcal A_2$ into neighbours $\mathcal B$ and non-neighbours $\mathcal C$ of $A$. Hypothesis (6) bounds $\mathbb P(A\mid\bigcap_{\mathcal C}\bar C)$. Condition (5) guarantees that no $C\in\mathcal C$ is strictly above any $B\in\mathcal B$, so the induction hypothesis bounds $\mathbb P(\bigcap_{\mathcal B}\bar B\mid\bigcap_{\mathcal C}\bar C)$ from below. This is the only use of (5).
+- $\mathcal A_1=\lbrace A\rbrace$: split $\mathcal A_2$ into neighbours $\mathcal B$ and non-neighbours $\mathcal C$ of $A$. Hypothesis (6) bounds $\mathbb P(A\mid\bigcap_{\mathcal C}\bar C)$. Condition (5) guarantees that no $C\in\mathcal C$ is strictly above any $B\in\mathcal B$, so the induction hypothesis bounds $\mathbb P(\bigcap_{\mathcal B}\bar B\mid\bigcap_{\mathcal C}\bar C)$ from below. This is the only use of (5).
 - $|\mathcal A_1|\ge2$: remove a maximal element of $\mathcal A_1$ and use the chain rule.
 - Why an order is needed (Pegden 2011, §2): in a game, Player 2's later moves may depend on whether a bad event already happened, so conditioning on later events gives no useful bound. Conditioning only on earlier events is harmless, because Player 1's later coin flips are independent of the past.
 
 ### Background
 
-- Pegden's applications: in the binary sequence game, Player 1 can force identical blocks of length $n>N_\varepsilon$ to be at distance more than $(2-\varepsilon)^{n/2}$, a game version of a theorem of Beck; there are similar results for adjacent blocks and pattern avoidance.
+- Pegden's applications: in the binary sequence game, Player 1 can force identical blocks of length $n\gt N_\varepsilon$ to be at distance more than $(2-\varepsilon)^{n/2}$, a game version of a theorem of Beck; there are similar results for adjacent blocks and pattern avoidance.
 - Grytczuk, Przybyło and Zhu used the lemma to show that the Thue choice number of paths is at most 4. Peres and Schlag used essentially the same special case for lacunary sequences.
 - Mourad (2024) gives constructive and computable versions, via a Moser–Tardos resampling algorithm in which a linear order sets the priority of events.
 
@@ -107,7 +109,7 @@ theorem lefthanded_local_lemma [Fintype ι] [Preorder ι] (P : Measure Ω)
       P.real ((⋂ a ∈ 𝒜₁, (A a)ᶜ) ∩ ⋂ a ∈ 𝒜₂, (A a)ᶜ)
 ```
 
-The problem asks to explain the quasi-order condition of Pegden's Lefthanded Local Lemma (Theorem 3.1), which is stated here in Pegden's convention: `Compatible Γ` is his condition (5), `LefthandedBound P A Γ x` is (6), and the conclusion is (7), with conditional probabilities multiplied out. Taking every event in $\mathcal A_1$ and $\mathcal A_2=\emptyset$ gives $P(\bigcap_A\bar A)\ge\prod_A(1-x_A)>0$.
+The problem asks to explain the quasi-order condition of Pegden's Lefthanded Local Lemma (Theorem 3.1), which is stated here in Pegden's convention: `Compatible Γ` is his condition (5), `LefthandedBound P A Γ x` is (6), and the conclusion is (7), with conditional probabilities multiplied out. Taking every event in $\mathcal A_1$ and $\mathcal A_2=\emptyset$ gives $P(\bigcap_A\bar A)\ge\prod_A(1-x_A)\gt0$.
 
 Source: written by AI for Mathathon; not taken from an existing formalization.
 

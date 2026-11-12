@@ -39,8 +39,8 @@ Monsky's theorem: a square cannot be dissected into an odd number of triangles o
 ### How the known proof works
 
 - Extend the 2-adic valuation $\nu_2$ from $\mathbb Q$ to $\mathbb R$; this is possible by the extension theorem for valuations, which uses the axiom of choice.
-- Colour $(x,y)$ with A if $\nu_2(x),\nu_2(y)>0$; with B if $\nu_2(y)\le 0$ and $\nu_2(x)>\nu_2(y)$; with C otherwise.
-- A triangle with vertices of all three colours has area with $\nu_2<0$; in particular no line meets all three colours.
+- Colour $(x,y)$ with A if $\nu_2(x),\nu_2(y)\gt0$; with B if $\nu_2(y)\le 0$ and $\nu_2(x)\gt\nu_2(y)$; with C otherwise.
+- A triangle with vertices of all three colours has area with $\nu_2\lt0$; in particular no line meets all three colours.
 - A Sperner-type parity count of edges shows that every dissection of the square contains such a triangle.
 - For $n$ odd every triangle has area $1/n$ and $\nu_2(1/n)=0$, a contradiction.
 

@@ -35,15 +35,18 @@ Thomas Hales et al., “A formal proof of the Kepler conjecture,” Forum of Mat
 ### The result
 
 The Kepler conjecture: no packing of congruent balls in $\mathbb R^3$ has density greater than that of the face-centred cubic packing,
+
 $$\delta_3=\frac{\pi}{\sqrt{18}}\approx 0.7405 .$$
+
 The hexagonal close packing and other layered packings reach the same density. Hales's proof, completed with Ferguson (Ann. of Math. 162, 2005; in full in Discrete Comput. Geom. 36, 2006), reduces the problem to a global optimization in nearly 150 variables settled by large computations; it was published without complete certification by the referees. The Flyspeck project then verified a revised proof in HOL Light and Isabelle.
 
-Dimensions 8 and 24 were solved (Viazovska; Cohn, Kumar, Miller, Radchenko and Viazovska; Ann. of Math. 185, 2017) with the Cohn–Elkies bound: if a Schwartz function $f$ on $\mathbb R^n$ has $f(0)=\hat f(0)>0$, $\hat f\ge 0$ and $f(x)\le 0$ for $|x|\ge r$, then every packing has density
+Dimensions 8 and 24 were solved (Viazovska; Cohn, Kumar, Miller, Radchenko and Viazovska; Ann. of Math. 185, 2017) with the Cohn–Elkies bound: if a Schwartz function $f$ on $\mathbb R^n$ has $f(0)=\hat f(0)\gt0$, $\hat f\ge 0$ and $f(x)\le 0$ for $|x|\ge r$, then every packing has density
+
 $$\Delta\le \operatorname{vol}B^n_{r/2}.$$
 
 ### How the known proof works
 
-- A partition of space (Marchal cells in the revised proof, decomposition stars in the original) and a cell cluster inequality reduce the problem to a local annulus inequality: for packings $V$ in $\{2\le\|x\|\le 2.52\}$, $\sum_{v\in V}(2.52-\|v\|)/0.52\le 12$, with at most 15 points.
+- A partition of space (Marchal cells in the revised proof, decomposition stars in the original) and a cell cluster inequality reduce the problem to a local annulus inequality: for packings $V$ in $\lbrace2\le\Vert x\Vert\le 2.52\rbrace$, $\sum_{v\in V}(2.52-\Vert v\Vert)/0.52\le 12$, with at most 15 points.
 - By compactness a counterexample can be taken in a special ("contravening") form, which gives a tame plane graph; a computer lists them all (18 762 in the revised proof).
 - For each graph, linear relaxations are shown infeasible (some $10^5$ linear programs in the original proof, 43 078 in the formal proof); several hundred nonlinear inequalities, split into more than 23 000 cases, are proved by interval arithmetic.
 - The many cases come from local maxima close to the global one; Boerdijk's pentagonal prism arrangement needed a separate paper.
@@ -51,7 +54,7 @@ $$\Delta\le \operatorname{vol}B^n_{r/2}.$$
 ### Background
 
 - Kepler stated the conjecture in 1611; it is part of Hilbert's 18th problem. L. Fejes Tóth (1953) proposed the first programme aimed at reducing the problem to finitely many variables.
-- Cohn notes that linear programming bounds do not seem sharp in any dimension $n>2$ other than 8 and 24; the three-point bound of Cohn, de Laat and Salmon (2022) gives 0.770271 in dimension 3.
+- Cohn notes that linear programming bounds do not seem sharp in any dimension $n\gt2$ other than 8 and 24; the three-point bound of Cohn, de Laat and Salmon (2022) gives 0.770271 in dimension 3.
 
 ### Where to start
 

@@ -47,13 +47,15 @@ All I know for the moment is the Lacey Acta paper is wrong.
 ### The claimed result
 
 Ferguson and Lacey claimed that the norm of the iterated commutator $[[M_b,H_1],H_2]$ on $L^2(\mathbb R^2)$, with $H_j$ the Hilbert transform in the $j$-th variable, is equivalent to the Chang–Fefferman product BMO norm of $b$ (Theorem 1.2; the upper bound is due to Ferguson and Sadosky). By duality this would give weak factorization (Corollary 1.3): there is $C$ such that every $h\in H^1$ can be written
-$$h=\sum_j f_j g_j,\qquad f_j,g_j\in H^2,\qquad \sum_j\|f_j\|_2\|g_j\|_2\le C\|h\|_1 .$$
+
+$$h=\sum_j f_j g_j,\qquad f_j,g_j\in H^2,\qquad \sum_j\Vert f_j\Vert_2\Vert g_j\Vert_2\le C\Vert h\Vert_1 .$$
+
 The proof is on a product of half-planes; a remark transfers it to the bidisc. The dual form is a Nehari theorem: the little Hankel operator $\Gamma_b f=P_{-,-}(bf)$ on $H^2(\mathbb D^2)$ is bounded iff $b$ is in product BMO.
 
 ### How the claimed proof works
 
 - Product BMO is characterized by wavelet coefficients over dyadic rectangles inside arbitrary open sets $U$ (Chang–Fefferman); the proof uses Meyer wavelets.
-- Normalize $\|b\|_{BMO}=1$, fix an extremal $U$, and use the Ferguson–Sadosky bound to assume the rectangular BMO norm of $b$ is small.
+- Normalize $\Vert b\Vert_{BMO}=1$, fix an extremal $U$, and use the Ferguson–Sadosky bound to assume the rectangular BMO norm of $b$ is small.
 - Split $b$ by rectangles inside $U$, inside a slight enlargement $V$ of $U$, and the rest; apply the commutator to the first piece.
 - The main term is bounded below by an algebraic identity and John–Nirenberg; the $V$-term is small because $|V|$ is close to $|U|$.
 - The remaining term is the hard part: a variant of Journé's lemma and a case analysis of wavelet tails control it.

@@ -120,6 +120,14 @@
   "why": "typo (verb form after 'I')"
  },
  {
+  "id": 37,
+  "field": "Reference/source material",
+  "old": "\"$ P= W $ via $\\mathcal {H} _2$.\"",
+  "new": "\"P=W via $\\mathcal{H}_2$.\"",
+  "count": 1,
+  "why": "as written the formulas do not render on GitHub (spaces inside the dollar signs, a quote before a formula)"
+ },
+ {
   "id": 46,
   "field": "Short description of problem (100 words or less)",
   "old": "Its also a proof by contradiction",

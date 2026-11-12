@@ -41,8 +41,10 @@ https://arxiv.org/abs/2205.13468
 
 ### The result
 
-For unrestricted partitions ($r=\infty$), Wright (Acta Math., 1934) proved $p_k(n)=M_k(n)\big(1+\sum_{j=1}^{R-1}Q_j(k)(k a_k)^{-j}(n+h_k)^{-j/(k+1)}+O(n^{-R/(k+1)})\big)$ for every $R$, where $M_k(n)$ is an explicit main term. O'Sullivan (2023) reproved this by the saddle-point method, with exact formulas for the $Q_j(k)$. For parts $\lfloor \ell^\kappa\rfloor$ ($\kappa>0$ real), each used at most $m$ times, Li and Zhou (Ramanujan J., 2024) proved an asymptotic equivalence with explicit constants; for $\kappa=k$, $m=r$ it reads
-$$P_{k,r}(n)\sim\frac{(\beta/n)^{\frac{2k+1}{2k+2}}}{\sqrt{2\pi(r+1)(1+\frac1k)\beta}}\,e^{(k+1)\beta^{k/(k+1)}n^{1/(k+1)}},\quad \beta=\big(1-(r+1)^{-1/k}\big)c_k,$$
+For unrestricted partitions ($r=\infty$), Wright (Acta Math., 1934) proved $p_k(n)=M_k(n)\big(1+\sum_{j=1}^{R-1}Q_j(k)(k a_k)^{-j}(n+h_k)^{-j/(k+1)}+O(n^{-R/(k+1)})\big)$ for every $R$, where $M_k(n)$ is an explicit main term. O'Sullivan (2023) reproved this by the saddle-point method, with exact formulas for the $Q_j(k)$. For parts $\lfloor \ell^\kappa\rfloor$ ($\kappa\gt0$ real), each used at most $m$ times, Li and Zhou (Ramanujan J., 2024) proved an asymptotic equivalence with explicit constants; for $\kappa=k$, $m=r$ it reads
+
+$$P_{k,r}(n)\sim\frac{(\beta/n)^{\frac{2k+1}{2k+2}}}{\sqrt{2\pi(r+1)(1+\frac1k)\beta}}\thinspace e^{(k+1)\beta^{k/(k+1)}n^{1/(k+1)}},\quad \beta=\big(1-(r+1)^{-1/k}\big)c_k,$$
+
 with $c_k=\tfrac1k\Gamma(1+\tfrac1k)\zeta(1+\tfrac1k)$. Wright's main term has $c_k$ in place of $\beta$ and the power $n^{-(3k+1)/(2k+2)}$. The theorem gives the leading term only.
 
 ### How the known proof works

@@ -35,23 +35,27 @@ A worked proof and reproducible demonstration showing exactly where microscopic 
 
 ### The result
 
-Let $X_n=\sum_{k<n}\xi(k)\in\mathbb R^d$, let $X^N$ interpolate $t\mapsto N^{-1/2}X_{Nt}$ linearly, and $\mathbb X^N_{s,t}=\int_s^t(X^N_r-X^N_s)\otimes dX^N_r$. A Brownian rough path with covariance $\Sigma$ and area correction $A\in\mathfrak{so}(d)$ is $(B,\mathbb B^{\rm Strat}+tA)$.
+Let $X_n=\sum_{k\lt n}\xi(k)\in\mathbb R^d$, let $X^N$ interpolate $t\mapsto N^{-1/2}X_{Nt}$ linearly, and $\mathbb X^N_{s,t}=\int_s^t(X^N_r-X^N_s)\otimes dX^N_r$. A Brownian rough path with covariance $\Sigma$ and area correction $A\in\mathfrak{so}(d)$ is $(B,\mathbb B^{\rm Strat}+tA)$.
 
 Theorem 1.1 (Lopusanschi–Simon): if the steps are driven by a hidden Markov chain $(R_n)$ (irreducible, positive recurrent; return time and steps with moments of all orders; steps conditionally independent given $(R_n)$, with law depending only on $R_n$, centred under the invariant law), then $(X^N,\mathbb X^N)$ converges in law in $C^{0,\alpha}$, $\alpha\in(\frac13,\frac12)$, to a Brownian rough path $(B,\mathbb B^{\rm Strat}+t\Gamma)$, where $\Gamma$ is the mean area swept per excursion of $(R_n)$ divided by the mean excursion length.
 
 For stationary steps with summable correlations $\Delta(n)=\mathbb E[\xi(0)\otimes\xi(n)]$, if the lifts converge, then (Engel–Friz–Orenshtein, Theorem 2)
-$$\Sigma=\Delta(0)+2\,\mathrm{Sym}\sum_{n\ge1}\Delta(n),\qquad A=\mathrm{Anti}\sum_{n\ge1}\Delta(n).$$
+
+$$\Sigma=\Delta(0)+2\thinspace\mathrm{Sym}\sum_{n\ge1}\Delta(n),\qquad A=\mathrm{Anti}\sum_{n\ge1}\Delta(n).$$
+
 The time-reversed sequence has correlations $\Delta(n)^{\top}$: same $\Sigma$, area correction $-A$.
 
-Example (Lopusanschi–Simon §1.3): $X_n=\sum_{k<n}e^{2\pi ik/L}U_k$ in $\mathbb C\cong\mathbb R^2$ ($L\ge3$, $U_k$ i.i.d. real, hidden chain $n\bmod L$) has $\Sigma=\tfrac12\operatorname{Var}(U)\,I$ and $|\Gamma^{12}|=\frac{\cos(\pi/L)}{4\sin(\pi/L)}(\mathbb EU)^2$.
+Example (Lopusanschi–Simon §1.3): $X_n=\sum_{k\lt n}e^{2\pi ik/L}U_k$ in $\mathbb C\cong\mathbb R^2$ ($L\ge3$, $U_k$ i.i.d. real, hidden chain $n\bmod L$) has $\Sigma=\tfrac12\operatorname{Var}(U)\thinspace I$ and $|\Gamma^{12}|=\frac{\cos(\pi/L)}{4\sin(\pi/L)}(\mathbb EU)^2$.
 
-By continuity of the Itô–Lyons map, solutions of $dY^N=f(Y^N)\,dX^N$ (columns $f_\beta\in C^3_b$) converge to the solution of
-$$dY=f(Y)\circ dB+\textstyle\sum_{\beta,\gamma}A^{\beta\gamma}(Df_\gamma\,f_\beta)(Y)\,dt$$
+By continuity of the Itô–Lyons map, solutions of $dY^N=f(Y^N)\thinspace dX^N$ (columns $f_\beta\in C^3_b$) converge to the solution of
+
+$$dY=f(Y)\circ dB+\textstyle\sum_{\beta,\gamma}A^{\beta\gamma}(Df_\gamma\thinspace f_\beta)(Y)\thinspace dt$$
+
 (Kelly–Melbourne, Theorem 9.1; index order as in Gottwald–Melbourne, (2.3)).
 
 ### How the known proof works
 
-- Proposition 2.1, Property 2.1: cut the hidden chain at its returns to a state $r_0$; the excursion increments in the step-2 group $G^2(V)$ are i.i.d., with first-level covariance $\Sigma\,\mathbb E T_1$ and second-level mean $\Gamma\,\mathbb E T_1$.
+- Proposition 2.1, Property 2.1: cut the hidden chain at its returns to a state $r_0$; the excursion increments in the step-2 group $G^2(V)$ are i.i.d., with first-level covariance $\Sigma\thinspace\mathbb E T_1$ and second-level mean $\Gamma\thinspace\mathbb E T_1$.
 - Theorem 2.1, Lemmas 2.1–2.2, Propositions 2.2–2.3: the Breuillard–Friz–Huesmann rough-path Donsker theorem on the excursion time scale, then renewal estimates back to the original time scale and tightness. §2.3, (45a)–(45b): $\Sigma$ and $\Gamma$ from the invariant law and the pair occupation measure of an excursion.
 
 ### Background

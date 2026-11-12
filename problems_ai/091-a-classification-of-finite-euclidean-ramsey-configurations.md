@@ -39,20 +39,22 @@ I. Leader, P. A. Russell, M. Walters, “Transitive sets in Euclidean Ramsey the
 
 ### The result
 
-A finite set $A$ in a Euclidean space is Ramsey if for every $r\ge2$ there is $D$ such that every map $c:\mathbb R^D\to\{1,\dots,r\}$, with no regularity assumed, is constant on some congruent copy of $A$ (same distances, same scale). Let $A=\{a_1,\dots,a_s\}\subset\mathbb R^d$, $s\ge2$, affinely span $\mathbb R^d$; put $p_i=(1,a_i)^{\mathsf T}$, let $F\subset\mathbb R$ be the field generated over $\mathbb Q$ by all coordinates, $B=F\otimes_{\mathbb Q}F$, and $m_F(x\otimes y)=xy$. Theorem 1.1: $A$ is Ramsey if and only if some $P\in\mathrm{Mat}_{d+1}(B)$, indexed by $0,\dots,d$, satisfies
-$$(p_i\otimes1)^{\mathsf T}P\,(1\otimes p_i)=0\quad(1\le i\le s),\qquad m_F(P_{\alpha\beta})=\delta_{\alpha\beta}\quad(1\le\alpha,\beta\le d).$$
-Applying $m_F$ to the first equations gives a sphere through the $a_i$ (Corollary 7.1). Consequences: subsets of finite transitive sets are Ramsey (Corollary 7.2), and so is every set of at most five concyclic points (Corollary 7.4); for transcendental $a\in(-1,1)$ the kite $K_a=\{(\pm1,0),(a,\pm\sqrt{1-a^2})\}$ is Ramsey and not subtransitive (Corollary 7.5), against the "only if" part of the Leader–Russell–Walters conjecture; nine circle points with algebraically independent parameters are not Ramsey (Proposition 7.6).
+A finite set $A$ in a Euclidean space is Ramsey if for every $r\ge2$ there is $D$ such that every map $c:\mathbb R^D\to\lbrace1,\dots,r\rbrace$, with no regularity assumed, is constant on some congruent copy of $A$ (same distances, same scale). Let $A=\lbrace a_1,\dots,a_s\rbrace\subset\mathbb R^d$, $s\ge2$, affinely span $\mathbb R^d$; put $p_i=(1,a_i)^{\mathsf T}$, let $F\subset\mathbb R$ be the field generated over $\mathbb Q$ by all coordinates, $B=F\otimes_{\mathbb Q}F$, and $m_F(x\otimes y)=xy$. Theorem 1.1: $A$ is Ramsey if and only if some $P\in\mathrm{Mat} _ {d+1}(B)$, indexed by $0,\dots,d$, satisfies
+
+$$(p_i\otimes1)^{\mathsf T}P\thinspace(1\otimes p_i)=0\quad(1\le i\le s),\qquad m_F(P_{\alpha\beta})=\delta_{\alpha\beta}\quad(1\le\alpha,\beta\le d).$$
+
+Applying $m_F$ to the first equations gives a sphere through the $a_i$ (Corollary 7.1). Consequences: subsets of finite transitive sets are Ramsey (Corollary 7.2), and so is every set of at most five concyclic points (Corollary 7.4); for transcendental $a\in(-1,1)$ the kite $K_a=\lbrace(\pm1,0),(a,\pm\sqrt{1-a^2})\rbrace$ is Ramsey and not subtransitive (Corollary 7.5), against the "only if" part of the Leader–Russell–Walters conjecture; nine circle points with algebraically independent parameters are not Ramsey (Proposition 7.6).
 
 ### How the known proof works
 
 - Necessity (Section 2): the criterion is equivalent to a rational tensor condition on affine functions on $\mathbb R^d$ (Proposition 2.1); if it fails, a $\mathbb Q$-linear functional gives one finite colouring avoiding $A$ in every dimension (Proposition 2.4).
-- Sufficiency (Sections 3–6): a lattice identity and Gaussian smoothing give, for arbitrarily small $q>0$, vectors $f_i,g_i$ with $\|f_i-f_j\|=\|a_i-a_j\|$, $\|g_i-g_j\|^2=q\|a_i-a_j\|^2$ and each $g_i$ a coordinate permutation of $f_i$ (Lemma 4.1). Permutation averaging turns them into two products of scaled copies of $A$ in a free group with equal endpoints and arbitrarily small weight ratio (Proposition 6.4), which force the Ramsey property via ultrafilters and the Hales–Jewett theorem (Proposition 5.1).
+- Sufficiency (Sections 3–6): a lattice identity and Gaussian smoothing give, for arbitrarily small $q\gt0$, vectors $f_i,g_i$ with $\Vert f_i-f_j\Vert=\Vert a_i-a_j\Vert$, $\Vert g_i-g_j\Vert^2=q\Vert a_i-a_j\Vert^2$ and each $g_i$ a coordinate permutation of $f_i$ (Lemma 4.1). Permutation averaging turns them into two products of scaled copies of $A$ in a free group with equal endpoints and arbitrarily small weight ratio (Proposition 6.4), which force the Ramsey property via ultrafilters and the Hales–Jewett theorem (Proposition 5.1).
 
 ### Background
 
 - Erdős et al. (1973, Theorem 13) proved that Ramsey sets are spherical; Graham (1994) conjectured the converse. Known Ramsey sets include bricks, simplices (Frankl–Rödl), sets with a soluble transitive symmetry group (Kříž) and regular polytopes (Cantwell).
 - Leader, Russell and Walters (2012, Conjecture A) proposed "Ramsey if and only if subtransitive"; in 2011 they conjectured that the kites $K_a$ are not Ramsey.
-- Pálvölgyi (arXiv, 2026; written by ChatGPT according to the paper, appendix unchecked by the author) gives a counterexample to Graham's conjecture: $\{(0,0)\}\cup\{(j,\pm\sqrt{j(2r-j)}):j=1,3,4\}$ is not Ramsey for transcendental $r>2$ (Theorem 1), via a derivation of $\mathbb R$ and Rado's theorem.
+- Pálvölgyi (arXiv, 2026; written by ChatGPT according to the paper, appendix unchecked by the author) gives a counterexample to Graham's conjecture: $\lbrace(0,0)\rbrace\cup\lbrace(j,\pm\sqrt{j(2r-j)}):j=1,3,4\rbrace$ is not Ramsey for transcendental $r\gt2$ (Theorem 1), via a derivation of $\mathbb R$ and Rado's theorem.
 
 ### Where to start
 

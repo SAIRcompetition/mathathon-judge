@@ -36,13 +36,15 @@ Visualizations that make the mechanism tangible: nodal sets of the constructed e
 ### Notes
 
 - The dimension-5 claim in the Description is a third preprint, not listed on the page (“Power-law violations of Yau's nodal upper bound”, on $S^4\times S^1$).
-- For Landis' conjecture the contrast has two axes: with complex potentials it fails already in the plane (Meshkov); with real potentials Logunov–Malinnikova–Nadirashvili–Nazarov (2020) proved, with 2D tools, that in the plane $|u(x)|\le\exp(-C|x|\log^{1/2}|x|)$ forces $u\equiv0$ (the conjecture asks for $\exp(-C|x|)$), and the higher-dimensional real case was open.
+- For Landis' conjecture the contrast has two axes: with complex potentials it fails already in the plane (Meshkov); with real potentials Logunov–Malinnikova–Nadirashvili–Nazarov (2020) proved, with 2D tools, that in the plane $|u(x)|\le\exp(-C|x|\log^{1/2}|x|)$ forces $u\equiv0$ (the conjecture asks for $\exp(-C|x|){}$), and the higher-dimensional real case was open.
 
 ### The result
 
 Yau's conjecture: on a closed smooth Riemannian $n$-manifold, every eigenfunction $-\Delta_g u=\lambda u$ satisfies
-$$c\sqrt\lambda\le \mathcal H^{n-1}(\{u=0\})\le C\sqrt\lambda .$$
-Donnelly–Fefferman proved both bounds for real-analytic metrics (Invent. Math. 1988). For smooth metrics Logunov proved the lower bound in every dimension and a polynomial upper bound $C\lambda^{\alpha}$ for $n\ge 3$ (Annals 2018). On surfaces the best upper bound was $C\lambda^{3/4-\beta}$ (Logunov–Malinnikova 2018). The OpenAI preprints claim: $C\sqrt\lambda$ on every smooth closed connected surface; smooth metrics on $S^3$ arbitrarily close to round and on $S^2\times T^2$ with $\mathcal H^{n-1}(\{u_j=0\})/\sqrt{\lambda_j}\to\infty$; and growth faster than $\lambda^{1/2+\varepsilon_0}$ in dimension 5.
+
+$$c\sqrt\lambda\le \mathcal H^{n-1}(\lbrace u=0\rbrace)\le C\sqrt\lambda .$$
+
+Donnelly–Fefferman proved both bounds for real-analytic metrics (Invent. Math. 1988). For smooth metrics Logunov proved the lower bound in every dimension and a polynomial upper bound $C\lambda^{\alpha}$ for $n\ge 3$ (Annals 2018). On surfaces the best upper bound was $C\lambda^{3/4-\beta}$ (Logunov–Malinnikova 2018). The OpenAI preprints claim: $C\sqrt\lambda$ on every smooth closed connected surface; smooth metrics on $S^3$ arbitrarily close to round and on $S^2\times T^2$ with $\mathcal H^{n-1}(\lbrace u_j=0\rbrace)/\sqrt{\lambda_j}\to\infty$; and growth faster than $\lambda^{1/2+\varepsilon_0}$ in dimension 5.
 
 ### How the known proof works
 
@@ -92,7 +94,7 @@ theorem Main [CompactSpace M] [ConnectedSpace M]
     [IsRiemannianManifold 𝓘(ℝ,Plane) M] : MainStatement M
 ```
 
-`MainStatement M` says that there is $C\ge0$ such that $\mathcal H^1(\{u=0\})\le C\sqrt\lambda$ for every $\lambda>0$ and every smooth $u\ne0$ with $-\Delta_gu=\lambda u$; $\mathcal H^1$ is taken for the distance of `M`, which `IsRiemannianManifold` makes the Riemannian distance.
+`MainStatement M` says that there is $C\ge0$ such that $\mathcal H^1(\lbrace u=0\rbrace)\le C\sqrt\lambda$ for every $\lambda\gt0$ and every smooth $u\ne0$ with $-\Delta_gu=\lambda u$; $\mathcal H^1$ is taken for the distance of `M`, which `IsRiemannianManifold` makes the Riemannian distance.
 
 Source: <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/NodalLength.lean> (copied unchanged).
 

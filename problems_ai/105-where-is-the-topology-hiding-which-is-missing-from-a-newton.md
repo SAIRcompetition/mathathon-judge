@@ -34,19 +34,25 @@ The output would ideally be a brief paper establishing a geometric explanation f
 
 ### The result
 
-Let $f=\sum a_{ij}x^iy^j\in\mathbb C\{x,y\}$ be convenient with $f(0)=0$, let $\Delta_f$ be the convex hull of $\bigcup_{a_{ij}\neq0}\big((i,j)+\mathbb R_{\ge0}^2\big)$ and $N_f$ its compact edges (the Newton polygon), meeting the axes at $(a,0)$ and $(0,b)$. With $A(\Delta)$ the area of $\mathbb R^2_{\ge0}\setminus\Delta$, set
-$$\mu(\Delta)=2A(\Delta)-a-b+1,\qquad r(\Delta)=\#(N\cap\mathbb Z^2)-1 .$$
-Kouchnirenko (1976): $\mu_0(f)\ge\mu(\Delta_f)$, with equality if $f$ is nondegenerate, i.e. for every edge $\gamma$ the face polynomial $f_\gamma=\sum_{(i,j)\in\gamma}a_{ij}x^iy^j$ has no critical point in $(\mathbb C^*)^2$.
+Let $f=\sum a_{ij}x^iy^j\in\mathbb C\lbrace x,y\rbrace$ be convenient with $f(0)=0$, let $\Delta_f$ be the convex hull of $\bigcup_{a_{ij}\neq0}\big((i,j)+\mathbb R_{\ge0}^2\big)$ and $N_f$ its compact edges (the Newton polygon), meeting the axes at $(a,0)$ and $(0,b)$. With $A(\Delta)$ the area of $\mathbb R^2_{\ge0}\setminus\Delta$, set
 
-Gwoździewicz (Theorem 4, Corollary 5): let $\pi\colon M\to\mathbb C^2$ be the local toric modification of a regular fan $W$ of the first quadrant, $\tilde\Delta_f$ the Newton diagram thickened relative to $W$, $C=\{f=0\}$ and $\tilde C$ its strict transform. Then
+$$\mu(\Delta)=2A(\Delta)-a-b+1,\qquad r(\Delta)=\lvert N\cap\mathbb Z^2\rvert-1 .$$
+
+Kouchnirenko (1976): $\mu_0(f)\ge\mu(\Delta_f)$, with equality if $f$ is nondegenerate, i.e. for every edge $\gamma$ the face polynomial $f_\gamma=\sum_{(i,j)\in\gamma}a_{ij}x^iy^j$ has no critical point in $(\mathbb C^{\ast})^2$.
+
+Gwoździewicz (Theorem 4, Corollary 5): let $\pi\colon M\to\mathbb C^2$ be the local toric modification of a regular fan $W$ of the first quadrant, $\tilde\Delta_f$ the Newton diagram thickened relative to $W$, $C=\lbrace f=0\rbrace$ and $\tilde C$ its strict transform. Then
+
 $$\mu_0(f)=\mu(\tilde\Delta_f)+r(\tilde\Delta_f)+\sum_{p\in\tilde C\cap\pi^{-1}(0)}\big(\mu_p(\tilde C)-1\big).$$
+
 If $W$ contains the inner normals of all edges of $N_f$, then $\tilde\Delta_f=\Delta_f$ and the correction term is
+
 $$\mu_0(f)-\mu(\Delta_f)=r(\Delta_f)+\sum_{p}\big(\mu_p(\tilde C)-1\big).$$
+
 In this case, for nondegenerate $f$, $\tilde C$ is smooth along $\pi^{-1}(0)$ (Remark 3) and the formula reduces to Kouchnirenko's. The same paper gives the analogous formula for the $\delta$-invariant and for intersection multiplicities; for a single blow-up they are Noether's formulas.
 
 ### How the known proof works
 
-- Every regular fan arises from $\{(1,0),(0,1)\}$ by repeatedly subdividing a cone $\sigma[\xi,\nu]$ into $\sigma[\xi,\xi+\nu]$ and $\sigma[\xi+\nu,\nu]$, so $\pi$ is a composition of point blow-ups (Lemma 6, Corollary 7, Theorem 8).
+- Every regular fan arises from $\lbrace(1,0),(0,1)\rbrace$ by repeatedly subdividing a cone $\sigma[\xi,\nu]$ into $\sigma[\xi,\xi+\nu]$ and $\sigma[\xi+\nu,\nu]$, so $\pi$ is a composition of point blow-ups (Lemma 6, Corollary 7, Theorem 8).
 - In the chart of $\sigma[\xi,\nu]$, $f\circ\varphi_\sigma=u^{l(\Delta,\xi)}v^{l(\Delta,\nu)}\tilde f(u,v)$ with $l(\Delta,\xi)=\min_{p\in\Delta}\langle p,\xi\rangle$, and the multiplicity of the strict transform at the centre of the next blow-up is $l(\Delta,\xi+\nu)-l(\Delta,\xi)-l(\Delta,\nu)$ (Lemma 9).
 - Noether's formula $\delta_0(C)=\frac{m_0(m_0-1)}2+\sum_p\delta_p(\tilde C)$ for one blow-up therefore shows, by induction on the number of cones, that $\delta_0(C)-\sum_p\delta_p(\tilde C)$ depends only on $\tilde\Delta_f$; evaluating it on a nondegenerate series with diagram $\tilde\Delta_f$ gives $\delta(\tilde\Delta_f)=\frac{\mu(\tilde\Delta_f)+r(\tilde\Delta_f)-1}2$.
 - Milnor's formula $2\delta_p=\mu_p+r_p-1$ ($r_p$ the number of branches), together with $r_0(C)=\sum_pr_p(\tilde C)$, turns this into the formula for $\mu_0$.
@@ -54,7 +60,7 @@ In this case, for nondegenerate $f$, $\tilde C$ is smooth along $\pi^{-1}(0)$ (R
 ### Background
 
 - The Milnor fibre of a reduced plane curve germ is a connected surface with $\mu$-dimensional first homology whose boundary is the link, with $r$ components; since $\mu=2\delta-r+1$, its genus is $\delta-r+1$.
-- When $W$ contains the edge normals, $\tilde C$ meets the exceptional curve $E_\gamma$ of an edge $\gamma$ only at points corresponding to the roots in $\mathbb C^*$ of $f_\gamma$ in the chart coordinate (read off from $f\circ\varphi_\sigma=u^{l(\Delta,\xi)}v^{l(\Delta,\nu)}\tilde f$), and $(\tilde C\cdot E_\gamma)_p$ is the multiplicity $m_p$ of the root; nondegeneracy means all roots are simple. As these roots number $r(\Delta_f)$ with multiplicity, the correction term equals $\sum_p(\mu_p(\tilde C)+m_p-1)$, a sum of nonnegative terms that vanish exactly at simple roots (our reformulation of Corollary 5).
+- When $W$ contains the edge normals, $\tilde C$ meets the exceptional curve $E_\gamma$ of an edge $\gamma$ only at points corresponding to the roots in $\mathbb C^{\ast}$ of $f_\gamma$ in the chart coordinate (read off from $f\circ\varphi_\sigma=u^{l(\Delta,\xi)}v^{l(\Delta,\nu)}\tilde f$), and $(\tilde C\cdot E_\gamma) _ p$ is the multiplicity $m_p$ of the root; nondegeneracy means all roots are simple. As these roots number $r(\Delta_f)$ with multiplicity, the correction term equals $\sum_p(\mu_p(\tilde C)+m_p-1)$, a sum of nonnegative terms that vanish exactly at simple roots (our reformulation of Corollary 5).
 - The Milnor number is upper semicontinuous, and in a deformation $f_s$ of an isolated singularity $\mu_0(f_0)=\sum_{q\in B}\mu_q(f_s)$ for small $s$ (conservation of the Milnor number). Perturbing the coefficients of $f$ on $N_f$ generically keeps the Newton polygon and makes $f_s$ nondegenerate for small $s\neq0$, so, on our reading, the correction term counts, with multiplicity, the critical points that leave the origin. Relating these to the points $p$ above is one way to read the problem.
 - Related tools for pictures: Varchenko's formula (1976) for the monodromy zeta function of a nondegenerate germ in terms of its Newton diagram, and A'Campo's real morsifications (1975), which show vanishing cycles of plane curve singularities.
 
@@ -89,4 +95,4 @@ This problem has no official Lean statement: it asks for a topological explanati
 
 #### Mathlib
 
-Mathlib has multivariate polynomials and power series with partial derivatives (`MvPolynomial.pderiv`, `MvPowerSeries.pderiv`), analytic functions (`AnalyticAt`), lengths and ranks of modules (`Module.length`, `Module.finrank`, enough to define $\dim\mathbb C\{x,y\}/(f_x,f_y)$ once the ring is available), convex hulls (`convexHull`) and Rees algebras (`reesAlgebra`). It has no ring of convergent power series, no Newton polygons, no Milnor number or Milnor fibration, and no blow-ups or toric modifications.
+Mathlib has multivariate polynomials and power series with partial derivatives (`MvPolynomial.pderiv`, `MvPowerSeries.pderiv`), analytic functions (`AnalyticAt`), lengths and ranks of modules (`Module.length`, `Module.finrank`, enough to define $\dim\mathbb C\lbrace x,y\rbrace/(f_x,f_y)$ once the ring is available), convex hulls (`convexHull`) and Rees algebras (`reesAlgebra`). It has no ring of convergent power series, no Newton polygons, no Milnor number or Milnor fibration, and no blow-ups or toric modifications.

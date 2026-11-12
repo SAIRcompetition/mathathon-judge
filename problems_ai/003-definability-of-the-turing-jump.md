@@ -34,8 +34,10 @@ Shore and Slaman, Defining the Turing Jump, Math. Res. Lett. 6 (1999), no. 5-6, 
 ### The result
 
 Shore and Slaman proved that the map $\mathbf{x}\mapsto\mathbf{x}'$ is first-order definable, without parameters, in the partial order $(\mathcal D_T,\le)$ of the Turing degrees (Math. Res. Lett. 1999, Theorem 1.15):
-$$\mathbf{x}'=\max\{\mathbf{z}\ :\ \neg\exists\,\mathbf{g}\ge\mathbf{x}\ \ (\mathbf{z}\vee\mathbf{g}=\mathbf{g}'')\}.$$
-The double jump used here is definable by Slaman–Woodin's coding of second-order arithmetic, so the formula is not a natural order-theoretic property. Shore (J. Math. Log. 2007) gave direct definitions: $\Pi_8$ for $\mathbf{w}=\mathbf{x}'$ with $\le,\vee,\wedge$, $\Pi_9$ with $\le$ alone. He also showed that no $\Sigma_2$ or $\Pi_2$ formula in $\le$ defines $\mathbf{L}_2=\{\mathbf{x}:\mathbf{x}''=\mathbf{0}''\}$.
+
+$$\mathbf{x}'=\max\lbrace\mathbf{z}\ :\ \neg\exists\thinspace\mathbf{g}\ge\mathbf{x}\ \ (\mathbf{z}\vee\mathbf{g}=\mathbf{g}'')\rbrace.$$
+
+The double jump used here is definable by Slaman–Woodin's coding of second-order arithmetic, so the formula is not a natural order-theoretic property. Shore (J. Math. Log. 2007) gave direct definitions: $\Pi_8$ for $\mathbf{w}=\mathbf{x}'$ with $\le,\vee,\wedge$, $\Pi_9$ with $\le$ alone. He also showed that no $\Sigma_2$ or $\Pi_2$ formula in $\le$ defines $\mathbf{L} _ 2=\lbrace\mathbf{x}:\mathbf{x}''=\mathbf{0}''\rbrace$.
 
 ### How the known proof works
 
@@ -49,7 +51,7 @@ The double jump used here is definable by Slaman–Woodin's coding of second-ord
 
 - The question goes back to Kleene and Post (1954). Jockusch and Shore defined the arithmetic degrees order-theoretically; Cooper's proposed definition of $\mathbf{0}'$ was shown not to work (Shore–Slaman, Theorem 1.11).
 - Shore (2007) replaced the Slaman–Woodin step by degree-theoretic coding.
-- OpenAI (2026, preprint, not yet refereed) proved that $\mathcal D_T$ is rigid, hence, by a Slaman–Woodin equivalence, biinterpretable with second-order arithmetic; by Slaman (2008, Question 6.4) this implies that "$\mathbf{y}$ is r.e. in $\mathbf{x}$" is definable.
+- OpenAI (2026, preprint, not yet refereed) proved that $\mathcal D_T$ is rigid, hence, by a Slaman–Woodin equivalence, biinterpretable with second-order arithmetic; by Slaman (2008, Question 6.4) this implies that the relation between degrees $\mathbf{x}$ and $\mathbf{y}$ saying that $\mathbf{y}$ is r.e. in $\mathbf{x}$ is definable.
 
 ### Where to start
 

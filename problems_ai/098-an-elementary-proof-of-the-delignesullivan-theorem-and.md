@@ -54,7 +54,7 @@ Deligne–Sullivan:
 - The holonomy $\rho:\pi_1(X)\to GL_n(\mathbb C)$ takes values in $GL_n(A)$ for a finitely generated ring $A\subset\mathbb C$. Choose maximal ideals $\mathfrak m_1,\mathfrak m_2$ of $A$ with finite residue fields of different characteristics. Let $\tilde X$ be the cover given by the kernel of reduction modulo $\mathfrak m_1$ and $\mathfrak m_2$.
 - Triviality of $\mathcal V$ on $\tilde X$ amounts to a map into a Postnikov stage of a Grassmannian being null-homotopic. The target is simply connected, so by Sullivan's Hasse principle for maps (Genetics, Theorem 3.1) it suffices that its $\ell$-adic completion is null for every prime $\ell$.
 - For each $\ell$, use the $\mathfrak m_i$ of residue characteristic $\ne\ell$. Realize $X$ as the complex points of a scheme over $\mathbb Z$ built from a triangulation, so that the bundle is algebraic over $A$. Comparing étale homotopy types in characteristic 0 and modulo $\mathfrak m_i$ identifies the completed map with that of the trivial representation, because $\rho\equiv1\bmod\mathfrak m_i$.
-- Remark (a) of the note: one prime $p$ suffices if $H_*(X)$ has no $p$-torsion and $2p\ge\dim X$, since Chern classes then detect the Postnikov stage after localizing at $p$.
+- Remark (a) of the note: one prime $p$ suffices if $H_{\ast}(X)$ has no $p$-torsion and $2p\ge\dim X$, since Chern classes then detect the Postnikov stage after localizing at $p$.
 
 ### Background
 

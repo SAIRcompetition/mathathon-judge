@@ -35,9 +35,9 @@ https://ai.vixra.org/pdf/2609.0080v1.pdf
 
 ### The result
 
-Irrationality criterion (Lai, Lemma 3.1): if for some $d\in\mathbb N$, $c>0$ and all large $n$ there are $Q_n\in\mathbb Z[X]$ of degree at most $dn$ with $0<|Q_n(\xi)|<e^{-cn^2}$, then $\xi\notin\mathbb Q$, since for $\xi=a/b$ the number $b^{dn}Q_n(a/b)$ would be a nonzero integer of absolute value less than 1.
+Irrationality criterion (Lai, Lemma 3.1): if for some $d\in\mathbb N$, $c\gt0$ and all large $n$ there are $Q_n\in\mathbb Z[X]$ of degree at most $dn$ with $0\lt|Q_n(\xi)|\lt e^{-cn^2}$, then $\xi\notin\mathbb Q$, since for $\xi=a/b$ the number $b^{dn}Q_n(a/b)$ would be a nonzero integer of absolute value less than 1.
 
-Fauzan (2026): such $Q_n$ exist for $\xi=\zeta(5)$ with $d=37$ and $c=139/5$, so $\zeta(5)\notin\mathbb Q$; moreover $|\zeta(5)-a/b|>b^{-260}$ for all large $b$.
+Fauzan (2026): such $Q_n$ exist for $\xi=\zeta(5)$ with $d=37$ and $c=139/5$, so $\zeta(5)\notin\mathbb Q$; moreover $|\zeta(5)-a/b|\gt b^{-260}$ for all large $b$.
 
 Earlier results: $\zeta(3)\notin\mathbb Q$ (Apéry 1978); infinitely many $\zeta(2k+1)$ are irrational (Rivoal 2000, Ball–Rivoal 2001); at least one of $\zeta(5),\zeta(7),\zeta(9),\zeta(11)$ is irrational (Zudilin 2001). The open question is whether $\zeta(7)$, or any odd zeta value beyond $\zeta(5)$, is irrational, and whether a Fauzan-type construction exists for it.
 
@@ -45,11 +45,11 @@ Earlier results: $\zeta(3)\notin\mathbb Q$ (Apéry 1978); infinitely many $\zeta
 
 Following Lai's exposition:
 
-- A positive weight: $w(y)=\frac{(2\pi)^4y^5}{12}\sum_{\ell\ge1}\ell^4e^{-2\pi\ell y}$ has rational even moments, $\int_0^\infty y^{2e}w(y)\,dy=\frac{(-1)^eB_{2e+2}(2e+3)(2e+4)(2e+5)}{24}$ (Euler's formula for $\zeta(2e+2)$), while a Hurwitz-zeta integral gives $\int_0^\infty\frac{w(y)}{y^2+j^2}\,dy=j^4\big(\zeta(5)-H^{(5)}_j\big)-\frac14+\frac1{2j}$, with $H^{(5)}_j=\sum_{v\le j}v^{-5}$.
-- Hence a functional $\mu_X$ on rational functions with simple poles at $t=-j^2$, defined by these formulas with $X$ in place of $\zeta(5)$, takes values in $\mathbb Q[X]$, and $\mu_{\zeta(5)}(R)=\int_0^\infty R(y^2)\,w(y)\,dy$.
-- With $D_m(t)=\prod_{j\le m}(t+j^2)$ and $K=40n$, $N=3n$, $h=37n$, the Hankel matrix $G_K(X)=\big[\mu_X\big(D_N(t)^6t^{i+j}/D_K(t)\big)\big]_{0\le i,j<h}$ has a determinant $\Delta_K(X)$ of degree $h$ with nonzero integer leading coefficient, and $G_K(\zeta(5))$ is positive definite, so $\Delta_K(\zeta(5))>0$.
+- A positive weight: $w(y)=\frac{(2\pi)^4y^5}{12}\sum_{\ell\ge1}\ell^4e^{-2\pi\ell y}$ has rational even moments, $\int_0^\infty y^{2e}w(y)\thinspace dy=\frac{(-1)^eB_{2e+2}(2e+3)(2e+4)(2e+5)}{24}$ (Euler's formula for $\zeta(2e+2){}$), while a Hurwitz-zeta integral gives $\int_0^\infty\frac{w(y)}{y^2+j^2}\thinspace dy=j^4\big(\zeta(5)-H^{(5)} _ j\big)-\frac14+\frac1{2j}$, with $H^{(5)} _ j=\sum_{v\le j}v^{-5}$.
+- Hence a functional $\mu_X$ on rational functions with simple poles at $t=-j^2$, defined by these formulas with $X$ in place of $\zeta(5)$, takes values in $\mathbb Q[X]$, and $\mu_{\zeta(5)}(R)=\int_0^\infty R(y^2)\thinspace w(y)\thinspace dy$.
+- With $D_m(t)=\prod_{j\le m}(t+j^2)$ and $K=40n$, $N=3n$, $h=37n$, the Hankel matrix $G_K(X)=\big[\mu_X\big(D_N(t)^6t^{i+j}/D_K(t)\big)\big] _ {0\le i,j\lt h}$ has a determinant $\Delta_K(X)$ of degree $h$ with nonzero integer leading coefficient, and $G_K(\zeta(5))$ is positive definite, so $\Delta_K(\zeta(5))\gt0$.
 - Arithmetic: an explicit normaliser $S_K$ makes $S_K\Delta_K\in\mathbb Z[X]$; $p$-adic estimates for each prime and the prime number theorem control $S_K$. Li Lai's summary of the key point: the determinant has much larger $p$-adic valuation than its entries suggest.
-- Size: the Andréief identity writes $\Delta_K(\zeta(5))$ as an $h$-fold integral, bounded by a logarithmic-energy estimate against a comparison measure made of sixteen arcsine pieces. Combined with the arithmetic bound, a final numerical inequality gives $0<S_K\Delta_K(\zeta(5))<e^{-cn^2}$; this is the step that fails in the $\zeta(7)$ attempt.
+- Size: the Andréief identity writes $\Delta_K(\zeta(5))$ as an $h$-fold integral, bounded by a logarithmic-energy estimate against a comparison measure made of sixteen arcsine pieces. Combined with the arithmetic bound, a final numerical inequality gives $0\lt S_K\Delta_K(\zeta(5))\lt e^{-cn^2}$; this is the step that fails in the $\zeta(7)$ attempt.
 
 ### Background
 

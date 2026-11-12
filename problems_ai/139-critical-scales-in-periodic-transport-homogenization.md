@@ -40,17 +40,21 @@ SADASHIGE ISHIDA AND HUGO LAVENANT. Sections 3 and 4 provide a quantitative dual
 ### Notes
 
 - The cited homogenization theorems are for fixed endpoints and are not quantitative. In the one-dimensional upper bound (Theorem 6.6, (6.5)) the error is additive and uniform in the endpoints, and the proof changes the endpoint profiles up to errors that vanish as $N\to\infty$ (the $1/N$ terms in (6.8)–(6.9)). So they say nothing about costs of order $h^2$, as the proposer notes.
-- "Tangent norms" presumably means the infinitesimal norm of the homogenized metric. On $\mathbb Z^d$-periodic graphs the limit of Riemannian discrete transport distances is a 2-Wasserstein distance for a Finsler norm that need not be Riemannian (Gladbach–Kopfer–Maas–Portinale 2023); in one dimension it is the constant multiple $\sqrt{c^\star}\,W_2$.
+- "Tangent norms" presumably means the infinitesimal norm of the homogenized metric. On $\mathbb Z^d$-periodic graphs the limit of Riemannian discrete transport distances is a 2-Wasserstein distance for a Finsler norm that need not be Riemannian (Gladbach–Kopfer–Maas–Portinale 2023); in one dimension it is the constant multiple $\sqrt{c^\star}\thinspace W_2$.
 - Reference 3 studies a different discretization (finite differences of the dual, Hamilton–Jacobi formulation on a space–time grid) and proves an $O(\sqrt h)$ rate for the transport cost.
 
 ### The problem
 
 One dimension (Gladbach–Kopfer–Maas–Portinale 2020). Fix a partition of the circle $S^1=\mathbb R/\mathbb Z$ into $K$ cells of lengths $\pi_k$ with points $z_k$ at distances $d_{k,k+1}$, and admissible means $\theta_{k,k+1}$ (concave, 1-homogeneous, $\theta(1,1)=1$), for instance the logarithmic mean. The periodic mesh $\mathcal T_N$ concatenates $N$ rescaled copies, so $h=1/N$. $W_N$ is the discrete Benamou–Brenier distance on $\mathcal T_N$ for the Markov chain with rates $R_{kk'}=1/(\pi_kd_{kk'})$ between neighbouring cells and mobilities $\theta_{k,k+1}$, and $P_N\mu$ assigns to each cell its $\mu$-mass. Theorem 1.1: for all $\mu_0,\mu_1\in\mathcal P(S^1)$,
-$$\lim_{N\to\infty}W_N(P_N\mu_0,P_N\mu_1)=\sqrt{c^\star(\theta,\mathcal T)}\,W_2(\mu_0,\mu_1),\qquad c^\star=\inf_{m\in\mathcal P(\mathcal T)}\sum_{k=0}^{K-1}\frac{d_{k,k+1}}{\theta_{k,k+1}\big(\frac{m_k}{\pi_k},\frac{m_{k+1}}{\pi_{k+1}}\big)},$$
+
+$$\lim_{N\to\infty}W_N(P_N\mu_0,P_N\mu_1)=\sqrt{c^\star(\theta,\mathcal T)}\thinspace W_2(\mu_0,\mu_1),\qquad c^\star=\inf_{m\in\mathcal P(\mathcal T)}\sum_{k=0}^{K-1}\frac{d_{k,k+1}}{\theta_{k,k+1}\big(\frac{m_k}{\pi_k},\frac{m_{k+1}}{\pi_{k+1}}\big)},$$
+
 with Gromov–Hausdorff convergence of the metric spaces. Moreover $c^\star\le1$, with equality under the balance condition of Gladbach–Kopfer–Maas (2020) (Section 4).
 
 $\mathbb Z^d$-periodic graphs (same authors, 2023): for convex lower semicontinuous edge energies, the rescaled discrete actions $\Gamma$-converge to a continuous action with density
-$$f_{\rm hom}(\rho,j)=\inf\Big\{\sum_{(x,y)\in E^Q}F_{xy}\big(m(x),m(y),J(x,y)\big)\Big\},$$
+
+$$f_{\rm hom}(\rho,j)=\inf\Big\lbrace\sum_{(x,y)\in E^Q}F_{xy}\big(m(x),m(y),J(x,y)\big)\Big\rbrace,$$
+
 the infimum over periodic $m\ge0$ of total mass $\rho$ per cell and periodic divergence-free $J$ with effective flux $j$ (Theorem 5.1). The minimal actions with fixed endpoints converge under superlinear growth (Theorem 5.10).
 
 The proposer's question: for endpoints whose separation $\delta$ is comparable to $h$, the static cell problem, which chooses the optimal microscopic profile $m$ freely, need not give the cost. One must also pay for creating and removing that profile, respect the exact projected endpoints, and account for internal circulation in each cell. The aim is the limit of $W_N^2/\delta^2$ for $\delta/h\to\lambda$, first on one-dimensional meshes with logarithmic-mean mobility, then on selected periodic graphs. The central test: can two meshes with the same infinitesimal norm and the same $c^\star$ (or $f_{\rm hom}$) have different critical limits?

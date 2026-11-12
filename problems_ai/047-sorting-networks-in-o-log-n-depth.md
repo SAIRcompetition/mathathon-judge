@@ -29,7 +29,9 @@ https://dl.acm.org/doi/abs/10.1145/800061.808726, https://users.encs.concordia.c
 ### The result
 
 A comparator network on $n$ wires is a sequence of layers of disjoint comparators; its depth is the number of layers, and it sorts if every input leaves sorted. Ajtai, Komlós and Szemerédi (STOC 1983; Combinatorica 3 (1983), 1–19) proved that there is a constant $C$ such that for every $n$ some sorting network on $n$ wires has
+
 $$\text{depth}\le C\log_2 n\quad\text{and size } O(n\log n).$$
+
 The constant is very large: Paterson (1990) brought it below 6100, and Chvátal (1992) obtained depth at most $1830\log_2 N-58657$ for $N\ge 2^{78}$, from a later AKS proposal.
 
 ### How the known proof works

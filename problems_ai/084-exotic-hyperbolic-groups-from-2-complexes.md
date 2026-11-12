@@ -35,7 +35,7 @@ An expository write-up; code to generate and visualize(?) 2-complexes from the c
 
 ### The result
 
-A group is residually finite if every nonidentity element survives in a finite quotient, and sofic if for every finite $F\ni1$ and $\eta>0$ some $\phi\colon F\to\mathrm{Sym}(n)$ with $\phi(1)=\mathrm{id}$ has $\phi(a)\phi(b)=\phi(ab)$ off at most $\eta n$ points and each $\phi(a)$, $a\ne1$, fixing fewer than $\eta n$ points. An action is geometric if it is proper, cocompact and isometric.
+A group is residually finite if every nonidentity element survives in a finite quotient, and sofic if for every finite $F\ni1$ and $\eta\gt0$ some $\phi\colon F\to\mathrm{Sym}(n)$ with $\phi(1)=\mathrm{id}$ has $\phi(a)\phi(b)=\phi(ab)$ off at most $\eta n$ points and each $\phi(a)$, $a\ne1$, fixing fewer than $\eta n$ points. An action is geometric if it is proper, cocompact and isometric.
 1. OpenAI, Theorem 1.1: some torsion-free word-hyperbolic group, the fundamental group of a finite Euclidean triangle complex, is not residually finite.
 2. OpenAI, Theorem 1.1: some finite connected 2-dimensional aspherical simplicial complex $K$ has a linear disk-filling inequality (so $\pi_1K$ is word-hyperbolic), $\pi_1K$ has no geometric action on a proper complete CAT(0) space, and no finite complex homotopy equivalent to $K$ has a locally CAT(0) metric.
 3. Sandhu–Thom, Theorem A: some finite connected triangle complex $K$ with a locally CAT(−1) metric has torsion-free, word-hyperbolic, non-sofic $\pi_1K$; hence some nontrivial torsion-free hyperbolic group has no nontrivial sofic quotient (Corollary B).

@@ -38,13 +38,15 @@ Suggested outcome: interactive code packages illustrating worked examples and/or
 
 ### The result
 
-The exponent $\omega$ of matrix multiplication over $\mathbb C$ is the infimum of $\tau$ such that $n\times n$ matrices can be multiplied with $O(n^{\tau})$ arithmetic operations. OpenAI ("An upper bound of 9/4 for the matrix multiplication exponent", 2 October 2026) proved $\omega\le9/4$ with Strassen's asymptotic spectrum, without constructing the algorithms. Pass (Theorem 1.1) gives, for every $\gamma>0$, an explicit recursive algorithm multiplying integer $n\times n$ matrices with
+The exponent $\omega$ of matrix multiplication over $\mathbb C$ is the infimum of $\tau$ such that $n\times n$ matrices can be multiplied with $O(n^{\tau})$ arithmetic operations. OpenAI ("An upper bound of 9/4 for the matrix multiplication exponent", 2 October 2026) proved $\omega\le9/4$ with Strassen's asymptotic spectrum, without constructing the algorithms. Pass (Theorem 1.1) gives, for every $\gamma\gt0$, an explicit recursive algorithm multiplying integer $n\times n$ matrices with
+
 $$O(n^{9/4+\gamma})\ \text{integer operations},$$
+
 from a fixed Strassen-style identity: a $v\times v$ block product computed with $r$ block multiplications, $\log_v r$ close to $9/4$. For $B$-bit inputs, intermediate integers have $O(B+\log n)$ bits (Section 4.3). The constants are enormous.
 
 ### How the known proof works
 
-- Start from OpenAI's three-for-one polynomial degeneration and generalize it to a same-left $(c+2)$-for-$c$ packing modulo a formal $\varepsilon$: $c+1$ full products and one "middle product" from $c$ multiplications, via a telescoping encoding $E_j=P_j-zP_{j+1}+\varepsilon z^bq_{j-1}$.
+- Start from OpenAI's three-for-one polynomial degeneration and generalize it to a same-left $(c+2)\text{-for-}c$ packing modulo a formal $\varepsilon$: $c+1$ full products and one "middle product" from $c$ multiplications, via a telescoping encoding $E_j=P_j-zP_{j+1}+\varepsilon z^bq_{j-1}$.
 - Exchanging roles (transposition principle) turns full products into middle products, giving a dual packing.
 - Using the primal packing in $d$ variables and the dual in $d$ more gives $(c+2)^{2d}$ outputs from $c^{2d}$ products; keeping only "balanced" outputs costs a factor at most $d+1$.
 - Interpolation at points $i+\varepsilon j$ removes the same-left restriction; tensoring with two role-exchanged copies reduces all three matrix dimensions, and alternating rounds grow both polynomial lengths.
@@ -52,8 +54,8 @@ from a fixed Strassen-style identity: a $v\times v$ block product computed with 
 
 ### Background
 
-- Strassen (1969) gave $\omega<2.81$; laser-method refinements reached $\omega<2.371339$ (Alman, Duan, Vassilevska Williams, Xu, Xu, Zhou) and $\omega<2.371177$ (Dupont et al., 2026).
-- OpenAI first proved $\omega<2.258$ (September 2026), then $9/4$; it also reports $\omega<2.371054886006746$ over every field.
+- Strassen (1969) gave $\omega\lt2.81$; laser-method refinements reached $\omega\lt2.371339$ (Alman, Duan, Vassilevska Williams, Xu, Xu, Zhou) and $\omega\lt2.371177$ (Dupont et al., 2026).
+- OpenAI first proved $\omega\lt2.258$ (September 2026), then $9/4$; it also reports $\omega\lt2.371054886006746$ over every field.
 - Demmel, Dumitriu, Holtz and Kleinberg (2007) gave a forward error analysis for a large class of recursive algorithms and showed that the exponent $\omega$ can be achieved by numerically stable algorithms.
 - Bläser's self-contained survey (2013) gives the history of fast matrix multiplication algorithms, with tensors treated concretely.
 

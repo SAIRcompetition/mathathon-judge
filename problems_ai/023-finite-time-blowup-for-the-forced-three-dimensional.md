@@ -32,23 +32,25 @@ A human-readable account of the blowup construction that identifies the mechanis
 
 ### The result
 
-Theorem 1.1: for every $\nu>0$ there exist a force $f\in C_c^\infty(\mathbb R^3\times(0,\infty);\mathbb R^3)$, a compact set $K$, and smooth $u,p$ on $\mathbb R^3\times[0,1)$ with
+Theorem 1.1: for every $\nu\gt0$ there exist a force $f\in C_c^\infty(\mathbb R^3\times(0,\infty);\mathbb R^3)$, a compact set $K$, and smooth $u,p$ on $\mathbb R^3\times[0,1)$ with
+
 $$\partial_t u+(u\cdot\nabla)u-\nu\Delta u+\nabla p=f,\qquad \nabla\cdot u=0,\qquad u(\cdot,0)=0,$$
-supports in $K$, $\sup_{t<1}\|u(t)\|_{L^2}<\infty$ and $\limsup_{t\uparrow1}\|u(t)\|_{L^\infty}=\infty$. So no global smooth solution with bounded energy exists: alternative (C) of Fefferman's Clay statement, and by compact support alternative (D) on $\mathbb T^3$ (Corollary 10.6).
+
+supports in $K$, $\sup_{t\lt1}\Vert u(t)\Vert_{L^2}\lt\infty$ and $\limsup_{t\uparrow1}\Vert u(t)\Vert_{L^\infty}=\infty$. So no global smooth solution with bounded energy exists: alternative (C) of Fefferman's Clay statement, and by compact support alternative (D) on $\mathbb T^3$ (Corollary 10.6).
 
 ### How the known proof works
 
-- Leading field (§4, App. A–B): an axisymmetric, asymptotically self-similar vortex core of radius $\asymp\tau^{1/2}$, height $\asymp\tau^{1/2-h}$ and swirl $\asymp\tau^{-1/2-h}$ ($\tau=1-t$, $0<h<1/100$), joined to an exact "heat exterior".
+- Leading field (§4, App. A–B): an axisymmetric, asymptotically self-similar vortex core of radius $\asymp\tau^{1/2}$, height $\asymp\tau^{1/2-h}$ and swirl $\asymp\tau^{-1/2-h}$ ($\tau=1-t$, $0\lt h\lt1/100$), joined to an exact "heat exterior".
 - Background stress (§§4–5, App. C): the residual is the divergence of an annular stress $T$ lying in the cone spanned by the fluxes of two wave families.
 - Pulses (§§6–7): ring-shaped oscillations, seeded by an exponentially small force and amplified by the shear, on ever finer scales; their averaged quadratic momentum flux cancels $T$.
 - Corrections (§§8–9): a cycle of wave, mean-flow and radial-moment corrections makes the residual flat at the singular point.
-- Completion (§10): cut-offs, the force defined as the residual and shown smooth through $t=1$, the energy bound ($h<1/6$), uniqueness. Most of the length is in §§4–9 (pp. 24–116).
+- Completion (§10): cut-offs, the force defined as the residual and shown smooth through $t=1$, the energy bound ($h\lt1/6$), uniqueness. Most of the length is in §§4–9 (pp. 24–116).
 
 ### Background
 
 - Caffarelli–Kohn–Nirenberg (1982) allow isolated singular points; here the only singularity is the origin at $t=1$. Escauriaza–Seregin–Šverák (2003) proved regularity for the unforced problem when $u\in L^\infty_tL^3_x$. Tao (2016) proved blowup for an averaged equation.
 - Córdoba–Martínez-Zoroa (forced Euler, 2023) and Córdoba–Martínez-Zoroa–Zheng (hypodissipative Navier–Stokes, ARMA 2026) amplify vorticity across scales by larger-scale strain; here the pulses instead supply a mean momentum flux to a collapsing vortex (§1.1).
-- Follow-up: Cao–Chi–Nie (arXiv:2609.10262) show such blowup forces are dense in a relative $L^1_tH^s_x$ topology exactly when $s<1/2$.
+- Follow-up: Cao–Chi–Nie (arXiv:2609.10262) show such blowup forces are dense in a relative $L^1_tH^s_x$ topology exactly when $s\lt1/2$.
 
 ### Where to start
 

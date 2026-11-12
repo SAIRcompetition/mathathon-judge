@@ -28,7 +28,7 @@ I know Marc Levine is trying to read the proof. Open AI's approach is a strategy
 
 - **Status:** Claimed proved by an OpenAI preprint (September 2026), not yet refereed; known before for non-general-type surfaces (Bloch–Kas–Lieberman 1976) and for many families.
 - **Task:** Check and explain the claimed proof; compare with classical methods.
-- **Key reference:** [OpenAI, “Bloch's conjecture for surfaces with $p_g=0$” (preprint, 2026)](https://github.com/openai/math/blob/main/preprints/Blochs-Conjecture-for-Surfaces-with-pg-equals-q-equals-0-September-24-2026/paper.pdf)
+- **Key reference:** [OpenAI, “Bloch's conjecture for surfaces with p<sub>g</sub>=0” (preprint, 2026)](https://github.com/openai/math/blob/main/preprints/Blochs-Conjecture-for-Surfaces-with-pg-equals-q-equals-0-September-24-2026/paper.pdf)
 - **Lean:** Official statement.
 
 ### Notes
@@ -37,24 +37,26 @@ I know Marc Levine is trying to read the proof. Open AI's approach is a strategy
 
 ### The result
 
-Let $S$ be a smooth connected projective complex surface with $p_g(S)=h^0(\omega_S)=0$, and $\mathrm{CH}_0(S)^0$ the group of degree-zero zero-cycles modulo rational equivalence (integral coefficients). Bloch's conjecture: the Albanese map $\mathrm{alb}_S\colon\mathrm{CH}_0(S)^0\to\mathrm{Alb}(S)(\mathbb C)$ is an isomorphism. Mumford (1969) showed that $p_g>0$ makes $\mathrm{CH}_0$ infinite-dimensional; Bloch's conjecture is the converse. For surfaces of general type $p_g=0$ forces $q=0$, so the open case was
-$$p_g=q=0\ \Longrightarrow\ \deg\colon \mathrm{CH}_0(S)\xrightarrow{\ \sim\ }\mathbb Z .$$
+Let $S$ be a smooth connected projective complex surface with $p_g(S)=h^0(\omega_S)=0$, and $\mathrm{CH} _ 0(S)^0$ the group of degree-zero zero-cycles modulo rational equivalence (integral coefficients). Bloch's conjecture: the Albanese map $\mathrm{alb} _ S\colon\mathrm{CH} _ 0(S)^0\to\mathrm{Alb}(S)(\mathbb C)$ is an isomorphism. Mumford (1969) showed that $p_g\gt0$ makes $\mathrm{CH} _ 0$ infinite-dimensional; Bloch's conjecture is the converse. For surfaces of general type $p_g=0$ forces $q=0$, so the open case was
+
+$$p_g=q=0\ \Longrightarrow\ \deg\colon \mathrm{CH} _ 0(S)\xrightarrow{\ \sim\ }\mathbb Z .$$
+
 The OpenAI preprint (September 2026) claims this with no minimality, fundamental-group or construction hypothesis, and hence the full conjecture by Bloch–Kas–Lieberman.
 
 ### How the known proof works
 
-- Goal: a relation $0=c[\Delta_X]+\Gamma$ in $\mathrm{CH}^2(X\times X)_{\mathbb Q}$ with $c\ne0$ and $\Gamma$ a sum of external products, on a minimal model or a point blow-up $X$; this gives $\mathrm{CH}_0(X)^0\otimes\mathbb Q=0$.
+- Goal: a relation $0=c[\Delta_X]+\Gamma$ in $\mathrm{CH}^2(X\times X) _ {\mathbb Q}$ with $c\ne0$ and $\Gamma$ a sum of external products, on a minimal model or a point blow-up $X$; this gives $\mathrm{CH} _ 0(X)^0\otimes\mathbb Q=0$.
 - The relation comes from torus localization on a Quot scheme of rank-zero quotients of $L_1\oplus L_2$ with fixed determinant, with a derived determinant constraint and obstruction theory (§§3–4).
 - An Ellingsrud–Göttsche–Lehn type recursion on Hilbert schemes, keeping two surface factors, computes the class on $X\times X$ and the diagonal coefficient $c$ (§5).
-- $c\neq0$: for $K^2\le 8$ a lattice class $\alpha$ with $\alpha^2<0$ gives $0=c\alpha^2+\sum(\alpha H)^2$ (§6); for $K^2=9$ a comparison with the Cartwright–Steger surface ($p_g=q=1$) gives $c>0$ (§7).
+- $c\neq0$: for $K^2\le 8$ a lattice class $\alpha$ with $\alpha^2\lt0$ gives $0=c\alpha^2+\sum(\alpha H)^2$ (§6); for $K^2=9$ a comparison with the Cartwright–Steger surface ($p_g=q=1$) gives $c\gt0$ (§7).
 - Roitman's torsion theorem and $q=0$ then remove torsion, giving the integral statement.
 
 ### Background
 
 - Proved cases before 2025: all surfaces not of general type (Bloch–Kas–Lieberman); surfaces rationally dominated by a product of curves (Kimura's finite-dimensional motives); group-action methods (Inose–Mizukami 1979, Barlow 1985, Bauer 2014, Pedrini–Weibel 2016); general Catanese and Barlow surfaces (Voisin, J. Differential Geom. 2014), via families and correspondences.
 - Controlling zero-cycles through relations for the diagonal goes back to Bloch–Srinivas (1983).
-- The preprint also derives that $h(S)_{\mathbb Q}$ is Kimura finite-dimensional with $t_2(S)=0$, and pure Tate when $q=0$.
-- General form (Voisin's Conjecture 0.1): for a surface $X$ and a correspondence $\Gamma\in\mathrm{CH}^2(Y\times X)$ with $[\Gamma]^*=0$ on $H^{2,0}(X)$, $\Gamma_*$ vanishes on the Albanese kernel $\mathrm{CH}_0(Y)_{\rm alb}$.
+- The preprint also derives that $h(S) _ {\mathbb Q}$ is Kimura finite-dimensional with $t_2(S)=0$, and pure Tate when $q=0$.
+- General form (Voisin's Conjecture 0.1): for a surface $X$ and a correspondence $\Gamma\in\mathrm{CH}^2(Y\times X)$ with $[\Gamma]^{\ast}=0$ on $H^{2,0}(X)$, $\Gamma_{\ast}$ vanishes on the Albanese kernel $\mathrm{CH} _ 0(Y) _ {\rm alb}$.
 
 ### Where to start
 
@@ -93,7 +95,7 @@ theorem bloch_pg_eq_q_eq_zero (S : Scheme.{0}) (p : S ⟶ Spec (CommRingCat.of �
     D ∈ rationallyTrivial S
 ```
 
-This is Theorem 1.1 of the OpenAI preprint, the case $q=0$ of Bloch's conjecture: on a smooth connected projective complex surface with $p_g=q=0$, every zero-cycle of degree zero is rationally equivalent to zero, so $\deg\colon\mathrm{CH}_0(S)\to\mathbb Z$ is an isomorphism. The hypotheses are $H^1(S,\mathcal O_S)=H^2(S,\mathcal O_S)=0$ ($q=h^1(\mathcal O_S)$, and $p_g=h^2(\mathcal O_S)$ by Serre duality), "projective" is replaced by "proper" (equivalent for smooth surfaces), and rational equivalence is generated by divisors of rational functions on integral curves in $S$. The case $q>0$ (Bloch–Kas–Lieberman) needs the Albanese variety, which Mathlib does not have, and is not stated.
+This is Theorem 1.1 of the OpenAI preprint, the case $q=0$ of Bloch's conjecture: on a smooth connected projective complex surface with $p_g=q=0$, every zero-cycle of degree zero is rationally equivalent to zero, so $\deg\colon\mathrm{CH} _ 0(S)\to\mathbb Z$ is an isomorphism. The hypotheses are $H^1(S,\mathcal O_S)=H^2(S,\mathcal O_S)=0$ ($q=h^1(\mathcal O_S)$, and $p_g=h^2(\mathcal O_S)$ by Serre duality), "projective" is replaced by "proper" (equivalent for smooth surfaces), and rational equivalence is generated by divisors of rational functions on integral curves in $S$. The case $q\gt0$ (Bloch–Kas–Lieberman) needs the Albanese variety, which Mathlib does not have, and is not stated.
 
 Source: written by AI for Mathathon; not taken from an existing formalization.
 

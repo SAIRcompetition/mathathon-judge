@@ -38,15 +38,17 @@ An open-source implementation of the algorithm for the irreducible components of
 ### The result
 
 For a smooth cubic fourfold $X$, the algebraic lattice $A(X)=H^4(X,\mathbb Z)\cap H^{2,2}(X)$ is positive definite and contains $h^2$. $X$ is special of discriminant $d$ if $A(X)$ has a rank-2 primitive sublattice $K_d\ni h^2$ with $\operatorname{disc}K_d=d$. Hassett (Compositio 2000) proved that these cubics form an irreducible divisor $\mathcal C_d$ of the 20-dimensional moduli space, nonempty if and only if
-$$d>6,\qquad d\equiv 0,2 \pmod 6,$$
+
+$$d\gt6,\qquad d\equiv 0,2 \pmod 6,$$
+
 and that $X$ has an associated K3 surface if and only if $d$ is also not divisible by 4, 9 or an odd prime $p\equiv 2\pmod 3$. Yang and Yu show that the components of $\mathcal C_{d_1}\cap\mathcal C_{d_2}$ are the loci $\mathcal C_M$ of rank-3 lattices $M$ that contain both rank-2 lattices, and give an algorithm listing them.
 
 ### Background
 
-- Algorithm 7.6 of Yang–Yu: (1) write the Gram matrix $M_\tau$ of the rank-3 lattice spanned by $h^2$ and generators of the two rank-2 lattices, with one free entry $\tau$; (2) keep the finitely many $\tau$ with $\det M_\tau>0$; (3) discard lattices with roots (vectors of square 2); (4) add the overlattices in which both rank-2 lattices stay primitive and no roots appear; (5) output isometry classes. Worked examples: $\mathcal C_{20}\cap\mathcal C_{38}$ (17 components) and $\mathcal C_{20}\cap\mathcal C_{12}$ (6 components, one from an overlattice).
+- Algorithm 7.6 of Yang–Yu: (1) write the Gram matrix $M_\tau$ of the rank-3 lattice spanned by $h^2$ and generators of the two rank-2 lattices, with one free entry $\tau$; (2) keep the finitely many $\tau$ with $\det M_\tau\gt0$; (3) discard lattices with roots (vectors of square 2); (4) add the overlattices in which both rank-2 lattices stay primitive and no roots appear; (5) output isometry classes. Worked examples: $\mathcal C_{20}\cap\mathcal C_{38}$ (17 components) and $\mathcal C_{20}\cap\mathcal C_{12}$ (6 components, one from an overlattice).
 - The lattice facts rest on Voisin's Torelli theorem and Nikulin's theory of lattice embeddings; Zucker (1977) proved the Hodge conjecture for cubic fourfolds.
 - Kuznetsov conjectured that a cubic fourfold is rational if and only if it has an associated K3 surface; the Hodge-theoretic and derived-category notions of association give the same set of cubics. Known rational cubics (as of 2021) lie in $\mathcal C_{14}$, $\mathcal C_{26}$, $\mathcal C_{38}$, $\mathcal C_{42}$ and in subloci of $\mathcal C_8$, $\mathcal C_{18}$, $\mathcal C_{20}$.
-- Yang–Yu show that the Fermat cubic lies in every $\mathcal C_d$, a new proof that $\mathcal C_d\neq\emptyset$ for all $d>6$, $d\equiv0,2\pmod 6$.
+- Yang–Yu show that the Fermat cubic lies in every $\mathcal C_d$, a new proof that $\mathcal C_d\neq\emptyset$ for all $d\gt6$, $d\equiv0,2\pmod 6$.
 
 ### Where to start
 

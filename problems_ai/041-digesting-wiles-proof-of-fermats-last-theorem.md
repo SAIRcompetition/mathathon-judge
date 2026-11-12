@@ -32,15 +32,17 @@ Mordell, Louis J. (1921). Three Lectures on Fermat's Last Theorem. Cambridge: Ca
 ### The result
 
 Fermat's Last Theorem: for $n\ge3$ there are no positive integers $a,b,c$ with
+
 $$a^n+b^n=c^n.$$
+
 Wiles (*Ann. of Math.* 141, 1995) proved the Shimura–Taniyama conjecture for semistable elliptic curves over $\mathbb Q$, with Taylor and Wiles (same issue) proving that the minimal Hecke algebra $T_\emptyset$ is a complete intersection, which Wiles' numerical criterion required. By Ribet's theorem (*Invent. Math.* 100, 1990), modularity of the Frey curve implies the theorem.
 
 ### How the known proof works
 
-- A solution $a^\ell+b^\ell=c^\ell$ with prime $\ell$ gives the semistable Frey curve $E:y^2=x(x-a^\ell)(x+b^\ell)$, whose mod-$\ell$ representation $\bar\rho_{E,\ell}$ has little ramification (only at $2$ and $\ell$) and is irreducible for $\ell>7$ (Mazur).
+- A solution $a^\ell+b^\ell=c^\ell$ with prime $\ell$ gives the semistable Frey curve $E:y^2=x(x-a^\ell)(x+b^\ell)$, whose $\text{mod-}\ell$ representation $\bar\rho_{E,\ell}$ has little ramification (only at $2$ and $\ell$) and is irreducible for $\ell\gt7$ (Mazur).
 - Ribet's level lowering: if $E$ is modular, $\bar\rho_{E,\ell}$ comes from a weight-2 form of level 2; there is none, since $X_0(2)$ has genus 0.
 - Wiles's modularity lifting (in a form sufficient for semistable curves): an odd $\ell$-adic representation with irreducible modular reduction and suitable behaviour at $\ell$ is modular. He compares a deformation ring $R$ (Mazur) with a Hecke algebra $T$ and proves $R\cong T$ in the needed cases, with input from Taylor–Wiles.
-- It suffices that $\rho_{E,3}$ or $\rho_{E,5}$ is modular; residual modularity at 3 comes from the Langlands–Tunnell theorem, since $\mathrm{GL}_2(\mathbb F_3)$ is soluble.
+- It suffices that $\rho_{E,3}$ or $\rho_{E,5}$ is modular; residual modularity at 3 comes from the Langlands–Tunnell theorem, since $\mathrm{GL} _ 2(\mathbb F_3)$ is soluble.
 - The core is $R\cong T$; Darmon–Diamond–Taylor, Chapters 3–5, treat it (Hecke algebras, isomorphism criteria, Wiles' numerical criterion, complete intersections).
 
 ### Background

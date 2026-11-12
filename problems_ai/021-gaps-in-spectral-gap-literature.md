@@ -36,16 +36,18 @@ Friedman & Kohler, 2014: https://arxiv.org/pdf/1403.3462
 
 ### The result
 
-Friedman's theorem, as Bordenave's Theorem 1: let $d\ge3$ and $G$ uniform among simple $d$-regular graphs on $n$ vertices ($nd$ even), with adjacency eigenvalues $d=\mu_1\ge\dots\ge\mu_n$. For every $\varepsilon>0$,
+Friedman's theorem, as Bordenave's Theorem 1: let $d\ge3$ and $G$ uniform among simple $d$-regular graphs on $n$ vertices ($nd$ even), with adjacency eigenvalues $d=\mu_1\ge\dots\ge\mu_n$. For every $\varepsilon\gt0$,
+
 $$\lim_{n\to\infty}\mathbb P\big(\max(\mu_2,|\mu_n|)\ge 2\sqrt{d-1}+\varepsilon\big)=0 .$$
-Proposition 28 bounds the expectation of a product of entries (some centred) of independent uniform random permutation matrices along a sequence of $2k$ half-edges, $k\le\sqrt n$, by $c\,2^b n^{-a}(3k/\sqrt n)^{a_1}$, where $a$ is the number of distinct edges, and $b$ and $a_1$ count the inconsistent and the consistent edges of multiplicity one among the centred factors. The factor $(3k/\sqrt n)^{a_1}$ says that the entries are nearly centred and weakly dependent when $k=o(\sqrt n)$.
+
+Proposition 28 bounds the expectation of a product of entries (some centred) of independent uniform random permutation matrices along a sequence of $2k$ half-edges, $k\le\sqrt n$, by $c\thinspace2^b n^{-a}(3k/\sqrt n)^{a_1}$, where $a$ is the number of distinct edges, and $b$ and $a_1$ count the inconsistent and the consistent edges of multiplicity one among the centred factors. The factor $(3k/\sqrt n)^{a_1}$ says that the entries are nearly centred and weakly dependent when $k=o(\sqrt n)$.
 
 ### How the known proof works
 
 - The Ihara–Bass formula reduces the problem to the non-backtracking matrix $B$ of the configuration model.
 - With high probability the graph is tangle-free at scale $\ell\asymp\log n$, so $B^\ell$ equals a matrix that ignores walks through tangles; tangles are why the trace method fails in expectation.
 - Linear algebra (after Massoulié) bounds this matrix, off the constant vector, by norms of matrices of weighted paths of length at most $\ell$.
-- These norms are bounded by $\mathbb E\,\mathrm{tr}(CC^*)^m$, $m\asymp\log n/\log\log n$, using the moment bound for products of matching entries (Proposition 11; Proposition 28 for lifts) and path counting.
+- These norms are bounded by $\mathbb E\thinspace\mathrm{tr}(CC^{\ast})^m$, $m\asymp\log n/\log\log n$, using the moment bound for products of matching entries (Proposition 11; Proposition 28 for lifts) and path counting.
 
 ### Background
 

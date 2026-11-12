@@ -44,8 +44,10 @@ The intended outcome is a self-contained exposition, supported by examples and r
 ### The result
 
 For a $V_4$-extension $K/k$ with intermediate fields $k_1,k_2,k_3$ and unit index $q(K)=(E_K:E_1E_2E_3)$, Lemmermeyer proved Kuroda's formula without analytic methods:
-$$h(K)=2^{\,d-\kappa-2-v}\,q(K)\,h_1h_2h_3/h_k^2,$$
-with $d$ the number of infinite places ramified in $K/k$, $\kappa$ the $\mathbb Z$-rank of $E_k$ and $v\in\{0,1\}$. He showed that Walter's formula (*Acta Arith.* 35, 1979) can fail when $K$ contains the 8th roots of unity, because a root of unity may be a product of subfield units without being a product of subfield roots of unity. For $k=\mathbb Q(\sqrt3)$, $K=\mathbb Q(\zeta_{24})$, Walter's formula gives $h(K)=2$, while $h(K)=1$. The proposer wants the corresponding analysis of Leopoldt's unit index for real cyclic fields of degree $pq$, with a checked counterexample.
+
+$$h(K)=2^{\thinspace d-\kappa-2-v}\thinspace q(K)\thinspace h_1h_2h_3/h_k^2,$$
+
+with $d$ the number of infinite places ramified in $K/k$, $\kappa$ the $\mathbb Z$-rank of $E_k$ and $v\in\lbrace0,1\rbrace$. He showed that Walter's formula (*Acta Arith.* 35, 1979) can fail when $K$ contains the 8th roots of unity, because a root of unity may be a product of subfield units without being a product of subfield roots of unity. For $k=\mathbb Q(\sqrt3)$, $K=\mathbb Q(\zeta_{24})$, Walter's formula gives $h(K)=2$, while $h(K)=1$. The proposer wants the corresponding analysis of Leopoldt's unit index for real cyclic fields of degree $pq$, with a checked counterexample.
 
 ### Background
 

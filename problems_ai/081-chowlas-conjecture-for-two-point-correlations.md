@@ -48,8 +48,10 @@ Cédric Pilatte. "Improved bounds for the two-point logarithmic Chowla conjectur
 
 ### The result
 
-Let $\lambda(n)=(-1)^{\Omega(n)}$, where $\Omega(n)$ counts prime factors with multiplicity. The two-point Chowla conjecture states $\sum_{n\le x}\lambda(n)\lambda(n+h)=o(x)$ for each fixed $h\ge1$. Theorem 1.1 (OpenAI): there is an absolute $c>0$ such that for all integers $a_1,a_2\ge1$, $b_1,b_2\ge0$ with $a_1b_2\ne a_2b_1$,
-$$\Big|\sum_{1\le n\le X}\lambda(a_1n+b_1)\lambda(a_2n+b_2)\Big|\le C_{a_1,a_2,b_1,b_2}\,\frac{X}{(\log X)^{c}}\qquad(X\ge3).$$
+Let $\lambda(n)=(-1)^{\Omega(n)}$, where $\Omega(n)$ counts prime factors with multiplicity. The two-point Chowla conjecture states $\sum_{n\le x}\lambda(n)\lambda(n+h)=o(x)$ for each fixed $h\ge1$. Theorem 1.1 (OpenAI): there is an absolute $c\gt0$ such that for all integers $a_1,a_2\ge1$, $b_1,b_2\ge0$ with $a_1b_2\ne a_2b_1$,
+
+$$\Big|\sum_{1\le n\le X}\lambda(a_1n+b_1)\lambda(a_2n+b_2)\Big|\le C_{a_1,a_2,b_1,b_2}\thinspace\frac{X}{(\log X)^{c}}\qquad(X\ge3).$$
+
 Theorem 1.2 (binary corrected Elliott conjecture): $\frac1N\sum_{n\le N}f_1(n+h_1)f_2(n+h_2)\to0$ for distinct $h_1,h_2\ge0$ and multiplicative $f_1,f_2$ with $|f_i|\le1$, one of them uniformly nonpretentious: $\inf_{|t|\le N}D(f,\chi n^{it};N)\to\infty$ for every Dirichlet character $\chi$, where $D(f,g;N)^2=\sum_{p\le N}(1-\operatorname{Re}f(p)\overline{g(p)})/p$.
 
 ### How the known proof works

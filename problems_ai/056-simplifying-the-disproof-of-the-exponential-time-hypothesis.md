@@ -38,29 +38,31 @@ Anthropic: https://github.com/anthropics/formal-math/blob/main/eth/paper.pdf
 
 - Both disproofs are recent preprints and have not been refereed. OpenAI states that an independent working group led by R. Impagliazzo, R. Paturi and R. Williams will examine and explain its proof; the three have opened a community examination site and write that their involvement "should not be taken as certification of the claim".
 - Simpler proofs already circulate, none refereed: S. Kintali's simplified exposition of OpenAI's proof (26 October 2026, 22 pages), R. O'Donnell's exposition through permanents of sparse matrices (30 October 2026, 20 pages, produced with LLMs), and the two NotETHSimplified papers (13 pages each, with 3- and 4-page proof-only versions and Lean formalizations). A submission should say what it adds to these.
-- The official Lean statement is OpenAI's counting theorem, with the exponent $n(\log\log n)^2/\sqrt{\log n}$, polynomial space and a fixed machine model, not the bare statement that ETH fails. A simpler disproof that gives only time $2^{\varepsilon n}$ for every $\varepsilon>0$, as Kintali's paper and the NotETHSimplified papers do, would not prove it.
+- The official Lean statement is OpenAI's counting theorem, with the exponent $n(\log\log n)^2/\sqrt{\log n}$, polynomial space and a fixed machine model, not the bare statement that ETH fails. A simpler disproof that gives only time $2^{\varepsilon n}$ for every $\varepsilon\gt0$, as Kintali's paper and the NotETHSimplified papers do, would not prove it.
 
 ### The result
 
-ETH (Impagliazzo–Paturi 2001) states that for some $\delta>0$, 3-SAT on $n$ variables needs time $2^{\delta n}$. OpenAI (Theorem 1.1): for each fixed $k\ge2$, a deterministic algorithm computes the number $\#F$ of satisfying assignments of a $k$-CNF with $n$ variables and $m$ clauses using polynomial space and
-$$(n+m)^{O_k(1)}\,2^{O_k(n\log\log n/\sqrt{\log n})}$$
-bit operations, which refutes ETH, SETH and Gap-ETH. The official Lean statement asserts the weaker exponent $O_k\big(n(\log\log n)^2/\sqrt{\log n}\big)$ of OpenAI's Section 6.4, with polynomial space. Anthropic (Theorem 1) obtains time $2^{O(\min\{k^2n\log\log n/\sqrt{\log n},\ km/\sqrt{\log m}\})}$ by a different method; for $m=5n$ its bound beats $2^n$ only when $n>10^{10\,000}$.
+ETH (Impagliazzo–Paturi 2001) states that for some $\delta\gt0$, 3-SAT on $n$ variables needs time $2^{\delta n}$. OpenAI (Theorem 1.1): for each fixed $k\ge2$, a deterministic algorithm computes the number $\sharp F$ of satisfying assignments of a $k$-CNF with $n$ variables and $m$ clauses using polynomial space and
+
+$$(n+m)^{O_k(1)}\thinspace2^{O_k(n\log\log n/\sqrt{\log n})}$$
+
+bit operations, which refutes ETH, SETH and Gap-ETH. The official Lean statement asserts the weaker exponent $O_k\big(n(\log\log n)^2/\sqrt{\log n}\big)$ of OpenAI's Section 6.4, with polynomial space. Anthropic (Theorem 1) obtains time $2^{O(\min\lbrace k^2n\log\log n/\sqrt{\log n},\ km/\sqrt{\log m}\rbrace)}$ by a different method; for $m=5n$ its bound beats $2^n$ only when $n\gt10^{10\thinspace000}$.
 
 ### How the known proof works
 
-- Count-preserving sparsification, OR-gates and Tovey's variable copying reduce $\#k$-SAT to 3-CNFs with at most three occurrences per variable (Section 2.8).
-- Then $\#F=\sum_{x\in\{0,1\}^n}\prod_e\Phi_e(x)$, with clause polynomials of total degree at most $3n$ (Section 2.2).
-- Each occurrence of $X_v$ becomes a linear form of degree $\le R$ in a parameter $T$, equal to $X_v$ at $T=0$; this gives $H(T)$ with $H(0)=\#F$ (Section 2.3).
+- Count-preserving sparsification, OR-gates and Tovey's variable copying reduce $\sharp k$-SAT to 3-CNFs with at most three occurrences per variable (Section 2.8).
+- Then $\sharp F=\sum_{x\in\lbrace0,1\rbrace^n}\prod_e\Phi_e(x)$, with clause polynomials of total degree at most $3n$ (Section 2.2).
+- Each occurrence of $X_v$ becomes a linear form of degree $\le R$ in a parameter $T$, equal to $X_v$ at $T=0$; this gives $H(T)$ with $H(0)=\sharp F$ (Section 2.3).
 - At $t=1,\dots,Q$ the variables split into small groups linked only by a few bounded integer measurements; fixing these, the sum factors over groups (Section 2.4).
 - $H(0)$ is recovered from Taylor coefficients at $t=1,\dots,Q$ by Hermite interpolation (Section 2.5).
 - The central step constructs the low-degree forms from an auxiliary matrix, obtained by interpolating $(-1)^j$ with a polynomial in commuting permutation matrices (Sections 2.7, 4).
 
 ### Background
 
-- Earlier 3-SAT algorithms ran in time $c^n$ with $c>1$, e.g. randomized $O(1.308^n)$ (PPSZ with Hertli's 2014 analysis) and deterministic $O(1.32793^n)$ (Liu 2018); Williams (2016) refuted a Merlin–Arthur version of SETH.
+- Earlier 3-SAT algorithms ran in time $c^n$ with $c\gt1$, e.g. randomized $O(1.308^n)$ (PPSZ with Hertli's 2014 analysis) and deterministic $O(1.32793^n)$ (Liu 2018); Williams (2016) refuted a Merlin–Arthur version of SETH.
 - Anthropic writes the count as a sum of products over a graph of clauses, recursively merges and cuts it, and rewrites pairs of equality tests with the eight-square identity.
 - Both papers place their methods in existing frameworks. OpenAI (§§1.1.4–1.1.5) compares its algorithm with split-and-list and sum–product algorithms (Williams 2005, Koivisto 2006), recovery of a count from structured evaluations (Björklund 2016; Björklund–Kaski–Williams 2019), Hermite interpolation with Hasse derivatives (Bhargava–Ghosh–Kumar–Mohapatra 2023), and the interpolation of $(-1)^j$ used for matrix rigidity (Alman–Williams 2017); Appendix D of its 25 October version proves Theorem 1.1 by contracting Boolean tensor networks. Anthropic (§1.2, Appendix G) treats its sums as weighted #CSPs and tensor-network contractions, notes that its algorithm lies outside the single-contraction-tree model in which Austrin, Kaski and Kubjas (2022) prove lower bounds, and relates its expansion of a crossing to rank-based dynamic programming and Hurwitz's sum-of-squares problem.
-- Weaker versions with shorter proofs: Anthropic's main text proves only Theorem 2 (time $O(2^{\delta n})$ for every $\delta>0$), and OpenAI's Section 2.8 gives a weaker algorithm.
+- Weaker versions with shorter proofs: Anthropic's main text proves only Theorem 2 (time $O(2^{\delta n})$ for every $\delta\gt0$), and OpenAI's Section 2.8 gives a weaker algorithm.
 
 ### Where to start
 
@@ -98,7 +100,7 @@ A Lean proof of this statement already exists: `exact_count_and_sat` in <https:/
 #### Related Lean formalizations
 
 - [anthropics/formal-math, `eth/`](https://github.com/anthropics/formal-math/tree/16a5ce41304fcdaea4e0be7c132e1c361dc26da5/eth): another Lean proof that ETH fails (`MainResults.ethIsFalse`).
-- [NotETHSimplified](https://github.com/suquark/NotETHSimplified/tree/b94016813c5f14074a036d8933994678d15854d9): two simplified proofs that, for every $\varepsilon>0$, 3-SAT can be decided in time $C_\varepsilon|\varphi|^{O_\varepsilon(1)}2^{\varepsilon n}$, each with a paper and a Lean formalization down to a primitive multitape machine.
+- [NotETHSimplified](https://github.com/suquark/NotETHSimplified/tree/b94016813c5f14074a036d8933994678d15854d9): two simplified proofs that, for every $\varepsilon\gt0$, 3-SAT can be decided in time $C_\varepsilon|\varphi|^{O_\varepsilon(1)}2^{\varepsilon n}$, each with a paper and a Lean formalization down to a primitive multitape machine.
 
 Projects outside the Palomar registry are described as their authors describe them; their proofs have not been checked.
 

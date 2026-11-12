@@ -33,8 +33,10 @@ https://github.com/openai/math/tree/main/preprints/Rigidity-of-the-Turing-degree
 
 ### The result
 
-Every automorphism of $(\mathcal D_e,\le)$ is the identity. Cai, Ganchev, Lempp, Miller and Soskova (JAMS 2016) proved that the total degrees, the image of $\iota(\deg_T A)=\deg_e(A\oplus\overline A)$, are definable: a degree is total iff it is $\mathbf 0_e$ or the join of a maximal $\mathcal K$-pair. Here $\{\mathbf a,\mathbf b\}$ is a $\mathcal K$-pair (Kalimullin) iff
+Every automorphism of $(\mathcal D_e,\le)$ is the identity. Cai, Ganchev, Lempp, Miller and Soskova (JAMS 2016) proved that the total degrees, the image of $\iota(\deg_T A)=\deg_e(A\oplus\overline A)$, are definable: a degree is total iff it is $\mathbf 0_e$ or the join of a maximal $\mathcal K$-pair. Here $\lbrace\mathbf a,\mathbf b\rbrace$ is a $\mathcal K$-pair (Kalimullin) iff
+
 $$\forall\mathbf x\ \ (\mathbf a\vee\mathbf x)\wedge(\mathbf b\vee\mathbf x)=\mathbf x .$$
+
 Their Corollary 3.8: if $\mathcal D_T$ is rigid, so is $\mathcal D_e$. OpenAI proved that $\mathcal D_T$ is rigid (2026).
 
 ### How the known proof works

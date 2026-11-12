@@ -34,18 +34,18 @@ Erdős asked whether in every 2-colouring of the plane, every triangle with at m
 ### Notes
 
 - There is no paper: the argument appears only in the repository's README and blueprint. The README reports an internal review of the argument by GPT-6 Astra and no human review of the proof; erdosproblems.com/173 lists no proof claims.
-- The proof uses Theorem 2.3 (extended from the algebraic numbers to the algebraic closure of $\mathbb Q(x)$), Lemma 3.4, Lemma 4.1 and Proposition 4.2 of OpenAI's unrefereed "The Euclidean plane is not five-colorable" (Problem 33), not the Ramsey classification of Problem 91.
+- The proof uses Theorem 2.3 (extended from the algebraic numbers to the algebraic closure of $\mathbb Q(x){}$), Lemma 3.4, Lemma 4.1 and Proposition 4.2 of OpenAI's unrefereed "The Euclidean plane is not five-colorable" (Problem 33), not the Ramsey classification of Problem 91.
 - Collinear triples are not a separate case in this proof: Lemma 1.3 reduces them to the same two-scale statement (blueprint §9).
 - The stronger form of Erdős and Graham (1979), in which one colour class contains every triangle except possibly one equilateral triangle, is not addressed.
 
 ### The result
 
-A triangle here is any three distinct points, collinear ones included; a 2-colouring $c:\mathbb R^2\to\{1,2\}$ is arbitrary (no measurability). Erdős Problem #173: in every 2-colouring, all triangles except at most one (up to congruence) have a monochromatic congruent copy. Erdős et al. (1973, p. 347) conjectured that every non-equilateral triangle has one, and that a colouring with no monochromatic equilateral triangle of side $d$ has one of every side $d'\ne d$; alternating strips of width $\sqrt3/2$ avoid side 1 (p. 342). Lemma 1.3(i) of Jelínek et al., from Erdős et al.: a monochromatic $(a,a,a)$-triangle forces a monochromatic $(a,b,c)$-triangle whenever $a,b,c$ satisfy the (possibly degenerate) triangle inequality. Plasma AI claims that no 2-colouring avoids monochromatic equilateral triangles of two different sides; with Lemma 1.3(i), this answers #173.
+A triangle here is any three distinct points, collinear ones included; a 2-colouring $c:\mathbb R^2\to\lbrace1,2\rbrace$ is arbitrary (no measurability). Erdős Problem #173: in every 2-colouring, all triangles except at most one (up to congruence) have a monochromatic congruent copy. Erdős et al. (1973, p. 347) conjectured that every non-equilateral triangle has one, and that a colouring with no monochromatic equilateral triangle of side $d$ has one of every side $d'\ne d$; alternating strips of width $\sqrt3/2$ avoid side 1 (p. 342). Lemma 1.3(i) of Jelínek et al., from Erdős et al.: a monochromatic $(a,a,a)$-triangle forces a monochromatic $(a,b,c)$-triangle whenever $a,b,c$ satisfy the (possibly degenerate) triangle inequality. Plasma AI claims that no 2-colouring avoids monochromatic equilateral triangles of two different sides; with Lemma 1.3(i), this answers #173.
 
 ### How the known proof works
 
 - Reduction (blueprint §1–2): by Lemma 1.3 and rescaling, it suffices to exclude a colouring avoiding equilateral sides $1$ and $x\ne1$.
-- Label model (§3–4): restrict to a countable dense field $L\ni x$ (the algebraic numbers, or the algebraic closure of $\mathbb Q(x)$ via a "template property", §8), take an invariant law on avoiding labelings and apply OpenAI's rigidity theorem: the sign correlation at distance $|z|$ is $\int J_0(|z||\xi|)\,d\nu(\xi)$, $\nu$ of mass at most 1.
+- Label model (§3–4): restrict to a countable dense field $L\ni x$ (the algebraic numbers, or the algebraic closure of $\mathbb Q(x)$ via a "template property", §8), take an invariant law on avoiding labelings and apply OpenAI's rigidity theorem: the sign correlation at distance $|z|$ is $\int J_0(|z||\xi|)\thinspace d\nu(\xi)$, $\nu$ of mass at most 1.
 - Far ratios (§5): three signs not all equal have pair products summing to $-1$, so both correlations are $-1/3$, impossible for $x\ge3/2$ or $x\le2/3$ since then $J_0(t)+J_0(xt)\ge-83/125$.
 - Ratios near one (§6–7): thresholding the translation-continuous part of the sign gives a measurable colouring with almost no monochromatic equilateral triangles of sides 1 and $x$; an irrational apex angle, Lebesgue density and an irrational rotation on circles exclude it.
 

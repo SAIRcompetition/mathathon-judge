@@ -41,22 +41,28 @@ Both counterexamples come with Lean formalizations, so what is missing is unders
 
 ### The result
 
-For a fixed binary $k\times k$ matrix $H$ and a binary $n\times n$ matrix $A$, an ordered copy of $H$ is a choice of rows $r_1<\dots<r_k$ and columns $c_1<\dots<c_k$ with $A(r_i,c_j)=H(i,j)$ for all $i,j$; zeros must match as well as ones. Let $N_H(A)$ be the number of copies and $D_H(A)$ the least number of entries (changed in either direction) whose change makes $A$ free of $H$; put $\mathrm{dist}_H(A)=D_H(A)/n^2$. Polynomial removal for $H$ would mean
-$$N_H(A)\ \ge\ c\,\mathrm{dist}_H(A)^{C}\,n^{2k}\qquad\text{for all }A,$$
-with $c,C>0$ depending only on $H$ (Gishboliner–Shapira 2025, Conjecture 4.5; for finite families, Alon–Ben-Eliezer 2020, Problem 1.4).
+For a fixed binary $k\times k$ matrix $H$ and a binary $n\times n$ matrix $A$, an ordered copy of $H$ is a choice of rows $r_1\lt\dots\lt r_k$ and columns $c_1\lt\dots\lt c_k$ with $A(r_i,c_j)=H(i,j)$ for all $i,j$; zeros must match as well as ones. Let $N_H(A)$ be the number of copies and $D_H(A)$ the least number of entries (changed in either direction) whose change makes $A$ free of $H$; put $\mathrm{dist} _ H(A)=D_H(A)/n^2$. Polynomial removal for $H$ would mean
+
+$$N_H(A)\ \ge\ c\thinspace\mathrm{dist} _ H(A)^{C}\thinspace n^{2k}\qquad\text{for all }A,$$
+
+with $c,C\gt0$ depending only on $H$ (Gishboliner–Shapira 2025, Conjecture 4.5; for finite families, Alon–Ben-Eliezer 2020, Problem 1.4).
 
 Wang's Theorem 1.1: let
-$$H_4=\begin{pmatrix}0&1&1&0\\1&0&0&1\\1&0&1&0\\0&1&1&1\end{pmatrix}=\begin{pmatrix}J_2-I_2&I_2\\ I_2&P\end{pmatrix},\qquad P=\begin{pmatrix}1&0\\1&1\end{pmatrix}.$$
+
+$$H_4=\begin{pmatrix}0&1&1&0\cr 1&0&0&1\cr 1&0&1&0\cr 0&1&1&1\end{pmatrix}=\begin{pmatrix}J_2-I_2&I_2\cr  I_2&P\end{pmatrix},\qquad P=\begin{pmatrix}1&0\cr 1&1\end{pmatrix}.$$
+
 For every $h\ge1$, with $m=2^h$ and $n_h=(14h+2)m$, there is an explicit $n_h\times n_h$ matrix $A_h$ with
-$$D_{H_4}(A_h)=m^2,\qquad \mathrm{dist}_{H_4}(A_h)=(14h+2)^{-2},\qquad N_{H_4}(A_h)=2m^6+\tfrac{m-2}{2}\,m^5 .$$
+
+$$D_{H_4}(A_h)=m^2,\qquad \mathrm{dist} _ {H_4}(A_h)=(14h+2)^{-2},\qquad N_{H_4}(A_h)=2m^6+\tfrac{m-2}{2}\thinspace m^5 .$$
+
 So the distance is $\varepsilon_h=\Theta(h^{-2})$ while the copy density $N/n_h^8$ is $\Theta(4^{-h}h^{-8})$, smaller than any power of $\varepsilon_h$. The $m$ leaf-diagonal cells meet every copy, yet every repair changes $m^2$ cells (Corollary 6.1): edits create new copies. The first hosts have sizes $32$, $120$ and $352$.
 
-OpenAI's Theorem 1.1 is the same phenomenon for a 66×66 pattern $H$ (a 64×64 "anchor" with the body $P$ in its last two rows and columns): for $n_h=(386h+2)2^h$ and $\varepsilon_h=(386h+2)^{-2}$ there are $A_h$ with $\mathrm{dist}_H(A_h)\ge\varepsilon_h$ and $N_H(A_h)\le\varepsilon_h2^{-h}n_h^{132}$.
+OpenAI's Theorem 1.1 is the same phenomenon for a 66×66 pattern $H$ (a 64×64 "anchor" with the body $P$ in its last two rows and columns): for $n_h=(386h+2)2^h$ and $\varepsilon_h=(386h+2)^{-2}$ there are $A_h$ with $\mathrm{dist} _ H(A_h)\ge\varepsilon_h$ and $N_H(A_h)\le\varepsilon_h2^{-h}n_h^{132}$.
 
 ### How the known proof works
 
 Wang follows the tree-propagation method of the OpenAI preprint.
-- Body rule: for bits $a,b$, $\begin{pmatrix}1&a\\1&b\end{pmatrix}\ne P$ iff $b\le a$, and $\begin{pmatrix}a&b\\1&1\end{pmatrix}\ne P$ iff $a\le b$. In an $H_4$-free matrix every "frame" of marker rows and columns matching the other twelve entries of $H_4$ therefore forces an inequality between two entries.
+- Body rule: for bits $a,b$, the matrix with rows $(1,a)$ and $(1,b)$ differs from $P$ iff $b\le a$, and the matrix with rows $(a,b)$ and $(1,1)$ differs from $P$ iff $a\le b$. In an $H_4$-free matrix every "frame" of marker rows and columns matching the other twelve entries of $H_4$ therefore forces an inequality between two entries.
 - Host: rows and columns are indexed by a binary tree of depth $h$, with a minus and a plus block at each internal node (rows: minus block, subtrees, plus block; columns: the reverse), and the two blocks coincide at each leaf. Dummy blocks and marker blocks for $6h$ modes $V_i^\pm$, $W_{i,b}^\pm$ choose which pairs of levels are compared.
 - Lower bound for arbitrary edits: the $m^2$ "protected selections" indexed by $(a,b)$ follow the root-to-leaf path of $z=a\oplus b$; every cell is protected by at most one selection (Lemma 3.1), so fewer than $m^2$ edits leave one selection untouched.
 - Propagation: along an untouched selection, $H_4$-freeness carries the root values $x_0=1$ and $y_0=0$ down the path, giving $x_i=1$ and $y_i=0$ at every level. At the leaf the plus and minus cells coincide, a contradiction (Proposition 3.3).
@@ -67,7 +73,7 @@ Wang follows the tree-propagation method of the OpenAI preprint.
 - Alon, Fischer and Newman (2007) proved polynomial bounds when rows and columns may be permuted and asked about ordered matrices (Section 7). Alon, Ben-Eliezer and Fischer (2017) proved a removal lemma for ordered matrices and ordered graphs, with very large bounds.
 - Alon and Ben-Eliezer (2020) gave polynomial bounds when the host has $\varepsilon n^2$ entry-disjoint copies (Theorem 1.2), a weaker statement because hitting the existing copies does not prevent new ones.
 - Gishboliner and Shapira (2025) stated the conjecture for a single pattern and noted that it was not known even for the $2\times2$ identity matrix; neither preprint treats patterns smaller than $4\times4$.
-- Ordered graphs: Gishboliner and Tomon (2022) showed that the induced removal lemma for an ordered graph $F$ has polynomial bounds exactly when $F$ has two vertices or, up to complementation and reversal, $F$ is $x<y<z$ with edges $xy,xz$.
+- Ordered graphs: Gishboliner and Tomon (2022) showed that the induced removal lemma for an ordered graph $F$ has polynomial bounds exactly when $F$ has two vertices or, up to complementation and reversal, $F$ is $x\lt y\lt z$ with edges $xy,xz$.
 - Earlier nonpolynomial lower bounds (Fischer–Rozenberg 2007; Alon–Ben-Eliezer 2020, §5.1) needed a third symbol in the host.
 
 ### Where to start
@@ -110,7 +116,7 @@ theorem no_polynomial_removal_bound :
           c * Real.rpow ε C * ((n : ℝ) ^ 8)
 ```
 
-Here `fixedH` is Wang's $4\times4$ pattern $H_4$ and the statement is his Corollary 1.2: no bound $N_{H_4}(A)\ge c\,\mathrm{dist}_{H_4}(A)^C\,n^8$ holds for all binary matrices $A$. Wang reports a Lean proof of his own formulation: the arXiv record of arXiv:2610.15370 says that the Lean sources are included as ancillary files, but none are attached to version 1 (checked 12 November 2026), so his formulation could not be compared with this statement. A Lean-verified claim must not use or copy his proof.
+Here `fixedH` is Wang's $4\times4$ pattern $H_4$ and the statement is his Corollary 1.2: no bound $N_{H_4}(A)\ge c\thinspace\mathrm{dist} _ {H_4}(A)^C\thinspace n^8$ holds for all binary matrices $A$. Wang reports a Lean proof of his own formulation: the arXiv record of arXiv:2610.15370 says that the Lean sources are included as ancillary files, but none are attached to version 1 (checked 12 November 2026), so his formulation could not be compared with this statement. A Lean-verified claim must not use or copy his proof.
 
 Source: <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatrixRemoval.lean> (Apache License 2.0). Adapted: OpenAI's statement for its $66\times66$ pattern is copied with the pattern replaced by $H_4$ and the exponent $132$ of $n$ by $8$.
 

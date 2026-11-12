@@ -46,8 +46,10 @@ Blogpost from William DeMeo discussing OpenAI claim: https://williamdemeo.org/bl
 ### The result
 
 Claim (OpenAI, 2026): there is a finite lattice $L$ with $L\not\cong\mathrm{Con}(A)$ for every finite algebra $A$. By Pálfy and Pudlák (1980) it suffices to find a finite lattice that is not an interval $[D,G]$ in the subgroup lattice of a finite group, which the linked preprint constructs. The companion preprint also proves that representability is undecidable and gives, for the least size $n_{\min}$ of a nonrepresentable lattice,
-$$8\le n_{\min}<M^*=x_5,\qquad x_0=10^9,\quad x_{j+1}=J^{x_j}(x_j),$$
-where $J$ is computable, $J(x)>2^{2^{x!}}$, and $J(x)$ also exceeds the finite Ramsey and Hales–Jewett numbers with parameters at most $x$. A minimum example is specified through a Busy Beaver constant.
+
+$$8\le n_{\min}\lt M^{\ast}=x_5,\qquad x_0=10^9,\quad x_{j+1}=J^{x_j}(x_j),$$
+
+where $J$ is computable, $J(x)\gt2^{2^{x!}}$, and $J(x)$ also exceeds the finite Ramsey and Hales–Jewett numbers with parameters at most $x$. A minimum example is specified through a Busy Beaver constant.
 
 ### How the known proof works
 

@@ -39,12 +39,14 @@ https://arxiv.org/abs/2212.09857
 ### The result
 
 Let $P$ be the product of the primes $p\le\sqrt N$. Legendre's inclusion–exclusion identity
+
 $$\pi(N)-\pi(\sqrt N)+1=\sum_{d\mid P}\mu(d)\Big\lfloor \frac Nd\Big\rfloor$$
-is the starting point of the elementary ("combinatorial") methods. In Dirichlet-convolution form it says $\sum_{n\le N}(1*\mu_{\le\sqrt N})(n)=\pi(N)-\pi(\sqrt N)+1$, where $\mu_{\le\sqrt N}$ is the Möbius function restricted to $\sqrt N$-smooth numbers (Hirsch–Kessler–Mendlovic, Lemma 1). Known complexities:
+
+is the starting point of the elementary ("combinatorial") methods. In Dirichlet-convolution form it says $\sum_{n\le N}(1\ast\mu_{\le\sqrt N})(n)=\pi(N)-\pi(\sqrt N)+1$, where $\mu_{\le\sqrt N}$ is the Möbius function restricted to $\sqrt N$-smooth numbers (Hirsch–Kessler–Mendlovic, Lemma 1). Known complexities:
 
 - Meissel–Lehmer method, as refined and analysed by Lagarias, Miller and Odlyzko (1985): $O(x^{2/3+\varepsilon})$ operations and $O(x^{1/3+\varepsilon})$ space. Deléglise and Rivat (1996) and later work save logarithmic factors.
 - Analytic method (Lagarias–Odlyzko 1987), via integrals of $\log\zeta(s)$: $O(x^{1/2+\varepsilon})$ time and $O(x^{1/4+\varepsilon})$ space. Platt (2015) gave the first rigorous implementation and computed $\pi(10^{24})$.
-- Hirsch–Kessler–Mendlovic: $\pi(N)$ in expected time $O(\sqrt N\log N(\log\log N)^{3/2})$ and space $O(\sqrt N\log N)$; with memory $M$, $N^{2/9}<M<N^{1/2}$, in time $\tilde O(N^{3/5+\varepsilon}M^{-1/5})$, e.g. $\tilde O(N^{8/15})$ time in $\tilde O(N^{1/3})$ space.
+- Hirsch–Kessler–Mendlovic: $\pi(N)$ in expected time $O(\sqrt N\log N(\log\log N)^{3/2})$ and space $O(\sqrt N\log N)$; with memory $M$, $N^{2/9}\lt M\lt N^{1/2}$, in time $\tilde O(N^{3/5+\varepsilon}M^{-1/5})$, e.g. $\tilde O(N^{8/15})$ time in $\tilde O(N^{1/3})$ space.
 - The same paper computes $\sum_{p\le N}h(p)$ for completely multiplicative $h$ whose partial sums take time $T$ in $\tilde O(T\sqrt N)$ (Theorem 4; e.g. $\sum_{p\le N}p^\ell$ and primes in residue classes), the Mertens function $M(N)=\sum_{n\le N}\mu(n)$ in $O(\sqrt N\log N\sqrt{\log\log N})$ (Theorem 7), the number of square-free $n\le N$ in $\tilde O(N^{1/3})$ (Theorem 8) and $\sum_{n\le N}\varphi(n)$ in $\tilde O(\sqrt N)$ (Theorem 9).
 - Earlier elementary bounds for $M(x)$: about $x^{2/3}$ (Deléglise–Rivat 1996) and $O_\varepsilon(x^{3/5}(\log x)^{3/5+\varepsilon})$ (Helfgott–Thompson, 2023).
 
@@ -83,7 +85,7 @@ Prerequisites: Dirichlet convolution and Möbius inversion, the sieve of Eratost
 - D. J. Platt, “Computing π(x) analytically,” Math. Comp. 84 (2015), 1521–1535. <https://arxiv.org/abs/1203.5712>
 - M. Deléglise and J. Rivat, “Computing the summation of the Möbius function,” Experiment. Math. 5 (1996), 291–295. <https://doi.org/10.1080/10586458.1996.10504594>
 - H. A. Helfgott and L. Thompson, “Summing μ(n): a faster elementary algorithm,” Res. Number Theory 9 (2023), paper no. 6. <https://doi.org/10.1007/s40993-022-00408-8>
-- K. Walisch, primecount (software, with records of $\pi(10^n)$). <https://github.com/kimwalisch/primecount>
+- K. Walisch, primecount (software, with records of $\pi(10^n){}$). <https://github.com/kimwalisch/primecount>
 - L. A. Brown, “Computation of the totient summatory function,” arXiv:2506.07386 (2025). <https://arxiv.org/abs/2506.07386>
 
 ### Lean

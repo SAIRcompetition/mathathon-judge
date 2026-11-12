@@ -34,23 +34,25 @@ https://github.com/openai/math/blob/main/preprints/Positive-scalar-curvature-for
 
 ### The result
 
-For a closed oriented $n$-manifold $M$, the simplicial volume $\|M\|$ is the infimum of $\sum|a_i|$ over real singular cycles $\sum a_i\sigma_i$ representing $[M]$. Gromov conjectured that $\|M\|=0$ if $M$ admits positive scalar curvature. Ma–Wang–Xie–Yu–Zhu prove this when the universal cover $\widetilde M$ is spin; more precisely every component of the $\hat A$-class has
-$$\big\|\hat A_{[k]}(TM)\cap[M]\big\|_{\ell^1}=0,$$
-and for $\|M\|$ itself nonnegative scalar curvature suffices. The OpenAI preprint claims that every closed connected oriented PSC manifold of dimension $n\ge 2$ is rationally inessential: the classifying map $c\colon M\to B\pi_1(M)$ sends $[M]$ to $0$ in $H_n(B\pi_1M;\mathbb Q)$. Since $\|M\|>0$ forces rational essentiality, this implies Gromov's conjecture and the Gromov–Lawson aspherical conjecture.
+For a closed oriented $n$-manifold $M$, the simplicial volume $\Vert M\Vert$ is the infimum of $\sum|a_i|$ over real singular cycles $\sum a_i\sigma_i$ representing $[M]$. Gromov conjectured that $\Vert M\Vert=0$ if $M$ admits positive scalar curvature. Ma–Wang–Xie–Yu–Zhu prove this when the universal cover $\widetilde M$ is spin; more precisely every component of the $\hat A$-class has
+
+$$\big\Vert\hat A_{[k]}(TM)\cap[M]\big\Vert_{\ell^1}=0,$$
+
+and for $\Vert M\Vert$ itself nonnegative scalar curvature suffices. The OpenAI preprint claims that every closed connected oriented PSC manifold of dimension $n\ge 2$ is rationally inessential: the classifying map $c\colon M\to B\pi_1(M)$ sends $[M]$ to $0$ in $H_n(B\pi_1M;\mathbb Q)$. Since $\Vert M\Vert\gt0$ forces rational essentiality, this implies Gromov's conjecture and the Gromov–Lawson aspherical conjecture.
 
 ### How the known proof works
 
-- Gromov's mapping theorem: $\|M\|$ equals the simplicial norm of $c_*[M]$ in $B\Gamma$, $\Gamma=\pi_1M$, so it suffices to represent $c_*[M]$ by group-homology cycles of arbitrarily small $\ell^1$-norm.
-- “Epsilon homology” (Ma–Yu 2025) interpolates between $H_*(M)$ and $H_*(\Gamma)$.
-- A quantitative higher index theorem, refining Connes–Moscovici, writes $c_*(\hat A_{[m-k]}\cap[M])$ through finite-propagation kernels $I_\varepsilon$ of the Dirac operator on $\widetilde M$; spin is needed here.
+- Gromov's mapping theorem: $\Vert M\Vert$ equals the simplicial norm of $c_{\ast}[M]$ in $B\Gamma$, $\Gamma=\pi_1M$, so it suffices to represent $c_{\ast}[M]$ by group-homology cycles of arbitrarily small $\ell^1$-norm.
+- “Epsilon homology” (Ma–Yu 2025) interpolates between $H_{\ast}(M)$ and $H_{\ast}(\Gamma)$.
+- A quantitative higher index theorem, refining Connes–Moscovici, writes $c_{\ast}(\hat A_{[m-k]}\cap[M])$ through finite-propagation kernels $I_\varepsilon$ of the Dirac operator on $\widetilde M$; spin is needed here.
 - The simplicial norm is at most $C\operatorname{Vol}(M)$ times norms of $I_\varepsilon$; positive scalar curvature (Lichnerowicz formula, heat-kernel estimates) makes this tend to $0$ as $\varepsilon\to\infty$.
-- Nonnegative scalar curvature: either a conformal change gives positive scalar curvature, or the metric is Ricci-flat, $\pi_1$ is virtually abelian and $\|M\|=0$.
+- Nonnegative scalar curvature: either a conformal change gives positive scalar curvature, or the metric is Ricci-flat, $\pi_1$ is virtually abelian and $\Vert M\Vert=0$.
 
 ### Background
 
 - Earlier results: Gromov–Lawson and Schoen–Yau obstructions; Chodosh–Li (aspherical case in dimensions 4 and 5) and Gromov (dimension 5); Guth and Braun–Sauer bound simplicial volume using macroscopic scalar curvature and volume.
 - Rational inessentiality under positive scalar curvature was conjectured by Gromov and stated by Hanke (2012, Conjecture 2.9).
-- A second OpenAI preprint (October 2026) claims Gromov's integral bound $\int_M(\mathrm{Scal}^-)^{n/2}\ge a_n\|M\|$ for $n\ge 3$, using the rational-inessentiality paper.
+- A second OpenAI preprint (October 2026) claims Gromov's integral bound $\int_M(\mathrm{Scal}^-)^{n/2}\ge a_n\Vert M\Vert$ for $n\ge 3$, using the rational-inessentiality paper.
 
 ### Where to start
 

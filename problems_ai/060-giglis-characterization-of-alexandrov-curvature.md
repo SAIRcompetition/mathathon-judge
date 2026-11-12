@@ -38,7 +38,9 @@ https://github.com/openai/math/blob/main/preprints/Giglis-distributional-curvatu
 ### The result
 
 Gigli (C. R. Math. 2019) defined, on an RCD space, a distributional Riemann tensor $R(X,Y,Z,W)(f)$ by integrating by parts against test functions $f$ and test vector fields $X,Y,Z,W$. Theorem (OpenAI, 2026; Gigli's Conjecture 1.1): for an integer $n\ge2$, $\kappa\in\mathbb R$ and a complete separable metric space $(M,d)$, the following are equivalent: (A) $(M,d)$ is an $n$-dimensional Alexandrov space of curvature $\ge\kappa$; (B) $(M,d,\mathcal H^n)$ has full support, is $\mathrm{RCD}((n-1)\kappa,n)$, and
-$$R(X,Y,Y,X)(f)\;\ge\;\kappa\int_M f\big(|X|^2|Y|^2-\langle X,Y\rangle^2\big)\,d\mathcal H^n$$
+
+$$R(X,Y,Y,X)(f)\ \ge\ \kappa\int_M f\big(|X|^2|Y|^2-\langle X,Y\rangle^2\big)\thinspace d\mathcal H^n$$
+
 for all test fields $X,Y$ and all test functions $f\ge0$. That (A) implies the RCD part of (B) was known (Kuwae–Machigashira–Shioya, Petrunin, Zhang–Zhu).
 
 ### How the known proof works
@@ -46,7 +48,7 @@ for all test fields $X,Y$ and all test functions $f\ge0$. That (A) implies the R
 - (A)⇒(B): small Alexandrov configurations are integrated against optimal-transport densities; a fourth-order transport estimate and averaging isolate the curvature term plus a nonnegative square error, made small by local choice of gradient tests, then extended to the global test classes.
 - (B)⇒(A), step 1: a heat-regularized index inequality, built from forward and backward heat flows whose product solves a continuity equation, with a Riccati identity in which the viscosity terms cancel.
 - Step 2: frames along almost every geodesic in the noncollapsed setting (harmonic splitting maps, capacity estimates, Deng's continuity of tangent cones), giving a Hessian comparison for distance functions.
-- Step 3: bounded modifications of the distance function and the companion theorem (weak Hessian bounds hold along every geodesic in RCD$(K,N)$ spaces) give the model ODE on every geodesic; a 1D comparison and the local-to-global theorem give Alexandrov curvature $\ge\kappa$.
+- Step 3: bounded modifications of the distance function and the companion theorem (weak Hessian bounds hold along every geodesic in $\text{RCD}(K,N)$ spaces) give the model ODE on every geodesic; a 1D comparison and the local-to-global theorem give Alexandrov curvature $\ge\kappa$.
 - The difficulty lies in passing from almost-everywhere Sobolev information to statements along every geodesic.
 
 ### Background

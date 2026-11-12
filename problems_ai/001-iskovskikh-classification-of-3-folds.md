@@ -47,7 +47,9 @@ I think this would be of great inspiration for the people thinking about this di
 ### The result
 
 A Fano manifold is a smooth projective variety $X$ with $-K_X$ ample. In dimension 1 the only one is $\mathbb P^1$. In dimension 2 (del Pezzo surfaces) there are 10 deformation families: $\mathbb P^2$, $\mathbb P^1\times\mathbb P^1$, the blow-up $F_1$ of $\mathbb P^2$ in a point, and one family $S_d$ of each degree $1\le d\le 7$. In dimension 3 there are exactly 105 families. Of these, 17 have Picard rank $\rho=1$: $\mathbb P^3$, the quadric, 5 del Pezzo threefolds of index 2, and 10 families of index 1 with genus
-$$g=-\tfrac12K_X^3+1\in\{2,\dots,10,12\}.$$
+
+$$g=-\tfrac12K_X^3+1\in\lbrace2,\dots,10,12\rbrace.$$
+
 The other 88 have $\rho\ge 2$ (Mori–Mukai). Every Fano 3-fold with $\rho\ge 6$ is $S\times\mathbb P^1$ for a del Pezzo surface $S$, so $\rho\le 10$.
 
 ### How the known proof works
@@ -56,7 +58,7 @@ The other 88 have $\rho\ge 2$ (Mori–Mukai). Every Fano 3-fold with $\rho\ge 6$
 - Iskovskikh's Part I treats index $\iota\ge 2$ and the hyperelliptic case; Part II the main series $X_{2g-2}\subset\mathbb P^{g+1}$, the trigonal case ($g\le 10$) and threefolds containing a line.
 - For $g\ge 7$, double projection from a line (lines exist by Shokurov) gives a del Pezzo fibration ($g=7$), a conic bundle ($g=8$) or a birational map to a simpler Fano 3-fold ($g=9,10,12$).
 - For $\rho\ge 2$, Mori and Mukai analyse extremal contractions; every $X$ with $\rho\ge 4$ is the blow-up of a curve on another Fano 3-fold.
-- Gaps were found later: a $\rho=4$ family missed by Mori–Mukai (erratum 2003), and a trigonal genus-8 threefold with $\rho>1$ omitted by Iskovskikh (1980).
+- Gaps were found later: a $\rho=4$ family missed by Mori–Mukai (erratum 2003), and a trigonal genus-8 threefold with $\rho\gt1$ omitted by Iskovskikh (1980).
 
 ### Background
 

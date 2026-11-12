@@ -39,22 +39,26 @@ Participants can aim to create:
 
 ### Notes
 
-- The target constant may be off by a factor 2 (our reading, worth checking with the proposer). By the sheet's own identity, $\sum_i(\sigma_m(i)-i)^2=2\sum_{k\le m}g_k$, where $g_k$ is the label gap of the $k$-th swap. In these units RVV's condition (1.8) reads $\mathbb E\sum_i(\sigma_m(i)-i)^2\le(\pi^2/3+o(1))\,m^2/n$, so the expected gap sum must be at most $(\pi^2/6+o(1))\,m^2/n$; the sheet's $(\pi^2/3)\,m^2/n$ is the bound for squared displacements. A small exact-sampling simulation we ran ($n=150$, $m\approx N/10$, 20 networks) gave a mean gap sum about $1.05\cdot(\pi^2/6)m^2/n$, i.e. about half of $(\pi^2/3)m^2/n$.
+- The target constant may be off by a factor 2 (our reading, worth checking with the proposer). By the sheet's own identity, $\sum_i(\sigma_m(i)-i)^2=2\sum_{k\le m}g_k$, where $g_k$ is the label gap of the $k$-th swap. In these units RVV's condition (1.8) reads $\mathbb E\sum_i(\sigma_m(i)-i)^2\le(\pi^2/3+o(1))\thinspace m^2/n$, so the expected gap sum must be at most $(\pi^2/6+o(1))\thinspace m^2/n$; the sheet's $(\pi^2/3)\thinspace m^2/n$ is the bound for squared displacements. A small exact-sampling simulation we ran ($n=150$, $m\approx N/10$, 20 networks) gave a mean gap sum about $1.05\cdot(\pi^2/6)m^2/n$, i.e. about half of $(\pi^2/3)m^2/n$.
 - Only an upper bound is needed: RVV's Corollary 2.1 also assumes tightness and approximate stationarity, which hold for uniform sorting networks (AHRV, Theorems 1 and 3).
 
 ### The result
 
-An $n$-element sorting network is a sequence of $N=\binom n2$ adjacent swaps taking $12\cdots n$ to $n\cdots21$; each swap exchanges the labels $a<b$ in two adjacent positions, with $a$ on the left, and its label gap is $g=b-a$. Let $\sigma(x,t)$ be the position of label $x$ after $\lfloor t\rfloor$ swaps and $\sigma_G(x,t)=2\sigma(x,Nt)/n-1$.
+An $n$-element sorting network is a sequence of $N=\binom n2$ adjacent swaps taking $12\cdots n$ to $n\cdots21$; each swap exchanges the labels $a\lt b$ in two adjacent positions, with $a$ on the left, and its label gap is $g=b-a$. Let $\sigma(x,t)$ be the position of label $x$ after $\lfloor t\rfloor$ swaps and $\sigma_G(x,t)=2\sigma(x,Nt)/n-1$.
 
-**Theorem (Dauvergne, Theorem 1).** For a uniform random sorting network $\sigma^n$ there are random $(A^n_i,\Theta^n_i)\in[0,1]\times[0,2\pi]$ such that for every $\varepsilon>0$
-$$\mathbb P\Big(\max_{i}\max_{t\in[0,1]}\big|\sigma^n_G(i,t)-A^n_i\sin(\pi t+\Theta^n_i)\big|>\varepsilon\Big)\to0 .$$
+**Theorem (Dauvergne, Theorem 1).** For a uniform random sorting network $\sigma^n$ there are random $(A^n_i,\Theta^n_i)\in[0,1]\times[0,2\pi]$ such that for every $\varepsilon\gt0$
+
+$$\mathbb P\Big(\max_{i}\max_{t\in[0,1]}\big|\sigma^n_G(i,t)-A^n_i\sin(\pi t+\Theta^n_i)\big|\gt\varepsilon\Big)\to0 .$$
+
 The trajectory of a uniformly chosen label converges in law to $A(t)=X\cos\pi t+Z\sin\pi t$, where $(X,Z)$ has the Archimedean density $\frac{1}{2\pi\sqrt{1-x^2-z^2}}$ on the unit disc (Theorem 5); the permutation matrices converge to the corresponding Archimedean measures (Theorem 2).
 
 **Energy criterion (RVV).** Among permuton processes with $X(1)=-X(0)$, $A$ uniquely minimizes $\mathcal E[X]=\sup_\Pi\sum_i\mathbb E|X(t_i)-X(t_{i-1})|^2/(t_i-t_{i-1})$, and $\mathcal E[A]=\pi^2/3$ (Theorem 2). Hence tight, approximately stationary random trajectories $X^n$ with
-$$\limsup_{t\to0}\ \limsup_{n\to\infty}\ \mathbb E\big[(X^n(t)-X^n(0))^2\big]/t^2\le\pi^2/3$$
-converge to $A$ (Corollary 2.1). With $m=\lfloor tN\rfloor$ this is the bound $\mathbb E\sum_{k\le m}g_k\le(\pi^2/6+o(1))\,m^2/n$ for $n\ll m\ll n^2$.
 
-An elementary exact formula for testing: if $r(w)$ is the number of reduced words of a permutation $w$ and $w_0$ is the reversal, then $\mathbb P(\sigma_m=\pi)=r(\pi)\,r(\pi^{-1}w_0)/r(w_0)$ for $\ell(\pi)=m$, and $\sum_{k\le m}g_k=\sum(b-a)$ over the inversions $a<b$ of $\sigma_m$.
+$$\limsup_{t\to0}\ \limsup_{n\to\infty}\ \mathbb E\big[(X^n(t)-X^n(0))^2\big]/t^2\le\pi^2/3$$
+
+converge to $A$ (Corollary 2.1). With $m=\lfloor tN\rfloor$ this is the bound $\mathbb E\sum_{k\le m}g_k\le(\pi^2/6+o(1))\thinspace m^2/n$ for $n\ll m\ll n^2$.
+
+An elementary exact formula for testing: if $r(w)$ is the number of reduced words of a permutation $w$ and $w_0$ is the reversal, then $\mathbb P(\sigma_m=\pi)=r(\pi)\thinspace r(\pi^{-1}w_0)/r(w_0)$ for $\ell(\pi)=m$, and $\sum_{k\le m}g_k=\sum(b-a)$ over the inversions $a\lt b$ of $\sigma_m$.
 
 ### How the known proof works
 
@@ -66,14 +70,14 @@ An elementary exact formula for testing: if $r(w)$ is the number of reduced word
 ### Background
 
 - Stanley (1984) showed there are $\binom n2!/\prod_{j=1}^{n-1}(2j-1)^{n-j}$ sorting networks, the number of staircase standard Young tableaux; Edelman and Greene (1987) gave a bijection. With the Greene–Nijenhuis–Wilf hook walk this gives exact uniform sampling.
-- AHRV (2007) proved stationarity, a semicircle law for swap locations, Hölder-$\frac12$ bounds and octagon bounds, and conjectured the sine curves. Dauvergne and Virág (2020) proved that limits of the permutation matrices are supported in the conjectured ellipses. The local limit was found by Angel–Dauvergne–Holroyd–Virág (2019) and by Gorin–Rahman (2019).
+- AHRV (2007) proved stationarity, a semicircle law for swap locations, $\text{Hölder-}\frac12$ bounds and octagon bounds, and conjectured the sine curves. Dauvergne and Virág (2020) proved that limits of the permutation matrices are supported in the conjectured ellipses. The local limit was found by Angel–Dauvergne–Holroyd–Virág (2019) and by Gorin–Rahman (2019).
 - RVV's criterion combined with Kotowski's large deviation results proves the Archimedean limit for "relaxed" sorting networks.
 - The sheet's milestones fit the formula above: which labels have crossed by time $m$ is the inversion set of $\sigma_m$, and Edelman–Greene insertion relates $r(w)$ to standard Young tableaux.
 
 ### Where to start
 
 - [Geometry of permutation limits](https://arxiv.org/abs/1609.03891), M. Rahman, B. Virág, M. Vizer, 2016: §1.4 (Theorem 2, Corollary 2.1) and §4, the criterion to be verified.
-- [Random sorting networks](https://arxiv.org/abs/math/0609538), O. Angel, A. E. Holroyd, D. Romik, B. Virág, 2006: §4, the Edelman–Greene bijection and the exact law of the first swap, for small-$n$ experiments.
+- [Random sorting networks](https://arxiv.org/abs/math/0609538), O. Angel, A. E. Holroyd, D. Romik, B. Virág, 2006: §4, the Edelman–Greene bijection and the exact law of the first swap, for $\text{small-}n$ experiments.
 - [The Archimedean limit of random sorting networks](https://arxiv.org/abs/1802.08934), D. Dauvergne, 2018: §1.3 (local speeds) and §5, which show why straight-line motion at intermediate scales gives the constant.
 
 Prerequisites: reduced words in the symmetric group, standard Young tableaux and the hook-length formula, tightness and weak convergence of random paths.

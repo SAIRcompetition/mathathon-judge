@@ -44,8 +44,10 @@ A. Soifer, The New Mathematical Coloring Book: Mathematics of Coloring and the C
 
 ### The result
 
-Theorem 1.1: every colouring of the plane with five colours has two points at distance 1 with the same colour, with no regularity assumption on the colour classes; hence $6 \le \chi(\mathbb{R}^2) \le 7$. It combines two results. Theorem 1.3 (transfer): for every $k$, a proper $k$-colouring of the plane exists if and only if a weak measurable $k$-colouring exists, that is, a measurable colouring with classes $A_1,\dots,A_k$ such that, for every $R>0$,
-$$\sum_{i=1}^{k}\int_{B(0,R)}\int_{S^1} 1_{A_i}(x)\,1_{A_i}(x+u)\,d\sigma(u)\,dx = 0.$$
+Theorem 1.1: every colouring of the plane with five colours has two points at distance 1 with the same colour, with no regularity assumption on the colour classes; hence $6 \le \chi(\mathbb{R}^2) \le 7$. It combines two results. Theorem 1.3 (transfer): for every $k$, a proper $k$-colouring of the plane exists if and only if a weak measurable $k$-colouring exists, that is, a measurable colouring with classes $A_1,\dots,A_k$ such that, for every $R\gt0$,
+
+$$\sum_{i=1}^{k}\int_{B(0,R)}\int_{S^1} 1_{A_i}(x)\thinspace1_{A_i}(x+u)\thinspace d\sigma(u)\thinspace dx = 0.$$
+
 Theorem 1.4: there is no weak measurable five-colouring. The official Lean statement `no_proper_five_coloring` is Theorem 1.1.
 
 ### How the known proof works

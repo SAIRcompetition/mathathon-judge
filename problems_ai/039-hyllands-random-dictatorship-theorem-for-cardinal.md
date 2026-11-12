@@ -35,7 +35,9 @@ A new geometric argument for Hylland's theorem and nice visualizations of this i
 ### The result
 
 With finitely many voters and at least three alternatives, a cardinal decision scheme maps profiles of von Neumann–Morgenstern utilities to lotteries; it is strategy-proof if no voter can raise her expected utility by misreporting. Hylland's theorem, as the proposer states it: a strategy-proof scheme that gives probability 1 to a unanimous top and probability 0 to a unanimous bottom is a random dictatorship: for some weights $\beta_i\ge0$ with $\sum_i\beta_i=1$,
+
 $$\varphi_a(u)=\sum_{i:\ \mathrm{top}(u_i)=a}\beta_i .$$
+
 Dutta, Peters and Sen state it with the top condition only; their 2008 erratum completes their proof only under an extra assumption, for example that a unanimous bottom gets probability 0. The official Lean statement has both conditions, each for a unique best or worst alternative. With several best alternatives allowed, Hylland and Nandeibam obtain a weak random dictatorship. The theorem extends Gibbard's (1977) result for ordinal schemes.
 
 ### How the known proof works

@@ -38,13 +38,15 @@ https://arxiv.org/abs/1512.08776
 ### The result
 
 Gaussian correlation inequality: for every centered Gaussian measure $\mu$ on $\mathbb R^d$ and all closed convex sets $K,L$ symmetric about the origin,
-$$\mu(K\cap L)\ \ge\ \mu(K)\,\mu(L).$$
-Royen proved it in 2014 (arXiv 1408.1028; Far East J. Theor. Stat. 48 (2014), 139–145) for multivariate gamma distributions, the Gaussian case being the case of one degree of freedom; Latała and Matlak wrote a self-contained Gaussian version. Since a closed symmetric convex set is a countable intersection of symmetric strips, it suffices to show, for a centered Gaussian vector $X$ in $\mathbb R^{n_1+n_2}$, $\mathbb P(|X_i|\le t_i\ \forall i)\ge\mathbb P(|X_i|\le t_i\ \forall i\le n_1)\,\mathbb P(|X_i|\le t_i\ \forall i>n_1)$.
+
+$$\mu(K\cap L)\ \ge\ \mu(K)\thinspace\mu(L).$$
+
+Royen proved it in 2014 (arXiv 1408.1028; Far East J. Theor. Stat. 48 (2014), 139–145) for multivariate gamma distributions, the Gaussian case being the case of one degree of freedom; Latała and Matlak wrote a self-contained Gaussian version. Since a closed symmetric convex set is a countable intersection of symmetric strips, it suffices to show, for a centered Gaussian vector $X$ in $\mathbb R^{n_1+n_2}$, $\mathbb P(|X_i|\le t_i\ \forall i)\ge\mathbb P(|X_i|\le t_i\ \forall i\le n_1)\thinspace\mathbb P(|X_i|\le t_i\ \forall i\gt n_1)$.
 
 ### How the known proof works
 
 - Write the covariance in blocks and interpolate $C(\tau)$, multiplying the off-diagonal blocks by $\tau\in[0,1]$; it suffices that $\tau\mapsto\mathbb P(X_i(\tau)^2/2\le s_i\ \forall i)$ is nondecreasing.
-- The Laplace transform of $Z(\tau)=X(\tau)^2/2$ is $|I+\Lambda C(\tau)|^{-1/2}$; each principal minor $|C(\tau)_J|$ in its expansion is nonincreasing in $\tau$ (a Schur-complement eigenvalue bound).
+- The Laplace transform of $Z(\tau)=X(\tau)^2/2$ is $|I+\Lambda C(\tau)|^{-1/2}$; each principal minor $|C(\tau) _ J|$ in its expansion is nonincreasing in $\tau$ (a Schur-complement eigenvalue bound).
 - Hence $\partial_\tau$ of the density of $Z(\tau)$ is a nonnegative combination of mixed partial derivatives of a multivariate gamma density, whose integrals over a box are nonnegative.
 - The whole proof takes nine pages in Latała–Matlak, who call the method "rather simple and elementary".
 

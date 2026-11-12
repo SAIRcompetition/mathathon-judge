@@ -28,34 +28,36 @@ J.-L. Loday, “Spaces with finitely many non-trivial homotopy groups,” J. Pur
 
 ### Notes
 
-- Expository material on $n=2$ exists: Chapter 5 of Porter's lecture notes *The Crossed Menagerie* treats crossed squares, cat$^2$-groups and the crossed square of a simplicial group, and Arvasi–Odabaş–Wensley (J. Symbolic Comput., 2023) give examples, including the crossed square of two normal subgroups, and GAP algorithms.
+- Expository material on $n=2$ exists: Chapter 5 of Porter's lecture notes *The Crossed Menagerie* treats crossed squares, $\text{cat}^2$-groups and the crossed square of a simplicial group, and Arvasi–Odabaş–Wensley (J. Symbolic Comput., 2023) give examples, including the crossed square of two normal subgroups, and GAP algorithms.
 
 ### The result
 
-A cat$^n$-group is a group $G$ with endomorphisms $s_i,t_i$ ($1\le i\le n$) such that $s_it_i=t_i$, $t_is_i=s_i$, $[\ker s_i,\ker t_i]=1$, and maps with different indices commute: $n$ independent cat$^1$-structures. Loday's theorem: cat$^n$-groups model pointed connected homotopy $(n+1)$-types. Ellis–Steiner (1987): cat$^n$-groups are equivalent to crossed $n$-cubes (crossed modules for $n=1$, crossed squares for $n=2$). In Porter's form, with simplicial groups modelling connected homotopy types,
-$$M(-,n)\colon\ \mathrm{Ho}_n(\mathbf{SimpGrp})\ \xrightarrow{\ \simeq\ }\ \mathrm{Ho}(\mathbf{Crs}_n),$$
-where $\mathrm{Ho}(\mathbf{Crs}_n)$ inverts the trivial epimorphisms of crossed $n$-cubes. Bullejos, Cegarra and Duskin (1993) gave a proof using multisimplicial groups.
+A $\text{cat}^n$-group is a group $G$ with endomorphisms $s_i,t_i$ ($1\le i\le n$) such that $s_it_i=t_i$, $t_is_i=s_i$, $[\ker s_i,\ker t_i]=1$, and maps with different indices commute: $n$ independent $\text{cat}^1$-structures. Loday's theorem: $\text{cat}^n$-groups model pointed connected homotopy $(n+1)$-types. Ellis–Steiner (1987): $\text{cat}^n$-groups are equivalent to crossed $n$-cubes (crossed modules for $n=1$, crossed squares for $n=2$). In Porter's form, with simplicial groups modelling connected homotopy types,
+
+$$M(-,n)\colon\ \mathrm{Ho} _ n(\mathbf{SimpGrp})\ \xrightarrow{\ \simeq\ }\ \mathrm{Ho}(\mathbf{Crs} _ n),$$
+
+where $\mathrm{Ho}(\mathbf{Crs} _ n)$ inverts the trivial epimorphisms of crossed $n$-cubes. Bullejos, Cegarra and Duskin (1993) gave a proof using multisimplicial groups.
 
 ### How the known proof works
 
 Porter's approach, as summarized in *The Crossed Menagerie*, §5.5:
-- From a simplicial group $G$ build the crossed $n$-cube $M(G,n)$: each $M(G,n)_A$ is an intersection of kernels of face maps modulo the $d_0$-image of a similar intersection one dimension up; the $h$-maps are commutators.
+- From a simplicial group $G$ build the crossed $n$-cube $M(G,n)$: each $M(G,n) _ A$ is an intersection of kernels of face maps modulo the $d_0$-image of a similar intersection one dimension up; the $h$-maps are commutators.
 - $M(G,n)$ is a morphism of crossed $(n-1)$-cubes whose cokernel is $M(G,n-1)$ and whose kernel is $\pi_n(G)$ (Proposition 50).
 - Conversely, a crossed $n$-cube gives an $n$-simplicial group by iterated nerves and, by the diagonal, a simplicial group; one more nerve gives the classifying space.
-- Applying $M(-,n)$ to this simplicial group returns a crossed $n$-cube quasi-isomorphic to the original. Bullejos–Cegarra–Duskin work instead with cat$^n$-groups and more simplicial methods.
+- Applying $M(-,n)$ to this simplicial group returns a crossed $n$-cube quasi-isomorphic to the original. Bullejos–Cegarra–Duskin work instead with $\text{cat}^n$-groups and more simplicial methods.
 
 ### Background
 
 - Mac Lane and Whitehead (1950): crossed modules model connected homotopy 2-types ("3-types" in their terminology).
-- Brown and Spencer (1976): crossed modules are equivalent to internal categories in groups, that is, cat$^1$-groups.
-- Brown and Loday (1987): a van Kampen theorem for the fundamental cat$^n$-group of an $n$-cube of spaces.
-- Paoli (2009): weakly globular cat$^n$-groups, a subclass with better homotopical properties that still models all connected $(n+1)$-types.
-- The GAP package XMod computes crossed squares and cat$^2$-groups; Arvasi–Odabaş–Wensley list the 1,000 cat$^2$-groups on groups of order at most 30.
+- Brown and Spencer (1976): crossed modules are equivalent to internal categories in groups, that is, $\text{cat}^1$-groups.
+- Brown and Loday (1987): a van Kampen theorem for the fundamental $\text{cat}^n$-group of an $n$-cube of spaces.
+- Paoli (2009): weakly globular $\text{cat}^n$-groups, a subclass with better homotopical properties that still models all connected $(n+1)$-types.
+- The GAP package XMod computes crossed squares and $\text{cat}^2$-groups; Arvasi–Odabaş–Wensley list the 1,000 $\text{cat}^2$-groups on groups of order at most 30.
 
 ### Where to start
 
 - [The Crossed Menagerie](https://ncatlab.org/timporter/files/menagerie11.pdf), T. Porter, 2012: Chapters 2–3 for crossed modules and 2-types, Chapter 5 for crossed squares and Loday's theorem.
-- [Computing 3-dimensional groups: crossed squares and cat$^2$-groups](https://arxiv.org/abs/1911.12799), Z. Arvasi, A. Odabaş, C. D. Wensley, 2019: definitions, examples and algorithms for $n=2$.
+- [Computing 3-dimensional groups: crossed squares and cat²-groups](https://arxiv.org/abs/1911.12799), Z. Arvasi, A. Odabaş, C. D. Wensley, 2019: definitions, examples and algorithms for $n=2$.
 - [n-types of simplicial groups and crossed n-cubes](https://doi.org/10.1016/0040-9383%2893%2990033-R), T. Porter, 1993: the full proof via simplicial groups.
 
 Prerequisites: group actions and semidirect products, basic category theory, simplicial groups, homotopy groups and Postnikov truncations.
@@ -96,4 +98,4 @@ Projects outside the Palomar registry are described as their authors describe th
 
 #### Mathlib
 
-Mathlib has group actions by automorphisms (`MulDistribMulAction`), semidirect products (`SemidirectProduct`), equivalences of categories (`CategoryTheory.Equivalence`), simplicial objects and simplicial sets (`SimplicialObject`, `SSet`), the nerve of a category (`CategoryTheory.nerve`), Kan complexes and topological homotopy groups (`HomotopyGroup`). It has no crossed modules, cat$^n$-groups, simplicial groups as a homotopy theory, or homotopy category of $n$-types.
+Mathlib has group actions by automorphisms (`MulDistribMulAction`), semidirect products (`SemidirectProduct`), equivalences of categories (`CategoryTheory.Equivalence`), simplicial objects and simplicial sets (`SimplicialObject`, `SSet`), the nerve of a category (`CategoryTheory.nerve`), Kan complexes and topological homotopy groups (`HomotopyGroup`). It has no crossed modules, $\text{cat}^n$-groups, simplicial groups as a homotopy theory, or homotopy category of $n$-types.

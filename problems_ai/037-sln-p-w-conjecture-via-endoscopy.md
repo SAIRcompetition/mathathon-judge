@@ -17,7 +17,7 @@ A proof of the SLn P=W Conjecture without using \mathcal{H}_2. Instead, it shoul
 
 Maulik, Davesh, and Junliang Shen. "The P=W conjecture for GL_n." Annals of Mathematics 200, no. 2 (2024): 529-556.
 
-Hausel, Tamas, Anton Mellit, Alexandre Minets, and Olivier Schiffmann. "$ P= W $ via $\mathcal {H} _2$." arXiv preprint arXiv:2209.05429 (2022).
+Hausel, Tamas, Anton Mellit, Alexandre Minets, and Olivier Schiffmann. "P=W via $\mathcal{H}_2$." arXiv preprint arXiv:2209.05429 (2022).
 
 OpenAI. "P=W in composite rank for fixed determinant." OpenAI Math Release preprint (2026). https://github.com/openai/math/tree/main/preprints/P-equals-W-in-composite-rank-for-fixed-determinant-September-24-2026.
 
@@ -37,14 +37,16 @@ OpenAI. "P=W in composite rank for fixed determinant." OpenAI Math Release prepr
 
 ### The result
 
-Let $C$ be a smooth projective curve of genus $g\ge 2$, $\gcd(n,d)=1$, $L\in\operatorname{Pic}^d(C)$. Let $M_{\rm Dol}$ be the moduli of stable rank-$n$ Higgs bundles with $\det E\simeq L$, $\operatorname{tr}\theta=0$, and $M_B$ the twisted $\mathrm{SL}_n$ character variety; nonabelian Hodge theory identifies their cohomology. P = W states that the perverse filtration $P$ of the Hitchin map equals the weight filtration $W$ of $M_B$:
+Let $C$ be a smooth projective curve of genus $g\ge 2$, $\gcd(n,d)=1$, $L\in\operatorname{Pic}^d(C)$. Let $M_{\rm Dol}$ be the moduli of stable $\text{rank-}n$ Higgs bundles with $\det E\simeq L$, $\operatorname{tr}\theta=0$, and $M_B$ the twisted $\mathrm{SL} _ n$ character variety; nonabelian Hodge theory identifies their cohomology. P = W states that the perverse filtration $P$ of the Hitchin map equals the weight filtration $W$ of $M_B$:
+
 $$P_kH^m(M_B,\mathbb Q)=W_{2k}H^m=W_{2k+1}H^m\quad\text{for all }m,k,$$
-including the variant part (nontrivial characters of $\Gamma=\operatorname{Pic}^0(C)[n]$). For $\mathrm{GL}_n$ it was proved by Maulik–Shen (Annals 2024), Hausel–Mellit–Minets–Schiffmann (arXiv 2022) and Maulik–Shen–Yin (Acta 2025).
+
+including the variant part (nontrivial characters of $\Gamma=\operatorname{Pic}^0(C)[n]$). For $\mathrm{GL} _ n$ it was proved by Maulik–Shen (Annals 2024), Hausel–Mellit–Minets–Schiffmann (arXiv 2022) and Maulik–Shen–Yin (Acta 2025).
 
 ### How the known proof works
 
 - Maulik–Shen route for GLₙ: a strong perversity bound for tautological classes, proved with vanishing-cycle functors, Yun's global Springer theory and a parabolic support theorem, plus Mellit's curious hard Lefschetz.
-- Endoscopy (Maulik–Shen 2021): for each character $\kappa$, a surjective operator $p_\kappa$ from the cohomology of GLᵣ Higgs moduli on a degree-$m$ cyclic cover $C'\to C$ ($n=mr$) onto the part $H^*_\kappa$, shifting perverse filtrations by a fixed amount (Theorem 5.4); this reproves the Hausel–Thaddeus conjecture.
+- Endoscopy (Maulik–Shen 2021): for each character $\kappa$, a surjective operator $p_\kappa$ from the cohomology of GLᵣ Higgs moduli on a $\text{degree-}m$ cyclic cover $C'\to C$ ($n=mr$) onto the part $H^{\ast} _ \kappa$, shifting perverse filtrations by a fixed amount (Theorem 5.4); this reproves the Hausel–Thaddeus conjecture.
 - The missing step on this route is Maulik–Shen's Question 5.5: whether the Betti version of $p_\kappa$ maps weight filtrations onto weight filtrations; a yes, with GLᵣ P = W, gives SLₙ P = W.
 - Prime rank: de Cataldo–Maulik–Shen compute both filtrations on the variant part, using Gröchenig–Wyss–Ziegler's proof of topological mirror symmetry, and reduce SLₚ to GLₚ.
 - The OpenAI composite-rank proof instead builds one degree $-2$ operator $f$ on the full cohomology with $fP_k\subset P_{k-2}$, $fW_j\subset W_{j-4}$, $[[f,e],e]=-2e$, following the sl₂ and flag-correspondence methods of Hausel–Mellit–Minets–Schiffmann; it answers Question 5.5 as Corollary 9.2.
@@ -66,7 +68,7 @@ Prerequisites: perverse sheaves and the decomposition theorem, Hitchin fibration
 ### References, with links
 
 - Maulik, Davesh, and Junliang Shen. "The P=W conjecture for GL_n." Annals of Mathematics 200, no. 2 (2024): 529-556. <https://doi.org/10.4007/annals.2024.200.2.3>
-- Hausel, Tamas, Anton Mellit, Alexandre Minets, and Olivier Schiffmann. "$P=W$ via $\mathcal{H}_2$." arXiv preprint arXiv:2209.05429 (2022). <https://arxiv.org/abs/2209.05429>
+- Hausel, Tamas, Anton Mellit, Alexandre Minets, and Olivier Schiffmann. "P=W via $\mathcal{H} _ 2$." arXiv preprint arXiv:2209.05429 (2022). <https://arxiv.org/abs/2209.05429>
 - OpenAI. "P=W in composite rank for fixed determinant." OpenAI Math Release preprint (2026). <https://github.com/openai/math/tree/main/preprints/P-equals-W-in-composite-rank-for-fixed-determinant-September-24-2026>.
 
 ### Further references
@@ -81,7 +83,7 @@ Prerequisites: perverse sheaves and the decomposition theorem, Hitchin fibration
 
 #### Official statement
 
-This problem has no official Lean statement: P = W compares the perverse filtration of the Hitchin map on the moduli space of stable $\mathrm{SL}_n$ Higgs bundles on a curve with the weight filtration on the cohomology of the twisted character variety, and Mathlib has no Higgs bundles, moduli spaces, character varieties, perverse sheaves or mixed Hodge structures, which cannot be built faithfully within a statement file.
+This problem has no official Lean statement: P = W compares the perverse filtration of the Hitchin map on the moduli space of stable $\mathrm{SL} _ n$ Higgs bundles on a curve with the weight filtration on the cohomology of the twisted character variety, and Mathlib has no Higgs bundles, moduli spaces, character varieties, perverse sheaves or mixed Hodge structures, which cannot be built faithfully within a statement file.
 
 #### Mathlib
 

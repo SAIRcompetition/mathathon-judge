@@ -38,16 +38,18 @@ Camillo De Lellis, Rectifiable Sets, Densities, and Tangent Measures, Zürich Le
 For a locally finite Borel measure $\mu$ on $\mathbb R^n$ and $\alpha\ge0$, consider the density ratio $\mu(B_r(x))/r^\alpha$ as $r\downarrow0$.
 
 **Theorem (Marstrand 1964; Preiss 1987).** Suppose that $\lim_{r\downarrow0}\mu(B_r(x))/r^\alpha$ exists in $(0,\infty)$ for $\mu$-a.e. $x$. Then either $\mu=0$ or $\alpha=k$ is an integer with $k\le n$. In the latter case the hypothesis holds if and only if there are a Borel function $f$ and countably many Lipschitz $k$-dimensional submanifolds $\Gamma_i$ with
-$$\mu(A)=\sum_i\int_{\Gamma_i\cap A}f\,d\mathrm{Vol}_k\qquad\text{for all Borel }A,$$
+
+$$\mu(A)=\sum_i\int_{\Gamma_i\cap A}f\thinspace d\mathrm{Vol} _ k\qquad\text{for all Borel }A,$$
+
 that is, $\mu$ is $k$-rectifiable.
 
-Marstrand proved that $\alpha$ must be an integer; Preiss proved rectifiability. Preiss's stronger form: there is $c(k,n)>1$ such that $0<\limsup_{r\downarrow0}\mu(B_r(x))/r^k<c(k,n)\liminf_{r\downarrow0}\mu(B_r(x))/r^k<\infty$ a.e. already implies rectifiability. The optimal $c(k,n)$ is unknown (De Lellis, Problem 10.2).
+Marstrand proved that $\alpha$ must be an integer; Preiss proved rectifiability. Preiss's stronger form: there is $c(k,n)\gt1$ such that $0\lt\limsup_{r\downarrow0}\mu(B_r(x))/r^k\lt c(k,n)\liminf_{r\downarrow0}\mu(B_r(x))/r^k\lt\infty$ a.e. already implies rectifiability. The optimal $c(k,n)$ is unknown (De Lellis, Problem 10.2).
 
 ### How the known proof works
 
 Following De Lellis, Chapters 3 and 5–9:
-- Tangent measures: weak-* limits of the blow-ups $r_i^{-k}\mu_{x,r_i}$ as $r_i\to0$. Where the density exists, every tangent measure is a multiple of a $k$-uniform measure: $\nu(B_r(y))=\omega_kr^k$ for all $y\in\operatorname{supp}\nu$ and $r>0$ (Proposition 3.4).
-- If all tangent measures were flat, i.e. of the form $\mathcal H^k\llcorner V$ for a $k$-plane $V$, the Marstrand–Mattila rectifiability criterion would finish the proof. For $k\le2$ every $k$-uniform measure is flat, which needs real work for $k=2$. For $k=3$ the Kowalski–Preiss cone $\{x_4^2=x_1^2+x_2^2+x_3^2\}\subset\mathbb R^4$ carries a $3$-uniform measure that is not flat.
+- Tangent measures: weak-* limits of the blow-ups $r_i^{-k}\mu_{x,r_i}$ as $r_i\to0$. Where the density exists, every tangent measure is a multiple of a $k$-uniform measure: $\nu(B_r(y))=\omega_kr^k$ for all $y\in\operatorname{supp}\nu$ and $r\gt0$ (Proposition 3.4).
+- If all tangent measures were flat, i.e. of the form $\mathcal H^k\llcorner V$ for a $k$-plane $V$, the Marstrand–Mattila rectifiability criterion would finish the proof. For $k\le2$ every $k$-uniform measure is flat, which needs real work for $k=2$. For $k=3$ the Kowalski–Preiss cone $\lbrace x_4^2=x_1^2+x_2^2+x_3^2\rbrace\subset\mathbb R^4$ carries a $3$-uniform measure that is not flat.
 - Part A: at a.e. point, tangent measures of tangent measures are again tangent measures (Lemma 6.6). With Marstrand's argument this gives a flat tangent measure at a.e. point (Theorem 6.8).
 - Part B: if one tangent measure at $x$ is flat, all are (Theorem 6.10). Three steps: a $k$-uniform measure has a unique tangent measure at infinity, its blow-down, and it is a cone (Proposition 6.16, by expanding moments). If that cone is within $\varepsilon(k,n)$ of a plane in an $L^2$ sense on $B_1$, it is flat (Proposition 6.18). A uniform measure that is flat at infinity is flat (Proposition 6.19).
 - Conclusion: the distance from flatness of $r^{-k}\mu_{x,r}$ depends continuously on $r$. A point with one flat tangent and one tangent curved at infinity would force an intermediate value, which the gap excludes (§6.4).
@@ -55,7 +57,7 @@ Following De Lellis, Chapters 3 and 5–9:
 ### Background
 
 - History: Besicovitch (1938) treated $k=1$ in the plane for sets; Morse and Randolph (1944) extended this to planar measures, and Moore (1950) to $k=1$ in $\mathbb R^n$. Marstrand (1961) proved a weaker theorem for 2-dimensional sets in $\mathbb R^3$, extended by Mattila (1975) to all dimensions. Preiss (1987) introduced tangent measures to solve the general case.
-- Uniform measures: Kowalski and Preiss (1987) showed that every $(n-1)$-uniform measure on $\mathbb R^n$ is flat or, for $n\ge4$ and in suitable coordinates, $\mathcal H^{n-1}$ on $\{x_1^2+x_2^2+x_3^2=x_4^2\}$. Kirchheim and Preiss (2002) proved that the support of a uniformly distributed measure is a real-analytic variety. Nimer (J. Differential Geom. 2022) constructed an infinite family of new 3-uniform measures in arbitrary codimension and classified the conical ones in $\mathbb R^5$. De Lellis lists the classification of $k$-uniform measures as an open problem that would give a new view of Preiss's proof; Nimer's work answers it only in part.
+- Uniform measures: Kowalski and Preiss (1987) showed that every $(n-1)$-uniform measure on $\mathbb R^n$ is flat or, for $n\ge4$ and in suitable coordinates, $\mathcal H^{n-1}$ on $\lbrace x_1^2+x_2^2+x_3^2=x_4^2\rbrace$. Kirchheim and Preiss (2002) proved that the support of a uniformly distributed measure is a real-analytic variety. Nimer (J. Differential Geom. 2022) constructed an infinite family of new 3-uniform measures in arbitrary codimension and classified the conical ones in $\mathbb R^5$. De Lellis lists the classification of $k$-uniform measures as an open problem that would give a new view of Preiss's proof; Nimer's work answers it only in part.
 - Besicovitch's $\tfrac12$-conjecture, on rectifiability of planar sets whose lower density exceeds $\tfrac12$, is listed as open by De Lellis (Conjecture 10.5).
 
 ### Where to start

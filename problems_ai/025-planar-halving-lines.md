@@ -34,15 +34,17 @@ As with many of the results in the recent OpenAI "drop", this improvement on the
 
 ### The result
 
-For an even set $P$ of $n$ points in the plane with no three collinear, let $h(P)$ be the number of halving pairs. The largest possible $h(P)$ lies between $n\,e^{\Omega(\sqrt{\log n})}$ (Tóth, 2001; improved constant by Nivasch, 2008) and $O(n^{4/3})$ (Dey, Discrete Comput. Geom. 19, 1998). The preprint proves absolute constants $\varepsilon>0$, $C$, $n_0$ with
-$$h(P)\le C\,n^{4/3-\varepsilon}\qquad(n\ge n_0 \text{ even}).$$
-It also proves the same bound for the number $S_k(P)$ of switches of the rank-$k$ slope sweep, uniformly in $k$ (Theorem 1.2); both parts form the official Lean statement. As a corollary, $n$-point sets have $O(n(k+1)^{1/3-\varepsilon_0})$ $k$-sets.
+For an even set $P$ of $n$ points in the plane with no three collinear, let $h(P)$ be the number of halving pairs. The largest possible $h(P)$ lies between $n\thinspace e^{\Omega(\sqrt{\log n})}$ (Tóth, 2001; improved constant by Nivasch, 2008) and $O(n^{4/3})$ (Dey, Discrete Comput. Geom. 19, 1998). The preprint proves absolute constants $\varepsilon\gt0$, $C$, $n_0$ with
+
+$$h(P)\le C\thinspace n^{4/3-\varepsilon}\qquad(n\ge n_0 \text{ even}).$$
+
+It also proves the same bound for the number $S_k(P)$ of switches of the $\text{rank-}k$ slope sweep, uniformly in $k$ (Theorem 1.2); both parts form the official Lean statement. As a corollary, $n$-point sets have $O(n(k+1)^{1/3-\varepsilon_0})$ $k$-sets.
 
 ### How the known proof works
 
 - Sweep the slope $s$ and mark the $k$ points with smallest $y-sx$; each change of the marked set is a switch, and at the middle rank the switches are the halving pairs. The bound is proved for all ranks at once, because restricting to a block of switches changes the rank.
 - Dey's mechanism (Section 2): joining the points an interval loses to those it gains gives a complete bipartite exchange graph; convex and concave chain partitions and a crossing count bound the number of disjoint intervals of activity at least $b$ by $O((n/b)^{4/3})$.
-- The main estimate is a uniform little-$o$ improvement of this packing bound as $n/b\to\infty$; one fixed scale then gives a contracting recurrence and the power saving.
+- The main estimate is a uniform $\text{little-}o$ improvement of this packing bound as $n/b\to\infty$; one fixed scale then gives a contracting recurrence and the power saving.
 - The improvement is by contradiction and compactness: near-extremal configurations give limiting measures in "rank coordinates", and a rigidity lemma for three transverse families of sweep lines restores Euclidean control (Sections 3–5).
 - A spatial measure with disk mass $O(r^{32/17})$ and a count of marked "tokens" crossing a boundary contradict positive limiting edge mass (Sections 6–7).
 

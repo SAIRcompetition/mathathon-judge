@@ -39,12 +39,14 @@ This is an established but technically challenging theorem, making it suitable f
 
 ### The result
 
-Let $T_{\exp}$ be the complete theory of $\mathbb R_{\exp}=(\mathbb R;0,1,+,-,\cdot,<,\exp)$.
+Let $T_{\exp}$ be the complete theory of $\mathbb R_{\exp}=(\mathbb R;0,1,+,-,\cdot,\lt,\exp)$.
 
 **Theorem (Wilkie 1996, Second Main Theorem).** $T_{\exp}$ is model complete: every formula is equivalent modulo $T_{\exp}$ to an existential formula; equivalently, every embedding between models of $T_{\exp}$ is elementary.
 
 Geometrically, every definable set $X\subseteq\mathbb R^n$ is a projection of a zero set
-$$\{(x,y)\in\mathbb R^{n+m}:\ p(x,y,e^{x_1},\dots,e^{x_n},e^{y_1},\dots,e^{y_m})=0\},$$
+
+$$\lbrace(x,y)\in\mathbb R^{n+m}:\ p(x,y,e^{x_1},\dots,e^{x_n},e^{y_1},\dots,e^{y_m})=0\rbrace,$$
+
 with $p$ a real polynomial. By Khovanskii (1980) such zero sets have finitely many connected components, so every definable subset of $\mathbb R$ is a finite union of intervals and points: $\mathbb R_{\exp}$ is o-minimal. Quantifiers cannot be eliminated altogether: an example of Osgood (1916) rules out quantifier elimination in this language.
 
 **First Main Theorem.** The expansion of $\mathbb R$ by finitely many restricted Pfaffian functions (a Pfaffian chain on a neighbourhood of $[0,1]^m$, set to $0$ outside the box) is model complete. In particular $(\mathbb R,\exp\restriction[0,1])$ is.
@@ -102,7 +104,7 @@ theorem real_exp_model_complete {n : ℕ} (φ : Language.orderedExpField.Formula
       ∀ x : Fin n → ℝ, φ.Realize x ↔ ψ.Realize x
 ```
 
-The theory of $\mathbb R_{\exp}$ is complete, so its model completeness is stated in the equivalent form the proposer gives: every first-order formula is equivalent in $\mathbb R_{\exp}$ to an existential formula with the same free variables. The language is formal-conjectures' `Language.orderedExpField`, $(+,\cdot,-,0,1,\le,\exp)$, with $\le$ and unary $-$ where the problem has $<$ and binary $-$; this does not change which formulas are equivalent to existential ones.
+The theory of $\mathbb R_{\exp}$ is complete, so its model completeness is stated in the equivalent form the proposer gives: every first-order formula is equivalent in $\mathbb R_{\exp}$ to an existential formula with the same free variables. The language is formal-conjectures' `Language.orderedExpField`, $(+,\cdot,-,0,1,\le,\exp)$, with $\le$ and unary $-$ where the problem has $\lt$ and binary $-$; this does not change which formulas are equivalent to existential ones.
 
 Source: <https://github.com/google-deepmind/formal-conjectures/blob/a425ca3eb797fe927cb88c950565fdcbbbbada70/FormalConjecturesForMathlib/ModelTheory/Real.lean> (Apache License 2.0). Adapted: the language and the structure on $\mathbb R$ are copied from there, and the theorem is written by AI for Mathathon.
 

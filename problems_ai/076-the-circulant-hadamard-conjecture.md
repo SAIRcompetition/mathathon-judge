@@ -32,13 +32,13 @@ An explanation of where the "black magic" alternating product comes from and how
 
 ### The result
 
-A real Hadamard matrix of order $n$ is an $n\times n$ matrix $H$ with entries $\pm1$ and $HH^T=nI_n$; it is circulant if $H_{ij}=h_{j-i \bmod n}$ for signs $h_0,\dots,h_{n-1}$. The preprint proves: a real circulant Hadamard matrix of order $n$ exists if and only if $n\in\{1,4\}$ (Theorem 1.1, which is the official Lean statement). With the odd-length theorem of Turyn and Storer (1961; reproved by Schmidt and Willms, 2016), this gives the Barker lengths: a Barker sequence of length $n>1$ exists iff $n\in\{2,3,4,5,7,11,13\}$. Before this, Turyn (Pacific J. Math., 1965) showed that any order $n>4$ is $4u^2$ with $u$ odd and not a prime power, and Logan and Mossinghoff (2017) left 4 489 possible orders up to $4\cdot10^{30}$.
+A real Hadamard matrix of order $n$ is an $n\times n$ matrix $H$ with entries $\pm1$ and $HH^T=nI_n$; it is circulant if $H_{ij}=h_{j-i \bmod n}$ for signs $h_0,\dots,h_{n-1}$. The preprint proves: a real circulant Hadamard matrix of order $n$ exists if and only if $n\in\lbrace1,4\rbrace$ (Theorem 1.1, which is the official Lean statement). With the odd-length theorem of Turyn and Storer (1961; reproved by Schmidt and Willms, 2016), this gives the Barker lengths: a Barker sequence of length $n\gt1$ exists iff $n\in\lbrace2,3,4,5,7,11,13\rbrace$. Before this, Turyn (Pacific J. Math., 1965) showed that any order $n\gt4$ is $4u^2$ with $u$ odd and not a prime power, and Logan and Mossinghoff (2017) left 4 489 possible orders up to $4\cdot10^{30}$.
 
 ### How the known proof works
 
-- Write the first row as $h=\sum h_jX^j$ in the group ring $\mathbb Z[C_n]$; orthogonality is $hh^*=n$. A group-ring form of Turyn's 2-primary descent gives $n=4u^2$ with $u$ odd (Section 2).
-- For $u>1$ let $P=C_{u^2}$ and $I$ the set of primes dividing $u$. For $x\in\mathbb Z[i][P]$ with $xx^*=u^2$ and $S\subseteq I$, let $x_S$ be its value at characters of order $p$ on the $p$-parts for $p\in S$ (trivial elsewhere), and $\Delta(x)=\prod_{S\subseteq I}x_S^{(-1)^{|S|}}$.
-- A descent lemma (Lemma 3.1) makes each ratio $x_{S\cup\{p\}}/x_S$ a local unit of residue one above $p$, so $\Delta(x)$ is an algebraic integer; as $|x_S|=u$ and the exponents sum to zero, Kronecker's theorem makes it a root of unity of odd order (Proposition 3.4).
+- Write the first row as $h=\sum h_jX^j$ in the group ring $\mathbb Z[C_n]$; orthogonality is $hh^{\ast}=n$. A group-ring form of Turyn's 2-primary descent gives $n=4u^2$ with $u$ odd (Section 2).
+- For $u\gt1$ let $P=C_{u^2}$ and $I$ the set of primes dividing $u$. For $x\in\mathbb Z[i][P]$ with $xx^{\ast}=u^2$ and $S\subseteq I$, let $x_S$ be its value at characters of order $p$ on the $p$-parts for $p\in S$ (trivial elsewhere), and $\Delta(x)=\prod_{S\subseteq I}x_S^{(-1)^{|S|}}$.
+- A descent lemma (Lemma 3.1) makes each ratio $x_{S\cup\lbrace p\rbrace}/x_S$ a local unit of residue one above $p$, so $\Delta(x)$ is an algebraic integer; as $|x_S|=u$ and the exponents sum to zero, Kronecker's theorem makes it a root of unity of odd order (Proposition 3.4).
 - Splitting $C_{4u^2}=C_4\times P$, half the partial evaluations of $h$ at $Z=1,-1,i$ give $c,d,g$ of norm $u^2$, so $\Delta(d)/\Delta(c)$ and $\Delta(g)/\Delta(c)$ have odd order.
 - At a prime above 2 (Section 4) these ratios have residue one, so they equal 1; comparing first-order terms with the identity $J=\sum_{z\in P}z$, which only the trivial character does not annihilate, gives a contradiction.
 

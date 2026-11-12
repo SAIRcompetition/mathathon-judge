@@ -29,29 +29,31 @@ Bergeron, N. (2016). Jacquet-Langlands Correspondence. In: The Spectrum of Hyper
 
 ### The result
 
-Let $D$ be a quaternion algebra over a number field $F$, ramified at a finite set $S$ of places. The global correspondence attaches to each infinite-dimensional automorphic representation $\pi'$ of $D^\times(\mathbb A_F)$ a cuspidal automorphic representation $\pi=\mathrm{JL}(\pi')$ of $\mathrm{GL}_2(\mathbb A_F)$ with
-$$\pi_v\cong\pi'_v\ (v\notin S),\qquad \pi_v=\mathrm{JL}_v(\pi'_v)\ (v\in S),$$
-where $\mathrm{JL}_v$ is the local correspondence from irreducible representations of $D_v^\times$ to discrete series of $\mathrm{GL}_2(F_v)$. The map is injective, and its image consists of the cuspidal $\pi$ that are discrete series at every $v\in S$. One-dimensional representations of $D^\times(\mathbb A_F)$ match the characters $\chi\circ\det$ of $\mathrm{GL}_2(\mathbb A_F)$.
+Let $D$ be a quaternion algebra over a number field $F$, ramified at a finite set $S$ of places. The global correspondence attaches to each infinite-dimensional automorphic representation $\pi'$ of $D^\times(\mathbb A_F)$ a cuspidal automorphic representation $\pi=\mathrm{JL}(\pi')$ of $\mathrm{GL} _ 2(\mathbb A_F)$ with
+
+$$\pi_v\cong\pi' _ v\ (v\notin S),\qquad \pi_v=\mathrm{JL} _ v(\pi' _ v)\ (v\in S),$$
+
+where $\mathrm{JL} _ v$ is the local correspondence from irreducible representations of $D_v^\times$ to discrete series of $\mathrm{GL} _ 2(F_v)$. The map is injective, and its image consists of the cuspidal $\pi$ that are discrete series at every $v\in S$. One-dimensional representations of $D^\times(\mathbb A_F)$ match the characters $\chi\circ\det$ of $\mathrm{GL} _ 2(\mathbb A_F)$.
 
 ### How the known proof works
 
-- Transfer: regular elliptic classes of $D_v^\times$ match those of $\mathrm{GL}_2(F_v)$; one uses test functions $f\leftrightarrow f'$ with matching orbital integrals.
-- Trace formulas: the one for $D^\times$ is simple (compact quotient modulo the centre); the one for $\mathrm{GL}_2$ has extra unipotent, hyperbolic and continuous-spectrum terms.
+- Transfer: regular elliptic classes of $D_v^\times$ match those of $\mathrm{GL} _ 2(F_v)$; one uses test functions $f\leftrightarrow f'$ with matching orbital integrals.
+- Trace formulas: the one for $D^\times$ is simple (compact quotient modulo the centre); the one for $\mathrm{GL} _ 2$ has extra unipotent, hyperbolic and continuous-spectrum terms.
 - Comparison: with test functions supported on regular elliptic elements at places of $S$, the extra terms vanish (using that $D$ ramifies at two or more places).
-- Spectral side: strong multiplicity one for $\mathrm{GL}_2$ and linear independence of characters at $S$ turn the trace identity into the correspondence and the local character relations; characters are treated separately.
-- Badulescu notes that for groups with non-compact quotient, such as $\mathrm{GL}_n$, the trace formula and its comparison (his Steps 2–3) are the long and difficult part.
+- Spectral side: strong multiplicity one for $\mathrm{GL} _ 2$ and linear independence of characters at $S$ turn the trace identity into the correspondence and the local character relations; characters are treated separately.
+- Badulescu notes that for groups with non-compact quotient, such as $\mathrm{GL} _ n$, the trace formula and its comparison (his Steps 2–3) are the long and difficult part.
 
 ### Background
 
 - Shimizu (*J. Math. Soc. Japan* 24, 1972) gave a theta-series proof under some conditions. Martin (2020) describes the correspondence explicitly on modular forms (quaternionic modular forms, Brandt matrices, theta series) and uses it for Eichler's basis problem.
-- For $\mathrm{GL}_n$ and its inner forms, the local correspondence for square-integrable representations is due to Deligne–Kazhdan–Vignéras; the global one to Badulescu (*Invent. Math.* 172, 2008) and Badulescu–Renard (*Compositio Math.* 146, 2010), using Arthur–Clozel's comparison of trace formulas.
+- For $\mathrm{GL} _ n$ and its inner forms, the local correspondence for square-integrable representations is due to Deligne–Kazhdan–Vignéras; the global one to Badulescu (*Invent. Math.* 172, 2008) and Badulescu–Renard (*Compositio Math.* 146, 2010), using Arthur–Clozel's comparison of trace formulas.
 
 ### Where to start
 
-- [The Trace Formula and the Proof of the Global Jacquet–Langlands Correspondence](https://arxiv.org/abs/1904.09517), A. I. Badulescu, 2019: six-step outline of the proof, then the $\mathrm{GL}_2$ case in §10 following Gelbart–Jacquet.
+- [The Trace Formula and the Proof of the Global Jacquet–Langlands Correspondence](https://arxiv.org/abs/1904.09517), A. I. Badulescu, 2019: six-step outline of the proof, then the $\mathrm{GL} _ 2$ case in §10 following Gelbart–Jacquet.
 - [The basis problem revisited](https://arxiv.org/abs/1804.04234), K. Martin, 2018: the correspondence made explicit on modular forms, with Brandt matrices and theta series; §1.2 compares with Shimizu's theta-series proof.
 
-Prerequisites: representation theory of $\mathrm{GL}_2$ over local fields, adeles, quaternion algebras, the Selberg trace formula.
+Prerequisites: representation theory of $\mathrm{GL} _ 2$ over local fields, adeles, quaternion algebras, the Selberg trace formula.
 
 ### References, with links
 
@@ -70,8 +72,8 @@ Prerequisites: representation theory of $\mathrm{GL}_2$ over local fields, adele
 
 #### Official statement
 
-This problem has no official Lean statement: the correspondence matches automorphic representations of $\mathrm{GL}_2(\mathbb A_F)$ with those of $D^\times(\mathbb A_F)$ for a quaternion algebra $D$, place by place, and Mathlib has no automorphic representations, admissible representations of $\mathrm{GL}_2(F_v)$ or ramification of quaternion algebras over number fields, which cannot be built faithfully within a statement file; the FLT project lists the Jacquet–Langlands correspondence among the results it cannot yet state for this reason (<https://github.com/ImperialCollegeLondon/FLT/blob/a3210204ad8876e851e32f73dd97d882bf1ccd0a/FLT/Assumptions/README.md>).
+This problem has no official Lean statement: the correspondence matches automorphic representations of $\mathrm{GL} _ 2(\mathbb A_F)$ with those of $D^\times(\mathbb A_F)$ for a quaternion algebra $D$, place by place, and Mathlib has no automorphic representations, admissible representations of $\mathrm{GL} _ 2(F_v)$ or ramification of quaternion algebras over number fields, which cannot be built faithfully within a statement file; the FLT project lists the Jacquet–Langlands correspondence among the results it cannot yet state for this reason (<https://github.com/ImperialCollegeLondon/FLT/blob/a3210204ad8876e851e32f73dd97d882bf1ccd0a/FLT/Assumptions/README.md>).
 
 #### Mathlib
 
-Mathlib has `QuaternionAlgebra` (`Mathlib/Algebra/Quaternion.lean`), `Matrix.GeneralLinearGroup`, `NumberField.AdeleRing` and `ModularForm`. It lacks the ramification theory of quaternion algebras over number fields, admissible representations of $\mathrm{GL}_2(F_v)$, automorphic representations and trace formulas.
+Mathlib has `QuaternionAlgebra` (`Mathlib/Algebra/Quaternion.lean`), `Matrix.GeneralLinearGroup`, `NumberField.AdeleRing` and `ModularForm`. It lacks the ramification theory of quaternion algebras over number fields, admissible representations of $\mathrm{GL} _ 2(F_v)$, automorphic representations and trace formulas.

@@ -62,16 +62,18 @@ https://link.springer.com/book/10.1007/BFb0059997
 
 ### The result
 
-Auslander–Reiten conjecture (ARC): if $A$ is an Artin algebra, $M$ is finitely generated and $\mathrm{Ext}^i_A(M,M\oplus A)=0$ for all $i>0$, then $M$ is projective. Tachikawa's second conjecture (TC2) is the self-injective case. Claims (OpenAI, 2026), over $k=\mathbb F_2(q,H_1,H_2)$: (i) a split algebra $\Lambda$ with 8 simple modules, $(\mathrm{rad}\,\Lambda)^4\ne0$, and a nonprojective Gorenstein-projective module $Z$ with
+Auslander–Reiten conjecture (ARC): if $A$ is an Artin algebra, $M$ is finitely generated and $\mathrm{Ext}^i_A(M,M\oplus A)=0$ for all $i\gt0$, then $M$ is projective. Tachikawa's second conjecture (TC2) is the self-injective case. Claims (OpenAI, 2026), over $k=\mathbb F_2(q,H_1,H_2)$: (i) a split algebra $\Lambda$ with 8 simple modules, $(\mathrm{rad}\thinspace\Lambda)^4\ne0$, and a nonprojective Gorenstein-projective module $Z$ with
+
 $$\mathrm{Ext}^i_\Lambda(Z,Z)=\mathrm{Ext}^i_\Lambda(Z,\Lambda)=0\qquad(i\ge1);$$
+
 (ii) a symmetric algebra with a nonprojective module without positive self-extensions. Both persist under every field extension.
 
 ### How the known proof works
 
 Structure as given in the Auslander–Reiten preprint (Section 1.2, Figure 1):
-- Conversion principle (Section 3): a stable map $v\colon X\to F\otimes_A X$ over a symmetric algebra $A$ gives a module over $\Lambda=\begin{pmatrix}A&0\\F&A\end{pmatrix}$ whose positive self-extensions are governed by two actions of self-extensions of $X$ on $v$.
-- Sections 4–5: a 10-dimensional algebra $C$ with simple module $s$; for $T=C\ltimes DC$, $\mathrm{Ext}^*_T(s,s)=k[\tau]$ with $|\tau|=3$ (an explicit Hochschild cocycle); then $A=T\otimes T$, $X=s\otimes s$.
-- Sections 6–8: twisting $DC$ by $H$ scales degree-$3m$ classes by $H^{-m}$; the fibre $F$ of two twisted maps gives $v$, and the matrix $\begin{pmatrix}H_1^{-m}&1\\H_2^{-m}&1\end{pmatrix}$ is invertible for $m>0$.
+- Conversion principle (Section 3): a stable map $v\colon X\to F\otimes_A X$ over a symmetric algebra $A$ gives a module over the triangular matrix algebra $\Lambda$ with rows $(A,0)$ and $(F,A)$, whose positive self-extensions are governed by two actions of self-extensions of $X$ on $v$.
+- Sections 4–5: a 10-dimensional algebra $C$ with simple module $s$; for $T=C\ltimes DC$, $\mathrm{Ext}^{\ast} _ T(s,s)=k[\tau]$ with $|\tau|=3$ (an explicit Hochschild cocycle); then $A=T\otimes T$, $X=s\otimes s$.
+- Sections 6–8: twisting $DC$ by $H$ scales $\text{degree-}3m$ classes by $H^{-m}$; the fibre $F$ of two twisted maps gives $v$, and the $2\times2$ matrix with rows $(H_1^{-m},1)$ and $(H_2^{-m},1)$ is invertible for $m\gt0$.
 - The Tachikawa preprint builds a related pair $(\Lambda,Z)$ and transfers it to the symmetric algebra $\Lambda\ltimes D\Lambda$ (Proposition 3.2), which also needs negative complete self-extensions to vanish.
 
 ### Background
@@ -117,7 +119,7 @@ Prerequisites: finite-dimensional algebras, Ext, symmetric algebras, stable modu
 theorem main : FullStatement.{v}
 ```
 
-`FullStatement` says that over $K=\mathbb F_2(t_1,t_2,t_3)$, with $t_1,t_2,t_3$ algebraically independent, there are a finite-dimensional algebra $A$ and a finite-dimensional $A$-module $Z$ that is not projective, is Gorenstein-projective (`TotallyAcyclicWitness`) and has $\mathrm{Ext}^i(Z,Z)=\mathrm{Ext}^i(Z,A)=0$ for all $i>0$, with $A/\mathrm{rad}\,A\cong K^8$ and $\mathrm{rad}(A)^4\ne0$; the same holds for $E\otimes_KA$ and $E\otimes_KZ$ over every field extension $E$ of $K$. Such a $Z$ is a counterexample to the Auslander–Reiten conjecture.
+`FullStatement` says that over $K=\mathbb F_2(t_1,t_2,t_3)$, with $t_1,t_2,t_3$ algebraically independent, there are a finite-dimensional algebra $A$ and a finite-dimensional $A$-module $Z$ that is not projective, is Gorenstein-projective (`TotallyAcyclicWitness`) and has $\mathrm{Ext}^i(Z,Z)=\mathrm{Ext}^i(Z,A)=0$ for all $i\gt0$, with $A/\mathrm{rad}\thinspace A\cong K^8$ and $\mathrm{rad}(A)^4\ne0$; the same holds for $E\otimes_KA$ and $E\otimes_KZ$ over every field extension $E$ of $K$. Such a $Z$ is a counterexample to the Auslander–Reiten conjecture.
 
 Source: <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/AuslanderReiten.lean> (copied unchanged).
 
@@ -129,7 +131,7 @@ A Lean proof of this statement already exists: <https://github.com/openai/math/b
 theorem main_theorem : Counterexample
 ```
 
-`Counterexample` says that over $k=\mathbb F_2(t_1,t_2,t_3)$ there are a finite-dimensional symmetric algebra $A$ and a finite-dimensional $A$-module $M$ that is not projective and has $\mathrm{Ext}^n(M,M)=0$ for all $n>0$, a counterexample to Tachikawa's second conjecture.
+`Counterexample` says that over $k=\mathbb F_2(t_1,t_2,t_3)$ there are a finite-dimensional symmetric algebra $A$ and a finite-dimensional $A$-module $M$ that is not projective and has $\mathrm{Ext}^n(M,M)=0$ for all $n\gt0$, a counterexample to Tachikawa's second conjecture.
 
 Source: <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Tachikawa.lean> (copied unchanged).
 

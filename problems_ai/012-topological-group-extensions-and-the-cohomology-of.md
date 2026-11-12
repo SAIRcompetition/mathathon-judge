@@ -40,18 +40,22 @@ Jain, P., Joshi, R., Spallone, S. (2026). Central Extensions and Cohomology. arX
 
 - Versions 1–2 of arXiv:2307.14658 (2023, 2024) are by R. Joshi and S. Spallone; version 3 (31 July 2026), which the page cites, adds P. Jain. According to the thesis (Chapter 8), the new version was to include material from its Chapter 5 that removes a prime-order hypothesis on $A$ in the semidirect-product case; version 3 states that case without it (Theorem 1.1).
 - Both sources treat only central extensions ($G$ acting trivially on $A$). Item 2 of the description speaks of extensions of $G$ by a $G$-module $A$; for a nontrivial action the target would be cohomology of $BG$ with local coefficients.
-- For non-discrete $A$ the thesis defines $H^n(BG,A)$ as $[BG,B^nA]_*$, using the $\Omega$-spectrum $A,BA,B^2A,\dots$ and the topology of $A$ (so it vanishes for $A=\mathbb R$; thesis, footnote 4), and $E(G,A)$ as the central extensions that are principal $A$-bundles. "The cohomology of $BG$" in the description has to be read in this sense.
+- For non-discrete $A$ the thesis defines $H^n(BG,A)$ as $[BG,B^nA] _ {\ast}$, using the $\Omega$-spectrum $A,BA,B^2A,\dots$ and the topology of $A$ (so it vanishes for $A=\mathbb R$; thesis, footnote 4), and $E(G,A)$ as the central extensions that are principal $A$-bundles. "The cohomology of $BG$" in the description has to be read in this sense.
 - Jain, Joshi and Spallone write that the bijection $E(G,A)\cong H^2(BG,A)$ for discrete $A$ "was observed in the '70s" and is proved in Wigner (1973, Theorem 4) by comparing spectral sequences in simplicial sheaf cohomology. Wigner's paper, and the hypotheses of his theorem, were not checked for these notes.
 
 ### The result
 
 For a discrete group $G$ and a $G$-module $A$, classically
+
 $$H^n(G;A)=\operatorname{Ext}^n_{\mathbb ZG}(\mathbb Z,A)\cong H^n(BG;A)\quad\text{(local coefficients)},$$
+
 where $\operatorname{Ext}^n$ is the group of Yoneda extensions $0\to A\to E_n\to\cdots\to E_1\to\mathbb Z\to0$ of $G$-modules under Baer sum, and $H^2(G;A)$ classifies the extensions of $G$ by $A$; for trivial action these form the group $E(G,A)$ of central extensions.
 
 Now let $G$ be a Hausdorff topological group that is a CW complex (for example a Lie group) and $A$ a discrete abelian group, so that a central extension of $G$ by $A$ is an $A$-sheeted cover of $G$. Jain, Joshi and Spallone use Milgram–Steenrod classifying spaces to define a natural homomorphism
+
 $$\alpha_G\colon E(G,A)\to H^2(BG;A),$$
-equal to the classical bijection when $G$ is discrete. Theorems 1.1 and 11.8: $\alpha_G$ is injective, and it is bijective if $G$ is connected, if the identity component $G^\circ$ is simply connected, or if $G=G^\circ\rtimes\pi_0(G)$. The thesis (Theorem 8.0.6) adds the case $H^3(\pi_0(G);A)=0$. Theorem 1.2: a homomorphism $\varphi\colon G'\to G$ lifts to an extension $E$ if and only if $\varphi^*\alpha_G(E)=0$. For orthogonal representations this gives lifting criteria to $\widetilde{O}(V)$ and $\mathrm{Pin}^\pm(V)$ in terms of Stiefel–Whitney classes (Theorem 1.3).
+
+equal to the classical bijection when $G$ is discrete. Theorems 1.1 and 11.8: $\alpha_G$ is injective, and it is bijective if $G$ is connected, if the identity component $G^\circ$ is simply connected, or if $G=G^\circ\rtimes\pi_0(G)$. The thesis (Theorem 8.0.6) adds the case $H^3(\pi_0(G);A)=0$. Theorem 1.2: a homomorphism $\varphi\colon G'\to G$ lifts to an extension $E$ if and only if $\varphi^{\ast}\alpha_G(E)=0$. For orthogonal representations this gives lifting criteria to $\widetilde{O}(V)$ and $\mathrm{Pin}^\pm(V)$ in terms of Stiefel–Whitney classes (Theorem 1.3).
 
 For non-discrete $A$ (thesis), $\alpha$ is still defined but is in general neither injective nor surjective: the Heisenberg group is a nontrivial extension of $\mathbb R^2$ by $\mathbb R$, while $H^2(B\mathbb R^2,\mathbb R)=0$. Every extension in $\ker\alpha$ is a trivial $A$-bundle (Theorem 1.1.1), so $\ker\alpha$ lies in the continuous cohomology $H^2_c(G;A)$. A class there restricts to zero on the second filtration stage $B_2G$ if and only if it has a null-homotopic representative cocycle (Theorem 1.1.2). Maps $\alpha^n\colon H^n_c(G;A)\to H^n(BG;A)$ generalize the classical isomorphism, and their kernels are described assuming a conjecture on the cohomology of the Milgram–Steenrod filtration (Conjecture 1.2.1). The thesis leaves open whether Yoneda $n$-extensions of topological $G$-modules map naturally to $H^n(BG;A)$ extending $\alpha^n$, and whether Yoneda 2-extensions correspond to $E(G,A)$ (Questions 10.3.2–10.3.6).
 
@@ -98,7 +102,7 @@ Prerequisites: group cohomology and Ext (e.g. Brown, *Cohomology of Groups*, Cha
 
 #### Official statement
 
-This problem has no official Lean statement: its theorems (Jain, Joshi and Spallone, Theorems 1.1 and 11.8: injectivity, and bijectivity in several cases, of a map $\alpha_G\colon E(G,A)\to H^2(BG;A)$) need the Milgram–Steenrod classifying space of a topological group, singular cohomology and Eilenberg–MacLane spaces, which Mathlib does not have, and $\alpha_G$ itself is built from these constructions, so it cannot be defined faithfully within a statement file.
+This problem has no official Lean statement: its theorems (Jain, Joshi and Spallone, Theorems 1.1 and 11.8: injectivity, and bijectivity in several cases, of a map $\alpha_G\colon E(G,A)\to H^2(BG;A){}$) need the Milgram–Steenrod classifying space of a topological group, singular cohomology and Eilenberg–MacLane spaces, which Mathlib does not have, and $\alpha_G$ itself is built from these constructions, so it cannot be defined faithfully within a statement file.
 
 #### Related Lean formalizations
 

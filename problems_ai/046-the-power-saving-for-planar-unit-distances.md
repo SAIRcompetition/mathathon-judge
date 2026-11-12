@@ -32,8 +32,10 @@ A human-readable account of the proof's architecture, a clear explanation of exa
 
 ### The result
 
-Let $u(n)$ be the maximum number of unordered pairs at distance 1 among $n$ points of the Euclidean plane. Theorem 1.1: there are absolute constants $C>0$ and $1\le\beta<4/3$ with
-$$u(n)\le C\,n^{\beta}\qquad\text{for all } n .$$
+Let $u(n)$ be the maximum number of unordered pairs at distance 1 among $n$ points of the Euclidean plane. Theorem 1.1: there are absolute constants $C\gt0$ and $1\le\beta\lt4/3$ with
+
+$$u(n)\le C\thinspace n^{\beta}\qquad\text{for all } n .$$
+
 This improves the bound $O(n^{4/3})$ of Spencer, Szemerédi and Trotter (1984). The proof is by contradiction along a sequence of near-extremal configurations and gives no value of $\beta$. The best lower bound is $u(n)\ge n^{1.014}$ for infinitely many $n$ (Sawin, 2026). The official Lean statement `main` is Theorem 1.1.
 
 ### How the known proof works

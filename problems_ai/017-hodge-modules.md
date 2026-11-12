@@ -32,15 +32,17 @@ Morihiko Saito. Modules de Hodge Polarisables.
 
 ### The result
 
-A polarizable Hodge module of weight $w$ on a complex manifold $X$ is a filtered regular holonomic $\mathcal D_X$-module with a $\mathbb Q$-structure (a perverse sheaf $K$), defined by induction on the dimension of the support: its nearby cycles along every local function, graded by the monodromy filtration, must again be Hodge modules. Saito's direct image theorem: for a projective morphism $f\colon X\to Y$ and $M$ polarizable of weight $w$, each $H^if_*M$ is polarizable of weight $w+i$, and relative hard Lefschetz holds. Hence the decomposition theorem for every perverse sheaf $K$ underlying such an $M$:
-$$Rf_*K\;\simeq\;\bigoplus_i {}^p\!R^if_*K\,[-i].$$
+A polarizable Hodge module of weight $w$ on a complex manifold $X$ is a filtered regular holonomic $\mathcal D_X$-module with a $\mathbb Q$-structure (a perverse sheaf $K$), defined by induction on the dimension of the support: its nearby cycles along every local function, graded by the monodromy filtration, must again be Hodge modules. Saito's direct image theorem: for a projective morphism $f\colon X\to Y$ and $M$ polarizable of weight $w$, each $H^if_{\ast}M$ is polarizable of weight $w+i$, and relative hard Lefschetz holds. Hence the decomposition theorem for every perverse sheaf $K$ underlying such an $M$:
+
+$$Rf_{\ast}K\ \simeq\ \bigoplus_i {}^p\negthinspace R^if_{\ast}K\thinspace[-i].$$
+
 This contains as a special case the decomposition theorem of Beilinson–Bernstein–Deligne–Gabber (1982), which was proved by reduction to positive characteristic.
 
 ### How the known proof works
 
 - Proof by induction on the dimension of the support $Z$ of $M$; the classical inputs are Zucker's $L^2$ Hodge theory on punctured curves and Schmid's asymptotics of variations of Hodge structure.
 - Part 1: a curve mapping to a point (only $\mathbb P^1$ is needed), from Zucker's results.
-- Part 2: $\dim f(Z)\ge 1$. For a local function $g$ on $Y$, nearby and vanishing cycles commute with $f_*$; a weight spectral sequence, controlled by the joint action of $\ell$ and the monodromy logarithm $N$, gives strictness and the recursive conditions.
+- Part 2: $\dim f(Z)\ge 1$. For a local function $g$ on $Y$, nearby and vanishing cycles commute with $f_{\ast}$; a weight spectral sequence, controlled by the joint action of $\ell$ and the monodromy logarithm $N$, gives strictness and the recursive conditions.
 - Part 3: $\dim f(Z)=0$. Blow up a generic codimension-2 linear subspace to get a pencil $\tilde X\to\mathbb P^1$, apply Parts 1–2, and use weak Lefschetz for the polarization.
 - The structure theorem (Hodge modules with strict support $Z$ = polarized variations on a dense open subset of $Z$) uses the Cattani–Kaplan–Schmid and Kashiwara–Kawai degeneration results; extending a generic variation to a Hodge module is the difficult half.
 

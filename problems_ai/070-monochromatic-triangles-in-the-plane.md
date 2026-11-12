@@ -43,13 +43,15 @@ Unit distances in convex polygons - Liam Kruer, Jensen Kohlmeyer, and Liam Price
 ### The result
 
 Let $U_c(n)$ be the largest number of pairs at distance 1 among $n$ points in strictly convex position. Erdős and Moser conjectured $U_c(n)=O(n)$. Theorem 1.1 (Kruer, Kohlmeyer, Price): for all large $n$ there is a strictly convex $n$-point set $P$ with
-$$\min\Big\{\delta_1(P),\ \frac{u(P)}{n}\Big\}\ \ge\ \tfrac14\log_2\log_2 n - C\log_2\log_2\log_2 n,$$
+
+$$\min\Big\lbrace\delta_1(P),\ \frac{u(P)}{n}\Big\rbrace\ \ge\ \tfrac14\log_2\log_2 n - C\log_2\log_2\log_2 n,$$
+
 where $\delta_1(P)$ is the minimum number of unit-distance neighbours. The points lie in two small disks centred at $(0,\pm\tfrac12)$, and the unit-distance graph is bipartite. Hence $U_c(n)=\Omega(n\log\log n)$, and Erdős Problem #97 also fails. The best upper bound is $n\log_2 n+4n$ (Aggarwal). The official Lean statement `erdos_96` is the negation of $U_c(n)=O(n)$.
 
 ### How the known proof works
 
-- Lemma 2.1: if a bipartite graph is realized by seed points $b_i$ of distinct moduli and unit complex numbers $w_e$ with $|b_{\ell(e)}-b_{r(e)}w_e|=1$, then all points $b_i\prod_e w_e^{a_e}$, $0\le a_e<q$, are in strictly convex position (given a support inequality and distinct products) and give at least $m(q-1)q^{m-1}$ unit pairs for $m$ edges.
-- Section 3 realizes the middle levels graph of $\{1,\dots,2d-1\}$, which is $d$-regular, with seed points near $(0,\pm\tfrac12)$ given by explicit expansions in a small parameter $\varepsilon$.
+- Lemma 2.1: if a bipartite graph is realized by seed points $b_i$ of distinct moduli and unit complex numbers $w_e$ with $|b_{\ell(e)}-b_{r(e)}w_e|=1$, then all points $b_i\prod_e w_e^{a_e}$, $0\le a_e\lt q$, are in strictly convex position (given a support inequality and distinct products) and give at least $m(q-1)q^{m-1}$ unit pairs for $m$ edges.
+- Section 3 realizes the middle levels graph of $\lbrace1,\dots,2d-1\rbrace$, which is $d$-regular, with seed points near $(0,\pm\tfrac12)$ given by explicit expansions in a small parameter $\varepsilon$.
 - Lemma 3.4 perturbs the radii so that all bounded products of the rotations are distinct, by a mixed-derivative argument adapted from Swanepoel and Valtr.
 - Section 4 deletes low-degree vertices and unites slightly rotated copies to reach every large $n$, with minimum degree $k\approx\tfrac14\log_2\log_2 n$ (taking $d=2k+1$); the paper has 7 pages.
 

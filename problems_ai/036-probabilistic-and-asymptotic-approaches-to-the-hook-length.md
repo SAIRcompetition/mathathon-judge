@@ -36,7 +36,9 @@ https://doi.org/10.46298/dmtcs.239
 ### The result
 
 For a partition $\lambda$ of $n$, the number $f^\lambda$ of standard Young tableaux of shape $\lambda$ (fillings of the diagram with $1,\dots,n$ increasing along rows and columns) is
+
 $$f^\lambda=\frac{n!}{\prod_{u\in\lambda}h(u)},$$
+
 where the hook length $h(u)$ counts the cell $u$, the cells to its right in its row and the cells below it in its column. Frame, Robinson and Thrall proved it in Canad. J. Math. 6 (1954), by rearranging terms in a formula for $f^\lambda$ due to Young and Frobenius. The official Lean statement has this form, with $f^\lambda$ written as the Kostka number for the content $(1,\dots,1)$.
 
 ### How the known proof works

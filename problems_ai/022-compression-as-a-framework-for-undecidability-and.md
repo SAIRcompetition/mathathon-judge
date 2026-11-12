@@ -48,7 +48,7 @@ https://arxiv.org/abs/2110.04651
 
 ### The result
 
-Compression maps, in polynomial time, a succinct description of an instance (a machine that generates it) to a new instance with the same answer and a larger "cost". Marks's lemma: if $f:\{0,1\}^*\to[0,\infty]$, $\emptyset\ne A\subseteq\{f<\infty\}$, and Compress satisfies $f(y)\ge\max(f(x),n)$ and $x\in A\Rightarrow y\in A$ for $y=\mathrm{Compress}(\hat x,n)$, then a polynomial-time reduction sends halting machines into $A$ and non-halting ones into $\{f=\infty\}$. Lin (Theorems 4.4–4.5): a decision problem whose no-instances form a coRE set is RE-complete iff it is (weakly) compressible; dually for coRE. The proposer asks for simpler proofs via such lemmas, new applications (e.g. quantum channel capacity) and analogues at $\Sigma^0_2/\Pi^0_2$ or for decidable classes.
+Compression maps, in polynomial time, a succinct description of an instance (a machine that generates it) to a new instance with the same answer and a larger "cost". Marks's lemma: if $f:\lbrace0,1\rbrace^{\ast}\to[0,\infty]$, $\emptyset\ne A\subseteq\lbrace f\lt\infty\rbrace$, and Compress satisfies $f(y)\ge\max(f(x),n)$ and $x\in A\Rightarrow y\in A$ for $y=\mathrm{Compress}(\hat x,n)$, then a polynomial-time reduction sends halting machines into $A$ and non-halting ones into $\lbrace f=\infty\rbrace$. Lin (Theorems 4.4–4.5): a decision problem whose no-instances form a coRE set is RE-complete iff it is (weakly) compressible; dually for coRE. The proposer asks for simpler proofs via such lemmas, new applications (e.g. quantum channel capacity) and analogues at $\Sigma^0_2/\Pi^0_2$ or for decidable classes.
 
 ### Background
 

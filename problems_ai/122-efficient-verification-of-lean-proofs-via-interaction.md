@@ -48,15 +48,15 @@ Mario Carneiro. Lean4Lean: Verifying a Typechecker for Lean, in Lean. arXiv:2403
 
 Checking a Lean proof means running a type checker on an environment and a proof term: a deterministic computation of time $T$ and space $s$ on an input of size $n$. Relevant known results:
 
-- Sum-check (Lund–Fortnow–Karloff–Nisan): for $g\in\mathbb F[x_1,\dots,x_v]$ of degree at most $d$ in each variable, a prover convinces a verifier that $\sum_{x\in\{0,1\}^v}g(x)=H$ in $v$ rounds, with $O(dv)$ field elements of communication and one evaluation of $g$ by the verifier; a false claim is accepted with probability at most $dv/|\mathbb F|$. This led to $\mathrm{IP}=\mathrm{PSPACE}$ (Shamir 1992).
+- Sum-check (Lund–Fortnow–Karloff–Nisan): for $g\in\mathbb F[x_1,\dots,x_v]$ of degree at most $d$ in each variable, a prover convinces a verifier that $\sum_{x\in\lbrace0,1\rbrace^v}g(x)=H$ in $v$ rounds, with $O(dv)$ field elements of communication and one evaluation of $g$ by the verifier; a false claim is accepted with probability at most $dv/|\mathbb F|$. This led to $\mathrm{IP}=\mathrm{PSPACE}$ (Shamir 1992).
 - GKR (ECCC version): languages computed by log-space uniform Boolean circuits of depth $d$ have public-coin interactive proofs with verifier time $n\cdot\mathrm{poly}(d,\log n)$, verifier space $O(\log n)$, communication $\mathrm{poly}(d,\log n)$ and prover time polynomial in $n$.
 - Cormode–Mitzenmacher–Thaler (ITCS 2012): a GKR prover in time $O(S\log S)$ for arithmetic circuits of size $S$, with experiments, and streaming verifiers with sublinear memory.
 
 ### How the known proof works
 
-- Sum-check: in round $i$ the prover sends a univariate $g_i(X)$, claimed to be $g$ with $x_1,\dots,x_{i-1}$ set to earlier challenges and the remaining variables summed over $\{0,1\}$; the verifier checks $g_i(0)+g_i(1)$ against the previous claim and sends a random $r_i$. At the end it compares $g_v(r_v)$ with $g(r_1,\dots,r_v)$.
+- Sum-check: in round $i$ the prover sends a univariate $g_i(X)$, claimed to be $g$ with $x_1,\dots,x_{i-1}$ set to earlier challenges and the remaining variables summed over $\lbrace0,1\rbrace$; the verifier checks $g_i(0)+g_i(1)$ against the previous claim and sends a random $r_i$. At the end it compares $g_v(r_v)$ with $g(r_1,\dots,r_v)$.
 - Soundness: if the current claim is false, the prover's $g_i$ differs from the true polynomial, and two distinct polynomials of degree $\le d$ agree at a random point with probability at most $d/|\mathbb F|$.
-- GKR: encode each circuit layer by the multilinear extension $\tilde W_i$ of its gate values. Sum-check over the wiring predicates $\widetilde{\mathrm{add}}_i,\widetilde{\mathrm{mult}}_i$ reduces a claim about $\tilde W_i$ at one point to claims about $\tilde W_{i+1}$ at two points, merged along a line. At the input layer the verifier evaluates the extension of the input itself, in time about $n$.
+- GKR: encode each circuit layer by the multilinear extension $\tilde W_i$ of its gate values. Sum-check over the wiring predicates $\widetilde{\mathrm{add}} _ i,\widetilde{\mathrm{mult}} _ i$ reduces a claim about $\tilde W_i$ at one point to claims about $\tilde W_{i+1}$ at two points, merged along a line. At the input layer the verifier evaluates the extension of the input itself, in time about $n$.
 - Why spot checks are weak: a proof of $N$ steps with one bad step survives $k$ random step checks with probability $1-k/N$, while after arithmetization one random evaluation catches any discrepancy with probability at least $1-d/|\mathbb F|$ (Schwartz–Zippel).
 
 ### Background

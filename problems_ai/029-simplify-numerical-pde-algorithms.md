@@ -36,7 +36,7 @@ Li, Yingzhou, et al. "Butterfly factorization." Multiscale Modeling & Simulation
 
 ### The result
 
-The objects are fast algorithms for dense $N\times N$ matrices that come from integral equations, such as $U_k=\sum_{j\ne k}s_j\,h_0(\omega\|x_k-x_j\|)$ with $h_0(z)=e^{iz}/(iz)$.
+The objects are fast algorithms for dense $N\times N$ matrices that come from integral equations, such as $U_k=\sum_{j\ne k}s_j\thinspace h_0(\omega\Vert x_k-x_j\Vert)$ with $h_0(z)=e^{iz}/(iz)$.
 - The wideband FMM (Cheng et al., 2006) uses one octree for all frequencies. Low-frequency boxes use partial-wave expansions (numerically low-rank blocks), high-frequency boxes use diagonal plane-wave translation operators. Cost: $O(N)$ when low-frequency work dominates, $O(N\log N)$ otherwise.
 - FMM-LU (Sushnikova–Greengard–O'Neil–Rachh, 2023) builds an LU-like hierarchical factorization by recursive strong skeletonization, with $O(n)$ factorization and solve for surface problems that are not highly oscillatory.
 - The butterfly factorization (Li–Yang–Martin–Ho–Ying, 2015) writes a complementary low-rank matrix as a product of $O(\log N)$ sparse factors with $O(N)$ nonzeros each, applied in $O(N\log N)$.

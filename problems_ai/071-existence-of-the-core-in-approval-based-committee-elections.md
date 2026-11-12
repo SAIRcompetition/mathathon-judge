@@ -37,15 +37,17 @@ https://arxiv.org/pdf/2609.11912
 ### The result
 
 Voters $N$ ($|N|=n$) approve sets $A_i$ of candidates; a committee $W$ of size $k$ gives voter $i$ utility $|A_i\cap W|$. With quota $q=n/k$, $W$ is in the core if no coalition can afford a set it unanimously prefers:
-$$\forall\, \emptyset\ne S\subseteq N,\ T\subseteq C\ \text{with}\ |S|\ge q|T|\ \ \exists i\in S:\ |A_i\cap W|\ge|A_i\cap T|.$$
-Becker, Greger and Peters prove that a committee in the stronger core⁺ (robust to fractional deviations) always exists and can be computed in polynomial time; by a limit argument a Droop-quota version ($q=n/(k+1)$) also exists. The official Lean statement is the Hare-quota core existence.
+
+$$\forall\thinspace \emptyset\ne S\subseteq N,\ T\subseteq C\ \text{with}\ |S|\ge q|T|\ \ \exists i\in S:\ |A_i\cap W|\ge|A_i\cap T|.$$
+
+Becker, Greger and Peters prove that a committee in the stronger core⁺ (robust to fractional deviations) always exists and can be computed in polynomial time; by a limit argument a Droop-quota version ($q=n/(k+1){}$) also exists. The official Lean statement is the Hare-quota core existence.
 
 ### How the known proof works
 
-- By LP duality, core⁺ is equivalent to a payment system: voters pay approved winners from unit budgets, keep a reserve at least as large as each payment, supporters of any loser hold reserve $<q$, and each winner receives at most $q$ (P1–P4, Theorem 3.2).
+- By LP duality, core⁺ is equivalent to a payment system: voters pay approved winners from unit budgets, keep a reserve at least as large as each payment, supporters of any loser hold reserve $\lt q$, and each winner receives at most $q$ (P1–P4, Theorem 3.2).
 - PAV's uniform payments satisfy P1–P3 by the swap argument but can violate P4.
-- The Robin Hood operator $\Phi$ adds a coordinate to a probability vector by lowering its largest coordinates to a water level; harmonic entropy $F$ satisfies $F(\text{uniform on }d)=H_{d-1}$, $F(\Phi(x))=F(x)+\|x\|_\infty$, and is concave and symmetric.
-- The rule maximizes $V(W)=\max\sum_iF(r_i,p_i)$ over payments with P1, P2, P4: adding a candidate violating P3 raises $V$ by at least $q$ (Theorem 6.2), and some deletion then loses at most $n/(k+1)<q$ (Theorem 6.3).
+- The Robin Hood operator $\Phi$ adds a coordinate to a probability vector by lowering its largest coordinates to a water level; harmonic entropy $F$ satisfies $F(\text{uniform on }d)=H_{d-1}$, $F(\Phi(x))=F(x)+\Vert x\Vert_\infty$, and is concave and symmetric.
+- The rule maximizes $V(W)=\max\sum_iF(r_i,p_i)$ over payments with P1, P2, P4: adding a candidate violating P3 raises $V$ by at least $q$ (Theorem 6.2), and some deletion then loses at most $n/(k+1)\lt q$ (Theorem 6.3).
 - Only local optimality is used, so local search runs in polynomial time (Section 7).
 
 ### Background

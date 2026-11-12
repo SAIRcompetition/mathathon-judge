@@ -34,22 +34,26 @@ arXiv:math/0202159
 ### The result
 
 $\zeta(3)=\sum_{n\ge1}n^{-3}$ is irrational. Apéry's numbers
+
 $$b_n=\sum_{k=0}^{n}\binom nk^2\binom{n+k}k^2,\qquad a_n=\sum_{k=0}^{n}\binom nk^2\binom{n+k}k^2\Big(\sum_{m=1}^{n}\frac1{m^3}+\sum_{m=1}^{k}\frac{(-1)^{m-1}}{2m^3\binom nm\binom{n+m}m}\Big)$$
+
 both satisfy
-$$(n+1)^3u_{n+1}-(34n^3+51n^2+27n+5)\,u_n+n^3u_{n-1}=0,$$
-with $b_0=1,b_1=5$ and $a_0=0,a_1=6$. The characteristic roots are $(1\pm\sqrt2)^4$, so $b_n$ grows like $(1+\sqrt2)^{4n}$ while $b_n\zeta(3)-a_n=O\big((\sqrt2-1)^{4n}\big)$ and is nonzero. Moreover $2d_n^3a_n\in\mathbb Z$ with $d_n=\operatorname{lcm}(1,\dots,n)=e^{n(1+o(1))}$, and $e^3(\sqrt2-1)^4<1$. If $\zeta(3)=p/q$, then $2q\,d_n^3(b_n\zeta(3)-a_n)$ would be a nonzero integer tending to 0. The argument also gives the irrationality measure $\mu(\zeta(3))\le13.42$; Rhin and Viola (2001) lowered it to $5.513891$.
+
+$$(n+1)^3u_{n+1}-(34n^3+51n^2+27n+5)\thinspace u_n+n^3u_{n-1}=0,$$
+
+with $b_0=1,b_1=5$ and $a_0=0,a_1=6$. The characteristic roots are $(1\pm\sqrt2)^4$, so $b_n$ grows like $(1+\sqrt2)^{4n}$ while $b_n\zeta(3)-a_n=O\big((\sqrt2-1)^{4n}\big)$ and is nonzero. Moreover $2d_n^3a_n\in\mathbb Z$ with $d_n=\operatorname{lcm}(1,\dots,n)=e^{n(1+o(1))}$, and $e^3(\sqrt2-1)^4\lt1$. If $\zeta(3)=p/q$, then $2q\thinspace d_n^3(b_n\zeta(3)-a_n)$ would be a nonzero integer tending to 0. The argument also gives the irrationality measure $\mu(\zeta(3))\le13.42$; Rhin and Viola (2001) lowered it to $5.513891$.
 
 ### How the known proof works
 
 - Apéry, as reconstructed by van der Poorten: start from $\zeta(3)=\frac52\sum_{k\ge1}(-1)^{k-1}/(k^3\binom{2k}k)$, "accelerate" it into the double sums $a_n,b_n$, and verify that both satisfy the recurrence; this account verifies the recurrence but does not derive it.
 - Creative telescoping (Zeilberger's algorithm; Zudilin): put $R_n(t)=\Big(\frac{(t-1)\cdots(t-n)}{t(t+1)\cdots(t+n)}\Big)^2$. Partial fractions give $F_n=-\sum_{t\ge1}R_n'(t)=u_n\zeta(3)-v_n$ with $u_n\in\mathbb Z$, $d_n^3v_n\in\mathbb Z$. The certificate $S_n(t)=4(2n+1)(-2t^2+t+(2n+1)^2)R_n(t)$ satisfies $(n+1)^3R_{n+1}-(2n+1)(17n^2+17n+5)R_n+n^3R_{n-1}=S_n(t+1)-S_n(t)$; differentiating and summing over $t$ gives the recurrence, and $(2n+1)(17n^2+17n+5)=34n^3+51n^2+27n+5$.
-- Smallness: Ball's series $\tilde F_n=\sum_{t\ge1}n!^2(2t+n)\frac{(t-1)\cdots(t-n)\,(t+n+1)\cdots(t+2n)}{(t(t+1)\cdots(t+n))^4}$ satisfies the same recurrence and initial values, so $\tilde F_n=F_n$, and termwise estimates give $0<\tilde F_n<20(n+1)^4(\sqrt2-1)^{4n}$. Bailey's ${}_7F_6$ transformation explains why the two series agree.
-- Beukers (1979): $\iint_{[0,1]^2}\frac{-\log xy}{1-xy}P_n(x)P_n(y)\,dx\,dy=(A_n+B_n\zeta(3))/d_n^3$ with $A_n,B_n\in\mathbb Z$ and shifted Legendre polynomials $P_n$; integration by parts turns it into a positive triple integral bounded by a constant times $(\sqrt2-1)^{4n}$. Here the recurrence is not needed at all.
+- Smallness: Ball's series $\tilde F_n=\sum_{t\ge1}n!^2(2t+n)\frac{(t-1)\cdots(t-n)\thinspace(t+n+1)\cdots(t+2n)}{(t(t+1)\cdots(t+n))^4}$ satisfies the same recurrence and initial values, so $\tilde F_n=F_n$, and termwise estimates give $0\lt\tilde F_n\lt20(n+1)^4(\sqrt2-1)^{4n}$. Bailey's ${} _ 7F_6$ transformation explains why the two series agree.
+- Beukers (1979): $\iint_{[0,1]^2}\frac{-\log xy}{1-xy}P_n(x)P_n(y)\thinspace dx\thinspace dy=(A_n+B_n\zeta(3))/d_n^3$ with $A_n,B_n\in\mathbb Z$ and shifted Legendre polynomials $P_n$; integration by parts turns it into a positive triple integral bounded by a constant times $(\sqrt2-1)^{4n}$. Here the recurrence is not needed at all.
 - Geometry: Beukers and Peters (1984) identify the differential equation satisfied by $\sum b_nt^n$ as the Picard–Fuchs equation of a family of K3 surfaces, and Beukers (1987) parametrizes its solutions by modular forms. Zagier (2009) searched for integral solutions of recurrences like Apéry's recurrence for ζ(2) and found only a few sporadic cases, all of them modular.
 
 ### Background
 
-- Euler showed $\zeta(2k)\in\mathbb Q\,\pi^{2k}$; no such formula is known for odd arguments.
+- Euler showed $\zeta(2k)\in\mathbb Q\thinspace\pi^{2k}$; no such formula is known for odd arguments.
 - Very-well-poised hypergeometric series, the setting where Apéry's linear forms arise most naturally, gave Rivoal's theorem (2000; Ball–Rivoal 2001) that infinitely many $\zeta(2k+1)$ are irrational, Zudilin's (2001) that one of $\zeta(5),\zeta(7),\zeta(9),\zeta(11)$ is irrational, and Fischler–Sprang–Zudilin's (2019) that many odd zeta values are irrational. Fischler's Bourbaki survey compares the approaches.
 - Formal proofs of Apéry's theorem exist in Coq (Chyzak, Mahboubi, Sibut-Pinote, Tassi 2014, following Apéry with computer algebra), Isabelle (Eberl 2019, Beukers' proof) and Lean 4 (Liu, Zhang, Zhi 2025, Beukers' proof).
 - Hankel determinants were already studied in connection with the irrationality of zeta values, e.g. by Haynes and Zudilin (SIGMA 2015).
@@ -61,7 +65,7 @@ with $b_0=1,b_1=5$ and $a_0=0,a_1=6$. The characteristic roots are $(1\pm\sqrt2)
 - [Irrationalité de valeurs de zêta](https://www.numdam.org/item/SB_2002-2003__45__27_0/), S. Fischler, Séminaire Bourbaki 2002/03 (in French): the hypergeometric, integral and Padé viewpoints side by side, leading to Rivoal's theorem.
 - [Irrationality proofs using modular forms](https://www.numdam.org/item/AST_1987__147-148__271_0/), F. Beukers, 1987: the modular explanation of Apéry's numbers.
 
-Prerequisites: partial fractions, hypergeometric series and creative telescoping, linear recurrences, the prime number theorem (or a bound $d_n<3^n$) for $\operatorname{lcm}(1,\dots,n)$; modular forms for the geometric viewpoint.
+Prerequisites: partial fractions, hypergeometric series and creative telescoping, linear recurrences, the prime number theorem (or a bound $d_n\lt3^n$) for $\operatorname{lcm}(1,\dots,n)$; modular forms for the geometric viewpoint.
 
 ### References, with links
 
@@ -104,4 +108,4 @@ Projects outside the Palomar registry are described as their authors describe th
 
 #### Mathlib
 
-Mathlib has `Irrational`, `irrational_pi`, `riemannZeta` with `zeta_nat_eq_tsum_of_gt_one` and the even values `riemannZeta_two_mul_nat`, shifted Legendre polynomials (`Polynomial.shiftedLegendre`, Rodrigues' formula `Polynomial.factorial_mul_shiftedLegendre_eq`), $\operatorname{lcm}(1,\dots,n)$ as `Chebyshev.lcmUpto` with `Chebyshev.psi_eq_log_lcmUpto`, and the Gauss hypergeometric function `ordinaryHypergeometric`. Its Chebyshev bound `Chebyshev.psi_le` gives only $d_n\le4^{n(1+o(1))}$, too weak here since $4^3(\sqrt2-1)^4>1$; it lacks the prime number theorem, Apéry's theorem, creative telescoping and Padé approximation.
+Mathlib has `Irrational`, `irrational_pi`, `riemannZeta` with `zeta_nat_eq_tsum_of_gt_one` and the even values `riemannZeta_two_mul_nat`, shifted Legendre polynomials (`Polynomial.shiftedLegendre`, Rodrigues' formula `Polynomial.factorial_mul_shiftedLegendre_eq`), $\operatorname{lcm}(1,\dots,n)$ as `Chebyshev.lcmUpto` with `Chebyshev.psi_eq_log_lcmUpto`, and the Gauss hypergeometric function `ordinaryHypergeometric`. Its Chebyshev bound `Chebyshev.psi_le` gives only $d_n\le4^{n(1+o(1))}$, too weak here since $4^3(\sqrt2-1)^4\gt1$; it lacks the prime number theorem, Apéry's theorem, creative telescoping and Padé approximation.

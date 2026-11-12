@@ -37,7 +37,7 @@ Low barrier to entry: the statements are elementary, the two Altman papers are 1
 
 ### The result
 
-For a finite $P\subset\mathbb R^2$ let $D(P)=\{|pq|:p,q\in P,\ p\ne q\}$, and let $P$ be the vertex set of a convex $n$-gon, $n\ge3$.
+For a finite $P\subset\mathbb R^2$ let $D(P)=\lbrace|pq|:p,q\in P,\ p\ne q\rbrace$, and let $P$ be the vertex set of a convex $n$-gon, $n\ge3$.
 
 - Altman (1963): $|D(P)|\ge\lfloor n/2\rfloor$, attained by the regular $n$-gon. For odd $n$, $|D(P)|=\frac{n-1}2$ if and only if $P$ is a regular $n$-gon.
 - Fishburn (1995): for even $n\ge8$, $|D(P)|=\frac n2$ if and only if $P$ is a regular $n$-gon or a regular $(n+1)$-gon with one vertex removed. Three hexagons have exactly three distances and four quadrilaterals exactly two. He also finds 15 pentagons with three distances and five heptagons with four: the regular octagon minus a vertex and the four ways of removing two vertices from a regular nonagon.
@@ -46,8 +46,8 @@ For a finite $P\subset\mathbb R^2$ let $D(P)=\{|pq|:p,q\in P,\ p\ne q\}$, and le
 
 The outline follows the Lean proof in plby/lean-proofs (see Lean below), whose lemmas are named after Altman's Lemmas 1 and 2; we did not compare it line by line with the 1963 paper.
 
-- Crossing chords: if $A,B,C,D$ are vertices in cyclic order, the diagonals $AC$ and $BD$ cross, so $|AC|+|BD|>|AB|+|CD|$ (triangle inequality through the crossing point). In particular a chord nested strictly inside a longest chord is shorter than it.
-- Lemma 1: label the vertices $A_0,\dots,A_{n-1}$ so that the side $A_0A_{n-1}$ is a longest distance. For $p<y\le x<q<n-1$, at least one of $|A_pA_x|$, $|A_qA_y|$ is strictly shorter than $|A_pA_q|$.
+- Crossing chords: if $A,B,C,D$ are vertices in cyclic order, the diagonals $AC$ and $BD$ cross, so $|AC|+|BD|\gt|AB|+|CD|$ (triangle inequality through the crossing point). In particular a chord nested strictly inside a longest chord is shorter than it.
+- Lemma 1: label the vertices $A_0,\dots,A_{n-1}$ so that the side $A_0A_{n-1}$ is a longest distance. For $p\lt y\le x\lt q\lt n-1$, at least one of $|A_pA_x|$, $|A_qA_y|$ is strictly shorter than $|A_pA_q|$.
 - Lemma 2: the chords $A_0A_{n-1}$, $A_1A_{n-2}$, followed by chords obtained by moving one endpoint inward at a time, choosing by Lemma 1 a move that shortens the chord, form a chain of $n-2$ chords of strictly decreasing length. So a convex $n$-gon whose longest distance is a side has at least $n-2$ distances ($n-1$ if that side is the unique longest).
 - If no side is a longest distance, cut along a longest diagonal $A_pA_q$. The two pieces, with $x+1$ and $n-x+1$ vertices, have $A_pA_q$ as a longest side, so they give at least $x$ and $n-x-1$ distances, all in $D(P)$; and $\max(x,n-x-1)\ge\lfloor n/2\rfloor$.
 

@@ -28,17 +28,19 @@ https://arxiv.org/pdf/2607.18652 https://arxiv.org/pdf/2402.06535  https://arxiv
 
 ### Notes
 
-- The page compares bounds from two settings. $O(d^{2.5}\sqrt n)$ is the best known bound for the adversarial problem, and it is non-constructive (the best polynomial-time bound is $\tilde O(d^{3.5}\sqrt n)$). The lower bound $\Omega(d^{4/3}\sqrt n)$ is proved for the stochastic problem, where the best known upper bound is $\tilde O(d^{1.5}\sqrt n)$. In the stochastic setting the gap is therefore $d^{4/3}$ versus $d^{3/2}$.
+- The page compares bounds from two settings. $O(d^{2.5}\sqrt n)$ is the best known bound for the adversarial problem, and it is non-constructive (the best polynomial-time bound is $\tilde O(d^{3.5}\sqrt n){}$). The lower bound $\Omega(d^{4/3}\sqrt n)$ is proved for the stochastic problem, where the best known upper bound is $\tilde O(d^{1.5}\sqrt n)$. In the stochastic setting the gap is therefore $d^{4/3}$ versus $d^{3/2}$.
 
 ### The result
 
 A learner chooses $a_t$ in a convex body (here the unit ball $\mathbb B^d$) for $n$ rounds and observes only a noisy value $f(a_t)+\text{noise}$ of an unknown convex 1-Lipschitz $f$ (stochastic setting), or of losses chosen by an adversary. The minimax regret is $\inf\sup\mathbb E\sum_t(f(a_t)-\min f)$. Rajaraman and Han prove that for $d\ge C$, $n\ge Cd^2$
-$$\mathfrak R^\star_n(d;\mathbb B^d)\ \ge\ c\cdot\begin{cases}\sqrt d\,n^{3/4}, & d^2\lesssim n\lesssim d^{10/3},\\ d^{4/3}\sqrt n, & n\gtrsim d^{10/3},\end{cases}$$
-the first lower bound above the $d\sqrt n$ of linear bandits. Upper bounds: $\tilde O(d^{1.5}\sqrt n)$ stochastic (Lattimore–György 2023; Fokkema et al. 2024); $\tilde O(d^{2.5}\sqrt n)$ adversarial, information-theoretic (Lattimore 2020). They conjecture $\tilde\Theta(d^{3/2}\sqrt n\wedge\sqrt d\,n^{3/4}\wedge n)$.
+
+$$\mathfrak R^\star_n(d;\mathbb B^d)\ \ge\ c\cdot\begin{cases}\sqrt d\thinspace n^{3/4}, & d^2\lesssim n\lesssim d^{10/3},\cr  d^{4/3}\sqrt n, & n\gtrsim d^{10/3},\end{cases}$$
+
+the first lower bound above the $d\sqrt n$ of linear bandits. Upper bounds: $\tilde O(d^{1.5}\sqrt n)$ stochastic (Lattimore–György 2023; Fokkema et al. 2024); $\tilde O(d^{2.5}\sqrt n)$ adversarial, information-theoretic (Lattimore 2020). They conjecture $\tilde\Theta(d^{3/2}\sqrt n\wedge\sqrt d\thinspace n^{3/4}\wedge n)$.
 
 ### Background
 
-- Flaxman, Kalai and McMahan (2005) gave $O(\sqrt d\,n^{3/4})$, which the new lower bound shows is optimal for $d^2\lesssim n\lesssim d^{10/3}$.
+- Flaxman, Kalai and McMahan (2005) gave $O(\sqrt d\thinspace n^{3/4})$, which the new lower bound shows is optimal for $d^2\lesssim n\lesssim d^{10/3}$.
 - Bubeck, Eldan and Lee (2017; JACM 2021) gave the first polynomial-time algorithm with $\mathrm{poly}(d)\sqrt n$ regret ($d^{9.5}$); Lattimore (2020) reduced the non-constructive adversarial bound to $d^{2.5}$.
 - Lattimore and György reduced the stochastic dimension dependence to $d^{1.5}$ (COLT 2023, unconstrained); Fokkema et al. (2024) gave an online Newton method with $d^{3.5}\sqrt n$ adversarial regret.
 - Bakhtiari, Lattimore and Szepesvári (2025) show that a naive application of the information-ratio method cannot give better than $\tilde O(d^{1.5}\sqrt n)$ (Lattimore's book, Note 8.v).

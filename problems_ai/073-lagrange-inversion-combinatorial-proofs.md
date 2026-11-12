@@ -30,15 +30,17 @@ Stanley, Enumerative Combinatorics, Vol. 2, Section 5.4
 
 ### The result
 
-Let $R(t)$ be a formal power series. There is a unique power series $f(x)$ with $f=x\,R(f)$, and for positive integers $n$, $k$
-$$[x^n]\,f(x)^k=\frac{k}{n}\,[t^{n-k}]\,R(t)^n .$$
-Gessel's survey proves it equivalent to several other forms, such as $[x^n]\,\varphi(f)=\tfrac1n[t^{n-1}]\,\varphi'(t)R(t)^n$. Lagrange gave the formula in Mém. Acad. Berlin 24 (1770). The official Lean statement is the displayed identity with $n$ replaced by $n+k$ and the fraction cleared, $(n+k)\,[x^{n+k}]f^k=k\,[t^n]R^{n+k}$, over any commutative ring without additive torsion (Mathlib's `HasUniqueDiv`).
+Let $R(t)$ be a formal power series. There is a unique power series $f(x)$ with $f=x\thinspace R(f)$, and for positive integers $n$, $k$
+
+$$[x^n]\thinspace f(x)^k=\frac{k}{n}\thinspace[t^{n-k}]\thinspace R(t)^n .$$
+
+Gessel's survey proves it equivalent to several other forms, such as $[x^n]\thinspace\varphi(f)=\tfrac1n[t^{n-1}]\thinspace\varphi'(t)R(t)^n$. Lagrange gave the formula in Mém. Acad. Berlin 24 (1770). The official Lean statement is the displayed identity with $n$ replaced by $n+k$ and the fraction cleared, $(n+k)\thinspace[x^{n+k}]f^k=k\thinspace[t^n]R^{n+k}$, over any commutative ring without additive torsion (Mathlib's `HasUniqueDiv`).
 
 ### How the known proof works
 
 - Raney's proof (as sketched by Gessel, Section 4.5) reads $f=xR(f)$ as the generating function of plane trees, a vertex with $i$ children having weight $r_i$, so $[x^n]f^k$ is the weight of $k$-tuples of plane trees with $n$ vertices.
 - A $k$-forest is coded by its sequence of child counts minus one (postorder); a sequence of integers $\ge -1$ is such a code iff its sum is $-k$ and all partial sums are negative.
-- $[t^{n-k}]R(t)^n$ is the total weight of all length-$n$ sequences of integers $\ge -1$ with sum $-k$, without the partial-sum condition.
+- $[t^{n-k}]R(t)^n$ is the total weight of all $\text{length-}n$ sequences of integers $\ge -1$ with sum $-k$, without the partial-sum condition.
 - Raney's lemma, a generalization of the Dvoretzky–Motzkin cycle lemma: such a sequence has exactly $k$ cyclic shifts with all partial sums negative, so a fraction $k/n$ of the weight is codes of forests.
 - Gessel also gives non-combinatorial proofs: Jacobi's change of variables for residues (which he calls the simplest), induction, and a factorization proof similar to Lagrange's original.
 
@@ -48,7 +50,7 @@ Gessel's survey proves it equivalent to several other forms, such as $[x^n]\,\va
 - Proofs through labelled trees count rooted forests by their child counts; they rest on the number of trees on $[m]$ with degrees $d_i$, $\binom{m-2}{d_1-1,\dots,d_m-1}$, proved by Prüfer codes, by induction (Moon) or by Rényi's variant.
 - Applications in Gessel's survey: Catalan and ballot numbers, binomial-coefficient identities, Raney's equation $f=\sum_m A_m e^{B_m f}$.
 - Other expositions: Stanley, Enumerative Combinatorics Vol. 2, Chapter 5, and Bergeron, Labelle and Leroux, Combinatorial Species and Tree-like Structures, Chapter 3.
-- Problem 72 (Cayley's formula) uses Lagrange inversion as one of its proofs, via $T(x)=x\,e^{T(x)}$ for rooted trees.
+- Problem 72 (Cayley's formula) uses Lagrange inversion as one of its proofs, via $T(x)=x\thinspace e^{T(x)}$ for rooted trees.
 
 ### Where to start
 

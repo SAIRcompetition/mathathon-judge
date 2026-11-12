@@ -35,20 +35,20 @@ Possible outcomes include one or more of the following:
 ### Notes
 
 - The first reference has no link in the sheet; it is arXiv:1711.08076, doi:10.1609/aaai.v32i1.12209.
-- Conventions: Heule allows $a=b$ in $a+b=c$ (so $1+1=2$ counts). Requiring $a<b$ gives the weak Schur numbers, and defining $S(k)$ as the least $n$ that forces a monochromatic solution shifts all values by one (Heule, footnote 1).
+- Conventions: Heule allows $a=b$ in $a+b=c$ (so $1+1=2$ counts). Requiring $a\lt b$ gives the weak Schur numbers, and defining $S(k)$ as the least $n$ that forces a monochromatic solution shifts all values by one (Heule, footnote 1).
 - Heule states that only the encoding into propositional logic, “a dozen lines of straightforward C code”, was not checked with a theorem prover. The proposer's third outcome targets exactly this gap.
 
 ### The result
 
-$S(k)$ is the largest $n$ such that $\{1,\dots,n\}$ has a $k$-colouring with no monochromatic solution of $a+b=c$, $1\le a,b,c\le n$. Schur showed that $S(k)$ is finite, with $S(k)\le R_k(3)-2$ for the multicolour Ramsey number of triangles. Known values: $S(1)=1$, $S(2)=4$, $S(3)=13$, $S(4)=44$ (Golomb–Baumert 1965), and
+$S(k)$ is the largest $n$ such that $\lbrace1,\dots,n\rbrace$ has a $k$-colouring with no monochromatic solution of $a+b=c$, $1\le a,b,c\le n$. Schur showed that $S(k)$ is finite, with $S(k)\le R_k(3)-2$ for the multicolour Ramsey number of triangles. Known values: $S(1)=1$, $S(2)=4$, $S(3)=13$, $S(4)=44$ (Golomb–Baumert 1965), and
 
 $$S(5)=160\qquad(\text{Heule}).$$
 
-Exoo's colouring gives $S(5)\ge160$; Heule proves that the propositional formula $F^5_{161}$ expressing $S(5)\ge161$ is unsatisfiable. He also enumerates all $2\,447\,113\,088$ valid 5-colourings of $\{1,\dots,160\}$, of which $315\,853\,824$ are modular and $334\,752$ palindromic, so $S(5)$ equals its modular and palindromic variants.
+Exoo's colouring gives $S(5)\ge160$; Heule proves that the propositional formula $F^5_{161}$ expressing $S(5)\ge161$ is unsatisfiable. He also enumerates all $2\thinspace447\thinspace113\thinspace088$ valid 5-colourings of $\lbrace1,\dots,160\rbrace$, of which $315\thinspace853\thinspace824$ are modular and $334\thinspace752$ palindromic, so $S(5)$ equals its modular and palindromic variants.
 
 ### How the known proof works
 
-- Encoding: variables $v^i_j$ (“$j$ has colour $i$”), clauses saying that each number has a colour, and for every $a+b=c$ and colour $i$ a clause excluding $a,b,c$ all of colour $i$.
+- Encoding: variables $v^i_j$ (meaning that $j$ has colour $i$), clauses saying that each number has a colour, and for every $a+b=c$ and colour $i$ a clause excluding $a,b,c$ all of colour $i$.
 - Symmetry breaking: colour permutations are removed by fixing the colours of $1$ and $2$, rules for $3,4,5$ and the first number avoiding colours 1–3; a 35 MB DRAT “re-encoding proof” shows that this preserves satisfiability.
 - Cube-and-conquer: a look-ahead heuristic designed for Schur formulas, with a cheap hardness predictor, splits the problem into millions of cubes (partial assignments), each solved by a CDCL solver; solving took over 14 CPU years.
 - Certificate: an implication proof (for each cube $\alpha$, the formula with $\alpha$ is unsatisfiable; 0.88 PB of compressed DRAT, 2.18 PB as compressed LRAT) and a tautology proof that the cubes cover the search space. An LRAT checker verified in ACL2 checked it; producing and checking LRAT took about 20.5 and 15.6 CPU years.
@@ -91,13 +91,13 @@ Prerequisites: propositional logic and CNF encodings, DRAT/LRAT proof formats, s
 theorem schur_number_five : IsGreatest {N : ℕ | HasSchurColouring 5 N} 160
 ```
 
-`HasSchurColouring 5 N` says that $\{1,\dots,N\}$ has a 5-colouring with no monochromatic solution of $a+b=c$, with $a=b$ allowed as in Heule's paper; the statement contains both Exoo's lower bound and Heule's upper bound. The problem asks for understandable or formally checked parts of the computer proof of this theorem.
+`HasSchurColouring 5 N` says that $\lbrace1,\dots,N\rbrace$ has a 5-colouring with no monochromatic solution of $a+b=c$, with $a=b$ allowed as in Heule's paper; the statement contains both Exoo's lower bound and Heule's upper bound. The problem asks for understandable or formally checked parts of the computer proof of this theorem.
 
 Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Related Lean formalizations
 
-- [A Schur 6-colouring of [1, 538]](https://palomar-registry.org/entry?id=PALOMAR-2026-11-04-000007&version=1), Palomar registry (Lean-checked, trust level high): A. McKenna, a check with Lean core only that $\{1,\dots,538\}$ splits into six sum-free sets, so $S(6)\ge538$.
+- [A Schur 6-colouring of [1, 538]](https://palomar-registry.org/entry?id=PALOMAR-2026-11-04-000007&version=1), Palomar registry (Lean-checked, trust level high): A. McKenna, a check with Lean core only that $\lbrace1,\dots,538\rbrace$ splits into six sum-free sets, so $S(6)\ge538$.
 - [EmptyHexagonLean](https://github.com/bsubercaseaux/EmptyHexagonLean), B. Subercaseaux et al.: a Lean verification that the CNF formula for the empty hexagon number correctly encodes the geometric statement; a model for verifying an encoding like Heule's.
 
 Projects outside the Palomar registry are described as their authors describe them; their proofs have not been checked.

@@ -58,9 +58,8 @@ Don Zagier, A One-Sentence Proof That Every Prime (p\equiv1\pmod4) Is a Sum of T
 ### The result
 
 The two case studies:
-- **Furstenberg (1955).** Call a set of integers open if it is a union of arithmetic progressions $a+b\mathbb Z$ ($b\ge1$). This is a topology on $\mathbb Z$ in which every progression is also closed and every nonempty open set is infinite. Since $\mathbb Z\setminus\{\pm1\}=\bigcup_{p\ \text{prime}}p\mathbb Z$, finitely many primes would make $\{\pm1\}$ open; hence there are infinitely many primes.
-- **Fermat's two-squares theorem, Zagier (1990).** Every prime $p=4k+1$ is a sum of two squares. On the finite set $S=\{(x,y,z)\in\mathbb Z_{>0}^3: x^2+4yz=p\}$ the map
-$$(x,y,z)\mapsto\begin{cases}(x+2z,\;z,\;y-x-z)&x<y-z,\\(2y-x,\;y,\;x-y+z)&y-z<x<2y,\\(x-2y,\;x-y+z,\;y)&x>2y\end{cases}$$
+- **Furstenberg (1955).** Call a set of integers open if it is a union of arithmetic progressions $a+b\mathbb Z$ ($b\ge1$). This is a topology on $\mathbb Z$ in which every progression is also closed and every nonempty open set is infinite. Since $\mathbb Z\setminus\lbrace\pm1\rbrace=\bigcup_{p\ \text{prime}}p\mathbb Z$, finitely many primes would make $\lbrace\pm1\rbrace$ open; hence there are infinitely many primes.
+- **Fermat's two-squares theorem, Zagier (1990).** Every prime $p=4k+1$ is a sum of two squares. On the finite set $S=\lbrace(x,y,z)\in\mathbb Z_{\gt0}^3: x^2+4yz=p\rbrace$ the map sending $(x,y,z)$ to $(x+2z,\ z,\ y-x-z)$ if $x\lt y-z$, to $(2y-x,\ y,\ x-y+z)$ if $y-z\lt x\lt2y$, and to $(x-2y,\ x-y+z,\ y)$ if $x\gt2y$
 is an involution whose only fixed point is $(1,1,k)$. So $|S|$ is odd, the involution $(x,y,z)\mapsto(x,z,y)$ has a fixed point $(x,y,y)$, and $p=x^2+(2y)^2$.
 
 ### How the known proof works

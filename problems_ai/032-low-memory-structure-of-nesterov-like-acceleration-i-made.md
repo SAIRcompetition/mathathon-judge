@@ -41,14 +41,16 @@ Das Gupta, Shuvomoy, Bart PG Van Parys, and Ernest K. Ryu. "Branch-and-bound per
 
 ### The result
 
-A fixed-step first-order method computes $y_{k+1}=y_k-\sum_{i\le k}h_{k+1,i}\nabla f(y_i)$ with coefficients chosen in advance; the question is whether the minimax value over a function class changes when the update may store only the iterate and one auxiliary vector, rather than two. On $L$-smooth convex functions with criterion $(f(y_N)-f_\star)/\|y_0-x_\star\|^2$, the best full-history method is the optimized gradient method (OGM, Kim–Fessler 2016), with worst case $L/(2\theta_{N,N}^2)$. Drori (2017) proved that no black-box method does better in dimension $d\ge N+1$. OGM has the two-sequence form
+A fixed-step first-order method computes $y_{k+1}=y_k-\sum_{i\le k}h_{k+1,i}\nabla f(y_i)$ with coefficients chosen in advance; the question is whether the minimax value over a function class changes when the update may store only the iterate and one auxiliary vector, rather than two. On $L$-smooth convex functions with criterion $(f(y_N)-f_\star)/\Vert y_0-x_\star\Vert^2$, the best full-history method is the optimized gradient method (OGM, Kim–Fessler 2016), with worst case $L/(2\theta_{N,N}^2)$. Drori (2017) proved that no black-box method does better in dimension $d\ge N+1$. OGM has the two-sequence form
+
 $$x_{k+1}=y_k-\tfrac1L\nabla f(y_k),\qquad y_{k+1}=x_{k+1}+\tfrac{\theta_{k,N}-1}{\theta_{k+1,N}}(x_{k+1}-x_k)+\tfrac{\theta_{k,N}}{\theta_{k+1,N}}(x_{k+1}-y_k).$$
+
 For quadratics with spectrum in $[\mu,L]$, the Chebyshev method, a two-term recurrence, attains Nemirovsky's lower bound.
 
 ### Background
 
 - Performance estimation: Drori–Teboulle (Math. Program. 2014) turned the worst case of a fixed-step method into an optimization problem; Taylor–Hendrickx–Glineur (Math. Program. 2017) gave exact interpolation conditions; Kim–Fessler optimized the coefficients and found OGM.
-- Strongly convex case: the information-theoretic exact method ITEM (Taylor–Drori) is optimal for $\|z_N-x_\star\|^2/\|x_0-x_\star\|^2$ and is written with two sequences; its limit is the triple momentum method, as the heavy-ball method is the limit of Chebyshev's method.
+- Strongly convex case: the information-theoretic exact method ITEM (Taylor–Drori) is optimal for $\Vert z_N-x_\star\Vert^2/\Vert x_0-x_\star\Vert^2$ and is written with two sequences; its limit is the triple momentum method, as the heavy-ball method is the limit of Chebyshev's method.
 - Numerical design: BnB-PEP computes globally optimal fixed-step methods, also for nonconvex classes. The AutoOPT pipeline built on it (Kim–Ryu–Das Gupta, arXiv:2608.07407) found "lemniscate acceleration" for gradient-norm minimization and an analytic form of ITEM-f. Kamri–Hendrickx–Glineur (arXiv:2507.20773) tune memoryless and full-history methods numerically.
 - Grimmer–Jo–Park also prove uniqueness of OGM-G and of the lemniscate method for two gradient-norm criteria. Continuous-time models of acceleration are in §4.8 of the monograph.
 

@@ -25,7 +25,7 @@ The primary objective is to develop a combinatorial proof of the exact (p)-adic 
 
 <!-- status: Open -->
 
-- **Status:** The valuation formula follows from Legendre's formula (M. Konvalinka, 2007, Proposition 2); a group-action proof including exactness exists for Catalan numbers, $q=2$ (E. Deutsch and B. E. Sagan, 2006), while for prime powers $q>2$ Konvalinka's tree symmetries prove only the divisibility, and no combinatorial proof of exactness was found.
+- **Status:** The valuation formula follows from Legendre's formula (M. Konvalinka, 2007, Proposition 2); a group-action proof including exactness exists for Catalan numbers, $q=2$ (E. Deutsch and B. E. Sagan, 2006), while for prime powers $q\gt2$ Konvalinka's tree symmetries prove only the divisibility, and no combinatorial proof of exactness was found.
 - **Task:** A combinatorial proof, through symmetries of $q$-ary trees, that the power of $p$ given by the digit-sum formula is exactly the power dividing the Fuss–Catalan number.
 - **Key reference:** [M. Konvalinka, "Divisibility of generalized Catalan numbers", J. Combin. Theory Ser. A 114 (2007), 1089–1100](https://doi.org/10.1016/j.jcta.2006.11.003)
 - **Lean:** Official statement.
@@ -39,26 +39,32 @@ The primary objective is to develop a combinatorial proof of the exact (p)-adic 
 ### The result
 
 For $q\ge1$ the Fuss–Catalan number
-$$C^{(q)}_n=\frac{1}{(q-1)n+1}\binom{qn}{n}$$
-counts $q$-ary trees with $n$ vertices (each vertex has $q$ ordered, possibly empty branches). Write $s_p(m)$ for the sum of the base-$p$ digits of $m$. Konvalinka's Proposition 2: if $q=p^k$ with $p$ prime and $k\ge1$, then
-$$\nu_p\big(C^{(q)}_n\big)=\xi:=\frac{s_p((q-1)n+1)-1}{p-1}.$$
+
+$$C^{(q)} _ n=\frac{1}{(q-1)n+1}\binom{qn}{n}$$
+
+counts $q$-ary trees with $n$ vertices (each vertex has $q$ ordered, possibly empty branches). Write $s_p(m)$ for the sum of the $\text{base-}p$ digits of $m$. Konvalinka's Proposition 2: if $q=p^k$ with $p$ prime and $k\ge1$, then
+
+$$\nu_p\big(C^{(q)} _ n\big)=\xi:=\frac{s_p((q-1)n+1)-1}{p-1}.$$
+
 For $q=2$ this is $\nu_2(C_n)=s_2(n+1)-1$. The proof is Legendre's formula for $\nu_p(m!)$ together with $s_p(qn)=s_p(n)$.
 
 Combinatorial results:
 
 - Deutsch–Sagan (2006), Lemma 2.3: the automorphism group $G_n$ of the complete binary tree of depth $n$ (an iterated wreath product of $\mathbb Z/2$, a 2-group) acts on binary trees with $n$ vertices; every orbit has size divisible by $2^d$, $d=s_2(n+1)-1$, and exactly $1\cdot3\cdots(2d-1)$ orbits have size exactly $2^d$. This number is odd, so $\nu_2(C_n)=d$. They also give a bijective proof of the identity behind the count.
-- Konvalinka (2007), Proposition 7: for $q=p^k$, every orbit of the automorphism group of the complete $q$-ary tree acting on $q$-ary trees has size divisible by $p^\xi$. Theorem 5 uses this for weighted Fuss–Catalan numbers: if $b(0)\equiv1\pmod q$ and $q^{n+1}\mid\Delta^nb(x)$ for all $n\ge1$ and $x$, then $C^{(q)}_n(b)\equiv C^{(q)}_n\pmod{p^{\xi+k}}$.
+- Konvalinka (2007), Proposition 7: for $q=p^k$, every orbit of the automorphism group of the complete $q$-ary tree acting on $q$-ary trees has size divisible by $p^\xi$. Theorem 5 uses this for weighted Fuss–Catalan numbers: if $b(0)\equiv1\pmod q$ and $q^{n+1}\mid\Delta^nb(x)$ for all $n\ge1$ and $x$, then $C^{(q)} _ n(b)\equiv C^{(q)} _ n\pmod{p^{\xi+k}}$.
 
 What is missing: since every orbit has size divisible by $p^\xi$,
-$$C^{(q)}_n/p^\xi\equiv\sum_{O:\ \nu_p(|O|)=\xi}|O|/p^\xi\pmod p,$$
+
+$$C^{(q)} _ n/p^\xi\equiv\sum_{O:\ \nu_p(|O|)=\xi}|O|/p^\xi\pmod p,$$
+
 so exactness is equivalent to this sum over the minimal orbits being nonzero mod $p$. For $q\ge3$ the group is an iterated wreath product of $S_q$, not a $p$-group, so orbit sizes are not powers of $p$ and the minimal orbits must be counted with these weights.
 
 ### How the known proof works
 
-- Arithmetic: in $C^{(q)}_n=(qn)!/(n!\,((q-1)n+1)!)$ apply $\nu_p(m!)=(m-s_p(m))/(p-1)$ and use $s_p(p^kn)=s_p(n)$.
+- Arithmetic: in $C^{(q)} _ n=(qn)!/(n!\thinspace((q-1)n+1)!)$ apply $\nu_p(m!)=(m-s_p(m))/(p-1)$ and use $s_p(p^kn)=s_p(n)$.
 - Orbits (Konvalinka, §3): the orbit of a tree $T$ has size $\prod_v\binom{q}{q^v_1,\dots,q^v_l}$ over the vertices $v$ whose $q$ branches are not all equivalent ("white" vertices), where $q^v_1,\dots,q^v_l$ are the sizes of the classes of equivalent branches at $v$.
 - In an orbit of minimal $p$-adic size no black vertex has a white child (Lemma 8), fewer than $q$ complete $q$-ary subtrees of each depth are attached (Lemma 9), and a white vertex has fewer than $p$ equivalent white children (Lemma 10). Hence the white vertices form a $q$-ary tree with $(s_q((q-1)n+1)-1)/(q-1)$ vertices, and the factor count gives at least $\xi$.
-- For $q=p$ prime, Lemmas 9 and 10 are trivial, and Remark 3 gives the residue of $C^{(p)}_n/p^\xi$ modulo $p$ as $\pm\prod_i(p-a_i-1)!$, where the $a_i$ are the base-$p$ digits of $(p-1)n+1$: a target for a weighted count of minimal orbits.
+- For $q=p$ prime, Lemmas 9 and 10 are trivial, and Remark 3 gives the residue of $C^{(p)} _ n/p^\xi$ modulo $p$ as $\pm\prod_i(p-a_i-1)!$, where the $a_i$ are the $\text{base-}p$ digits of $(p-1)n+1$: a target for a weighted count of minimal orbits.
 
 ### Background
 
@@ -96,10 +102,10 @@ theorem sub_one_mul_padicValNat_fussCatalan (p k n : ℕ) [Fact p.Prime] (hk : 1
       (p.digits ((p ^ k - 1) * n + 1)).sum - 1
 ```
 
-This is Konvalinka's Proposition 2, $\nu_p\big(C^{(q)}_n\big)=\frac{s_p((q-1)n+1)-1}{p-1}$ for $q=p^k$, multiplied by $p-1$ as in Mathlib's Legendre formula, with `fussCatalan q n` $=\binom{qn}{n}/((q-1)n+1)$. The problem asks for a combinatorial proof of this formula through symmetries of $q$-ary trees, which a Lean statement cannot require. The statement itself has a short Lean proof from Legendre's formula `sub_one_mul_padicValNat_factorial` (written and compiled during a review in November 2026), so a Lean proof of it does not by itself address the problem.
+This is Konvalinka's Proposition 2, $\nu_p\big(C^{(q)} _ n\big)=\frac{s_p((q-1)n+1)-1}{p-1}$ for $q=p^k$, multiplied by $p-1$ as in Mathlib's Legendre formula, with `fussCatalan q n` $=\binom{qn}{n}/((q-1)n+1)$. The problem asks for a combinatorial proof of this formula through symmetries of $q$-ary trees, which a Lean statement cannot require. The statement itself has a short Lean proof from Legendre's formula `sub_one_mul_padicValNat_factorial` (written and compiled during a review in November 2026), so a Lean proof of it does not by itself address the problem.
 
 Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Mathlib
 
-Mathlib has `padicValNat`, `Nat.digits`, Legendre's formula `sub_one_mul_padicValNat_factorial` ($(p-1)\,\nu_p(n!)=n-s_p(n)$), Kummer's theorem (`padicValNat_choose`, `sub_one_mul_padicValNat_choose_eq_sub_sum_digits`), Catalan numbers (`catalan`, `catalan_eq_centralBinom_div`) counted by binary trees (`BinaryTree.treesOfNumNodesEq_card_eq_catalan`), orbit–stabilizer (`MulAction.card_orbit_mul_card_stabilizer_eq_card_group`), the $p$-group fixed-point congruence (`IsPGroup.card_modEq_card_fixedPoints`) and regular wreath products (`RegularWreathProduct`). Fuss–Catalan numbers are listed as a TODO in the Catalan file, and there are no $q$-ary trees or automorphism groups of rooted trees.
+Mathlib has `padicValNat`, `Nat.digits`, Legendre's formula `sub_one_mul_padicValNat_factorial` ($(p-1)\thinspace\nu_p(n!)=n-s_p(n){}$), Kummer's theorem (`padicValNat_choose`, `sub_one_mul_padicValNat_choose_eq_sub_sum_digits`), Catalan numbers (`catalan`, `catalan_eq_centralBinom_div`) counted by binary trees (`BinaryTree.treesOfNumNodesEq_card_eq_catalan`), orbit–stabilizer (`MulAction.card_orbit_mul_card_stabilizer_eq_card_group`), the $p$-group fixed-point congruence (`IsPGroup.card_modEq_card_fixedPoints`) and regular wreath products (`RegularWreathProduct`). Fuss–Catalan numbers are listed as a TODO in the Catalan file, and there are no $q$-ary trees or automorphism groups of rooted trees.

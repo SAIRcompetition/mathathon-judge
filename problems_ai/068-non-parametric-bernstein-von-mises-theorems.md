@@ -37,8 +37,10 @@ This problem was proposed jointly by my PhD supervisor Richard Nickl
 
 ### The result
 
-Castillo and Nickl observe $dX^{(n)}=f\,dt+n^{-1/2}dW$ on $[0,1]$, or i.i.d. samples from a density $f$. Let $\tilde\Pi_n$ be the posterior law of $\sqrt n(f-T_n)$. The weak BvM phenomenon (their Definition 2) is
+Castillo and Nickl observe $dX^{(n)}=f\thinspace dt+n^{-1/2}dW$ on $[0,1]$, or i.i.d. samples from a density $f$. Let $\tilde\Pi_n$ be the posterior law of $\sqrt n(f-T_n)$. The weak BvM phenomenon (their Definition 2) is
+
 $$\beta_{\mathcal M_0(w)}\big(\tilde\Pi_n,\mathcal N\big)\to0\quad\text{in }P_{f_0}\text{-probability},$$
+
 with $\beta$ the bounded-Lipschitz metric on a multiscale space $\mathcal M_0(w)$ of wavelet coefficients ($w_l/\sqrt l\uparrow\infty$) and $\mathcal N$ the law of white noise or of the $P_0$-Brownian bridge. Theorem 2 proves it in white noise for product wavelet priors with $T_n=X^{(n)}$ or the posterior mean. Nickl (2024 preprint) proves a Wasserstein BvM in sup-norm for non-linear parabolic PDE models. The proposer wants one theorem covering such results.
 
 ### How the known proof works

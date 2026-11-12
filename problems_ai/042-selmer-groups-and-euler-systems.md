@@ -34,7 +34,9 @@ Kolyvagin’s Work on Modular Elliptic Curves by Benedict Gross: https://wstein.
 ### The result
 
 Let $T$ be a $p$-adic representation of $G_K$, $K$ a number field. An Euler system for $T$ (Rubin, Definition II.1.1) is a family of classes $c_F\in H^1(F,T)$, for finite extensions $F$ of $K$ inside a large abelian extension, such that for $F\subset F'$
-$$\operatorname{Cor}_{F'/F}(c_{F'})=\Big(\prod_{\mathfrak q\in\Sigma(F'/F)}P(\mathrm{Fr}_{\mathfrak q}^{-1}\mid T^*;\mathrm{Fr}_{\mathfrak q}^{-1})\Big)\,c_F,$$
+
+$$\operatorname{Cor} _ {F'/F}(c_{F'})=\Big(\prod_{\mathfrak q\in\Sigma(F'/F)}P(\mathrm{Fr} _ {\mathfrak q}^{-1}\mid T^{\ast};\mathrm{Fr} _ {\mathfrak q}^{-1})\Big)\thinspace c_F,$$
+
 where $\Sigma(F'/F)$ is the set of primes of $K$ prime to a fixed modulus $N$ (divisible by $p$ and the ramified primes of $T$) that ramify in $F'$ but not in $F$. Rubin's main theorems bound the Selmer group of $\operatorname{Hom}(T,\mu_{p^\infty})$ over $K$ and over $\mathbb Z_p^d$-extensions in terms of the Euler system. Examples (Chapter III): cyclotomic units (class groups of real abelian fields), Stickelberger elements (minus parts of class groups), Kato's Euler system (modular elliptic curves).
 
 ### Background

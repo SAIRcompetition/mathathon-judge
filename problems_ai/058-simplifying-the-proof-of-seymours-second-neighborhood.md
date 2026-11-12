@@ -36,12 +36,12 @@ https://github.com/openai/math/blob/main/preprints/A-proof-of-Seymours-second-ne
 
 ### The result
 
-Theorem 1.1: every nonempty finite oriented graph (no loops, no 2-cycles) has a vertex $v$ with $|N^+_1(v)|\le|N^+_2(v)|$, where $N^+_2(v)$ is the set of vertices at directed distance exactly 2. No connectivity or degree hypothesis is needed. The paper also derives the vertex- and arc-weighted forms (via Seacrest's equivalences) and consequences for short directed cycles, for example a directed triangle whenever minimum in- and out-degree are at least $n/3$. It has 15 pages. The official Lean statement `exists_goodVertex` is Theorem 1.1.
+Theorem 1.1: every nonempty finite oriented graph (no loops, no 2-cycles) has a vertex $v$ with $|N^+ _ 1(v)|\le|N^+ _ 2(v)|$, where $N^+ _ 2(v)$ is the set of vertices at directed distance exactly 2. No connectivity or degree hypothesis is needed. The paper also derives the vertex- and arc-weighted forms (via Seacrest's equivalences) and consequences for short directed cycles, for example a directed triangle whenever minimum in- and out-degree are at least $n/3$. It has 15 pages. The official Lean statement `exists_goodVertex` is Theorem 1.1.
 
 ### How the known proof works
 
-- Take a counterexample of minimum order, then minimum number of arcs; it is strongly connected, and deleting arcs leaving $S$ shows $|F^2(S)\setminus F(S)|<|F(S)\setminus S|$ for every nonempty proper vertex set $S$, where $F$ is the out-neighbourhood operator (Lemma 2.2, adapting Seacrest).
-- Replacing each vertex by a large transitive tournament gives $|U|+|F^2(U)|<2|F(U)|$ for every nonempty proper $U$ (Proposition 2.1).
+- Take a counterexample of minimum order, then minimum number of arcs; it is strongly connected, and deleting arcs leaving $S$ shows $|F^2(S)\setminus F(S)|\lt|F(S)\setminus S|$ for every nonempty proper vertex set $S$, where $F$ is the out-neighbourhood operator (Lemma 2.2, adapting Seacrest).
+- Replacing each vertex by a large transitive tournament gives $|U|+|F^2(U)|\lt2|F(U)|$ for every nonempty proper $U$ (Proposition 2.1).
 - A pruning lemma for arbitrary finite binary relations (Lemma 3.1) removes conflicts between two families of ordered pairs at a cost charged to points left uncovered; its proof bounds a matching by a maximum-rank matrix argument (Lemma 3.2).
 - An extremal choice of two compatible families maximizing size plus uncovered points, improved by the pruning lemma, gives a contradiction (Proposition 4.1).
 
@@ -49,7 +49,7 @@ Theorem 1.1: every nonempty finite oriented graph (no loops, no 2-cycles) has a 
 
 - The tournament case (Dean's conjecture) was proved by Fisher (1996) with Farkas' lemma, and by Havet and Thomassé (2000) with median orders.
 - Partial results: minimum out-degree at most 6 (Kaneko–Locke), and 7 in a computer-assisted preprint; tournaments minus a matching, a star or other structures (Fidler–Yuster, Ghazal and others); orientations of random graphs.
-- Ratio results: some vertex has $|N^+_2|\ge\lambda|N^+_1|$ with $\lambda\approx 0.657$ (Chen, Shen, Yuster, 2003), improved to about $0.7155$ (Huang and Peng, 2024).
+- Ratio results: some vertex has $|N^+ _ 2|\ge\lambda|N^+ _ 1|$ with $\lambda\approx 0.657$ (Chen, Shen, Yuster, 2003), improved to about $0.7155$ (Huang and Peng, 2024).
 - The proof builds on the minimal-counterexample and product methods of Brantner, Brockman, Kay and Snively (2009) and on Seacrest's subset version (2018).
 
 ### Where to start

@@ -33,9 +33,11 @@ OpenAI, Improved Short Gaps Between Primes (Aug 2026), plus the GitHub repo open
 
 ### The result
 
-Let $H_1=\liminf_n(p_{n+1}-p_n)$. A set $\mathcal H=\{h_1,\dots,h_k\}$ is admissible if it omits a residue class modulo every prime; DHL[$k,j$] says every admissible $k$-tuple has infinitely many translates $n+\mathcal H$ with at least $j$ primes. With $w_n=\big(\sum_{d_i\mid n+h_i}\lambda_{d_1,\dots,d_k}\big)^2$, if $\sum_{N\le n<2N}\sum_i\mathbf 1_{\mathbb P}(n+h_i)w_n>\rho\sum_{N\le n<2N}w_n$ for all large $N$, infinitely many translates contain $\lfloor\rho+1\rfloor$ primes. Maynard (Propositions 4.1–4.2): if the primes have level of distribution $\theta$, infinitely many translates contain $\lceil\theta M_k/2\rceil$ primes, where
-$$M_k=\sup_F\frac{\sum_{m=1}^k\int\big(\int_0^1F\,dt_m\big)^2}{\int F^2}$$
-over $F$ supported on $t_1+\dots+t_k\le1$. Bombieri–Vinogradov gives every $\theta<\tfrac12$, so $M_k>4$ gives DHL[$k,2$]. Records: $M_{105}>4$, $H_1\le600$ (Maynard); $M_{50,1/25}>4.0043$ on an enlarged simplex, $246$ (Polymath 8b); DHL[49,2], $240$ (Stadlmann); DHL[45,2], $212$ (Charton et al.); DHL[40,2] (OpenAI, Theorem 1.1) with an admissible 40-tuple of diameter 186. Under (generalized) Elliott–Halberstam, $H_1\le12$ ($\le6$).
+Let $H_1=\liminf_n(p_{n+1}-p_n)$. A set $\mathcal H=\lbrace h_1,\dots,h_k\rbrace$ is admissible if it omits a residue class modulo every prime; $\mathrm{DHL}[k,j]$ says every admissible $k$-tuple has infinitely many translates $n+\mathcal H$ with at least $j$ primes. With $w_n=\big(\sum_{d_i\mid n+h_i}\lambda_{d_1,\dots,d_k}\big)^2$, if $\sum_{N\le n\lt2N}\sum_i\mathbf 1_{\mathbb P}(n+h_i)w_n\gt\rho\sum_{N\le n\lt2N}w_n$ for all large $N$, infinitely many translates contain $\lfloor\rho+1\rfloor$ primes. Maynard (Propositions 4.1–4.2): if the primes have level of distribution $\theta$, infinitely many translates contain $\lceil\theta M_k/2\rceil$ primes, where
+
+$$M_k=\sup_F\frac{\sum_{m=1}^k\int\big(\int_0^1F\thinspace dt_m\big)^2}{\int F^2}$$
+
+over $F$ supported on $t_1+\dots+t_k\le1$. Bombieri–Vinogradov gives every $\theta\lt\tfrac12$, so $M_k\gt4$ gives $\mathrm{DHL}[k,2]$. Records: $M_{105}\gt4$, $H_1\le600$ (Maynard); $M_{50,1/25}\gt4.0043$ on an enlarged simplex, $246$ (Polymath 8b); DHL[49,2], $240$ (Stadlmann); DHL[45,2], $212$ (Charton et al.); DHL[40,2] (OpenAI, Theorem 1.1) with an admissible 40-tuple of diameter 186. Under (generalized) Elliott–Halberstam, $H_1\le12$ ($\le6$).
 
 ### How the known proof works
 
@@ -46,14 +48,14 @@ Structure of the OpenAI preprint (outline in Section 1.2):
 
 ### Background
 
-- Goldston–Pintz–Yıldırım (2009) proved $\liminf(p_{n+1}-p_n)/\log p_n=0$; their method gives bounded gaps under any level of distribution above $\tfrac12$. Zhang (2014) proved $H_1<7\cdot10^7$ with estimates beyond $\tfrac12$ for smooth moduli; Polymath 8a reached 4680.
-- Maynard (2015), and independently Tao, let the weights depend on each $d_i$; this needs only Bombieri–Vinogradov and gives $H_m<\infty$ for all $m$. By the parity problem, Polymath 8b's $H_1\le6$ under GEH is the limit of purely sieve-theoretic arguments.
+- Goldston–Pintz–Yıldırım (2009) proved $\liminf(p_{n+1}-p_n)/\log p_n=0$; their method gives bounded gaps under any level of distribution above $\tfrac12$. Zhang (2014) proved $H_1\lt7\cdot10^7$ with estimates beyond $\tfrac12$ for smooth moduli; Polymath 8a reached 4680.
+- Maynard (2015), and independently Tao, let the weights depend on each $d_i$; this needs only Bombieri–Vinogradov and gives $H_m\lt\infty$ for all $m$. By the parity problem, Polymath 8b's $H_1\le6$ under GEH is the limit of purely sieve-theoretic arguments.
 - Stadlmann (2026) added to the Bombieri–Vinogradov support a region whose moduli have a large smooth factor; 240 is the diameter of the narrowest admissible 49-tuple.
 
 ### Where to start
 
 - [Small gaps between primes](https://arxiv.org/abs/1311.4600), J. Maynard, 2013: Sections 2–4 (pp. 3–7), the classical reduction asked for in the task, and $M_k$ (Propositions 4.1–4.3).
-- [Variants of the Selberg sieve, and bounded intervals containing many primes](https://arxiv.org/abs/1407.4897), D. H. J. Polymath, 2014: Section 3 (DHL[$k,j$], Theorems 3.12–3.13) and Section 7, the computation behind 246.
+- [Variants of the Selberg sieve, and bounded intervals containing many primes](https://arxiv.org/abs/1407.4897), D. H. J. Polymath, 2014: Section 3 ($\mathrm{DHL}[k,j]$, Theorems 3.12–3.13) and Section 7, the computation behind 246.
 - [Bounded gaps between primes](https://arxiv.org/abs/2608.31126), J. Stadlmann, 2026: Section 1.1, the mixed support.
 - [Improved short gaps between primes](https://cdn.openai.com/pdf/51126fac-1b68-4128-9666-c908bcc16033/short_gaps.pdf), OpenAI, 2026: Section 1.2 (pp. 2–3), the new supports.
 

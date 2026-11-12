@@ -30,22 +30,24 @@ The ideal goal is a proof of the nonnesting-noncrossing correspondence that expl
 ### Notes
 
 - Section 7 of Dequêne et al. defines charmed roots for every Weyl group but proves nothing beyond types A and C; no later work on other types was found. Numbers follow the arXiv version.
-- $W(B_n)=W(C_n)$ with isomorphic root posets, but the reflections carry different roots, so $\mathrm{Krow}_c$ differs; only type C is a folding of type A (Section 7.1).
+- $W(B_n)=W(C_n)$ with isomorphic root posets, but the reflections carry different roots, so $\mathrm{Krow} _ c$ differs; only type C is a folding of type A (Section 7.1).
 
 ### The result
 
-Let $W$ be a finite Weyl group with degrees $d_1\le\dots\le d_r$, Coxeter number $h=d_r$ and $\mathrm{Cat}(W)=\prod_{i}(h+d_i)/d_i$; for $B_n$ this is $\binom{2n}{n}$ ($20,70,252$ for $n=3,4,5$). For a standard Coxeter element $c$ (a product of the simple reflections in some order), $NC(W,c)=[1,c]_T$ in the absolute order, with $\mathrm{Krew}_c(\pi)=\pi^{-1}c$. $NN(W)$ is the set of order ideals of the positive root poset $\Phi^+$, with
-$$\mathrm{Krow}_c=\mathrm{tog}_{\alpha^{(N)}}\circ\cdots\circ\mathrm{tog}_{\alpha^{(1)}},$$
-which toggles the inversions $\alpha^{(1)},\dots,\alpha^{(N)}$ of the $c$-sorting word of $w_\circ$ in order. Both sets have $\mathrm{Cat}(W)$ elements. Theorem 1.5 (Dequêne et al.): for $W=S_n$ and every standard $c$ there is a unique bijection $\mathrm{Charm}_c:NC(S_n,c)\to NN(S_n)$ with $\mathrm{Charm}_c\circ\mathrm{Krew}_c=\mathrm{Krow}_c\circ\mathrm{Charm}_c$ that preserves support (the simple reflections in a reduced word for $\pi$; the simple roots in the ideal); Corollary 7.1 is the same for $C_n$. For general $W$, Section 7 calls $\alpha_s$ $c$-charmed if $s$ is initial or final in $c$, and $\alpha$ $c$-charmed if $s(\alpha)$ is $scs$-charmed. Whether this yields such a bijection for $B_n$ is open.
+Let $W$ be a finite Weyl group with degrees $d_1\le\dots\le d_r$, Coxeter number $h=d_r$ and $\mathrm{Cat}(W)=\prod_{i}(h+d_i)/d_i$; for $B_n$ this is $\binom{2n}{n}$ ($20,70,252$ for $n=3,4,5$). For a standard Coxeter element $c$ (a product of the simple reflections in some order), $NC(W,c)=[1,c] _ T$ in the absolute order, with $\mathrm{Krew} _ c(\pi)=\pi^{-1}c$. $NN(W)$ is the set of order ideals of the positive root poset $\Phi^+$, with
+
+$$\mathrm{Krow} _ c=\mathrm{tog} _ {\alpha^{(N)}}\circ\cdots\circ\mathrm{tog} _ {\alpha^{(1)}},$$
+
+which toggles the inversions $\alpha^{(1)},\dots,\alpha^{(N)}$ of the $c$-sorting word of $w_\circ$ in order. Both sets have $\mathrm{Cat}(W)$ elements. Theorem 1.5 (Dequêne et al.): for $W=S_n$ and every standard $c$ there is a unique bijection $\mathrm{Charm} _ c:NC(S_n,c)\to NN(S_n)$ with $\mathrm{Charm} _ c\circ\mathrm{Krew} _ c=\mathrm{Krow} _ c\circ\mathrm{Charm} _ c$ that preserves support (the simple reflections in a reduced word for $\pi$; the simple roots in the ideal); Corollary 7.1 is the same for $C_n$. For general $W$, Section 7 calls $\alpha_s$ $c$-charmed if $s$ is initial or final in $c$, and $\alpha$ $c$-charmed if $s(\alpha)$ is $scs$-charmed. Whether this yields such a bijection for $B_n$ is open.
 
 ### How the known proof works
 
-- Sections 2–5: in $S_n$, $(i,j)$ is $c$-charmed when $i$, $j$ lie on different runs of the cycle $c$ (Definition 2.4); $\mathrm{Charm}_c(\pi)$ is the ideal below lattice paths in the root poset that touch only at charmed roots (Definition 5.8).
-- Section 6: for $c=(1,2,\dots,n)$ no root is charmed and $\mathrm{Charm}_c$ is classical; conjugations from $c$ to $scs$ (Propositions 3.4, 4.7) and a local check (Proposition 6.2) give the induction (Theorem 6.4).
+- Sections 2–5: in $S_n$, $(i,j)$ is $c$-charmed when $i$, $j$ lie on different runs of the cycle $c$ (Definition 2.4); $\mathrm{Charm} _ c(\pi)$ is the ideal below lattice paths in the root poset that touch only at charmed roots (Definition 5.8).
+- Section 6: for $c=(1,2,\dots,n)$ no root is charmed and $\mathrm{Charm} _ c$ is classical; conjugations from $c$ to $scs$ (Propositions 3.4, 4.7) and a local check (Proposition 6.2) give the induction (Theorem 6.4).
 
 ### Background
 
-- Classical types have other, non-uniform bijections (Fink–Iriarte Giraldo, Rubey–Stump, Mamede). $\mathrm{Krow}_c$ imitates the “rowmotion in slow motion” of Thomas–Williams (2019).
+- Classical types have other, non-uniform bijections (Fink–Iriarte Giraldo, Rubey–Stump, Mamede). $\mathrm{Krow} _ c$ imitates the “rowmotion in slow motion” of Thomas–Williams (2019).
 
 ### Where to start
 
@@ -79,7 +81,7 @@ theorem exists_unique_charm_typeB (hn : 2 ≤ n) (σ : Equiv.Perm (Fin n)) :
       ∀ g, IsCharmBijection n σ g → Set.EqOn g f (NC n σ)
 ```
 
-This is the type B analogue of Theorem 1.5 (type A) and Corollary 7.1 (type C) of the key reference: for every standard Coxeter element $c$ of $W(B_n)$ there is a unique support-preserving bijection $\mathrm{Charm}_c\colon NC(W,c)\to NN(W)$ with $\mathrm{Charm}_c\circ\mathrm{Krew}_c=\mathrm{Krow}_c\circ\mathrm{Charm}_c$, the bijection that charmed-root rules should produce; that the rules be natural is not stated. $W(B_n)$ acts on $\mathbb Z^n$ by signed permutations, and the $c$-sorting word of $w_\circ$ is written directly as $c^n$, which it is in type $B_n$ ($w_\circ=-1=c^n$, of length $n^2$). A computer search made with the same definitions when this statement was prepared finds exactly one such bijection for every $c$ when $n\le5$, and reproduces Theorem 1.5 for $S_n$, $n\le6$, and Corollary 7.1 for $n\le5$; a separate reimplementation made during review found the same for every $c$ in $B_2$–$B_5$. The case $n\ge6$ is open.
+This is the type B analogue of Theorem 1.5 (type A) and Corollary 7.1 (type C) of the key reference: for every standard Coxeter element $c$ of $W(B_n)$ there is a unique support-preserving bijection $\mathrm{Charm} _ c\colon NC(W,c)\to NN(W)$ with $\mathrm{Charm} _ c\circ\mathrm{Krew} _ c=\mathrm{Krow} _ c\circ\mathrm{Charm} _ c$, the bijection that charmed-root rules should produce; that the rules be natural is not stated. $W(B_n)$ acts on $\mathbb Z^n$ by signed permutations, and the $c$-sorting word of $w_\circ$ is written directly as $c^n$, which it is in type $B_n$ ($w_\circ=-1=c^n$, of length $n^2$). A computer search made with the same definitions when this statement was prepared finds exactly one such bijection for every $c$ when $n\le5$, and reproduces Theorem 1.5 for $S_n$, $n\le6$, and Corollary 7.1 for $n\le5$; a separate reimplementation made during review found the same for every $c$ in $B_2$ to $B_5$. The case $n\ge6$ is open.
 
 Source: written by AI for Mathathon; not taken from an existing formalization.
 

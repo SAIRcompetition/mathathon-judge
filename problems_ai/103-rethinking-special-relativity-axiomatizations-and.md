@@ -40,15 +40,17 @@ V. Ignatowsky, Some General Remarks on the Principle of Relativity (1910).
 Two representative theorems.
 
 Relativity principle without light (Ignatowsky 1910; in the form of Pal 2003). Let $S'$ move with velocity $v$ along the $x$-axis of $S$ and write $x'=X(x,t,v)$, $t'=T(x,t,v)$. Assume (i) relativity: the inverse map is given by the same functions with $-v$; (ii) isotropy: $X(-x,t,-v)=-X(x,t,v)$, $T(-x,t,-v)=T(x,t,v)$; (iii) homogeneity of space and time, which forces linearity; (iv) composing two such maps gives another one. Then there is a universal constant $K$ with
-$$x'=\frac{x-vt}{\sqrt{1-Kv^2}},\qquad t'=\frac{t-Kvx}{\sqrt{1-Kv^2}},\qquad w=\frac{u+v}{1+Kuv}$$
-for the composed velocity $w$, and $K<0$ is inconsistent. $K=0$ is Galilean relativity, $K=1/c^2$ Einstein's; $K^{-1/2}$ is an invariant speed whose value physics must supply.
 
-Causality alone (Zeeman 1964). On $M=\mathbb R^4$ with $Q(x)=x_0^2-x_1^2-x_2^2-x_3^2$ write $x<y$ if $Q(y-x)>0$ and $x_0<y_0$. Every bijection $f\colon M\to M$ with $x<y\iff f(x)<f(y)$, with no linearity or continuity assumed, is a composition of an orthochronous Lorentz transformation, a translation and a dilatation. The analogue fails when space is one-dimensional.
+$$x'=\frac{x-vt}{\sqrt{1-Kv^2}},\qquad t'=\frac{t-Kvx}{\sqrt{1-Kv^2}},\qquad w=\frac{u+v}{1+Kuv}$$
+
+for the composed velocity $w$, and $K\lt0$ is inconsistent. $K=0$ is Galilean relativity, $K=1/c^2$ Einstein's; $K^{-1/2}$ is an invariant speed whose value physics must supply.
+
+Causality alone (Zeeman 1964). On $M=\mathbb R^4$ with $Q(x)=x_0^2-x_1^2-x_2^2-x_3^2$ write $x\lt y$ if $Q(y-x)\gt0$ and $x_0\lt y_0$. Every bijection $f\colon M\to M$ with $x\lt y\iff f(x)\lt f(y)$, with no linearity or continuity assumed, is a composition of an orthochronous Lorentz transformation, a translation and a dilatation. The analogue fails when space is one-dimensional.
 
 ### How the known proof works
 
-- Relativity alone (Pal): homogeneity makes the map linear, and relativity and isotropy reduce its matrix to $\begin{pmatrix}A_v&-vA_v\\-(A_v^2-1)/(vA_v)&A_v\end{pmatrix}$ with $A_v$ even and $A_0=1$. Composing $v$ and $u$ and requiring equal diagonal entries gives $(A_v^2-1)/(v^2A_v^2)=(A_u^2-1)/(u^2A_u^2)$, a constant $K$, so $A_v=(1-Kv^2)^{-1/2}$; for $K<0$ the composition law gives $A_w<0$ when $uv>-1/K$.
-- Zeeman: $f$ and $f^{-1}$ preserve $<$ if and only if they preserve the relation "light can go from $x$ to $y$" (Lemma 1); hence $f$ maps light cones to light cones, light rays to light rays (Lemma 2) and parallel light rays to parallel ones (Lemma 3). All of this also holds in the two-dimensional counterexample.
+- Relativity alone (Pal): homogeneity makes the map linear, and relativity and isotropy reduce its matrix to the one with rows $(A_v,\ -vA_v)$ and $(-(A_v^2-1)/(vA_v),\ A_v)$, with $A_v$ even and $A_0=1$. Composing $v$ and $u$ and requiring equal diagonal entries gives $(A_v^2-1)/(v^2A_v^2)=(A_u^2-1)/(u^2A_u^2)$, a constant $K$, so $A_v=(1-Kv^2)^{-1/2}$; for $K\lt0$ the composition law gives $A_w\lt0$ when $uv\gt-1/K$.
+- Zeeman: $f$ and $f^{-1}$ preserve $\lt$ if and only if they preserve the relation "light can go from $x$ to $y$" (Lemma 1); hence $f$ maps light cones to light cones, light rays to light rays (Lemma 2) and parallel light rays to parallel ones (Lemma 3). All of this also holds in the two-dimensional counterexample.
 - Using that space has dimension at least 2, $f$ is additive and order-preserving, hence linear, on each light ray (Lemma 4), and maps parallel equal intervals on light rays to parallel equal intervals (Lemma 5); in a basis of four light-like vectors this makes $f$ affine, and since it fixes the light cone it preserves $Q$ up to a positive factor.
 
 ### Background

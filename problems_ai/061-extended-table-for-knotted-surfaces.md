@@ -40,15 +40,15 @@ A surface-link is a smoothly embedded closed surface in $\mathbb R^4$, up to amb
 ### Background
 
 - Two admissible ch-diagrams represent the same surface-link iff they are related by the eight Yoshikawa moves (Kamada, Surface-Knots in 4-Space, Theorem 3.6.3).
-- Meier and Zupan (2017) introduced bridge trisections and tri-plane diagrams; an orientable surface has a crossingless tri-plane diagram iff it is unknotted. Allred et al. (2023) found $c(\mathcal P^{n,m})=\max\{1,|n-m|\}$ for unknotted nonorientable surfaces and crossing-number upper bounds for the table.
+- Meier and Zupan (2017) introduced bridge trisections and tri-plane diagrams; an orientable surface has a crossingless tri-plane diagram iff it is unknotted. Allred et al. (2023) found $c(\mathcal P^{n,m})=\max\lbrace1,|n-m|\rbrace$ for unknotted nonorientable surfaces and crossing-number upper bounds for the table.
 - Cazet (2022): most entries are ribbon (triple point number 0); known nonzero values are 2 for $8_1^{-1,-1}$ and 4, 6 for the 2- and 3-twist-spun trefoils; two entries have bounds only.
 - Hughes, Kim and Miller (2020) give complete moves for banded unlink diagrams; Joseph, Meier, Miller and Zupan (2022) compute the normal Euler number and fundamental group from tri-plane diagrams; Taniguchi (2025) bounds Kirby–Thompson invariants of several entries of the table.
 
 ### Where to start
 
 - [On the triple point number of surface-links in Yoshikawa's table](https://arxiv.org/abs/2205.11120), N. Cazet, 2022: redraws the table, explains ch-diagrams and broken sheet diagrams.
-- [Tri-plane diagrams for simple surfaces in $S^4$](https://arxiv.org/abs/2302.08431), W. Allred et al., 2023: the table as tri-plane diagrams, with bridge numbers.
-- [Bridge trisections of knotted surfaces in $S^4$](https://arxiv.org/abs/1507.08370), J. Meier and A. Zupan, 2015: bridge trisections and their moves.
+- [Tri-plane diagrams for simple surfaces in S⁴](https://arxiv.org/abs/2302.08431), W. Allred et al., 2023: the table as tri-plane diagrams, with bridge numbers.
+- [Bridge trisections of knotted surfaces in S⁴](https://arxiv.org/abs/1507.08370), J. Meier and A. Zupan, 2015: bridge trisections and their moves.
 
 Prerequisites: knot diagrams and Reidemeister moves, Morse theory and motion pictures, knot groups and quandles.
 

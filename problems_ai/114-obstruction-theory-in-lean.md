@@ -34,17 +34,18 @@ https://doi.org/10.1090/gsm/035
 ### The result
 
 Let $(X,A)$ be a relative CW complex with skeleta $X^n$, let $n\ge1$, and let $Y$ be path-connected and $n$-simple ($\pi_1Y$ acts trivially on $\pi_nY$, so free homotopy classes $S^n\to Y$ are elements of $\pi_nY$). For $g:X^n\to Y$ define the obstruction cochain $\theta^{n+1}(g)\in C^{n+1}(X,A;\pi_nY)=\mathrm{Hom}(C_{n+1}(X,A),\pi_nY)$ on each $(n+1)$-cell $e$ with attaching map $f_e:S^n\to X^n$ by
+
 $$\theta^{n+1}(g)(e)=[g\circ f_e]\in\pi_nY.$$
 
-**Theorem 7.1** (main theorem of obstruction theory). (1) $\theta^{n+1}(g)$ is a cellular cocycle, and it vanishes iff $g$ extends to $X^{n+1}$. (2) Its class $[\theta^{n+1}(g)]\in H^{n+1}(X,A;\pi_nY)$ vanishes iff $g|_{X^{n-1}}$ extends to $X^{n+1}$.
+**Theorem 7.1** (main theorem of obstruction theory). (1) $\theta^{n+1}(g)$ is a cellular cocycle, and it vanishes iff $g$ extends to $X^{n+1}$. (2) Its class $[\theta^{n+1}(g)]\in H^{n+1}(X,A;\pi_nY)$ vanishes iff $g| _ {X^{n-1}}$ extends to $X^{n+1}$.
 
-Consequences in the same chapter: if $(X,A)$ has dimension $a$ and $Y$ is $(a-1)$-connected, every map $A\to Y$ extends to $X$; for $(n-1)$-connected $Y$ the primary obstruction $\gamma^{n+1}(f)\in H^{n+1}(X,A;\pi_nY)$ is well defined and homotopy invariant (Theorems 7.14, 7.16); a map from an $n$-dimensional CW complex to an $n$-connected space is null-homotopic (Corollary 7.13); $[X,K(\pi,n)]\cong H^n(X;\pi)$ for CW complexes $X$ (Theorem 7.22); the obstruction to lifting through a fibration with $n$-simple fibre $F$ lies in $H^{n+1}(X;\pi_n(F)_\rho)$ (Theorem 7.37); and the Euler class is the primary obstruction to a nowhere-zero section, which gives the Poincaré–Hopf theorem (§7.11).
+Consequences in the same chapter: if $(X,A)$ has dimension $a$ and $Y$ is $(a-1)$-connected, every map $A\to Y$ extends to $X$; for $(n-1)$-connected $Y$ the primary obstruction $\gamma^{n+1}(f)\in H^{n+1}(X,A;\pi_nY)$ is well defined and homotopy invariant (Theorems 7.14, 7.16); a map from an $n$-dimensional CW complex to an $n$-connected space is null-homotopic (Corollary 7.13); $[X,K(\pi,n)]\cong H^n(X;\pi)$ for CW complexes $X$ (Theorem 7.22); the obstruction to lifting through a fibration with $n$-simple fibre $F$ lies in $H^{n+1}(X;\pi_n(F) _ \rho)$ (Theorem 7.37); and the Euler class is the primary obstruction to a nowhere-zero section, which gives the Poincaré–Hopf theorem (§7.11).
 
 ### How the known proof works
 
 Davis–Kirk §§7.3–7.4:
 - A map $S^n\to Y$ extends over $D^{n+1}$ iff it is null-homotopic, so $\theta(g)=0$ iff $g$ extends cell by cell (Lemma 7.3).
-- Cocycle (Proposition 7.5, Theorem 7.6): with $C_n(X,A)=H_n(X^n,X^{n-1})$, the relative Hurewicz theorem identifies $\pi_{n+1}(X^{n+1},X^n)$, modulo the $\pi_1$-action, with $H_{n+1}(X^{n+1},X^n)$, and $\theta(g)$ becomes the boundary map to $\pi_n(X^n)$ followed by $g_*$. Then $\delta\theta(g)=0$ because the Hurewicz map onto $H_{n+2}(X^{n+2},X^{n+1})$ is surjective and two consecutive maps in the homotopy exact sequence of $(X^{n+1},X^n)$ compose to zero.
+- Cocycle (Proposition 7.5, Theorem 7.6): with $C_n(X,A)=H_n(X^n,X^{n-1})$, the relative Hurewicz theorem identifies $\pi_{n+1}(X^{n+1},X^n)$, modulo the $\pi_1$-action, with $H_{n+1}(X^{n+1},X^n)$, and $\theta(g)$ becomes the boundary map to $\pi_n(X^n)$ followed by $g_{\ast}$. Then $\delta\theta(g)=0$ because the Hurewicz map onto $H_{n+2}(X^{n+2},X^{n+1})$ is surjective and two consecutive maps in the homotopy exact sequence of $(X^{n+1},X^n)$ compose to zero.
 - Difference cochain (Lemma 7.8): two maps $f_0,f_1:X^n\to Y$ with a homotopy $G$ of their restrictions to $X^{n-1}$ define, via the obstruction cocycle of $(X\times I,X\times\partial I\cup A\times I)$, a cochain $d\in C^n(X,A;\pi_nY)$ with $\delta d=\theta(f_0)-\theta(f_1)$.
 - Realization (Proposition 7.10, Lemma 7.11): every $d$ arises as $d(g,G,f_1)$ for some $f_1$; build $f_1$ cell by cell with the homotopy extension property of $(\partial(D^n\times I),D^n\times0\cup S^{n-1}\times I)$.
 - If $\theta(g)=\delta d$, take the constant homotopy: then $\theta(f_1)=0$, so $f_1$, which equals $g$ on $X^{n-1}$, extends to $X^{n+1}$.

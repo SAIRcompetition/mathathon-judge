@@ -35,15 +35,17 @@ https://www.sciencedirect.com/science/article/pii/0097316581900625#article
 
 ### The result
 
-The Rogers–Ramanujan identities, with $(q;q)_k=(1-q)\cdots(1-q^k)$:
-$$\sum_{k\ge0}\frac{q^{k^2}}{(q;q)_k}=\prod_{i\ge0}\frac{1}{(1-q^{5i+1})(1-q^{5i+4})},\qquad \sum_{k\ge0}\frac{q^{k^2+k}}{(q;q)_k}=\prod_{i\ge0}\frac{1}{(1-q^{5i+2})(1-q^{5i+3})}.$$
-Subtracting $2k-1,2k-3,\dots,1$ from the parts shows that $q^{k^2}/(q;q)_k$ counts partitions into $k$ parts that differ pairwise by at least 2. So for every $n$: the number of partitions of $n$ into parts $\equiv1,4\pmod5$ equals the number of partitions of $n$ into parts differing by at least 2; for the second identity, parts $\equiv2,3\pmod5$ against parts differing by at least 2 with all parts at least 2. These partition forms are due to MacMahon and Schur.
+The Rogers–Ramanujan identities, with $(q;q) _ k=(1-q)\cdots(1-q^k)$:
+
+$$\sum_{k\ge0}\frac{q^{k^2}}{(q;q) _ k}=\prod_{i\ge0}\frac{1}{(1-q^{5i+1})(1-q^{5i+4})},\qquad \sum_{k\ge0}\frac{q^{k^2+k}}{(q;q) _ k}=\prod_{i\ge0}\frac{1}{(1-q^{5i+2})(1-q^{5i+3})}.$$
+
+Subtracting $2k-1,2k-3,\dots,1$ from the parts shows that $q^{k^2}/(q;q) _ k$ counts partitions into $k$ parts that differ pairwise by at least 2. So for every $n$: the number of partitions of $n$ into parts $\equiv1,4\pmod5$ equals the number of partitions of $n$ into parts differing by at least 2; for the second identity, parts $\equiv2,3\pmod5$ against parts differing by at least 2 with all parts at least 2. These partition forms are due to MacMahon and Schur.
 
 Known bijections are iterative: Garsia–Milne (1981), Bressoud–Zeilberger (1982), and for the Andrews–Gordon generalizations Bressoud–Zeilberger (1989). Pak conjectures that the Garsia–Milne map needs $\exp(n^{\Omega(1)})$ iterations in the worst case (ICM 2018, §3.2).
 
 ### How the known proof works
 
-- Multiply both sides by $(q;q)_\infty$ and expand the product side with Jacobi's triple product: the first identity becomes $(q;q)_\infty\sum_k q^{k^2}/(q;q)_k=\sum_{m\in\mathbb Z}(-1)^mq^{m(5m-1)/2}$.
+- Multiply both sides by $(q;q) _ \infty$ and expand the product side with Jacobi's triple product: the first identity becomes $(q;q) _ \infty\sum_k q^{k^2}/(q;q) _ k=\sum_{m\in\mathbb Z}(-1)^mq^{m(5m-1)/2}$.
 - Schur's involution: on pairs (partition into distinct parts, partition with gaps $\ge2$), signed by the number of distinct parts, a Franklin-type move cancels all pairs except fixed points counted by the right side (Pak's survey, §7.2).
 - Involution principle: given sign-reversing involutions on two signed sets and a sign-preserving bijection between them, alternately applying the bijection and the involutions from a fixed point of one involution ends at a fixed point of the other, which gives a bijection between the fixed-point sets. Garsia and Milne combine Schur's involution, Sylvester's bijection and Vahlen's involution this way (Pak's survey, Exercise 8.4.4).
 - Bressoud–Zeilberger keep the scheme, with one involution equivalent to the triple product identity, but use a much simpler second involution; the paper is three pages. Their 1989 paper explains that this bijection is a direct combinatorial version of Bressoud's "easy" analytic proof (1983) and extends it to the Andrews–Gordon identities (modulus $2k+1$).

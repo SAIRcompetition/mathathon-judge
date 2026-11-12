@@ -2,7 +2,7 @@
 
 The 126 Round 1 problems of the organizers' final problem sheet, one page per problem. Each page has two or three parts:
 
-- **From the proposer**: the problem as the proposer wrote it, with a few typos and wrong bibliographic details corrected (each listed in [`corrections.json`](corrections.json)). The exact text of the sheet is in [`problems_original`](../problems_original/README.md).
+- **From the proposer**: the problem as the proposer wrote it, with a few typos, wrong bibliographic details and formulas that GitHub cannot render corrected (each listed in [`corrections.json`](corrections.json)). The exact text of the sheet is in [`problems_original`](../problems_original/README.md).
 - **From the judges** (on some pages): the judges' suggestions from the sheet, unchanged.
 - **AI-generated notes**: what is known, how the known proofs work, background, where to start, references with links, and the Lean status.
 
@@ -164,3 +164,11 @@ When the sheet changes:
 1. Update [`problems_original`](../problems_original/README.md) as described there.
 2. Run `python3 problems_ai/refresh_proposer_text.py`. It rewrites the **From the proposer** part of every page and the table above, applies [`corrections.json`](corrections.json), checks the text against the sheet, adds a placeholder page for any new problem, and never changes the notes. Pages of problems that are no longer in the sheet are not removed; delete them, their Lean statements and their entries in [`corrections.json`](corrections.json) and in [`lean/README.md`](lean/README.md) by hand.
 3. Review the notes of every problem whose text changed, and write notes for the placeholders.
+
+Formulas in the notes are rendered by GitHub, which applies Markdown before MathJax. Tested on 2026-11-12, a formula renders only if it follows these rules:
+
+- Write `\lt`, `\gt`, `\lbrace`, `\rbrace`, `\Vert`, `\thinspace`, `\negthinspace`, `\ast` and `\sharp` for `<`, `>`, `\{`, `\}`, `\|`, `\,`, `\!`, `*` and `\#`. Markdown removes the backslash in `\{`, `\}`, `\|`, `\,`, `\;`, `\!`, `\#`, `\%`, `\\` and similar pairs, escapes `<` and `>` twice, and reads `*` as emphasis.
+- Put `$$...$$` on a line of its own, as a paragraph of its own (indented by four spaces inside a list item). A display with `&` or a row break (written `\cr`) must be at top level, not in a list.
+- An inline formula must start after a space, a line start or `(`, not after a letter, digit, hyphen, dash, quote or bracket; write `$\text{rank-}k$` rather than `rank-$k$`. Avoid `)$)`; write `){}$)`.
+- Do not put formulas in link text or in `*italic*` text; use Unicode there (ℝ⁷, S⁴).
+- An underscore that follows a bracket or a space, as in `)_6` or `}_2`, can pair with a later underscore and turn into emphasis; write it with spaces, `) _ 6`.

@@ -34,23 +34,27 @@ I would like to write an expository starting from the algebraic topological pers
 
 ### The result
 
-Let $M$ be a closed manifold and $D$ an elliptic differential operator on $M$. Then $D$ is Fredholm, and Atiyah–Singer (1968) show that its analytic index $\dim\ker D-\dim\operatorname{coker}D$ equals a topological index computed from the symbol class $[\sigma(D)]\in K(T^*M)$ by a push-forward in K-theory; the Gauss–Bonnet–Chern, Hirzebruch signature and Hirzebruch–Riemann–Roch theorems are special cases. For a closed spin manifold $M$ of dimension $4k$ and a Hermitian vector bundle $E$, the Dirac operator twisted by $E$ satisfies
-$$\operatorname{ind}D^+_E=\int_M \hat A(TM)\,\mathrm{ch}(E).$$
-Atiyah, Bott and Shapiro (1964) showed that spin vector bundles are oriented for real K-theory $KO$; the resulting genus $\pi_*MSpin\to\pi_*KO$ sends a spin manifold to the index of its Dirac operator, which after complexification is $\hat A(M)$ in dimension $4k$.
+Let $M$ be a closed manifold and $D$ an elliptic differential operator on $M$. Then $D$ is Fredholm, and Atiyah–Singer (1968) show that its analytic index $\dim\ker D-\dim\operatorname{coker}D$ equals a topological index computed from the symbol class $[\sigma(D)]\in K(T^{\ast}M)$ by a push-forward in K-theory; the Gauss–Bonnet–Chern, Hirzebruch signature and Hirzebruch–Riemann–Roch theorems are special cases. For a closed spin manifold $M$ of dimension $4k$ and a Hermitian vector bundle $E$, the Dirac operator twisted by $E$ satisfies
+
+$$\operatorname{ind}D^+ _ E=\int_M \hat A(TM)\thinspace\mathrm{ch}(E).$$
+
+Atiyah, Bott and Shapiro (1964) showed that spin vector bundles are oriented for real K-theory $KO$; the resulting genus $\pi_{\ast}MSpin\to\pi_{\ast}KO$ sends a spin manifold to the index of its Dirac operator, which after complexification is $\hat A(M)$ in dimension $4k$.
 
 Height 2: Witten introduced a genus of spin manifolds with $KO$-characteristic series
+
 $$\sigma(L,q)=(L^{1/2}-L^{-1/2})\prod_{n\ge1}\frac{(1-q^nL)(1-q^nL^{-1})}{(1-q^n)^2},$$
-formally the index of the Dirac operator on the free loop space, and argued physically that on spin manifolds with $\tfrac{p_1}{2}=0$ (string manifolds) its values are $q$-expansions of modular forms for $SL_2(\mathbb Z)$. Ando, Hopkins and Rezk show that the $\hat A$-orientation $MSpin\to KO$ refines to a map of $E_\infty$ ring spectra and that the Witten genus $\pi_*MString\to MF_*$ is the effect on homotopy groups of an $E_\infty$ map $MString\to tmf$.
+
+formally the index of the Dirac operator on the free loop space, and argued physically that on spin manifolds with $\tfrac{p_1}{2}=0$ (string manifolds) its values are $q$-expansions of modular forms for $SL_2(\mathbb Z)$. Ando, Hopkins and Rezk show that the $\hat A$-orientation $MSpin\to KO$ refines to a map of $E_\infty$ ring spectra and that the Witten genus $\pi_{\ast}MString\to MF_{\ast}$ is the effect on homotopy groups of an $E_\infty$ map $MString\to tmf$.
 
 ### How the known proof works
 
-- K-theory (Atiyah–Singer I): analytic and topological index are both homomorphisms $K(T^*M)\to\mathbb Z$ compatible with push-forward along embeddings and normalized on a point; these properties characterize the topological index, defined by embedding $M$ in $\mathbb R^N$ and using the Thom isomorphism and Bott periodicity.
-- Heat kernel: $\operatorname{ind}D^+=\operatorname{Tr}e^{-tD^-D^+}-\operatorname{Tr}e^{-tD^+D^-}$ for every $t>0$ (McKean–Singer); as $t\to0$, Getzler's rescaling of Clifford variables turns the local supertrace into $\hat A(TM)\,\mathrm{ch}(E)$.
+- K-theory (Atiyah–Singer I): analytic and topological index are both homomorphisms $K(T^{\ast}M)\to\mathbb Z$ compatible with push-forward along embeddings and normalized on a point; these properties characterize the topological index, defined by embedding $M$ in $\mathbb R^N$ and using the Thom isomorphism and Bott periodicity.
+- Heat kernel: $\operatorname{ind}D^+=\operatorname{Tr}e^{-tD^-D^+}-\operatorname{Tr}e^{-tD^+D^-}$ for every $t\gt0$ (McKean–Singer); as $t\to0$, Getzler's rescaling of Clifford variables turns the local supertrace into $\hat A(TM)\thinspace\mathrm{ch}(E)$.
 - Physics: the index is the Witten index $\operatorname{Tr}(-1)^Fe^{-tH}$ of supersymmetric quantum mechanics on $M$ with $H=D^2$, and the path integral localizes on constant loops (Alvarez-Gaumé 1983; Friedan–Windey 1984). Fine and Sawin (2018) make the path integral rigorous; reference [1] uses the canonical formalism instead.
 
 ### Background
 
-- In Stolz–Teichner's framework the Dirac operator of a spin$^c$ manifold $N$ gives a $1|1$-dimensional Euclidean field theory ("supersymmetric quantum mechanics on $N$"); the Feynman–Kac formula identifies fibrewise quantization with the analytic push-forward, so its agreement with the topological push-forward is the family index theorem. Their Conjecture 1.17 says that concordance classes of local $2|1$-dimensional Euclidean field theories over $X$ form $TMF^n(X)$; Theorem 1.15 shows that partition functions of $2|1$-theories are integral holomorphic modular functions.
+- In Stolz–Teichner's framework the Dirac operator of a $\text{spin}^c$ manifold $N$ gives a $1|1$-dimensional Euclidean field theory ("supersymmetric quantum mechanics on $N$"); the Feynman–Kac formula identifies fibrewise quantization with the analytic push-forward, so its agreement with the topological push-forward is the family index theorem. Their Conjecture 1.17 says that concordance classes of local $2|1$-dimensional Euclidean field theories over $X$ form $TMF^n(X)$; Theorem 1.15 shows that partition functions of $2|1$-theories are integral holomorphic modular functions.
 - tmf was constructed by Hopkins with Mahowald and Miller around 1994 (Hopkins, ICM 2002); every elliptic spectrum receives a canonical "sigma orientation" from $MU\langle 6\rangle$ (Ando–Hopkins–Strickland 2001).
 
 ### Where to start

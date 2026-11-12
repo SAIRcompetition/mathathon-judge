@@ -37,8 +37,10 @@ https://www.cambridge.org/core/journals/forum-of-mathematics-pi/article/almost-a
 
 ### The result
 
-Let $T(n)=n/2$ for even $n$, $T(n)=3n+1$ for odd $n$, and $\tau(n)$ the number of steps to reach 1. Theorem 1.1: there are an explicit rational $c>0$ and integer $X_0$ such that for every $X\ge X_0$
-$$\#\{1\le n<X:\ \tau(n)\le \tfrac{523}{50}\log n\}\ \ge\ cX .$$
+Let $T(n)=n/2$ for even $n$, $T(n)=3n+1$ for odd $n$, and $\tau(n)$ the number of steps to reach 1. Theorem 1.1: there are an explicit rational $c\gt0$ and integer $X_0$ such that for every $X\ge X_0$
+
+$$\bigl\lvert\lbrace1\le n\lt X:\ \tau(n)\le \tfrac{523}{50}\log n\rbrace\bigr\rvert\ \ge\ cX .$$
+
 So the integers reaching 1 within $10.46\log n$ steps have positive lower natural density. The constants are given by finite formulas; $c$ is tiny and $X_0$ enormous.
 
 ### How the known proof works

@@ -36,13 +36,15 @@ A. M. Childs, Y. Su, M. C. Tran, N. Wiebe, S. Zhu, “Theory of Trotter Error wi
 ### The result
 
 Let $S_2(t)=e^{-i\frac t2A}e^{-itB}e^{-i\frac t2A}$ and $S_4(t)=S_2(u_2t)^2S_2\big((1-4u_2)t\big)S_2(u_2t)^2$ with $u_2=1/(4-4^{1/3})$ (Suzuki). For Hermitian $A,B$, $H=A+B$ and $t\ge0$ (Childs et al., Proposition M.1):
-$$\begin{aligned}\|S_4(t)-e^{-itH}\|\le t^5\big(&0.0047\,\|[A,[A,[A,[B,A]]]]\|+0.0057\,\|[A,[A,[B,[B,A]]]]\|+0.0046\,\|[A,[B,[A,[B,A]]]]\|\\&+0.0074\,\|[A,[B,[B,[B,A]]]]\|+0.0097\,\|[B,[A,[A,[B,A]]]]\|+0.0097\,\|[B,[A,[B,[B,A]]]]\|\\&+0.0173\,\|[B,[B,[A,[B,A]]]]\|+0.0284\,\|[B,[B,[B,[B,A]]]]\|\big).\end{aligned}$$
-For comparison, the second-order bound $\|S_2(t)-e^{-itH}\|\le\frac{t^3}{12}\|[B,[B,A]]\|+\frac{t^3}{24}\|[A,[A,B]]\|$ (Eq. (L5)) is tight up to the triangle inequality. For a general $p$th-order formula for real-time evolution under Hermitian summands $H_\gamma$, Theorem 6 gives an error $O\big(\tilde\alpha_{\rm comm}t^{p+1}\big)$, $\tilde\alpha_{\rm comm}=\sum\|[H_{\gamma_{p+1}},\dots,[H_{\gamma_2},H_{\gamma_1}]]\|$.
+
+$$\begin{aligned}\Vert S_4(t)-e^{-itH}\Vert\le t^5\big(&0.0047\thinspace\Vert[A,[A,[A,[B,A]]]]\Vert+0.0057\thinspace\Vert[A,[A,[B,[B,A]]]]\Vert+0.0046\thinspace\Vert[A,[B,[A,[B,A]]]]\Vert\cr &+0.0074\thinspace\Vert[A,[B,[B,[B,A]]]]\Vert+0.0097\thinspace\Vert[B,[A,[A,[B,A]]]]\Vert+0.0097\thinspace\Vert[B,[A,[B,[B,A]]]]\Vert\cr &+0.0173\thinspace\Vert[B,[B,[A,[B,A]]]]\Vert+0.0284\thinspace\Vert[B,[B,[B,[B,A]]]]\Vert\big).\end{aligned}$$
+
+For comparison, the second-order bound $\Vert S_2(t)-e^{-itH}\Vert\le\frac{t^3}{12}\Vert[B,[B,A]]\Vert+\frac{t^3}{24}\Vert[A,[A,B]]\Vert$ (Eq. (L5)) is tight up to the triangle inequality. For a general $p$-th order formula for real-time evolution under Hermitian summands $H_\gamma$, Theorem 6 gives an error $O\big(\tilde\alpha_{\rm comm}t^{p+1}\big)$, $\tilde\alpha_{\rm comm}=\sum\Vert[H_{\gamma_{p+1}},\dots,[H_{\gamma_2},H_{\gamma_1}]]\Vert$.
 
 ### How the known proof works
 
 - Expand $S_4$ into eleven exponentials $e^{-ita_6A}e^{-itb_5B}\cdots e^{-itb_1B}e^{-ita_1A}$ with explicit $a_k,b_k$.
-- Differentiate in $t$: $\frac{d}{dt}S_4(t)=(-iH)S_4(t)+S_{4,\rm left}(t)\,T_4(t)\,S_{4,\rm right}(t)$, where $T_4$ is a sum of conjugated commutators; the variation-of-parameters formula then writes $S_4(t)-e^{-itH}$ as $\int_0^te^{-i(t-\tau)H}S_{4,\rm left}(\tau)T_4(\tau)S_{4,\rm right}(\tau)\,d\tau$, and the outer factors are unitary.
+- Differentiate in $t$: $\frac{d}{dt}S_4(t)=(-iH)S_4(t)+S_{4,\rm left}(t)\thinspace T_4(t)\thinspace S_{4,\rm right}(t)$, where $T_4$ is a sum of conjugated commutators; the variation-of-parameters formula then writes $S_4(t)-e^{-itH}$ as $\int_0^te^{-i(t-\tau)H}S_{4,\rm left}(\tau)T_4(\tau)S_{4,\rm right}(\tau)\thinspace d\tau$, and the outer factors are unitary.
 - Since $S_4(t)=e^{-itH}+O(t^5)$, $T_4(\tau)=O(\tau^4)$; Taylor-expanding each layer of conjugation and bounding the remainders by the triangle inequality leaves nested commutators with four layers, of which only eight are nonzero, with the coefficients of (M13).
 - The looseness the proposer describes enters at this triangle inequality, which bounds term by term a sum whose terms largely cancel.
 
@@ -83,7 +85,7 @@ This problem has no official Lean statement: it asks for a fourth-order bound wi
 
 #### Related Lean formalizations
 
-- [lie-trotter-lean](https://palomar-registry.org/entry?id=PALOMAR-2026-10-29-000016&version=1), Palomar registry (Lean-checked, trust level high), by Z. Blore: the Lie–Trotter product formula in a complete normed real algebra with norm-one unit, with the first-order commutator bound $\|(e^{A/n}e^{B/n})^n-e^{A+B}\|\le\frac{\|AB-BA\|}{2n}e^{\|A\|+\|B\|}$ (`LieTrotter.norm_trotter_sub_le_commutator`, `LieTrotter.trotter_product`).
+- [lie-trotter-lean](https://palomar-registry.org/entry?id=PALOMAR-2026-10-29-000016&version=1), Palomar registry (Lean-checked, trust level high), by Z. Blore: the Lie–Trotter product formula in a complete normed real algebra with norm-one unit, with the first-order commutator bound $\Vert(e^{A/n}e^{B/n})^n-e^{A+B}\Vert\le\frac{\Vert AB-BA\Vert}{2n}e^{\Vert A\Vert+\Vert B\Vert}$ (`LieTrotter.norm_trotter_sub_le_commutator`, `LieTrotter.trotter_product`).
 
 #### Mathlib
 

@@ -40,29 +40,32 @@ https://proceedings.mlr.press/v75/golowich18a.html
 
 ### The result
 
-Let $\sigma_i:\mathbb R^{d_{i-1}}\to\mathbb R^{d_i}$ be $\rho_i$-Lipschitz with $\sigma_i(0)=0$, let $F_A(x)=\sigma_L(A_L\sigma_{L-1}(A_{L-1}\cdots\sigma_1(A_1x)\cdots))\in\mathbb R^k$ predict the label $\arg\max_jF_A(x)_j$, and let $W$ be the largest width. With reference matrices $M_i$ (e.g. $0$, or $I$ for residual networks), $\|\cdot\|_\sigma$ the spectral norm and $\|B\|_{2,1}$ the sum of the Euclidean norms of the columns of $B$, the spectral complexity is
-$$R_A=\Big(\prod_{i=1}^L\rho_i\|A_i\|_\sigma\Big)\Big(\sum_{i=1}^L\frac{\|A_i^\top-M_i^\top\|_{2,1}^{2/3}}{\|A_i\|_\sigma^{2/3}}\Big)^{3/2}.$$
+Let $\sigma_i:\mathbb R^{d_{i-1}}\to\mathbb R^{d_i}$ be $\rho_i$-Lipschitz with $\sigma_i(0)=0$, let $F_A(x)=\sigma_L(A_L\sigma_{L-1}(A_{L-1}\cdots\sigma_1(A_1x)\cdots))\in\mathbb R^k$ predict the label $\arg\max_jF_A(x) _ j$, and let $W$ be the largest width. With reference matrices $M_i$ (e.g. $0$, or $I$ for residual networks), $\Vert\cdot\Vert_\sigma$ the spectral norm and $\Vert B\Vert_{2,1}$ the sum of the Euclidean norms of the columns of $B$, the spectral complexity is
 
-**Theorem 1.1** (Bartlett–Foster–Telgarsky). For $(x,y),(x_1,y_1),\dots,(x_n,y_n)$ i.i.d. from any distribution on $\mathbb R^d\times\{1,\dots,k\}$, with probability at least $1-\delta$, every margin $\gamma>0$ and every network $F_A$ satisfy
-$$\Pr\big[\arg\max_jF_A(x)_j\ne y\big]\le\widehat R_\gamma(F_A)+\tilde O\Big(\frac{\|X\|_2R_A}{\gamma n}\ln W+\sqrt{\frac{\ln(1/\delta)}{n}}\Big),$$
-where $\widehat R_\gamma(F_A)$ is the empirical ramp risk, at most the fraction of training points with margin $F_A(x_i)_{y_i}-\max_{j\ne y_i}F_A(x_i)_j\le\gamma$, and $\|X\|_2=(\sum_i\|x_i\|_2^2)^{1/2}$. Up to logarithms the bound depends on the weights only through $R_A$. Theorem 3.4 gives a lower bound $c\|X\|_2r$ for the Rademacher complexity of ReLU networks with $\prod_i\|A_i\|_\sigma\le r$, which matches the product of spectral norms in $R_A$ but not its second factor.
+$$R_A=\Big(\prod_{i=1}^L\rho_i\Vert A_i\Vert_\sigma\Big)\Big(\sum_{i=1}^L\frac{\Vert A_i^\top-M_i^\top\Vert_{2,1}^{2/3}}{\Vert A_i\Vert_\sigma^{2/3}}\Big)^{3/2}.$$
 
-The alternatives: piecewise-linear networks with $W$ weights and $L$ layers have VC dimension $O(WL\log W)$, and some have $\Omega(WL\log(W/L))$ (Bartlett–Harvey–Liaw–Mehrabian); with Frobenius-norm bounds $M_F(j)$ on the layers and inputs of norm at most $B$, depth-$d$ networks with positive-homogeneous 1-Lipschitz activations have Rademacher complexity at most $B(\sqrt{2\log(2)d}+1)\prod_jM_F(j)/\sqrt m$ on $m$ samples, and under further norm assumptions bounds independent of depth and width (Golowich–Rakhlin–Shamir).
+**Theorem 1.1** (Bartlett–Foster–Telgarsky). For $(x,y),(x_1,y_1),\dots,(x_n,y_n)$ i.i.d. from any distribution on $\mathbb R^d\times\lbrace1,\dots,k\rbrace$, with probability at least $1-\delta$, every margin $\gamma\gt0$ and every network $F_A$ satisfy
+
+$$\Pr\big[\arg\max_jF_A(x) _ j\ne y\big]\le\widehat R_\gamma(F_A)+\tilde O\Big(\frac{\Vert X\Vert_2R_A}{\gamma n}\ln W+\sqrt{\frac{\ln(1/\delta)}{n}}\Big),$$
+
+where $\widehat R_\gamma(F_A)$ is the empirical ramp risk, at most the fraction of training points with margin $F_A(x_i) _ {y_i}-\max_{j\ne y_i}F_A(x_i) _ j\le\gamma$, and $\Vert X\Vert_2=(\sum_i\Vert x_i\Vert_2^2)^{1/2}$. Up to logarithms the bound depends on the weights only through $R_A$. Theorem 3.4 gives a lower bound $c\Vert X\Vert_2r$ for the Rademacher complexity of ReLU networks with $\prod_i\Vert A_i\Vert_\sigma\le r$, which matches the product of spectral norms in $R_A$ but not its second factor.
+
+The alternatives: piecewise-linear networks with $W$ weights and $L$ layers have VC dimension $O(WL\log W)$, and some have $\Omega(WL\log(W/L))$ (Bartlett–Harvey–Liaw–Mehrabian); with Frobenius-norm bounds $M_F(j)$ on the layers and inputs of norm at most $B$, $\text{depth-}d$ networks with positive-homogeneous 1-Lipschitz activations have Rademacher complexity at most $B(\sqrt{2\log(2)d}+1)\prod_jM_F(j)/\sqrt m$ on $m$ samples, and under further norm assumptions bounds independent of depth and width (Golowich–Rakhlin–Shamir).
 
 ### How the known proof works
 
 Bartlett–Foster–Telgarsky, §3 and Appendix A:
-- Margin reduction (Lemma 3.1): with ramp loss $\ell_\gamma$ and margin $\mathcal M(v,y)=v_y-\max_{i\ne y}v_i$, a standard Rademacher bound gives, uniformly over a class $\mathcal F$, error $\le\widehat R_\gamma(f)+2\,\mathfrak R(\mathcal F_\gamma|_S)+3\sqrt{\ln(1/\delta)/(2n)}$.
-- Matrix covering (Lemma 3.2): Maurey's sparsification lemma bounds $\ln\mathcal N(\{XA:\|A\|_{q,s}\le a\},\varepsilon,\|\cdot\|_2)$ by $\lceil a^2b^2m^{2/r}/\varepsilon^2\rceil\ln(2dm)$ when $\|X\|_p\le b$; covering a whole layer at once keeps $W$ and $L$ out of the bound except in logarithms.
-- Induction on layers (Lemma A.7, Theorem 3.3): cover each layer given covers of the earlier ones; errors propagate through $\rho_i\|A_i\|_\sigma$, and optimising the per-layer resolutions gives the $(\sum(\cdot)^{2/3})^{3}$ form of $\ln\mathcal N$.
+- Margin reduction (Lemma 3.1): with ramp loss $\ell_\gamma$ and margin $\mathcal M(v,y)=v_y-\max_{i\ne y}v_i$, a standard Rademacher bound gives, uniformly over a class $\mathcal F$, error $\le\widehat R_\gamma(f)+2\thinspace\mathfrak R(\mathcal F_\gamma| _ S)+3\sqrt{\ln(1/\delta)/(2n)}$.
+- Matrix covering (Lemma 3.2): Maurey's sparsification lemma bounds $\ln\mathcal N(\lbrace XA:\Vert A\Vert_{q,s}\le a\rbrace,\varepsilon,\Vert\cdot\Vert_2)$ by $\lceil a^2b^2m^{2/r}/\varepsilon^2\rceil\ln(2dm)$ when $\Vert X\Vert_p\le b$; covering a whole layer at once keeps $W$ and $L$ out of the bound except in logarithms.
+- Induction on layers (Lemma A.7, Theorem 3.3): cover each layer given covers of the earlier ones; errors propagate through $\rho_i\Vert A_i\Vert_\sigma$, and optimising the per-layer resolutions gives the $(\sum(\cdot)^{2/3})^{3}$ form of $\ln\mathcal N$.
 - Dudley's entropy integral (Lemma A.5) turns the covering bound into a Rademacher bound; the margin loss is $2/\gamma$-Lipschitz (Lemma A.3).
-- A union bound over a grid of values of $\gamma$, $\|X\|_2$ and the norm bounds (Lemma A.9) makes the result hold for all $\gamma$ and $A$ at once.
+- A union bound over a grid of values of $\gamma$, $\Vert X\Vert_2$ and the norm bounds (Lemma A.9) makes the result hold for all $\gamma$ and $A$ at once.
 
 ### Background
 
 - For neural networks, margin bounds go back to Bartlett's analysis of two-layer networks (1996), whose proof technique inspired the layer-wise induction above; Rademacher complexities as a general tool are in Bartlett–Mendelson (2002).
 - Neyshabur, Bhojanapalli and Srebro (ICLR 2018) obtain a spectrally normalized margin bound by a PAC-Bayes argument.
-- PAC-Bayes bounds control the risk of a randomized predictor $Q$ by its empirical risk plus a term of order $\sqrt{\mathrm{KL}(Q\|P)/n}$ for a prior $P$ fixed in advance. Dziugaite and Roy optimise such a bound directly and obtain nonvacuous bounds for stochastic networks with millions of parameters; Alquier's survey covers the theory.
+- PAC-Bayes bounds control the risk of a randomized predictor $Q$ by its empirical risk plus a term of order $\sqrt{\mathrm{KL}(Q\Vert P)/n}$ for a prior $P$ fixed in advance. Dziugaite and Roy optimise such a bound directly and obtain nonvacuous bounds for stochastic networks with millions of parameters; Alquier's survey covers the theory.
 
 ### Where to start
 
@@ -108,7 +111,7 @@ theorem spectral_margin_bound (hL : 1 ≤ L) (hk : 2 ≤ d (Fin.last L))
       ≤ ENNReal.ofReal δ
 ```
 
-This is the explicit form of the spectral-norm margin bound, Lemma A.9 (eq. (A.5)) of Bartlett–Foster–Telgarsky (arXiv v2), from which they derive Theorem 1.1: with probability at least $1-\delta$ over an i.i.d. sample, every margin $\gamma$ and every network $F_A$ satisfy $\Pr[\mathcal M(F_A(x),y)\le0]\le\widehat R_\gamma(F_A)+{}$`excessBound`. The test error is the probability of a margin $\le0$, which bounds the arg-max error for every tie-breaking rule, and the nonlinearities keep the dimension. Margins are restricted to $0<\gamma\le n$: the paper's proof of Lemma A.9 needs $\gamma\le n$, and for large $\gamma$ the expression under its last square root becomes negative. The paper's proof does not give these constants exactly as written: for example, Lemma A.8 states $\ln(2W)$ where its covering bound gives $\sqrt{\ln(2W^2)}$, which is larger for $W=2$, a case the statement allows. An AI review in November 2026 reached the stated constants by hand after small repairs to the proof; this has not been checked in Lean.
+This is the explicit form of the spectral-norm margin bound, Lemma A.9 (eq. (A.5)) of Bartlett–Foster–Telgarsky (arXiv v2), from which they derive Theorem 1.1: with probability at least $1-\delta$ over an i.i.d. sample, every margin $\gamma$ and every network $F_A$ satisfy $\Pr[\mathcal M(F_A(x),y)\le0]\le\widehat R_\gamma(F_A)+{}$`excessBound`. The test error is the probability of a margin $\le0$, which bounds the arg-max error for every tie-breaking rule, and the nonlinearities keep the dimension. Margins are restricted to $0\lt\gamma\le n$: the paper's proof of Lemma A.9 needs $\gamma\le n$, and for large $\gamma$ the expression under its last square root becomes negative. The paper's proof does not give these constants exactly as written: for example, Lemma A.8 states $\ln(2W)$ where its covering bound gives $\sqrt{\ln(2W^2)}$, which is larger for $W=2$, a case the statement allows. An AI review in November 2026 reached the stated constants by hand after small repairs to the proof; this has not been checked in Lean.
 
 Source: written by AI for Mathathon; not taken from an existing formalization.
 

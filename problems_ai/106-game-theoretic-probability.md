@@ -34,11 +34,12 @@ https://www.probabilityandfinance.com/2001_book/chapters/toc.html
 
 ### The result
 
-Bounded forecasting game (Shafer–Vovk §3.3), with parameter $C>0$: $\mathcal K_0=1$, and for $n=1,2,\dots$ Forecaster announces $m_n\in[-C,C]$, Skeptic announces $M_n\in\mathbb R$, Reality announces $x_n\in[-C,C]$, and $\mathcal K_n=\mathcal K_{n-1}+M_n(x_n-m_n)$. Skeptic *forces* an event $E$ if he has a strategy that keeps $\mathcal K_n\ge0$ against every play and makes $\mathcal K_n\to\infty$ on every path outside $E$.
+Bounded forecasting game (Shafer–Vovk §3.3), with parameter $C\gt0$: $\mathcal K_0=1$, and for $n=1,2,\dots$ Forecaster announces $m_n\in[-C,C]$, Skeptic announces $M_n\in\mathbb R$, Reality announces $x_n\in[-C,C]$, and $\mathcal K_n=\mathcal K_{n-1}+M_n(x_n-m_n)$. Skeptic *forces* an event $E$ if he has a strategy that keeps $\mathcal K_n\ge0$ against every play and makes $\mathcal K_n\to\infty$ on every path outside $E$.
 
 - Strong law (Proposition 3.3): Skeptic can force $\frac1n\sum_{i\le n}(x_i-m_i)\to0$.
 - Law of the iterated logarithm (Theorem 5.1). In the predictably unbounded protocol Forecaster announces $m_n\in\mathbb R$, $c_n\ge0$, $v_n\ge0$; Skeptic announces $M_n,V_n\in\mathbb R$; Reality announces $x_n$ with $|x_n-m_n|\le c_n$; and $\mathcal K_n=\mathcal K_{n-1}+M_n(x_n-m_n)+V_n\big((x_n-m_n)^2-v_n\big)$. With $A_n=\sum_{i\le n}v_i$, Skeptic can force
-$$\Big(A_n\to\infty\ \text{and}\ c_n=o\big(\sqrt{A_n/\ln\ln A_n}\big)\Big)\ \Longrightarrow\ \limsup_{n\to\infty}\frac{\sum_{i\le n}(x_i-m_i)}{\sqrt{2A_n\ln\ln A_n}}=1 .$$
+
+    $$\Big(A_n\to\infty\ \text{and}\ c_n=o\big(\sqrt{A_n/\ln\ln A_n}\big)\Big)\ \Longrightarrow\ \limsup_{n\to\infty}\frac{\sum_{i\le n}(x_i-m_i)}{\sqrt{2A_n\ln\ln A_n}}=1 .$$
 
 If the $x_n$ are random with conditional means $m_n$ and conditional variances $v_n$ given the past, a capital process that stays nonnegative is a nonnegative supermartingale, which tends to infinity only with probability 0; so every event Skeptic can force has probability 1. With independent $x_n$ bounded by $c_n$ this gives Kolmogorov's law of the iterated logarithm.
 

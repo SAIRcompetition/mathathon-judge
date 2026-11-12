@@ -23,7 +23,7 @@ Hopefully, we could classify the minimizing cones in Rn. I suspect that there wi
 
 - **Status:** Taylor (1976) classified the two-dimensional minimal cones in $\mathbb R^3$; in $\mathbb R^4$ the two-dimensional ones include continuous families (Liang 2013), and the piecewise linear three-dimensional cones are classified up to two undecided candidates (Valfells, Math. Scand. 2024, corrected 2025).
 - **Task:** New minimal cones, or a classification of minimal cones, in $\mathbb R^4$ and beyond, possibly for anisotropic energies.
-- **Key reference:** [G. David, “Hölder regularity of two-dimensional almost-minimal sets in $\mathbb R^n$”, Ann. Fac. Sci. Toulouse Math. 18 (2009), 65–246](https://arxiv.org/abs/0806.1645)
+- **Key reference:** [G. David, “Hölder regularity of two-dimensional almost-minimal sets in ℝⁿ”, Ann. Fac. Sci. Toulouse Math. 18 (2009), 65–246](https://arxiv.org/abs/0806.1645)
 - **Lean:** No official statement.
 
 ### Notes
@@ -37,7 +37,7 @@ A closed $E\subset\mathbb R^n$ with locally finite $\mathcal H^d$ measure is $d$
 
 Taylor (1976): up to isometry, the reduced two-dimensional minimal cones in $\mathbb R^3$ are a plane, $Y$ (three half-planes meeting at $120^\circ$) and $T$ (the cone over the edges of a regular tetrahedron centred at $0$), and every two-dimensional minimal set in $\mathbb R^3$ is locally $C^{1,\alpha}$-diffeomorphic to one of them.
 
-In $\mathbb R^n$ (David 2009, Proposition 14.1), such a cone meets $S^{n-1}$ in finitely many great circles and arcs, meeting in threes at $120^\circ$, each of length at least $l_0(n)>0$; which nets give minimal cones is unknown for $n\ge4$. New examples in $\mathbb R^4$: unions of two almost orthogonal planes, a one-parameter family (Liang 2013), and $Y\times Y$ (Liang 2014).
+In $\mathbb R^n$ (David 2009, Proposition 14.1), such a cone meets $S^{n-1}$ in finitely many great circles and arcs, meeting in threes at $120^\circ$, each of length at least $l_0(n)\gt0$; which nets give minimal cones is unknown for $n\ge4$. New examples in $\mathbb R^4$: unions of two almost orthogonal planes, a one-parameter family (Liang 2013), and $Y\times Y$ (Liang 2014).
 
 In codimension one, the cone $S_k$ over the $(k-2)$-skeleton of a regular $k$-simplex is minimal in $\mathbb R^k$ (Lawlor–Morgan 1994), as is the cone over the $(n-2)$-skeleton of the cube in $\mathbb R^n$, $n\ge4$ (Brakke 1991). Among three-dimensional piecewise linear cones in $\mathbb R^4$, $\mathbb R^3$, $Y\times\mathbb R^2$, $T\times\mathbb R$, $S_4$ and the cube cone are minimal and all other candidates but two are excluded (Valfells 2024, corrected 2025). Products $S_m\times S_n$ are minimal (Huang–Liang–Zhang, preprint 2026).
 
@@ -54,9 +54,9 @@ In codimension one, the cone $S_k$ over the $(k-2)$-skeleton of a regular $k$-si
 
 ### Where to start
 
-- [Hölder regularity of two-dimensional almost-minimal sets in $\mathbb R^n$](https://arxiv.org/abs/0806.1645), G. David, 2008: Part C (§§8–14), structure of two-dimensional minimal cones.
-- [Almgren-minimality of unions of two almost orthogonal planes in $\mathbb R^4$](https://arxiv.org/abs/1103.1468), X. Liang, 2011: §1 surveys $\mathbb R^4$ and explains why calibrations do not apply.
-- [Minimal piecewise linear cones in $\mathbb R^4$](https://arxiv.org/abs/2208.13718), Á. Valfells, 2022: seven pages; read with the 2025 correction.
+- [Hölder regularity of two-dimensional almost-minimal sets in ℝⁿ](https://arxiv.org/abs/0806.1645), G. David, 2008: Part C (§§8–14), structure of two-dimensional minimal cones.
+- [Almgren-minimality of unions of two almost orthogonal planes in ℝ⁴](https://arxiv.org/abs/1103.1468), X. Liang, 2011: §1 surveys $\mathbb R^4$ and explains why calibrations do not apply.
+- [Minimal piecewise linear cones in ℝ⁴](https://arxiv.org/abs/2208.13718), Á. Valfells, 2022: seven pages; read with the 2025 correction.
 - [Soap film cones](https://kenbrakke.com/cones/cones.htm), K. Brakke: Surface Evolver models of the $\mathbb R^3$ candidates and of the films that beat seven of them.
 
 Prerequisites: Hausdorff measure, rectifiability, the monotonicity formula, calibrations.
@@ -68,11 +68,11 @@ Prerequisites: Hausdorff measure, rectifiability, the monotonicity formula, cali
 ### Further references
 
 - J. E. Taylor, “The structure of singularities in soap-bubble-like and soap-film-like minimal surfaces,” Ann. of Math. 103(3) (1976), 489–539. <https://doi.org/10.2307/1970949>
-- X. Liang, “Almgren-minimality of unions of two almost orthogonal planes in $\mathbb R^4$,” Proc. Lond. Math. Soc. 106(5) (2013), 1005–1059. <https://arxiv.org/abs/1103.1468>
+- X. Liang, “Almgren-minimality of unions of two almost orthogonal planes in ℝ⁴,” Proc. Lond. Math. Soc. 106(5) (2013), 1005–1059. <https://arxiv.org/abs/1103.1468>
 - X. Liang, “Almgren and topological minimality for the set $Y\times Y$,” J. Funct. Anal. 266(10) (2014), 6007–6054. <https://arxiv.org/abs/1203.0564>
 - G. Lawlor, F. Morgan, “Paired calibrations applied to soap films, immiscible fluids, and surfaces or networks minimizing other norms,” Pacific J. Math. 166(1) (1994), 55–83. <https://doi.org/10.2140/pjm.1994.166.55>
 - K. A. Brakke, “Minimal cones on hypercubes,” J. Geom. Anal. 1(4) (1991), 329–338. <https://doi.org/10.1007/BF02921309>
-- Á. Valfells, “Minimal piecewise linear cones in $\mathbb R^4$,” Math. Scand. 130(1) (2024), 149–160 <https://arxiv.org/abs/2208.13718>; Corrections, Math. Scand. 131(2) (2025) <https://doi.org/10.7146/math.scand.a-156628>
+- Á. Valfells, “Minimal piecewise linear cones in ℝ⁴,” Math. Scand. 130(1) (2024), 149–160 <https://arxiv.org/abs/2208.13718>; Corrections, Math. Scand. 131(2) (2025) <https://doi.org/10.7146/math.scand.a-156628>
 - S. Huang, X. Liang, Z. Zhang, “Almgren minimality of products of simplex-skeleton cones,” arXiv:2610.27845 (2026). <https://arxiv.org/abs/2610.27845>
 - M. Caselli, Z. Lihn, “Tetrahedral points and classification of Almgren-minimizing sets in $\mathbb R^3$,” arXiv:2610.24362 (2026). <https://arxiv.org/abs/2610.24362>
 

@@ -39,17 +39,19 @@ A. Atkarskaya, E. Rips, K. Tent, The Burnside Problem for Odd Exponents. arXiv:2
 ### The result
 
 The free Burnside group is
-$$B(m,n)=F_m/\langle\!\langle w^n : w\in F_m\rangle\!\rangle .$$
-Every $m$-generated group of exponent dividing $n$ is a quotient of it, so $B(2,n)$ is infinite exactly when some infinite 2-generated group of exponent dividing $n$ exists. $B(m,n)$ is finite for $n=2,3,4,6$ (Burnside, Sanov, M. Hall). For $m\ge2$ it is infinite for odd $n\ge4381$ (Novikov–Adian 1968), odd $n\ge665$ (Adian 1979), $n>2^{48}$ (Ivanov 1994), all $n\ge8000$ (with Lysenok 1996), and odd $n\ge557$ (Atkarskaya–Rips–Tent, preprint). Whether $B(2,5)$, $B(2,7)$ or $B(2,8)$ is infinite is open.
+
+$$B(m,n)=F_m/\langle\negthinspace\langle w^n : w\in F_m\rangle\negthinspace\rangle .$$
+
+Every $m$-generated group of exponent dividing $n$ is a quotient of it, so $B(2,n)$ is infinite exactly when some infinite 2-generated group of exponent dividing $n$ exists. $B(m,n)$ is finite for $n=2,3,4,6$ (Burnside, Sanov, M. Hall). For $m\ge2$ it is infinite for odd $n\ge4381$ (Novikov–Adian 1968), odd $n\ge665$ (Adian 1979), $n\gt2^{48}$ (Ivanov 1994), all $n\ge8000$ (with Lysenok 1996), and odd $n\ge557$ (Atkarskaya–Rips–Tent, preprint). Whether $B(2,5)$, $B(2,7)$ or $B(2,8)$ is infinite is open.
 
 ### How the known proof works
 
 Structure of the Atkarskaya–Rips–Tent proof (Sections 1–2):
-- Define a rank on words: $w$ has rank at least $k+1$ if it cyclically contains $v^\tau$ with $v$ of rank at least $k$, for a fixed nesting constant $\tau$. Put $N_k=\langle\!\langle w^n:\mathrm{rk}(w)\le k\rangle\!\rangle$, an ascending chain with union $\langle\!\langle w^n\rangle\!\rangle$.
-- By induction on $k$, define a canonical form $\mathrm{can}_k(w)$ for each coset of $N_k$, using "certification sequences" that choose sides of relators; the induction carries 13 hypotheses.
+- Define a rank on words: $w$ has rank at least $k+1$ if it cyclically contains $v^\tau$ with $v$ of rank at least $k$, for a fixed nesting constant $\tau$. Put $N_k=\langle\negthinspace\langle w^n:\mathrm{rk}(w)\le k\rangle\negthinspace\rangle$, an ascending chain with union $\langle\negthinspace\langle w^n\rangle\negthinspace\rangle$.
+- By induction on $k$, define a canonical form $\mathrm{can} _ k(w)$ for each coset of $N_k$, using "certification sequences" that choose sides of relators; the induction carries 13 hypotheses.
 - Canonical forms stabilize in $k$, giving a section $B(m,n)\to F_m$.
-- Every cube-free word is canonical, and there are infinitely many cube-free words on two letters. The method needs $n>36\cdot15+16=556$.
-- For comparison, the Novikov–Adian proof uses an induction with 178 assumptions; Ol'shanskii's van Kampen diagram proof is shorter but needs $n>10^{10}$.
+- Every cube-free word is canonical, and there are infinitely many cube-free words on two letters. The method needs $n\gt36\cdot15+16=556$.
+- For comparison, the Novikov–Adian proof uses an induction with 178 assumptions; Ol'shanskii's van Kampen diagram proof is shorter but needs $n\gt10^{10}$.
 
 ### Background
 

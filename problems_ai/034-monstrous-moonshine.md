@@ -44,8 +44,9 @@ Prove the monstrous moonshine theorem in Lean, including the constructions and i
 
 ### The result
 
-Frenkel, Lepowsky and Meurman (1988) constructed a graded representation $V^\natural=\bigoplus_n V_n$ of the Monster $\mathbb M$ with $\sum_n\dim V_n\,q^n=j(\tau)-744=q^{-1}+196884q+\cdots$. For $g\in\mathbb M$ the Thompson (McKay–Thompson) series is $T_g(q)=\sum_n\operatorname{Tr}(g\mid V_n)q^n$. Borcherds' Theorem 1.1: every $T_g$ is a Hauptmodul for a genus-zero subgroup of $\mathrm{SL}_2(\mathbb R)$, namely the one listed by Conway and Norton. A central identity is the denominator formula of the Monster Lie algebra, with $c(n)$ the coefficients of $j-744$:
-$$p^{-1}\prod_{m>0,\,n\in\mathbb Z}(1-p^mq^n)^{c(mn)}=j(p)-j(q).$$
+Frenkel, Lepowsky and Meurman (1988) constructed a graded representation $V^\natural=\bigoplus_n V_n$ of the Monster $\mathbb M$ with $\sum_n\dim V_n\thinspace q^n=j(\tau)-744=q^{-1}+196884q+\cdots$. For $g\in\mathbb M$ the Thompson (McKay–Thompson) series is $T_g(q)=\sum_n\operatorname{Tr}(g\mid V_n)q^n$. Borcherds' Theorem 1.1: every $T_g$ is a Hauptmodul for a genus-zero subgroup of $\mathrm{SL} _ 2(\mathbb R)$, namely the one listed by Conway and Norton. A central identity is the denominator formula of the Monster Lie algebra, with $c(n)$ the coefficients of $j-744$:
+
+$$p^{-1}\prod_{m\gt0,\thinspace n\in\mathbb Z}(1-p^mq^n)^{c(mn)}=j(p)-j(q).$$
 
 ### How the known proof works
 
@@ -87,7 +88,7 @@ Prerequisites: modular functions and congruence subgroups, Kac–Moody Lie algeb
 
 #### Official statement
 
-This problem has no official Lean statement: the moonshine theorem concerns the Frenkel–Lepowsky–Meurman module $V^\natural$ of the Monster and the Hauptmoduln of genus-zero subgroups of $\mathrm{SL}_2(\mathbb R)$ listed by Conway and Norton, none of which Mathlib has or a statement file could build; a Lean presentation of the Monster exists (TauCeti, <https://github.com/TauCetiProject/TauCeti/blob/43bfc87351521d3e5f257d851887a85fb744f648/TauCeti/GroupTheory/SpecificGroups/CFSG/Sporadic/Monster.lean>), but asking only for some graded representation whose McKay–Thompson series are Hauptmoduln would be satisfied by the trivial action, so it would not be faithful.
+This problem has no official Lean statement: the moonshine theorem concerns the Frenkel–Lepowsky–Meurman module $V^\natural$ of the Monster and the Hauptmoduln of genus-zero subgroups of $\mathrm{SL} _ 2(\mathbb R)$ listed by Conway and Norton, none of which Mathlib has or a statement file could build; a Lean presentation of the Monster exists (TauCeti, <https://github.com/TauCetiProject/TauCeti/blob/43bfc87351521d3e5f257d851887a85fb744f648/TauCeti/GroupTheory/SpecificGroups/CFSG/Sporadic/Monster.lean>), but asking only for some graded representation whose McKay–Thompson series are Hauptmoduln would be satisfied by the trivial action, so it would not be faithful.
 
 #### Mathlib
 

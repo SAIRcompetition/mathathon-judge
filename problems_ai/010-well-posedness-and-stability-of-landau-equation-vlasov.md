@@ -30,18 +30,20 @@ https://arxiv.org/pdf/2409.01183
 ### Notes
 
 - Both references treat only the space-homogeneous equations (unknown $f(t,v)$, no $x$-dependence). The Vlasov–Landau system named in the Description is not covered by them.
-- In the arXiv version of the Boltzmann paper, the check that 3D inverse-power-law kernels with $2<q<7/3$ (so $-3<\gamma<-2$) satisfy the hypothesis of its Theorem 1.2 is numerical (§1.3 and Appendix A). For $q\ge 7/3$ ($\gamma\in[-2,1]$) it follows from a proved bound.
+- In the arXiv version of the Boltzmann paper, the check that 3D inverse-power-law kernels with $2\lt q\lt7/3$ (so $-3\lt\gamma\lt-2$) satisfy the hypothesis of its Theorem 1.2 is numerical (§1.3 and Appendix A). For $q\ge 7/3$ ($\gamma\in[-2,1]$) it follows from a proved bound.
 
 ### The result
 
 The objects are kinetic collision equations: the Landau equation $\partial_t f=q(f)$ with
-$$q(f)(v)=\partial_{v_i}\int_{\mathbb R^3}\alpha(|v-w|)\,a_{ij}(v-w)\,(\partial_{v_j}-\partial_{w_j})[f(v)f(w)]\,dw,\qquad a_{ij}(z)=|z|^2\delta_{ij}-z_iz_j,$$
-its version with transport in $x$ (Vlasov–Landau), and the Boltzmann equation. Guillen and Silvestre prove that the Fisher information $i(f)=\int|\nabla f|^2/f\,dv$ of a classical solution is non-increasing whenever $r|\alpha'(r)|/\alpha(r)\le\sqrt{19}$. For $\alpha(r)=r^\gamma$, $\gamma\in[-3,1]$ (Coulomb case $\gamma=-3$), initial data below a Maxwellian then give a unique global classical solution. Imbert, Silvestre and Villani prove the Boltzmann analogue (Invent. Math. 243, 2025) and obtain global smooth solutions for very soft potentials.
+
+$$q(f)(v)=\partial_{v_i}\int_{\mathbb R^3}\alpha(|v-w|)\thinspace a_{ij}(v-w)\thinspace(\partial_{v_j}-\partial_{w_j})[f(v)f(w)]\thinspace dw,\qquad a_{ij}(z)=|z|^2\delta_{ij}-z_iz_j,$$
+
+its version with transport in $x$ (Vlasov–Landau), and the Boltzmann equation. Guillen and Silvestre prove that the Fisher information $i(f)=\int|\nabla f|^2/f\thinspace dv$ of a classical solution is non-increasing whenever $r|\alpha'(r)|/\alpha(r)\le\sqrt{19}$. For $\alpha(r)=r^\gamma$, $\gamma\in[-3,1]$ (Coulomb case $\gamma=-3$), initial data below a Maxwellian then give a unique global classical solution. Imbert, Silvestre and Villani prove the Boltzmann analogue (Invent. Math. 243, 2025) and obtain global smooth solutions for very soft potentials.
 
 ### Background
 
 - Before 2023, monotonicity of the Fisher information was known only for Maxwell molecules ($\alpha\equiv1$): McKean (1966, Kac model), Toscani (1992), Villani (1998 Boltzmann, 2000 Landau). S. Ji later raised $\sqrt{19}$ to $\sqrt{22}$ (arXiv:2408.13954).
-- Proof idea (Guillen–Silvestre §1.2): write $q(f)=\pi\,Q(f\otimes f)$ with a linear degenerate elliptic operator $Q$ on $\mathbb R^6$, use that taking marginals lowers the Fisher information, split $Q$ along three vector fields, and reduce to an inequality on $S^2$ with a nearly sharp constant (§9). Global existence (§11) then follows from known short-time existence and conditional regularity results.
+- Proof idea (Guillen–Silvestre §1.2): write $q(f)=\pi\thinspace Q(f\otimes f)$ with a linear degenerate elliptic operator $Q$ on $\mathbb R^6$, use that taking marginals lowers the Fisher information, split $Q$ along three vector fields, and reduce to an inequality on $S^2$ with a nearly sharp constant (§9). Global existence (§11) then follows from known short-time existence and conditional regularity results.
 - Earlier: Villani's global weak solutions, Guo's global solutions near a Maxwellian (also space-inhomogeneous, 2002), conditional regularity criteria, partial regularity (Golse, Gualdani, Imbert, Vasseur).
 - For the space-inhomogeneous equations, large-data regularity is known only conditionally on bounds for macroscopic quantities; Villani (2025) calls it "the most urgent topic".
 
@@ -75,7 +77,7 @@ theorem guillen_silvestre_fisher_information_antitone (α : ℝ → ℝ)
     AntitoneOn (fun t => fisherInformation (f t)) (Set.Icc 0 T)
 ```
 
-The problem asks for formalizations about three equations; this is the main theorem of its first reference (Guillen–Silvestre, Theorem 1.1): the Fisher information of a classical solution of the space-homogeneous Landau equation does not increase when $r|\alpha'(r)|\le\sqrt{19}\,\alpha(r)$, which covers $\alpha(r)=r^\gamma$ for $\gamma\in[-3,1]$. A classical solution is modelled as a smooth nonnegative solution on $[0,T]$ whose derivatives decay faster than every power of $|v|$, uniformly in $t$; the global existence theorem (Theorem 1.2), the Boltzmann analogue of Imbert, Silvestre and Villani, and the Vlasov–Landau system are not stated.
+The problem asks for formalizations about three equations; this is the main theorem of its first reference (Guillen–Silvestre, Theorem 1.1): the Fisher information of a classical solution of the space-homogeneous Landau equation does not increase when $r|\alpha'(r)|\le\sqrt{19}\thinspace\alpha(r)$, which covers $\alpha(r)=r^\gamma$ for $\gamma\in[-3,1]$. A classical solution is modelled as a smooth nonnegative solution on $[0,T]$ whose derivatives decay faster than every power of $|v|$, uniformly in $t$; the global existence theorem (Theorem 1.2), the Boltzmann analogue of Imbert, Silvestre and Villani, and the Vlasov–Landau system are not stated.
 
 Source: written by AI for Mathathon; not taken from an existing formalization.
 

@@ -36,15 +36,17 @@ https://pmc.ncbi.nlm.nih.gov/articles/PMC5493941/
 
 ### The result
 
-A rod of mass $m$, length $2l$, inertia ratio $\alpha=ml^2/I$ ($\alpha=3$ for a uniform rod) slips ($\dot x>0$) on a rough plane with Coulomb friction $F_T=\mu F_N$. In scaled units the contact point obeys
+A rod of mass $m$, length $2l$, inertia ratio $\alpha=ml^2/I$ ($\alpha=3$ for a uniform rod) slips ($\dot x\gt0$) on a rough plane with Coulomb friction $F_T=\mu F_N$. In scaled units the contact point obeys
+
 $$\ddot y=b(\theta,\phi)+p_+(\theta)F_N,\qquad b=-1+\phi^2\sin\theta,\quad p_+=1+\alpha\cos^2\theta-\mu\alpha\sin\theta\cos\theta .$$
-Rigid contact requires $F_N\ge0$, $\ddot y\ge0$, $F_N\ddot y=0$. If $p_+<0$ (possible only when $\mu>2\sqrt{1+\alpha}/\alpha$, i.e. $\mu>4/3$ for $\alpha=3$), there is no valid force when $b<0$ (inconsistent) and two motions when $b>0$ (indeterminate). Hogan and Kristiansen use a spring–damper contact, $F_N=\epsilon^{-1}\max\{-\epsilon^{-1}y-\delta\dot y,0\}$ for $y\le0$, and prove (Theorems 3.1–3.2) that as $\epsilon\to0$ the rod undergoes an impact without collision lasting $O(\epsilon\ln\epsilon^{-1})$ and leaves with vertical velocity $e(\delta,\theta_0)v_0+o(1)$; in the indeterminate case an explicit threshold separates this from direct lift-off.
+
+Rigid contact requires $F_N\ge0$, $\ddot y\ge0$, $F_N\ddot y=0$. If $p_+\lt0$ (possible only when $\mu\gt2\sqrt{1+\alpha}/\alpha$, i.e. $\mu\gt4/3$ for $\alpha=3$), there is no valid force when $b\lt0$ (inconsistent) and two motions when $b\gt0$ (indeterminate). Hogan and Kristiansen use a spring–damper contact, $F_N=\epsilon^{-1}\max\lbrace-\epsilon^{-1}y-\delta\dot y,0\rbrace$ for $y\le0$, and prove (Theorems 3.1–3.2) that as $\epsilon\to0$ the rod undergoes an impact without collision lasting $O(\epsilon\ln\epsilon^{-1})$ and leaves with vertical velocity $e(\delta,\theta_0)v_0+o(1)$; in the indeterminate case an explicit threshold separates this from direct lift-off.
 
 ### Background
 
 - Lecornu (1905) proposed a jump in vertical velocity, now called impact without collision; Zhao et al. (2008) observed it in a robotic two-link system. Génot and Brogliato (1999) proved that paradoxical states cannot be reached after a period of slipping.
 - Earlier compliant models (Dupont–Yamajako 1997, Song et al. 2001, Zhao et al. 2015) were not analysed rigorously with both stiffness and damping.
-- Proof of Theorem 3.1 (§4), three phases: slipping compression along an unstable manifold of the critical set $\{y=\dot y=0\}$, with $F_N=O(\epsilon^{-1})$; sticking (a Filippov sliding flow); lift-off. Tools: the scaling $y=\epsilon\hat y$, fast time $t/\epsilon$, a blow-up of the critical set and Fenichel's normal form.
+- Proof of Theorem 3.1 (§4), three phases: slipping compression along an unstable manifold of the critical set $\lbrace y=\dot y=0\rbrace$, with $F_N=O(\epsilon^{-1})$; sticking (a Filippov sliding flow); lift-off. Tools: the scaling $y=\epsilon\hat y$, fast time $t/\epsilon$, a blow-up of the critical set and Fenichel's normal form.
 - Champneys and Várkonyi (2016) review the general 2D single-contact problem, the remaining ambiguities (dynamic jam, reverse chatter), and two-contact and 3D cases.
 
 ### Where to start

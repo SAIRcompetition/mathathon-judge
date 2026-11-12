@@ -36,13 +36,15 @@ https://matwbn.icm.edu.pl/ksiazki/sm/sm7/sm7112.pdf 1/2 case
 ### The result
 
 A planar body $K$ floats in equilibrium in an orientation if the centres of mass of $K$ and of its submerged part lie on a line orthogonal to the waterline. If this holds in every orientation, the waterline chords have constant length and cut $\partial K$ in a fixed ratio $\sigma:(1-\sigma)$, the perimetral density (Auerbach 1938). For $K$ strictly convex with $C^1$ boundary, perimeter $P$ and arc-length parametrization $\gamma$, floating at $\sigma=1/N$ is equivalent to
+
 $$|\gamma(t+P/N)-\gamma(t)|=\ell\quad\text{for all }t,$$
+
 so the points $\gamma(t+(i-1)P/N)$ form a moving equilateral $N$-gon, a Zindler carousel (Bracho–Montejano–Oliveros; Theorem 2 of the key reference). At $\sigma=1/2$ non-circular solutions exist (Zindler 1921, Auerbach 1938). Theorem 1 of the key reference: such a $K$ floating in every orientation at $\sigma=1/6$ is a disk.
 
 ### How the known proof works
 
 - §§1–2.1: the angles of the carousel satisfy $\dot x_i=\sin\alpha_{i-1}-\sin\alpha_i$ (Theorem 4); for $N=6$, $x_1+x_3+x_5=x_2+x_4+x_6=2\pi$ forces each hexagon, hence $\partial K$, to be centrally symmetric (Lemmas 5–6, Corollary 7).
-- §§2.2–3: two angles then obey a Hamiltonian system with $H=\sin x+\sin y-\sin(x+y)$, a quarter of the hexagon's area (Remark 10), and period $\pi\sqrt{3/2}<T(H)<6$ (Proposition 13). A non-disk $K$ with rotation group of order $2k$ has $P/(2k)=m\,T(H)$; $12\le P\le2\pi(1+\sqrt2)$ then forces $k=m=1$ and $T(H)\ge6$.
+- §§2.2–3: two angles then obey a Hamiltonian system with $H=\sin x+\sin y-\sin(x+y)$, a quarter of the hexagon's area (Remark 10), and period $\pi\sqrt{3/2}\lt T(H)\lt6$ (Proposition 13). A non-disk $K$ with rotation group of order $2k$ has $P/(2k)=m\thinspace T(H)$; $12\le P\le2\pi(1+\sqrt2)$ then forces $k=m=1$ and $T(H)\ge6$.
 - §4: for larger $N$ the $\alpha_i$ are not determined by the $x_j$ and no two-variable reduction is expected.
 
 ### Background
@@ -87,7 +89,7 @@ theorem eq_closedBall_of_floatsInEveryPosition (n : ℕ) (hn : n = 3 ∨ n = 4 �
     ∃ (z : ℝ²) (r : ℝ), K = Metric.closedBall z r
 ```
 
-The statement covers the perimetral densities $1/3$, $1/4$ and $1/5$ of the title, under the hypotheses of Theorem 1 of the key reference (strictly convex, $C^1$ boundary, written as a unique supporting line at each boundary point). `FloatsInEveryPosition K ρ σ` says that for every direction of the vertical, the centroids of $K$ and of the part below the waterline cutting off area $\rho\,|K|$ lie on a vertical line, and that the boundary below the waterline has length $\sigma$ times the perimeter (one-dimensional Hausdorff measure). With $n=6$ the same statement is that theorem; for $1/5$ see the Notes on how complete the published proof is, and $n\ge7$ is open.
+The statement covers the perimetral densities $1/3$, $1/4$ and $1/5$ of the title, under the hypotheses of Theorem 1 of the key reference (strictly convex, $C^1$ boundary, written as a unique supporting line at each boundary point). `FloatsInEveryPosition K ρ σ` says that for every direction of the vertical, the centroids of $K$ and of the part below the waterline cutting off area $\rho\thinspace|K|$ lie on a vertical line, and that the boundary below the waterline has length $\sigma$ times the perimeter (one-dimensional Hausdorff measure). With $n=6$ the same statement is that theorem; for $1/5$ see the Notes on how complete the published proof is, and $n\ge7$ is open.
 
 Source: written by AI for Mathathon; not taken from an existing formalization.
 

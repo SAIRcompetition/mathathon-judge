@@ -36,7 +36,9 @@ https://webhomes.maths.ed.ac.uk/~v1ranick/papers/exotic.pdf
 $S^3$-bundles over $S^4$ with structure group $SO(4)$ are classified by $\pi_3(SO(4))\cong\mathbb Z\oplus\mathbb Z$. For $(h,j)\in\mathbb Z^2$, let $\xi_{hj}$ be the $S^3$-bundle over $S^4$ with clutching map $u\mapsto(v\mapsto u^hvu^j)$ (quaternions, $u\in S^3$, $v\in\mathbb R^4=\mathbb H$); its first Pontryagin class is $\pm2(h-j)\iota$ (Lemma 3). For odd $k$, $M^7_k$ is the total space with $h+j=1$ and $h-j=k$.
 
 For a closed oriented 7-manifold $M$ with $H^3(M)=H^4(M)=0$ that bounds a compact oriented 8-manifold $B$, Milnor sets
+
 $$\lambda(M)\equiv2q(B)-\tau(B)\pmod 7,\qquad q(B)=\langle\nu,(i^{-1}p_1)^2\rangle,$$
+
 where $\tau(B)$ is the signature of the intersection form on $H^4(B,M)$, $i:H^4(B,M)\to H^4(B)$ is an isomorphism and $\nu$ is the orientation class; by Theorem 1, $\lambda(M)$ does not depend on $B$.
 
 **Theorem 3** (Milnor). If $k^2\not\equiv1\pmod 7$, then $M^7_k$ is homeomorphic to $S^7$ but not diffeomorphic to it.

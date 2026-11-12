@@ -36,11 +36,13 @@ Pieter Belmans, Chiara Damiolini, Hans Franzen, Victoria Hoskins, Svetlana Makar
 
 ### The result
 
-Let $k$ be algebraically closed of characteristic 0, as AHLH's existence theorems (Theorem A, Theorem 7.27) require. For a torsion-free sheaf $E$ on $\mathbb P^2$ of rank $r>0$, Riemann–Roch shows that $(r,c_1,c_2)$ fixes the Hilbert polynomial $P_E(m)=\chi(E(m))$. $E$ is Gieseker semistable if $\chi(F(m))/\operatorname{rk}F\le P_E(m)/r$ for $m\gg0$ and all $0\ne F\subset E$. These sheaves form an algebraic stack $\mathcal M$ of finite type, and AHLH (Theorem 7.27, Example 7.28) give a proper good moduli space $\mathcal M\to M$, an algebraic space. The claim to prove without GIT is that $M$ is a projective scheme.
+Let $k$ be algebraically closed of characteristic 0, as AHLH's existence theorems (Theorem A, Theorem 7.27) require. For a torsion-free sheaf $E$ on $\mathbb P^2$ of rank $r\gt0$, Riemann–Roch shows that $(r,c_1,c_2)$ fixes the Hilbert polynomial $P_E(m)=\chi(E(m))$. $E$ is Gieseker semistable if $\chi(F(m))/\operatorname{rk}F\le P_E(m)/r$ for $m\gg0$ and all $0\ne F\subset E$. These sheaves form an algebraic stack $\mathcal M$ of finite type, and AHLH (Theorem 7.27, Example 7.28) give a proper good moduli space $\mathcal M\to M$, an algebraic space. The claim to prove without GIT is that $M$ is a projective scheme.
 
 For $m\gg n\gg0$, Álvarez-Cónsul and King (ACK) send $E$ to the Kronecker module
+
 $$\alpha_E:\ H^0(E(n))\otimes H^0(\mathcal O(m-n))\longrightarrow H^0(E(m)),$$
-of dimension vector $d=(P_E(n),P_E(m))$. By their Theorem 5.10 and Corollary 5.11, an $n$-regular pure $E$ is semistable if and only if $\alpha_E$ is $\theta$-semistable for $\theta(a,b)=P_E(m)\,a-P_E(n)\,b$ ($\theta\le0$ on submodules), and S-equivalence is preserved. Belmans et al. (Theorem 6.2.1) prove without GIT that the determinantal line bundle $L_\theta=(\det V)^{-P_E(m)}\otimes(\det W)^{P_E(n)}$ ($V,W$ the universal bundles at the two vertices) descends to an ample line bundle on the Kronecker moduli space $M_d^{\theta\text{-ss}}$. Substituting $V=\pi_*E(n)$, $W=\pi_*E(m)$ (a substitution made here via ACK Proposition 4.1, not stated in the sources) gives its pullback to $\mathcal M$: $\det(\pi_*E(n))^{-P_E(m)}\otimes\det(\pi_*E(m))^{P_E(n)}$.
+
+of dimension vector $d=(P_E(n),P_E(m))$. By their Theorem 5.10 and Corollary 5.11, an $n$-regular pure $E$ is semistable if and only if $\alpha_E$ is $\theta$-semistable for $\theta(a,b)=P_E(m)\thinspace a-P_E(n)\thinspace b$ ($\theta\le0$ on submodules), and S-equivalence is preserved. Belmans et al. (Theorem 6.2.1) prove without GIT that the determinantal line bundle $L_\theta=(\det V)^{-P_E(m)}\otimes(\det W)^{P_E(n)}$ ($V,W$ the universal bundles at the two vertices) descends to an ample line bundle on the Kronecker moduli space $M_d^{\theta\text{-ss}}$. Substituting $V=\pi_{\ast}E(n)$, $W=\pi_{\ast}E(m)$ (a substitution made here via ACK Proposition 4.1, not stated in the sources) gives its pullback to $\mathcal M$: $\det(\pi_{\ast}E(n))^{-P_E(m)}\otimes\det(\pi_{\ast}E(m))^{P_E(n)}$.
 
 ### How the known proof works
 
@@ -48,7 +50,7 @@ The classical proof, then the planned route (after Alper et al. 2022):
 - Classical (ACK): King's GIT quotient of a locally closed subscheme of the Kronecker representation space, properness by Langton's argument (Proposition 6.6), closed embedding $M\to M_d^{\theta\text{-ss}}$ (Proposition 6.7).
 - Step 1 (AHLH §7): the stack of coherent sheaves is S-complete, Θ-reductive and satisfies the existence part of the valuative criterion (Lemmas 7.16–7.18); the Harder–Narasimhan stratification is a Θ-stratification with open, bounded semistable locus (Example 7.28); Theorem 7.27 gives $M$.
 - Step 2 (ACK Theorem 3.4, Proposition 4.1, Theorem 5.10): $E\mapsto\alpha_E$ is fully faithful on $n$-regular sheaves and preserves flat families; the morphism of stacks descends to $\varphi:M\to M_d^{\theta\text{-ss}}$ (Alper, Theorem 6.6).
-- Step 3: $\varphi$ is proper, and injective on $k$-points by ACK Corollary 5.11 once these are identified with S-equivalence classes (for curves: Alper et al., Lemma 3.11, Theorem 3.12). So $\varphi$ is finite (Stacks 0A4X), $M$ is a scheme and $\varphi^*L_\theta$ is ample (Stacks 0892). The proof of Theorem 6.2.1 of Belmans et al. is a model.
+- Step 3: $\varphi$ is proper, and injective on $k$-points by ACK Corollary 5.11 once these are identified with S-equivalence classes (for curves: Alper et al., Lemma 3.11, Theorem 3.12). So $\varphi$ is finite (Stacks 0A4X), $M$ is a scheme and $\varphi^{\ast}L_\theta$ is ample (Stacks 0892). The proof of Theorem 6.2.1 of Belmans et al. is a model.
 
 ### Background
 

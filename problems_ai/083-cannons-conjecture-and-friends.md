@@ -41,13 +41,13 @@ An expository write-up and/or video
 
 A finitely generated group $G$ is hyperbolic if geodesic triangles in a Cayley graph are uniformly thin; $\partial G$ is the set of asymptote classes of geodesic rays with the visual topology. Cannon's conjecture (Cannon 1991; Cannon–Swenson 1998, Conjecture 5.1): if $\partial G\cong S^2$, then $G$ acts properly and cocompactly by isometries on $\mathbb H^3$.
 
-Theorem 1.1 (OpenAI): if $\partial G\cong S^2$, there is a homomorphism $\rho\colon G\to\mathrm{Isom}(\mathbb H^3)$ with finite kernel whose action is proper ($\{g:\rho(g)K\cap K\ne\emptyset\}$ finite for compact $K$) and cocompact. For torsion-free $G$, $G$ is then the fundamental group of a closed hyperbolic 3-manifold (Corollary 8.1). The circle case is classical: $\partial G\cong S^1$ if and only if $G$ acts properly and cocompactly by isometries on $\mathbb H^2$ (Tukia, Gabai, Casson–Jungreis, Freden).
+Theorem 1.1 (OpenAI): if $\partial G\cong S^2$, there is a homomorphism $\rho\colon G\to\mathrm{Isom}(\mathbb H^3)$ with finite kernel whose action is proper ($\lbrace g:\rho(g)K\cap K\ne\emptyset\rbrace$ finite for compact $K$) and cocompact. For torsion-free $G$, $G$ is then the fundamental group of a closed hyperbolic 3-manifold (Corollary 8.1). The circle case is classical: $\partial G\cong S^1$ if and only if $G$ acts properly and cocompactly by isometries on $\mathbb H^2$ (Tukia, Gabai, Casson–Jungreis, Freden).
 
 ### How the known proof works
 
 Structure as given in the preprint (Section 1, "The proof in outline"):
-- Section 2: with a visual metric on $Z=\partial G$, let $M(n)$ be the combinatorial 2-modulus at scale $a^{-n}$ of paths of diameter at least $d_0$. If $\sup_n M(n)<\infty$, $Z$ is quasi-Möbius to the round sphere (Theorem 2.5, Bonk–Kleiner, Bourdon–Kleiner), and Sullivan–Tukia straightening gives the action (Proposition 2.6).
-- Section 3: if $M(n)$ is unbounded, crossing duality yields continuous functions with separating level continua and a nonconstant limit $u$ with $(\mathrm{osc}_{B(x,s)}u)^2\le C\mu(B(x,Cs))$, $\mu$ finite (Proposition 3.7).
+- Section 2: with a visual metric on $Z=\partial G$, let $M(n)$ be the combinatorial 2-modulus at scale $a^{-n}$ of paths of diameter at least $d_0$. If $\sup_n M(n)\lt\infty$, $Z$ is quasi-Möbius to the round sphere (Theorem 2.5, Bonk–Kleiner, Bourdon–Kleiner), and Sullivan–Tukia straightening gives the action (Proposition 2.6).
+- Section 3: if $M(n)$ is unbounded, crossing duality yields continuous functions with separating level continua and a nonconstant limit $u$ with $(\mathrm{osc} _ {B(x,s)}u)^2\le C\mu(B(x,Cs))$, $\mu$ finite (Proposition 3.7).
 - Sections 4–6: exponential growth of the record moduli makes $u$ locally Hölder, and two magnifications by group elements conflict (Proposition 4.5); subexponential growth gives a tree of balls with a probability flow, and same-depth expansions with distinct punctures charge too much measure (Propositions 5.4, 6.1).
 
 ### Background

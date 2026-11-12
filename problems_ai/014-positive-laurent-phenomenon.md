@@ -40,14 +40,15 @@ There are couple article e.g. from Nathan Reading who is on this topics already.
 ### The result
 
 Fomin–Zelevinsky (Invent. Math. 154, 2003): a cluster algebra has finitely many seeds if and only if some seed has an exchange matrix $B$ whose Cartan counterpart $A(B)$ ($a_{ii}=2$, $a_{ij}=-|b_{ij}|$) is of finite type; equivalently $|b_{xy}b_{yx}|\le3$ in every seed. Finite types match Cartan–Killing types, cluster variables match almost positive roots, and the cluster complex is the dual complex of a generalized associahedron. GHKK (Corollary 0.4): every cluster variable $u$ of a skew-symmetrizable cluster algebra of geometric type is a Laurent polynomial with nonnegative integer coefficients in the variables $x_1,\dots,x_N$ of any seed,
+
 $$u\in\mathbb Z_{\ge0}[x_1^{\pm1},\dots,x_N^{\pm1}].$$
 
 ### How the known proof works
 
 - FZ, sufficiency (Theorem 1.5, Sections 2–4): for bipartite $B$, the generalized associahedron gives a pseudomanifold on the almost positive roots, and a criterion (Proposition 2.3) gives finite type.
 - FZ, necessity (Theorem 1.6, Sections 7–9): finite type forces every exchange matrix to be "2-finite", and 2-finite diagrams are mutation equivalent to Dynkin diagrams (Theorem 8.6).
-- GHKK: cluster monomials are theta functions (sums over broken lines), so Theorem 1.13, that all walls of the scattering diagram $\mathfrak D_s$ can be taken as $(1+z^m)^c$ with $c>0$, gives positivity (Theorem 4.10).
-- Appendix C: $\mathfrak D_s$ is built order by order by adding walls at joints (Theorem 1.28). At a joint, $M=\Lambda_{\mathfrak j}\oplus M'$ with $\mathrm{rk}\,M'=2$, and a change-of-monoid trick, a perturbation trick and induction reduce to the simplest diagram, Example 1.14 (Proposition C.13).
+- GHKK: cluster monomials are theta functions (sums over broken lines), so Theorem 1.13, that all walls of the scattering diagram $\mathfrak D_s$ can be taken as $(1+z^m)^c$ with $c\gt0$, gives positivity (Theorem 4.10).
+- Appendix C: $\mathfrak D_s$ is built order by order by adding walls at joints (Theorem 1.28). At a joint, $M=\Lambda_{\mathfrak j}\oplus M'$ with $\mathrm{rk}\thinspace M'=2$, and a change-of-monoid trick, a perturbation trick and induction reduce to the simplest diagram, Example 1.14 (Proposition C.13).
 
 ### Background
 

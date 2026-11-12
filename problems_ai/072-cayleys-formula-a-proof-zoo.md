@@ -30,16 +30,18 @@ Joyal, “Une théorie combinatoire des séries formelles,” Advances in Mathem
 
 ### The result
 
-The number of trees on the labelled vertex set $\{1,\dots,n\}$ is
+The number of trees on the labelled vertex set $\lbrace1,\dots,n\rbrace$ is
+
 $$T(n)=n^{n-2}\qquad(n\ge 1),$$
+
 equivalently there are $n^{n-1}$ rooted labelled trees. Borchardt first proved it in 1860 with a determinant method; Cayley's "A theorem on trees" (Quart. J. Pure Appl. Math. 23, 1889, 376–378) gave a proof in the language of polynomials, and Prüfer (Arch. Math. Phys. 27, 1918) gave the bijection now called the Prüfer code. The official Lean statement counts the trees `SimpleGraph.IsTree` on `Fin n` for every $n\ge 1$.
 
 ### How the known proof works
 
-- Prüfer: delete the leaf with the smallest label and record its neighbour, until two vertices remain; this is a bijection from trees to $\{1,\dots,n\}^{n-2}$, and vertex $i$ appears $\deg(i)-1$ times in the code.
+- Prüfer: delete the leaf with the smallest label and record its neighbour, until two vertices remain; this is a bijection from trees to $\lbrace1,\dots,n\rbrace^{n-2}$, and vertex $i$ appears $\deg(i)-1$ times in the code.
 - Joyal: a tree with an ordered pair of marked vertices (a vertebrate) is a linear order of rooted trees along the path between them; reading that linear order as a permutation gives the functional digraph of a map $[n]\to[n]$, so $n^2T(n)=n^n$.
 - Matrix-tree theorem: the number of spanning trees of a graph equals any cofactor of its Laplacian (proof by Cauchy–Binet); for $K_n$ the reduced Laplacian $nI_{n-1}-J_{n-1}$ has determinant $n^{n-2}$.
-- Lagrange inversion: the exponential generating function of rooted trees satisfies $R(x)=x\,e^{R(x)}$, and inversion gives $n^{n-1}$ rooted trees.
+- Lagrange inversion: the exponential generating function of rooted trees satisfies $R(x)=x\thinspace e^{R(x)}$, and inversion gives $n^{n-1}$ rooted trees.
 - Pitman's double counting: building a rooted tree by adding $n-1$ edges, each from any vertex to the root of another component, has $n^{n-1}(n-1)!$ executions, and each rooted tree arises from exactly $(n-1)!$ of them.
 
 ### Background

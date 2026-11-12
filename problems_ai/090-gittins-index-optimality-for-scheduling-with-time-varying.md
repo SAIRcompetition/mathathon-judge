@@ -59,15 +59,19 @@ Talk submitted by the submitter: https://www.youtube.com/watch?v=KHqzHCZTiIc
 
 Model (Li et al. §3.1): one server, $k$ job classes, preemption allowed. Class $i$ jobs arrive at Poisson rate $\lambda_i$, have $\mathrm{Exp}(\mu_i)$ sizes, and a job of age $t$ costs $c_i(t)$ per unit time, $c_i$ non-decreasing; the goal is to minimize the long-run average holding cost. An index policy serves a job of largest index $V_i(\text{age})$. Optimal policies serve each class first-come-first-served (Lemma 3.1), so Li et al. take $V_i$ non-decreasing.
 
-Restless bandit (Theorem 1): arm $i$ tracks the age $T_i$ of the oldest class-$i$ job; it grows at rate 1, and while active drops by an $\mathrm{Exp}(\lambda_i)$ amount at each completion (rate $\mu_i$). Arm $i$ costs
-$$r_i(s)=c_i(s)+\mathbb E\sum_{j\,:\,Y_j<s}c_i(Y_j),\qquad (Y_j)\ \text{a rate-}\lambda_i\ \text{Poisson process},$$
-(given the oldest age $s$, FCFS makes the younger arrivals Poisson on $(0,s)$), and non-decreasing index policies cost the same in both problems. Li et al. (Theorem 2, Corollary 1) prove indexability and find the Whittle index
-$$W_i(t)=\mu_i\,\mathbb E\,[\,c_i(t+X)\,],\qquad X\sim\mathrm{Exp}(\mu_i-\lambda_i).$$
+Restless bandit (Theorem 1): arm $i$ tracks the age $T_i$ of the oldest $\text{class-}i$ job; it grows at rate 1, and while active drops by an $\mathrm{Exp}(\lambda_i)$ amount at each completion (rate $\mu_i$). Arm $i$ costs
+
+$$r_i(s)=c_i(s)+\mathbb E\sum_{j\thinspace:\thinspace Y_j\lt s}c_i(Y_j),\qquad (Y_j)\ \text{a rate-}\lambda_i\ \text{Poisson process},$$
+
+(given the oldest age $s$, FCFS makes the younger arrivals Poisson on $(0,s){}$), and non-decreasing index policies cost the same in both problems. Li et al. (Theorem 2, Corollary 1) prove indexability and find the Whittle index
+
+$$W_i(t)=\mu_i\thinspace\mathbb E\thinspace[\thinspace c_i(t+X)\thinspace],\qquad X\sim\mathrm{Exp}(\mu_i-\lambda_i).$$
+
 LookAhead (Theorem 1.1): for $k=2$ and $c_2$ constant, $V_1=W_1$, $V_2=\mu_2c_2$ is optimal among non-decreasing index policies.
 
 ### How the known proof works
 
-- Li et al., Theorem 2 (§4, Appendix E): with discounting and a subsidy for the passive action, guess that a threshold policy (passive iff age $<x$) is optimal, define the index by a first-order condition in $x$, and verify the Hamilton–Jacobi–Bellman equation.
+- Li et al., Theorem 2 (§4, Appendix E): with discounting and a subsidy for the passive action, guess that a threshold policy (passive iff age $\lt x$) is optimal, define the index by a first-order condition in $x$, and verify the Hamilton–Jacobi–Bellman equation.
 - LookAhead §3 assumes a constant class-2 index: policies become Overtake($\alpha$), and the cost derivative in $\alpha$ is a positive multiple of $\mu_1\mathbb E[c_1(\alpha+X)]-\mu_2c_2$ (Theorem 3.8). §4 drops the assumption by checking Bellman optimality criteria over one busy period.
 
 ### Background

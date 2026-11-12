@@ -37,16 +37,18 @@ E. Naslund, “Monochromatic equilateral triangles in the unit distance graph,�
 ### The result
 
 A cap set is a set $A\subseteq\mathbb F_3^n$ with no solution of $x+y+z=0$ in $A$ other than $x=y=z$. Ellenberg and Gijswijt proved $|A|\le 3m_{2n/3}$, where $m_d$ is the number of monomials in $n$ variables of total degree at most $d$ with each exponent at most 2. This gives
-$$|A|\le 3\,\theta^n,\qquad \theta=\min_{\rho>0}\frac{1+\rho+\rho^2}{\rho^{2/3}}=\tfrac38\,(207+33\sqrt{33})^{1/3}\approx 2.7551,$$
-which is the official Lean statement. For every prime power $q$ the same method gives $c_q^n$ with $c_q<q$ for progression-free sets in $\mathbb F_q^n$. Lower bounds for the growth rate of the largest cap set are $2.218$ (Tyrrell, 2022) and, from a computer program search, $2.2202$ (Romera-Paredes et al., 2024).
+
+$$|A|\le 3\thinspace\theta^n,\qquad \theta=\min_{\rho\gt0}\frac{1+\rho+\rho^2}{\rho^{2/3}}=\tfrac38\thinspace(207+33\sqrt{33})^{1/3}\approx 2.7551,$$
+
+which is the official Lean statement. For every prime power $q$ the same method gives $c_q^n$ with $c_q\lt q$ for progression-free sets in $\mathbb F_q^n$. Lower bounds for the growth rate of the largest cap set are $2.218$ (Tyrrell, 2022) and, from a computer program search, $2.2202$ (Romera-Paredes et al., 2024).
 
 ### How the known proof works
 
 - Polynomials on $\mathbb F_q^n$ with each exponent at most $q-1$ represent all functions; $m_d$ counts those of degree at most $d$.
-- Croot–Lev–Pach lemma (EG Proposition 2): if a polynomial $P$ of degree at most $d$ vanishes at $\alpha a+\beta b$ for all distinct $a,b\in A$, then the matrix $(P(\alpha a+\beta b))_{a,b}$ is diagonal and has rank at most $2m_{d/2}$, so $P(-\gamma a)\ne0$ for at most $2m_{d/2}$ points $a\in A$.
+- Croot–Lev–Pach lemma (EG Proposition 2): if a polynomial $P$ of degree at most $d$ vanishes at $\alpha a+\beta b$ for all distinct $a,b\in A$, then the matrix $(P(\alpha a+\beta b)) _ {a,b}$ is diagonal and has rank at most $2m_{d/2}$, so $P(-\gamma a)\ne0$ for at most $2m_{d/2}$ points $a\in A$.
 - Dimension count (Theorem 4): the polynomials of degree at most $d$ vanishing off $-\gamma A$ form a space of dimension at least $m_d-q^n+|A|$; one of them has support at least that dimension, giving $|A|\le 2m_{d/2}+(q^n-m_d)$.
 - Taking $d=2(q-1)n/3$ yields $|A|\le 3m_{(q-1)n/3}$.
-- A large-deviation estimate (Cramér's theorem) shows $m_{(q-1)n/3}=O(c^n)$ with $c<q$; for $q=3$ this gives $2.756^n$.
+- A large-deviation estimate (Cramér's theorem) shows $m_{(q-1)n/3}=O(c^n)$ with $c\lt q$; for $q=3$ this gives $2.756^n$.
 
 ### Background
 

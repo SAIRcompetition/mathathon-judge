@@ -37,22 +37,24 @@ A direct approach to the stable distributions: https://arxiv.org/abs/1604.07350
 
 ### The result
 
-Marcinkiewicz (1939): if the characteristic function of a real random variable has the form $\varphi(t)=\mathbb E\,e^{itX}=e^{P(t)}$ with $P$ a polynomial, then $\deg P\le2$, so $X$ is Gaussian or constant.
+Marcinkiewicz (1939): if the characteristic function of a real random variable has the form $\varphi(t)=\mathbb E\thinspace e^{itX}=e^{P(t)}$ with $P$ a polynomial, then $\deg P\le2$, so $X$ is Gaussian or constant.
 
-Dufresne (1990), as stated in Matsumoto–Yor, Theorem 6.2: for $\mu>0$ and a standard Brownian motion $B$,
-$$\int_0^\infty e^{2(B_s-\mu s)}\,ds\ \overset{d}{=}\ \frac1{2\gamma_\mu},$$
-where $\gamma_\mu$ has density $x^{\mu-1}e^{-x}/\Gamma(\mu)$ on $(0,\infty)$; so the perpetuity has an inverse gamma law. By scaling, $\int_0^\infty e^{aB_s-bs}\,ds\overset{d}{=}2/(a^2\gamma_{2b/a^2})$ for $a,b>0$.
+Dufresne (1990), as stated in Matsumoto–Yor, Theorem 6.2: for $\mu\gt0$ and a standard Brownian motion $B$,
+
+$$\int_0^\infty e^{2(B_s-\mu s)}\thinspace ds\ \overset{d}{=}\ \frac1{2\gamma_\mu},$$
+
+where $\gamma_\mu$ has density $x^{\mu-1}e^{-x}/\Gamma(\mu)$ on $(0,\infty)$; so the perpetuity has an inverse gamma law. By scaling, $\int_0^\infty e^{aB_s-bs}\thinspace ds\overset{d}{=}2/(a^2\gamma_{2b/a^2})$ for $a,b\gt0$.
 
 One example for each other direction the proposer names:
 - Stable laws: E. J. G. and J. Pitman derive the characteristic function of a stable law from its functional equation and regular variation, without the Lévy–Khintchine formula.
-- Gamma (Lukacs 1955): if $X,Y>0$ are independent and non-degenerate and $X+Y$ is independent of $X/(X+Y)$, then $X,Y$ are gamma with a common scale.
-- Pólya–Gamma (Polson–Scott–Windle 2013, Theorem 1): for $b>0$, $(e^\psi)^a/(1+e^\psi)^b=2^{-b}e^{\kappa\psi}\,\mathbb E\,e^{-\omega\psi^2/2}$, where $\kappa=a-b/2$ and $\omega\sim\mathrm{PG}(b,0)$.
+- Gamma (Lukacs 1955): if $X,Y\gt0$ are independent and non-degenerate and $X+Y$ is independent of $X/(X+Y)$, then $X,Y$ are gamma with a common scale.
+- Pólya–Gamma (Polson–Scott–Windle 2013, Theorem 1): for $b\gt0$, $(e^\psi)^a/(1+e^\psi)^b=2^{-b}e^{\kappa\psi}\thinspace\mathbb E\thinspace e^{-\omega\psi^2/2}$, where $\kappa=a-b/2$ and $\omega\sim\mathrm{PG}(b,0)$.
 - Same moments (Heyde 1963): the lognormal density $f$ and $f(x)\big(1+\varepsilon\sin(2\pi\log x)\big)$, $|\varepsilon|\le1$, have the same moments.
 
 ### How the known proof works
 
-- Marcinkiewicz: a characteristic function that agrees near $0$ with an analytic function is analytic in a strip and equals $\mathbb E\,e^{izX}$ there (see Lukacs, *Characteristic Functions*). As $e^P$ is entire, $\mathbb E\,e^{sX}<\infty$ for all real $s$ and $|\varphi(t+is)|\le\varphi(is)$, so $\operatorname{Re}P(re^{i\theta})\le P(ir\sin\theta)$ for all $r,\theta$.
-- If $\deg P=n\ge3$, compare leading terms at one of the $n$ directions where $\operatorname{Re}(a_ne^{in\theta})=|a_n|$ and $|\sin\theta|<1$: contradiction. Hence $P(t)=imt-\sigma^2t^2/2$.
+- Marcinkiewicz: a characteristic function that agrees near $0$ with an analytic function is analytic in a strip and equals $\mathbb E\thinspace e^{izX}$ there (see Lukacs, *Characteristic Functions*). As $e^P$ is entire, $\mathbb E\thinspace e^{sX}\lt\infty$ for all real $s$ and $|\varphi(t+is)|\le\varphi(is)$, so $\operatorname{Re}P(re^{i\theta})\le P(ir\sin\theta)$ for all $r,\theta$.
+- If $\deg P=n\ge3$, compare leading terms at one of the $n$ directions where $\operatorname{Re}(a_ne^{in\theta})=|a_n|$ and $|\sin\theta|\lt1$: contradiction. Hence $P(t)=imt-\sigma^2t^2/2$.
 - Dufresne, structure (Lamperti): $e^{B_t-\mu t}$ is a Bessel process of index $-\mu$ started at $1$, time-changed by $A_t=\int_0^te^{2(B_s-\mu s)}ds$; so $A_\infty$ is the time that Bessel process hits $0$ (Matsumoto–Yor (2.1); Salminen–Yor (2)).
 - Dufresne, analytic proof (Matsumoto–Yor, Theorem 6.2): a Laplace transform of the perpetuity solves an ODE that becomes the modified Bessel equation, giving $\mathbb E\exp(-\tfrac{\alpha^2}{2}A_\infty)=\frac{2}{\Gamma(\mu)}(\alpha/2)^\mu K_\mu(\alpha)$; an integral formula for $K_\mu$ identifies the law of $1/(2\gamma_\mu)$.
 
@@ -106,7 +108,7 @@ theorem dufresne {Ω : Type*} [MeasurableSpace Ω] (P : Measure Ω) [IsProbabili
       ((gammaMeasure μ 1).map fun x => (2 * x)⁻¹) P
 ```
 
-The problem lets participants choose a result and names these two as the ideal targets; the other directions it lists have no official statement. Mathlib's `IsGaussian` includes point masses, so the first conclusion reads "Gaussian or a point mass"; the second says that $\int_0^\infty e^{2(B_s-\mu s)}\,ds$ has the law of $1/(2\gamma_\mu)$ (Matsumoto–Yor, Theorem 6.2), with Mathlib's Brownian motion `IsBrownianReal` and gamma law `gammaMeasure μ 1`.
+The problem lets participants choose a result and names these two as the ideal targets; the other directions it lists have no official statement. Mathlib's `IsGaussian` includes point masses, so the first conclusion reads "Gaussian or a point mass"; the second says that $\int_0^\infty e^{2(B_s-\mu s)}\thinspace ds$ has the law of $1/(2\gamma_\mu)$ (Matsumoto–Yor, Theorem 6.2), with Mathlib's Brownian motion `IsBrownianReal` and gamma law `gammaMeasure μ 1`.
 
 Source: written by AI for Mathathon; not taken from an existing formalization.
 

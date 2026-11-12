@@ -34,8 +34,10 @@ A clear exposition of the counterexample constructions and of what prevents them
 
 ### The result
 
-The invariant subspace problem asks whether every bounded operator $T$ on an infinite-dimensional separable complex Banach space $X$ has a closed subspace $M\ne\{0\},X$ with $TM\subseteq M$; equivalently, whether some nonzero vector is not cyclic. Enflo (Acta Math. 1987) and Read (1984) constructed Banach spaces with operators having no such subspace, and Read (1985) did it on $\ell^1$:
-$$\exists\,T\in B(\ell^1)\ \text{with no nontrivial closed invariant subspace}.$$
+The invariant subspace problem asks whether every bounded operator $T$ on an infinite-dimensional separable complex Banach space $X$ has a closed subspace $M\ne\lbrace0\rbrace,X$ with $TM\subseteq M$; equivalently, whether some nonzero vector is not cyclic. Enflo (Acta Math. 1987) and Read (1984) constructed Banach spaces with operators having no such subspace, and Read (1985) did it on $\ell^1$:
+
+$$\exists\thinspace T\in B(\ell^1)\ \text{with no nontrivial closed invariant subspace}.$$
+
 Read later treated $c_0$ and $\bigoplus_{\ell^2}J$ (1989) and built operators on $\ell^1$ with no nontrivial closed invariant subset (1988). All known counterexamples live on non-reflexive spaces; the problem is open for reflexive spaces, in particular Hilbert space.
 
 ### How the known proof works
@@ -49,7 +51,7 @@ Read later treated $c_0$ and $\bigoplus_{\ell^2}J$ (1989) and built operators on
 
 - Beauzamy (1985) published a simplification of Enflo's example; Read (1986) published a short proof; Read (1997) built a quasinilpotent example on $\ell^1$.
 - Positive results include Lomonosov (1973), for operators commuting with a nonzero compact operator, and Argyros–Haydon (2011), a space on which every operator is scalar plus compact and so has an invariant subspace.
-- Grivaux and Roginskaya (2008) built Read-type operators on Hilbert space with properties (b) and (c); these still have invariant subspaces. Their Theorem 1.5 (2014) shows that a one-$\varepsilon$ version of (a) on $\ell^2$, for an operator without eigenvectors, would give a Hilbert space counterexample.
+- Grivaux and Roginskaya (2008) built Read-type operators on Hilbert space with properties (b) and (c); these still have invariant subspaces. Their Theorem 1.5 (2014) shows that a $\text{one-}\varepsilon$ version of (a) on $\ell^2$, for an operator without eigenvectors, would give a Hilbert space counterexample.
 
 ### Where to start
 

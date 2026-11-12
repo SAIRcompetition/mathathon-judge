@@ -38,7 +38,7 @@ https://github.com/openai/math/blob/main/preprints/The-maximum-number-of-mutuall
 
 ### The result
 
-Orthonormal bases $B,C$ of $\mathbb C^d$ are mutually unbiased if $|\langle b,c\rangle|^2=1/d$ for all $b\in B$, $c\in C$; $N(d)$ is the largest number of pairwise mutually unbiased bases. If the first basis is the standard one, the second is the column basis of $H/\sqrt d$ for a complex Hadamard matrix $H$ ($|H_{ij}|=1$, $HH^*=dI$).
+Orthonormal bases $B,C$ of $\mathbb C^d$ are mutually unbiased if $|\langle b,c\rangle|^2=1/d$ for all $b\in B$, $c\in C$; $N(d)$ is the largest number of pairwise mutually unbiased bases. If the first basis is the standard one, the second is the column basis of $H/\sqrt d$ for a complex Hadamard matrix $H$ ($|H_{ij}|=1$, $HH^{\ast}=dI$).
 
 Known before 2026: $N(d)\le d+1$, with equality for prime powers $d$ (Ivanović 1981 for primes; Wootters–Fields 1989); $N(mn)\ge\min(N(m),N(n))$ by tensor products, so $N(6)\ge3$; and $N(d)\ne d$, so $N(d)=d+1$ or $N(d)\le d-1$ (Weiner 2013). Hence $3\le N(6)\le7$ and $N(6)\ne6$.
 

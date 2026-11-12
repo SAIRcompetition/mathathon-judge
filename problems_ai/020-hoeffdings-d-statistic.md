@@ -30,15 +30,17 @@ https://academic.oup.com/bib/article/15/6/906/176706 (an example of the usage of
 ### The result
 
 For $(X,Y)$ with continuous marginals and joint distribution function $F$, Hoeffding's coefficient is
-$$D=\int \big(F(x,y)-F_X(x)F_Y(y)\big)^2\,dF(x,y),$$
+
+$$D=\int \big(F(x,y)-F_X(x)F_Y(y)\big)^2\thinspace dF(x,y),$$
+
 which is 0 under independence, positive for every dependent law with a density (Hoeffding 1948, Theorem 3.1), and at most $1/30$. The statistic $D_n$ is the U-statistic estimator of $D$ with a five-point kernel. It depends only on the rank permutation $\pi$ and is a fixed combination of the counts of 24 five-point patterns in $\pi$. Under independence $\pi$ is uniform, so the null law of $D_n$ depends only on $n$; $nD_n$ converges to $\sum_{j,k}\frac{1}{\pi^4j^2k^2}(Z_{jk}^2-1)$, $Z_{jk}$ independent standard Gaussians. The proposer wants intuition, exact null laws for moderate $n$, and comparisons.
 
 ### Background
 
 - $D_n$ is computable in $O(n\log n)$ time from the counts $a_i,b_i,c_i,d_i$ of points in the four quadrants around each point (a $2\times2$ table); Blum, Kiefer and Rosenblatt (1961) proposed the closely related $n^{-5}\sum_i(a_id_i-b_ic_i)^2$.
-- $D$ can miss dependence without a density: Yanagimoto (1970) gave a dependent law with $D=0$. Integrating against $dF_X\,dF_Y$ instead of $dF$ (Blum–Kiefer–Rosenblatt), or Bergsma–Dassios $\tau^*$, gives tests consistent against all alternatives.
-- Weihs, Drton and Meinshausen (2018) put Kendall's $\tau$, $D$ and $\tau^*$ in one family of "symmetric rank covariances".
-- In software, SAS refers to the Hollander–Wolfe tables for $n<10$ and otherwise uses the asymptotic law; the R package NSM3 offers Monte Carlo null distributions.
+- $D$ can miss dependence without a density: Yanagimoto (1970) gave a dependent law with $D=0$. Integrating against $dF_X\thinspace dF_Y$ instead of $dF$ (Blum–Kiefer–Rosenblatt), or Bergsma–Dassios $\tau^{\ast}$, gives tests consistent against all alternatives.
+- Weihs, Drton and Meinshausen (2018) put Kendall's $\tau$, $D$ and $\tau^{\ast}$ in one family of "symmetric rank covariances".
+- In software, SAS refers to the Hollander–Wolfe tables for $n\lt10$ and otherwise uses the asymptotic law; the R package NSM3 offers Monte Carlo null distributions.
 
 ### Where to start
 

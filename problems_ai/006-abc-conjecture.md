@@ -36,9 +36,11 @@ https://en.wikipedia.org/wiki/Abc_conjecture
 
 ### The result
 
-For coprime positive integers $a+b=c$, let $\operatorname{rad}(abc)$ be the product of the distinct primes dividing $abc$. The conjecture states that for every $\varepsilon>0$ only finitely many such triples satisfy
-$$c>\operatorname{rad}(abc)^{1+\varepsilon}.$$
-With $R=\operatorname{rad}(abc)$, the strongest unconditional bound in Waldschmidt's survey is $\log c\le\kappa R^{1/3}(\log R)^3$ for an absolute constant $\kappa$ (Stewart and Yu, *Duke Math. J.* 2001), proved with linear forms in logarithms. The exponent $1+\varepsilon$ cannot be replaced by $1$: Stewart and Tijdeman (1986) gave infinitely many triples with $c>R\exp\big((4-\delta)(\log R)^{1/2}/\log\log R\big)$. The analogue for polynomials (Mason–Stothers theorem) is proved.
+For coprime positive integers $a+b=c$, let $\operatorname{rad}(abc)$ be the product of the distinct primes dividing $abc$. The conjecture states that for every $\varepsilon\gt0$ only finitely many such triples satisfy
+
+$$c\gt\operatorname{rad}(abc)^{1+\varepsilon}.$$
+
+With $R=\operatorname{rad}(abc)$, the strongest unconditional bound in Waldschmidt's survey is $\log c\le\kappa R^{1/3}(\log R)^3$ for an absolute constant $\kappa$ (Stewart and Yu, *Duke Math. J.* 2001), proved with linear forms in logarithms. The exponent $1+\varepsilon$ cannot be replaced by $1$: Stewart and Tijdeman (1986) gave infinitely many triples with $c\gt R\exp\big((4-\delta)(\log R)^{1/2}/\log\log R\big)$. The analogue for polynomials (Mason–Stothers theorem) is proved.
 
 ### Background
 
