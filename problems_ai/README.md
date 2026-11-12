@@ -6,7 +6,7 @@ The 126 Round 1 problems of the organizers' final problem sheet, one page per pr
 - **From the judges** (on some pages): the judges' suggestions from the sheet, unchanged.
 - **AI-generated notes**: what is known, how the known proofs work, background, where to start, references with links, and the Lean status.
 
-> **The AI-generated notes, the Status and Lean columns below and the Lean statements were written by AI and may contain errors.** Use them as a reference; the proposer's text is authoritative.
+> **The AI-generated notes, the Status and Lean columns below and the Lean statements were written by AI and may contain errors.** Use them as a reference. Likewise, the proposer's text has not been reviewed by any other experts. Participants are responsible for verifying the accuracy of everything they present, including the problem statement.
 
 Each team chooses one problem, and at most 4 teams can choose the same problem ([Participant Rules §3](../rules/participant-rules.md#3-problem-selection)). Problems marked ✓ have an official Lean statement: if you claim to have formalized the main theorem of such a problem, prove that statement unchanged ([Submission Guidelines §5](../rules/submission-guidelines.md#5-lean-project-optional)).
 
