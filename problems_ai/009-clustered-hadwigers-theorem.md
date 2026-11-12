@@ -22,10 +22,6 @@ The main goal is to obtain an elegant, self-contained proof of the Clustered Had
 The Clustered Hadwiger's theorem: https://arxiv.org/abs/2306.06224
 van den Heuvel and Wood proof: https://arxiv.org/abs/1704.06536
 
-### Reference links
-
-- <https://arxiv.org/abs/1704.06536>
-
 ## AI-generated notes
 
 <!-- status: Proved -->
