@@ -23,10 +23,6 @@ https://github.com/openai/math/blob/main/preprints/The-Euclidean-plane-is-not-fi
 A. D. N. J. de Grey, “The chromatic number of the plane is at least 5”, Geombinatorics 28 (2018), 18–31, arXiv:1804.02385.
 A. Soifer, The New Mathematical Coloring Book: Mathematics of Coloring and the Colorful Life of Its Creators, 2nd ed., Springer, New York, 2024. https://doi.org/10.1007/978-1-0716-3597-1
 
-### Reference links
-
-- <https://github.com/openai/math/blob/main/preprints/The-Euclidean-plane-is-not-five-colorable-September-23-2026/paper.pdf>
-
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
