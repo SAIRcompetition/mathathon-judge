@@ -15,6 +15,13 @@ design/
 
 # Lean build output for the problem statements
 problems/lean/.lake/
+problems_ai/lean/.lake/
+
+# Temporary drafts of AI notes (merged into the problem pages)
+problems_ai/_drafts/
+
+# Python bytecode from the problem scripts
+__pycache__/
 
 # API keys (never commit)
 keys/

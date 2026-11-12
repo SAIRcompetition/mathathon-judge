@@ -1,0 +1,37 @@
+# Problem 58
+
+> Verbatim copy of one row of the Mathathon problem sheet. The text under each heading is the cell text, unchanged. See [README.md](README.md).
+
+## Problem ID
+
+58
+
+## Title/name of problem
+
+Simplifying the Proof of Seymour's Second-Neighborhood Conjecture
+
+## Short description of problem (100 words or less)
+
+Seymour's second-neighborhood conjecture states that every oriented graph has a vertex with at least as many second out-neighbors as first out-neighbors. OpenAI released a proof in its October 6, 2026 proof dump. The problem is to simplify this proof.
+
+## Submitted Area
+
+Graph theory, combinatorics
+
+## Proposed Tracks
+
+Combinatorics
+
+## Reference/source material
+
+https://github.com/openai/math/blob/main/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/paper.pdf
+
+## Desired outcome
+
+A simpler proof of Seymour's second-neighborhood conjecture, ideally with a shorter and more elementary argument.
+
+## Links in the sheet
+
+These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
+
+- Reference/source material: <https://github.com/openai/math/blob/main/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/paper.pdf>
