@@ -30,13 +30,9 @@ Geometry
 
 An expository write-up and/or video
 
-### Links in the sheet
+### Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Proposed Tracks: <https://github.com/openai/math/tree/main/preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026?utm_source=chatgpt.com>
-- Reference/source material: <https://github.com/openai/math/tree/main/preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026?utm_source=chatgpt.com>
-- Desired outcome: <https://github.com/openai/math/tree/main/preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026?utm_source=chatgpt.com>
+- <https://github.com/openai/math/tree/main/preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026?utm_source=chatgpt.com>
 
 ## AI-generated notes
 

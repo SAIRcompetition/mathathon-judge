@@ -1,7 +1,5 @@
 # Problem 55
 
-> Verbatim copy of one row of the Mathathon problem sheet. The text under each heading is the cell text, unchanged. See [README.md](README.md).
-
 ## Problem ID
 
 55
@@ -30,8 +28,6 @@ https://github.com/openai/math/blob/main/preprints/A-counterexample-to-Hadwigers
 
 A simpler construction of a counterexample to Hadwiger's conjecture, ideally with a shorter and more elementary proof.
 
-## Links in the sheet
+## Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material: <https://github.com/openai/math/blob/main/preprints/A-counterexample-to-Hadwigers-conjecture-September-23-2026/paper.pdf>
+- <https://github.com/openai/math/blob/main/preprints/A-counterexample-to-Hadwigers-conjecture-September-23-2026/paper.pdf>

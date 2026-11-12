@@ -35,15 +35,7 @@ HEADER = [
     "Reference/source material",
     "Desired outcome",
 ]
-NOTE = ("> Verbatim copy of one row of the Mathathon problem sheet. The text under each "
-        "heading is the cell text, unchanged. See [README.md](README.md).")
-LINKS_HEADING = "Links in the sheet"
-LINKS_INTRO = ("These hyperlinks are attached to cells of this row in the sheet. "
-               "They are listed here because a plain-text copy of the cells does not show them.")
-
-
-def ws(s):
-    return " ".join(s.split())
+LINKS_HEADING = "Reference links"
 
 
 def slug(title):
@@ -153,16 +145,13 @@ def html_links():
 
 def render(row, links):
     pid = row[0]
-    parts = [f"# Problem {pid}\n\n{NOTE}\n"]
+    parts = [f"# Problem {pid}\n"]
     for name, value in zip(HEADER, row[:7]):
         parts.append(f"\n## {name}\n\n{value}\n")
-    if links:
-        parts.append(f"\n## {LINKS_HEADING}\n\n{LINKS_INTRO}\n\n")
-        for col, url, text in links:
-            if ws(text) == ws(row[col]):
-                parts.append(f"- {HEADER[col]}: <{url}>\n")
-            else:
-                parts.append(f"- {HEADER[col]}, on the text “{ws(text)}”: <{url}>\n")
+    urls = list(dict.fromkeys(url for _, url, _ in links))  # in order, without repeats
+    if urls:
+        parts.append(f"\n## {LINKS_HEADING}\n\n")
+        parts.extend(f"- <{url}>\n" for url in urls)
     return "".join(parts)
 
 

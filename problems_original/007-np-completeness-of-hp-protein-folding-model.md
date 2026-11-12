@@ -1,7 +1,5 @@
 # Problem 7
 
-> Verbatim copy of one row of the Mathathon problem sheet. The text under each heading is the cell text, unchanged. See [README.md](README.md).
-
 ## Problem ID
 
 7
@@ -30,8 +28,6 @@ https://dl.acm.org/doi/abs/10.1145/279069.279080
 
 Ideally a formalized proof in Lean; alternatively, a simplification of the construction(s).
 
-## Links in the sheet
+## Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material: <https://dl.acm.org/doi/abs/10.1145/279069.279080>
+- <https://dl.acm.org/doi/abs/10.1145/279069.279080>

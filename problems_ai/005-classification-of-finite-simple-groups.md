@@ -28,11 +28,9 @@ https://en.wikipedia.org/wiki/Classification_of_finite_simple_groups
 
 Bring the CFSG in from the cold by formalizing large parts of it in Lean, or by finding a simplification in the proofs of the classification.
 
-### Links in the sheet
+### Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material: <https://en.wikipedia.org/wiki/Classification_of_finite_simple_groups>
+- <https://en.wikipedia.org/wiki/Classification_of_finite_simple_groups>
 
 ## AI-generated notes
 

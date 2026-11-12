@@ -1,7 +1,5 @@
 # Problem 2
 
-> Verbatim copy of one row of the Mathathon problem sheet. The text under each heading is the cell text, unchanged. See [README.md](README.md).
-
 ## Problem ID
 
 2

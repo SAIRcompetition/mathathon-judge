@@ -28,11 +28,9 @@ https://en.wikipedia.org/wiki/Abc_conjecture
 
 Any progress on this notorious problem would be of value.
 
-### Links in the sheet
+### Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material: <https://en.wikipedia.org/wiki/Abc_conjecture>
+- <https://en.wikipedia.org/wiki/Abc_conjecture>
 
 ## AI-generated notes
 

@@ -1,7 +1,5 @@
 # Problem 81
 
-> Verbatim copy of one row of the Mathathon problem sheet. The text under each heading is the cell text, unchanged. See [README.md](README.md).
-
 ## Problem ID
 
 81
@@ -41,10 +39,6 @@ I would like there to be survey  explaining: outline of the proof, key ideas, ne
 The goal would be to understand how agument developed instead of just seeing a sequence of true claims and share it with others in a survey note.
 Another goal (but less reliable) could be to attempt (with AI assistance) to simplify the proof.
 
-## Links in the sheet
+## Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Proposed Tracks: <https://www.sciencedirect.com/science/article/pii/S0167839625000214?via%3Dihub>
-- Reference/source material: <https://www.sciencedirect.com/science/article/pii/S0167839625000214?via%3Dihub>
-- Desired outcome: <https://www.sciencedirect.com/science/article/pii/S0167839625000214?via%3Dihub>
+- <https://www.sciencedirect.com/science/article/pii/S0167839625000214?via%3Dihub>

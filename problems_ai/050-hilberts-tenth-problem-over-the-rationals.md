@@ -28,11 +28,9 @@ https://github.com/openai/math/blob/main/preprints/Hilberts-tenth-problem-over-t
 
 Verify the proof and write an exposition which is accessible to an undergraduate mathematics student.
 
-### Links in the sheet
+### Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material: <https://github.com/openai/math/blob/main/preprints/Hilberts-tenth-problem-over-the-rational-numbers-September-24-2026/main.pdf>
+- <https://github.com/openai/math/blob/main/preprints/Hilberts-tenth-problem-over-the-rational-numbers-September-24-2026/main.pdf>
 
 ## AI-generated notes
 

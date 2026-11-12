@@ -1,7 +1,5 @@
 # Problem 102
 
-> Verbatim copy of one row of the Mathathon problem sheet. The text under each heading is the cell text, unchanged. See [README.md](README.md).
-
 ## Problem ID
 
 102
@@ -30,8 +28,6 @@ https://arxiv.org/abs/2611.01403
 
 A good understanding of the proof, which has been also longstanding for several years. 
 
-## Links in the sheet
+## Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material: <https://arxiv.org/abs/2611.01403>
+- <https://arxiv.org/abs/2611.01403>

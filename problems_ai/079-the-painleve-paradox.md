@@ -28,11 +28,9 @@ https://pmc.ncbi.nlm.nih.gov/articles/PMC5493941/
 
 A visual explanation and a worked proof for a restricted case. A small simulation would support the explanation.
 
-### Links in the sheet
+### Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material: <https://pmc.ncbi.nlm.nih.gov/articles/PMC5493941/>
+- <https://pmc.ncbi.nlm.nih.gov/articles/PMC5493941/>
 
 ## AI-generated notes
 

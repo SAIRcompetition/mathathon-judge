@@ -41,11 +41,9 @@ The current proofs reduce the problem to a finite case checking and then use com
 
 A readable tour of the unavoidable-set and reducibility machinery with interactive tools, or an independent verification of selected components.
 
-### Links in the sheet
+### Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material, on the text “https://thomas.math.gatech.edu/FC/fourcolor.html”: <https://thomas.math.gatech.edu/FC/fourcolor.html>
+- <https://thomas.math.gatech.edu/FC/fourcolor.html>
 
 ## AI-generated notes
 
