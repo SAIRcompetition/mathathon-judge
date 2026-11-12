@@ -160,7 +160,7 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 
 ## Lean statements
 
-[`lean/`](lean/) is a Lean project for Lean v4.35.0 and Mathlib `v4.35.0` with the official statements, one file per statement. Each problem page shows its statement and where it comes from. To check them, run `lake exe cache get` and then `lake build` in `lean/`. For problem 56 the statement (OpenAI's running-time bound with polynomial space) is stronger than what the revised problem asks for; its page explains this.
+[`lean/`](lean/) is a Lean project for Lean v4.35.0 and Mathlib `v4.35.0` with the official statements, one file per statement. Each problem page shows its statement and where it comes from. To check them, run `lake exe cache get` and then `lake build` in `lean/`. For problem 56 the statement (OpenAI's running-time bound with polynomial space) is stronger than what the revised problem asks for; its page explains this. For problem 69 the statement is the inverse Galois problem for finite simple groups, the case its text asks for, rather than for all finite groups.
 
 ## About the notes
 

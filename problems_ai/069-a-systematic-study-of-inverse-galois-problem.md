@@ -62,16 +62,16 @@ Prerequisites: Galois theory, finite groups and character tables, covers of $\ma
 
 #### Official statement
 
-`InverseGalois.inverse_galois_problem` in [`lean/MathathonProblems/P69_InverseGalois.lean`](lean/MathathonProblems/P69_InverseGalois.lean).
+`InverseGalois.inverse_galois_problem_simple` in [`lean/MathathonProblems/P69_InverseGalois.lean`](lean/MathathonProblems/P69_InverseGalois.lean).
 
 ```lean
-theorem inverse_galois_problem {G : Type*} [Fintype G] [Group G] :
+theorem inverse_galois_problem_simple {G : Type*} [Fintype G] [Group G] [IsSimpleGroup G] :
     IsRealizable ℚ G
 ```
 
 Source: <https://github.com/google-deepmind/formal-conjectures/blob/3f4490479b53386e1c18d2cccf4f1164c16655ca/FormalConjectures/Wikipedia/InverseGalois.lean> (adapted as described in the file header).
 
-This statement is the open inverse Galois problem over ℚ. The problem asks for progress on cases of it.
+This statement is the inverse Galois problem over ℚ for finite simple groups, the milestone named in the proposer's text; it is open. The problem for all finite groups is also open and is not the official statement. The problem asks for progress on cases of it.
 
 #### Related Lean formalizations
 
