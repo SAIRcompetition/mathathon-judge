@@ -21,7 +21,7 @@ A. M. Childs, Y. Su, M. C. Tran, N. Wiebe, S. Zhu, “Theory of Trotter Error wi
 
 <!-- status: Open -->
 
-- **Status:** Open as far as we found: the explicit two-term fourth-order bound of Childs, Su, Tran, Wiebe and Zhu (PRX 2021, Eq. (M13)) is reproduced but not improved by the general bound of Schubert and Mendl (PRB 2023); much tighter rigorous finite-step bounds have been claimed for special Hamiltonians such as one-dimensional local chains (Liu et al., preprint, October 2026).
+- **Status:** Open as far as we found: the explicit two-term fourth-order bound of Childs, Su, Tran, Wiebe and Zhu (PRX 2021, Eq. (M13)) is reproduced by the general bound of Schubert and Mendl (PRB 2023) with their centred choice $s=6$ (they note that the choice $s=7$ makes some coefficients slightly larger and others slightly smaller); much tighter rigorous finite-step bounds have been claimed for special Hamiltonians such as one-dimensional local chains (Liu et al., preprint, October 2026).
 - **Task:** For $H=A+B$ with bounded $A,B$ and the fourth-order Suzuki formula, prove a finite-step error bound with a strictly smaller prefactor, via the exact $t^5$ term and a controlled remainder.
 - **Key reference:** [A. M. Childs, Y. Su, M. C. Tran, N. Wiebe, S. Zhu, “Theory of Trotter error with commutator scaling”, Phys. Rev. X 11 (2021), 011020](https://doi.org/10.1103/PhysRevX.11.011020)
 - **Lean:** No official statement.
@@ -31,7 +31,7 @@ A. M. Childs, Y. Su, M. C. Tran, N. Wiebe, S. Zhu, “Theory of Trotter Error wi
 - In the PRX version, Section V is "Error bounds with small prefactors"; the general commutator-scaling theorem (Theorem 6, Section III) is stated only up to a constant, which the paper does not evaluate. Eq. (M13) is Proposition M.1 in Appendix M; in arXiv v3, titled "A Theory of Trotter Error", it is Proposition J.1, Eq. (319).
 - Childs et al. call their method for higher-order bounds with small prefactors heuristic, but state (M13) as a proposition. Schubert–Mendl's Theorem 1 gives a general bound of this type and, by their account, reproduces the coefficients of (M13) for two terms.
 - The coefficients of $S_4$ involve $u_2=1/(4-4^{1/3})$, so the exact $t^5$ coefficients lie in $\mathbb Q(4^{1/3})$ and need not be rational; "exact rational coefficients" in the desired outcome should probably read "exact algebraic coefficients".
-- "Strictly smaller prefactor" needs a convention, since (M13) has eight coefficients multiplying different commutator norms; one option is a bound that is never larger than (M13) and smaller for some $A,B$.
+- "Strictly smaller prefactor" needs a convention, since (M13) has eight coefficients multiplying different commutator norms; a bound that is never larger than (M13) and smaller for some $A,B$ is too weak a target, because taking the smaller of Schubert and Mendl's bounds for $s=6$ and $s=7$ may already achieve it. A stronger option is a bound with every coefficient smaller than in (M13), or a bound smaller by a fixed factor on a stated class of Hamiltonians.
 
 ### The result
 

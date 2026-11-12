@@ -31,7 +31,7 @@ Lemm, Sandvik and Wang, Existence of a Spectral Gap in the Affleck-Kennedy-Lieb-
 ### Notes
 
 - Lemm, Sandvik and Wang say that their main result “is not a rigorous mathematical theorem because it relies on numerical input from the DMRG algorithm”. Pomata and Wei call theirs a proof, but its honeycomb step computes an extreme eigenvalue with ARPACK in floating point and checks a residual.
-- Pomata–Wei, arXiv v2: the final bound is $0.002660\ldots$ in eq. (18) but $0.002550\ldots$ in the conclusion.
+- Pomata–Wei, arXiv v2: the final bound is $0.002660\ldots$ in eq. (25) but $0.002550\ldots$ in the conclusion.
 
 ### The result
 
