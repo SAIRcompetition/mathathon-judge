@@ -2,7 +2,7 @@
 
 A Lean project for Lean v4.35.0 and Mathlib `v4.35.0` with the official Lean statements of the Round 1 problems: 94 files for 91 problems. Each file states the main claim of one problem as a theorem whose proof is `sorry`. The problem pages in [`../`](../) show each statement and its source.
 
-**All statements were prepared by AI and may contain errors.** Each was either written for Mathathon or adapted from an existing formalization; the comment at the top of every file says which, and for adapted statements gives the source repository, the licence, a link pinned to a commit and what was changed. A statement can still differ from the problem in a detail, so read it as a reference alongside the proposer's text, and report a suspected mismatch to the organizers.
+**All statements were prepared by AI and may contain errors.** Each was either written for Mathathon or adapted from an existing formalization; the comment at the top of every file says which, and for adapted statements gives the source repository, the licence, a link pinned to a commit and what was changed. An adapted file also reproduces the copyright notice of its source file there, and [`NOTICE`](NOTICE) reproduces the `NOTICE` files of the two source repositories that have one. A statement can still differ from the problem in a detail, so read it as a reference alongside the proposer's text, and report a suspected mismatch to the organizers.
 
 To check the statements, run `lake exe cache get` and then `lake build` in this folder.
 

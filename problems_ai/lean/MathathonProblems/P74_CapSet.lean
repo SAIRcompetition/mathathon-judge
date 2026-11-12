@@ -8,6 +8,12 @@ Adapted: the statement of `cap_set_problem_specific` is ported from Lean 3 to Le
 v4.35.0: `zmodp 3 three_prime` (written `ℤ/3ℤ` in the source) is written `ZMod 3`; `fin`,
 `finset` and `real.sqrt` are written `Fin`, `Finset` and `Real.sqrt`; the cast `↑A.card` is
 written `(A.card : ℝ)`.
+
+The source file carries this notice:
+
+    Copyright (c) 2018 Sander Dahmen, Johannes Hölzl, Robert Y. Lewis. All rights reserved.
+    Released under Apache 2.0 license as described in the file LICENSE.
+    Authors: Sander Dahmen, Johannes Hölzl, Robert Y. Lewis
 -/
 
 import Mathlib

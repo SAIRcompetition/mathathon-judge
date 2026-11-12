@@ -12,6 +12,12 @@ dimension-8 theorem `SpherePacking.MainTheorem`. It states the Kepler conjecture
 "A proof of the Kepler conjecture", Ann. of Math. 162 (2005)): the largest density of a packing
 of equal balls in ℝ³ is π/√18. The density of a packing is the limit superior, as R → ∞, of the
 fraction of the ball of radius R about the origin covered by the packing.
+
+The source file carries this notice:
+
+    Copyright (c) 2024 Sidharth Hariharan. All rights reserved.
+    Released under Apache 2.0 license as described in the file LICENSE.
+    Authors: Sidharth Hariharan, Gareth Ma
 -/
 
 import Mathlib

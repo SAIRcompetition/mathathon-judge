@@ -16,6 +16,12 @@ resolves, so `γ.hookLength x`, `T.content` and `μ.fromCounts` are written
 `Multiset.fromCounts μ`, and `replicate` in `fromCounts` is written `Multiset.replicate`.
 Here `kostkaNumber γ (Multiset.replicate n 1)` counts the semistandard Young tableaux of shape
 `γ` whose entries are `0, 1, …, n - 1`, each used once, that is, the standard Young tableaux.
+
+Each of the four source files carries this notice:
+
+    Copyright (c) 2026 Noah Walker. All rights reserved.
+    Released under Apache 2.0 license as described in the file LICENSE.
+    Authors: Noah Walker
 -/
 
 import Mathlib

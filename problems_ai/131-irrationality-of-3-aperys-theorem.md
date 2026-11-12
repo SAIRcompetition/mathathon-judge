@@ -92,7 +92,7 @@ theorem zeta_3_irratoinal : ¬ ∃ r : ℚ , r = riemannZeta 3
 
 The problem asks for an explanation of Apéry's proof; this is the theorem being explained: no rational number, cast to $\mathbb C$, equals $\zeta(3)$ (the misspelt name is the source's). The same claim is `RiemannZetaValues.irrational_three` in google-deepmind/formal-conjectures, stated as `∃ x, Irrational x ∧ riemannZeta 3 = x`.
 
-Source: <https://github.com/ahhwuhu/zeta_3_irrational/blob/e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1/Zeta3Irrational/Basic.lean> (Apache-2.0). Adapted: the statement is copied unchanged into `namespace Mathathon.P131`, with `import Mathlib` in place of the project's imports and the proof replaced by `sorry`. The same repository contains a Lean proof of it (Beukers' method, with no `sorry` in the repository's files; it uses the PrimeNumberTheoremAnd project for the prime number theorem); it was not checked here.
+Source: <https://github.com/ahhwuhu/zeta_3_irrational/blob/e8785315a01c8fbcddaa0fc03b3c8b29a61bc1f1/Zeta3Irrational/Basic.lean> (Apache-2.0). Adapted: the statement is copied unchanged into `namespace Mathathon.P131`, with `import Mathlib` in place of the project's imports and the proof replaced by `sorry`. The same repository contains a Lean proof of it (Beukers' method, with no `sorry` in the repository's files; it uses the PrimeNumberTheoremAnd project for the prime number theorem); it was not checked here. A Lean-verified claim must not use or copy it.
 
 #### Related Lean formalizations
 

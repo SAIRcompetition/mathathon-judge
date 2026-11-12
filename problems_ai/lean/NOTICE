@@ -1,0 +1,99 @@
+Mathathon Round 1: official Lean statements
+
+The statement files in MathathonProblems/ that are adapted from other projects name the source
+repository, its licence and a link pinned to a commit in the comment at the top of the file. That
+comment also reproduces the copyright notice of the source file, when the source file has one.
+Two of the source repositories have a NOTICE file. Both are reproduced below, unchanged.
+
+====================================================================================================
+MathathonProblems/P16_FourColorTheorem.lean
+NOTICE file of https://github.com/RBarish-UTokyo/FourColorTheorem-Lean4
+at commit 20fa34599f5189dd569d96dd22f306c94ab1c446
+====================================================================================================
+
+Four Color Theorem in Lean 4
+Copyright 2026 the contributors to this repository
+Written by Claude Opus 5.5 (Anthropic), working as an AI agent under the direction of
+Robert D. Barish.
+
+This work is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+It is a port to Lean 4 and Mathlib of the Coq/Rocq formal proof of the Four Color Theorem:
+
+    fourcolor: a formal proof of the Four Color Theorem in Coq
+    Georges Gonthier et al.
+    Copyright (c) 2006-2018 Microsoft Corporation (Microsoft Research) and Inria
+    Distributed under the terms of the CeCILL-B license (see LICENSES/CeCILL-B.txt)
+    https://github.com/math-comp/fourcolor (now maintained as coq-community/fourcolor)
+
+The definitions, the statements, the structure of the proofs and the combinatorial data (the
+633 reducible configurations, the discharging rules and the unavoidability presentations) are
+translated from that development, whose files carry the notice
+
+    (c) Copyright 2006-2018 Microsoft Corporation and Inria.
+    Distributed under the terms of CeCILL-B.
+
+The configurations and discharging rules originate in N. Robertson, D. P. Sanders, P. D. Seymour
+and R. Thomas, "The four-colour theorem", J. Combin. Theory Ser. B 70 (1997), 2-44.
+
+This work depends on Lean 4 and Mathlib (Apache License, Version 2.0), which are not
+redistributed here.
+
+====================================================================================================
+MathathonProblems/P136_AaronsonAmbainis.lean
+NOTICE file of https://github.com/physical-superintelligence/aaronson-ambainis
+at commit 2a6ceaef872ae993708950f951989134084b851a
+====================================================================================================
+
+The Aaronson–Ambainis conjecture: paper and Lean 4 formalization
+
+Copyright 2026 David Turturean
+
+The Lean source code and the repository documentation are licensed under the
+Apache License, Version 2.0. See LICENSE for the full text.
+
+The included paper, "A proof of the Aaronson–Ambainis conjecture," is authored
+by David Turturean and remains copyright its author.
+
+The conjecture is due to Scott Aaronson and Andris Ambainis, "The need for
+structure in quantum speedups," Theory of Computing 10 (2014), 133-166
+(arXiv:0911.0996).
+
+The proof builds on ideas from the following works, which are credited in the
+paper together with the other sources:
+
+  David Reimer, "Proof of the van den Berg-Kesten conjecture," Combinatorics,
+  Probability and Computing 9 (2000), 27-32 (the Butterfly Lemma, which the
+  bijection theorem of the paper refines, and the passage from antipodal pairs
+  of subcubes to all pairs of points).
+
+  Jeff Kahn, Michael Saks and Clifford Smyth, "The dual BKR inequality and
+  Rudich's conjecture," Combinatorics, Probability and Computing 20 (2011),
+  257-266 (the proof of the dual inequality, which uses that passage and
+  certificates at a point and at its antipode).
+
+  Raghav Kulkarni and Avishay Tal, "On fractional block sensitivity," Chicago
+  Journal of Theoretical Computer Science 2016, Article 8 (the lemma on the
+  fractional certificates at two points with different values).
+
+  Shachar Lovett and Jiapeng Zhang, "Fractional certificates for bounded
+  functions," ITCS 2023 (the use of fractional certificates and of level sets).
+
+  Avantika Agarwal and Shalev Ben-David, "Oracle separations for the
+  quantum-classical polynomial hierarchy," arXiv:2410.19062; ITCS 2026 (the
+  bound for the fractional block sensitivity of bounded functions of low
+  degree, and the method of its proof).
+
+  Yuval Filmus, Hamed Hatami, Nathan Keller and Noam Lifshitz, "On the sum of
+  the L1 influences of bounded functions," Israel Journal of Mathematics 214
+  (2016), 167-192 (the bound for the sum of the absolute increments at a
+  point).
+
+The script scripts/fake_landrun.sh is adapted from scripts/fake-landrun.sh of
+comparator (https://github.com/leanprover/comparator), which is licensed under
+the Apache License, Version 2.0. The comments and the messages were rewritten.
+
+The mathematical statements, the first draft of the paper and the Lean
+formalization were produced by AI models, in a research harness developed by
+David Turturean at PSI. David Turturean reviewed the paper and is responsible
+for its correctness.

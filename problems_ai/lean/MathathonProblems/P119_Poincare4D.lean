@@ -11,6 +11,9 @@ Adapted: the file is copied unchanged (namespace, docstrings, `open` lines and t
 4-dimensional Poincaré theorem is stated; the disc embedding theorem, which the problem also asks
 for, is not, since Mathlib has no topological immersions, equivariant intersection numbers in
 `ℤ[π₁]` or good groups.
+
+The source file has no notice of its own; the LICENSE file of the source repository carries the
+notice "Copyright 2026 Lean FRO, LLC".
 -/
 
 import Mathlib

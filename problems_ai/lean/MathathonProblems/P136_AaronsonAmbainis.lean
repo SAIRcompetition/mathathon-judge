@@ -17,6 +17,9 @@ cube is `X : Fin N → Bool`, with `true` read as 1 and `false` as 0, and `X^i` 
 `Function.update X i (!X i)`. The source was written for Lean 4.33.0 and Mathlib v4.33.0; the
 copied text compiles here unchanged. The repository's README states that `aaronson_ambainis` is
 proved there with no `sorry` and no added axiom; that proof was not checked here.
+
+The source files have no notice of their own. The NOTICE file of the source repository is
+reproduced in `../NOTICE`.
 -/
 
 import Mathlib

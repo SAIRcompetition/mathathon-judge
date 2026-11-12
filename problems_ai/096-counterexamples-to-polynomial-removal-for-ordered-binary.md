@@ -110,7 +110,7 @@ theorem no_polynomial_removal_bound :
           c * Real.rpow ε C * ((n : ℝ) ^ 8)
 ```
 
-Here `fixedH` is Wang's $4\times4$ pattern $H_4$ and the statement is his Corollary 1.2: no bound $N_{H_4}(A)\ge c\,\mathrm{dist}_{H_4}(A)^C\,n^8$ holds for all binary matrices $A$. Wang reports a Lean proof of his own formulation in the ancillary files of arXiv:2610.15370; it has not been checked here, and it is not copied because the paper carries arXiv's non-exclusive licence.
+Here `fixedH` is Wang's $4\times4$ pattern $H_4$ and the statement is his Corollary 1.2: no bound $N_{H_4}(A)\ge c\,\mathrm{dist}_{H_4}(A)^C\,n^8$ holds for all binary matrices $A$. Wang reports a Lean proof of his own formulation in the ancillary files of arXiv:2610.15370; it has not been checked here, and it is not copied because the paper carries arXiv's non-exclusive licence. A Lean-verified claim must not use or copy it.
 
 Source: <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatrixRemoval.lean> (Apache License 2.0). Adapted: OpenAI's statement for its $66\times66$ pattern is copied with the pattern replaced by $H_4$ and the exponent $132$ of $n$ by $8$.
 

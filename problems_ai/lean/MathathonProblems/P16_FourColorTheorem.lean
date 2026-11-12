@@ -4,6 +4,9 @@ Mathathon Round 1, Problem 16: official Lean statement, prepared by AI. It may c
 Source (RBarish-UTokyo/FourColorTheorem-Lean4, Apache License 2.0):
   https://github.com/RBarish-UTokyo/FourColorTheorem-Lean4/blob/20fa34599f5189dd569d96dd22f306c94ab1c446/Challenge.lean
 Copied verbatim from the source.
+
+The source file has no notice of its own. The NOTICE file of the source repository is reproduced in
+`../NOTICE`.
 -/
 
 import Mathlib.Basic.Real.Basic
