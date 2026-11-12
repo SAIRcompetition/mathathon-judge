@@ -17,12 +17,16 @@ This repository holds the Round 1 rules, the judging guidelines and rubric, and 
 | [`rules/judge-rules.md`](rules/judge-rules.md) | Round 1 rules in three steps: registration, problem preferences (with conflicts of interest), and scoring (the scoring form). Then the LLM panel: the five models that review each report. | Judges |
 | [`rules/judge-guidelines.md`](rules/judge-guidelines.md) | How to score: the dimensions and their guidelines, the rubric, notes, and questions to ask. Participants can read it to see how their work is judged. | Judges, participants |
 
-**Problems** (`problems/`)
+**Problems** (`problems_original/`, `problems_ai/`)
+
+The Round 1 problem list has 140 problems and comes from the organizers' problem sheet. It is kept in two forms: the sheet exactly as written, and the same problems with AI-generated notes.
 
 | File | What it is | Audience |
 |---|---|---|
-| [`problems/README.md`](problems/README.md) | The Round 1 problem list: one page per problem, with tracks, area, description, desired outcome, references, and the official Lean statement if there is one | Everyone |
-| [`problems/lean/`](problems/lean/) | The official Lean statements, as a Lean project for Lean v4.35.0 and Mathlib `v4.35.0` (configuration files and statements only) | Participants, LLM operator |
+| [`problems_original/README.md`](problems_original/README.md) | The problem sheet copied verbatim: one file per problem with the proposer's title, short description, area, tracks, references and desired outcome, plus the sheet exports. Nothing in it is AI-generated or edited. | Everyone |
+| [`problems_ai/README.md`](problems_ai/README.md) | The problem list for reading: one page per problem with the proposer's text (verbatim) followed by clearly labelled AI-generated notes on what is known, how known proofs work, where to start, references with links, and the Lean status | Everyone |
+| [`problems_ai/lean/`](problems_ai/lean/) | The official Lean statements, written by AI, as a Lean project for Lean v4.35.0 and Mathlib `v4.35.0` (configuration files and statements only) | Participants, LLM operator |
+| [`problems/README.md`](problems/README.md) | The earlier problem list (94 problems, as of 2026-11-10). [`problems_ai/README.md`](problems_ai/README.md) lists what changed. | Organizers |
 
 The overview reproduces the Mathathon website.
 
@@ -36,7 +40,7 @@ The overview reproduces the Mathathon website.
 ## Not included
 
 - **The Terms of Service and the Privacy Policy.** Participants accept both before submitting. They are drafted separately.
-- **Software.** The repository has no Lean tooling and no LLM pipeline code. The documents state rules and process steps only.
+- **Software.** The repository has no Lean tooling and no LLM pipeline code. The documents state rules and process steps only. The only scripts are two small Python scripts that copy the problem sheet into `problems_original/` and `problems_ai/`.
 
 ## License
 
