@@ -7,7 +7,7 @@
 
 ### Description
 
-Recent results of OpenAI, and subsequent follow-ups, have claimed a number of word-hyperbolic groups with "exotic" properties: (1) a word-hyperbolic group which is not residually finite; (2) a word-hyperbolic group which does not act geometrically on any CAT(0) space; (3) a non-sofic word-hyperbolic group. All three examples appear to involve the construction of certain 2-dimensional complexes, starting with suitable incidence graphs. How similar are these constructions, or is it simply an sufficiently flexible general construction?
+Recent results of OpenAI, and subsequent follow-ups, have claimed a number of word-hyperbolic groups with "exotic" properties: (1) a word-hyperbolic group which is not residually finite; (2) a word-hyperbolic group which does not act geometrically on any CAT(0) space; (3) a non-sofic word-hyperbolic group. All three examples appear to involve the construction of certain 2-dimensional complexes, starting with suitable incidence graphs. How similar are these constructions, or is it simply a sufficiently flexible general construction?
 
 ### Desired outcome
 

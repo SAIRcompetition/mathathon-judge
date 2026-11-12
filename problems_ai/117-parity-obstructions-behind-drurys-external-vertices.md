@@ -7,7 +7,7 @@
 
 ### Description
 
-The Marcus–de Oliveira conjecture places det(A+B), for normal A, B, in the convex hull of the vertex points v(σ) = ∏(a_i − b_σ(i)). Drury’s external vertices conjecture (1996): if all Re v(σ) ≥ 1, then Re v − 1 is a nonnegative combination of the indicators P_IJ(σ) = [σ(I) = J]. It yields the determinantal conjecture for every half-plane excluding the origin. Drury proved n = 4 in 2004 by analysing 210 roots. A new unpublised two-page proof sent to the organization shows the n = 4 case is a parity obstruction: positivity confines the phases of 57 root monomials to (−π/2, π/2), and an odd multiplicative relation whose double is a sum of flat relations cannot exist.
+The Marcus–de Oliveira conjecture places det(A+B), for normal A, B, in the convex hull of the vertex points v(σ) = ∏(a_i − b_σ(i)). Drury’s external vertices conjecture (1996): if all Re v(σ) ≥ 1, then Re v − 1 is a nonnegative combination of the indicators P_IJ(σ) = [σ(I) = J]. It yields the determinantal conjecture for every half-plane excluding the origin. Drury proved n = 4 in 2004 by analysing 210 roots. A new unpublished two-page proof sent to the organization shows the n = 4 case is a parity obstruction: positivity confines the phases of 57 root monomials to (−π/2, π/2), and an odd multiplicative relation whose double is a sum of flat relations cannot exist.
 
 ### Desired outcome
 

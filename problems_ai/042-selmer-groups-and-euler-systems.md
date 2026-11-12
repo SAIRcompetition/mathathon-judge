@@ -30,7 +30,6 @@ Kolyvagin’s Work on Modular Elliptic Curves by Benedict Gross: https://wstein.
 
 ### Notes
 
-- The second reference's title is "Kolyvagin's work for modular elliptic curves" (B. H. Gross, in *L-Functions and Arithmetic*, Cambridge University Press, 1991, 235–256).
 
 ### The result
 

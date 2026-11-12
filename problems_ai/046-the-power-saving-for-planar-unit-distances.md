@@ -7,7 +7,7 @@
 
 ### Description
 
-OpenAI's 2026 preprint proves $u(n)=O(n^{4/3-\delta})$, the first exponent improvement since Spencer-Szemerédi-Trotter (1984). The proof combines cuttings, an entropy-based prediction lemma, heights at every place of a number field, and sign changes of square roots. Its also a proof by contradiction, and doesn't provide an explicit $\delta$. None of this resembles points and unit circles. Valtr's metric attains $n^{4/3}$, so the proof must use something specifically Euclidean.
+OpenAI's 2026 preprint proves $u(n)=O(n^{4/3-\delta})$, the first exponent improvement since Spencer-Szemerédi-Trotter (1984). The proof combines cuttings, an entropy-based prediction lemma, heights at every place of a number field, and sign changes of square roots. It's also a proof by contradiction, and doesn't provide an explicit $\delta$. None of this resembles points and unit circles. Valtr's metric attains $n^{4/3}$, so the proof must use something specifically Euclidean.
 
 ### Desired outcome
 

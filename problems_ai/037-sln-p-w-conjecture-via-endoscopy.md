@@ -7,7 +7,7 @@
 
 ### Description
 
-The celebrated P=W Conjecture is one of the deepest conjecture in Non Abelian Hodge Theory. Since 2022, it has been proved in three ways: by Maulik-Shen, by Hausel-Mellit-Minets-Schiffmann, and by Maulik-Shen-Yin. The P=W Conjecture has an SLn variant, which is proved by OpenAI in Oct 2026. OpenAI's proof builds via HMMS's approach. The goal of this project is to give a proof of the SLn P=W Conjecture via MS's approach, which I finds easier to understand for a geometer.
+The celebrated P=W Conjecture is one of the deepest conjectures in Non Abelian Hodge Theory. Since 2022, it has been proved in three ways: by Maulik-Shen, by Hausel-Mellit-Minets-Schiffmann, and by Maulik-Shen-Yin. The P=W Conjecture has an SLn variant, which is proved by OpenAI in Oct 2026. OpenAI's proof builds via HMMS's approach. The goal of this project is to give a proof of the SLn P=W Conjecture via MS's approach, which I find easier to understand for a geometer.
 
 ### Desired outcome
 

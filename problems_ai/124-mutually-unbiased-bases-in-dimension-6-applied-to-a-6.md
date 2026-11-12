@@ -3,7 +3,7 @@
 ## From the proposer
 
 - **Area:** Quantum information theory; linear algebra
-- **Tracks:** Computaiton/Applied Math
+- **Tracks:** Computation/Applied Math
 
 ### Description
 

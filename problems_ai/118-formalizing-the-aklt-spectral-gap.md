@@ -21,9 +21,9 @@ Lemm, Sandvik and Wang, Existence of a Spectral Gap in the Affleck-Kennedy-Lieb-
 
 ## AI-generated notes
 
-<!-- status: Partly solved -->
+<!-- status: Proved (preprint) -->
 
-- **Status:** Established with computer assistance, independently, by M. Lemm, A. W. Sandvik and L. Wang and by N. Pomata and T.-C. Wei (both Phys. Rev. Lett. 124, 2020); both arguments rely on floating-point eigenvalue computations whose accuracy is not rigorously certified.
+- **Status:** Established with computer assistance, independently, by M. Lemm, A. W. Sandvik and L. Wang and by N. Pomata and T.-C. Wei (both Phys. Rev. Lett. 124, 2020); both arguments rely on floating-point eigenvalue computations whose accuracy is not rigorously certified. M. J. Kastoryano (arXiv:2609.27993, 23 September 2026, not yet refereed) claims an analytic proof of a uniform spectral gap, via boundary-state factorization.
 - **Task:** A Lean proof of the spectral gap of the hexagonal AKLT model, with the numerical steps replaced by certified bounds, and tools reusable for other spin systems.
 - **Key reference:** [M. Lemm, A. W. Sandvik and L. Wang, “Existence of a spectral gap in the Affleck-Kennedy-Lieb-Tasaki model on the hexagonal lattice”, Phys. Rev. Lett. 124 (2020), 177204](https://arxiv.org/abs/1910.11810)
 - **Lean:** No official statement.
@@ -72,6 +72,7 @@ Prerequisites: spectral theory of Hermitian matrices and operator inequalities, 
 
 ### Further references
 
+- M. J. Kastoryano, "Spectral Gap of the Hexagonal AKLT Model via Boundary-State Factorization", arXiv:2609.27993 (2026). <https://arxiv.org/abs/2609.27993>
 - I. Affleck, T. Kennedy, E. H. Lieb and H. Tasaki, “Valence bond ground states in isotropic quantum antiferromagnets”, Comm. Math. Phys. 115 (1988), 477–528. <https://doi.org/10.1007/BF01218021>
 - T. Kennedy, E. H. Lieb and H. Tasaki, “A two-dimensional isotropic quantum antiferromagnet with unique disordered ground state”, J. Stat. Phys. 53 (1988), 383–415. <https://doi.org/10.1007/BF01011563>
 - S. Knabe, “Energy gaps and elementary excitations for certain VBS-quantum antiferromagnets”, J. Stat. Phys. 52 (1988), 627–638. <https://doi.org/10.1007/BF01019721>
