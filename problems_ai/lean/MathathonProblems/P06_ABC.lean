@@ -4,7 +4,9 @@ Mathathon Round 1, Problem 06: official Lean statement, prepared by AI. It may c
 Source (google-deepmind/formal-conjectures, Apache License 2.0):
   https://github.com/google-deepmind/formal-conjectures/blob/3f4490479b53386e1c18d2cccf4f1164c16655ca/FormalConjectures/Wikipedia/ABC.lean
 Adapted: the definition `radical` and the theorem `abc` are copied unchanged; the
-formal-conjectures imports, metadata attributes, and test lemmas are left out.
+formal-conjectures imports, the module-system header, the module docstring, the metadata
+attributes, the test lemmas, the definition `quality` and the two variants of `abc`
+(`abc.variants.lt_constant_mul` and `abc.variants.quality`) are left out.
 
 The source file carries this notice:
 

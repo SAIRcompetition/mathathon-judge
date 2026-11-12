@@ -84,6 +84,8 @@ theorem friedman_second_eigenvalue (d : ℕ) (hd : 3 ≤ d) (ε : ℝ) (hε : 0 
         ((regularGraphs d n).ncard : ℝ)) < δ
 ```
 
+This is Friedman's theorem as given under The result (Bordenave's Theorem 1), with probabilities written as proportions of $d$-regular graphs on $n$ labelled vertices. Proposition 28, which the task asks to reprove, is not stated.
+
 Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Related Lean formalizations

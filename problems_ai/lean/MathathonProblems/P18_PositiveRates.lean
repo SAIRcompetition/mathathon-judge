@@ -3,10 +3,11 @@ Mathathon Round 1, Problem 18: official Lean statement, prepared by AI. It may c
 
 Written by AI for Mathathon; not taken from an existing formalization.
 It states the refutation of the positive rates conjecture (P. Gács, "Reliable cellular automata
-with self-organization", J. Stat. Phys. 103 (2001); see also L. Gray, "A reader's guide to
-P. Gács's 'positive rates' paper", same volume): there is a one-dimensional probabilistic cellular
-automaton with finitely many states and all transition probabilities positive that has two
-different invariant probability measures, hence is not ergodic (Gács's Theorem 3.1 gives one
+with self-organization", J. Stat. Phys. 103 (2001), cited below by the numbering of its revised
+arXiv version, arXiv:math/0003117v2 (2024); see also L. Gray, "A reader's guide to P. Gács's
+'positive rates' paper", J. Stat. Phys. 103 (2001)): there is a one-dimensional probabilistic
+cellular automaton with finitely many states and all transition probabilities positive that has
+two different invariant probability measures, hence is not ergodic (Gács's Theorem 3.1 gives one
 that remembers a bit forever). As in Gács's Section 2.3 and Definition 6.3, sites are `ℤ`, the
 neighbourhood is `{-1, 0, 1}`, and all sites update synchronously and independently in discrete
 time, so the one-step kernel is a product measure (`Measure.infinitePi`); a larger finite

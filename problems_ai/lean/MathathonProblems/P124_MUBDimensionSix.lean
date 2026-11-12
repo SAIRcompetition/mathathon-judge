@@ -8,9 +8,10 @@ Adapted: the definitions `UMat`, `relativeUnitary`, `IsUnbiased`, `IsMUBFamily`,
 docstrings, the namespace and the `noncomputable section`), except that the open answer
 `mutuallyUnbiasedBases_dim6.answer` (a definition by `sorry` in the source, which lists the
 problem as open) is replaced by `3`, the value claimed by the OpenAI preprint "The maximum number
-of mutually unbiased bases in dimension six" (24 September 2026). The formal-conjectures imports,
-the module-system header, the module docstring, the metadata attributes, the definition
-`HasCompleteMUBs`, the API lemmas, the qubit section and the other theorems are left out.
+of mutually unbiased bases in dimension six" (24 September 2026), and the docstring of the
+theorem is reworded accordingly. The formal-conjectures imports, the module-system header, the
+module docstring, the metadata attributes, the definition `HasCompleteMUBs`, the API lemmas, the
+qubit section and the other theorems are left out.
 
 The source file carries this notice:
 
@@ -61,8 +62,9 @@ def HasMUBs (d k : ℕ) : Prop :=
 def IsMaxMUBCount (d k : ℕ) : Prop :=
   HasMUBs d k ∧ ∀ m : ℕ, HasMUBs d m → m ≤ k
 
-/-- Special case in dimension $6$: determine the maximal number of mutually unbiased
-orthonormal bases in $\mathbb{C}^6$. -/
+/-- Special case in dimension $6$: the maximal number of mutually unbiased orthonormal bases
+in $\mathbb{C}^6$ is $3$. (The source asks to determine this number and leaves it open; `3` is
+the value claimed by the OpenAI preprint of 24 September 2026.) -/
 theorem mutuallyUnbiasedBases_dim6 :
     IsMaxMUBCount 6 3 := by
   sorry

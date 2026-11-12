@@ -6,9 +6,11 @@ Source (thefundamentaltheor3m/Sphere-Packing-Lean, Apache License 2.0):
 Adapted: the definitions `SpherePacking`, `SpherePacking.balls`, `SpherePacking.finiteDensity`,
 `SpherePacking.density` and `SpherePackingConstant` are copied unchanged into
 `namespace Mathathon.P15`, except that the sentence "See also `<TODO>` ..." is left out of the
-docstring of `SpherePackingConstant`. The source's imports are replaced by `import Mathlib`.
-The theorem `kepler` is written by AI for Mathathon, in the same form as the source project's
-dimension-8 theorem `SpherePacking.MainTheorem`. It states the Kepler conjecture (T. Hales,
+docstring of `SpherePackingConstant`. The source's module-system header and imports are replaced
+by `import Mathlib` and its line `open BigOperators Pointwise Filter Module` by `open Filter`;
+`section Definitions` and the `variable` line of `section Density` are dropped, and the module
+docstrings and all other declarations of the source are left out. The theorem `kepler` is
+written by AI for Mathathon. It states the Kepler conjecture (T. Hales,
 "A proof of the Kepler conjecture", Ann. of Math. 162 (2005)): the largest density of a packing
 of equal balls in ℝ³ is π/√18. The density of a packing is the limit superior, as R → ∞, of the
 fraction of the ball of radius R about the origin covered by the packing.
