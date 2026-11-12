@@ -1,6 +1,10 @@
 # Mathathon Round 1 problems: original text
 
-The 140 Round 1 problems exactly as the proposers wrote them in the organizers' problem sheet, one file per problem. Nothing here is edited or AI-generated. For the same problems with AI-written notes and Lean statements, see [`problems_ai`](../problems_ai/README.md).
+The 126 Round 1 problems exactly as they appear in the organizers' final problem sheet, one file per problem: the proposers' text and, for some problems, the judges' suggestions. Nothing here is edited or AI-generated. Problems 38, 51, 52, 63, 64, 65, 82, 111, 112, 113, 116, 117, 119 and 130 were in the earlier sheet but are not in the final list; their files remain in the git history.
+
+Material that a proposer sent to the organizers to share with all participants is in [`attachments/`](attachments/), unchanged:
+
+- Problem 90: [`090-manuscript-tvhc-gittins.pdf`](attachments/090-manuscript-tvhc-gittins.pdf), K. Gurushankar, "Index-Optimal Scheduling for Time-Varying Holding Costs", unpublished manuscript (25 pages), shared with the proposer's permission. For the same problems with AI-written notes and Lean statements, see [`problems_ai`](../problems_ai/README.md).
 
 ## Problems
 
@@ -44,7 +48,6 @@ The 140 Round 1 problems exactly as the proposers wrote them in the organizers' 
 | 35 | [Asymptotic Growth of Integer Partitions into Powers](035-asymptotic-growth-of-integer-partitions-into-powers.md) | Combinatorics, Algebra/Number Theory |
 | 36 | [Probabilistic and Asymptotic Approaches to the Hook-Length Formula for Young Tableaux](036-probabilistic-and-asymptotic-approaches-to-the-hook-length.md) | Combinatorics, Analysis |
 | 37 | [SLn P=W Conjecture via endoscopy](037-sln-p-w-conjecture-via-endoscopy.md) | Geometry |
-| 38 | [Understanding a Proposed Counterexample to Reduced Baum–Connes Injectivity](038-understanding-a-proposed-counterexample-to-reduced.md) | Algebra/Number Theory |
 | 39 | [Hylland's random dictatorship theorem for cardinal preferences](039-hyllands-random-dictatorship-theorem-for-cardinal.md) | Computation/Applied Math |
 | 40 | [The Quasi-Riemann Hypothesis](040-the-quasi-riemann-hypothesis.md) | Algebra/Number Theory |
 | 41 | [Digesting Wiles’ proof of Fermat’s Last Theorem](041-digesting-wiles-proof-of-fermats-last-theorem.md) | Algebra/Number Theory |
@@ -57,8 +60,6 @@ The 140 Round 1 problems exactly as the proposers wrote them in the organizers' 
 | 48 | [Rigidity of enumeration degrees](048-rigidity-of-enumeration-degrees.md) | Computation/Applied Math |
 | 49 | [Tight Dimension Dependence for Convex Bandits](049-tight-dimension-dependence-for-convex-bandits.md) | Computation/Applied Math, Analysis |
 | 50 | [Hilbert’s tenth problem over the rationals](050-hilberts-tenth-problem-over-the-rationals.md) | Algebra/Number Theory |
-| 51 | [Non-uniqueness or uniqueness of Glimm-Lax solutions](051-non-uniqueness-or-uniqueness-of-glimm-lax-solutions.md) | Computation/Applied Math, Analysis |
-| 52 | [Inviscid limit for 1-d compressible MHD](052-inviscid-limit-for-1-d-compressible-mhd.md) | Computation/Applied Math, Analysis |
 | 53 | [Taxonomizing mathematics: an exploration with minimal surfaces](053-taxonomizing-mathematics-an-exploration-with-minimal.md) | Geometry |
 | 54 | [Dissecting OpenAI’s counterexamples to the Auslander-Reiten and Second Tachikawa conjecture for finite-dimensional algebras](054-dissecting-openais-counterexamples-to-the-auslander-reiten.md) | Algebra/Number Theory |
 | 55 | [A Simpler Counterexample to Hadwiger's Conjecture](055-a-simpler-counterexample-to-hadwigers-conjecture.md) | Combinatorics |
@@ -69,9 +70,6 @@ The 140 Round 1 problems exactly as the proposers wrote them in the organizers' 
 | 60 | [Gigli’s characterization of Alexandrov curvature](060-giglis-characterization-of-alexandrov-curvature.md) | Geometry |
 | 61 | [Extended table for knotted surfaces](061-extended-table-for-knotted-surfaces.md) | Algebra/Number Theory, Geometry |
 | 62 | [Infinite Two-Generated Groups of Bounded Exponent (Burnside Problem)](062-infinite-two-generated-groups-of-bounded-exponent-burnside.md) | Algebra/Number Theory |
-| 63 | [Construction of an Infinite Finitely Presented Nilsemigroup](063-construction-of-an-infinite-finitely-presented-nilsemigroup.md) | Algebra/Number Theory |
-| 64 | [Polynomial Identities and the Specht Problem](064-polynomial-identities-and-the-specht-problem.md) | Algebra/Number Theory |
-| 65 | [Subexponential Upper Bounds for the Nilpotency Index of Associative Algebras](065-subexponential-upper-bounds-for-the-nilpotency-index-of.md) | Algebra/Number Theory |
 | 66 | [Invariant subspace problem: the Enflo–Read counterexamples](066-invariant-subspace-problem-the-enfloread-counterexamples.md) | Analysis |
 | 67 | [Monsky's theorem and Stein's conjecture on equal-area dissections](067-monskys-theorem-and-steins-conjecture-on-equal-area.md) | Combinatorics, Geometry |
 | 68 | [Non-parametric Bernstein von-Mises theorems](068-non-parametric-bernstein-von-mises-theorems.md) | Analysis |
@@ -88,7 +86,6 @@ The 140 Round 1 problems exactly as the proposers wrote them in the organizers' 
 | 79 | [The Painlevé paradox](079-the-painleve-paradox.md) | Analysis, Computation/Applied Math |
 | 80 | [Surface intersection with correct topology](080-surface-intersection-with-correct-topology.md) | Geometry, Computation/Applied Math |
 | 81 | [Chowla’s conjecture for two-point correlations](081-chowlas-conjecture-for-two-point-correlations.md) | Number Theory/Algebra |
-| 82 | [Kadison's generator problem](082-kadisons-generator-problem.md) | Number Theory/Algebra |
 | 83 | [Cannon's conjecture and friends](083-cannons-conjecture-and-friends.md) | Geometry |
 | 84 | [Exotic hyperbolic groups from 2-complexes](084-exotic-hyperbolic-groups-from-2-complexes.md) | Number Theory/Algebra, Geometry |
 | 85 | [Different Effective Equation with shared Brownian Limit](085-different-effective-equation-with-shared-brownian-limit.md) | Analysis |
@@ -117,15 +114,9 @@ The 140 Round 1 problems exactly as the proposers wrote them in the organizers' 
 | 108 | [Generalizing the zeta(5) irrationality argument](108-generalizing-the-zeta-5-irrationality-argument.md) | Number Theory/Algebra |
 | 109 | [Tightening the commutator-scaling Trotter error bound at fourth order](109-tightening-the-commutator-scaling-trotter-error-bound-at.md) | Computation/Applied Mathematics |
 | 110 | [Statistical learning theory and neural network generalization bounds](110-statistical-learning-theory-and-neural-network.md) | Analysis, Computation/Applied Math |
-| 111 | [Kervaire invariant one theorem](111-kervaire-invariant-one-theorem.md) | Geometry |
-| 112 | [Quarter-pinching sphere theorem](112-quarter-pinching-sphere-theorem.md) | Geometry |
-| 113 | [Understanding sporadic curves in Mcduff-Shlenk staircase](113-understanding-sporadic-curves-in-mcduff-shlenk-staircase.md) | Geometry |
 | 114 | [Obstruction theory in Lean](114-obstruction-theory-in-lean.md) | Geometry |
 | 115 | [Exotic spheres](115-exotic-spheres.md) | Geometry |
-| 116 | [LLM-assisted search for a new knot invariant](116-llm-assisted-search-for-a-new-knot-invariant.md) | Geometry |
-| 117 | [Parity obstructions behind Drury’s external vertices conjecture: from n = 4 to n = 5](117-parity-obstructions-behind-drurys-external-vertices.md) | Combinatorics |
 | 118 | [Formalizing the AKLT spectral gap](118-formalizing-the-aklt-spectral-gap.md) | Computation/Applied mathematics |
-| 119 | [Freedman's disc embedding theorem and 4D Poincare](119-freedmans-disc-embedding-theorem-and-4d-poincare.md) | Geometry |
 | 120 | [Characterizations and identities for probability distributions](120-characterizations-and-identities-for-probability.md) | Analysis |
 | 121 | [Carleson' Theorem on convergence of Fourier series](121-carleson-theorem-on-convergence-of-fourier-series.md) | Analysis |
 | 122 | [Efficient Verification of Lean Proofs via Interaction](122-efficient-verification-of-lean-proofs-via-interaction.md) | Computation/Applied Mathematics |
@@ -136,7 +127,6 @@ The 140 Round 1 problems exactly as the proposers wrote them in the organizers' 
 | 127 | [Rogers Ramanujan Identity](127-rogers-ramanujan-identity.md) | Combinatorics |
 | 128 | [Why Do Random Sorting Networks Draw Sine Curves?](128-why-do-random-sorting-networks-draw-sine-curves.md) | Computation/Applied Mathematics |
 | 129 | [Termination of flips for fourfolds](129-termination-of-flips-for-fourfolds.md) | Geometry |
-| 130 | [Uniqueness of Finite Quandale Colorings](130-uniqueness-of-finite-quandale-colorings.md) | Geometry |
 | 131 | [Irrationality of ζ(3) (Apery's Theorem)](131-irrationality-of-3-aperys-theorem.md) | Number Theory/Algebra |
 | 132 | [An Interactive Computational Laboratory for Spatial Stochastic Processes and Scaling Limits](132-an-interactive-computational-laboratory-for-spatial.md) | Computation/Applied Mathematics, Analysis |
 | 133 | [Simpson's conjecture](133-simpsons-conjecture.md) | Number Theory/Algebra |
@@ -151,11 +141,11 @@ The 140 Round 1 problems exactly as the proposers wrote them in the organizers' 
 
 ## What each file contains
 
-One section per column of the sheet, each holding the cell text unchanged: Problem ID; Title/name of problem; Short description of problem (100 words or less); Submitted Area; Proposed Tracks; Reference/source material; Desired outcome. When cells of the problem carry hyperlinks, a last section, **Reference links**, lists them.
+One section per column of the sheet, each holding the cell text unchanged: Problem ID; Title/name of problem; Short description of problem (100 words or less); Submitted Area; Proposed Tracks; Reference/source material; Desired outcome. Where the sheet's column Judge Suggestions is not empty, a section **Judge Suggestions** follows. When cells of the problem carry hyperlinks, a section **Reference links** lists them; links in the judge suggestions are listed under **Links in Judge Suggestions**.
 
 ## For maintainers
 
-- [`split_sheet.py`](split_sheet.py) writes the problem files and the table above from the sheet exports in `source/`, which is kept locally and not in the repository (last export: 2026-11-11, about 21:00 PST). It checks every field against the sheet, byte for byte.
+- [`split_sheet.py`](split_sheet.py) writes the problem files and the table above from the sheet exports in `source/`, which is kept locally and not in the repository (last export: 2026-11-12, about 08:00 PST, from the final problem sheet; the problems are its first tab, and its other tab, "Judge Preferences", is not used). It checks every field against the sheet, byte for byte.
 - To update after the sheet changes, download it into `source/` as `mathathon-problem-sheet.csv`, `mathathon-problem-sheet.xlsx` and `mathathon-problem-sheet-html.zip` (File → Download: CSV, Microsoft Excel, Web page), then run `python3 problems_original/split_sheet.py`, and then update [`problems_ai`](../problems_ai/README.md) as described there.
 - The sheet's "Short description" column is hidden in its normal view and is missing from the HTML export; the CSV and XLSX exports include it.
 - Markdown viewers may join single line breaks or treat `*`, `_` and `$` as formatting; the exports are the reference copies.

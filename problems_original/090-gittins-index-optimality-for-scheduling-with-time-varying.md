@@ -32,6 +32,8 @@ Sections 3.1–3.2 formally define the scheduling problem and its equivalent res
 Gurushankar, K., Li, Z., Harchol-Balter, M., and Scheller-Wolf, A. (2026). LookAhead: The Optimal Non-decreasing Index Policy for a Time-Varying Holding Cost Problem. Queueing Systems, 110, Article 7. https://doi.org/10.1007/s11134-025-09967-w
 Establishes index optimality for a special case in which one job class has constant holding costs.
 
+Talk submitted by the submitter: https://www.youtube.com/watch?v=KHqzHCZTiIc 
+
 ## Desired outcome
 
 A simpler or more intuitive proof of the conditional Gittins-index optimality result, or a rigorous verification of its key arguments.
@@ -45,3 +47,7 @@ The existing conditional proof uses several mathematical ideas, including Markov
 We would welcome alternative proofs that make these connections clearer, identify which assumptions are essential, or extend parts of the argument to other restless bandit problems.
 
 Participants could focus on a particular lemma or proof technique rather than reproducing the entire result.
+
+## Reference links
+
+- <https://www.youtube.com/watch?v=KHqzHCZTiIc>

@@ -20,7 +20,6 @@ import MathathonProblems.P27_CrossedModulesCatOne
 import MathathonProblems.P33_EuclideanFiveColor
 import MathathonProblems.P35_PartitionsIntoPowers
 import MathathonProblems.P36_HookLengthFormula
-import MathathonProblems.P38_BaumConnesInjectivity
 import MathathonProblems.P39_HyllandRandomDictatorship
 import MathathonProblems.P40_QuasiRiemannHypothesis
 import MathathonProblems.P41_FermatLastTheorem
@@ -40,9 +39,6 @@ import MathathonProblems.P57_Barnette
 import MathathonProblems.P58_SeymourSecondNeighborhood
 import MathathonProblems.P59_BlochConjecture
 import MathathonProblems.P62_TwoGeneratedBurnside
-import MathathonProblems.P63_FinitelyPresentedNilsemigroup
-import MathathonProblems.P64_Specht
-import MathathonProblems.P65_NilpotencyIndexBound
 import MathathonProblems.P66_ReadL1
 import MathathonProblems.P67_Monsky
 import MathathonProblems.P69_InverseGalois
@@ -55,7 +51,6 @@ import MathathonProblems.P75_StanleyInequality
 import MathathonProblems.P76_CirculantHadamard
 import MathathonProblems.P78_MatrixMultiplication
 import MathathonProblems.P81_TwoPointChowla
-import MathathonProblems.P82_KadisonGenerator
 import MathathonProblems.P83_Cannon
 import MathathonProblems.P86_UlamFloatingRigidity
 import MathathonProblems.P87_CharmedBijectionTypeB
@@ -74,11 +69,8 @@ import MathathonProblems.P106_GameTheoreticLIL
 import MathathonProblems.P107_AltmanDistinctDistances
 import MathathonProblems.P108_IrrationalZetaSeven
 import MathathonProblems.P110_SpectralMarginBound
-import MathathonProblems.P112_QuarterPinchedSphere
 import MathathonProblems.P115_ExoticSevenSphere
-import MathathonProblems.P117_ExternalVertices
 import MathathonProblems.P118_AKLTSpectralGap
-import MathathonProblems.P119_Poincare4D
 import MathathonProblems.P120_Dufresne
 import MathathonProblems.P120_Marcinkiewicz
 import MathathonProblems.P121_Carleson
@@ -87,7 +79,6 @@ import MathathonProblems.P124_MUBDimensionSix
 import MathathonProblems.P125_TSPPEnumeration
 import MathathonProblems.P127_RogersRamanujan
 import MathathonProblems.P128_ArchimedeanTrajectoryLimit
-import MathathonProblems.P130_AlexanderQuandleColourings
 import MathathonProblems.P131_Zeta3Irrational
 import MathathonProblems.P136_AaronsonAmbainis
 import MathathonProblems.P137_FussCatalanValuation

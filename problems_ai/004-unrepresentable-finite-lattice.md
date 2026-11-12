@@ -21,6 +21,14 @@ https://github.com/openai/math/tree/main/preprints/A-Negative-Solution-to-the-Fi
 
 - <https://github.com/openai/math/tree/main/preprints/A-Negative-Solution-to-the-Finite-Lattice-Representation-Problem-September-24-2026>
 
+## From the judges
+
+Blogpost from William DeMeo discussing OpenAI claim: https://williamdemeo.org/blog/openai-flrp-claim/#how-the-negative-solution-is-assembled 
+
+### Links in the judge suggestions
+
+- <https://williamdemeo.org/blog/openai-flrp-claim/#how-the-negative-solution-is-assembled>
+
 ## AI-generated notes
 
 <!-- status: Open -->

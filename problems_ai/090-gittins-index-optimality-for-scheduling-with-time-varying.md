@@ -35,18 +35,24 @@ Sections 3.1–3.2 formally define the scheduling problem and its equivalent res
 Gurushankar, K., Li, Z., Harchol-Balter, M., and Scheller-Wolf, A. (2026). LookAhead: The Optimal Non-decreasing Index Policy for a Time-Varying Holding Cost Problem. Queueing Systems, 110, Article 7. https://doi.org/10.1007/s11134-025-09967-w
 Establishes index optimality for a special case in which one job class has constant holding costs.
 
+Talk submitted by the submitter: https://www.youtube.com/watch?v=KHqzHCZTiIc 
+
+### Reference links
+
+- <https://www.youtube.com/watch?v=KHqzHCZTiIc>
+
 ## AI-generated notes
 
 <!-- status: Partly solved -->
 
-- **Status:** Index optimality is proved for two classes, one with constant holding cost, among non-decreasing index policies (Gurushankar et al., Queueing Systems 2026); the proposer's conditional result is unpublished and unrefereed.
+- **Status:** Index optimality is proved for two classes, one with constant holding cost, among non-decreasing index policies (Gurushankar et al., Queueing Systems 2026); the proposer's conditional result is in an unpublished, unrefereed manuscript, now attached to this problem.
 - **Task:** A simpler or more intuitive proof of the conditional Gittins-index optimality result, or a rigorous check of its key steps.
 - **Key reference:** [Improving upon the generalized cμ rule: a Whittle approach](https://arxiv.org/abs/2504.10622), Z. Li et al., Operations Research 74 (2026), 2577–2591.
 - **Lean:** No official statement.
 
 ### Notes
 
-- The result to be simplified (Theorem 1.7 of Gurushankar's manuscript) is unpublished, available only from the proposer and not refereed; its hypotheses are not in the proposer's text, and this page describes only the published papers.
+- The result to be simplified is in Gurushankar's unpublished manuscript "Index-Optimal Scheduling for Time-Varying Holding Costs" (25 pages, not refereed), which the proposer sent to be shared with all participants: [090-manuscript-tvhc-gittins.pdf](../problems_original/attachments/090-manuscript-tvhc-gittins.pdf). The proposer's text cites it as Theorem 1.7 of "Threshold MDP and Index POMDP", the title of its Part I; in the attached version it is Theorem 2.7 (Proposed): given Conjectures 2.4 (indexability), 2.6 (index monotonicity), 3.6 (action monotonicity) and 5.3 (equilibrium optimality), the Gittins index functions are optimal index functions for the discounted two-class problem with equal service rates. Its abstract says that the proposed optimality argument and the vanishing-discount calculation have steps that remain open. The rest of this page describes only the published papers.
 - LookAhead is optimal only among non-decreasing index policies, not among all policies; the gap is open.
 
 ### The result
@@ -78,7 +84,7 @@ Prerequisites: Markov decision processes, Poisson processes, M/M/1 busy periods.
 
 ### References, with links
 
-- K. Gurushankar, “Threshold MDP and Index POMDP,” unpublished manuscript, available from the proposer (Theorem 1.7; Sections 2–3 and Appendix A).
+- K. Gurushankar, “Index-Optimal Scheduling for Time-Varying Holding Costs,” unpublished manuscript (Part I: “Threshold MDP and Index POMDP”; the proposed result is Theorem 2.7), attached: [090-manuscript-tvhc-gittins.pdf](../problems_original/attachments/090-manuscript-tvhc-gittins.pdf).
 - Z. Li, K. Gurushankar, M. Harchol-Balter, and A. Scheller-Wolf, “Improving upon the generalized cμ rule: a Whittle approach,” Operations Research 74 (2026), no. 5, 2577–2591. <https://doi.org/10.1287/opre.2025.1987>
 - K. Gurushankar, Z. Li, M. Harchol-Balter, and A. Scheller-Wolf, “LookAhead: the optimal non-decreasing index policy for a time-varying holding cost problem,” Queueing Systems 110 (2026), Article 7. <https://doi.org/10.1007/s11134-025-09967-w>
 
@@ -93,7 +99,7 @@ Prerequisites: Markov decision processes, Poisson processes, M/M/1 busy periods.
 
 #### Official statement
 
-This problem has no official Lean statement: the theorem to be simplified (Theorem 1.7 of an unpublished manuscript) has hypotheses that are not public, and even the published special case needs continuous-time controlled queues with Poisson arrivals and long-run average cost, which Mathlib does not have and which cannot be defined faithfully within a statement file.
+This problem has no official Lean statement: the result to be simplified (Theorem 2.7 of the attached manuscript) is conditional on four conjectures, and both it and the published special case need continuous-time controlled queues with Poisson arrivals and discounted or long-run average costs, which Mathlib does not have and which cannot be defined faithfully within a statement file.
 
 #### Related Lean formalizations
 

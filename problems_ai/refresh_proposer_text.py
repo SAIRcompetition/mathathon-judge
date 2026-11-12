@@ -11,8 +11,11 @@ area and tracks with surrounding spaces collapsed, and description, desired outc
 references unchanged (checked), except for the typos and wrong bibliographic details
 listed in corrections.json (problems_original/ keeps the sheet text as it is). Each
 correction states how often its text occurs; the script stops if the sheet no longer
-matches. Its "AI-generated notes" section is kept exactly as it is; a new problem gets a
-placeholder. The problem table in README.md (between the problem-index markers) is rebuilt.
+matches. Where the sheet has judge suggestions, a "From the judges" section follows with
+their text unchanged. Its "AI-generated notes" section is kept exactly as it is; a new
+problem gets a placeholder. The problem table in README.md (between the problem-index
+markers) is rebuilt. Pages of problems that are no longer in problems_original/ are not
+touched; delete them by hand.
 
 The notes are never changed by this script, so after a substantive change to a problem
 in the sheet, its notes need to be reviewed by hand.
@@ -28,6 +31,8 @@ sys.path.insert(0, str(ORIG))
 import split_sheet  # noqa: E402  (HEADER, parse_back, LINKS_HEADING)
 
 NOTES_HEADING = "## AI-generated notes"
+JUDGES_HEADING = "## From the judges"
+JUDGE_LINKS_SUBHEADING = "### Links in the judge suggestions"
 PLACEHOLDER = (f"{NOTES_HEADING}\n\n<!-- status: — -->\n\n"
                "> No AI notes have been written for this problem yet.\n")
 INDEX_START = "<!-- problem-index:start -->"
@@ -51,22 +56,34 @@ def ws(s):
 
 
 def load_original():
-    """[(pid, file name, the seven field values, links block or '')], in Problem ID order."""
+    """[(pid, file name, the seven field values, links block, judge text, judge links block)],
+    in Problem ID order; a missing part is ''."""
     out = []
     for path in sorted(ORIG.glob("[0-9][0-9][0-9]-*.md")):
         text = path.read_text(encoding="utf-8")
         fields = split_sheet.parse_back(text)
-        marker = f"\n## {split_sheet.LINKS_HEADING}\n\n"
-        links = text.split(marker, 1)[1] if marker in text else ""
-        out.append((int(fields[0]), path.name, fields, links))
+        links = split_sheet.parse_section(text, split_sheet.LINKS_HEADING)
+        judge = split_sheet.parse_section(text, split_sheet.JUDGE)
+        judge_links = split_sheet.parse_section(text, split_sheet.JUDGE_LINKS_HEADING)
+        out.append((int(fields[0]), path.name, fields, links, judge, judge_links))
     return out
+
+
+def judges_block(judge, judge_links):
+    """The 'From the judges' section, or '' when the sheet has no judge suggestions."""
+    if not judge:
+        return ""
+    block = f"\n{JUDGES_HEADING}\n\n{judge}\n"
+    if judge_links:
+        block += f"\n{JUDGE_LINKS_SUBHEADING}\n\n{judge_links}\n"
+    return block
 
 
 # Long sections of the page: (heading, index of the sheet field), in page order.
 SECTIONS = [("Description", 2), ("Desired outcome", 6), ("References", 5)]
 
 
-def render_page(pid, fname, fields, links, notes):
+def render_page(pid, fname, fields, links, judge, judge_links, notes):
     parts = [
         f"# {pid} · {ws(fields[1])}\n\n",
         "## From the proposer\n\n",
@@ -76,15 +93,24 @@ def render_page(pid, fname, fields, links, notes):
     for name, i in SECTIONS:
         parts.append(f"\n### {name}\n\n{fields[i]}\n")
     if links:
-        parts.append(f"\n### {split_sheet.LINKS_HEADING}\n\n{links}")
+        parts.append(f"\n### {split_sheet.LINKS_HEADING}\n\n{links}\n")
+    parts.append(judges_block(judge, judge_links))
     parts.append("\n" + notes.rstrip("\n") + "\n")
     return "".join(parts)
 
 
-def proposer_ok(page, pid, fields):
-    """Check that a page's title line and 'From the proposer' section match the sheet."""
+def proposer_ok(page, pid, fields, judge, judge_links):
+    """Check that a page's title line, 'From the proposer' section and 'From the judges'
+    section match the sheet."""
     # The section ends with the last value followed by exactly one added newline.
     body = page.split("\n## From the proposer\n", 1)[1].split("\n" + NOTES_HEADING, 1)[0]
+    block = judges_block(judge, judge_links)
+    if block:
+        if not body.endswith(block):
+            return False
+        body = body[: len(body) - len(block)]
+    elif f"\n{JUDGES_HEADING}\n" in body:
+        return False
     if page.split("\n", 1)[0] != f"# {pid} · {ws(fields[1])}":
         return False
     if (f"\n- **Area:** {ws(fields[3])}\n" not in body
@@ -130,13 +156,13 @@ def write_index(rows):
 def write_pages(notes_for):
     """notes_for(pid, existing_notes) -> notes section; writes every page and the index."""
     rows = []
-    for pid, fname, fields, links in load_original():
+    for pid, fname, fields, links, judge, judge_links in load_original():
         fields = corrected(pid, fields)
         existing = sorted(AI.glob(f"{pid:03d}-*.md"))
         old_notes = notes_of(existing[0].read_text(encoding="utf-8")) if existing else None
         notes = notes_for(pid, old_notes)
-        page = render_page(pid, fname, fields, links, notes)
-        if not proposer_ok(page, pid, fields):
+        page = render_page(pid, fname, fields, links, judge, judge_links, notes)
+        if not proposer_ok(page, pid, fields, judge, judge_links):
             sys.exit(f"problem {pid}: proposer text would not match the sheet")
         for p in existing:
             p.unlink()

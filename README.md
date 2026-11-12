@@ -19,13 +19,13 @@ This repository holds the Round 1 rules, the judging guidelines and rubric, and 
 
 **Problems** (`problems_original/`, `problems_ai/`)
 
-The Round 1 problem list has 140 problems and comes from the organizers' problem sheet. It is kept in two forms: the sheet exactly as written, and the same problems with AI-generated notes.
+The Round 1 problem list has 126 problems and comes from the organizers' final problem sheet. It is kept in two forms: the sheet exactly as written, and the same problems with AI-generated notes.
 
 | File | What it is | Audience |
 |---|---|---|
 | [`problems_original/README.md`](problems_original/README.md) | The problem sheet copied verbatim: one file per problem with the proposer's title, short description, area, tracks, references and desired outcome, plus the sheet exports. Nothing in it is AI-generated or edited. | Everyone |
 | [`problems_ai/README.md`](problems_ai/README.md) | The problem list for reading: one page per problem with the proposer's text (wording unchanged) followed by clearly labelled AI-generated notes, which may contain errors, on what is known, how known proofs work, where to start, references with links, and the Lean status | Everyone |
-| [`problems_ai/lean/README.md`](problems_ai/lean/README.md) | The official Lean statements of 91 problems, as a Lean project for Lean v4.35.0 and Mathlib `v4.35.0` (configuration files and statements only). Prepared by AI, either written for Mathathon or adapted from cited formalizations, and may contain errors. | Participants, LLM operator |
+| [`problems_ai/lean/README.md`](problems_ai/lean/README.md) | The official Lean statements of 82 problems, as a Lean project for Lean v4.35.0 and Mathlib `v4.35.0` (configuration files and statements only). Prepared by AI, either written for Mathathon or adapted from cited formalizations, and may contain errors. | Participants, LLM operator |
 
 The overview reproduces the Mathathon website.
 

@@ -232,22 +232,6 @@
   "why": "typo (repeated word)"
  },
  {
-  "id": 113,
-  "field": "Title/name of problem",
-  "old": "Mcduff-Shlenk",
-  "new": "McDuff-Schlenk",
-  "count": 1,
-  "why": "misspelt names"
- },
- {
-  "id": 117,
-  "field": "Short description of problem (100 words or less)",
-  "old": "unpublised two-page proof",
-  "new": "unpublished two-page proof",
-  "count": 1,
-  "why": "typo"
- },
- {
   "id": 121,
   "field": "Title/name of problem",
   "old": "Carleson' Theorem",
@@ -286,46 +270,6 @@
   "new": "the proof brings several",
   "count": 1,
   "why": "typo (subject-verb agreement)"
- },
- {
-  "id": 130,
-  "field": "Title/name of problem",
-  "old": "Quandale",
-  "new": "Quandle",
-  "count": 1,
-  "why": "misspelt term"
- },
- {
-  "id": 130,
-  "field": "Short description of problem (100 words or less)",
-  "old": "Quandale",
-  "new": "Quandle",
-  "count": 1,
-  "why": "misspelt term"
- },
- {
-  "id": 130,
-  "field": "Short description of problem (100 words or less)",
-  "old": "quandale",
-  "new": "quandle",
-  "count": 2,
-  "why": "misspelt term"
- },
- {
-  "id": 130,
-  "field": "Submitted Area",
-  "old": "Quandale",
-  "new": "Quandle",
-  "count": 1,
-  "why": "misspelt term"
- },
- {
-  "id": 130,
-  "field": "Desired outcome",
-  "old": "quandale",
-  "new": "quandle",
-  "count": 4,
-  "why": "misspelt term"
  },
  {
   "id": 134,

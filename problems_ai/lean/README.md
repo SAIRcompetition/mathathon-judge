@@ -1,6 +1,6 @@
 # Mathathon Round 1: official Lean statements
 
-A Lean project for Lean v4.35.0 and Mathlib `v4.35.0` with the official Lean statements of the Round 1 problems: 94 files for 91 problems. Each file states the main claim of one problem as a theorem whose proof is `sorry`. The problem pages in [`../`](../) show each statement and its source.
+A Lean project for Lean v4.35.0 and Mathlib `v4.35.0` with the official Lean statements of the Round 1 problems: 85 files for 82 problems. Each file states the main claim of one problem as a theorem whose proof is `sorry`. The problem pages in [`../`](../) show each statement and its source.
 
 **All statements were prepared by AI and may contain errors.** Each was either written for Mathathon or adapted from an existing formalization; the comment at the top of every file says which, and for adapted statements gives the source repository, the licence, a link pinned to a commit and what was changed. An adapted file also reproduces the copyright notice of its source file there, and [`NOTICE`](NOTICE) reproduces the `NOTICE` files of the two source repositories that have one. A statement can still differ from the problem in a detail, so read it as a reference alongside the proposer's text, and report a suspected mismatch to the organizers.
 
@@ -32,7 +32,6 @@ To check the statements, run `lake exe cache get` and then `lake build` in this 
 | [33](../033-hadwiger-nelson-problem-the-euclidean-plane-is-not-five.md) | [`P33_EuclideanFiveColor.lean`](MathathonProblems/P33_EuclideanFiveColor.lean) | adapted from openai/math |
 | [35](../035-asymptotic-growth-of-integer-partitions-into-powers.md) | [`P35_PartitionsIntoPowers.lean`](MathathonProblems/P35_PartitionsIntoPowers.lean) | written by AI |
 | [36](../036-probabilistic-and-asymptotic-approaches-to-the-hook-length.md) | [`P36_HookLengthFormula.lean`](MathathonProblems/P36_HookLengthFormula.lean) | adapted from NoahW314/KostkaNumbers |
-| [38](../038-understanding-a-proposed-counterexample-to-reduced.md) | [`P38_BaumConnesInjectivity.lean`](MathathonProblems/P38_BaumConnesInjectivity.lean) | written by AI |
 | [39](../039-hyllands-random-dictatorship-theorem-for-cardinal.md) | [`P39_HyllandRandomDictatorship.lean`](MathathonProblems/P39_HyllandRandomDictatorship.lean) | written by AI |
 | [40](../040-the-quasi-riemann-hypothesis.md) | [`P40_QuasiRiemannHypothesis.lean`](MathathonProblems/P40_QuasiRiemannHypothesis.lean) | adapted from openai/math |
 | [41](../041-digesting-wiles-proof-of-fermats-last-theorem.md) | [`P41_FermatLastTheorem.lean`](MathathonProblems/P41_FermatLastTheorem.lean) | adapted from Mathlib v4.35.0 |
@@ -52,9 +51,6 @@ To check the statements, run `lake exe cache get` and then `lake build` in this 
 | [58](../058-simplifying-the-proof-of-seymours-second-neighborhood.md) | [`P58_SeymourSecondNeighborhood.lean`](MathathonProblems/P58_SeymourSecondNeighborhood.lean) | adapted from openai/math |
 | [59](../059-digesting-openais-claimed-proof-of-blochs-conjecture.md) | [`P59_BlochConjecture.lean`](MathathonProblems/P59_BlochConjecture.lean) | written by AI |
 | [62](../062-infinite-two-generated-groups-of-bounded-exponent-burnside.md) | [`P62_TwoGeneratedBurnside.lean`](MathathonProblems/P62_TwoGeneratedBurnside.lean) | adapted from google-deepmind/formal-conjectures |
-| [63](../063-construction-of-an-infinite-finitely-presented-nilsemigroup.md) | [`P63_FinitelyPresentedNilsemigroup.lean`](MathathonProblems/P63_FinitelyPresentedNilsemigroup.lean) | written by AI |
-| [64](../064-polynomial-identities-and-the-specht-problem.md) | [`P64_Specht.lean`](MathathonProblems/P64_Specht.lean) | written by AI |
-| [65](../065-subexponential-upper-bounds-for-the-nilpotency-index-of.md) | [`P65_NilpotencyIndexBound.lean`](MathathonProblems/P65_NilpotencyIndexBound.lean) | written by AI |
 | [66](../066-invariant-subspace-problem-the-enfloread-counterexamples.md) | [`P66_ReadL1.lean`](MathathonProblems/P66_ReadL1.lean) | adapted from google-deepmind/formal-conjectures |
 | [67](../067-monskys-theorem-and-steins-conjecture-on-equal-area.md) | [`P67_Monsky.lean`](MathathonProblems/P67_Monsky.lean) | adapted from dhyan-aranha/Monsky |
 | [69](../069-a-systematic-study-of-inverse-galois-problem.md) | [`P69_InverseGalois.lean`](MathathonProblems/P69_InverseGalois.lean) | adapted from google-deepmind/formal-conjectures |
@@ -67,7 +63,6 @@ To check the statements, run `lake exe cache get` and then `lake build` in this 
 | [76](../076-the-circulant-hadamard-conjecture.md) | [`P76_CirculantHadamard.lean`](MathathonProblems/P76_CirculantHadamard.lean) | adapted from openai/math |
 | [78](../078-understanding-matrix-multiplication.md) | [`P78_MatrixMultiplication.lean`](MathathonProblems/P78_MatrixMultiplication.lean) | adapted from openai/math |
 | [81](../081-chowlas-conjecture-for-two-point-correlations.md) | [`P81_TwoPointChowla.lean`](MathathonProblems/P81_TwoPointChowla.lean) | adapted from openai/math |
-| [82](../082-kadisons-generator-problem.md) | [`P82_KadisonGenerator.lean`](MathathonProblems/P82_KadisonGenerator.lean) | adapted from openai/math |
 | [83](../083-cannons-conjecture-and-friends.md) | [`P83_Cannon.lean`](MathathonProblems/P83_Cannon.lean) | adapted from openai/math |
 | [86](../086-ulam-floating-problem-perimetral-density-1-3-1-4-1-5.md) | [`P86_UlamFloatingRigidity.lean`](MathathonProblems/P86_UlamFloatingRigidity.lean) | written by AI |
 | [87](../087-towards-a-uniform-natural-proof-of-the-nonnesting.md) | [`P87_CharmedBijectionTypeB.lean`](MathathonProblems/P87_CharmedBijectionTypeB.lean) | written by AI |
@@ -86,11 +81,8 @@ To check the statements, run `lake exe cache get` and then `lake build` in this 
 | [107](../107-why-regular-polygons-have-the-fewest-distances-an.md) | [`P107_AltmanDistinctDistances.lean`](MathathonProblems/P107_AltmanDistinctDistances.lean) | adapted from google-deepmind/formal-conjectures |
 | [108](../108-generalizing-the-zeta-5-irrationality-argument.md) | [`P108_IrrationalZetaSeven.lean`](MathathonProblems/P108_IrrationalZetaSeven.lean) | adapted from google-deepmind/formal-conjectures |
 | [110](../110-statistical-learning-theory-and-neural-network.md) | [`P110_SpectralMarginBound.lean`](MathathonProblems/P110_SpectralMarginBound.lean) | written by AI |
-| [112](../112-quarter-pinching-sphere-theorem.md) | [`P112_QuarterPinchedSphere.lean`](MathathonProblems/P112_QuarterPinchedSphere.lean) | written by AI |
 | [115](../115-exotic-spheres.md) | [`P115_ExoticSevenSphere.lean`](MathathonProblems/P115_ExoticSevenSphere.lean) | adapted from leanprover-community/mathlib4, tag v4.35.0 |
-| [117](../117-parity-obstructions-behind-drurys-external-vertices.md) | [`P117_ExternalVertices.lean`](MathathonProblems/P117_ExternalVertices.lean) | written by AI |
 | [118](../118-formalizing-the-aklt-spectral-gap.md) | [`P118_AKLTSpectralGap.lean`](MathathonProblems/P118_AKLTSpectralGap.lean) | written by AI |
-| [119](../119-freedmans-disc-embedding-theorem-and-4d-poincare.md) | [`P119_Poincare4D.lean`](MathathonProblems/P119_Poincare4D.lean) | adapted from leanprover/lean-eval |
 | [120](../120-characterizations-and-identities-for-probability.md) | [`P120_Dufresne.lean`](MathathonProblems/P120_Dufresne.lean) | written by AI |
 | [120](../120-characterizations-and-identities-for-probability.md) | [`P120_Marcinkiewicz.lean`](MathathonProblems/P120_Marcinkiewicz.lean) | written by AI |
 | [121](../121-carleson-theorem-on-convergence-of-fourier-series.md) | [`P121_Carleson.lean`](MathathonProblems/P121_Carleson.lean) | adapted from roos-j/lean-lt-carleson |
@@ -99,7 +91,6 @@ To check the statements, run `lake exe cache get` and then `lake build` in this 
 | [125](../125-enumeration-of-totally-symmetric-plane-partitions.md) | [`P125_TSPPEnumeration.lean`](MathathonProblems/P125_TSPPEnumeration.lean) | adapted from leanprover/lean-eval |
 | [127](../127-rogers-ramanujan-identity.md) | [`P127_RogersRamanujan.lean`](MathathonProblems/P127_RogersRamanujan.lean) | written by AI |
 | [128](../128-why-do-random-sorting-networks-draw-sine-curves.md) | [`P128_ArchimedeanTrajectoryLimit.lean`](MathathonProblems/P128_ArchimedeanTrajectoryLimit.lean) | written by AI |
-| [130](../130-uniqueness-of-finite-quandale-colorings.md) | [`P130_AlexanderQuandleColourings.lean`](MathathonProblems/P130_AlexanderQuandleColourings.lean) | written by AI |
 | [131](../131-irrationality-of-3-aperys-theorem.md) | [`P131_Zeta3Irrational.lean`](MathathonProblems/P131_Zeta3Irrational.lean) | adapted from ahhwuhu/zeta_3_irrational |
 | [136](../136-the-aaronsonambainis-conjecture-from-influential-variables.md) | [`P136_AaronsonAmbainis.lean`](MathathonProblems/P136_AaronsonAmbainis.lean) | adapted from physical-superintelligence/aaronson-ambainis |
 | [137](../137-tree-symmetries-and-the-p-adic-valuations-of-fusscatalan.md) | [`P137_FussCatalanValuation.lean`](MathathonProblems/P137_FussCatalanValuation.lean) | written by AI |

@@ -18,6 +18,10 @@ Carefully digest and verify the AI-generated proof of Bloch's conjecture. For ex
 For problem and background: Bloch's 'Lectures on Algebraic Cycles' 
 OpenAI's claimed solution: https://github.com/openai/math/blob/main/preprints/Blochs-Conjecture-for-Surfaces-with-pg-equals-q-equals-0-September-24-2026/paper.pdf
 
+## From the judges
+
+I know Marc Levine is trying to read the proof. Open AI's approach is a strategy that people in Pandharipande's circle have carried out on a number of intersection theory questions, but I don't think they've applied it to this style of algebraic cycles result. Reading some of Pandharipande's papers using virtual localization would be useful. A good produce would be just to give a readable description of the virtual fundamental class or virtual localization as it pertains to this paper. 
+
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->

@@ -23,6 +23,10 @@ Potentially a connection to numerical analysis that clarifies precision requirem
 1. https://arxiv.org/abs/2610.28627 by Rafael Pass. Primary reference for the construction and its conversion into an explicit recursive algorithm.
 2. https://arxiv.org/abs/math/0603207v3 by James Demmel, Ioana Dumitriu, Olga Holtz, and Robert Kleinberg. Reference for the relationship between fast multiplication and numerical stability.
 
+## From the judges
+
+Suggested outcome: interactive code packages illustrating worked examples and/or analysis of finite costs.
+
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->

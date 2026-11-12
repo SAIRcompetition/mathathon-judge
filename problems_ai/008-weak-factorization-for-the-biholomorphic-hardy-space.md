@@ -27,26 +27,30 @@ https://link.springer.com/article/10.1007/BF02392840
 
 - <https://link.springer.com/article/10.1007/BF02392840>
 
+## From the judges
+
+All I know for the moment is the Lacey Acta paper is wrong.
+
 ## AI-generated notes
 
-<!-- status: Proved -->
+<!-- status: Open -->
 
-- **Status:** Proved by S. H. Ferguson and M. T. Lacey (Acta Math. 2002), the page's own reference.
-- **Task:** A new proof of the Ferguson–Lacey weak factorization on the bidisc.
+- **Status:** Open according to the proposer; S. H. Ferguson and M. T. Lacey (Acta Math. 2002), the page's own reference, claimed a proof, and a judge reports that their paper is wrong.
+- **Task:** Decide whether weak factorization holds on the bidisc, and give a new proof of the main theorem of Ferguson–Lacey.
 - **Key reference:** [S. H. Ferguson and M. T. Lacey, "A characterization of product BMO by commutators", Acta Math. 189 (2002), 143–160](https://arxiv.org/abs/math/0104144)
 - **Lean:** Official statement.
 
 ### Notes
 
-- The Description calls the problem open, but the page's reference proves it (Corollary 1.3 and the remark after it), so the answer asked for is yes.
+- Ferguson and Lacey's Corollary 1.3, with the remark after it, claims the answer yes. The proposer calls the problem open and asks for a new proof of their main theorem, and a judge reports that the paper is wrong (From the judges). We have not located the error, so the account of their argument below is unverified, and so are the later works that build on it.
 
-### The result
+### The claimed result
 
-Ferguson and Lacey proved that the norm of the iterated commutator $[[M_b,H_1],H_2]$ on $L^2(\mathbb R^2)$, with $H_j$ the Hilbert transform in the $j$-th variable, is equivalent to the Chang–Fefferman product BMO norm of $b$ (Theorem 1.2; the upper bound is due to Ferguson and Sadosky). By duality this gives weak factorization (Corollary 1.3): there is $C$ such that every $h\in H^1$ can be written
+Ferguson and Lacey claimed that the norm of the iterated commutator $[[M_b,H_1],H_2]$ on $L^2(\mathbb R^2)$, with $H_j$ the Hilbert transform in the $j$-th variable, is equivalent to the Chang–Fefferman product BMO norm of $b$ (Theorem 1.2; the upper bound is due to Ferguson and Sadosky). By duality this would give weak factorization (Corollary 1.3): there is $C$ such that every $h\in H^1$ can be written
 $$h=\sum_j f_j g_j,\qquad f_j,g_j\in H^2,\qquad \sum_j\|f_j\|_2\|g_j\|_2\le C\|h\|_1 .$$
 The proof is on a product of half-planes; a remark transfers it to the bidisc. The dual form is a Nehari theorem: the little Hankel operator $\Gamma_b f=P_{-,-}(bf)$ on $H^2(\mathbb D^2)$ is bounded iff $b$ is in product BMO.
 
-### How the known proof works
+### How the claimed proof works
 
 - Product BMO is characterized by wavelet coefficients over dyadic rectangles inside arbitrary open sets $U$ (Chang–Fefferman); the proof uses Meyer wavelets.
 - Normalize $\|b\|_{BMO}=1$, fix an extremal $U$, and use the Ferguson–Sadosky bound to assume the rectangular BMO norm of $b$ is small.
@@ -58,13 +62,13 @@ The proof is on a product of half-planes; a remark transfers it to the bidisc. T
 
 - In one variable every $H^1$ function is a product of two $H^2$ functions. On polydiscs this fails: Rudin ($d\ge4$), Miles ($d\ge3$), Rosay ($d=2$, the factorable functions are of first category).
 - An example of Carleson shows that the rectangular BMO norm is not comparable to the product BMO norm; the two-parameter structure of BMO is why the proof is harder than in one variable.
-- Lacey and Terwilleger extended the theorem to $\mathbb D^n$ by induction; Lacey's lecture notes (2007) give a slower proof in which some steps follow from paraproduct theory.
+- Lacey and Terwilleger extended the claim to $\mathbb D^n$ by induction, and Lacey's lecture notes (2007) give a slower version of the argument in which some steps follow from paraproduct theory; whether the reported error affects them is not known here.
 
 ### Where to start
 
-- [Lectures on Nehari's Theorem on the Polydisk](https://arxiv.org/abs/math/0601272), M. T. Lacey, 2006: background and a detailed proof.
-- [A characterization of product BMO by commutators](https://arxiv.org/abs/math/0104144), S. H. Ferguson and M. T. Lacey, 2001: the original proof (21 pages on arXiv).
-- [Hankel operators in several complex variables and product BMO](https://arxiv.org/abs/math/0310348), M. T. Lacey and E. Terwilleger, 2003: the inductive proof for $\mathbb D^n$.
+- [Lectures on Nehari's Theorem on the Polydisk](https://arxiv.org/abs/math/0601272), M. T. Lacey, 2006: background and a detailed version of the argument.
+- [A characterization of product BMO by commutators](https://arxiv.org/abs/math/0104144), S. H. Ferguson and M. T. Lacey, 2001: the original argument (21 pages on arXiv).
+- [Hankel operators in several complex variables and product BMO](https://arxiv.org/abs/math/0310348), M. T. Lacey and E. Terwilleger, 2003: the inductive argument for $\mathbb D^n$.
 
 Prerequisites: one-variable Hardy spaces and BMO, $H^1$–BMO duality, Hilbert transform, wavelets and Littlewood–Paley theory.
 
@@ -92,6 +96,8 @@ def WeakFactorization : Prop :=
 ```lean
 theorem weak_factorization : WeakFactorization
 ```
+
+The statement asserts the answer yes, as Ferguson and Lacey claimed (Corollary 1.3 with the remark that transfers it to the bidisc). If the answer is no, the statement is false, and `¬ WeakFactorization` states the answer.
 
 Source: written by AI for Mathathon; not taken from an existing formalization.
 

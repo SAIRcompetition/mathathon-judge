@@ -35,3 +35,7 @@ Mathematicians have been expending great effort to understand the October 5 Quas
 Another goal is a shortened exposition of a proof of quasi-GRH, with extensions to Hecke L-functions or identified obstructions to these extensions. Explicit separation of purely analytic inputs and adelic machinery, trying to minimize these analytic inputs.
 
 
+
+## Judge Suggestions
+
+Maksym Radziwill gave a nice talk recently.
