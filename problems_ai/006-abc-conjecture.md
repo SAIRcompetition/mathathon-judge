@@ -17,10 +17,6 @@ Any progress on this notorious problem would be of value.
 
 https://en.wikipedia.org/wiki/Abc_conjecture
 
-### Reference links
-
-- <https://en.wikipedia.org/wiki/Abc_conjecture>
-
 ## AI-generated notes
 
 <!-- status: Open -->
