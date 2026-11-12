@@ -17,10 +17,6 @@ A simpler proof of Seymour's second-neighborhood conjecture, ideally with a shor
 
 https://github.com/openai/math/blob/main/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/paper.pdf
 
-### Reference links
-
-- <https://github.com/openai/math/blob/main/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/paper.pdf>
-
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
