@@ -1,7 +1,5 @@
 # Problem 133
 
-> Verbatim copy of one row of the Mathathon problem sheet. The text under each heading is the cell text, unchanged. See [README.md](README.md).
-
 ## Problem ID
 
 133
@@ -31,8 +29,6 @@ https://arxiv.org/abs/1807.02627
 
 We want to prove the equivalence in Simpson's conjecture. Immediate applications follow as a result of Simon Henry's work, which would allow for a concrete modeling of homotopy types, which provides tools for analyzing higher-dimensional rewriting systems and polygraphs.
 
-## Links in the sheet
+## Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material, on the text “https://arxiv.org/abs/1807.02627”: <https://arxiv.org/abs/1807.02627>
+- <https://arxiv.org/abs/1807.02627>

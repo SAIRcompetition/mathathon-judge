@@ -28,11 +28,9 @@ https://github.com/openai/math/blob/main/preprints/A-proof-of-Seymours-second-ne
 
 A simpler proof of Seymour's second-neighborhood conjecture, ideally with a shorter and more elementary argument.
 
-### Links in the sheet
+### Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material: <https://github.com/openai/math/blob/main/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/paper.pdf>
+- <https://github.com/openai/math/blob/main/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/paper.pdf>
 
 ## AI-generated notes
 

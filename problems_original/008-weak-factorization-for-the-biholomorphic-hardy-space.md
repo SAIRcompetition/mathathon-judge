@@ -1,7 +1,5 @@
 # Problem 8
 
-> Verbatim copy of one row of the Mathathon problem sheet. The text under each heading is the cell text, unchanged. See [README.md](README.md).
-
 ## Problem ID
 
 8
@@ -36,8 +34,6 @@ https://link.springer.com/article/10.1007/BF02392840
 
 The answer to this problem and a new proof of the main theorem in the reference
 
-## Links in the sheet
+## Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material: <https://link.springer.com/article/10.1007/BF02392840>
+- <https://link.springer.com/article/10.1007/BF02392840>

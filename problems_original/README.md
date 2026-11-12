@@ -24,11 +24,7 @@ Each file has one heading per column of the sheet, named exactly as the column h
 6. Reference/source material
 7. Desired outcome
 
-The text under each heading is the cell text, byte for byte: no spelling, wording, punctuation, spacing or line breaks were changed. Three things were added around the cells, and none of them changes a cell:
-
-- a first line `# Problem N` and a one-line note saying that the file is a verbatim copy;
-- the column headers as section headings;
-- for the 31 cells that have a hyperlink attached, a final section **Links in the sheet** that lists the link target. When the link is attached to only part of the cell text, that part is quoted. A plain-text copy of the cell would not show these links.
+The text under each heading is the cell text, byte for byte: no spelling, wording, punctuation, spacing or line breaks were changed. Around the cells the files add only a first line `# Problem N`, the column headers as section headings and, for the 27 problems whose cells have hyperlinks attached, a final section **Reference links** with the link targets (a plain-text copy of a cell does not show its hyperlink).
 
 The column **Short description of problem (100 words or less)** is hidden in the sheet's normal view, so it does not appear in the HTML export; its text is in the CSV and XLSX exports and is copied here like the other columns.
 

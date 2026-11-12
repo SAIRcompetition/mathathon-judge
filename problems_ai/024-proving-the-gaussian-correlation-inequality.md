@@ -29,11 +29,9 @@ https://arxiv.org/abs/1512.08776
 The first proof was constructed using probabilistic arguments, but perhaps it is possible to construct a more intuitive and concise geometric proof of the inequality. As this Quanta article below shows, it has a nice geometric interpretation.
 https://www.quantamagazine.org/statistician-proves-gaussian-correlation-inequality-20170328/
 
-### Links in the sheet
+### Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material: <https://arxiv.org/abs/1512.08776>
+- <https://arxiv.org/abs/1512.08776>
 
 ## AI-generated notes
 

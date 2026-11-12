@@ -28,11 +28,9 @@ https://github.com/openai/math/blob/main/preprints/Giglis-distributional-curvatu
 
 The goal is to provide understanding of the proof and the tools employed.
 
-### Links in the sheet
+### Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material: <https://github.com/openai/math/blob/main/preprints/Giglis-distributional-curvature-characterization-of-Alexandrov-spaces-September-24-2026/main.pdf>
+- <https://github.com/openai/math/blob/main/preprints/Giglis-distributional-curvature-characterization-of-Alexandrov-spaces-September-24-2026/main.pdf>
 
 ## AI-generated notes
 

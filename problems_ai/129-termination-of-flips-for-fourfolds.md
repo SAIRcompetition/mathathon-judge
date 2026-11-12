@@ -28,11 +28,9 @@ https://github.com/openai/math/blob/main/preprints/Termination-of-generalized-lo
 
 Develop a unified framework that clarifies the proof’s structure. Identify the steps that depend essentially on dimension four, isolate the main obstacles to extending the method to higher dimensions and formulate intermediate problems that could provide further progress.
 
-### Links in the sheet
+### Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material: <https://github.com/openai/math/blob/main/preprints/Termination-of-generalized-log-canonical-flips-on-compact-Kahler-fourfolds-October-7-2026/termination-generalized-lc-kahler-fourfolds.pdf>
+- <https://github.com/openai/math/blob/main/preprints/Termination-of-generalized-log-canonical-flips-on-compact-Kahler-fourfolds-October-7-2026/termination-generalized-lc-kahler-fourfolds.pdf>
 
 ## AI-generated notes
 

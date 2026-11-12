@@ -1,7 +1,5 @@
 # Problem 9
 
-> Verbatim copy of one row of the Mathathon problem sheet. The text under each heading is the cell text, unchanged. See [README.md](README.md).
-
 ## Problem ID
 
 9
@@ -35,8 +33,6 @@ van den Heuvel and Wood proof: https://arxiv.org/abs/1704.06536
 
 The main goal is to obtain an elegant, self-contained proof of the Clustered Hadwiger's theorem. A weaker outcome would be an improvement  of van den Heuvel and Wood bound, which retains a short proof. A stronger outcome would be a self-contained proof of a strengthening The Clustered Hadwiger's theorem to list-colorings.
 
-## Links in the sheet
+## Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material: <https://arxiv.org/abs/1704.06536>
+- <https://arxiv.org/abs/1704.06536>

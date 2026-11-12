@@ -1,7 +1,5 @@
 # Problem 125
 
-> Verbatim copy of one row of the Mathathon problem sheet. The text under each heading is the cell text, unchanged. See [README.md](README.md).
-
 ## Problem ID
 
 125
@@ -30,8 +28,6 @@ https://www.sciencedirect.com/science/article/pii/S0001870885710237
 
 It would be interesting to find a more combinatorial proof. 
 
-## Links in the sheet
+## Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material: <https://www.sciencedirect.com/science/article/pii/S0001870885710237>
+- <https://www.sciencedirect.com/science/article/pii/S0001870885710237>

@@ -28,11 +28,9 @@ https://www.sciencedirect.com/science/article/pii/S0167839625000214?via%3Dihub
 
 An accessible explanation of the guarantee, an illustrated restricted case, and examples that expose the method’s limits.
 
-### Links in the sheet
+### Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material: <https://www.sciencedirect.com/science/article/pii/S0167839625000214?via%3Dihub>
+- <https://www.sciencedirect.com/science/article/pii/S0167839625000214?via%3Dihub>
 
 ## AI-generated notes
 

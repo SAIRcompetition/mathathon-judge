@@ -28,11 +28,9 @@ https://github.com/openai/math/tree/main/preprints/Relative-generation-and-the-g
 
 Would hope the solution aim for a sensible humane and elegant proof instead of a list of strange unitaries.
 
-### Links in the sheet
+### Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material: <https://github.com/openai/math/tree/main/preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026?utm_source=chatgpt.com>
+- <https://github.com/openai/math/tree/main/preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026?utm_source=chatgpt.com>
 
 ## AI-generated notes
 

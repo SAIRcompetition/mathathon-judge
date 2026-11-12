@@ -28,11 +28,9 @@ https://arxiv.org/abs/2212.09857
 
 A clear historical survey, efficient and readable implementations of the algorithms
 
-### Links in the sheet
+### Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material: <https://arxiv.org/abs/2212.09857>
+- <https://arxiv.org/abs/2212.09857>
 
 ## AI-generated notes
 
