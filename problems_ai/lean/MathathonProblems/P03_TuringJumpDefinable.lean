@@ -1,24 +1,27 @@
 /-
 Mathathon Round 1, Problem 03: official Lean statement, prepared by AI. It may contain errors.
 
-Written by AI for Mathathon; not taken from an existing formalization.
-It states that the Turing jump is first-order definable in the partial order of the Turing
-degrees (Shore and Slaman, "Defining the Turing jump", Math. Res. Lett. 6 (1999)): one formula
-`φ(x, y)` in the language of partial orders, without parameters, holds of two degrees `a, b`
-exactly when `b = a'`.
-The Turing degrees and the jump are copied unchanged, into this namespace, from openai/math
-(Apache License 2.0):
-`Oracle`, `oracleFunction`, `Reduces`, `Degree` and its order from
+Source (openai/math, Apache License 2.0):
   https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DegreeRigidity.lean
-and `bit`, `oraclePrefix`, `trial`, `run`, `machine`, `Halts`, `jump` from
   https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/DegreeRigidity/Representation/CommonIdeal.lean
   https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/DegreeRigidity/Effective/UniformOracle.lean
   https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/DegreeRigidity/Effective/TableIndices.lean
   https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/DegreeRigidity/OrdinalCodes/IndexMatrix.lean
   https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/DegreeRigidity/Computability/OracleJump.lean
-There OpenAI proves that `jump Y` is c.e. in `Y`, computes every set c.e. in `Y`, and is monotone
-under `Reduces`, so it has the degree of the usual jump `Y'`. `degreeJump` (written for
-Mathathon) applies `jump` to a representative of a degree.
+Adapted: the Turing degrees and the jump are copied unchanged, into this namespace: `Oracle`,
+`oracleFunction`, `Reduces`, `Degree` and its order from the first file, and `bit`,
+`oraclePrefix`, `trial`, `run`, `machine`, `Halts`, `jump` from the other five. `degreeJump`, the
+`Language.order` structure on `Degree` and the theorem are written by AI for Mathathon; the
+theorem is not taken from an existing formalization (the theorem of the first file is that every
+order automorphism of the degrees is the identity).
+The theorem states that the Turing jump is first-order definable in the partial order of the
+Turing degrees (Shore and Slaman, "Defining the Turing jump", Math. Res. Lett. 6 (1999)): one
+formula `φ(x, y)` in the language of partial orders, without parameters, holds of two degrees
+`a, b` exactly when `b = a'`.
+In openai/math (`OracleJump.lean` above and `JumpProperties.lean` in the same directory) it is
+proved that `jump Y` is c.e. in `Y`, computes every set c.e. in `Y`, and is monotone under
+`Reduces`, so it has the degree of the usual jump `Y'`. `degreeJump` applies `jump` to a
+representative of a degree.
 -/
 
 import Mathlib

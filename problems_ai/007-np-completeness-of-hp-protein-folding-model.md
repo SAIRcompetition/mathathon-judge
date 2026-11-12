@@ -79,7 +79,7 @@ theorem hp_folding_2d_np_complete : NPComplete (HPFolding 2)
 theorem hp_folding_3d_np_complete : NPComplete (HPFolding 3)
 ```
 
-Source: written by AI for Mathathon; not taken from an existing formalization.
+Source: <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DirectedFeedback.lean> (Apache-2.0), for NP as verification by a finite-alphabet `Turing.FinTM2`, copied unchanged; the reductions, the HP model and the two theorems are written by AI for Mathathon (see the file header).
 
 #### Mathlib
 

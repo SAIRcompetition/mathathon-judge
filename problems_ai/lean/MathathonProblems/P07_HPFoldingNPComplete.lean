@@ -1,19 +1,20 @@
 /-
 Mathathon Round 1, Problem 07: official Lean statement, prepared by AI. It may contain errors.
 
-Written by AI for Mathathon; not taken from an existing formalization.
-It states that protein folding in the HP model is NP-complete on the square lattice ℤ²
+Source (openai/math, Apache License 2.0):
+  https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DirectedFeedback.lean
+Adapted: `natBits`, `pairBits`, `FiniteAlphabet`, `NPVerifier`, `NPVerifier.Accepts` and `InNP`
+(NP as verification in polynomial time by a finite-alphabet `Turing.FinTM2`) are copied
+unchanged, into this namespace. Polynomial-time many-one reductions (`PolyTimeReduction`,
+`NPComplete`) are defined in the same style; they, the HP model and the two theorems are written
+by AI for Mathathon and not taken from an existing formalization.
+The theorems state that protein folding in the HP model is NP-complete on the square lattice ℤ²
 (Crescenzi, Goldman, Papadimitriou, Piccolboni and Yannakakis, "On the complexity of protein
 folding", J. Comput. Biol. 1998) and on the cubic lattice ℤ³ (Berger and Leighton, "Protein
 folding in the hydrophobic-hydrophilic (HP) model is NP-complete", RECOMB 1998): given an H/P
 sequence and a number `k`, decide whether some self-avoiding fold has at least `k` H-H contacts
 (energy at most `-k`). An instance is the bit string `pairBits (Nat.bits k, s)` (`k` in binary,
-`true` = H); other bit strings are "no" instances. NP, as verification in polynomial time by a
-finite-alphabet `Turing.FinTM2`, is copied unchanged, into this namespace, from openai/math
-(Apache License 2.0):
-`natBits`, `pairBits`, `FiniteAlphabet`, `NPVerifier`, `NPVerifier.Accepts`, `InNP` in
-  https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DirectedFeedback.lean
-Polynomial-time many-one reductions are defined in the same style.
+`true` = H); other bit strings are "no" instances.
 -/
 
 import Mathlib
