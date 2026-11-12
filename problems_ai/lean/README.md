@@ -61,7 +61,7 @@ To check the statements, run `lake exe cache get` and then `lake build` in this 
 | [70](../070-monochromatic-triangles-in-the-plane.md) | [`P70_ConvexUnitDistances.lean`](MathathonProblems/P70_ConvexUnitDistances.lean) | adapted from google-deepmind/formal-conjectures |
 | [71](../071-existence-of-the-core-in-approval-based-committee-elections.md) | [`P71_CoreExistence.lean`](MathathonProblems/P71_CoreExistence.lean) | adapted from DominikPeters/ABCVotingLean |
 | [72](../072-cayleys-formula-a-proof-zoo.md) | [`P72_CayleyFormula.lean`](MathathonProblems/P72_CayleyFormula.lean) | adapted from ProofAtlas, Advameg, Inc. |
-| [73](../073-lagrange-inversion-combinatorial-proofs.md) | [`P73_LagrangeInversion.lean`](MathathonProblems/P73_LagrangeInversion.lean) | adapted from manman4/mathlib4, head of the open Mathlib pull request #43871 |
+| [73](../073-lagrange-inversion-combinatorial-proofs.md) | [`P73_LagrangeInversion.lean`](MathathonProblems/P73_LagrangeInversion.lean) | adapted from manman4/mathlib4, branch of Mathlib pull request #43871 (open on 12 November 2026) |
 | [74](../074-the-cap-set-problem-and-the-slice-rank-method.md) | [`P74_CapSet.lean`](MathathonProblems/P74_CapSet.lean) | adapted from lean-forward/cap_set_problem, Lean 3 |
 | [75](../075-stanleys-poset-inequality.md) | [`P75_StanleyInequality.lean`](MathathonProblems/P75_StanleyInequality.lean) | written by AI |
 | [76](../076-the-circulant-hadamard-conjecture.md) | [`P76_CirculantHadamard.lean`](MathathonProblems/P76_CirculantHadamard.lean) | adapted from openai/math |

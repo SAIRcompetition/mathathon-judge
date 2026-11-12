@@ -1,7 +1,8 @@
 /-
 Mathathon Round 1, Problem 73: official Lean statement, prepared by AI. It may contain errors.
 
-Source (manman4/mathlib4, head of the open Mathlib pull request #43871; Apache License 2.0):
+Source (manman4/mathlib4, branch of Mathlib pull request #43871, open on 12 November 2026;
+Apache License 2.0):
   https://github.com/manman4/mathlib4/blob/21d5273c20a3771ded85855b0f429fdc76c1b080/Mathlib/RingTheory/PowerSeries/LagrangeInversion.lean
 Adapted: the statement of `lagrange_inversion_coeff_pow` is copied unchanged, except that the
 section variables it uses are written as explicit binders of the theorem, in the same order, so

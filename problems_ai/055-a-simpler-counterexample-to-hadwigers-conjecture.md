@@ -95,9 +95,11 @@ theorem not_hadwiger_conjecture :
       G.chromaticNumber ≤ ↑(hadwigerNumber G))
 ```
 
+The problem asks for a simpler counterexample, which need not have the parameters of `exists_counterexamples` (Theorem 1.1 with Corollary 1.2 of the preprint); a Lean-verified claim of a new counterexample proves `not_hadwiger_conjecture`.
+
 Source: <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HadwigerCounterexample.lean> (copied unchanged).
 
-A Lean proof of this statement already exists: <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/HadwigerCounterexample/Main.lean>. A Lean-verified claim must not use or copy it.
+A Lean proof of both statements already exists: <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/HadwigerCounterexample/Main.lean>. A Lean-verified claim must not use or copy it.
 
 #### Mathlib
 

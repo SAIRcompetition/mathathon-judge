@@ -110,14 +110,14 @@ theorem no_polynomial_removal_bound :
           c * Real.rpow ε C * ((n : ℝ) ^ 8)
 ```
 
-Here `fixedH` is Wang's $4\times4$ pattern $H_4$ and the statement is his Corollary 1.2: no bound $N_{H_4}(A)\ge c\,\mathrm{dist}_{H_4}(A)^C\,n^8$ holds for all binary matrices $A$. Wang reports a Lean proof of his own formulation in the ancillary files of arXiv:2610.15370; it has not been checked here, and it is not copied because the paper carries arXiv's non-exclusive licence. A Lean-verified claim must not use or copy it.
+Here `fixedH` is Wang's $4\times4$ pattern $H_4$ and the statement is his Corollary 1.2: no bound $N_{H_4}(A)\ge c\,\mathrm{dist}_{H_4}(A)^C\,n^8$ holds for all binary matrices $A$. Wang reports a Lean proof of his own formulation: the arXiv record of arXiv:2610.15370 says that the Lean sources are included as ancillary files, but none are attached to version 1 (checked 12 November 2026), so his formulation could not be compared with this statement. A Lean-verified claim must not use or copy his proof.
 
 Source: <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatrixRemoval.lean> (Apache License 2.0). Adapted: OpenAI's statement for its $66\times66$ pattern is copied with the pattern replaced by $H_4$ and the exponent $132$ of $n$ by $8$.
 
 #### Related Lean formalizations
 
 - OpenAI, [`OAI.Problem348.no_polynomial_removal_bound`](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatrixRemoval.lean): a Lean statement that the 66×66 pattern has no polynomial removal bound, with a proof in the [MatrixRemoval](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/MatrixRemoval) library (`Main.lean`).
-- Z. Wang, Lean 4.24.0 development in the ancillary files of [arXiv:2610.15370](https://arxiv.org/abs/2610.15370): the author reports declarations `end_to_end_main_theorem` and `no_polynomial_removal_bound` for the 4×4 pattern, and an axiom audit allowing only `propext`, `Classical.choice` and `Quot.sound`.
+- Z. Wang, Lean 4.24.0 development described in [arXiv:2610.15370](https://arxiv.org/abs/2610.15370) and announced there as ancillary files, none of which are attached to version 1 (checked 12 November 2026): the author reports declarations `end_to_end_main_theorem` and `no_polynomial_removal_bound` for the 4×4 pattern, and an axiom audit allowing only `propext`, `Classical.choice` and `Quot.sound`.
 
 These projects are described as their authors describe them; their proofs have not been checked.
 
