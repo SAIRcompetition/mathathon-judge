@@ -96,7 +96,7 @@ theorem sub_one_mul_padicValNat_fussCatalan (p k n : ℕ) [Fact p.Prime] (hk : 1
       (p.digits ((p ^ k - 1) * n + 1)).sum - 1
 ```
 
-This is Konvalinka's Proposition 2, $\nu_p\big(C^{(q)}_n\big)=\frac{s_p((q-1)n+1)-1}{p-1}$ for $q=p^k$, multiplied by $p-1$ as in Mathlib's Legendre formula, with `fussCatalan q n` $=\binom{qn}{n}/((q-1)n+1)$. The problem asks for a combinatorial proof of this formula through symmetries of $q$-ary trees, which a Lean statement cannot require.
+This is Konvalinka's Proposition 2, $\nu_p\big(C^{(q)}_n\big)=\frac{s_p((q-1)n+1)-1}{p-1}$ for $q=p^k$, multiplied by $p-1$ as in Mathlib's Legendre formula, with `fussCatalan q n` $=\binom{qn}{n}/((q-1)n+1)$. The problem asks for a combinatorial proof of this formula through symmetries of $q$-ary trees, which a Lean statement cannot require. The statement itself has a short Lean proof from Legendre's formula `sub_one_mul_padicValNat_factorial` (written and compiled during a review in November 2026), so a Lean proof of it does not by itself address the problem.
 
 Source: written by AI for Mathathon; not taken from an existing formalization.
 
