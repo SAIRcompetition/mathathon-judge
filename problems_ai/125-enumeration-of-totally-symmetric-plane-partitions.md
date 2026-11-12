@@ -17,10 +17,6 @@ It would be interesting to find a more combinatorial proof.
 
 https://www.sciencedirect.com/science/article/pii/S0001870885710237
 
-### Reference links
-
-- <https://www.sciencedirect.com/science/article/pii/S0001870885710237>
-
 ## AI-generated notes
 
 <!-- status: Proved -->
