@@ -25,7 +25,7 @@ https://github.com/openai/math/blob/main/preprints/Termination-of-generalized-lo
 
 <!-- status: Proved (preprint) -->
 
-- **Status:** Claimed in unrefereed OpenAI preprints: termination for projective log canonical fourfolds with rational boundary (24 September 2026) and for generalized log canonical flips on compact Kähler fourfolds (5–7 October 2026); earlier work covered only special cases (terminal, canonical, pseudo-effective, big boundary).
+- **Status:** Claimed in unrefereed OpenAI preprints: termination for projective log canonical fourfolds with rational boundary (24 September 2026) and for generalized log canonical flips on compact Kähler fourfolds (6–7 October 2026); earlier work covered only special cases (terminal, canonical, pseudo-effective, big boundary).
 - **Task:** A unified, more birational account of the termination proof that isolates what depends on dimension four and what blocks higher dimensions.
 - **Key reference:** [OpenAI, "Termination of generalized log canonical flips on compact Kähler fourfolds", preprint, 7 October 2026](https://github.com/openai/math/blob/main/preprints/Termination-of-generalized-log-canonical-flips-on-compact-Kahler-fourfolds-October-7-2026/termination-generalized-lc-kahler-fourfolds.pdf)
 - **Lean:** No official statement.

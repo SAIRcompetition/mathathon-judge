@@ -27,7 +27,7 @@ https://web.math.princeton.edu/~pds/papers/GM20/GM20.pdf"
 
 <!-- status: Proved -->
 
-- **Status:** Proved by N. Robertson and P. D. Seymour in the Graph Minors series, completed in Graph Minors XX (2004); conjectured by K. Wagner.
+- **Status:** Proved by N. Robertson and P. D. Seymour in the Graph Minors series, completed in Graph Minors XX (2004); the statement is known as Wagner's conjecture, although Wagner said he never conjectured it.
 - **Task:** A shorter, simpler proof of the graph minor theorem, and a Lean proof of it with a reusable library for minors, tree decompositions and finite forbidden-minor characterizations.
 - **Key reference:** [N. Robertson, P. D. Seymour, "Graph Minors. XX. Wagner's conjecture", J. Combin. Theory Ser. B 92 (2004), 325–357](https://doi.org/10.1016/j.jctb.2004.08.001) (author copy: <https://web.math.princeton.edu/~pds/papers/GM20/GM20.pdf>)
 - **Lean:** Official statement.

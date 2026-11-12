@@ -54,7 +54,7 @@ Open (Stanley 1980, §7): can $M(n)$ be partitioned into saturated chains $x_i<x
 ### Background
 
 - Lindström conjectured that $M(n)$ is Sperner. Stanley's Corollary 5.3 settles a conjecture of Erdős and Moser: among sets $A$ of $n$ distinct reals, the maximum number of subsets of $A$ with equal sums is attained for $A=\{-\lfloor\frac{n-1}2\rfloor,\dots,\lfloor\frac n2\rfloor\}$.
-- For the Gaussian binomials $\binom{m+n}{m}_q$ (the lattice $L(m,n)$) there is a constructive proof of unimodality (O'Hara 1990), and SCDs are known for $m\le6$: Lindström ($m=3$), West ($m=4$), Wen ($m=5$, and $m=6$ in 2026). For $M(n)$ much less is known (Dorward, §1).
+- For the Gaussian binomials $\binom{m+n}{m}_q$ (the lattice $L(m,n)$) there is a constructive proof of unimodality (O'Hara 1990), and SCDs are known for $m\le6$: Lindström ($m=3$), West ($m=4$), Wen ($m=5$, and $m=6$ in 2026). Stanley's note added in proof credits W. Riess (Erlangen report, April 1978) with the first proof for $m=3$ and $m=4$. For $M(n)$ much less is known (Dorward, §1).
 - Stanley and Zanello study strict partitions inside other shifted shapes, where unimodality can fail.
 
 ### Where to start

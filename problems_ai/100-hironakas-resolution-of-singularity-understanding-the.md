@@ -47,10 +47,10 @@ Jarosław Włodarczyk, “Simple Hironaka resolution in characteristic zero,” 
 
 (Formulation from Bierstone–Milman 1999, §1.4.) In particular every variety in characteristic zero has a proper birational resolution by a smooth variety. Later proofs make the centres canonical: they are determined by a local invariant, independent of choices.
 
-Examples in Bierstone–Milman, §1:
-- The cone $x^2-y^2-z^2=0$ is resolved by one blowup of the origin. In the chart $x=u$, $y=uv$, $z=uw$ the total transform is $u^2(1-v^2-w^2)=0$, with exceptional divisor $u=0$ and smooth strict transform $v^2+w^2=1$.
-- For $z^3-x^2yz-x^4=0$, which has order 3 along the $y$-axis, blowing up that axis ($x=u$, $y=v$, $z=uw$) gives $u^3(w^3-vw-u)=0$. The strict transform is smooth but not transverse to $u=0$ at the origin, so embedded resolution needs further blowups.
-- A naive choice: for the Whitney umbrella $x^2=y^2z$, blowing up the origin gives back $x_1^2=y_1^2z$ in the chart $x=x_1z$, $y=y_1z$, so repeatedly blowing up the "worst point" never terminates; blowing up the singular line $x=y=0$ resolves it in one step.
+Examples in Bierstone–Milman:
+- (§1) The cone $x^2-y^2-z^2=0$ is resolved by one blowup of the origin. In the chart $x=u$, $y=uv$, $z=uw$ the total transform is $u^2(1-v^2-w^2)=0$, with exceptional divisor $u=0$ and smooth strict transform $v^2+w^2=1$.
+- (§1) For $z^3-x^2yz-x^4=0$, which has order 3 along the $y$-axis, blowing up that axis ($x=u$, $y=v$, $z=uw$) gives $u^3(w^3-vw-u)=0$. The strict transform is smooth but not transverse to $u=0$ at the origin, so embedded resolution needs further blowups.
+- (§3, Remark 3.7) The Whitney umbrella $x^2=y^2z$. Blowing up the origin gives back $x_1^2=y_1^2z$ in the chart $x=x_1z$, $y=y_1z$, so a rule that looks only at the singularity and always blows up its "worst point" can repeat forever. Bierstone–Milman's invariant also records the exceptional divisors created by earlier blowups. With no earlier blowups it chooses the origin as the centre; when the same singularity appears after earlier blowups (year four of their Example 3.1), it chooses the singular line $x=y=0$ instead, and that blowup resolves it. The algorithm terminates because of this record of the history, not because it avoids point centres.
 
 ### How the known proof works
 
@@ -108,4 +108,4 @@ This project is described as its author describes it; its proofs have not been c
 
 #### Mathlib
 
-Mathlib has schemes, `AlgebraicGeometry.Proj`, smooth and proper morphisms (`AlgebraicGeometry.Smooth`, `AlgebraicGeometry.IsProper`), regular local rings (`IsRegularLocalRing`) and Rees algebras (`reesAlgebra`, whose docstring anticipates blowups). It has no blowups, strict transforms, normal crossings divisors, order or Hilbert–Samuel invariants of singularities, or birational morphisms.
+Mathlib has schemes, `AlgebraicGeometry.Proj`, smooth and proper morphisms (`AlgebraicGeometry.Smooth`, `AlgebraicGeometry.IsProper`), regular local rings (`IsRegularLocalRing`) and Rees algebras (`reesAlgebra`, whose docstring anticipates blowups). It has rational and birational maps of schemes (`Mathlib/AlgebraicGeometry/Birational/`), but no blowups, strict transforms, normal crossings divisors, or order or Hilbert–Samuel invariants of singularities.
