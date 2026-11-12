@@ -7,7 +7,7 @@
 
 ### Description
 
-(Note: this is a shorted re-write of the original submission, which was long and mostly in LaTeX)
+(Note: this is a shortened re-write of the original submission, which was long and mostly in LaTeX)
 
 H^p(T^2) consists of L^p functions on the 2-torus whose Fourier coefficients vanish for negative indices (analytic functions in both variables). H^2 ⊙ H^2 is the "weak product": all H^1 functions expressible as infinite sums h = Σ f_j g_j (f_j, g_j ∈ H^2) with Σ ||f_j||_2 ||g_j||_2 < ∞.
 

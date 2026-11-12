@@ -7,11 +7,11 @@
 
 ### Description
 
-This is a famous old result, but a very complicated one and it may be a good idea to revisit it. Riemann surfaces fall into 3 classes - 1)  complex projective line also called Riemann sphere, 2) elliptic curves 3) curves of genus 2 and more, with spherical, flat and hyperbolic geometry respectively. In complex dimension two, the analogue of this is Kodaira's classification of surfaces, and the analogue of Riemann sphere are Del Pezzo surfaces. In dimension 3 and more they are called Fano 3,4,5..folds. Iskovitch classified Fano 3-folds in the seventies. 
+This is a famous old result, but a very complicated one and it may be a good idea to revisit it. Riemann surfaces fall into 3 classes - 1)  complex projective line also called Riemann sphere, 2) elliptic curves 3) curves of genus 2 and more, with spherical, flat and hyperbolic geometry respectively. In complex dimension two, the analogue of this is Kodaira's classification of surfaces, and the analogue of Riemann sphere are Del Pezzo surfaces. In dimension 3 and more they are called Fano 3,4,5..folds. Iskovskikh classified Fano 3-folds in the seventies. 
 
 ### Desired outcome
 
-The problem is to learn what Fano means, understand classification in Dimensions 1,2. Check classication in dimension 3, and finally see what prevents these methods from extending to higher dimensions.
+The problem is to learn what Fano means, understand classification in Dimensions 1,2. Check classification in dimension 3, and finally see what prevents these methods from extending to higher dimensions.
 
 ### References
 

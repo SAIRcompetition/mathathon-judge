@@ -24,7 +24,7 @@ Participants can aim to create:
 
 1. Duncan Dauvergne, "The Archimedean Limit of Random Sorting Networks," Journal of the American Mathematical Society 35 (2022), 1215–1267 (arXiv:1802.08934). Sections 1.1 and 1.2 state the trajectory theorem, and Section 1.6 outlines the proof.
 
-2. Mustazee Rahman, Bálint Virág, and Máté Vizer, "Geometry of Permutation Limits," Annals of Probability 47 (2019), 1398–1419 (arXiv:1609.03891). Theorem 2 and Corollary 2.1 reduce the trajectory limit to a sharp short-time bound on mean-square displacement.
+2. Mustazee Rahman, Bálint Virág, and Máté Vizer, "Geometry of Permutation Limits," Combinatorica 39 (2019), 933–960 (arXiv:1609.03891). Theorem 2 and Corollary 2.1 reduce the trajectory limit to a sharp short-time bound on mean-square displacement.
 
 3. Omer Angel, Alexander Holroyd, Dan Romik, and Bálint Virág, "Random Sorting Networks," Advances in Mathematics 215 (2007), 839–868 (arXiv:math/0609538). Theorem 1 establishes time stationarity, and Section 4 describes the bijection with staircase standard Young tableaux.
 
@@ -39,7 +39,6 @@ Participants can aim to create:
 
 ### Notes
 
-- Rahman–Virág–Vizer appeared in Combinatorica 39 (2019), 933–960, not in Ann. Probab. 47 (2019), 1398–1419 as the sheet says.
 - The target constant may be off by a factor 2 (our reading, worth checking with the proposer). By the sheet's own identity, $\sum_i(\sigma_m(i)-i)^2=2\sum_{k\le m}g_k$, where $g_k$ is the label gap of the $k$-th swap. In these units RVV's condition (1.8) reads $\mathbb E\sum_i(\sigma_m(i)-i)^2\le(\pi^2/3+o(1))\,m^2/n$, so the expected gap sum must be at most $(\pi^2/6+o(1))\,m^2/n$; the sheet's $(\pi^2/3)\,m^2/n$ is the bound for squared displacements. A small exact-sampling simulation we ran ($n=150$, $m\approx N/10$, 20 networks) gave a mean gap sum about $1.05\cdot(\pi^2/6)m^2/n$, i.e. about half of $(\pi^2/3)m^2/n$.
 - Only an upper bound is needed: RVV's Corollary 2.1 also assumes tightness and approximate stationarity, which hold for uniform sorting networks (AHRV, Theorems 1 and 3).
 
