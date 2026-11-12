@@ -1,7 +1,5 @@
 # Problem 33
 
-> Verbatim copy of one row of the Mathathon problem sheet. The text under each heading is the cell text, unchanged. See [README.md](README.md).
-
 ## Problem ID
 
 33
@@ -37,8 +35,6 @@ A. Soifer, The New Mathematical Coloring Book: Mathematics of Coloring and the C
 - They don't have Lean formalization (unless we count ""sorry"" instead of the whole theorem as the formalization) so that could be done.
 - Maybe try to find an explicit finite 6-chromatic unit-distance graph. By de Bruijn–Erdős one must exist if the theorem is true. Though that would be a more computerized proof and less comprehensible proof that OpenAI's, so idk :D"
 
-## Links in the sheet
+## Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material, on the text “https://github.com/openai/math/blob/main/preprints/The-Euclidean-plane-is-not-five-colorable-September-23-2026/paper.pdf”: <https://github.com/openai/math/blob/main/preprints/The-Euclidean-plane-is-not-five-colorable-September-23-2026/paper.pdf>
+- <https://github.com/openai/math/blob/main/preprints/The-Euclidean-plane-is-not-five-colorable-September-23-2026/paper.pdf>

@@ -28,11 +28,9 @@ https://github.com/openai/math/tree/main/preprints/A-Negative-Solution-to-the-Fi
 
 A specific upper bound like maybe n<=10^{10^10} with an understandable proof.
 
-### Links in the sheet
+### Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material: <https://github.com/openai/math/tree/main/preprints/A-Negative-Solution-to-the-Finite-Lattice-Representation-Problem-September-24-2026>
+- <https://github.com/openai/math/tree/main/preprints/A-Negative-Solution-to-the-Finite-Lattice-Representation-Problem-September-24-2026>
 
 ## AI-generated notes
 

@@ -28,11 +28,9 @@ https://github.com/openai/math/blob/main/preprints/The-maximum-number-of-mutuall
 
 Explain its quantum-information significance; Check pieces of the computational certificate; Distinguish the formally verified result from the stronger headline claim.
 
-### Links in the sheet
+### Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material: <https://github.com/openai/math/blob/main/preprints/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026.pdf>
+- <https://github.com/openai/math/blob/main/preprints/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026.pdf>
 
 ## AI-generated notes
 

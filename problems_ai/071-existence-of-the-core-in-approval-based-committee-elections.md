@@ -28,11 +28,9 @@ https://arxiv.org/pdf/2609.11912
 
 Explain intuitively the idea behind "Harmonic Entropy" (section 5 of the paper)
 
-### Links in the sheet
+### Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material: <https://arxiv.org/pdf/2609.11912>
+- <https://arxiv.org/pdf/2609.11912>
 
 ## AI-generated notes
 

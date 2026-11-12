@@ -1,7 +1,5 @@
 # Problem 50
 
-> Verbatim copy of one row of the Mathathon problem sheet. The text under each heading is the cell text, unchanged. See [README.md](README.md).
-
 ## Problem ID
 
 50
@@ -30,8 +28,6 @@ https://github.com/openai/math/blob/main/preprints/Hilberts-tenth-problem-over-t
 
 Verify the proof and write an exposition which is accessible to an undergraduate mathematics student.
 
-## Links in the sheet
+## Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material: <https://github.com/openai/math/blob/main/preprints/Hilberts-tenth-problem-over-the-rational-numbers-September-24-2026/main.pdf>
+- <https://github.com/openai/math/blob/main/preprints/Hilberts-tenth-problem-over-the-rational-numbers-September-24-2026/main.pdf>

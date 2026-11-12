@@ -28,11 +28,9 @@ https://dl.acm.org/doi/abs/10.1145/279069.279080
 
 Ideally a formalized proof in Lean; alternatively, a simplification of the construction(s).
 
-### Links in the sheet
+### Reference links
 
-These hyperlinks are attached to cells of this row in the sheet. They are listed here because a plain-text copy of the cells does not show them.
-
-- Reference/source material: <https://dl.acm.org/doi/abs/10.1145/279069.279080>
+- <https://dl.acm.org/doi/abs/10.1145/279069.279080>
 
 ## AI-generated notes
 
