@@ -30,10 +30,6 @@ The 1976 Proof: https://projecteuclid.org/journals/illinois-journal-of-mathemati
 
 Gonthier's formalization: Gonthier, “Formal proof—the four-color theorem,” Notices of the AMS 55 (2008)
 
-### Reference links
-
-- <https://thomas.math.gatech.edu/FC/fourcolor.html>
-
 ## AI-generated notes
 
 <!-- status: Proved -->
