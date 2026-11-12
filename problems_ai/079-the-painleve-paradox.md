@@ -17,10 +17,6 @@ A visual explanation and a worked proof for a restricted case. A small simulatio
 
 https://pmc.ncbi.nlm.nih.gov/articles/PMC5493941/
 
-### Reference links
-
-- <https://pmc.ncbi.nlm.nih.gov/articles/PMC5493941/>
-
 ## AI-generated notes
 
 <!-- status: Not a single theorem -->
