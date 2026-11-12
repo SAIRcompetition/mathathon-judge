@@ -3,11 +3,13 @@ Mathathon Round 1, Problem 69: official Lean statement, prepared by AI. It may c
 
 Source (google-deepmind/formal-conjectures, Apache License 2.0):
   https://github.com/google-deepmind/formal-conjectures/blob/3f4490479b53386e1c18d2cccf4f1164c16655ca/FormalConjectures/Wikipedia/InverseGalois.lean
-Adapted: the structure `GaloisRealization`, the class `IsRealizable` and the theorem
-`inverse_galois_problem` are copied unchanged. The five solved variants in the source
-(cyclic, abelian, symmetric groups, and two function-field versions) are left out, as are the
-formal-conjectures imports and metadata attributes. The inverse Galois problem over ℚ is
-open; the theorem states it as a conjecture.
+Adapted: the structure `GaloisRealization` and the class `IsRealizable` are copied unchanged.
+The source's theorem `inverse_galois_problem` (every finite group) is restricted to finite
+simple groups, the case the problem asks for: it gets the hypothesis `[IsSimpleGroup G]` and is
+renamed `inverse_galois_problem_simple`. The five solved variants in the source (cyclic,
+abelian, symmetric groups, and two function-field versions) are left out, as are the
+formal-conjectures imports and metadata attributes. The inverse Galois problem over ℚ is open,
+also for simple groups; the theorem states it as a conjecture.
 -/
 
 import Mathlib
@@ -32,11 +34,10 @@ class IsRealizable (K G : Type*) [Field K] [Group G] where
   exists_realization : Nonempty (GaloisRealization K G)
 
 /--
-The **Inverse Galois Problem**: every finite group is
-isomorphic to the Galois group of a Galois extension of the
-rationals.
+The **Inverse Galois Problem for finite simple groups**: every finite simple group is
+isomorphic to the Galois group of a Galois extension of the rationals.
 -/
-theorem inverse_galois_problem {G : Type*} [Fintype G] [Group G] :
+theorem inverse_galois_problem_simple {G : Type*} [Fintype G] [Group G] [IsSimpleGroup G] :
     IsRealizable ℚ G := by
   sorry
 
