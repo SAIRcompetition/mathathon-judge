@@ -20,9 +20,9 @@ The output would ideally be a brief paper establishing a geometric explanation f
 
 ## AI-generated notes
 
-<!-- status: Proved -->
+<!-- status: Open -->
 
-- **Status:** The correction formula is proved: J. Gwoździewicz (Univ. Iagel. Acta Math., 2010) generalizes Kouchnirenko's Newton-polygon formula (1976) to all convenient germs; a topological explanation of the correction term, as asked here, is not in the literature we found.
+- **Status:** Open as far as we found: the correction formula itself is proved (J. Gwoździewicz, Univ. Iagel. Acta Math., 2010, generalizing Kouchnirenko's Newton-polygon formula of 1976 to all convenient germs), but a topological explanation of the correction term, which is what is asked here, is not in the literature we found.
 - **Task:** Explain Gwoździewicz's correction term by a concrete topological operation relating the Milnor fibre of a Newton-degenerate curve to that of a nondegenerate one with the same Newton polygon.
 - **Key reference:** [J. Gwoździewicz, “Generalized Noether's formulas for plane curves singularities”, Univ. Iagel. Acta Math. 48 (2010), 55–62](https://ruj.uj.edu.pl/server/api/core/bitstreams/5759f599-8225-4c9b-8444-42ddb9550ec7/content)
 - **Lean:** No official statement.

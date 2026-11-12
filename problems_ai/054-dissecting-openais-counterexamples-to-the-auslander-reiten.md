@@ -57,7 +57,7 @@ https://link.springer.com/book/10.1007/BFb0059997
 ### Notes
 
 - arXiv 2609.19172 (H. Enomoto, R. Marczinzik) proves ARC, the Nakayama and generalized Nakayama conjectures and both Tachikawa conjectures globally equivalent: over a fixed commutative artinian ring they hold for all Artin algebras or fail together, not algebra by algebra.
-- Tang's note (Hexagon 2610.00143, by its own statement AI-generated and offered for independent review) extends the construction to more fields and claims counterexamples to the little and big finitistic dimension conjectures (OpenAI claims the little one separately). The page links version 1; version 5 (October 23, 2026) is current.
+- Tang's note (Hexagon 2610.00143, labelled on Hexagon as a mix of human-written and AI-generated text, and offered for independent review) extends the construction to more fields and claims counterexamples to the little and big finitistic dimension conjectures (OpenAI claims the little one separately). The page links version 1; version 5 (October 23, 2026) is current.
 - The question whether the examples are isolated already has a claimed partial answer: H. Chen (arXiv:2611.12176, 9 November 2026, written with substantial GPT-6.1 assistance according to its declaration) builds a family of counterexamples to TC2 from Frobenius algebras with a suitable module. None of these preprints is refereed.
 
 ### The result
@@ -77,7 +77,7 @@ Structure as given in the Auslander–Reiten preprint (Section 1.2, Figure 1):
 ### Background
 
 - Classical global equivalences: ARC with the generalized Nakayama conjecture (Auslander–Reiten 1975); the Nakayama conjecture with TC1 and TC2 together (Müller 1968, Tachikawa 1973).
-- Known positive cases include radical cube zero (Zhang–Zhou) and quantum complete intersections (Xia). Schulz (1994) gave a nonprojective module without self-extensions over an algebra over a skew field; his quantum exterior algebra examples supply the parameter shifting reused here.
+- Known positive cases include radical cube zero (Zhang–Zhou) and quantum complete intersections (Xia). Schulz (1994) gave a nonprojective module without self-extensions over an algebra over a skew field; his quantum exterior algebra examples (Schulz 1995, Example 7) supply the parameter shifting reused here.
 - The commutative case is not resolved by these constructions. Tang's Corollary 1.2 covers every field of characteristic zero and every positive-characteristic field not algebraic over its prime field.
 - Chen's construction takes a Frobenius algebra $H$ and a module $M_0$ with $\tau_HM_0\cong M_0$, stable endomorphism algebra $k$ and $\mathrm{Ext}^i_H(M_0,M_0)=0$ for $i\ge2$, over a field with an element of infinite multiplicative order. It yields a symmetric algebra with a nonprojective self-orthogonal module of complexity three whose stable endomorphism algebra is $k[\varepsilon]/(\varepsilon^2)$, and describes a related derived category through a formal dg algebra with a four-dimensional model. Chen asks whether TC2 holds over finite fields, and for modules of complexity at most two.
 
@@ -101,6 +101,7 @@ Prerequisites: finite-dimensional algebras, Ext, symmetric algebras, stable modu
 ### Further references
 
 - R. Schulz, "A non-projective module without self-extensions", Arch. Math. 62 (1994), 497–500. <https://doi.org/10.1007/BF01193735>
+- R. Schulz, "Finite generation of the extension algebra Ext(M, M)", J. Austral. Math. Soc. Ser. A 59 (1995), 366–374. <https://doi.org/10.1017/S1446788700037265>
 - OpenAI, "An algebra of infinite little finitistic dimension", preprint, September 23, 2026. <https://github.com/openai/math/blob/main/preprints/An-algebra-of-infinite-little-finitistic-dimension-September-23-2026/paper.pdf>
 - H. Chen, "From Frobenius seeds to self-orthogonal modules over symmetric algebras", arXiv:2611.12176, 2026. <https://arxiv.org/abs/2611.12176>
 - X. Zhang and P. Zhou, "Igusa–Todorov algebras and the Auslander–Reiten conjecture", arXiv:2609.14453, 2026. <https://arxiv.org/abs/2609.14453>

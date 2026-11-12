@@ -120,7 +120,7 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 | 102 | [Log Sobolev inequality for sine Gordon](102-log-sobolev-inequality-for-sine-gordon.md) | Analysis | Proved (preprint) | — |
 | 103 | [Rethinking Special Relativity: Axiomatizations and Underlying Mathematical Structures](103-rethinking-special-relativity-axiomatizations-and.md) | Computation/Applied Math | Not a single theorem | — |
 | 104 | [Hairer blackbox theorem](104-hairer-blackbox-theorem.md) | Analysis | Proved | — |
-| 105 | [Where is the topology hiding, which is missing from a Newton polygon?](105-where-is-the-topology-hiding-which-is-missing-from-a-newton.md) | Geometry | Proved | — |
+| 105 | [Where is the topology hiding, which is missing from a Newton polygon?](105-where-is-the-topology-hiding-which-is-missing-from-a-newton.md) | Geometry | Open | — |
 | 106 | [Game-theoretic probability](106-game-theoretic-probability.md) | Computation/Applied Math, Analysis | Proved | — |
 | 107 | [Why regular polygons have the fewest distances: an illustrated guide to Altman's theorem](107-why-regular-polygons-have-the-fewest-distances-an.md) | Geometry, Combinatorics | Proved | — |
 | 108 | [Generalizing the zeta(5) irrationality argument](108-generalizing-the-zeta-5-irrationality-argument.md) | Number Theory/Algebra | Open | — |
