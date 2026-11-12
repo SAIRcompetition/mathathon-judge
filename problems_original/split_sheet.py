@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Build the per-problem files in problems_original/ from the sheet exports in source/.
+"""Build the per-problem files in problems_original/ and the table in its README.md
+from the sheet exports in source/.
 
 Run:  python3 problems_original/split_sheet.py
 
@@ -36,6 +37,24 @@ HEADER = [
     "Desired outcome",
 ]
 LINKS_HEADING = "Reference links"
+INDEX_START = "<!-- problem-index:start -->"
+INDEX_END = "<!-- problem-index:end -->"
+
+
+def write_index(written):
+    """Rebuild the problem table in README.md, between the problem-index markers."""
+    readme = OUT / "README.md"
+    text = readme.read_text(encoding="utf-8")
+    if INDEX_START not in text or INDEX_END not in text:
+        sys.exit("README.md has no problem-index markers")
+    cell = lambda s: " ".join(s.split()).replace("|", "\\|")
+    rows = ["| ID | Problem | Tracks |", "|---|---|---|"]
+    rows += [f"| {int(row[0])} | [{cell(row[1])}]({path.name}) | {cell(row[4])} |"
+             for path, row in written]
+    head, rest = text.split(INDEX_START, 1)
+    tail = rest.split(INDEX_END, 1)[1]
+    readme.write_text(f"{head}{INDEX_START}\n" + "\n".join(rows) + f"\n{INDEX_END}{tail}",
+                      encoding="utf-8")
 
 
 def slug(title):
@@ -187,7 +206,8 @@ def main():
            if parse_back(p.read_text(encoding="utf-8")) != row[:7]]
     if bad:
         sys.exit(f"round-trip check failed for: {bad}")
-    print(f"wrote {len(written)} files; every field matches its CSV cell byte for byte; "
+    write_index(written)
+    print(f"wrote {len(written)} files and the README table; every field matches its CSV cell byte for byte; "
           f"{sum(len(v) for v in hl.values())} links in {len(hl)} cells")
 
 

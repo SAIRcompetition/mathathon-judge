@@ -1,42 +1,17 @@
-# Mathathon Round 1 problems, with AI-generated notes
+# Mathathon Round 1 problems
 
-One page per problem of the Mathathon Round 1 problem sheet (140 problems). Each page has two parts:
+The 140 Round 1 problems, one page per problem. Each page has two parts:
 
-- **From the proposer**: the proposer's title, area, tracks, description, desired outcome and references, taken from the sheet without any change to the wording (only the spacing of the title, area and tracks lines is tidied), followed by any hyperlinks attached to the sheet's cells under **Reference links**. [`../problems_original/`](../problems_original/) has the exact copy of the sheet.
+- **From the proposer**: the problem as the proposer wrote it. The exact text of the sheet is in [`problems_original`](../problems_original/README.md).
 - **AI-generated notes**: what is known, how the known proofs work, background, where to start, references with links, and the Lean status.
 
-**Everything under "AI-generated notes" was written by AI and may contain errors.** So were the Status and Lean columns of the table below and the official Lean statements in [`lean/`](lean/). Use them as a reference; the proposer's text is authoritative.
+> **The AI-generated notes, the Status and Lean columns below and the Lean statements were written by AI and may contain errors.** Use them as a reference; the proposer's text is authoritative.
 
-## Where the notes come from
-
-- **Carried over** from the earlier problem list (94 problems, in `problems/` at commit `1f49cd4`, 2026-11-10; that folder is no longer tracked): problems 1–93 except those listed below (85 problems). In 81 of them the notes are unchanged; in problems 33, 91, 92 and 93 only links that depend on the problem numbering were updated. For these problems the sheet text differs from the earlier list's copy at most in typo-level details (single characters, escaping, angle brackets around links), so the notes still apply.
-- **Revised** by Claude Opus 5.5 on 2026-11-11 because the sheet text differs substantially from the earlier list's copy: problems 2, 9, 34, 40, 54, 56 and 70.
-- **New**, written by Claude Opus 5.5 on 2026-11-11: problems 12 and 94–140.
-
-The links in the revised and new notes were checked on 2026-11-11. Three could not be reached by the automated check: an Oxford University Press book page that refuses automated access, and the ECCC and Kyungpook Mathematical Journal sites, which did not respond.
-
-## Changes from the earlier problem list
-
-- Problems 1–88 keep their numbers. Earlier problem 89 (motivating irrationality and transcendence proofs) is not in the sheet and has no page here. Earlier problems 90–94 are now problems 89–93. Problems 94–140 are new.
-- Problem 12 was withheld in the earlier list; the sheet now gives its text.
-- The sheet text of problems 2, 9, 34, 40, 54, 56 and 70 differs substantially from the earlier list's copy (problem 40 also has a new title).
-- Page titles are now the proposers' titles from the sheet rather than shortened titles.
-
-## Lean
-
-[`lean/`](lean/) is a Lean project for Lean v4.35.0 and Mathlib `v4.35.0` with the official Lean statements, copied from the earlier list's `problems/lean/` (commit `1f49cd4`). The only changes are the renumbering of three files, `P92_EuclideanRamsey.lean` → `P91_…`, `P93_Erdos173.lean` → `P92_…` and `P94_PrimeGaps186.lean` → `P93_…`, and the problem number in their first comment line; namespaces and declarations are unchanged. The statements were written by AI for the earlier problem list; no statements have been written for the new problems. Problems marked ✓ in the table have an official statement. For problem 56 the official statement (OpenAI's running-time bound with polynomial space) is stronger than what the revised problem asks for; its page explains the difference. The statements of the other revised problems still match their text.
-
-To check the statements, run `lake exe cache get` and then `lake build` in `lean/`. On 2026-11-11 the build completed without errors; every statement is stated with `sorry`, as intended.
-
-## Updating after the sheet changes
-
-1. Download the sheet exports into `problems_original/source/` and run `python3 problems_original/split_sheet.py` (see [`../problems_original/README.md`](../problems_original/README.md)).
-2. Run `python3 problems_ai/refresh_proposer_text.py`. It rewrites the title line and the **From the proposer** section of every page from `../problems_original/`, checks them against the sheet text, adds a placeholder page for any new problem and rebuilds the table below. It never changes the notes.
-3. Review the notes of every problem whose text changed, and write notes for the placeholders.
+Each team chooses one problem, and at most 4 teams can choose the same problem ([Participant Rules §3](../rules/participant-rules.md#3-problem-selection)). Problems marked ✓ have an official Lean statement: if you claim to have formalized the main theorem of such a problem, prove that statement unchanged ([Submission Guidelines §5](../rules/submission-guidelines.md#5-lean-project-optional)).
 
 ## Problems
 
-Status (AI-generated): Proved, Proved (preprint), Disproved, Disproved (preprint), Open, Partly solved, or Not a single theorem (the problem asks for an exposition, a simplification or a programme rather than one theorem). "(preprint)" means the decisive work has not yet appeared in a refereed venue.
+Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open · Partly solved · Not a single theorem (an exposition, a simplification or a programme rather than one theorem). "(preprint)" means the decisive work has not yet been refereed.
 
 <!-- problem-index:start -->
 | ID | Problem | Tracks | Status | Lean |
@@ -182,3 +157,21 @@ Status (AI-generated): Proved, Proved (preprint), Disproved, Disproved (preprint
 | 139 | [Critical scales in periodic transport homogenization](139-critical-scales-in-periodic-transport-homogenization.md) | Geometry, Analysis | Not a single theorem | — |
 | 140 | [A combinatorial proof of unimodality for (1+q)(1+q^2)...(1+q^n)](140-a-combinatorial-proof-of-unimodality-for-1-q-1-q-2-1-q-n.md) | Combinatorics | Open | — |
 <!-- problem-index:end -->
+
+## Lean statements
+
+[`lean/`](lean/) is a Lean project for Lean v4.35.0 and Mathlib `v4.35.0` with the official statements, one file per statement. Each problem page shows its statement and where it comes from. To check them, run `lake exe cache get` and then `lake build` in `lean/`. For problem 56 the statement (OpenAI's running-time bound with polynomial space) is stronger than what the revised problem asks for; its page explains this.
+
+## About the notes
+
+- Problems 1–93, except those below, keep the notes of the earlier problem list (`problems/` at commit `1f49cd4`, 2026-11-10). Only links that depend on the problem numbering changed (problems 33 and 91–93).
+- The notes of problems 2, 9, 34, 40, 54, 56 and 70 were revised, because their text in the sheet differs substantially from the earlier list, and the notes of problems 12 and 94–140 were written new, by Claude Opus 5.5 on 2026-11-11. Their links were checked that day; three sites could not be reached automatically (an Oxford University Press book page, ECCC and the Kyungpook Mathematical Journal).
+- Compared with the earlier list, earlier problem 89 is not in the sheet, earlier problems 90–94 are now 89–93, problem 12 (withheld before) now has its text, and page titles are the proposers' own titles.
+
+## For maintainers
+
+When the sheet changes:
+
+1. Update [`problems_original`](../problems_original/README.md) as described there.
+2. Run `python3 problems_ai/refresh_proposer_text.py`. It rewrites the **From the proposer** part of every page and the table above, checks the text against the sheet, adds a placeholder page for any new problem, and never changes the notes.
+3. Review the notes of every problem whose text changed, and write notes for the placeholders.
