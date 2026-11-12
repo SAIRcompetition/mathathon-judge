@@ -26,12 +26,6 @@ Averaged variant of the conjecture was proved by Matomaki-Radziwiłł-Tao
 Best known bound for the logarithmic variant of the conjecture:
 Cédric Pilatte. "Improved bounds for the two-point logarithmic Chowla conjecture." Journal of the American Mathematical Society DOI: 10.1090/jams/1084
 
-
-
-### Reference links
-
-- <https://www.sciencedirect.com/science/article/pii/S0167839625000214?via%3Dihub>
-
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
