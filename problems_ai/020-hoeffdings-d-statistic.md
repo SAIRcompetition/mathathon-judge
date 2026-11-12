@@ -65,7 +65,7 @@ Prerequisites: ranks and empirical distribution functions, U-statistics, permuta
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for an explanation of the D statistic and of its null distribution, not for the proof of one theorem.
+This problem has no official Lean statement: it asks for an explanation of Hoeffding's D statistic and for the exact null distribution of $D_n$ at moderate sample sizes, which is a computation, not the proof of one theorem.
 
 #### Mathlib
 

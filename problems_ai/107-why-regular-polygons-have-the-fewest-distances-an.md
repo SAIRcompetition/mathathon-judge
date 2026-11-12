@@ -28,7 +28,7 @@ Low barrier to entry: the statements are elementary, the two Altman papers are 1
 - **Status:** Proved: E. Altman (1963) showed that a convex $n$-gon has at least $\lfloor n/2\rfloor$ distinct distances between vertices, with equality for odd $n$ only for the regular $n$-gon; P. Fishburn (1995) characterized the extremal polygons for even $n$.
 - **Task:** An illustrated, interactive explainer of Altman's proof and of the extremal polygons that a strong high-school student can follow.
 - **Key reference:** [E. Altman, “On a problem of P. Erdős”, Amer. Math. Monthly 70 (1963), 148–157](https://doi.org/10.2307/2312883)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -82,7 +82,16 @@ Prerequisites: high-school geometry (triangle inequality, angles in convex polyg
 
 #### Official statement
 
-This problem has no official Lean statement. Altman's bound can be stated with Mathlib alone (formal-conjectures does so); the extremal characterizations also need regular polygons up to similarity, which Mathlib does not define.
+`Erdos93.erdos_93` in [`lean/MathathonProblems/P107_AltmanDistinctDistances.lean`](lean/MathathonProblems/P107_AltmanDistinctDistances.lean).
+
+```lean
+theorem erdos_93 (A : Finset ℝ²) (hA : ConvexIndep (A : Set ℝ²)) :
+    A.card / 2 ≤ distinctDistances A
+```
+
+This is Altman's bound: $n$ points in convex position in the plane determine at least $\lfloor n/2\rfloor$ distinct distances. The characterizations of the extremal polygons (Altman for odd $n$, Fishburn for even $n\ge8$) are not included. A Lean proof of the bound in a slightly different form (`Erdos93.altman_erdos` in [plby/lean-proofs](https://github.com/plby/lean-proofs/blob/1d7b3f00780b85ed0462e79a1cd5650ee9055655/src/v4.29.1/ErdosProblems/Erdos93.lean), for $n\ge3$ points in any two-dimensional real inner product space) exists and is linked from formal-conjectures; it was not checked here.
+
+Source: <https://github.com/google-deepmind/formal-conjectures/blob/a425ca3eb797fe927cb88c950565fdcbbbbada70/FormalConjectures/ErdosProblems/93.lean>, <https://github.com/google-deepmind/formal-conjectures/blob/a425ca3eb797fe927cb88c950565fdcbbbbada70/FormalConjecturesForMathlib/Geometry/Metric.lean>, <https://github.com/google-deepmind/formal-conjectures/blob/a425ca3eb797fe927cb88c950565fdcbbbbada70/FormalConjecturesForMathlib/Geometry/2d.lean> (Apache License 2.0). Adapted: the theorem and the definitions it uses are copied unchanged, the definitions moved into `namespace Erdos93`, with `ℝ²` as a local notation.
 
 #### Related Lean formalizations
 

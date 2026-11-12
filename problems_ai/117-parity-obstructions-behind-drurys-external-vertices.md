@@ -25,7 +25,7 @@ S. W. Drury, “The external vertices conjecture in case n = 4,” Electron. J. 
 - **Status:** Open: Drury's external vertices conjecture (1996) is known for $n\le3$ and, by a computer-assisted proof, for $n=4$ (Drury, 2004); no result for $n=5$ was found, so it appears to be open, as is the Marcus–de Oliveira determinantal conjecture in general.
 - **Task:** Recast an unpublished two-page proof of the case $n=4$ as a parity (2-torsion) invariant of the multiplicative relations among root monomials, implement it for general $n$, and run it at $n=5$ to prove the conjecture there or find the first facet where the obstruction vanishes.
 - **Key reference:** [S. W. Drury, “The external vertices conjecture in case n = 4”, Electron. J. Linear Algebra 11 (2004), 180–191](https://doi.org/10.13001/1081-3810.1131)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -87,7 +87,15 @@ Prerequisites: normal and unitary matrices, convex cones and their facets, linea
 
 #### Official statement
 
-This problem has no official Lean statement. For a fixed $n$ the external vertices conjecture needs only complex numbers, permutations and finite sums, and the determinantal conjecture also needs normal and unitary matrices; Mathlib has all of these.
+`Mathathon.P117.external_vertices_conjecture_five` in [`lean/MathathonProblems/P117_ExternalVertices.lean`](lean/MathathonProblems/P117_ExternalVertices.lean).
+
+```lean
+theorem external_vertices_conjecture_five : ExternalVerticesConjecture 5
+```
+
+This is Drury's external vertices conjecture for $n=5$, in the formulation of Drury (2004, §1): if $v(\sigma)=\prod_j(\alpha_j-\beta_{\sigma(j)})$ satisfies $\mathrm{Re}\,v(\sigma)\ge1$ for all $\sigma\in S_5$, then $\mathrm{Re}\,v(\sigma)=1+\sum t_{IJ}P_{IJ}(\sigma)$ with $t_{IJ}\ge0$, summed over pairs of subsets with $|I|=|J|$. The case $n=4$ is Drury's Theorem 1.1; a counterexample found by the proposed computation would prove the negation. The Marcus–de Oliveira conjecture itself, which the problem does not ask for, is `DeterminantalConjecture.determinantal_conjecture` in [google-deepmind/formal-conjectures](https://github.com/google-deepmind/formal-conjectures/blob/a425ca3eb797fe927cb88c950565fdcbbbbada70/FormalConjectures/Wikipedia/DeterminantalConjecture.lean).
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Mathlib
 

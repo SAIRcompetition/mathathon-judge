@@ -80,7 +80,7 @@ Prerequisites: Hausdorff measure, rectifiability, the monotonicity formula, cali
 
 #### Official statement
 
-This problem has no official Lean statement: the open part has no conjectured list of cones to state, and a proof of Taylor's theorem in ℝ³ would need rectifiable sets and the monotonicity formula, which Mathlib does not have yet.
+This problem has no official Lean statement: it asks to extend Taylor's classification of minimal cones to $\mathbb R^4$ and beyond, where there is no conjectured list to state (two-dimensional minimal cones in $\mathbb R^4$ come in continuous families), and Taylor's classification in $\mathbb R^3$ is the known starting point rather than the problem's claim.
 
 #### Mathlib
 

@@ -81,7 +81,7 @@ Prerequisites: parametric BvM and local asymptotic normality, Gaussian measures 
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs the nonparametric statistical models of Bernstein–von Mises theorems, which Mathlib does not have yet.
+This problem has no official Lean statement: it asks for a new Bernstein–von Mises theorem whose hypotheses cover all known nonparametric ones, a statement still to be formulated, so there is no fixed claim to state (Mathlib also has no nonparametric statistical models or Bernstein–von Mises theorem).
 
 #### Mathlib
 

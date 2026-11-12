@@ -79,7 +79,7 @@ Prerequisites: matrix exponentials and the variation-of-parameters (Duhamel) for
 
 #### Official statement
 
-This problem has no official Lean statement: it leaves the improved constant open. A bound with fixed constants could be stated with Mathlib's exponential, operator norm and commutator.
+This problem has no official Lean statement: it asks for a fourth-order bound with a smaller prefactor whose form and constants are still to be found, and it leaves open how "smaller" is measured against the eight coefficients of Childs et al.'s Proposition M.1, so there is no fixed claim to state; once its constants are fixed, such a bound can be stated with Mathlib's exponential, operator norm and commutators.
 
 #### Related Lean formalizations
 

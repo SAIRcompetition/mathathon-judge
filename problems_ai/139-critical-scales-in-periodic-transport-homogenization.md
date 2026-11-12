@@ -95,7 +95,7 @@ Prerequisites: the Benamou–Brenier formula, transport metrics on Markov chains
 
 #### Official statement
 
-This problem has no official Lean statement: it is a research programme, and its basic objects, the Wasserstein distance and dynamical (Benamou–Brenier) transport on graphs, are not in Mathlib.
+This problem has no official Lean statement: it is a research programme whose limits and estimates are still to be formulated, not a single precise claim, and its basic objects, Wasserstein distances and dynamical (Benamou–Brenier) transport metrics on graphs, are not in Mathlib.
 
 #### Mathlib
 

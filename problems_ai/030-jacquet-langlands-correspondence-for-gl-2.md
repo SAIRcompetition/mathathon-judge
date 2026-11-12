@@ -70,7 +70,7 @@ Prerequisites: representation theory of $\mathrm{GL}_2$ over local fields, adele
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs automorphic representations of GL(2) and of quaternion algebras, which Mathlib does not have yet.
+This problem has no official Lean statement: the correspondence matches automorphic representations of $\mathrm{GL}_2(\mathbb A_F)$ with those of $D^\times(\mathbb A_F)$ for a quaternion algebra $D$, place by place, and Mathlib has no automorphic representations, admissible representations of $\mathrm{GL}_2(F_v)$ or ramification of quaternion algebras over number fields, which cannot be built faithfully within a statement file; the FLT project lists the Jacquet–Langlands correspondence among the results it cannot yet state for this reason (<https://github.com/ImperialCollegeLondon/FLT/blob/a3210204ad8876e851e32f73dd97d882bf1ccd0a/FLT/Assumptions/README.md>).
 
 #### Mathlib
 

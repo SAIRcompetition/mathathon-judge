@@ -28,7 +28,7 @@ The aim should be a new, purely combinatorial proof of this known result. The st
 - **Status:** Unimodality is proved (J. W. B. Hughes, 1977, by Lie algebras; R. P. Stanley, 1980, by the hard Lefschetz theorem; R. A. Proctor, 1982, by $\mathfrak{sl}_2$-representations); a combinatorial proof, and Stanley's 1980 question whether $M(n)$ has a symmetric chain decomposition, are open.
 - **Task:** A combinatorial proof of unimodality: ideally an explicit symmetric chain decomposition of $M(n)$, uniform in $n$, or at least explicit injections from the subsets with sum $k$ to those with sum $k+1$ below the middle.
 - **Key reference:** [R. P. Stanley, "Weyl groups, the hard Lefschetz theorem, and the Sperner property", SIAM J. Algebraic Discrete Methods 1 (1980), 168–184](https://doi.org/10.1137/0601021)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -83,7 +83,17 @@ Prerequisites: graded posets, Sperner theory and symmetric chain decompositions,
 
 #### Official statement
 
-This problem has no official Lean statement. Unimodality itself is easy to state with Mathlib (coefficients of a polynomial, or counts of subsets of `Finset.range` by sum); what the problem asks for is a combinatorial proof, which a statement cannot capture.
+`Mathathon.P140.coeffProd_unimodal` in [`lean/MathathonProblems/P140_SubsetSumUnimodality.lean`](lean/MathathonProblems/P140_SubsetSumUnimodality.lean).
+
+```lean
+theorem coeffProd_unimodal (n k : ℕ) :
+    (2 * k < n * (n + 1) / 2 → coeffProd n k ≤ coeffProd n (k + 1)) ∧
+      (n * (n + 1) / 2 ≤ 2 * k → coeffProd n (k + 1) ≤ coeffProd n k)
+```
+
+`coeffProd n k` is the coefficient of $q^k$ in $(1+q)(1+q^2)\cdots(1+q^n)$, the number of subsets of $\{1,\dots,n\}$ with sum $k$; the statement says that these numbers increase up to the middle degree $n(n+1)/4$ and decrease after it. The problem asks for a combinatorial proof of this known theorem, which a Lean statement cannot require; Stanley's question whether $M(n)$ has a symmetric chain decomposition is not stated.
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Mathlib
 

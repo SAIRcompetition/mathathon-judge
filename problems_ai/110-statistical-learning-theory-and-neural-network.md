@@ -31,7 +31,7 @@ https://proceedings.mlr.press/v75/golowich18a.html
 - **Status:** Proved: the spectral-norm margin bound is due to Bartlett, Foster and Telgarsky (NeurIPS 2017); the alternative targets are also published theorems (Golowich–Rakhlin–Shamir, COLT 2018; Bartlett–Harvey–Liaw–Mehrabian, JMLR 2019).
 - **Task:** Formalize the spectral-norm margin bound in Lean, with reusable Rademacher-complexity and covering-number tools, or one of the alternative bounds (VC dimension, norm-based, PAC-Bayes).
 - **Key reference:** [P. L. Bartlett, D. J. Foster, M. Telgarsky, “Spectrally-normalized margin bounds for neural networks”, Advances in Neural Information Processing Systems 30 (2017)](https://arxiv.org/abs/1706.08498)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -90,7 +90,27 @@ Prerequisites: concentration inequalities (Hoeffding, McDiarmid), symmetrization
 
 #### Official statement
 
-This problem has no official Lean statement. A faithful statement needs only i.i.d. samples, matrix norms and Lipschitz maps, which Mathlib has, but the $\tilde O$ of Theorem 1.1 must first be replaced by the explicit constants of Lemma A.9.
+`Mathathon.P110.spectral_margin_bound` in [`lean/MathathonProblems/P110_SpectralMarginBound.lean`](lean/MathathonProblems/P110_SpectralMarginBound.lean).
+
+```lean
+theorem spectral_margin_bound (hL : 1 ≤ L) (hk : 2 ≤ d (Fin.last L))
+    (σ : (i : Fin L) → EuclideanSpace ℝ (Fin (d i.succ)) → EuclideanSpace ℝ (Fin (d i.succ)))
+    (ρ : Fin L → NNReal) (hσ : ∀ i, LipschitzWith (ρ i) (σ i)) (hσ₀ : ∀ i, σ i 0 = 0)
+    (M : (i : Fin L) → Matrix (Fin (d i.succ)) (Fin (d i.castSucc)) ℝ)
+    (P : Measure (EuclideanSpace ℝ (Fin (d 0)) × Fin (d (Fin.last L))))
+    [IsProbabilityMeasure P] (n : ℕ) (hn : 1 ≤ n) (δ : ℝ) (hδ : 0 < δ) (hδ₁ : δ < 1) :
+    (Measure.pi fun _ : Fin n => P)
+      {S | ∃ γ : ℝ, 0 < γ ∧ γ ≤ n ∧
+        ∃ A : (i : Fin L) → Matrix (Fin (d i.succ)) (Fin (d i.castSucc)) ℝ,
+          empiricalRampRisk γ (network σ A) S
+              + excessBound n δ γ (univ.sup d) ρ M A (dataNorm S) <
+            (P {z | margin (network σ A z.1) z.2 ≤ 0}).toReal}
+      ≤ ENNReal.ofReal δ
+```
+
+This is the explicit form of the spectral-norm margin bound, Lemma A.9 (eq. (A.5)) of Bartlett–Foster–Telgarsky (arXiv v2), from which they derive Theorem 1.1: with probability at least $1-\delta$ over an i.i.d. sample, every margin $\gamma$ and every network $F_A$ satisfy $\Pr[\mathcal M(F_A(x),y)\le0]\le\widehat R_\gamma(F_A)+{}$`excessBound`. The test error is the probability of a margin $\le0$, which bounds the arg-max error for every tie-breaking rule, and the nonlinearities keep the dimension. Margins are restricted to $0<\gamma\le n$: the paper's proof of Lemma A.9 needs $\gamma\le n$, and for large $\gamma$ the expression under its last square root becomes negative.
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Related Lean formalizations
 

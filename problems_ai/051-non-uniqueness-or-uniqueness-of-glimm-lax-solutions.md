@@ -77,7 +77,7 @@ Prerequisites: 1D conservation laws (Riemann problem, Glimm scheme, front tracki
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs Glimm–Lax solutions of hyperbolic conservation laws, which Mathlib does not have yet.
+This problem has no official Lean statement: Mathlib has no entropy solutions of hyperbolic systems or Glimm–Lax solutions, and the claim to be explained (uniqueness for all small $L^\infty$ data outside a meagre set) has no public precise statement, in particular no specified topology in which the exceptional set is meagre, so a Lean version would have to guess it.
 
 #### Mathlib
 

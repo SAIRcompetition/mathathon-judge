@@ -36,7 +36,7 @@ Proofs that are conceptually quite different, in lower dimensions, are also very
 - **Status:** Last case ($\mathbb R^7$) proved by Hong, Li and Wang (arXiv, September 2026), not yet refereed; false in $\mathbb R^8$ and beyond.
 - **Task:** A conceptually different proof that stability forces flatness in $\mathbb R^7$.
 - **Key reference:** [H. Hong, H. Li, G. Wang, “The stable Bernstein theorem in $\mathbb R^7$”, arXiv:2609.15720 (2026)](https://arxiv.org/abs/2609.15720)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -90,7 +90,28 @@ Prerequisites: second variation of area, Simons' identity, Green functions on co
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs stable minimal hypersurfaces, which Mathlib does not have yet.
+`Mathathon.P45.stable_bernstein_R7` in [`lean/MathathonProblems/P45_StableBernstein.lean`](lean/MathathonProblems/P45_StableBernstein.lean).
+
+```lean
+def IntrinsicStableBernstein : Prop :=
+  ∀ (M : Type u) [TopologicalSpace M] [T2Space M]
+    [ChartedSpace E6 M] [IsManifold I6 ∞ M] [Nonempty M] [ConnectedSpace M]
+    (F ν : M → E7) (hF : SmoothImmersion F)
+    (hc : CanonicallyCompleteInducedMetric hF),
+    letI : RiemannianBundle (fun x : M ↦ TangentSpace I6 x) := ⟨hF.toRiemannianMetric⟩
+    letI : MetricSpace M := canonicalInducedMetricSpace hF
+    letI : MeasurableSpace M := borel M
+    letI : BorelSpace M := ⟨rfl⟩
+    letI : SecondCountableTopology M := canonical_complete_secondCountable hF hc
+    GlobalUnitNormal F ν → Minimal F ν → RiemannianGeometricStability F ν →
+      FullConclusion F ν
+
+theorem stable_bernstein_R7 : OAI.StableBernstein.IntrinsicStableBernstein.{u}
+```
+
+`IntrinsicStableBernstein` is the source's statement of the theorem: if a smooth immersion $F\colon M^6\to\mathbb R^7$ of a connected manifold, complete for the induced Riemannian distance, has a smooth global unit normal, zero mean curvature and satisfies the stability inequality $\int|A|^2\eta^2\le\int|\nabla\eta|^2$ (Riemannian volume of the induced metric, smooth compactly supported $\eta$), then its second fundamental form vanishes and $F(M)$ is an affine hyperplane. The source directory contains no proof of it.
+
+Source: <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/StableBernstein/Model.lean> (Apache License 2.0). Adapted: the source file is copied verbatim and the theorem `Mathathon.P45.stable_bernstein_R7`, asserting its proposition `OAI.StableBernstein.IntrinsicStableBernstein`, is added.
 
 #### Mathlib
 

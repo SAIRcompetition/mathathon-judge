@@ -90,7 +90,7 @@ Prerequisites: Dirichlet convolution and Möbius inversion, the sieve of Eratost
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for a survey and implementations, and running-time bounds would need a cost model for algorithms, which Mathlib does not have.
+This problem has no official Lean statement: it asks for a historical survey and implementations, and the results it surveys are running-time and space bounds for arithmetic algorithms, some randomized, which need a cost model such as a word RAM; Mathlib counts time only as steps of Turing machines and other state-transition systems and has no such model.
 
 #### Mathlib
 

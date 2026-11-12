@@ -85,7 +85,7 @@ Prerequisites: power series in two variables, resolution of plane curves by blow
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs Milnor numbers of convergent power series, Newton diagrams, toric modifications and strict transforms, which Mathlib does not have.
+This problem has no official Lean statement: it asks for a topological explanation of the correction term in Gwoździewicz's formula, which is not a precise theorem, and the formula itself involves Milnor numbers of convergent power series and of the strict transform at the points of a toric modification, which Mathlib lacks and which cannot be defined faithfully in a short file.
 
 #### Mathlib
 

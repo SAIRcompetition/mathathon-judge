@@ -25,7 +25,7 @@ https://github.com/openai/math/blob/main/preprints/Positive-scalar-curvature-for
 - **Status:** Proved for manifolds with spin universal cover by Ma–Wang–Xie–Yu–Zhu (arXiv 2026); claimed in full by an OpenAI preprint (September 2026); neither is refereed yet.
 - **Task:** Extend the Ma et al. index-theoretic method to OpenAI's rational-inessentiality theorem.
 - **Key reference:** [Q. Ma, J. Wang, Z. Xie, G. Yu, B. Zhu, “Gromov's simplicial volume vanishing conjecture for positive scalar curvature”, arXiv:2606.29135 (2026)](https://arxiv.org/abs/2606.29135)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -72,7 +72,19 @@ Prerequisites: Dirac operators and the Lichnerowicz formula, group homology and 
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs simplicial volume and scalar curvature, which Mathlib does not have yet.
+`Mathathon.P43.gromov_simplicial_volume_vanishing` in [`lean/MathathonProblems/P43_GromovSimplicialVolume.lean`](lean/MathathonProblems/P43_GromovSimplicialVolume.lean).
+
+```lean
+theorem gromov_simplicial_volume_vanishing (d : ℕ) (M : Type) [TopologicalSpace M] [T2Space M]
+    [CompactSpace M] [ChartedSpace (EuclideanSpace ℝ (Fin (d + 1))) M]
+    [IsManifold 𝓘(ℝ, EuclideanSpace ℝ (Fin (d + 1))) ∞ M]
+    (g : SmoothRiemannianMetric (d + 1) M) (hg : ∀ x, 0 < scalarCurvature g x) :
+    L1SeminormVanishes M d
+```
+
+This is Gromov's conjecture without extra hypotheses: a closed smooth manifold with a Riemannian metric of positive scalar curvature has simplicial volume zero. Ma, Wang, Xie, Yu and Zhu prove it when the universal cover is spin, and the OpenAI preprint claims it in general through rational inessentiality, a stronger statement that is not formalized here. Scalar curvature is computed in charts by the usual coordinate formulas, and "simplicial volume zero" is stated as the vanishing of the $\ell^1$-seminorm on $H_{d+1}(M;\mathbb R)$, which is equivalent for closed oriented manifolds (see the file header).
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Mathlib
 

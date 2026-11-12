@@ -25,7 +25,7 @@ https://www.probabilityandfinance.com/2001_book/chapters/toc.html
 - **Status:** Proved: G. Shafer and V. Vovk (2001) prove game-theoretic versions of the strong law, the law of the iterated logarithm and Lindeberg's theorem; we found no Lean formalization of this framework.
 - **Task:** Formalize in Lean the betting framework and the game-theoretic law of the iterated logarithm; further goals are the strong law, the central limit theorem and recovering the measure-theoretic versions.
 - **Key reference:** [G. Shafer and V. Vovk, *Probability and Finance: It's Only a Game!*, Wiley (2001)](https://doi.org/10.1002/0471249696)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -78,7 +78,15 @@ Prerequisites: discrete-time martingales and Ville's inequality, Kolmogorov's pr
 
 #### Official statement
 
-This problem has no official Lean statement. The statements need only real sequences, strategies (functions of the past moves) and limits, all available in Mathlib, but the protocols, capital processes and the notion of forcing would have to be defined.
+`Mathathon.P106.skeptic_can_force_lil` in [`lean/MathathonProblems/P106_GameTheoreticLIL.lean`](lean/MathathonProblems/P106_GameTheoreticLIL.lean).
+
+```lean
+theorem skeptic_can_force_lil : CanForce LILEvent
+```
+
+This is Shafer and Vovk's Theorem 5.1 in the predictably unbounded forecasting protocol, as quoted by Miyabe and Takemura: Skeptic has a strategy, a function of the earlier moves and of Forecaster's current announcement, whose capital stays nonnegative on every path obeying the protocol and tends to infinity on every path where $A_n\to\infty$ and $c_n=o(\sqrt{A_n/\ln\ln A_n})$ but $\limsup_n\sum_{i\le n}(x_i-m_i)/\sqrt{2A_n\ln\ln A_n}\ne1$. The strong law and Lindeberg's theorem, also mentioned in the problem, are not included.
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Mathlib
 

@@ -91,7 +91,7 @@ Prerequisites: finite fields, multilinear extensions and the Schwartz–Zippel l
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for an exposition, a prototype and measurements. A formal soundness theorem would need a model of Lean's kernel (such as Lean4Lean's checker) and of interactive protocols and their costs, none of which is in Mathlib.
+This problem has no official Lean statement: it asks for an exposition, a prototype and measurements rather than for a theorem, and a soundness theorem for interactive checking of Lean proofs would need a model of Lean's kernel together with interactive protocols and their costs, none of which Mathlib has and which cannot be defined faithfully in a short file.
 
 #### Related Lean formalizations
 

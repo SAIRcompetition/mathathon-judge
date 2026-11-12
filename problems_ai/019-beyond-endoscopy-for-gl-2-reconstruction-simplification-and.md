@@ -31,7 +31,7 @@ A comprehensive, self-contained, and accessible exposition of the existing proof
 - **Status:** Langlands' Beyond Endoscopy program (2004) is open in general; Altuğ carried out the first GL(2) case with the trace formula (2015–2020).
 - **Task:** A self-contained, verified exposition of Beyond Endoscopy for GL(2).
 - **Key reference:** [Beyond Endoscopy via the trace formula – III: The standard representation](https://arxiv.org/abs/1512.09249), S. A. Altuğ, *J. Inst. Math. Jussieu* 19 (2020), 1349–1387.
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### The result
 
@@ -75,7 +75,17 @@ Prerequisites: automorphic representations of GL(2), the Arthur–Selberg trace 
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs automorphic representations and the trace formula, which Mathlib does not have yet.
+`Mathathon.P19.altug_sum_trace_hecke` in [`lean/MathathonProblems/P19_AltugBeyondEndoscopy.lean`](lean/MathathonProblems/P19_AltugBeyondEndoscopy.lean).
+
+```lean
+theorem altug_sum_trace_hecke (k : ℤ) (hk : 3 ≤ k) (ε : ℝ) (hε : 0 < ε) :
+    (fun X : ℝ => ∑ n ∈ Finset.Ioo 0 ⌈X⌉₊, normalizedHeckeTrace k n)
+      =O[atTop] (fun X : ℝ => X ^ ((31 : ℝ) / 32 + ε))
+```
+
+This is Theorem 1.1 of Altuğ's Part III, $\sum_{n<X}\operatorname{tr}T_k(n)=O_{k,\epsilon}(X^{31/32+\epsilon})$ for the Hecke operators on cusp forms of weight $k\ge3$ for $\mathrm{SL}(2,\mathbb Z)$, normalized so that the Ramanujan conjecture reads $\operatorname{tr}T_k(n)=O(n^\epsilon)$; Venkatesh's theorem on the symmetric square is not stated. Mathlib has no Hecke operators, so $T(n)$ is defined on all functions $\mathbb H\to\mathbb C$ with the slash action and cut down to cusp forms with a left inverse of the inclusion. As Altuğ stresses, the bound also follows from Hecke's analytic continuation of $L(s,f)$; the content of his work is the proof by the trace formula.
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Mathlib
 

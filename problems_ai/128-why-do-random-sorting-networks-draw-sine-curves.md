@@ -35,7 +35,7 @@ Participants can aim to create:
 - **Status:** Proved by D. Dauvergne (arXiv 2018; J. Amer. Math. Soc. 2022), confirming conjectures of Angel, Holroyd, Romik and Virág (2007); his proof goes through particle flux, not through the short-time displacement bound that Rahman, Virág and Vizer (2019) showed is sufficient.
 - **Task:** A direct proof, or milestones towards one, of the sharp short-time bound on the expected sum of label gaps, which would give a new proof of the sine-curve limit.
 - **Key reference:** [D. Dauvergne, "The Archimedean limit of random sorting networks", J. Amer. Math. Soc. 35 (2022), 1215–1267](https://doi.org/10.1090/jams/993) (arXiv:1802.08934)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -97,7 +97,21 @@ Prerequisites: reduced words in the symmetric group, standard Young tableaux and
 
 #### Official statement
 
-This problem has no official Lean statement. The gap-sum bound is a statement about finite uniform distributions and limits, which Mathlib can express; the sine-curve theorem would also need the Archimedean law and convergence in probability of random paths, which would have to be defined by hand.
+`Mathathon.P128.archimedean_trajectory_limit` in [`lean/MathathonProblems/P128_ArchimedeanTrajectoryLimit.lean`](lean/MathathonProblems/P128_ArchimedeanTrajectoryLimit.lean).
+
+```lean
+theorem archimedean_trajectory_limit (F : (unitInterval →ᵤ ℝ) →ᵇ ℝ) :
+    Tendsto
+      (fun n : ℕ => (∑ ω ∈ sortingNetworks n, ∑ x : Fin n, F (trajectory ω x)) /
+        ((n : ℝ) * (sortingNetworks n).card))
+      atTop
+      (𝓝 (∫ u in (0 : ℝ)..1, ∫ v in (0 : ℝ)..1,
+        F (sineCurve (Real.sqrt (1 - v ^ 2)) (2 * Real.pi * u))))
+```
+
+This is Dauvergne's Theorem 5, the sine-curve limit the problem wants to reprove: the rescaled trajectory $\sigma_G(x,t)=2\sigma(x,\lfloor Nt\rfloor)/n-1$ of a uniform particle in a uniform $n$-element sorting network converges in distribution, in the uniform norm, to the Archimedean path $A(t)=\sqrt{1-V^2}\sin(\pi t+2\pi U)$ with $U,V$ independent and uniform on $[0,1]$. The proposed route, a bound on the expected sum of label gaps that verifies criterion (1.8) of Rahman, Virág and Vizer, would prove this statement; the bound itself is not stated, since its form and constant are not fixed (see Notes).
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Mathlib
 

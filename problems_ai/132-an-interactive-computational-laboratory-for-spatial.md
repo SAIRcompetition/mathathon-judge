@@ -90,7 +90,7 @@ Prerequisites: Monte Carlo methods and union–find, basic random matrix theory 
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for software, not for the proof of one theorem.
+This problem has no official Lean statement: it asks for software (a simulation and statistics platform), not for the proof of a theorem, and the limit laws it would display (Cardy's formula, Tracy–Widom laws, determinantal point processes) rest on lattice percolation, Fredholm determinants and point processes, which Mathlib does not have.
 
 #### Mathlib
 

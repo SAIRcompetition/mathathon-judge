@@ -93,7 +93,7 @@ Prerequisites: Markov decision processes, Poisson processes, M/M/1 busy periods.
 
 #### Official statement
 
-This problem has no official Lean statement: the target theorem is in an unpublished manuscript, and even the published special case needs continuous-time controlled queues with long-run average cost, which Mathlib does not have yet.
+This problem has no official Lean statement: the theorem to be simplified (Theorem 1.7 of an unpublished manuscript) has hypotheses that are not public, and even the published special case needs continuous-time controlled queues with Poisson arrivals and long-run average cost, which Mathlib does not have and which cannot be defined faithfully within a statement file.
 
 #### Related Lean formalizations
 

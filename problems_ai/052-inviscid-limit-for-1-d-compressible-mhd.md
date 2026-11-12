@@ -65,7 +65,7 @@ Prerequisites: 1D conservation laws (Riemann problem, Lax shocks, front tracking
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs the compressible MHD equations and their inviscid limit, which Mathlib does not have yet.
+This problem has no official Lean statement: it asks whether the Chen–Kang–Vasseur method extends to large data and to 1D compressible MHD, an open question with no precisely formulated target theorem (ideal MHD is not strictly hyperbolic, and no solution class for large data is specified), and Mathlib has no compressible Navier–Stokes, Euler or MHD equations.
 
 #### Mathlib
 

@@ -30,7 +30,7 @@ This is an established but technically challenging theorem, making it suitable f
 - **Status:** Proved by A. J. Wilkie (J. Amer. Math. Soc. 1996); with Khovanskii's finiteness theorem it shows that $\mathbb R_{\exp}$ is o-minimal.
 - **Task:** Find alternative or simpler proofs of Wilkie's theorem, and formalize it, or the lemmas it rests on, in Lean.
 - **Key reference:** [A. J. Wilkie, “Model completeness results for expansions of the ordered field of real numbers by restricted Pfaffian functions and the exponential function”, J. Amer. Math. Soc. 9 (1996), 1051–1094](https://doi.org/10.1090/S0894-0347-96-00216-0)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -94,7 +94,17 @@ Prerequisites: model completeness and Robinson's test, o-minimality, real analyt
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs $\mathbb R_{\exp}$ as a first-order structure and a definition of model completeness, which Mathlib does not have.
+`Mathathon.P97.real_exp_model_complete` in [`lean/MathathonProblems/P97_RealExpModelComplete.lean`](lean/MathathonProblems/P97_RealExpModelComplete.lean).
+
+```lean
+theorem real_exp_model_complete {n : ℕ} (φ : Language.orderedExpField.Formula (Fin n)) :
+    ∃ ψ : Language.orderedExpField.Formula (Fin n), ψ.IsExistential ∧
+      ∀ x : Fin n → ℝ, φ.Realize x ↔ ψ.Realize x
+```
+
+The theory of $\mathbb R_{\exp}$ is complete, so its model completeness is stated in the equivalent form the proposer gives: every first-order formula is equivalent in $\mathbb R_{\exp}$ to an existential formula with the same free variables. The language is formal-conjectures' `Language.orderedExpField`, $(+,\cdot,-,0,1,\le,\exp)$, with $\le$ and unary $-$ where the problem has $<$ and binary $-$; this does not change which formulas are equivalent to existential ones.
+
+Source: <https://github.com/google-deepmind/formal-conjectures/blob/a425ca3eb797fe927cb88c950565fdcbbbbada70/FormalConjecturesForMathlib/ModelTheory/Real.lean> (Apache License 2.0). Adapted: the language and the structure on $\mathbb R$ are copied from there, and the theorem is written by AI for Mathathon.
 
 #### Mathlib
 

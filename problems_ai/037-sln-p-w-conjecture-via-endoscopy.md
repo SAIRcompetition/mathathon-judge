@@ -81,7 +81,7 @@ Prerequisites: perverse sheaves and the decomposition theorem, Hitchin fibration
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs Higgs bundles, character varieties, and their cohomology, which Mathlib does not have yet.
+This problem has no official Lean statement: P = W compares the perverse filtration of the Hitchin map on the moduli space of stable $\mathrm{SL}_n$ Higgs bundles on a curve with the weight filtration on the cohomology of the twisted character variety, and Mathlib has no Higgs bundles, moduli spaces, character varieties, perverse sheaves or mixed Hodge structures, which cannot be built faithfully within a statement file.
 
 #### Mathlib
 

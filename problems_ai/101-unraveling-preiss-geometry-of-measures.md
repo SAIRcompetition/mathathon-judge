@@ -26,7 +26,7 @@ Camillo De Lellis, Rectifiable Sets, Densities, and Tangent Measures, Zürich Le
 - **Status:** Proved by D. Preiss (Ann. of Math. 1987), completing work of Besicovitch, Marstrand and Mattila; C. De Lellis (EMS 2008) gives a self-contained account of the main case.
 - **Task:** An interactive, carefully checked exposition of Preiss's proof: a dependency graph, one central argument treated in detail, and geometric demonstrations.
 - **Key reference:** [C. De Lellis, *Rectifiable Sets, Densities and Tangent Measures*, Zurich Lectures in Advanced Mathematics, EMS (2008)](https://doi.org/10.4171/044) (lecture-note version: [UZH](https://www.math.uzh.ch/en/fileadmin/user/delellis/publikation/Delellis_note136_corrected.pdf))
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -82,7 +82,17 @@ Prerequisites: measure theory, Hausdorff measures, covering theorems and Besicov
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs rectifiable measures and densities of measures, which Mathlib does not have.
+`Mathathon.P101.preiss` in [`lean/MathathonProblems/P101_PreissRectifiability.lean`](lean/MathathonProblems/P101_PreissRectifiability.lean).
+
+```lean
+theorem preiss {n : ℕ} (μ : Measure (EuclideanSpace ℝ (Fin n))) [IsLocallyFiniteMeasure μ]
+    (α : ℝ) (hα : 0 ≤ α) (hμ : ∀ᵐ x ∂μ, HasPosFiniteDensity μ α x) :
+    μ = 0 ∨ ∃ k : ℕ, k ≤ n ∧ α = k ∧ IsRectifiable μ k
+```
+
+This is Theorem 1.1 of De Lellis's notes (Marstrand and Preiss): the density is the limit of $\mu(\bar B_r(x))/r^\alpha$, and a $k$-rectifiable measure is one that is absolutely continuous with respect to $\mathcal H^k$ and concentrated on countably many Lipschitz images of $\mathbb R^k$. Preiss's stronger form with comparable upper and lower densities, and the classical converse, are not included.
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Mathlib
 

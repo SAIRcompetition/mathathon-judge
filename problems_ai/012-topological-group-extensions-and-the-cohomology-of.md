@@ -98,7 +98,7 @@ Prerequisites: group cohomology and Ext (e.g. Brown, *Cohomology of Groups*, Cha
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs classifying spaces of topological groups and a cohomology theory of spaces (singular cohomology, or the spectrum $B^nA$ for non-discrete $A$), which Mathlib does not have yet.
+This problem has no official Lean statement: its theorems (Jain, Joshi and Spallone, Theorems 1.1 and 11.8: injectivity, and bijectivity in several cases, of a map $\alpha_G\colon E(G,A)\to H^2(BG;A)$) need the Milgram–Steenrod classifying space of a topological group, singular cohomology and Eilenberg–MacLane spaces, which Mathlib does not have, and $\alpha_G$ itself is built from these constructions, so it cannot be defined faithfully within a statement file.
 
 #### Related Lean formalizations
 

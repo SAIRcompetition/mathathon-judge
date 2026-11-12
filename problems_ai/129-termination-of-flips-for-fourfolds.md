@@ -90,7 +90,7 @@ Prerequisites: the minimal model program (discrepancies, flips, dlt models, spec
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs log canonical pairs, discrepancies and flips (and for the Kähler version compact Kähler spaces), which Mathlib does not have.
+This problem has no official Lean statement: a faithful statement needs log canonical pairs, discrepancies and flips (and, for the Kähler version, compact Kähler spaces and generalized pairs), which Mathlib lacks, and defining them would require canonical divisors, $\mathbb Q$-Cartier divisors and relative ampleness on normal varieties, far more than a short faithful file can provide.
 
 #### Mathlib
 

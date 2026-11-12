@@ -91,7 +91,7 @@ Prerequisites: linear algebra and quadratic forms, Lie groups and Lie algebras, 
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for a structural comparison, not one theorem. Statements such as Zeeman's could be written with Mathlib's linear algebra, but the Lorentz group and Minkowski space would have to be defined.
+This problem has no official Lean statement: it asks for a comparison of the different axiomatizations of special relativity and for common, possibly categorical, structure among them, not for one theorem, and results such as Ignatowsky's derivation or Zeeman's theorem are examples rather than the problem's main claim.
 
 #### Related Lean formalizations
 

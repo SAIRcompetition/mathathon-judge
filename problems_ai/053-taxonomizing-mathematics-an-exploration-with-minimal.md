@@ -62,7 +62,7 @@ Prerequisites: differential geometry of surfaces, Weierstrass representation, ba
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for a database and software for minimal surfaces, not for the proof of one theorem.
+This problem has no official Lean statement: it asks for a database and interactive software for minimal surfaces, not for the proof of one theorem.
 
 #### Mathlib
 

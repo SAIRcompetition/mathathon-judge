@@ -93,7 +93,7 @@ Prerequisites: matroids and geometric lattices, building sets and nested set com
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs building sets, nested set complexes, Feichtner–Yuzvinsky rings and the Koszul property, which Mathlib does not have yet.
+This problem has no official Lean statement: it is a research programme around the conjecture of Coron, Ferroni and Li that the Chow ring of every flag built matroid is Koszul (their Conjecture 9.2), and a faithful statement of that conjecture needs building sets, nested set complexes, the Chow ring of a built matroid and the Koszul property (a linear free resolution of the residue field), none of which Mathlib has; together they are too much to define faithfully in a few hundred lines.
 
 #### Mathlib
 

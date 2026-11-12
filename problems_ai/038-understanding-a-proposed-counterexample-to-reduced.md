@@ -28,7 +28,7 @@ The exposition should distinguish arguments that have been independently checked
 - **Status:** A counterexample to rational injectivity of reduced coefficient-free assembly is claimed in an OpenAI preprint (September 2026), not yet refereed; the conjecture is due to Baum, Connes and Higson (1982–1994).
 - **Task:** A careful exposition of the claimed counterexample for graduate students.
 - **Key reference:** [A torsion-free counterexample to reduced Baum–Connes injectivity](https://github.com/openai/math/blob/main/preprints/A-Torsion-Free-Counterexample-to-Reduced-Baum-Connes-Injectivity-September-23-2026/paper.pdf), OpenAI, preprint, September 23, 2026.
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -79,7 +79,23 @@ Prerequisites: C*-algebras and K-theory, K-homology and index pairings, classify
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs group C*-algebras, their K-theory, and the Baum–Connes assembly map, which Mathlib does not have yet.
+`Mathathon.P38.torsion_free_counterexample` in [`lean/MathathonProblems/P38_BaumConnesInjectivity.lean`](lean/MathathonProblems/P38_BaumConnesInjectivity.lean).
+
+```lean
+theorem torsion_free_counterexample :
+    ∃ (G : Type) (_ : Group G), Group.FG G ∧ (∀ g : G, ∀ n : ℕ, 0 < n → g ^ n = 1 → g = 1) ∧
+      ∃ i : Multiplicative (ℤ × ℤ) →* G, Function.Injective i ∧
+        (∃ c : groupCohomology (Rep.trivial ℤ G ℤ) 2,
+          ∀ y : groupCohomology (Rep.trivial ℤ (Multiplicative (ℤ × ℤ)) ℤ) 2,
+            ∃ t : ℤ, y = t • restrictH2 i c) ∧
+        ∀ (k : ℕ) (P : Matrix (Fin k) (Fin k) (ℓ²(G, ℂ) →L[ℂ] ℓ²(G, ℂ))),
+          (∀ a b, P a b ∈ imageCStarAlgebra i) → IsStarProjection P →
+            ∃ j : ℕ, K0ClassEqNatMulOne P j
+```
+
+This is Theorem 1.1 of the OpenAI preprint, which is not refereed: a finitely generated torsion-free group $G$, an injective $i\colon\mathbb Z^2\to G$ and a class $c\in H^2(G;\mathbb Z)$ restricting to a generator of $H^2(\mathbb Z^2;\mathbb Z)$, such that $i_*(\beta)=0$ in $K_0(C^*_rG)$ for the rank-zero Bott class $\beta$. Here $C^*_rG$ is the norm closure of the left-regular operators in $B(\ell^2G)$, and $i_*(\beta)=0$ is stated in the equivalent form "every projection over the image of $C^*_r\mathbb Z^2$ has $K_0$-class in $\mathbb N\cdot[1]$", with $K_0$-equality written out as Murray–von Neumann equivalence after adding an identity block (the file header gives the argument); the deduction that reduced assembly is not rationally injective needs K-homology and is not part of the statement.
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Mathlib
 

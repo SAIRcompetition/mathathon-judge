@@ -71,7 +71,7 @@ Prerequisites: linearized Navier–Stokes equations, the Orr–Sommerfeld equati
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for quantitative stability estimates, not for the proof of one theorem.
+This problem has no official Lean statement: it asks for perturbation equations, energy estimates and stability thresholds for a laminar flow chosen by the team, not for the proof of one theorem.
 
 #### Mathlib
 

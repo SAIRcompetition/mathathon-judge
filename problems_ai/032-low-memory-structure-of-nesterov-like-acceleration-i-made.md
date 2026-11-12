@@ -77,7 +77,7 @@ Prerequisites: smooth and strongly convex functions, Lagrangian and semidefinite
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for a comparison of optimization methods in a setting the team specifies, not for the proof of one theorem.
+This problem has no official Lean statement: it asks whether a second auxiliary vector can improve the minimax guarantee of fixed-step first-order methods in settings (function class, performance criterion) that the team is to specify, so there is no single statement to formalize.
 
 #### Mathlib
 

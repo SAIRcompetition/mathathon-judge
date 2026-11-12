@@ -28,7 +28,7 @@ https://arxiv.org/abs/2611.01403
 - **Status:** Proved for $\beta<6\pi$ by R. Bauerschmidt and T. Bodineau (CPAM 2021); the whole subcritical range $0<\beta<8\pi$ is claimed in an unrefereed preprint by A. F. Radu (arXiv, 1 November 2026).
 - **Task:** Understand and explain the proof of the log-Sobolev inequality for sine-Gordon in the full subcritical regime.
 - **Key reference:** [A. F. Radu, “Log-Sobolev inequality for the sine-Gordon model in the subcritical regime”, arXiv:2611.01403 (2026)](https://arxiv.org/abs/2611.01403)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -95,7 +95,22 @@ Prerequisites: Gaussian measures and Wick ordering, log-Sobolev inequalities (Ba
 
 #### Official statement
 
-This problem has no official Lean statement. The lattice inequality involves only densities on $\mathbb R^{\Omega_{\varepsilon,L}}$, entropy and partial derivatives, so it can be stated with Mathlib; what Mathlib lacks is the theory needed to prove it.
+`Mathathon.P102.sineGordon_logSobolev` in [`lean/MathathonProblems/P102_SineGordonLogSobolev.lean`](lean/MathathonProblems/P102_SineGordonLogSobolev.lean).
+
+```lean
+theorem sineGordon_logSobolev (β : ℝ) (hβ₀ : 0 < β) (hβ : β < 8 * π) :
+    (∀ m L z : ℝ, 0 < m → 0 < L →
+      ∃ γ > 0, ∀ (N : ℕ) [NeZero N],
+        LogSobolev (L / N) (sineGordon (N := N) β m z (L / N)) γ) ∧
+    (∃ c C : ℝ, 0 < c ∧ 0 < C ∧ ∀ m L z : ℝ, 0 < m → 0 < L → |z| * m ^ (-(2 - β / (4 * π))) ≤ c →
+      ∀ (N : ℕ) [NeZero N],
+        LogSobolev (L / N) (sineGordon (N := N) β m z (L / N))
+          (m ^ 2 * exp (-(C * |z| * m ^ (-(2 - β / (4 * π)))))))
+```
+
+This is Theorem 1.1 of Radu's preprint, both parts, with its lattice normalisation: the measure on $\mathbb R^\Lambda$, $\Lambda=(\mathbb Z/N\mathbb Z)^2$, $\varepsilon=L/N$, has density proportional to $e^{-\frac12(\varphi,A\varphi)-V_0(\varphi)}$, and `LogSobolev ε ν γ` is $\mathrm{Ent}_\nu F\le\frac2\gamma\,\varepsilon^{-2}\sum_x\mathbb E_\nu[(\partial_x\sqrt F)^2]$. Instead of the best constant $\gamma_{\varepsilon,L}$ the statement asserts the inequality with the given constants, for smooth $F$ bounded above and away from zero with bounded first derivatives.
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Related Lean formalizations
 

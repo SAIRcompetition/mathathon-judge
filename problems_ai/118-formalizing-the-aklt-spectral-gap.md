@@ -26,7 +26,7 @@ Lemm, Sandvik and Wang, Existence of a Spectral Gap in the Affleck-Kennedy-Lieb-
 - **Status:** Established with computer assistance, independently, by M. Lemm, A. W. Sandvik and L. Wang and by N. Pomata and T.-C. Wei (both Phys. Rev. Lett. 124, 2020); both arguments rely on floating-point eigenvalue computations whose accuracy is not rigorously certified. M. J. Kastoryano (arXiv:2609.27993, 23 September 2026, not yet refereed) claims an analytic proof of a uniform spectral gap, via boundary-state factorization.
 - **Task:** A Lean proof of the spectral gap of the hexagonal AKLT model, with the numerical steps replaced by certified bounds, and tools reusable for other spin systems.
 - **Key reference:** [M. Lemm, A. W. Sandvik and L. Wang, “Existence of a spectral gap in the Affleck-Kennedy-Lieb-Tasaki model on the hexagonal lattice”, Phys. Rev. Lett. 124 (2020), 177204](https://arxiv.org/abs/1910.11810)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -83,7 +83,19 @@ Prerequisites: spectral theory of Hermitian matrices and operator inequalities, 
 
 #### Official statement
 
-This problem has no official Lean statement. A faithful statement needs spin-3/2 operators on periodic patches of the hexagonal lattice, the AKLT projections and the gap of the resulting Hamiltonians; Mathlib has the linear algebra but none of these definitions.
+`Mathathon.P118.aklt_hexagonal_spectral_gap` in [`lean/MathathonProblems/P118_AKLTSpectralGap.lean`](lean/MathathonProblems/P118_AKLTSpectralGap.lean).
+
+```lean
+theorem aklt_hexagonal_spectral_gap :
+    ∃ γ : ℝ, 0 < γ ∧ ∃ N : ℕ, ∀ m₁ m₂ : ℕ, N ≤ m₁ → N ≤ m₂ →
+      ∀ r ∈ spectrum ℝ (akltHamiltonian m₁ m₂), r = 0 ∨ γ ≤ r
+```
+
+The AKLT Hamiltonian $\sum_{\text{edges }jk}P^{(3)}_{jk}$ on the hexagonal lattice wrapped on the $m_1\times m_2$ torus (the quotient by $m_1$ and $m_2$ times its two primitive translations) is a matrix indexed by spin-3/2 configurations, with $P^{(3)}$ written as a polynomial in the square of the total spin. The statement asks for a gap uniform in $m_1,m_2\ge N$ and fixes neither $\gamma$ nor $N$; Lemm–Sandvik–Wang report $\gamma\ge0.00646$ for $m_1,m_2\ge12$ on their tori.
+
+The tori here are rhombic, while Lemm, Sandvik and Wang use rectangular ones; since the statement only asks for some $N$, it is the same claim, though not literally their theorem.
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Related Lean formalizations
 

@@ -25,7 +25,7 @@ DOI: 10.1007/BF02392815.
 - **Status:** Proved by L. Carleson (Acta Math., 1966) for $L^2$ and extended to $L^p$, $p>1$, by R. A. Hunt (1968); other proofs are due to C. Fefferman (1973) and M. Lacey and C. Thiele (2000), and the theorem has been formalized in Lean.
 - **Task:** A simpler or conceptually different proof of Carleson's theorem, or a clear exposition of Carleson's original proof that explains its main decompositions and how one might find them.
 - **Key reference:** [L. Carleson, “On convergence and growth of partial sums of Fourier series”, Acta Math. 116 (1966), 135–157](https://doi.org/10.1007/BF02392815)
-- **Lean:** No official statement.
+- **Lean:** Official statement; a Lean proof already exists.
 
 ### Notes
 
@@ -76,7 +76,17 @@ Prerequisites: Lebesgue integration and $L^p$ spaces, the Hilbert transform and 
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for a new proof or an exposition. Stating Carleson's theorem needs only Fourier partial sums, which Mathlib does not define but which both formalizations below define in a few lines.
+`classical_carleson` in [`lean/MathathonProblems/P121_Carleson.lean`](lean/MathathonProblems/P121_Carleson.lean).
+
+```lean
+theorem classical_carleson (f : ℝ → ℂ) (hper : Periodic f (2 * π))
+    (hf : MemLp f 2 (volume.restrict (Ico 0 (2 * π)))) :
+    ∀ᵐ x, Tendsto (fun N ↦ fourierPartialSum f N x) atTop (𝓝 (f x))
+```
+
+`CarlesonLT.fourierPartialSum f N x` is the partial sum $S_Nf(x)=\sum_{|n|\le N}\hat f(n)e^{inx}$, with Mathlib's Fourier coefficients `fourierCoeffOn` on $[0,2\pi]$. The problem asks for a new proof or an exposition of Carleson's theorem; this is the theorem in the $L^2$ form stated by the proposer.
+
+Source: <https://github.com/roos-j/lean-lt-carleson/blob/8dc5aac6926c9a8692e8790d1ef6008ed4d6b2a0/CarlesonLT/Theorems.lean>, <https://github.com/roos-j/lean-lt-carleson/blob/8dc5aac6926c9a8692e8790d1ef6008ed4d6b2a0/CarlesonLT/Defs.lean> (Apache-2.0). Adapted: `classical_carleson` and `CarlesonLT.fourierPartialSum` are copied unchanged, with the proof replaced by `sorry`. The same repository contains a complete Lean proof (`Auto.classical_carleson` in [`CarlesonLT/Auto/ClassicalCarleson.lean`](https://github.com/roos-j/lean-lt-carleson/blob/8dc5aac6926c9a8692e8790d1ef6008ed4d6b2a0/CarlesonLT/Auto/ClassicalCarleson.lean)); it was not checked here.
 
 #### Related Lean formalizations
 

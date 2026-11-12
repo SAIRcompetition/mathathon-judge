@@ -32,7 +32,7 @@ Both counterexamples come with Lean formalizations, so what is missing is unders
 - **Status:** Disproved in an OpenAI preprint dated 25 September 2026 (released 6 October 2026) with a 66×66 pattern, and by Z. Wang (arXiv, 11 October 2026) with a 4×4 pattern; neither has been refereed. The question goes back to Alon, Fischer and Newman (2007).
 - **Task:** A short, human-readable proof that Wang's 4×4 matrix has no polynomial removal bound, pictures of the first host matrices, and connections to removal lemmas for ordered graphs and permutations.
 - **Key reference:** [Z. Wang, “A Four-by-Four Obstruction to Polynomial Removal for Ordered Binary Matrices”, arXiv:2610.15370 (2026)](https://arxiv.org/abs/2610.15370)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -97,7 +97,22 @@ Prerequisites: induced removal lemmas and their link to property testing, ordere
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for an explanation of results that already have Lean proofs. A faithful statement needs only finite matrices, increasing maps and counting, which Mathlib has.
+`Mathathon.P96.no_polynomial_removal_bound` in [`lean/MathathonProblems/P96_FourByFourRemoval.lean`](lean/MathathonProblems/P96_FourByFourRemoval.lean).
+
+```lean
+theorem no_polynomial_removal_bound :
+    ∀ c C : ℝ, 0 < c → 0 < C →
+  ∃ n : ℕ, 1 ≤ n ∧
+    ∃ ε : ℝ, 0 < ε ∧ ε < 1 ∧
+      ∃ A : BinaryMatrix n,
+        fixedDistance A ≥ ε ∧
+        (copyCount fixedH A : ℝ) <
+          c * Real.rpow ε C * ((n : ℝ) ^ 8)
+```
+
+Here `fixedH` is Wang's $4\times4$ pattern $H_4$ and the statement is his Corollary 1.2: no bound $N_{H_4}(A)\ge c\,\mathrm{dist}_{H_4}(A)^C\,n^8$ holds for all binary matrices $A$. Wang reports a Lean proof of his own formulation in the ancillary files of arXiv:2610.15370; it has not been checked here, and it is not copied because the paper carries arXiv's non-exclusive licence.
+
+Source: <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatrixRemoval.lean> (Apache License 2.0). Adapted: OpenAI's statement for its $66\times66$ pattern is copied with the pattern replaced by $H_4$ and the exponent $132$ of $n$ by $8$.
 
 #### Related Lean formalizations
 

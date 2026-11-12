@@ -30,7 +30,7 @@ And even if the full problem is too much for the mathathon, we can start with a 
 - **Status:** Schur positivity is proved (Grojnowski–Haiman, 2007 preprint; Guay-Paquet, arXiv 2016, via Hessenberg varieties), but explicit positive rules for the Schur coefficients are known only for special families: graphs without $K_4$ (Roberts 2014), melting lollipops (Huh–Nam–Yoo 2020) and two-headed melting lollipops (V. Wang, arXiv 2025).
 - **Task:** A combinatorial rule, with proof, for the Schur coefficients of the LLT polynomial of every unit interval graph; as a first step, a rule that is correct on all K-chains with 8 vertices.
 - **Key reference:** [P. Alexandersson and R. Sulzgruber, “A combinatorial expansion of vertical-strip LLT polynomials in the basis of elementary symmetric functions”, Adv. Math. 400 (2022), 108256](https://arxiv.org/abs/2004.09198)
-- **Lean:** No official statement.
+- **Lean:** Official statement.
 
 ### Notes
 
@@ -91,7 +91,17 @@ Prerequisites: symmetric functions (Schur, ribbon Schur and fundamental quasisym
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs Schur functions and LLT polynomials, which Mathlib does not have.
+`Mathathon.P99.llt_schur_positive` in [`lean/MathathonProblems/P99_LLTSchurPositivity.lean`](lean/MathathonProblems/P99_LLTSchurPositivity.lean).
+
+```lean
+theorem llt_schur_positive {n : ℕ} (G : SimpleGraph (Fin n)) (hG : IsUnitInterval G) :
+    ∃ (S : Finset YoungDiagram) (c : YoungDiagram → Polynomial ℕ),
+      ∀ N : ℕ, lltPoly G N = ∑ μ ∈ S, C (c μ) * schurPoly N μ
+```
+
+The LLT polynomial and the Schur polynomials (sums over semistandard fillings) are defined in $N$ variables with coefficients in $\mathbb N[q]$; one family of coefficients must work for every $N$, which is Schur positivity of the symmetric function $\mathrm{LLT}_G$. The problem asks for a combinatorial rule for the coefficients; this is the positivity theorem such a rule would explain.
+
+Source: written by AI for Mathathon; not taken from an existing formalization.
 
 #### Mathlib
 

@@ -86,7 +86,7 @@ Prerequisites: finite Markov chains (invariant law, return times, time reversal)
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs rough paths, Stratonovich integration and the convergence of random walks to Brownian motion, which Mathlib does not have yet.
+This problem has no official Lean statement: it asks for a worked, reproducible derivation for finite-state Markov walks, and the theorem behind it (convergence of the walk and its iterated integrals to a Brownian rough path with an area correction, Lopusanschi–Simon Theorem 1.1) needs $\mathbb R^d$-valued Brownian motion, its Stratonovich lift and convergence in law in a rough-path topology, which Mathlib does not have and which cannot be defined faithfully within a statement file.
 
 #### Mathlib
 

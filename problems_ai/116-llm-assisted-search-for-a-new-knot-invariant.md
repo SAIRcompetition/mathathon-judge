@@ -75,7 +75,7 @@ Prerequisites: knot diagrams and Reidemeister moves, the Kauffman bracket and Jo
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for a new invariant. Proving invariance in Lean needs knots up to isotopy, or diagrams up to Reidemeister moves, which Mathlib lacks.
+This problem has no official Lean statement: it asks for a new knot invariant that is not yet specified, so there is no fixed claim to state (Mathlib also has no knots, knot diagrams or Reidemeister moves).
 
 #### Related Lean formalizations
 

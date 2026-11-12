@@ -65,7 +65,7 @@ Prerequisites: Bézier and B-spline surfaces, the implicit function theorem, sin
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for an explanation of a geometric algorithm and its guarantee, not for the proof of one theorem.
+This problem has no official Lean statement: it asks for an explanation of a surface–surface intersection algorithm and its guarantee, with examples of its limits, not for the proof of one theorem.
 
 #### Mathlib
 

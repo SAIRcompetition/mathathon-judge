@@ -74,7 +74,7 @@ Prerequisites: spectral theorem and Stone's formula, Fourier–Laplace transform
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs time-domain scattering theory for the wave equation, which Mathlib does not have yet.
+This problem has no official Lean statement: the resonance expansion (Dyatlov–Zworski, Theorem 4.44) needs the Dirichlet Laplacian outside a non-trapping obstacle, the wave group of an unbounded self-adjoint operator, the meromorphic continuation of its resolvent and the non-trapping condition for the billiard flow, none of which Mathlib has, and these cannot be defined faithfully within a statement file.
 
 #### Mathlib
 

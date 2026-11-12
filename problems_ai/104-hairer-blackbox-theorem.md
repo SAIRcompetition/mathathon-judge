@@ -87,7 +87,7 @@ Prerequisites: Hölder–Besov spaces and wavelets or heat-kernel estimates, Gau
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs Gaussian noises such as space-time white noise on the torus, Hölder–Besov spaces of negative regularity, classical solutions with blow-up times and the tree combinatorics of the counterterms, which Mathlib does not have.
+This problem has no official Lean statement: the black-box theorem (Bruned–Chandra–Chevyrev–Hairer, Theorem 2.21) is about general locally subcritical systems, with counterterms indexed by decorated trees and several technical assumptions, and stating it needs regularity structures, the algebra of decorated trees, Gaussian noises and negative-regularity Hölder–Besov spaces, which Mathlib lacks and which cannot be defined faithfully in a short file; the existing Lean formalization covers only the $\Phi^4_3$ equation, a single instance.
 
 #### Related Lean formalizations
 

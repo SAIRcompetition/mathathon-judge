@@ -87,7 +87,7 @@ Prerequisites: modular functions and congruence subgroups, Kac–Moody Lie algeb
 
 #### Official statement
 
-This problem has no official Lean statement: a faithful statement needs the Monster group and its moonshine module, which Mathlib does not have yet.
+This problem has no official Lean statement: the moonshine theorem concerns the Frenkel–Lepowsky–Meurman module $V^\natural$ of the Monster and the Hauptmoduln of genus-zero subgroups of $\mathrm{SL}_2(\mathbb R)$ listed by Conway and Norton, none of which Mathlib has or a statement file could build; a Lean presentation of the Monster exists (TauCeti, <https://github.com/TauCetiProject/TauCeti/blob/43bfc87351521d3e5f257d851887a85fb744f648/TauCeti/GroupTheory/SpecificGroups/CFSG/Sporadic/Monster.lean>), but asking only for some graded representation whose McKay–Thompson series are Hauptmoduln would be satisfied by the trivial action, so it would not be faithful.
 
 #### Mathlib
 

@@ -74,7 +74,7 @@ Prerequisites: numerical linear algebra (SVD, interpolative decomposition, LU), 
 
 #### Official statement
 
-This problem has no official Lean statement: it asks for simpler numerical algorithms, not for the proof of one theorem.
+This problem has no official Lean statement: it asks for simpler versions or clearer explanations of numerical algorithms (fast multipole methods, fast direct solvers, butterfly factorizations), not for the proof of one theorem.
 
 #### Mathlib
 
