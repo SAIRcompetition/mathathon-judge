@@ -44,7 +44,7 @@ Proofs that are conceptually quite different, in lower dimensions, are also very
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 45 ([`problems/45-stable-bernstein-problem.md`](../problems/45-stable-bernstein-problem.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 45 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Last case ($\mathbb R^7$) proved by Hong, Li and Wang (arXiv, September 2026), not yet refereed; false in $\mathbb R^8$ and beyond.
 - **Task:** A conceptually different proof that stability forces flatness in $\mathbb R^7$.

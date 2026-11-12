@@ -38,7 +38,7 @@ These hyperlinks are attached to cells of this row in the sheet. They are listed
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 50 ([`problems/50-hilberts-tenth-problem-over-q.md`](../problems/50-hilberts-tenth-problem-over-q.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 50 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved in an OpenAI preprint (24 September 2026, revised 6 October 2026); not yet refereed.
 - **Task:** Verify the proof and write an undergraduate-level exposition.

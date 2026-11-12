@@ -46,7 +46,7 @@ A rigorous derivation of the asymptotic relationship between restricted and unre
 
 <!-- status: Partly solved -->
 
-> Written by AI for the earlier problem list, where this was problem 35 ([`problems/35-partitions-into-k-th-powers.md`](../problems/35-partitions-into-k-th-powers.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 35 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Wright (1934) proved a full expansion for unrestricted partitions into $k$-th powers; for multiplicity at most $r$, Li and Zhou (2024) proved the leading-order asymptotic, and no proved higher-order expansion was found in the literature.
 - **Task:** An asymptotic expansion of $P_{k,r}(n)$ with effective error bounds.

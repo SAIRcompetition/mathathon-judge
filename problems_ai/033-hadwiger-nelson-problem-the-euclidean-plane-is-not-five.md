@@ -45,7 +45,7 @@ These hyperlinks are attached to cells of this row in the sheet. They are listed
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 33 ([`problems/33-plane-is-not-5-colorable.md`](../problems/33-plane-is-not-5-colorable.md)), and carried over; only links that depend on the problem numbering were updated.
+> Written by AI for the earlier problem list, where this was problem 33 (commit `1f49cd4`), and carried over; only links that depend on the problem numbering were updated.
 
 - **Status:** Proved in an OpenAI preprint dated 23 September 2026 (released 6 October 2026), not yet refereed; the problem goes back to E. Nelson (1950).
 - **Task:** A simpler, more conceptual proof of the transfer theorem and main result, or an independent check of the key lemmas.

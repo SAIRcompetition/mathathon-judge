@@ -38,7 +38,7 @@ These hyperlinks are attached to cells of this row in the sheet. They are listed
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 57 ([`problems/57-barnettes-conjecture.md`](../problems/57-barnettes-conjecture.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 57 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved in an OpenAI preprint dated 24 September 2026 (released 6 October 2026), not yet refereed; conjectured by D. W. Barnette (recorded 1969).
 - **Task:** A simpler, shorter and more elementary proof of Barnette's conjecture.

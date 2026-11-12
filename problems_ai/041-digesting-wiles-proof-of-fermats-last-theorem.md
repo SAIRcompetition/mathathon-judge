@@ -35,7 +35,7 @@ An interactive tool which aids in understanding the proof of Fermat’s Last The
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 41 ([`problems/41-fermats-last-theorem.md`](../problems/41-fermats-last-theorem.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 41 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by A. Wiles (1995), with a key step by R. Taylor and A. Wiles (1995).
 - **Task:** An interactive tool for exploring the proof of Fermat's Last Theorem.

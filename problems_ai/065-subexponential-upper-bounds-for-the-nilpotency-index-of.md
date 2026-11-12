@@ -42,7 +42,7 @@ A rigorous derivation of the stated upper bound on the nilpotency index of finit
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 65 ([`problems/65-nilpotency-index-of-nil-algebras.md`](../problems/65-nilpotency-index-of-nil-algebras.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 65 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** The stated bound was proved by Belov and Kharitonov (Sb. Math. 2012); the true growth of the nilpotency index is open.
 - **Task:** Derive the stated bound; improve its dependence on $d$ and $l$.

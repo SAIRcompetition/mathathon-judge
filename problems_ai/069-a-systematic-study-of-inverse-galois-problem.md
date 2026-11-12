@@ -34,7 +34,7 @@ A systematic understanding of solved inverse Galois problems and exploring more 
 
 <!-- status: Open -->
 
-> Written by AI for the earlier problem list, where this was problem 69 ([`problems/69-inverse-galois-problem.md`](../problems/69-inverse-galois-problem.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 69 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Open over ℚ in general; known for solvable, symmetric, alternating and all 26 sporadic groups ($M_{23}$ in a 2026 preprint), among others.
 - **Task:** A survey of solved cases and attacks on unknown cases.

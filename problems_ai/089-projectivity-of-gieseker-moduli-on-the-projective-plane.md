@@ -36,7 +36,7 @@ A short expository note giving a proof of projectivity for the moduli space of G
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 90 ([`problems/90-gieseker-moduli-on-p2-without-git.md`](../problems/90-gieseker-moduli-on-p2-without-git.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 90 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved with GIT (Gieseker 1977 for surfaces; Maruyama 1977–78; Simpson 1994). Alper–Halpern-Leistner–Heinloth (2023) give a proper good moduli space without GIT; no GIT-free proof of projectivity for sheaves on surfaces was found.
 - **Task:** A short expository note proving projectivity of Gieseker moduli on $\mathbb P^2$ without GIT quotients.

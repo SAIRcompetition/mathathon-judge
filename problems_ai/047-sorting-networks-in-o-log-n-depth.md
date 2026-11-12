@@ -32,7 +32,7 @@ A simplified construction of a O(log(n)) depth sorting network (simplified e.g. 
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 47 ([`problems/47-sorting-networks-of-depth-o-log-n.md`](../problems/47-sorting-networks-of-depth-o-log-n.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 47 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by M. Ajtai, J. Komlós and E. Szemerédi (1983); later simplified by Paterson (1990) and Seiferas (2009).
 - **Task:** A simpler O(log n)-depth sorting network, or a clearer account of AKS.

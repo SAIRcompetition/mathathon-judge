@@ -34,7 +34,7 @@ An expository write-up; code to generate and visualize(?) 2-complexes from the c
 
 <!-- status: Not a single theorem -->
 
-> Written by AI for the earlier problem list, where this was problem 84 ([`problems/84-exotic-hyperbolic-groups-from-2-complexes.md`](../problems/84-exotic-hyperbolic-groups-from-2-complexes.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 84 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Three counterexamples are claimed, none refereed: a non-residually-finite and a non-CAT(0) hyperbolic group in OpenAI preprints dated 23 and 25 September 2026 (released 6 October 2026; the repository states that an internal OpenAI model produced its manuscripts), and a non-sofic one by H. Sandhu and A. Thom (arXiv, October 2026; based, the authors state, on an AI-generated construction).
 - **Task:** An exposition comparing the three 2-complex constructions, with code that generates (and perhaps visualizes) the complexes.

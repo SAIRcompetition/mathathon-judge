@@ -38,7 +38,7 @@ These hyperlinks are attached to cells of this row in the sheet. They are listed
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 82 ([`problems/82-kadisons-generator-problem.md`](../problems/82-kadisons-generator-problem.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 82 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved for type II₁ factors with separable predual in an OpenAI preprint dated 23 September 2026 (released 6 October 2026), which its repository describes as produced by an internal OpenAI model; not yet refereed. With earlier reductions (Willig 1974) this answers Kadison's 1967 question positively for all von Neumann algebras with separable predual.
 - **Task:** An elegant, human-readable proof of single generation, rather than a construction from special unitaries.

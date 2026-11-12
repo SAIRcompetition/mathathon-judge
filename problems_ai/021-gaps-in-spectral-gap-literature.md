@@ -36,7 +36,7 @@ An intuitive proof of Proposition 28 in Bordenave's paper; a deeper exploration 
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 21 ([`problems/21-gaps-in-the-spectral-gap-literature.md`](../problems/21-gaps-in-the-spectral-gap-literature.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 21 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by J. Friedman (arXiv 2004; Mem. Amer. Math. Soc. 2008); conjectured by N. Alon.
 - **Task:** An intuitive proof of Bordenave's Proposition 28, plus commentary on the proofs.

@@ -32,7 +32,7 @@ visualizations and expositions to better understand an existing result
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 17 ([`problems/17-hodge-modules.md`](../problems/17-hodge-modules.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 17 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Theory and direct image theorem by M. Saito (Publ. RIMS 1988); mixed Hodge modules in a second paper (1990).
 - **Task:** Visualizations that make Saito's theory and its main theorem understandable.

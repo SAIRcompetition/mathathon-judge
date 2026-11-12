@@ -36,7 +36,7 @@ An open-source implementation of the algorithm for the irreducible components of
 
 <!-- status: Not a single theorem -->
 
-> Written by AI for the earlier problem list, where this was problem 13 ([`problems/13-hassett-divisors-and-cubic-fourfolds.md`](../problems/13-hassett-divisors-and-cubic-fourfolds.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 13 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Hassett's description of the divisors $\mathcal C_d$ is proved (2000); rationality of very general cubic fourfolds is open.
 - **Task:** Open-source code for components of $\mathcal C_{d_1}\cap\mathcal C_{d_2}$, plus visualization and explainer.

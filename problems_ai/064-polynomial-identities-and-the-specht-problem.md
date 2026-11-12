@@ -42,7 +42,7 @@ An explicit example of an infinitely based system of polynomial identities in an
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 64 ([`problems/64-specht-problem.md`](../problems/64-specht-problem.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 64 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Part (a) was proved by Belov (1999–2000), with related examples by Grishin and Shchigolev; part (b) was proved by Kemer (1990, English translation 1991).
 - **Task:** Infinitely based identities in characteristic $p$; finite bases for boundedly many variables.

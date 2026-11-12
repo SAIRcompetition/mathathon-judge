@@ -41,7 +41,7 @@ I would prefer/recommend using Godot game engine for building the application.
 
 <!-- status: Disproved (preprint) -->
 
-> Written by AI for the earlier problem list ([`problems/70-monochromatic-triangles-in-the-plane.md`](../problems/70-monochromatic-triangles-in-the-plane.md)) and revised by Claude Opus 5.5 on 2026-11-11 to match the proposer's current text.
+> Written by AI for the earlier problem list (commit `1f49cd4`) and revised by Claude Opus 5.5 on 2026-11-11 to match the proposer's current text.
 
 - **Status:** Disproved in a manuscript by L. Kruer, J. Kohlmeyer and L. Price (September 2026; the authors state that the argument originated with GPT 6 Astra), not yet refereed; conjectured by Erdős and Moser (Erdős Problem #96).
 - **Task:** A playable game that leads players to discover the construction.

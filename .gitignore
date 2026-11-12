@@ -13,12 +13,14 @@ export/
 # Product flow designs (Chinese, internal)
 design/
 
-# Lean build output for the problem statements
-problems/lean/.lake/
-problems_ai/lean/.lake/
+# Earlier problem list (replaced by problems_original/ and problems_ai/; kept locally)
+problems/
 
-# Temporary drafts of AI notes (merged into the problem pages)
-problems_ai/_drafts/
+# Raw exports of the problem sheet (kept locally)
+problems_original/source/
+
+# Lean build output for the problem statements
+problems_ai/lean/.lake/
 
 # Python bytecode from the problem scripts
 __pycache__/

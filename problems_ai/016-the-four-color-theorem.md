@@ -51,7 +51,7 @@ These hyperlinks are attached to cells of this row in the sheet. They are listed
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 16 ([`problems/16-four-color-theorem.md`](../problems/16-four-color-theorem.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 16 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by K. Appel and W. Haken (1976, published 1977), again by Robertson, Sanders, Seymour and Thomas (1997); both proofs use computers.
 - **Task:** A human-checkable or conceptual proof; or a readable, interactive tour of unavoidability and reducibility, or independent checks of parts of the proof.

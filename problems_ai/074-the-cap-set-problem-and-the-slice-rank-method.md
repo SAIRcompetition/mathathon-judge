@@ -36,7 +36,7 @@ The topic has a short, accessible core proof and a lot of room around it. Teams 
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 74 ([`problems/74-cap-set-problem.md`](../problems/74-cap-set-problem.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 74 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Proved by J. S. Ellenberg and D. Gijswijt (2016, published 2017), building on E. Croot, V. Lev and P. P. Pach.
 - **Task:** A verifiable account of the slice rank method and its reach.

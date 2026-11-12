@@ -34,7 +34,7 @@ This problem is not necessarily tied to minimal surfaces. Other geometric object
 
 <!-- status: Not a single theorem -->
 
-> Written by AI for the earlier problem list, where this was problem 53 ([`problems/53-taxonomy-of-minimal-surfaces.md`](../problems/53-taxonomy-of-minimal-surfaces.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 53 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** A data and software project; the classification results it would organise are scattered across the minimal-surface literature.
 - **Task:** Interactive software and a machine-readable data set of minimal surfaces.

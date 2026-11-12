@@ -32,7 +32,7 @@ How the GPY and Maynard–Tao methods turn "two primes in a translate" into an o
 
 <!-- status: Proved (preprint) -->
 
-> Written by AI for the earlier problem list, where this was problem 94 ([`problems/94-short-gaps-between-primes.md`](../problems/94-short-gaps-between-primes.md)), and carried over; only links that depend on the problem numbering were updated.
+> Written by AI for the earlier problem list, where this was problem 94 (commit `1f49cd4`), and carried over; only links that depend on the problem numbering were updated.
 
 - **Status:** $H_1\le186$ is proved in an OpenAI preprint dated 30 August 2026 that attributes the proof to GPT 6 Astra; not yet refereed. The previous bound was 246 (Polymath 8b, 2014); Stadlmann independently proved 240 (preprint, 31 August 2026).
 - **Task:** An explanation of how the GPY and Maynard–Tao methods turn "two primes in a translate" into an optimization over sieve weights.

@@ -42,7 +42,7 @@ The intended outcome is a self-contained exposition, supported by examples and r
 
 <!-- status: Not a single theorem -->
 
-> Written by AI for the earlier problem list, where this was problem 26 ([`problems/26-kurodas-class-number-formula.md`](../problems/26-kurodas-class-number-formula.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 26 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Concerns corrections to published results; Lemmermeyer (1994) showed that Walter's 1979 Kuroda-type formula can fail.
 - **Task:** Corrected unit-index bounds for real cyclic degree-pq fields, with a counterexample.

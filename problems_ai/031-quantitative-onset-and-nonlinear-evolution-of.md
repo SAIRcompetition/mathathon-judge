@@ -34,7 +34,7 @@ Participants will derive the perturbation equations for a selected laminar flow 
 
 <!-- status: Not a single theorem -->
 
-> Written by AI for the earlier problem list, where this was problem 31 ([`problems/31-tollmien-schlichting-instabilities.md`](../problems/31-tollmien-schlichting-instabilities.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 31 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Linear Tollmien–Schlichting instability is proved (Grenier–Guo–Nguyen, 2016); its nonlinear saturation is conjectured but not proved (Bian–Grenier, 2024).
 - **Task:** Perturbation equations and rigorous Reynolds-dependent stability bounds for one laminar flow.

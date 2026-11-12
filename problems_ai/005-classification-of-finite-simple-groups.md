@@ -38,7 +38,7 @@ These hyperlinks are attached to cells of this row in the sheet. They are listed
 
 <!-- status: Proved -->
 
-> Written by AI for the earlier problem list, where this was problem 5 ([`problems/05-classification-of-finite-simple-groups.md`](../problems/05-classification-of-finite-simple-groups.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 5 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Regarded as proved around 1980; the last serious gap, the quasithin case, was closed by Aschbacher and Smith (2004).
 - **Task:** Formalize large parts in Lean, or simplify parts of the proof.

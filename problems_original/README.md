@@ -4,17 +4,13 @@ This folder is an exact copy of the Mathathon Round 1 problem sheet. Nothing her
 
 ## Source
 
-- Sheet: <https://docs.google.com/spreadsheets/d/1_X8j34wC5WKiL7xiJkCM0JWBMHtM72GAgNe78hhoxQQ/edit?gid=0>
-- Exported on 2026-11-11 at about 21:00 PST. The sheet has one tab and 140 problems, with Problem IDs 1 to 140.
+The organizers' problem sheet (Google Sheets), exported on 2026-11-11 at about 21:00 PST. The sheet has one tab and 140 problems, with Problem IDs 1 to 140.
 
 ## Contents
 
-- [`source/`](source/): the sheet as Google exports it, unchanged.
-  - `mathathon-problem-sheet.csv` (SHA-256 `ab2a6775…`): the cell text.
-  - `mathathon-problem-sheet.xlsx` (SHA-256 `88ba9eca…`): the cell text, column settings and the hyperlinks attached to cells.
-  - `mathathon-problem-sheet-html.zip` (SHA-256 `43094fba…`): the HTML export, which shows which text each hyperlink is attached to.
-  - `split_sheet.py`: the script that wrote the problem files below.
 - `NNN-<title>.md`: one file per problem, named by its Problem ID and its title.
+- [`split_sheet.py`](split_sheet.py): the script that writes these files from the sheet exports.
+- `source/` (kept locally, not tracked in the repository): the sheet exports the files are made from: CSV (the cell text), XLSX (the cell text, column settings and the hyperlinks attached to cells) and the HTML export (which text each hyperlink is attached to).
 
 ## What each problem file contains
 
@@ -36,13 +32,13 @@ The text under each heading is the cell text, byte for byte: no spelling, wordin
 
 The column **Short description of problem (100 words or less)** is hidden in the sheet's normal view, so it does not appear in the HTML export; its text is in the CSV and XLSX exports and is copied here like the other columns.
 
-Markdown viewers may join single line breaks into one paragraph and may treat characters such as `*`, `_` and `$` as formatting. The files in `source/` are the reference copies.
+Markdown viewers may join single line breaks into one paragraph and may treat characters such as `*`, `_` and `$` as formatting. The sheet exports are the reference copies.
 
 ## Checking and regenerating
 
-`python3 problems_original/source/split_sheet.py` (Python 3 standard library only) rewrites all 140 problem files from the exports in `source/`. It takes the text from the CSV, takes the links from the HTML export and checks them against the XLSX export, then reads every file back and checks that each field equals its CSV cell exactly. It stops with an error if any check fails.
+`python3 problems_original/split_sheet.py` (Python 3 standard library only) rewrites all 140 problem files from the exports in `source/`. It takes the text from the CSV, takes the links from the HTML export and checks them against the XLSX export, then reads every file back and checks that each field equals its CSV cell exactly. It stops with an error if any check fails.
 
-To pick up later changes to the sheet, download the three exports again into `source/` (File → Download in Google Sheets, or the URLs `…/export?format=csv&gid=0`, `…/export?format=xlsx` and `…/export?format=zip`) and run the script.
+To pick up later changes to the sheet, download it again into `source/` as `mathathon-problem-sheet.csv`, `mathathon-problem-sheet.xlsx` and `mathathon-problem-sheet-html.zip` (File → Download in Google Sheets: CSV, Microsoft Excel and Web page) and run the script.
 
 ## Problems
 

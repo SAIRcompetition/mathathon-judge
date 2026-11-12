@@ -38,7 +38,7 @@ These hyperlinks are attached to cells of this row in the sheet. They are listed
 
 <!-- status: Not a single theorem -->
 
-> Written by AI for the earlier problem list, where this was problem 79 ([`problems/79-painleve-paradox.md`](../problems/79-painleve-paradox.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 79 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** The paradox goes back to Painlevé (1895–1905); Hogan and Kristiansen (2017) proved that with a compliant contact a rod started in a paradoxical state undergoes, in the rigid limit, an impact without collision (or, in part of the indeterminate case, lift-off).
 - **Task:** A visual explanation, a worked restricted-case proof, and a simulation.

@@ -38,7 +38,7 @@ These hyperlinks are attached to cells of this row in the sheet. They are listed
 
 <!-- status: Open -->
 
-> Written by AI for the earlier problem list, where this was problem 6 ([`problems/06-abc-conjecture.md`](../problems/06-abc-conjecture.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 6 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Open; formulated by Masser and Oesterlé in 1985. Mochizuki's claimed proof (published 2021) is disputed.
 - **Task:** Any progress on the conjecture, ideally a new idea.

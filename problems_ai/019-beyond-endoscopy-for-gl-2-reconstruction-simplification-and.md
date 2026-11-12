@@ -39,7 +39,7 @@ A comprehensive, self-contained, and accessible exposition of the existing proof
 
 <!-- status: Not a single theorem -->
 
-> Written by AI for the earlier problem list, where this was problem 19 ([`problems/19-beyond-endoscopy-for-gl-2.md`](../problems/19-beyond-endoscopy-for-gl-2.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 19 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Langlands' Beyond Endoscopy program (2004) is open in general; Altuğ carried out the first GL(2) case with the trace formula (2015–2020).
 - **Task:** A self-contained, verified exposition of Beyond Endoscopy for GL(2).

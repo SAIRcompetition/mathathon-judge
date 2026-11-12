@@ -34,7 +34,7 @@ An interactive environment in which learners can easily work examples and ask qu
 
 <!-- status: Not a single theorem -->
 
-> Written by AI for the earlier problem list, where this was problem 42 ([`problems/42-selmer-groups-and-euler-systems.md`](../problems/42-selmer-groups-and-euler-systems.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 42 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Expository; the Euler system method (Thaine, Kolyvagin, Rubin, Kato) is established theory.
 - **Task:** An interactive environment for examples of Euler systems and Selmer groups.

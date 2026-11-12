@@ -34,7 +34,7 @@ a human readable version of our slop proof of uniqueness outside a meagre set
 
 <!-- status: Partly solved -->
 
-> Written by AI for the earlier problem list, where this was problem 51 ([`problems/51-uniqueness-of-glimm-lax-solutions.md`](../problems/51-uniqueness-of-glimm-lax-solutions.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 51 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** Open in general; uniqueness for initial data in fractional Sobolev spaces was proved by Cheng, Faile and Krupa (2026), building on Bressan–Marconi–Vaidya (2025).
 - **Task:** A readable version of the draft proof: uniqueness outside a meagre set.

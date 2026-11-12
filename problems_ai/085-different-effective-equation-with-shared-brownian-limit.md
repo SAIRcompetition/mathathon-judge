@@ -34,7 +34,7 @@ A worked proof and reproducible demonstration showing exactly where microscopic 
 
 <!-- status: Not a single theorem -->
 
-> Written by AI for the earlier problem list, where this was problem 85 ([`problems/85-same-brownian-limit-different-equations.md`](../problems/85-same-brownian-limit-different-equations.md)), and carried over unchanged.
+> Written by AI for the earlier problem list, where this was problem 85 (commit `1f49cd4`), and carried over unchanged.
 
 - **Status:** An exposition task; the underlying theorem (hidden Markov walks converge in rough-path topology to Brownian motion with an area anomaly) is proved and refereed (Lopusanschi–Simon, Bernoulli 2020); Engel–Friz–Orenshtein (CPAA 2026) give Green–Kubo formulas for the limit.
 - **Task:** A worked, reproducible derivation of covariance, area correction and limit equation for a finite-state Markov walk and its time reversal.
