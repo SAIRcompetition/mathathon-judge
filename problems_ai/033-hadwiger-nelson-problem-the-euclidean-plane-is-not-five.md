@@ -14,7 +14,7 @@ The Hadwiger–Nelson problem asks how many colors are needed to color the plane
 - An independent human check of the proof’s key lemmas, with any gaps identified.
 - A shorter or more conceptual proof, especially an explanation of the transfer theorem connecting arbitrary and measurable colorings
 - They don't have Lean formalization (unless we count ""sorry"" instead of the whole theorem as the formalization) so that could be done.
-- Maybe try to find an explicit finite 6-chromatic unit-distance graph. By de Bruijn–Erdős one must exist if the theorem is true. Though that would be a more computerized proof and less comprehensible proof that OpenAI's, so idk :D"
+- Maybe try to find an explicit finite 6-chromatic unit-distance graph. By de Bruijn–Erdős one must exist if the theorem is true. Though that would be a more computerized proof and less comprehensible proof than OpenAI's, so idk :D"
 
 ### References
 

@@ -2,7 +2,7 @@
 
 The 140 Round 1 problems, one page per problem. Each page has two parts:
 
-- **From the proposer**: the problem as the proposer wrote it. The exact text of the sheet is in [`problems_original`](../problems_original/README.md).
+- **From the proposer**: the problem as the proposer wrote it, with a few typos and wrong bibliographic details corrected (each listed in [`corrections.json`](corrections.json)). The exact text of the sheet is in [`problems_original`](../problems_original/README.md).
 - **AI-generated notes**: what is known, how the known proofs work, background, where to start, references with links, and the Lean status.
 
 > **The AI-generated notes, the Status and Lean columns below and the Lean statements were written by AI and may contain errors.** Use them as a reference; the proposer's text is authoritative.
@@ -128,7 +128,7 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 | 110 | [Statistical learning theory and neural network generalization bounds](110-statistical-learning-theory-and-neural-network.md) | Analysis, Computation/Applied Math | Proved | — |
 | 111 | [Kervaire invariant one theorem](111-kervaire-invariant-one-theorem.md) | Geometry | Proved | — |
 | 112 | [Quarter-pinching sphere theorem](112-quarter-pinching-sphere-theorem.md) | Geometry | Proved | — |
-| 113 | [Understanding sporadic curves in Mcduff-Shlenk staircase](113-understanding-sporadic-curves-in-mcduff-shlenk-staircase.md) | Geometry | Not a single theorem | — |
+| 113 | [Understanding sporadic curves in McDuff-Schlenk staircase](113-understanding-sporadic-curves-in-mcduff-shlenk-staircase.md) | Geometry | Not a single theorem | — |
 | 114 | [Obstruction theory in Lean](114-obstruction-theory-in-lean.md) | Geometry | Proved | — |
 | 115 | [Exotic spheres](115-exotic-spheres.md) | Geometry | Proved | — |
 | 116 | [LLM-assisted search for a new knot invariant](116-llm-assisted-search-for-a-new-knot-invariant.md) | Geometry | Not a single theorem | — |
@@ -145,7 +145,7 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 | 127 | [Rogers Ramanujan Identity](127-rogers-ramanujan-identity.md) | Combinatorics | Proved | — |
 | 128 | [Why Do Random Sorting Networks Draw Sine Curves?](128-why-do-random-sorting-networks-draw-sine-curves.md) | Computation/Applied Mathematics | Proved | — |
 | 129 | [Termination of flips for fourfolds](129-termination-of-flips-for-fourfolds.md) | Geometry | Proved (preprint) | — |
-| 130 | [Uniqueness of Finite Quandale Colorings](130-uniqueness-of-finite-quandale-colorings.md) | Geometry | Partly solved | — |
+| 130 | [Uniqueness of Finite Quandle Colorings](130-uniqueness-of-finite-quandale-colorings.md) | Geometry | Partly solved | — |
 | 131 | [Irrationality of ζ(3) (Apery's Theorem)](131-irrationality-of-3-aperys-theorem.md) | Number Theory/Algebra | Proved | — |
 | 132 | [An Interactive Computational Laboratory for Spatial Stochastic Processes and Scaling Limits](132-an-interactive-computational-laboratory-for-spatial.md) | Computation/Applied Mathematics, Analysis | Not a single theorem | — |
 | 133 | [Simpson's conjecture](133-simpsons-conjecture.md) | Number Theory/Algebra | Partly solved | — |
@@ -173,5 +173,5 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 When the sheet changes:
 
 1. Update [`problems_original`](../problems_original/README.md) as described there.
-2. Run `python3 problems_ai/refresh_proposer_text.py`. It rewrites the **From the proposer** part of every page and the table above, checks the text against the sheet, adds a placeholder page for any new problem, and never changes the notes.
+2. Run `python3 problems_ai/refresh_proposer_text.py`. It rewrites the **From the proposer** part of every page and the table above, applies [`corrections.json`](corrections.json), checks the text against the sheet, adds a placeholder page for any new problem, and never changes the notes.
 3. Review the notes of every problem whose text changed, and write notes for the placeholders.

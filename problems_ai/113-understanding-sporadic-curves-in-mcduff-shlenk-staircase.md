@@ -1,4 +1,4 @@
-# 113 · Understanding sporadic curves in Mcduff-Shlenk staircase
+# 113 · Understanding sporadic curves in McDuff-Schlenk staircase
 
 ## From the proposer
 
@@ -31,7 +31,7 @@ https://doi.org/10.4007/annals.2012.175.3.5
 ### Notes
 
 - "Nagata conjecture (recently proved by OpenAI)": this refers to an OpenAI manuscript dated 23 September 2026, [“Nagata's conjecture for plane curves”](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/preprints/Nagatas-Conjecture-for-Plane-Curves-September-23-2026/main.pdf), which claims Nagata's conjecture for all $r\ge10$ points. I found expository notes on it (Tevelev, arXiv:2610.30050) and a follow-up paper (Bruce, arXiv:2610.41931), but no refereed publication or independent verification.
-- The title's "Mcduff-Shlenk" means McDuff–Schlenk. The eight steps are those of McDuff–Schlenk's Theorem 5.2.3, all in $[7\tfrac19,8\tfrac1{36}]$; Evans counts nine post-Fibonacci steps because he includes the step at $a=7$, given by the class $(3;2,1^{\times6})$. Since $c(a)=\sqrt a$ for $a\ge8\tfrac1{36}=(17/6)^2$, nothing happens in $(8\tfrac1{36},9]$.
+- The eight steps are those of McDuff–Schlenk's Theorem 5.2.3, all in $[7\tfrac19,8\tfrac1{36}]$; Evans counts nine post-Fibonacci steps because he includes the step at $a=7$, given by the class $(3;2,1^{\times6})$. Since $c(a)=\sqrt a$ for $a\ge8\tfrac1{36}=(17/6)^2$, nothing happens in $(8\tfrac1{36},9]$.
 
 ### The result
 

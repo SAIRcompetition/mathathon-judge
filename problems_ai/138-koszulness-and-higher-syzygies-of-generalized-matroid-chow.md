@@ -21,7 +21,7 @@ This could be used to develop an all-degree method beyond known cases. It is als
 
 1. Basile Coron, https://arxiv.org/abs/2302.13072v3. Section 2.4 gives the standard-monomial framework and the Koszulness theorem. Section 3 develops the proof, Section 4 treats graphical applications, and Section 5.1 identifies more cycle cases.
 
-2. Basile Coron, https://arxiv.org/abs/2604.04550v3. Sections 2 and 3 develop build matroids and flag building sets. Section 9.1, especially Conjecture 9.2, formulates the broader Koszulness problem and connects it with positivity questions.
+2. Basile Coron, Luis Ferroni and Shiyue Li, https://arxiv.org/abs/2604.04550v3. Sections 2 and 3 develop build matroids and flag building sets. Section 9.1, especially Conjecture 9.2, formulates the broader Koszulness problem and connects it with positivity questions.
 
 3. Roberto Pagaria and Gian Marco Pezzoli, https://arxiv.org/abs/2105.04214v2. Section 4.2 describes annihilator quotients through truncation and restriction-contraction. These supply geometric and algebraic tools for investigating recursive proof strategies.
 
@@ -36,7 +36,7 @@ This could be used to develop an all-degree method beyond known cases. It is als
 
 ### Notes
 
-- Reference 2 (arXiv:2604.04550) is "Matroid analogues of Gal's conjecture" by B. Coron, L. Ferroni and S. Li, not by Coron alone. Its Section 9.1 states Conjecture 9.1 (complete built matroids) and Conjecture 9.2 (flag built matroids): in both cases the Chow ring should be Koszul. "Build matroids" in the sheet means built matroids.
+- Reference 2 (arXiv:2604.04550) is "Matroid analogues of Gal's conjecture" by B. Coron, L. Ferroni and S. Li. Its Section 9.1 states Conjecture 9.1 (complete built matroids) and Conjecture 9.2 (flag built matroids): in both cases the Chow ring should be Koszul. "Build matroids" in the sheet means built matroids.
 - Reference 1, v3 (published in Compositio Math. 2025): §2.4 defines the Feichtner–Yuzvinsky rings, gives two presentations and recalls Feichtner–Yuzvinsky's Gröbner basis; the Koszulness theorems are Theorems 1.3–1.5, proved in §3; §4 treats chordal graphs and the extended modular operad; §5.1 discusses cycle graphs.
 
 ### The problem

@@ -1,17 +1,17 @@
-# 130 · Uniqueness of Finite Quandale Colorings
+# 130 · Uniqueness of Finite Quandle Colorings
 
 ## From the proposer
 
-- **Area:** Knot theory, Quandale theory
+- **Area:** Knot theory, Quandle theory
 - **Tracks:** Geometry
 
 ### Description
 
-Quandales provide a novel approach to analyzing structures in knot theory. We want to understand how well quandales describe knots, and in particular tackle the Alexander Polynomial Conjecture, which states that if two knots have different Alexander polynomials, then they can be distinguished by colorings via a suitable finite linear Alexander quandale. Previous work has shown this is true for triangularizable matrices, and we want to examine whether similar results hold in general.
+Quandles provide a novel approach to analyzing structures in knot theory. We want to understand how well quandles describe knots, and in particular tackle the Alexander Polynomial Conjecture, which states that if two knots have different Alexander polynomials, then they can be distinguished by colorings via a suitable finite linear Alexander quandle. Previous work has shown this is true for triangularizable matrices, and we want to examine whether similar results hold in general.
 
 ### Desired outcome
 
-We want to provide a novel exposition of the Alexander Polynomial Conjecture and explain knot theory through the perspective of quandales. Doing this will require proving several results about the distinguishing power of quandale colorings, which we intend to do in our work. Specifically, we need to show that quandale colorings are sufficient to distinguish certain types of knots, so it makes sense to study these knots from this perspective. This is analogous to how studying the root systems of semisimple Lie algebras can be more tractable than studying the algebras themselves. Our goal will be for participants to have a new understanding of the foundations of knot theory, based on Alexander polynomials and related notions in quandale theory.
+We want to provide a novel exposition of the Alexander Polynomial Conjecture and explain knot theory through the perspective of quandles. Doing this will require proving several results about the distinguishing power of quandle colorings, which we intend to do in our work. Specifically, we need to show that quandle colorings are sufficient to distinguish certain types of knots, so it makes sense to study these knots from this perspective. This is analogous to how studying the root systems of semisimple Lie algebras can be more tractable than studying the algebras themselves. Our goal will be for participants to have a new understanding of the foundations of knot theory, based on Alexander polynomials and related notions in quandle theory.
 
 ### References
 
@@ -30,7 +30,7 @@ https://jfuchs.hotell.kau.se/kurs/sgat/prst/s16_knqu.pdf
 
 ### Notes
 
-- "Quandale" in the sheet means "quandle". "Alexander Polynomial Conjecture" is the sheet's name for the conjecture at the end of Camacho–Dionísio–Picken (CDP); it is not a standard name.
+- "Alexander Polynomial Conjecture" is the sheet's name for the conjecture at the end of Camacho–Dionísio–Picken (CDP); it is not a standard name.
 - The second reference (J. Leventhal, arXiv:2209.05670) is about Alexander quandles and detecting causality in $(2+1)$-dimensional spacetimes: two particular links get the same colouring counts. It does not discuss the conjecture. The third is a student essay (E. Karlsson, Karlstad University) introducing knot diagrams, Fox colourings, quandles and Alexander quandles.
 
 ### The result

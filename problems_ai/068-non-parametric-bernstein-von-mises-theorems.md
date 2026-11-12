@@ -11,7 +11,7 @@ The Bernstein von-Mises theorem states that the posterior mean centred at the gr
 
 ### Desired outcome
 
-A Bernstein-von Mises theorem whose hypotheses are more general that all of the non-parametric Bernstein-von Mises theorems appearing in literature. Either a new proof that unifies these statements, or the existing proof structure with all constants optimised in each of the cases covered by the hypotheses. 
+A Bernstein-von Mises theorem whose hypotheses are more general than all of the non-parametric Bernstein-von Mises theorems appearing in literature. Either a new proof that unifies these statements, or the existing proof structure with all constants optimised in each of the cases covered by the hypotheses. 
 A formalisation of the above theorem +proof in lean.
 
 ### References

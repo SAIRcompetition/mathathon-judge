@@ -1,0 +1,130 @@
+[
+ {
+  "id": 1,
+  "field": "Short description of problem (100 words or less)",
+  "old": "Iskovitch",
+  "new": "Iskovskikh",
+  "count": 1,
+  "why": "misspelt name"
+ },
+ {
+  "id": 1,
+  "field": "Desired outcome",
+  "old": "classication",
+  "new": "classification",
+  "count": 1,
+  "why": "typo"
+ },
+ {
+  "id": 8,
+  "field": "Short description of problem (100 words or less)",
+  "old": "shorted re-write",
+  "new": "shortened re-write",
+  "count": 1,
+  "why": "typo"
+ },
+ {
+  "id": 14,
+  "field": "Short description of problem (100 words or less)",
+  "old": "Gross-Hacking-Kell-Kontsevich",
+  "new": "Gross-Hacking-Keel-Kontsevich",
+  "count": 1,
+  "why": "misspelt name"
+ },
+ {
+  "id": 33,
+  "field": "Desired outcome",
+  "old": "proof that OpenAI's",
+  "new": "proof than OpenAI's",
+  "count": 1,
+  "why": "typo"
+ },
+ {
+  "id": 68,
+  "field": "Desired outcome",
+  "old": "more general that all",
+  "new": "more general than all",
+  "count": 1,
+  "why": "typo"
+ },
+ {
+  "id": 81,
+  "field": "Short description of problem (100 words or less)",
+  "old": "very difficults",
+  "new": "very difficult",
+  "count": 1,
+  "why": "typo"
+ },
+ {
+  "id": 81,
+  "field": "Desired outcome",
+  "old": "how agument developed",
+  "new": "how argument developed",
+  "count": 1,
+  "why": "typo"
+ },
+ {
+  "id": 113,
+  "field": "Title/name of problem",
+  "old": "Mcduff-Shlenk",
+  "new": "McDuff-Schlenk",
+  "count": 1,
+  "why": "misspelt names"
+ },
+ {
+  "id": 128,
+  "field": "Reference/source material",
+  "old": "Annals of Probability 47 (2019), 1398–1419",
+  "new": "Combinatorica 39 (2019), 933–960",
+  "count": 1,
+  "why": "wrong journal (Crossref: doi:10.1007/s00493-019-3817-6)"
+ },
+ {
+  "id": 130,
+  "field": "Title/name of problem",
+  "old": "Quandale",
+  "new": "Quandle",
+  "count": 1,
+  "why": "misspelt term"
+ },
+ {
+  "id": 130,
+  "field": "Short description of problem (100 words or less)",
+  "old": "Quandale",
+  "new": "Quandle",
+  "count": 1,
+  "why": "misspelt term"
+ },
+ {
+  "id": 130,
+  "field": "Short description of problem (100 words or less)",
+  "old": "quandale",
+  "new": "quandle",
+  "count": 2,
+  "why": "misspelt term"
+ },
+ {
+  "id": 130,
+  "field": "Submitted Area",
+  "old": "Quandale",
+  "new": "Quandle",
+  "count": 1,
+  "why": "misspelt term"
+ },
+ {
+  "id": 130,
+  "field": "Desired outcome",
+  "old": "quandale",
+  "new": "quandle",
+  "count": 4,
+  "why": "misspelt term"
+ },
+ {
+  "id": 138,
+  "field": "Reference/source material",
+  "old": "2. Basile Coron, https://arxiv.org/abs/2604.04550v3.",
+  "new": "2. Basile Coron, Luis Ferroni and Shiyue Li, https://arxiv.org/abs/2604.04550v3.",
+  "count": 1,
+  "why": "missing co-authors (arXiv listing)"
+ }
+]
