@@ -11,10 +11,12 @@ least `γ`. The Hilbert space `⨂ ℂ⁴` is modelled by matrices indexed by sp
 `P⁽³⁾` is the projection onto total spin `3` of two spins 3/2, written as a polynomial in the square
 of their total spin. The torus is the quotient of the honeycomb lattice by `m₁` and `m₂` times its
 two primitive translations: unit cells `(x, y)` modulo `(m₁, m₂)`, two vertices per cell.
-Lemm–Sandvik–Wang obtain `γ = 0.00646` for `m₁, m₂ ≥ 12` on their tori (their Fig. 1); the
-statement fixes neither the constant nor the size threshold. Their tori are rectangular, these
-are rhombic; since the statement only asks for some `N`, it is the same claim, though not literally
-their theorem. M. J. Kastoryano (arXiv:2609.27993, 2026, not refereed) claims an analytic proof.
+Lemm–Sandvik–Wang obtain `γ ≥ 0.00646` for `m₁, m₂ ≥ 12` on their tori (their Fig. 1); the
+statement fixes neither the constant nor the size threshold. Their tori are rectangular and these
+are rhombic, so this is not literally their theorem; their finite-size criterion is local and
+translation-invariant and is expected to apply here once `N` is large enough for the patch it uses
+to embed, but this has not been checked. M. J. Kastoryano (arXiv:2609.27993, 2026, not refereed)
+claims an analytic proof.
 -/
 
 import Mathlib

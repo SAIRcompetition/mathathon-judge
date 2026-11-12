@@ -80,6 +80,8 @@ theorem exists_not_representable :
     ∃ (L : Type) (_ : Lattice L), Finite L ∧ Nonempty L ∧ ¬ Representable L
 ```
 
+This is the existence theorem claimed by OpenAI: some finite nonempty lattice is not the congruence lattice of any finite algebra. It contains no size bound, so it does not express the task, an explicit upper bound on the least size of such a lattice; a Lean proof of an explicit bound would also prove this statement.
+
 Source: <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/Universal/Congruence.lean> (adapted as described in the file header).
 
 #### Mathlib

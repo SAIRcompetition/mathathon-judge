@@ -93,7 +93,7 @@ theorem aklt_hexagonal_spectral_gap :
 
 The AKLT Hamiltonian $\sum_{\text{edges }jk}P^{(3)}_{jk}$ on the hexagonal lattice wrapped on the $m_1\times m_2$ torus (the quotient by $m_1$ and $m_2$ times its two primitive translations) is a matrix indexed by spin-3/2 configurations, with $P^{(3)}$ written as a polynomial in the square of the total spin. The statement asks for a gap uniform in $m_1,m_2\ge N$ and fixes neither $\gamma$ nor $N$; Lemm–Sandvik–Wang report $\gamma\ge0.00646$ for $m_1,m_2\ge12$ on their tori.
 
-The tori here are rhombic, while Lemm, Sandvik and Wang use rectangular ones; since the statement only asks for some $N$, it is the same claim, though not literally their theorem.
+The tori here are rhombic, while Lemm, Sandvik and Wang use rectangular ones, so this is not literally their theorem; their finite-size criterion is local and translation-invariant and is expected to apply to these tori once $N$ is large enough for the patch it uses to embed, but this has not been checked.
 
 Source: written by AI for Mathathon; not taken from an existing formalization.
 

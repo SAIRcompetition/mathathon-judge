@@ -93,7 +93,7 @@ The statement of `exact_count_and_sat` is long; see the file.
 
 Source: <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SubexponentialSAT.lean> (copied unchanged).
 
-A Lean proof of this statement already exists: <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algorithms/SubexponentialSAT/Main.lean>. A Lean-verified claim must not use or copy it.
+A Lean proof of this statement already exists: `exact_count_and_sat` in <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Final.lean>, imported by <https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algorithms/SubexponentialSAT/Main.lean>. A Lean-verified claim must not use or copy it.
 
 #### Related Lean formalizations
 

@@ -34,7 +34,7 @@ Erdős asked whether in every 2-colouring of the plane, every triangle with at m
 ### Notes
 
 - There is no paper: the argument appears only in the repository's README and blueprint. The README reports an internal review of the argument by GPT-6 Astra and no human review of the proof; erdosproblems.com/173 lists no proof claims.
-- The proof uses Theorem 2.3 (extended from the algebraic numbers to the algebraic closure of $\mathbb Q(x)$), Lemma 3.4, Lemma 4.1 and Proposition 4.2 of OpenAI's unrefereed "The Euclidean plane is not five-colorable" (Problem 33), not the Ramsey classification of Problem 92.
+- The proof uses Theorem 2.3 (extended from the algebraic numbers to the algebraic closure of $\mathbb Q(x)$), Lemma 3.4, Lemma 4.1 and Proposition 4.2 of OpenAI's unrefereed "The Euclidean plane is not five-colorable" (Problem 33), not the Ramsey classification of Problem 91.
 - Collinear triples are not a separate case in this proof: Lemma 1.3 reduces them to the same two-scale statement (blueprint §9).
 - The stronger form of Erdős and Graham (1979), in which one colour class contains every triangle except possibly one equilateral triangle, is not addressed.
 
