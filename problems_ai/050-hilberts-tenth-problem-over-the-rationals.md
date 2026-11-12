@@ -17,10 +17,6 @@ Verify the proof and write an exposition which is accessible to an undergraduate
 
 https://github.com/openai/math/blob/main/preprints/Hilberts-tenth-problem-over-the-rational-numbers-September-24-2026/main.pdf
 
-### Reference links
-
-- <https://github.com/openai/math/blob/main/preprints/Hilberts-tenth-problem-over-the-rational-numbers-September-24-2026/main.pdf>
-
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
