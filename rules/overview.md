@@ -15,6 +15,8 @@ Contact: [mathathon@caltech.edu](mailto:mathathon@caltech.edu)
 
 Official GitHub repository: [SAIRcompetition/mathathon-judge](https://github.com/SAIRcompetition/mathathon-judge)
 
+Open Math OS: every Mathathon team can apply for a team edition at [openmathmodel.org](https://www.openmathmodel.org/) (Apply for a team).
+
 ## FAQ
 
 ### Who runs Mathathon?
