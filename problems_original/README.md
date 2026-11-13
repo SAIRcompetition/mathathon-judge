@@ -1,6 +1,6 @@
 # Mathathon Round 1 problems: original text
 
-The 126 Round 1 problems exactly as they appear in the organizers' final problem sheet, one file per problem: the proposers' text and, for some problems, the judges' suggestions. Nothing here is edited or AI-generated. Problems 38, 51, 52, 63, 64, 65, 82, 111, 112, 113, 116, 117, 119 and 130 were in the earlier sheet but are not in the final list; their files remain in the git history.
+The 126 Round 1 problems exactly as they appear in the organizers' final problem sheet, one file per problem: the proposers' text and, for some problems, the judges' suggestions. Nothing here is edited or AI-generated, except that track names the sheet spells differently use the five official names (see `TRACK_NAMES` in [`split_sheet.py`](split_sheet.py)). Problems 38, 51, 52, 63, 64, 65, 82, 111, 112, 113, 116, 117, 119 and 130 were in the earlier sheet but are not in the final list; their files remain in the git history.
 
 Material that a proposer sent to the organizers to share with all participants is in [`attachments/`](attachments/), unchanged:
 
@@ -85,25 +85,25 @@ Material that a proposer sent to the organizers to share with all participants i
 | 78 | [Understanding Matrix Multiplication](078-understanding-matrix-multiplication.md) | Computation/Applied Math |
 | 79 | [The Painlevé paradox](079-the-painleve-paradox.md) | Analysis, Computation/Applied Math |
 | 80 | [Surface intersection with correct topology](080-surface-intersection-with-correct-topology.md) | Geometry, Computation/Applied Math |
-| 81 | [Chowla’s conjecture for two-point correlations](081-chowlas-conjecture-for-two-point-correlations.md) | Number Theory/Algebra |
+| 81 | [Chowla’s conjecture for two-point correlations](081-chowlas-conjecture-for-two-point-correlations.md) | Algebra/Number Theory |
 | 83 | [Cannon's conjecture and friends](083-cannons-conjecture-and-friends.md) | Geometry |
-| 84 | [Exotic hyperbolic groups from 2-complexes](084-exotic-hyperbolic-groups-from-2-complexes.md) | Number Theory/Algebra, Geometry |
+| 84 | [Exotic hyperbolic groups from 2-complexes](084-exotic-hyperbolic-groups-from-2-complexes.md) | Algebra/Number Theory, Geometry |
 | 85 | [Different Effective Equation with shared Brownian Limit](085-different-effective-equation-with-shared-brownian-limit.md) | Analysis |
 | 86 | [Ulam Floating Problem perimetral density 1/3,1/4,1/5](086-ulam-floating-problem-perimetral-density-1-3-1-4-1-5.md) | Analysis, Geometry |
 | 87 | [Towards a uniform natural proof of the nonnesting-noncrossing correspondence, starting with type B](087-towards-a-uniform-natural-proof-of-the-nonnesting.md) | Combinatorics |
 | 88 | [Classification of minimal cones.](088-classification-of-minimal-cones.md) | Analysis |
-| 89 | [Projectivity of Gieseker Moduli on the Projective Plane without GIT](089-projectivity-of-gieseker-moduli-on-the-projective-plane.md) | Geometry, Number Theory/Algebra |
+| 89 | [Projectivity of Gieseker Moduli on the Projective Plane without GIT](089-projectivity-of-gieseker-moduli-on-the-projective-plane.md) | Geometry, Algebra/Number Theory |
 | 90 | [Gittins Index Optimality for Scheduling with Time-Varying Holding Costs](090-gittins-index-optimality-for-scheduling-with-time-varying.md) | Computation/Applied Math |
 | 91 | [A classification of finite Euclidean Ramsey configurations](091-a-classification-of-finite-euclidean-ramsey-configurations.md) | Combinatorics |
 | 92 | [Erdős Problem #173: monochromatic congruent triangles in 2-colourings of the plane](092-erdos-problem-173-monochromatic-congruent-triangles-in-2.md) | Combinatorics |
-| 93 | [An improvement towards bounded gaps between primes](093-an-improvement-towards-bounded-gaps-between-primes.md) | Numer Theory/Algebra |
-| 94 | [Summing multiplicative functions/counting primes](094-summing-multiplicative-functions-counting-primes.md) | Computation/Applied Math, Number Theory/Algebra |
+| 93 | [An improvement towards bounded gaps between primes](093-an-improvement-towards-bounded-gaps-between-primes.md) | Algebra/Number Theory |
+| 94 | [Summing multiplicative functions/counting primes](094-summing-multiplicative-functions-counting-primes.md) | Computation/Applied Math, Algebra/Number Theory |
 | 95 | [Quasi-Orders For the Lefthanded Lovász Local Lemma](095-quasi-orders-for-the-lefthanded-lovasz-local-lemma.md) | Combinatorics |
 | 96 | [Counterexamples to polynomial removal for ordered binary matrices](096-counterexamples-to-polynomial-removal-for-ordered-binary.md) | Combinatorics |
 | 97 | [Model Completeness of the Real Exponential Field](097-model-completeness-of-the-real-exponential-field.md) | ????? |
 | 98 | [An Elementary Proof of the Deligne–Sullivan Theorem and Virtual Stable Parallelizability of Compact Hyperbolic Manifolds](098-an-elementary-proof-of-the-delignesullivan-theorem-and.md) | Geometry |
 | 99 | [Towards a combinatorial proof of Schur positivity for LLT polynomials of unit interval graphs](099-towards-a-combinatorial-proof-of-schur-positivity-for-llt.md) | Combinatorics |
-| 100 | [Hironaka’s Resolution of Singularity: Understanding the Algorithm and Its Later Simplifications](100-hironakas-resolution-of-singularity-understanding-the.md) | Number Theory/Algebra, Geometry |
+| 100 | [Hironaka’s Resolution of Singularity: Understanding the Algorithm and Its Later Simplifications](100-hironakas-resolution-of-singularity-understanding-the.md) | Algebra/Number Theory, Geometry |
 | 101 | [Unraveling Preiss' Geometry of Measures](101-unraveling-preiss-geometry-of-measures.md) | Geometry, Analysis |
 | 102 | [Log Sobolev inequality for sine Gordon](102-log-sobolev-inequality-for-sine-gordon.md) | Analysis |
 | 103 | [Rethinking Special Relativity: Axiomatizations and Underlying Mathematical Structures](103-rethinking-special-relativity-axiomatizations-and.md) | Computation/Applied Math |
@@ -111,30 +111,30 @@ Material that a proposer sent to the organizers to share with all participants i
 | 105 | [Where is the topology hiding, which is missing from a Newton polygon?](105-where-is-the-topology-hiding-which-is-missing-from-a-newton.md) | Geometry |
 | 106 | [Game-theoretic probability](106-game-theoretic-probability.md) | Computation/Applied Math, Analysis |
 | 107 | [Why regular polygons have the fewest distances: an illustrated guide to Altman's theorem](107-why-regular-polygons-have-the-fewest-distances-an.md) | Geometry, Combinatorics |
-| 108 | [Generalizing the zeta(5) irrationality argument](108-generalizing-the-zeta-5-irrationality-argument.md) | Number Theory/Algebra |
-| 109 | [Tightening the commutator-scaling Trotter error bound at fourth order](109-tightening-the-commutator-scaling-trotter-error-bound-at.md) | Computation/Applied Mathematics |
+| 108 | [Generalizing the zeta(5) irrationality argument](108-generalizing-the-zeta-5-irrationality-argument.md) | Algebra/Number Theory |
+| 109 | [Tightening the commutator-scaling Trotter error bound at fourth order](109-tightening-the-commutator-scaling-trotter-error-bound-at.md) | Computation/Applied Math |
 | 110 | [Statistical learning theory and neural network generalization bounds](110-statistical-learning-theory-and-neural-network.md) | Analysis, Computation/Applied Math |
 | 114 | [Obstruction theory in Lean](114-obstruction-theory-in-lean.md) | Geometry |
 | 115 | [Exotic spheres](115-exotic-spheres.md) | Geometry |
-| 118 | [Formalizing the AKLT spectral gap](118-formalizing-the-aklt-spectral-gap.md) | Computation/Applied mathematics |
+| 118 | [Formalizing the AKLT spectral gap](118-formalizing-the-aklt-spectral-gap.md) | Computation/Applied Math |
 | 120 | [Characterizations and identities for probability distributions](120-characterizations-and-identities-for-probability.md) | Analysis |
 | 121 | [Carleson' Theorem on convergence of Fourier series](121-carleson-theorem-on-convergence-of-fourier-series.md) | Analysis |
-| 122 | [Efficient Verification of Lean Proofs via Interaction](122-efficient-verification-of-lean-proofs-via-interaction.md) | Computation/Applied Mathematics |
+| 122 | [Efficient Verification of Lean Proofs via Interaction](122-efficient-verification-of-lean-proofs-via-interaction.md) | Computation/Applied Math |
 | 123 | [Schur Number Five](123-schur-number-five.md) | Combinatorics |
-| 124 | [Mutually unbiased bases in dimension 6, applied to a 6-dimensional quantum system](124-mutually-unbiased-bases-in-dimension-6-applied-to-a-6.md) | Computaiton/Applied Math |
+| 124 | [Mutually unbiased bases in dimension 6, applied to a 6-dimensional quantum system](124-mutually-unbiased-bases-in-dimension-6-applied-to-a-6.md) | Computation/Applied Math |
 | 125 | [Enumeration of totally symmetric plane partitions](125-enumeration-of-totally-symmetric-plane-partitions.md) | Combinatorics |
-| 126 | [Creative Mathematical Thought Partners](126-creative-mathematical-thought-partners.md) | Computation/Applied Mathematics |
+| 126 | [Creative Mathematical Thought Partners](126-creative-mathematical-thought-partners.md) | Computation/Applied Math |
 | 127 | [Rogers Ramanujan Identity](127-rogers-ramanujan-identity.md) | Combinatorics |
-| 128 | [Why Do Random Sorting Networks Draw Sine Curves?](128-why-do-random-sorting-networks-draw-sine-curves.md) | Computation/Applied Mathematics |
+| 128 | [Why Do Random Sorting Networks Draw Sine Curves?](128-why-do-random-sorting-networks-draw-sine-curves.md) | Computation/Applied Math |
 | 129 | [Termination of flips for fourfolds](129-termination-of-flips-for-fourfolds.md) | Geometry |
-| 131 | [Irrationality of ζ(3) (Apery's Theorem)](131-irrationality-of-3-aperys-theorem.md) | Number Theory/Algebra |
-| 132 | [An Interactive Computational Laboratory for Spatial Stochastic Processes and Scaling Limits](132-an-interactive-computational-laboratory-for-spatial.md) | Computation/Applied Mathematics, Analysis |
-| 133 | [Simpson's conjecture](133-simpsons-conjecture.md) | Number Theory/Algebra |
-| 134 | [Understanding of the relation between Spin structure and K-theory and possible generalization to higher height.](134-understanding-of-the-relation-between-spin-structure-and-k.md) | Computation/Applied Mathematics |
-| 135 | [The Theorem That Secretly Needed Choice](135-the-theorem-that-secretly-needed-choice.md) | Number Theory/Algebra |
-| 136 | [The Aaronson–Ambainis Conjecture: From Influential Variables to Quantum Simulation](136-the-aaronsonambainis-conjecture-from-influential-variables.md) | Computation/Applied Mathematics |
-| 137 | [Tree Symmetries and the p-Adic Valuations of Fuss–Catalan Numbers](137-tree-symmetries-and-the-p-adic-valuations-of-fusscatalan.md) | Combinatorics, Number Theory/Algebra |
-| 138 | [Koszulness and higher syzygies of generalized matroid Chow rings](138-koszulness-and-higher-syzygies-of-generalized-matroid-chow.md) | Number Theory/Algebra |
+| 131 | [Irrationality of ζ(3) (Apery's Theorem)](131-irrationality-of-3-aperys-theorem.md) | Algebra/Number Theory |
+| 132 | [An Interactive Computational Laboratory for Spatial Stochastic Processes and Scaling Limits](132-an-interactive-computational-laboratory-for-spatial.md) | Computation/Applied Math, Analysis |
+| 133 | [Simpson's conjecture](133-simpsons-conjecture.md) | Algebra/Number Theory |
+| 134 | [Understanding of the relation between Spin structure and K-theory and possible generalization to higher height.](134-understanding-of-the-relation-between-spin-structure-and-k.md) | Computation/Applied Math |
+| 135 | [The Theorem That Secretly Needed Choice](135-the-theorem-that-secretly-needed-choice.md) | Algebra/Number Theory |
+| 136 | [The Aaronson–Ambainis Conjecture: From Influential Variables to Quantum Simulation](136-the-aaronsonambainis-conjecture-from-influential-variables.md) | Computation/Applied Math |
+| 137 | [Tree Symmetries and the p-Adic Valuations of Fuss–Catalan Numbers](137-tree-symmetries-and-the-p-adic-valuations-of-fusscatalan.md) | Combinatorics, Algebra/Number Theory |
+| 138 | [Koszulness and higher syzygies of generalized matroid Chow rings](138-koszulness-and-higher-syzygies-of-generalized-matroid-chow.md) | Algebra/Number Theory |
 | 139 | [Critical scales in periodic transport homogenization](139-critical-scales-in-periodic-transport-homogenization.md) | Geometry, Analysis |
 | 140 | [A combinatorial proof of unimodality for (1+q)(1+q^2)...(1+q^n)](140-a-combinatorial-proof-of-unimodality-for-1-q-1-q-2-1-q-n.md) | Combinatorics |
 <!-- problem-index:end -->
@@ -145,7 +145,7 @@ One section per column of the sheet, each holding the cell text unchanged: Probl
 
 ## For maintainers
 
-- [`split_sheet.py`](split_sheet.py) writes the problem files and the table above from the sheet exports in `source/`, which is kept locally and not in the repository (last export: 2026-11-12, about 08:00 PST, from the final problem sheet; the problems are its first tab, and its other tab, "Judge Preferences", is not used). It checks every field against the sheet, byte for byte.
+- [`split_sheet.py`](split_sheet.py) writes the problem files and the table above from the sheet exports in `source/`, which is kept locally and not in the repository (last export: 2026-11-12, about 08:00 PST, from the final problem sheet; the problems are its first tab, and its other tab, "Judge Preferences", is not used). It checks every field against the sheet, byte for byte, after that track name replacement.
 - To update after the sheet changes, download it into `source/` as `mathathon-problem-sheet.csv`, `mathathon-problem-sheet.xlsx` and `mathathon-problem-sheet-html.zip` (File → Download: CSV, Microsoft Excel, Web page), then run `python3 problems_original/split_sheet.py`, and then update [`problems_ai`](../problems_ai/README.md) as described there.
 - The sheet's "Short description" column is hidden in its normal view and is missing from the HTML export; the CSV and XLSX exports include it.
 - Markdown viewers may join single line breaks or treat `*`, `_` and `$` as formatting; the exports are the reference copies.

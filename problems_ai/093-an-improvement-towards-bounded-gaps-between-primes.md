@@ -3,7 +3,7 @@
 ## From the proposer
 
 - **Area:** Analytic number theory
-- **Tracks:** Number Theory/Algebra
+- **Tracks:** Algebra/Number Theory
 
 ### Description
 

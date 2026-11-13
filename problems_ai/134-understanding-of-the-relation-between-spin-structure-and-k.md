@@ -3,7 +3,7 @@
 ## From the proposer
 
 - **Area:** Algebraic topology
-- **Tracks:** Computation/Applied Mathematics
+- **Tracks:** Computation/Applied Math
 
 ### Description
 

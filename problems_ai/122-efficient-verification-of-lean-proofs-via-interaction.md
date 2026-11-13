@@ -3,7 +3,7 @@
 ## From the proposer
 
 - **Area:** Mathematical logic, formal verification, computational complexity, interactive proof systems, algebra, and probability.
-- **Tracks:** Computation/Applied Mathematics
+- **Tracks:** Computation/Applied Math
 
 ### Description
 

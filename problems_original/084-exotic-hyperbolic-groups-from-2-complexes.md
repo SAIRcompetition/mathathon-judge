@@ -18,7 +18,7 @@ Geometric group theory
 
 ## Proposed Tracks
 
-Number Theory/Algebra, Geometry
+Algebra/Number Theory, Geometry
 
 ## Reference/source material
 

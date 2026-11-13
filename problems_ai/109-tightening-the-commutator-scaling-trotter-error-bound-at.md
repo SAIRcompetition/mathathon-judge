@@ -3,7 +3,7 @@
 ## From the proposer
 
 - **Area:** Quantum information & computation
-- **Tracks:** Computation/Applied Mathematics
+- **Tracks:** Computation/Applied Math
 
 ### Description
 

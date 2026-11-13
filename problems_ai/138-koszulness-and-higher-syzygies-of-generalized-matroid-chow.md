@@ -3,7 +3,7 @@
 ## From the proposer
 
 - **Area:** Algebraic combinatorics, commutative algebra, matroid theory, combinatorial Hodge theory.
-- **Tracks:** Number Theory/Algebra
+- **Tracks:** Algebra/Number Theory
 
 ### Description
 

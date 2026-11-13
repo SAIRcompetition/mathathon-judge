@@ -18,7 +18,7 @@ Analytic number theory
 
 ## Proposed Tracks
 
-Numer Theory/Algebra
+Algebra/Number Theory
 
 ## Reference/source material
 

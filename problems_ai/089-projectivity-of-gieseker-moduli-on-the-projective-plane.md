@@ -3,7 +3,7 @@
 ## From the proposer
 
 - **Area:** Algebraic Geometry/Moduli theory
-- **Tracks:** Geometry, Number Theory/Algebra
+- **Tracks:** Geometry, Algebra/Number Theory
 
 ### Description
 

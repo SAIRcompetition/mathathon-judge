@@ -3,7 +3,7 @@
 ## From the proposer
 
 - **Area:** Automated and interactive theorem proving and formalization; human–AI collaboration. Mathematical case studies may span any field.
-- **Tracks:** Computation/Applied Mathematics
+- **Tracks:** Computation/Applied Math
 
 ### Description
 
