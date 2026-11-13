@@ -8,12 +8,13 @@ The exports in source/ are not tracked in the repository; download them first
 (see source/README.txt, also untracked, or README.md).
 
 The problems are the first tab of the sheet; other tabs are not read.  The text under
-each field heading is the CSV cell, unchanged.  The column "Judge Suggestions" gets its
+each field heading is the CSV cell, unchanged, except that track names the sheet spells
+differently are replaced by the five official names (TRACK_NAMES).  The column "Judge Suggestions" gets its
 own heading in the files where it is not empty.  Hyperlinks attached to cells are read
 from the HTML export and cross-checked against the XLSX export; those of the judge
 column are listed under their own heading.  After writing, the script reads every file
-back and checks that each field is byte-identical to its CSV cell; it exits with an
-error otherwise.
+back and checks that each field is byte-identical to its CSV cell (after that track
+name replacement); it exits with an error otherwise.
 """
 import csv
 import re
@@ -43,6 +44,15 @@ LINKS_HEADING = "Reference links"
 JUDGE = "Judge Suggestions"  # column 8; rendered only when not empty
 JUDGE_COL = len(HEADER)
 JUDGE_LINKS_HEADING = "Links in Judge Suggestions"
+# The sheet spells some of the five tracks differently; the files use the names in
+# rules/submission-guidelines.md, which the platform's problem import matches exactly.
+TRACK_NAMES = {
+    "Number Theory/Algebra": "Algebra/Number Theory",
+    "Numer Theory/Algebra": "Algebra/Number Theory",
+    "Computation/Applied Mathematics": "Computation/Applied Math",
+    "Computation/Applied mathematics": "Computation/Applied Math",
+    "Computaiton/Applied Math": "Computation/Applied Math",
+}
 INDEX_START = "<!-- problem-index:start -->"
 INDEX_END = "<!-- problem-index:end -->"
 
@@ -63,6 +73,14 @@ def write_index(written):
                       encoding="utf-8")
 
 
+def official_tracks(cell):
+    """The Proposed Tracks cell with TRACK_NAMES applied; unchanged if none occurs."""
+    parts = [t.strip() for t in cell.split(",")]
+    if not any(t in TRACK_NAMES for t in parts):
+        return cell
+    return ", ".join(TRACK_NAMES.get(t, t) for t in parts)
+
+
 def slug(title):
     s = unicodedata.normalize("NFKD", title).encode("ascii", "ignore").decode().lower()
     s = re.sub(r"['`]", "", s)
@@ -78,6 +96,9 @@ def read_csv():
         sys.exit(f"unexpected header: {rows[0]}")
     if any(c.strip() for r in rows for c in r[8:]):
         sys.exit("the CSV has content beyond the column Judge Suggestions")
+    for r in rows[1:]:
+        if len(r) > 4:
+            r[4] = official_tracks(r[4])
     # sheet row number (1-based, header = row 1) -> row
     return {i + 1: r for i, r in enumerate(rows) if i > 0 and any(c.strip() for c in r)}
 
@@ -253,7 +274,7 @@ def main():
     if bad:
         sys.exit(f"round-trip check failed for: {bad}")
     write_index(written)
-    print(f"wrote {len(written)} files and the README table; every field matches its CSV cell byte for byte; "
+    print(f"wrote {len(written)} files and the README table; every field matches its CSV cell byte for byte (track names aside); "
           f"{sum(len(v) for v in hl.values())} links in {len(hl)} cells")
 
 

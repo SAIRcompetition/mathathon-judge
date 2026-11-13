@@ -18,7 +18,7 @@ Algebraic Geometry/Moduli theory
 
 ## Proposed Tracks
 
-Geometry, Number Theory/Algebra
+Geometry, Algebra/Number Theory
 
 ## Reference/source material
 

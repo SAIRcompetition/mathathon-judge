@@ -3,7 +3,7 @@
 ## From the proposer
 
 - **Area:** Enumerative combinatorics; combinatorial number theory; (p)-adic divisibility
-- **Tracks:** Combinatorics, Number Theory/Algebra
+- **Tracks:** Combinatorics, Algebra/Number Theory
 
 ### Description
 

@@ -18,7 +18,7 @@ Mathematical logic, formal verification, computational complexity, interactive p
 
 ## Proposed Tracks
 
-Computation/Applied Mathematics
+Computation/Applied Math
 
 ## Reference/source material
 

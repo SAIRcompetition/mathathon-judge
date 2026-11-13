@@ -3,7 +3,7 @@
 ## From the proposer
 
 - **Area:** Number theory, Diophantine approximation
-- **Tracks:** Number Theory/Algebra
+- **Tracks:** Algebra/Number Theory
 
 ### Description
 

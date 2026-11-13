@@ -3,7 +3,7 @@
 ## From the proposer
 
 - **Area:** Computational number theory
-- **Tracks:** Computation/Applied Math, Number Theory/Algebra
+- **Tracks:** Computation/Applied Math, Algebra/Number Theory
 
 ### Description
 

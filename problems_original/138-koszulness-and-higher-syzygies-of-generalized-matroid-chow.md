@@ -18,7 +18,7 @@ Algebraic combinatorics, commutative algebra, matroid theory, combinatorial Hodg
 
 ## Proposed Tracks
 
-Number Theory/Algebra
+Algebra/Number Theory
 
 ## Reference/source material
 

@@ -18,7 +18,7 @@ Quantum information theory; linear algebra
 
 ## Proposed Tracks
 
-Computaiton/Applied Math
+Computation/Applied Math
 
 ## Reference/source material
 

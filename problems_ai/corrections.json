@@ -216,14 +216,6 @@
   "why": "wrong author initial (arXiv:2212.14831)"
  },
  {
-  "id": 93,
-  "field": "Proposed Tracks",
-  "old": "Numer Theory/Algebra",
-  "new": "Number Theory/Algebra",
-  "count": 1,
-  "why": "typo (track name)"
- },
- {
   "id": 95,
   "field": "Short description of problem (100 words or less)",
   "old": "how qausi-order",
@@ -262,14 +254,6 @@
   "new": "series converges pointwise",
   "count": 1,
   "why": "typo (noun for verb)"
- },
- {
-  "id": 124,
-  "field": "Proposed Tracks",
-  "old": "Computaiton/Applied Math",
-  "new": "Computation/Applied Math",
-  "count": 1,
-  "why": "typo (track name)"
  },
  {
   "id": 128,
