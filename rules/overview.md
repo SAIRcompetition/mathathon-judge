@@ -41,7 +41,7 @@ We are covering the cost of flights for all participants and judges. Participant
 
 ### What is your position on AI?
 
-We treat AI as one of many tools available to mathematicians. Proprietary models are allowed, but we encourage the use of open-source tools. We are partnering with the Foundation for Science and AI Research (SAIR) to provide compute, host workshops, and offer prizes to teams that use open-source models. Every Mathathon team gets a team edition of Open Math OS, a research workspace built on open frontier models: see [openmathmodel.org](https://www.openmathmodel.org/). Our goal is to empower each participant to make their own decision about the tools used at Mathathon and in their own work.
+We treat AI as one of many tools available to mathematicians. Proprietary models are allowed, but we encourage the use of open-source tools. We are partnering with the Foundation for Science and AI Research (SAIR) to provide compute, host workshops, and offer prizes to teams that use open-source models. Every Mathathon team can apply for a team edition of Open Math OS, a research workspace built on open frontier models, at [openmathmodel.org](https://www.openmathmodel.org/). Our goal is to empower each participant to make their own decision about the tools used at Mathathon and in their own work.
 
 ## Co-organized by
 

@@ -42,7 +42,7 @@ You take four steps on the SAIR competition platform: registration (§1), teams 
   | Select or switch the problem (§3) | ✓ | ✓ | |
   | Submit, replace, or withdraw the submission (§4) | ✓ | ✓ | ✓ |
 
-- **Open Math OS.** Every Mathathon team gets a team edition of [Open Math OS](https://www.openmathmodel.org/), a research workspace with open frontier models and scientific computing tools. Once your team is formed, go to [openmathmodel.org](https://www.openmathmodel.org/) to set it up for the event.
+- **Open Math OS.** Every Mathathon team can have a team edition of [Open Math OS](https://www.openmathmodel.org/), a research workspace with open frontier models and scientific computing tools. Once your team is formed, choose **Apply for a team** on [openmathmodel.org](https://www.openmathmodel.org/).
 
 ## 3. Problem selection
 
