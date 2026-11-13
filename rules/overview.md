@@ -40,3 +40,50 @@ We are covering the cost of flights for all participants and judges. Participant
 ### What is your position on AI?
 
 We treat AI as one of many tools available to mathematicians. Proprietary models are allowed, but we encourage the use of open-source tools. We are partnering with the Foundation for Science and AI Research (SAIR) to provide compute, host workshops, and offer prizes to teams that use open-source models. Our goal is to empower each participant to make their own decision about the tools used at Mathathon and in their own work.
+
+## Co-organized by
+
+- [![Caltech](https://media.sair.foundation/images/mathathon-logos/caltech.jpg)](https://www.caltech.edu/)
+- [![SAIR](https://media.sair.foundation/images/mathathon-logos/sair.jpg)](https://sair.foundation/)
+
+## Lead donor
+
+- [![XTX Markets](https://media.sair.foundation/images/mathathon-logos/xtx-markets.jpg)](https://www.xtxmarkets.com/)
+
+## Compute Partner
+
+- [![National Compute](https://media.sair.foundation/images/mathathon-logos/national_compute.jpeg)](https://nationalcompute.com/)
+## Supported by
+
+- [![Cognition](https://media.sair.foundation/images/mathathon-logos/cognition.svg)](https://cognition.ai/)
+- [![Conway](https://media.sair.foundation/images/mathathon-logos/conway.png)](https://conway.tech/)
+- [![Cloudflare](https://media.sair.foundation/images/mathathon-logos/cloudflare.svg)](https://www.cloudflare.com/)
+- [![HUD](https://media.sair.foundation/images/mathathon-logos/hud.svg)](https://www.hud.ai/)
+- [![Oratomic](https://media.sair.foundation/images/mathathon-logos/oratomic.svg)](https://oratomic.com/)
+- [![Midas](https://media.sair.foundation/images/mathathon-logos/midas.png)](https://mi.inc/)
+- [![Annapurna Labs](https://media.sair.foundation/images/mathathon-logos/annapurna.png)](https://amazon.jobs/content/en/teams/annapurna-labs)
+- [![Hugging Face](https://media.sair.foundation/images/mathathon-logos/huggingface.png)](https://huggingface.co/)
+
++ [![Modal](https://media.sair.foundation/images/mathathon-logos/modal.svg)](https://modal.com/)
++ [![Mercor](https://media.sair.foundation/images/mathathon-logos/mercor.png)](https://mercor.com/)
++ [![dmodel](https://media.sair.foundation/images/mathathon-logos/dmodel.png)](https://dmodel.ai/)
++ [![Prime Intellect](https://media.sair.foundation/images/mathathon-logos/primeintellect.svg)](https://www.primeintellect.ai/)
++ [![a16z](https://media.sair.foundation/images/mathathon-logos/a16z.png)](https://a16z.com/)
++ [![SF Compute](https://media.sair.foundation/images/mathathon-logos/sfcompute.svg)](https://sfcompute.com/)
+
+- [![Architect Labs](https://media.sair.foundation/images/mathathon-logos/architectlabs.png)](https://architectlabs.com/)
+- [![Emergence Capital](https://media.sair.foundation/images/mathathon-logos/emcap.svg)](https://emcap.com/)
+- [![8VC](https://media.sair.foundation/images/mathathon-logos/8vc.png)](https://8vc.com/)
+- [![Base10](https://media.sair.foundation/images/mathathon-logos/base10.svg)](https://base10.vc/)
+- [![Factory](https://media.sair.foundation/images/mathathon-logos/factory.svg)](https://factory.ai/)
+- [![Extropic](https://media.sair.foundation/images/mathathon-logos/extropic.png)](https://extropic.ai/)
+- [![Formation VC](https://media.sair.foundation/images/mathathon-logos/formation.svg)](https://www.formationvc.com/)
+
++ [![Normal](https://media.sair.foundation/images/mathathon-logos/normal.png)](https://normal.ai/)
++ [![Extraordinary](https://media.sair.foundation/images/mathathon-logos/extraordinary.png)](https://extraordinary.com/)
++ [![1517 Fund](https://media.sair.foundation/images/mathathon-logos/1517.svg)](https://www.1517fund.com/)
++ [![Indent](https://media.sair.foundation/images/mathathon-logos/indent.svg)](https://indent.com/)
++ [![Diode](https://media.sair.foundation/images/mathathon-logos/diode.svg)](https://www.diode.computer/)
++ [![Pareto](https://media.sair.foundation/images/mathathon-logos/pareto.png)](https://pareto20.com/)
++ [![Terac](https://media.sair.foundation/images/mathathon-logos/terac.svg)](https://terac.com/)
++ [![Droneforge](https://media.sair.foundation/images/mathathon-logos/droneforge.png)](https://thedroneforge.com/)
