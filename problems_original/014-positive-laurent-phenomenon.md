@@ -10,7 +10,7 @@ Positive Laurent phenomenon
 
 ## Short description of problem (100 words or less)
 
-The notion of cluster algebras was motivated by understanding Lusztig's canonical basis (Item 1). This has led to spectacular mathematics, including Fomin and Zelevinsky's classification of cluster algebras by root systems (Item 2) and Gross-Hacking-Kell-Kontsevich's proof of positive structure constants for theta functions (Item 3) in cluster algebras. All three items come with quite sophisticated ideas and proofs, which most researchers that I know in the area are happy to assume without knowing too much about. I'd like to explore these
+The notion of cluster algebras was motivated by understanding Lusztig's canonical basis (Item 1). This has led to spectacular mathematics, including Fomin and Zelevinsky's classification of cluster algebras by root systems (Item 2) and Gross-Hacking-Keel-Kontsevich's proof of positive structure constants for theta functions (Item 3) in cluster algebras. All three items come with quite sophisticated ideas and proofs, which most researchers that I know in the area are happy to assume without knowing too much about. I'd like to explore these
 
 ## Submitted Area
 

@@ -10,7 +10,7 @@ Termination of flips for fourfolds
 
 ## Short description of problem (100 words or less)
 
-Termination of log flips asks whether every sequence of flips for a log canonical pair eventually stops, a fundamental question in birational geometry. OpenAI manuscripts propose termination results for fourfolds. The arguments require further independent verification. Similarly, the proof bring several Hodge theoretic and topological tools that make it very hard to follow from the purely birational geometry perspective. The aim is trying to unify the mathematics used into a single framework and use it to simplify and or improve the proof.
+Termination of log flips asks whether every sequence of flips for a log canonical pair eventually stops, a fundamental question in birational geometry. OpenAI manuscripts propose termination results for fourfolds. The arguments require further independent verification. Similarly, the proof brings several Hodge theoretic and topological tools that make it very hard to follow from the purely birational geometry perspective. The aim is trying to unify the mathematics used into a single framework and use it to simplify and or improve the proof.
 
 ## Submitted Area
 

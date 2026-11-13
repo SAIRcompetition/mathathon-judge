@@ -34,7 +34,7 @@ Katherine M. Collins et al., Building Machines that Learn and Think with People 
 H. Furstenberg, On the Infinitude of Primes, American Mathematical Monthly 62 (1955), p. 353. 
 - A suggested mathematical case study for exploring alternative perspectives on an established theorem.
 
-Don Zagier, A One-Sentence Proof That Every Prime (p\equiv1\pmod4) Is a Sum of Two Squares, American Mathematical Monthly 97 (1990), p. 144. 
+Don Zagier, A One-Sentence Proof That Every Prime $p\equiv1\pmod4$ Is a Sum of Two Squares, American Mathematical Monthly 97 (1990), p. 144. 
 - A suggested case study for exploring the relationship between proof brevity, explanation and understanding.
 
 ## Desired outcome

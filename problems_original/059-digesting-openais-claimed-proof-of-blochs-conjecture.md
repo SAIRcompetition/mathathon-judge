@@ -10,7 +10,7 @@ Digesting openAI's claimed proof of Bloch's conjecture
 
 ## Short description of problem (100 words or less)
 
-Bloch's conjecture predicts that for a smooth connected projective complex surface X with geometric genus p_g(X) = 0, the Albanese homomorphism on degree-zero zero-cycles CH_0(X)_{deg=0} -> Alb(X) is an isomorphism.
+Bloch's conjecture predicts that for a smooth connected projective complex surface X with geometric genus $p_g(X)=0$, the Albanese homomorphism on degree-zero zero-cycles $\mathrm{CH} _ 0(X) _ {\deg=0}\to\mathrm{Alb}(X)$ is an isomorphism.
 
 ## Submitted Area
 
@@ -27,7 +27,7 @@ OpenAI's claimed solution: https://github.com/openai/math/blob/main/preprints/Bl
 
 ## Desired outcome
 
-Carefully digest and verify the AI-generated proof of Bloch's conjecture. For example, participants can give an exposition for the main strategy of the proof, and check whether the steps hold rigorously or contain subtle gaps. They can optionally formalize key lemmas in Lean. Participants can compare the approach to classical methods, identify which parts of the proof uses existing techniques, and which parts provides new techniques. Finally, they can provide some comments on whether the new techniques are helpful for proving higher dimensional analogs of Bloch's conjecture beyond surfaces.
+Carefully digest and verify the AI-generated proof of Bloch's conjecture. For example, participants can give an exposition for the main strategy of the proof, and check whether the steps hold rigorously or contain subtle gaps. They can optionally formalize key lemmas in Lean. Participants can compare the approach to classical methods, identify which parts of the proof use existing techniques, and which parts provide new techniques. Finally, they can provide some comments on whether the new techniques are helpful for proving higher dimensional analogs of Bloch's conjecture beyond surfaces.
 
 ## Judge Suggestions
 

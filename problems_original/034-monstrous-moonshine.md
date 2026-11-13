@@ -36,6 +36,6 @@ Algebra/Number Theory, Computation/Applied Math
 
 ## Desired outcome
 
-a novel proof of a central componen such as a denominator identity, replication relation, or a key step toward the genus-zero property
+a novel proof of a central component such as a denominator identity, replication relation, or a key step toward the genus-zero property
 
 Prove the monstrous moonshine theorem in Lean, including the constructions and identities that drive the proof. Build reusable tools for vertex algebras, the Monster Lie algebra, and its denominator identities.

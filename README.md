@@ -19,7 +19,7 @@ This repository holds the Round 1 rules, the judging guidelines and rubric, and 
 
 **Problems** (`problems_original/`, `problems_ai/`)
 
-The Round 1 problem list has 126 problems and comes from the organizers' final problem sheet. It is kept in two forms: the sheet exactly as written, and the same problems with AI-generated notes.
+The Round 1 problem list has 126 problems and comes from the organizers' final problem sheet. It is kept in two forms: the sheet text with obvious errors corrected, and the same problems with AI-generated notes.
 
 | File | What it is | Audience |
 |---|---|---|

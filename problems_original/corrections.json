@@ -120,6 +120,14 @@
   "why": "wrong title (Crossref doi:10.1007/s10107-023-01973-1)"
  },
  {
+  "id": 32,
+  "field": "Title/name of problem",
+  "old": "  (I made this title)",
+  "new": "",
+  "count": 1,
+  "why": "the proposer's note to the organizers, not part of the title"
+ },
+ {
   "id": 33,
   "field": "Desired outcome",
   "old": "proof that OpenAI's",
@@ -344,12 +352,28 @@
   "why": "typo"
  },
  {
+  "id": 68,
+  "field": "Short description of problem (100 words or less)",
+  "old": "the posterior mean centred at the ground truth is a Gaussian distribution, under suitable assumptions",
+  "new": "the posterior distribution, centred at an efficient estimator such as the posterior mean and suitably rescaled, is asymptotically Gaussian, under suitable assumptions",
+  "count": 1,
+  "why": "misstated theorem: BvM concerns the whole posterior, centred at an efficient estimator and rescaled"
+ },
+ {
   "id": 69,
   "field": "Submitted Area",
   "old": "Algebraic Geomtry",
   "new": "Algebraic Geometry",
   "count": 1,
   "why": "typo"
+ },
+ {
+  "id": 70,
+  "field": "Title/name of problem",
+  "old": "Monochromatic Triangles in the Plane",
+  "new": "Unit Distances in Convex Polygons",
+  "count": 1,
+  "why": "wrong title: the problem, its reference and outcome are about unit distances among points in convex position (Erdős Problem #96)"
  },
  {
   "id": 81,
@@ -400,6 +424,14 @@
   "why": "typo (article before a consonant)"
  },
  {
+  "id": 86,
+  "field": "Short description of problem (100 words or less)",
+  "old": "(the waterline cuts the arclength into equal pieces)",
+  "new": "(at density σ the waterline cuts the perimeter in the ratio σ : 1−σ)",
+  "count": 1,
+  "why": "wrong definition: equal pieces only for density 1/2"
+ },
+ {
   "id": 87,
   "field": "Reference/source material",
   "old": "C. Dequêne",
@@ -427,9 +459,9 @@
   "id": 97,
   "field": "Proposed Tracks",
   "old": "?????",
-  "new": "Team's choice",
+  "new": "Algebra/Number Theory, Analysis, Combinatorics, Computation/Applied Math, Geometry",
   "count": 1,
-  "why": "the sheet leaves the field unfilled; the organizers set it on 2026-11-12"
+  "why": "the sheet leaves the field unfilled; the organizers set it to Team's choice, so the problem is listed in all five tracks"
  },
  {
   "id": 97,
@@ -448,6 +480,14 @@
   "why": "the formula did not render on GitHub (LaTeX without dollar signs, or \\( \\) and \\[ \\] delimiters, which GitHub does not support)"
  },
  {
+  "id": 105,
+  "field": "Reference/source material",
+  "old": "2. 3. Mutsuo Oka",
+  "new": "2. Mutsuo Oka",
+  "count": 1,
+  "why": "duplicate reference number"
+ },
+ {
   "id": 109,
   "field": "Short description of problem (100 words or less)",
   "old": "simulate e^{−it(A+B)} by",
@@ -462,6 +502,14 @@
   "new": "scales as $t^{p+1}$ times",
   "count": 1,
   "why": "plain-text TeX (e^{...}, t^{...}) shown raw on GitHub"
+ },
+ {
+  "id": 109,
+  "field": "Desired outcome",
+  "old": "with exact rational coefficients",
+  "new": "with exact algebraic coefficients",
+  "count": 1,
+  "why": "the coefficients of the fourth-order Suzuki formula involve 4^{1/3}, so the exact t^5 coefficients need not be rational"
  },
  {
   "id": 121,

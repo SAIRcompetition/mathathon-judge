@@ -10,7 +10,7 @@ Understanding of the relation between Spin structure and K-theory and possible g
 
 ## Short description of problem (100 words or less)
 
-Last century, Atiyah-Singer index theorem built a foundamental relation between local spin structure and the global K-theory. However, the proof involves a lot of techniques and hard to recover. We hope to use this chance to have a better understanding of the theorem and try to find possible generalization to cohomology theory with higher height, like tmf. We also find it might be interesting to find some perspectives from physics.
+Last century, Atiyah-Singer index theorem built a fundamental relation between local spin structure and the global K-theory. However, the proof involves a lot of techniques and hard to recover. We hope to use this chance to have a better understanding of the theorem and try to find possible generalization to cohomology theory with higher height, like tmf. We also find it might be interesting to find some perspectives from physics.
 
 ## Submitted Area
 

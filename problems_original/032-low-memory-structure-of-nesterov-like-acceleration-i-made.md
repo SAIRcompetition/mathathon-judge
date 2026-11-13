@@ -6,7 +6,7 @@
 
 ## Title/name of problem
 
-Low-memory structure of Nesterov-like acceleration  (I made this title)
+Low-memory structure of Nesterov-like acceleration
 
 ## Short description of problem (100 words or less)
 
@@ -26,7 +26,7 @@ primary reference
 d’Aspremont, Alexandre, Damien Scieur, and Adrien Taylor. "Acceleration methods." Foundations and trends in optimization 5.1-2 (2021): 1-245., Chapter 4. Nesterov Acceleration
 
 methodology related
-Das Gupta, Shuvomoy, Bart PG Van Parys, and Ernest K. Ryu. "Branch-and-bound performance estimation programming: a unified methodology for constructing optimal optimization methods: S. Das Gupta et al." Mathematical Programming 204.1 (2024): 567-639.
+Das Gupta, Shuvomoy, Bart PG Van Parys, and Ernest K. Ryu. "Branch-and-bound performance estimation programming: a unified methodology for constructing optimal optimization methods." Mathematical Programming 204.1 (2024): 567-639.
 
 ## Desired outcome
 

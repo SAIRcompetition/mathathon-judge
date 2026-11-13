@@ -22,7 +22,7 @@ Geometry
 
 ## Reference/source material
 
-Meeks, W. H. III, and Rosenberg, H. (2005). “The uniqueness of the helicoid.” Annals of Mathematics, 161(2), 727–758; raizet, M. (2008). “On the genus of triply periodic minimal surfaces.” Journal of Differential Geometry, 79(2), 243–275; Meeks, W. H. III (1990). “The theory of triply periodic minimal surfaces.” Indiana University Mathematics Journal, 39(3), 877–936.
+Meeks, W. H. III, and Rosenberg, H. (2005). “The uniqueness of the helicoid.” Annals of Mathematics, 161(2), 727–758; Traizet, M. (2008). “On the genus of triply periodic minimal surfaces.” Journal of Differential Geometry, 79(2), 243–275; Meeks, W. H. III (1990). “The theory of triply periodic minimal surfaces.” Indiana University Mathematics Journal, 39(3), 877–936.
 
 ## Desired outcome
 

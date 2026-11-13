@@ -22,7 +22,7 @@ Analysis
 
 ## Reference/source material
 
-The mathematical theory of scattering resonances by Zworski and Dyaltov. Chapter 7
+The mathematical theory of scattering resonances by Zworski and Dyatlov. Chapter 7
 
 ## Desired outcome
 

@@ -2,7 +2,7 @@
 
 The 126 Round 1 problems of the organizers' final problem sheet, one page per problem. Each page has two or three parts:
 
-- **From the proposer**: the problem as the proposer wrote it, with a few typos, wrong bibliographic details and formulas that GitHub cannot render corrected (each listed in [`corrections.json`](corrections.json)). The exact text of the sheet is in [`problems_original`](../problems_original/README.md).
+- **From the proposer**: the problem as in [`problems_original`](../problems_original/README.md): the proposer's text with the corrections listed in [`corrections.json`](../problems_original/corrections.json).
 - **From the judges** (on some pages): the judges' suggestions from the sheet, unchanged.
 - **AI-generated notes**: what is known, how the known proofs work, background, where to start, references with links, and the Lean status.
 
@@ -48,7 +48,7 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 | 29 | [Simplify Numerical PDE Algorithms](029-simplify-numerical-pde-algorithms.md) | Computation/Applied Math, Analysis | Not a single theorem | — |
 | 30 | [Jacquet-Langlands correspondence for GL(2)](030-jacquet-langlands-correspondence-for-gl-2.md) | Algebra/Number Theory | Proved | — |
 | 31 | [Quantitative Onset and Nonlinear Evolution of Tollmien–Schlichting Instabilities in Navier–Stokes Flows](031-quantitative-onset-and-nonlinear-evolution-of.md) | Computation/Applied Math, Analysis | Not a single theorem | — |
-| 32 | [Low-memory structure of Nesterov-like acceleration (I made this title)](032-low-memory-structure-of-nesterov-like-acceleration-i-made.md) | Computation/Applied Math, Analysis | Open | — |
+| 32 | [Low-memory structure of Nesterov-like acceleration](032-low-memory-structure-of-nesterov-like-acceleration-i-made.md) | Computation/Applied Math, Analysis | Open | — |
 | 33 | [Hadwiger-Nelson Problem - The Euclidean plane is not five-colorable](033-hadwiger-nelson-problem-the-euclidean-plane-is-not-five.md) | Combinatorics | Proved (preprint) | ✓ |
 | 34 | [Monstrous moonshine](034-monstrous-moonshine.md) | Algebra/Number Theory, Computation/Applied Math | Proved | — |
 | 35 | [Asymptotic Growth of Integer Partitions into Powers](035-asymptotic-growth-of-integer-partitions-into-powers.md) | Combinatorics, Algebra/Number Theory | Partly solved | ✓ |
@@ -80,7 +80,7 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 | 67 | [Monsky's theorem and Stein's conjecture on equal-area dissections](067-monskys-theorem-and-steins-conjecture-on-equal-area.md) | Combinatorics, Geometry | Partly solved | ✓ |
 | 68 | [Non-parametric Bernstein von-Mises theorems](068-non-parametric-bernstein-von-mises-theorems.md) | Analysis | Not a single theorem | — |
 | 69 | [A Systematic Study of Inverse Galois Problem](069-a-systematic-study-of-inverse-galois-problem.md) | Geometry | Open | ✓ |
-| 70 | [Monochromatic Triangles in the Plane](070-monochromatic-triangles-in-the-plane.md) | Geometry | Disproved (preprint) | ✓ |
+| 70 | [Unit Distances in Convex Polygons](070-monochromatic-triangles-in-the-plane.md) | Geometry | Disproved (preprint) | ✓ |
 | 71 | [Existence of the Core in Approval-Based Committee Elections](071-existence-of-the-core-in-approval-based-committee-elections.md) | Computation/Applied Math | Proved (preprint) | ✓ |
 | 72 | [Cayley’s Formula: A Proof Zoo](072-cayleys-formula-a-proof-zoo.md) | Combinatorics | Proved | ✓ |
 | 73 | [Lagrange Inversion: Combinatorial Proofs](073-lagrange-inversion-combinatorial-proofs.md) | Combinatorics | Proved | ✓ |
@@ -106,7 +106,7 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 | 94 | [Summing multiplicative functions/counting primes](094-summing-multiplicative-functions-counting-primes.md) | Computation/Applied Math, Algebra/Number Theory | Not a single theorem | — |
 | 95 | [Quasi-Orders For the Lefthanded Lovász Local Lemma](095-quasi-orders-for-the-lefthanded-lovasz-local-lemma.md) | Combinatorics | Not a single theorem | ✓ |
 | 96 | [Counterexamples to polynomial removal for ordered binary matrices](096-counterexamples-to-polynomial-removal-for-ordered-binary.md) | Combinatorics | Disproved (preprint) | ✓ |
-| 97 | [Model Completeness of the Real Exponential Field](097-model-completeness-of-the-real-exponential-field.md) | Team's choice | Proved | ✓ |
+| 97 | [Model Completeness of the Real Exponential Field](097-model-completeness-of-the-real-exponential-field.md) | Algebra/Number Theory, Analysis, Combinatorics, Computation/Applied Math, Geometry | Proved | ✓ |
 | 98 | [An Elementary Proof of the Deligne–Sullivan Theorem and Virtual Stable Parallelizability of Compact Hyperbolic Manifolds](098-an-elementary-proof-of-the-delignesullivan-theorem-and.md) | Geometry | Proved | ✓ |
 | 99 | [Towards a combinatorial proof of Schur positivity for LLT polynomials of unit interval graphs](099-towards-a-combinatorial-proof-of-schur-positivity-for-llt.md) | Combinatorics | Partly solved | ✓ |
 | 100 | [Hironaka’s Resolution of Singularity: Understanding the Algorithm and Its Later Simplifications](100-hironakas-resolution-of-singularity-understanding-the.md) | Algebra/Number Theory, Geometry | Proved | ✓ |
@@ -162,7 +162,7 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 When the sheet changes:
 
 1. Update [`problems_original`](../problems_original/README.md) as described there.
-2. Run `python3 problems_ai/refresh_proposer_text.py`. It rewrites the **From the proposer** part of every page and the table above, applies [`corrections.json`](corrections.json), checks the text against the sheet, adds a placeholder page for any new problem, and never changes the notes. Pages of problems that are no longer in the sheet are not removed; delete them, their Lean statements and their entries in [`corrections.json`](corrections.json) and in [`lean/README.md`](lean/README.md) by hand.
+2. Run `python3 problems_ai/refresh_proposer_text.py`. It rewrites the **From the proposer** part of every page and the table above from `problems_original`, checks the text against it, adds a placeholder page for any new problem, and never changes the notes. Pages of problems that are no longer in the sheet are not removed; delete them, their Lean statements and their entries in [`corrections.json`](../problems_original/corrections.json) and in [`lean/README.md`](lean/README.md) by hand.
 3. Review the notes of every problem whose text changed, and write notes for the placeholders.
 
 Formulas in the notes are rendered by GitHub, which applies Markdown before MathJax 3.2.0 and refuses some macros. Tested on 2026-11-12, a formula renders only if it follows these rules:

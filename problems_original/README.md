@@ -1,6 +1,6 @@
 # Mathathon Round 1 problems: original text
 
-The 126 Round 1 problems exactly as they appear in the organizers' final problem sheet, one file per problem: the proposers' text and, for some problems, the judges' suggestions. Nothing here is edited or AI-generated, except that track names the sheet spells differently use the five official names (see `TRACK_NAMES` in [`split_sheet.py`](split_sheet.py)). Problems 38, 51, 52, 63, 64, 65, 82, 111, 112, 113, 116, 117, 119 and 130 were in the earlier sheet but are not in the final list; their files remain in the git history.
+The 126 Round 1 problems from the organizers' final problem sheet, one file per problem: the proposers' text and, for some problems, the judges' suggestions. Nothing here is AI-generated. The text is the sheet's, except that track names the sheet spells differently use the five official names (`TRACK_NAMES` in [`split_sheet.py`](split_sheet.py)) and the typos, wrong bibliographic details, formulas that do not render and plain errors listed in [`corrections.json`](corrections.json) are corrected; the uncorrected text is in the sheet and in the git history. This is the version imported to the competition platform. Problems 38, 51, 52, 63, 64, 65, 82, 111, 112, 113, 116, 117, 119 and 130 were in the earlier sheet but are not in the final list; their files remain in the git history.
 
 Material that a proposer sent to the organizers to share with all participants is in [`attachments/`](attachments/), unchanged:
 
@@ -42,7 +42,7 @@ Material that a proposer sent to the organizers to share with all participants i
 | 29 | [Simplify Numerical PDE Algorithms](029-simplify-numerical-pde-algorithms.md) | Computation/Applied Math, Analysis |
 | 30 | [Jacquet-Langlands correspondence for GL(2)](030-jacquet-langlands-correspondence-for-gl-2.md) | Algebra/Number Theory |
 | 31 | [Quantitative Onset and Nonlinear Evolution of Tollmien–Schlichting Instabilities in Navier–Stokes Flows](031-quantitative-onset-and-nonlinear-evolution-of.md) | Computation/Applied Math, Analysis |
-| 32 | [Low-memory structure of Nesterov-like acceleration (I made this title)](032-low-memory-structure-of-nesterov-like-acceleration-i-made.md) | Computation/Applied Math, Analysis |
+| 32 | [Low-memory structure of Nesterov-like acceleration](032-low-memory-structure-of-nesterov-like-acceleration-i-made.md) | Computation/Applied Math, Analysis |
 | 33 | [Hadwiger-Nelson Problem - The Euclidean plane is not five-colorable](033-hadwiger-nelson-problem-the-euclidean-plane-is-not-five.md) | Combinatorics |
 | 34 | [Monstrous moonshine](034-monstrous-moonshine.md) | Algebra/Number Theory, Computation/Applied Math |
 | 35 | [Asymptotic Growth of Integer Partitions into Powers](035-asymptotic-growth-of-integer-partitions-into-powers.md) | Combinatorics, Algebra/Number Theory |
@@ -74,7 +74,7 @@ Material that a proposer sent to the organizers to share with all participants i
 | 67 | [Monsky's theorem and Stein's conjecture on equal-area dissections](067-monskys-theorem-and-steins-conjecture-on-equal-area.md) | Combinatorics, Geometry |
 | 68 | [Non-parametric Bernstein von-Mises theorems](068-non-parametric-bernstein-von-mises-theorems.md) | Analysis |
 | 69 | [A Systematic Study of Inverse Galois Problem](069-a-systematic-study-of-inverse-galois-problem.md) | Geometry |
-| 70 | [Monochromatic Triangles in the Plane](070-monochromatic-triangles-in-the-plane.md) | Geometry |
+| 70 | [Unit Distances in Convex Polygons](070-monochromatic-triangles-in-the-plane.md) | Geometry |
 | 71 | [Existence of the Core in Approval-Based Committee Elections](071-existence-of-the-core-in-approval-based-committee-elections.md) | Computation/Applied Math |
 | 72 | [Cayley’s Formula: A Proof Zoo](072-cayleys-formula-a-proof-zoo.md) | Combinatorics |
 | 73 | [Lagrange Inversion: Combinatorial Proofs](073-lagrange-inversion-combinatorial-proofs.md) | Combinatorics |
@@ -100,7 +100,7 @@ Material that a proposer sent to the organizers to share with all participants i
 | 94 | [Summing multiplicative functions/counting primes](094-summing-multiplicative-functions-counting-primes.md) | Computation/Applied Math, Algebra/Number Theory |
 | 95 | [Quasi-Orders For the Lefthanded Lovász Local Lemma](095-quasi-orders-for-the-lefthanded-lovasz-local-lemma.md) | Combinatorics |
 | 96 | [Counterexamples to polynomial removal for ordered binary matrices](096-counterexamples-to-polynomial-removal-for-ordered-binary.md) | Combinatorics |
-| 97 | [Model Completeness of the Real Exponential Field](097-model-completeness-of-the-real-exponential-field.md) | ????? |
+| 97 | [Model Completeness of the Real Exponential Field](097-model-completeness-of-the-real-exponential-field.md) | Algebra/Number Theory, Analysis, Combinatorics, Computation/Applied Math, Geometry |
 | 98 | [An Elementary Proof of the Deligne–Sullivan Theorem and Virtual Stable Parallelizability of Compact Hyperbolic Manifolds](098-an-elementary-proof-of-the-delignesullivan-theorem-and.md) | Geometry |
 | 99 | [Towards a combinatorial proof of Schur positivity for LLT polynomials of unit interval graphs](099-towards-a-combinatorial-proof-of-schur-positivity-for-llt.md) | Combinatorics |
 | 100 | [Hironaka’s Resolution of Singularity: Understanding the Algorithm and Its Later Simplifications](100-hironakas-resolution-of-singularity-understanding-the.md) | Algebra/Number Theory, Geometry |
@@ -118,7 +118,7 @@ Material that a proposer sent to the organizers to share with all participants i
 | 115 | [Exotic spheres](115-exotic-spheres.md) | Geometry |
 | 118 | [Formalizing the AKLT spectral gap](118-formalizing-the-aklt-spectral-gap.md) | Computation/Applied Math |
 | 120 | [Characterizations and identities for probability distributions](120-characterizations-and-identities-for-probability.md) | Analysis |
-| 121 | [Carleson' Theorem on convergence of Fourier series](121-carleson-theorem-on-convergence-of-fourier-series.md) | Analysis |
+| 121 | [Carleson's Theorem on convergence of Fourier series](121-carleson-theorem-on-convergence-of-fourier-series.md) | Analysis |
 | 122 | [Efficient Verification of Lean Proofs via Interaction](122-efficient-verification-of-lean-proofs-via-interaction.md) | Computation/Applied Math |
 | 123 | [Schur Number Five](123-schur-number-five.md) | Combinatorics |
 | 124 | [Mutually unbiased bases in dimension 6, applied to a 6-dimensional quantum system](124-mutually-unbiased-bases-in-dimension-6-applied-to-a-6.md) | Computation/Applied Math |
@@ -145,7 +145,7 @@ One section per column of the sheet, each holding the cell text unchanged: Probl
 
 ## For maintainers
 
-- [`split_sheet.py`](split_sheet.py) writes the problem files and the table above from the sheet exports in `source/`, which is kept locally and not in the repository (last export: 2026-11-12, about 08:00 PST, from the final problem sheet; the problems are its first tab, and its other tab, "Judge Preferences", is not used). It checks every field against the sheet, byte for byte, after that track name replacement.
+- [`split_sheet.py`](split_sheet.py) writes the problem files and the table above from the sheet exports in `source/`, which is kept locally and not in the repository (last export: 2026-11-12, about 08:00 PST, from the final problem sheet; the problems are its first tab, and its other tab, "Judge Preferences", is not used). It applies the track names and [`corrections.json`](corrections.json), leaves out the cell links of problems 81 and 83 (they point to other problems' works), and checks every field against the corrected sheet, byte for byte.
 - To update after the sheet changes, download it into `source/` as `mathathon-problem-sheet.csv`, `mathathon-problem-sheet.xlsx` and `mathathon-problem-sheet-html.zip` (File → Download: CSV, Microsoft Excel, Web page), then run `python3 problems_original/split_sheet.py`, and then update [`problems_ai`](../problems_ai/README.md) as described there.
 - The sheet's "Short description" column is hidden in its normal view and is missing from the HTML export; the CSV and XLSX exports include it.
 - Markdown viewers may join single line breaks or treat `*`, `_` and `$` as formatting; the exports are the reference copies.

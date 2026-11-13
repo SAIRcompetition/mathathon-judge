@@ -26,7 +26,7 @@ https://github.com/openai/math/tree/main/preprints/A-Negative-Solution-to-the-Fi
 
 ## Desired outcome
 
-A specific upper bound like maybe n<=10^{10^10} with an understandable proof.
+A specific upper bound like maybe $n\le10^{10^{10}}$ with an understandable proof.
 
 ## Judge Suggestions
 

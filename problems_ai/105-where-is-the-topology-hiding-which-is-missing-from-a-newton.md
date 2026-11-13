@@ -16,7 +16,7 @@ The output would ideally be a brief paper establishing a geometric explanation f
 ### References
 
 1. Janusz Gwozdziewicz, Generalized Noether's Formulas for Plane Curves Singularities, Universitatis Iagellonicae Acta Mathematica 48 (2010), pp. 55–62. [PDF](https://ruj.uj.edu.pl/server/api/core/bitstreams/5759f599-8225-4c9b-8444-42ddb9550ec7/content)
-2. 3. Mutsuo Oka, Introduction to Plane Curve Singularity (Toric Resolution and Puiseux Pairs)
+2. Mutsuo Oka, Introduction to Plane Curve Singularity (Toric Resolution and Puiseux Pairs)
 
 ## AI-generated notes
 

@@ -10,7 +10,7 @@ Model Completeness of the Real Exponential Field
 
 ## Short description of problem (100 words or less)
 
-Consider the ordered real exponential field \(\mathbb{R}_{\exp}=(\mathbb{R};0,1,+,-,\cdot,<,\exp)\). The problem is to establish whether its complete first-order theory is model complete; that is, whether every embedding between models of this theory is elementary. Equivalently, can every first-order formula be expressed as an existential formula? Alex Wilkie proved this in 1996 using techniques involving restricted Pfaffian functions, quasipolynomial equations, o-minimality, and valuation theory. A central challenge is transferring solutions of exponential-polynomial equations between non-Archimedean models, particularly when solutions are unbounded.
+Consider the ordered real exponential field $\mathbb{R}_{\exp}=(\mathbb{R};0,1,+,-,\cdot,\lt,\exp)$. The problem is to establish whether its complete first-order theory is model complete; that is, whether every embedding between models of this theory is elementary. Equivalently, can every first-order formula be expressed as an existential formula? Alex Wilkie proved this in 1996 using techniques involving restricted Pfaffian functions, quasipolynomial equations, o-minimality, and valuation theory. A central challenge is transferring solutions of exponential-polynomial equations between non-Archimedean models, particularly when solutions are unbounded.
 
 ## Submitted Area
 
@@ -18,7 +18,7 @@ Mathematical Logic — Model Theory, O-minimality, Real Algebraic Geometry, and 
 
 ## Proposed Tracks
 
-?????
+Algebra/Number Theory, Analysis, Combinatorics, Computation/Applied Math, Geometry
 
 ## Reference/source material
 
