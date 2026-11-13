@@ -4,7 +4,7 @@ These guidelines explain how to score a presentation. When and where you score a
 
 ## 1. Dimensions
 
-You score the presentation and its Q&A on Correctness, Clarity, Motivation, Interest, Attribution, and Novelty. The LLM panel scores the report on the same six dimensions.
+You score the presentation and its Q&A on Correctness, Clarity, Motivation, and Interest. The LLM panel scores the report on the same four dimensions, plus Attribution and Novelty.
 
 | Dimension | Guideline |
 |---|---|
@@ -12,8 +12,8 @@ You score the presentation and its Q&A on Correctness, Clarity, Motivation, Inte
 | **Clarity** | The participants should be able to form clean, correct sentences about the relevant objects, which go beyond surface-level considerations. |
 | **Motivation** | The participants should be able to explain what mathematical contribution they hope to make. If their project is about finding a new approach to an old result, they need to be able to explain what is unsatisfying about the old approach. If their approach is about crystallizing the connection between two related settings, then they should be able to explain why this crystallization would be useful to the relevant mathematical community. Saying that something is an open problem ("finding a proof of the four color theorem that avoids computer-assisted case checking is an open problem") is not sufficient: they need to explain what is unsatisfying about computer-assisted case checking. |
 | **Interest** | The participants should do something interesting during the Mathathon event, related to the mathematical contribution they want to make. This can mean doing numerics, proving a lemma, or scaffolding a plan of attack. This interesting thing should demonstrate creativity and critical thinking. |
-| **Attribution** | Sources are credited, and known results are not presented as new. AI use is disclosed and is consistent with the rest of the report or presentation. |
-| **Novelty** | How the proof, exposition, or connection differs from known work. |
+| **Attribution** (LLM panel only) | Sources are credited, and known results are not presented as new. AI use is disclosed and is consistent with the rest of the report. |
+| **Novelty** (LLM panel only) | How the proof, exposition, or connection differs from known work. |
 
 ## 2. Rubric
 
@@ -26,8 +26,8 @@ Score each dimension as a whole number from 1 to 5. "Expected" means what a team
 | **Clarity** | Exceptionally clear and well organized; rigorous and heuristic arguments always distinguished; accessible beyond the subfield | Clear and well organized; notation defined; few rough spots | Generally easy to follow; some unclear passages or undefined notation | Hard to follow in key parts, or rigorous and heuristic arguments mixed up | Disorganized and hard to follow throughout |
 | **Motivation** | Contribution sharply stated, with a compelling case for why it matters to the relevant community | Contribution clear and its importance convincingly argued, with minor gaps | Contribution stated, but the case for its importance is thin or generic | Contribution vague, or justified only by "it is an open problem" | No discernible contribution or reason |
 | **Interest** | Substantial, creative event work yielding real insight, beyond what 40 hours would lead one to expect | Solid event work showing creativity and critical thinking | Reasonable event work, mostly routine | Little event work, or mostly surface-level | No meaningful work during the event |
-| **Attribution** | Every source and form of help credited precisely; AI use fully disclosed and consistent | Sources credited, with minor omissions | Main sources credited; some peripheral gaps | A known result or argument not credited, or AI disclosure inconsistent with the report or presentation | Known work presented as the team's own |
-| **Novelty** | A genuinely new proof, connection, or viewpoint, not found in known work | Substantial new elements on known foundations | A meaningful variation of known work | A minor variation of standard methods | Reproduces known work with no new element |
+| **Attribution** (LLM panel only) | Every source and form of help credited precisely; AI use fully disclosed and consistent | Sources credited, with minor omissions | Main sources credited; some peripheral gaps | A known result or argument not credited, or AI disclosure inconsistent with the report | Known work presented as the team's own |
+| **Novelty** (LLM panel only) | A genuinely new proof, connection, or viewpoint, not found in known work | Substantial new elements on known foundations | A meaningful variation of known work | A minor variation of standard methods | Reproduces known work with no new element |
 
 ## 3. Notes
 

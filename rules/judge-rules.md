@@ -44,7 +44,7 @@ You take three steps on the SAIR competition platform: registration (§1), probl
 ### 3.2 The scoring form
 
 Fill in one form for each presentation, on the platform:
-- Correctness, Clarity, Motivation, Interest, Attribution, and Novelty: a whole number from 1 to 5 each, following the [Judge Guidelines](judge-guidelines.md), with a comment on each;
+- Correctness, Clarity, Motivation, and Interest: a whole number from 1 to 5 each, following the [Judge Guidelines](judge-guidelines.md), with a comment on each;
 - an overall comment.
 
 - **When to submit.** After each presentation, before scoring closes.
@@ -54,4 +54,4 @@ Fill in one form for each presentation, on the platform:
 
 - **The panel.** The LLM panel consists of five AI models: Claude Opus 5.5, GPT 6.1 sol, Kimi K3.1, DeepSeek V4.1 Flash 1017, and Mistral Large 4.
 - **What it reads.** Each model reads the problem statement and its references, the team's report without its title block, any supplementary materials, and the results of the automated Lean check if the team submitted a Lean project. The models do not see the slides or the presentation.
-- **What it scores.** The written report, on the same six dimensions and 1–5 scale as you ([Judge Guidelines](judge-guidelines.md)).
+- **What it scores.** The written report, on the same four dimensions and 1–5 scale as you ([Judge Guidelines](judge-guidelines.md)), plus Attribution and Novelty.
