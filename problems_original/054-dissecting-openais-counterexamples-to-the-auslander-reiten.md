@@ -52,6 +52,6 @@ I would like to understand OpenAI's proposed counterexample to Tachikawa's Secon
 
 In particular:
 
-1. How is the counterexample constructed in terms of the structure of the finite-dimensional self-injective algebra A and the module M? What ring-theoretic intuition allow all higher self-extension groups Ext^i_A(M, M) to vanish while M remains nonprojective?
+1. How is the counterexample constructed in terms of the structure of the finite-dimensional self-injective algebra A and the module M? What ring-theoretic intuition allows all higher self-extension groups Ext^i_A(M, M) to vanish while M remains nonprojective?
 
 2. Can you connect OpenAI's counterexample to the setting of a stable module category of A, an object with no positive-degree self-extensions M, and the zero object.

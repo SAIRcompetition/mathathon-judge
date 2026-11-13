@@ -6,11 +6,11 @@
 
 ## Title/name of problem
 
-Carleson' Theorem on convergence of Fourier series
+Carleson's Theorem on convergence of Fourier series
 
 ## Short description of problem (100 words or less)
 
-Fourier series and transform are commonly used objects in analysis and beyond. One of the famous problems since invention of Fourier series is determining for which functions its Fourier series convergences pointwise. Kolmogorov constructed integrable function with almost everywhere divergent Fourier series. Carleson famously showed that if a function is square-integrable then its Fourier series converges almost everywhere.
+Fourier series and transform are commonly used objects in analysis and beyond. One of the famous problems since invention of Fourier series is determining for which functions its Fourier series converges pointwise. Kolmogorov constructed integrable function with almost everywhere divergent Fourier series. Carleson famously showed that if a function is square-integrable then its Fourier series converges almost everywhere.
 
 ## Submitted Area
 

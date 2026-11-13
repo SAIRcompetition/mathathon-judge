@@ -1,4 +1,4 @@
-# 32 · Low-memory structure of Nesterov-like acceleration (I made this title)
+# 32 · Low-memory structure of Nesterov-like acceleration
 
 ## From the proposer
 

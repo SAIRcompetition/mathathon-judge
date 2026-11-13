@@ -10,7 +10,7 @@ Simplify Numerical PDE Algorithms
 
 ## Short description of problem (100 words or less)
 
-Many effective algorithms in numerical PDEs are high complicated such as the Fast Multipole Method, Fast Direct Solvers, and Butterfly Algorithms. Can AI make these more understandable or make simpler yet effective versions of these algorithms?
+Many effective algorithms in numerical PDEs are highly complicated such as the Fast Multipole Method, Fast Direct Solvers, and Butterfly Algorithms. Can AI make these more understandable or make simpler yet effective versions of these algorithms?
 
 ## Submitted Area
 
@@ -30,4 +30,4 @@ Li, Yingzhou, et al. "Butterfly factorization." Multiscale Modeling & Simulation
 
 ## Desired outcome
 
-A easy to understand explanation, or an easier to understand version of the algorithm
+An easy to understand explanation, or an easier to understand version of the algorithm

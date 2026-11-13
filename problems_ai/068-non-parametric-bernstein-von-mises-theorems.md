@@ -7,7 +7,7 @@
 
 ### Description
 
-The Bernstein von-Mises theorem states that the posterior mean centred at the ground truth is a Gaussian distribution, under suitable assumptions. Several proofs of this theorem exist in infinite dimensional settings with slightly different hypotheses. Each proof is incredibly long (50 pages) and involves many tedious optimisations of constants. The goal of this project is to unify and simplify these existing proofs in literature to provide a definitive reference BvM theorem for statisticians and formalise it in lean.
+The Bernstein von-Mises theorem states that the posterior distribution, centred at an efficient estimator such as the posterior mean and suitably rescaled, is asymptotically Gaussian, under suitable assumptions. Several proofs of this theorem exist in infinite dimensional settings with slightly different hypotheses. Each proof is incredibly long (50 pages) and involves many tedious optimisations of constants. The goal of this project is to unify and simplify these existing proofs in literature to provide a definitive reference BvM theorem for statisticians and formalise it in lean.
 
 ### Desired outcome
 
@@ -32,7 +32,7 @@ This problem was proposed jointly by my PhD supervisor Richard Nickl
 
 ### Notes
 
-- The Description describes BvM via "the posterior mean centred at the ground truth". In the literature it concerns the whole posterior: centred at an efficient estimator (e.g. the posterior mean) and rescaled by $\sqrt n$, it is close to a fixed Gaussian law. In infinite dimensions this can fail (Freedman 1999).
+- The sheet describes BvM via "the posterior mean centred at the ground truth is a Gaussian distribution"; the Description above is corrected. In the literature it concerns the whole posterior: centred at an efficient estimator (e.g. the posterior mean) and rescaled by $\sqrt n$, it is close to a fixed Gaussian law. In infinite dimensions this can fail (Freedman 1999).
 - The reference labelled "BvM for the white noise model" also covers i.i.d. density estimation; the white-noise-only paper is Castillo–Nickl 2013.
 
 ### The result

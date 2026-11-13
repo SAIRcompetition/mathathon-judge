@@ -24,7 +24,7 @@ Geometry
 
 1. B. Hassett, “Special cubic fourfolds,” Compositio Mathematica 120 (2000), 1–23. See Theorem 1.0.1 (the divisors C_d; nonempty iff d > 6 and d ≡ 0, 2 mod 6) and Section 5 (associated K3 surfaces).
 
-2. S. Yang and X. Yu, “On lattice polarizable cubic fourfolds,” arXiv:2103.09132. See Section 7, Algorithm 7.6 (irreducible components of C_{d₁} ∩ C_{d₂}) and Theorems 7.9 and 7.11 (worked examples C₂₀ ∩ C₃₈ and C₂₀ ∩ C₁₂).
+2. S. Yang and X. Yu, “On lattice polarizable cubic fourfolds,” arXiv:2103.09132. See Section 7, Algorithm 7.6 (irreducible components of C<sub>d₁</sub> ∩ C<sub>d₂</sub>) and Theorems 7.9 and 7.11 (worked examples C₂₀ ∩ C₃₈ and C₂₀ ∩ C₁₂).
 
 3. S. Zucker, “The Hodge conjecture for cubic fourfolds,” Compositio Mathematica 34 (1977), 199–209. See Theorem 3.2.
 

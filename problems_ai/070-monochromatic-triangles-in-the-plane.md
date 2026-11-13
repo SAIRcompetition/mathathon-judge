@@ -1,4 +1,4 @@
-# 70 · Monochromatic Triangles in the Plane
+# 70 · Unit Distances in Convex Polygons
 
 ## From the proposer
 
@@ -37,7 +37,7 @@ Unit distances in convex polygons - Liam Kruer, Jensen Kohlmeyer, and Liam Price
 
 ### Notes
 
-- The title "Monochromatic triangles in the plane" does not match the content, which is Erdős Problem #96 on unit distances among points in convex position.
+- The sheet titles the problem "Monochromatic triangles in the plane", which does not match the content, Erdős Problem #96 on unit distances among points in convex position; the title is corrected here.
 - The result is a manuscript and has not been refereed.
 
 ### The result

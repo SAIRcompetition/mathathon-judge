@@ -6,7 +6,7 @@
 
 ## Title/name of problem
 
-Monochromatic Triangles in the Plane
+Unit Distances in Convex Polygons
 
 ## Short description of problem (100 words or less)
 

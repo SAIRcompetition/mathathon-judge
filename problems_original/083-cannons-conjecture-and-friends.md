@@ -29,7 +29,3 @@ Geometry
 ## Desired outcome
 
 An expository write-up and/or video
-
-## Reference links
-
-- <https://github.com/openai/math/tree/main/preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026?utm_source=chatgpt.com>

@@ -24,7 +24,7 @@ Computation/Applied Math
 
 1. Duncan Dauvergne, "The Archimedean Limit of Random Sorting Networks," Journal of the American Mathematical Society 35 (2022), 1215–1267 (arXiv:1802.08934). Sections 1.1 and 1.2 state the trajectory theorem, and Section 1.6 outlines the proof.
 
-2. Mustazee Rahman, Bálint Virág, and Máté Vizer, "Geometry of Permutation Limits," Annals of Probability 47 (2019), 1398–1419 (arXiv:1609.03891). Theorem 2 and Corollary 2.1 reduce the trajectory limit to a sharp short-time bound on mean-square displacement.
+2. Mustazee Rahman, Bálint Virág, and Máté Vizer, "Geometry of Permutation Limits," Combinatorica 39 (2019), 933–960 (arXiv:1609.03891). Theorem 2 and Corollary 2.1 reduce the trajectory limit to a sharp short-time bound on mean-square displacement.
 
 3. Omer Angel, Alexander Holroyd, Dan Romik, and Bálint Virág, "Random Sorting Networks," Advances in Mathematics 215 (2007), 839–868 (arXiv:math/0609538). Theorem 1 establishes time stationarity, and Section 4 describes the bijection with staircase standard Young tableaux.
 

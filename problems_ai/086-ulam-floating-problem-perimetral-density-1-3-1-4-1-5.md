@@ -7,7 +7,7 @@
 
 ### Description
 
-The Ulam Floating Problem, first proposed by the Scottish book, has been solved in perimetral density (the waterline cuts the arclength into equal pieces) for 1/2,1/3,1/4,1/5,1/6,1/7,1/8, and, although the proofs haven't been released yet, the 1/10 case. For 1/2, it can be a shape other than a disk, but for 1/n where n>2, it has been proven to be rigid (a disk). There is a current bottleneck in how these are proven; the proofs rely on symmetries and don't generalize well to larger n based on the limitations of symmetries.
+The Ulam Floating Problem, first proposed by the Scottish book, has been solved in perimetral density (at density σ the waterline cuts the perimeter in the ratio σ : 1−σ) for 1/2,1/3,1/4,1/5,1/6,1/7,1/8, and, although the proofs haven't been released yet, the 1/10 case. For 1/2, it can be a shape other than a disk, but for 1/n where n>2, it has been proven to be rigid (a disk). There is a current bottleneck in how these are proven; the proofs rely on symmetries and don't generalize well to larger n based on the limitations of symmetries.
 
 ### Desired outcome
 

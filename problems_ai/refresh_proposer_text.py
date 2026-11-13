@@ -6,12 +6,10 @@ Run after refreshing problems_original/ (python3 problems_original/split_sheet.p
     python3 problems_ai/refresh_proposer_text.py
 
 For each problem in problems_original/, the page in problems_ai/ with the same Problem ID
-gets a new title line and "From the proposer" section built from the sheet text: title,
+gets a new title line and "From the proposer" section built from problems_original/
+(the sheet text with the corrections of problems_original/corrections.json): title,
 area and tracks with surrounding spaces collapsed, and description, desired outcome and
-references unchanged (checked), except for the typos and wrong bibliographic details
-listed in corrections.json (problems_original/ keeps the sheet text as it is). Each
-correction states how often its text occurs; the script stops if the sheet no longer
-matches. Where the sheet has judge suggestions, a "From the judges" section follows with
+references unchanged (checked). Where the sheet has judge suggestions, a "From the judges" section follows with
 their text unchanged. Hyperlinks attached to cells are listed only in problems_original/. Its "AI-generated notes" section is kept exactly as it is; a new
 problem gets a placeholder. The problem table in README.md (between the problem-index
 markers) is rebuilt. Pages of problems that are no longer in problems_original/ are not
@@ -20,7 +18,6 @@ touched; delete them by hand.
 The notes are never changed by this script, so after a substantive change to a problem
 in the sheet, its notes need to be reviewed by hand.
 """
-import json
 import re
 import sys
 from pathlib import Path
@@ -36,20 +33,6 @@ PLACEHOLDER = (f"{NOTES_HEADING}\n\n<!-- status: — -->\n\n"
                "> No AI notes have been written for this problem yet.\n")
 INDEX_START = "<!-- problem-index:start -->"
 INDEX_END = "<!-- problem-index:end -->"
-CORRECTIONS = json.loads((AI / "corrections.json").read_text(encoding="utf-8"))
-
-
-def corrected(pid, fields):
-    """The sheet fields of a problem with its corrections from corrections.json applied."""
-    fields = list(fields)
-    for c in (c for c in CORRECTIONS if c["id"] == pid):
-        i = split_sheet.HEADER.index(c["field"])
-        if fields[i].count(c["old"]) != c["count"]:
-            sys.exit(f"problem {pid}: correction {c['old']!r} no longer matches the sheet")
-        fields[i] = fields[i].replace(c["old"], c["new"])
-    return fields
-
-
 def ws(s):
     return " ".join(s.split())
 
@@ -154,7 +137,6 @@ def write_pages(notes_for):
     """notes_for(pid, existing_notes) -> notes section; writes every page and the index."""
     rows = []
     for pid, fname, fields, links, judge, judge_links in load_original():
-        fields = corrected(pid, fields)
         existing = sorted(AI.glob(f"{pid:03d}-*.md"))
         old_notes = notes_of(existing[0].read_text(encoding="utf-8")) if existing else None
         notes = notes_for(pid, old_notes)

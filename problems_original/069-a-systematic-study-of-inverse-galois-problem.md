@@ -14,7 +14,7 @@ The classification of finite simple groups was a landmark achievement in group t
 
 ## Submitted Area
 
-Algebraic Geomtry
+Algebraic Geometry
 
 ## Proposed Tracks
 

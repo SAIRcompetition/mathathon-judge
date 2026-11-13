@@ -10,7 +10,7 @@ Non-parametric Bernstein von-Mises theorems
 
 ## Short description of problem (100 words or less)
 
-The Bernstein von-Mises theorem states that the posterior mean centred at the ground truth is a Gaussian distribution, under suitable assumptions. Several proofs of this theorem exist in infinite dimensional settings with slightly different hypotheses. Each proof is incredibly long (50 pages) and involves many tedious optimisations of constants. The goal of this project is to unify and simplify these existing proofs in literature to provide a definitive reference BvM theorem for statisticians and formalise it in lean.
+The Bernstein von-Mises theorem states that the posterior distribution, centred at an efficient estimator such as the posterior mean and suitably rescaled, is asymptotically Gaussian, under suitable assumptions. Several proofs of this theorem exist in infinite dimensional settings with slightly different hypotheses. Each proof is incredibly long (50 pages) and involves many tedious optimisations of constants. The goal of this project is to unify and simplify these existing proofs in literature to provide a definitive reference BvM theorem for statisticians and formalise it in lean.
 
 ## Submitted Area
 
@@ -29,5 +29,5 @@ This problem was proposed jointly by my PhD supervisor Richard Nickl
 
 ## Desired outcome
 
-A Bernstein-von Mises theorem whose hypotheses are more general that all of the non-parametric Bernstein-von Mises theorems appearing in literature. Either a new proof that unifies these statements, or the existing proof structure with all constants optimised in each of the cases covered by the hypotheses. 
+A Bernstein-von Mises theorem whose hypotheses are more general than all of the non-parametric Bernstein-von Mises theorems appearing in literature. Either a new proof that unifies these statements, or the existing proof structure with all constants optimised in each of the cases covered by the hypotheses. 
 A formalisation of the above theorem +proof in lean.

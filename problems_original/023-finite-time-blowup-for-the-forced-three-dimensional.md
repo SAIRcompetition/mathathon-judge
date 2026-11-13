@@ -22,7 +22,7 @@ Analysis, Computation/Applied Math
 
 ## Reference/source material
 
-(1) OpenAI, NavierStokesAndEuler: Lean 4 formalization of finite-time blowup for the forced Navier–Stokes equations on R^3 and the periodic torus, https://github.com/openai/NavierStokesAndEuler (2026). (2) D. Córdoba, L. Martínez-Zoroa and F. Zheng, "Finite time blow-up for the hypodissipative Navier Stokes equations with a force in L^1_t C^{1,ε}_x ∩ L^∞_t L^2_x", arXiv:2407.06776 (2024). (3) L. Caffarelli, R. Kohn and L. Nirenberg, "Partial regularity of suitable weak solutions of the Navier–Stokes equations", Comm. Pure Appl. Math. 35 (1982), 771–831.
+(1) OpenAI, NavierStokesAndEuler: Lean 4 formalization of finite-time blowup for the forced Navier–Stokes equations on ℝ³ and the periodic torus, https://github.com/openai/NavierStokesAndEuler (2026). (2) D. Córdoba, L. Martínez-Zoroa and F. Zheng, "Finite time blow-up for the hypodissipative Navier Stokes equations with a force in L<sup>1</sup><sub>t</sub>C<sup>1,ε</sup><sub>x</sub> ∩ L<sup>∞</sup><sub>t</sub>L<sup>2</sup><sub>x</sub>", arXiv:2407.06776 (2024). (3) L. Caffarelli, R. Kohn and L. Nirenberg, "Partial regularity of suitable weak solutions of the Navier–Stokes equations", Comm. Pure Appl. Math. 35 (1982), 771–831.
 
 ## Desired outcome
 

@@ -10,9 +10,9 @@ Quasi-Orders For the Lefthanded Lovász Local Lemma
 
 ## Short description of problem (100 words or less)
 
-Problem: Explain how qausi-order in the Lefthanded Lovász Local Lemma 
+Problem: Explain how quasi-order in the Lefthanded Lovász Local Lemma 
 
-Description: The Lovász Local Lemma (LLL) is a theorem in the probabilistic method for proving the existence of objects satisfying properties which are sufficiently likely and sufficiently independent. Pegden introduced a lefthanded version (LLLL) of the LLL which allows the the notion of independence to be directed --- dependence on events "to the left" do not count.  
+Description: The Lovász Local Lemma (LLL) is a theorem in the probabilistic method for proving the existence of objects satisfying properties which are sufficiently likely and sufficiently independent. Pegden introduced a lefthanded version (LLLL) of the LLL which allows the notion of independence to be directed --- dependence on events "to the left" do not count.  
 
 All known concrete applications of LLLL use a linear order to specify what "to the left" means. However, the theorem statement allows a quasi-order with a certain, somewhat opaque property. It would be nice to have a better understanding of what this property is and  what it buys us.  
 

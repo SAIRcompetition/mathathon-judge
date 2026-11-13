@@ -3,7 +3,7 @@
 ## From the proposer
 
 - **Area:** Mathematical Logic — Model Theory, O-minimality, Real Algebraic Geometry, and Exponential Fields.
-- **Tracks:** Team's choice
+- **Tracks:** Algebra/Number Theory, Analysis, Combinatorics, Computation/Applied Math, Geometry
 
 ### Description
 
@@ -34,7 +34,7 @@ This is an established but technically challenging theorem, making it suitable f
 
 ### Notes
 
-- The sheet leaves "Proposed Tracks" unfilled ("?????"); the organizers set it to "Team's choice".
+- The sheet leaves "Proposed Tracks" unfilled ("?????"); the organizers set it to "Team's choice", so the problem is listed in all five tracks.
 - Section 6 of the 2012 lecture notes proves only that solutions are bounded by elements of the smaller model; Wilkie defers the remaining step to his 1989 paper (the proposer's third reference).
 
 ### The result

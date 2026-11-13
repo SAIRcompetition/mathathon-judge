@@ -23,7 +23,7 @@ Combinatorics
 ## Reference/source material
 
 1. D. Armstrong, C. Stump, H. Thomas, "A uniform bijection between nonnesting and noncrossing partitions", Trans. Amer. Math. Soc. (2013), arXiv:1101.1277 (Main Theorem; case-by-case proof in Section 5).
-2. C. Dequêne, G. Frieden, A. Iraci, F. Schreier-Aigner, H. Thomas, N. Williams, "Charmed roots and the Kroweras complement", arXiv:2212.14831 (Problem 1.3; type A bijection in Section 5; type C by folding and the proposed uniform extension in Section 7).
+2. B. Dequêne, G. Frieden, A. Iraci, F. Schreier-Aigner, H. Thomas, N. Williams, "Charmed roots and the Kroweras complement", arXiv:2212.14831 (Problem 1.3; type A bijection in Section 5; type C by folding and the proposed uniform extension in Section 7).
 
 ## Desired outcome
 

@@ -9,14 +9,18 @@ The exports in source/ are not tracked in the repository; download them first
 
 The problems are the first tab of the sheet; other tabs are not read.  The text under
 each field heading is the CSV cell, unchanged, except that track names the sheet spells
-differently are replaced by the five official names (TRACK_NAMES).  The column "Judge Suggestions" gets its
+differently are replaced by the five official names (TRACK_NAMES) and the corrections in
+corrections.json are applied (typos, wrong bibliographic details, formulas that do not
+render, and plain errors in titles and statements).  Each correction states how often its
+text occurs; the script stops if the sheet no longer matches.  The column "Judge Suggestions" gets its
 own heading in the files where it is not empty.  Hyperlinks attached to cells are read
 from the HTML export and cross-checked against the XLSX export; those of the judge
 column are listed under their own heading.  After writing, the script reads every file
-back and checks that each field is byte-identical to its CSV cell (after that track
-name replacement); it exits with an error otherwise.
+back and checks that each field is byte-identical to its corrected CSV cell; it exits
+with an error otherwise.  The hidden cell links of the problems in DROP_LINKS are left out.
 """
 import csv
+import json
 import re
 import sys
 import unicodedata
@@ -53,6 +57,10 @@ TRACK_NAMES = {
     "Computation/Applied mathematics": "Computation/Applied Math",
     "Computaiton/Applied Math": "Computation/Applied Math",
 }
+CORRECTIONS = json.loads((Path(__file__).resolve().parent / "corrections.json").read_text(encoding="utf-8"))
+# The only cell link of these problems points to another problem's work.
+DROP_LINKS = {81, 83}
+SHEET_TITLES = {}  # problem ID -> title as in the sheet; file names stay derived from it
 INDEX_START = "<!-- problem-index:start -->"
 INDEX_END = "<!-- problem-index:end -->"
 
@@ -81,6 +89,16 @@ def official_tracks(cell):
     return ", ".join(TRACK_NAMES.get(t, t) for t in parts)
 
 
+def apply_corrections(row):
+    """Apply the corrections of corrections.json for this row's problem, in place."""
+    pid = int(row[0]) if row[0].strip().isdigit() else None
+    for c in (c for c in CORRECTIONS if c["id"] == pid):
+        i = HEADER.index(c["field"])
+        if row[i].count(c["old"]) != c["count"]:
+            sys.exit(f"problem {pid}: correction {c['old']!r} no longer matches the sheet")
+        row[i] = row[i].replace(c["old"], c["new"])
+
+
 def slug(title):
     s = unicodedata.normalize("NFKD", title).encode("ascii", "ignore").decode().lower()
     s = re.sub(r"['`]", "", s)
@@ -99,6 +117,9 @@ def read_csv():
     for r in rows[1:]:
         if len(r) > 4:
             r[4] = official_tracks(r[4])
+            if r[0].strip().isdigit():
+                SHEET_TITLES[int(r[0])] = r[1]
+            apply_corrections(r)
     # sheet row number (1-based, header = row 1) -> row
     return {i + 1: r for i, r in enumerate(rows) if i > 0 and any(c.strip() for c in r)}
 
@@ -264,8 +285,8 @@ def main():
     for sheet_row, row in sorted(rows.items()):
         pid = int(row[0])
         links = [(col, url, text) for (r, col), lst in sorted(hl.items()) if r == sheet_row
-                 for url, text in lst]
-        path = OUT / f"{pid:03d}-{slug(row[1])}.md"
+                 for url, text in lst if not (pid in DROP_LINKS and col != JUDGE_COL)]
+        path = OUT / f"{pid:03d}-{slug(SHEET_TITLES.get(pid, row[1]))}.md"
         path.write_text(render(row, links), encoding="utf-8")
         written.append((path, row))
     bad = [p.name for p, row in written
@@ -274,7 +295,7 @@ def main():
     if bad:
         sys.exit(f"round-trip check failed for: {bad}")
     write_index(written)
-    print(f"wrote {len(written)} files and the README table; every field matches its CSV cell byte for byte (track names aside); "
+    print(f"wrote {len(written)} files and the README table; every field matches its corrected CSV cell byte for byte; "
           f"{sum(len(v) for v in hl.values())} links in {len(hl)} cells")
 
 
