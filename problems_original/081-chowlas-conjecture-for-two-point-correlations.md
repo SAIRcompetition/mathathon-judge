@@ -18,7 +18,7 @@ Number theory
 
 ## Proposed Tracks
 
-Number Theory/Algebra
+Algebra/Number Theory
 
 ## Reference/source material
 

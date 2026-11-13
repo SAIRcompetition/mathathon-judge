@@ -2,7 +2,7 @@
 
 Round 1 is an onsite event at Caltech. Teams work for 40 hours, from Nov 13 at 8:00 PM until the submission deadline, Nov 15 at 12:00 PM. Your team picks one problem from the problem list and works toward an alternative proof, a clearer exposition, or a new connection. By the deadline you submit a report and slides, plus, optionally, supplementary materials and a Lean project. On the afternoon of Nov 15 you present your work to a panel of judges.
 
-The judges score your presentation. A panel of AI models reviews your report. The judges decide the winners. There will be overall winners, as well as winners for each of 5 tracks: Algebra/Number Theory, Combinatorics, Analysis, Geometry, and Computation/Applied Mathematics.
+The judges score your presentation. A panel of AI models reviews your report. The judges decide the winners. There will be overall winners, as well as winners for each of 5 tracks: Algebra/Number Theory, Combinatorics, Analysis, Geometry, and Computation/Applied Math.
 
 You take four steps on the SAIR competition platform: registration (§1), teams (§2), problem selection (§3), and submission (§4). Then you give your presentation (§5). How to prepare each item you submit is in the [Submission Guidelines](submission-guidelines.md). All times are Pacific Time.
 

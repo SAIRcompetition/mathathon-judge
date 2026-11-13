@@ -18,7 +18,7 @@ Mathematical physics, quantum information
 
 ## Proposed Tracks
 
-Computation/Applied mathematics
+Computation/Applied Math
 
 ## Reference/source material
 

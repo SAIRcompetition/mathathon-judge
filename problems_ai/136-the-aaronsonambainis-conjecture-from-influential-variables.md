@@ -3,7 +3,7 @@
 ## From the proposer
 
 - **Area:** Quantum computing and theoretical computer science; analysis of Boolean functions; quantum cryptography.
-- **Tracks:** Computation/Applied Mathematics
+- **Tracks:** Computation/Applied Math
 
 ### Description
 

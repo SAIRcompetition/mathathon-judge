@@ -3,7 +3,7 @@
 ## From the proposer
 
 - **Area:** Algebraic Geometry
-- **Tracks:** Number Theory/Algebra, Geometry
+- **Tracks:** Algebra/Number Theory, Geometry
 
 ### Description
 

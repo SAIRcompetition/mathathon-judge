@@ -18,7 +18,7 @@ Quantum computing and theoretical computer science; analysis of Boolean function
 
 ## Proposed Tracks
 
-Computation/Applied Mathematics
+Computation/Applied Math
 
 ## Reference/source material
 

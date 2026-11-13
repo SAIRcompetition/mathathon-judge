@@ -18,7 +18,7 @@ Enumerative combinatorics; combinatorial number theory; (p)-adic divisibility
 
 ## Proposed Tracks
 
-Combinatorics, Number Theory/Algebra
+Combinatorics, Algebra/Number Theory
 
 ## Reference/source material
 

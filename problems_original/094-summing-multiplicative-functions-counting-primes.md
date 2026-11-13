@@ -18,7 +18,7 @@ Computational number theory
 
 ## Proposed Tracks
 
-Computation/Applied Math, Number Theory/Algebra
+Computation/Applied Math, Algebra/Number Theory
 
 ## Reference/source material
 

@@ -18,7 +18,7 @@ Probability, statistical mechanics, and scientific computing
 
 ## Proposed Tracks
 
-Computation/Applied Mathematics, Analysis
+Computation/Applied Math, Analysis
 
 ## Reference/source material
 

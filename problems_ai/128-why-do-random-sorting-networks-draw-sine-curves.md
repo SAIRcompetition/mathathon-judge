@@ -3,7 +3,7 @@
 ## From the proposer
 
 - **Area:** Probability, algebraic combinatorics
-- **Tracks:** Computation/Applied Mathematics
+- **Tracks:** Computation/Applied Math
 
 ### Description
 

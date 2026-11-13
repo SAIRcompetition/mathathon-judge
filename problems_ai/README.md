@@ -91,25 +91,25 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 | 78 | [Understanding Matrix Multiplication](078-understanding-matrix-multiplication.md) | Computation/Applied Math | Proved (preprint) | ✓ |
 | 79 | [The Painlevé paradox](079-the-painleve-paradox.md) | Analysis, Computation/Applied Math | Not a single theorem | — |
 | 80 | [Surface intersection with correct topology](080-surface-intersection-with-correct-topology.md) | Geometry, Computation/Applied Math | Not a single theorem | — |
-| 81 | [Chowla’s conjecture for two-point correlations](081-chowlas-conjecture-for-two-point-correlations.md) | Number Theory/Algebra | Proved (preprint) | ✓ |
+| 81 | [Chowla’s conjecture for two-point correlations](081-chowlas-conjecture-for-two-point-correlations.md) | Algebra/Number Theory | Proved (preprint) | ✓ |
 | 83 | [Cannon's conjecture and friends](083-cannons-conjecture-and-friends.md) | Geometry | Proved (preprint) | ✓ |
-| 84 | [Exotic hyperbolic groups from 2-complexes](084-exotic-hyperbolic-groups-from-2-complexes.md) | Number Theory/Algebra, Geometry | Not a single theorem | — |
+| 84 | [Exotic hyperbolic groups from 2-complexes](084-exotic-hyperbolic-groups-from-2-complexes.md) | Algebra/Number Theory, Geometry | Not a single theorem | — |
 | 85 | [Different Effective Equation with shared Brownian Limit](085-different-effective-equation-with-shared-brownian-limit.md) | Analysis | Not a single theorem | — |
 | 86 | [Ulam Floating Problem perimetral density 1/3,1/4,1/5](086-ulam-floating-problem-perimetral-density-1-3-1-4-1-5.md) | Analysis, Geometry | Partly solved | ✓ |
 | 87 | [Towards a uniform natural proof of the nonnesting-noncrossing correspondence, starting with type B](087-towards-a-uniform-natural-proof-of-the-nonnesting.md) | Combinatorics | Partly solved | ✓ |
 | 88 | [Classification of minimal cones.](088-classification-of-minimal-cones.md) | Analysis | Open | — |
-| 89 | [Projectivity of Gieseker Moduli on the Projective Plane without GIT](089-projectivity-of-gieseker-moduli-on-the-projective-plane.md) | Geometry, Number Theory/Algebra | Proved | — |
+| 89 | [Projectivity of Gieseker Moduli on the Projective Plane without GIT](089-projectivity-of-gieseker-moduli-on-the-projective-plane.md) | Geometry, Algebra/Number Theory | Proved | — |
 | 90 | [Gittins Index Optimality for Scheduling with Time-Varying Holding Costs](090-gittins-index-optimality-for-scheduling-with-time-varying.md) | Computation/Applied Math | Partly solved | — |
 | 91 | [A classification of finite Euclidean Ramsey configurations](091-a-classification-of-finite-euclidean-ramsey-configurations.md) | Combinatorics | Proved (preprint) | ✓ |
 | 92 | [Erdős Problem #173: monochromatic congruent triangles in 2-colourings of the plane](092-erdos-problem-173-monochromatic-congruent-triangles-in-2.md) | Combinatorics | Proved (preprint) | ✓ |
-| 93 | [An improvement towards bounded gaps between primes](093-an-improvement-towards-bounded-gaps-between-primes.md) | Number Theory/Algebra | Proved (preprint) | ✓ |
-| 94 | [Summing multiplicative functions/counting primes](094-summing-multiplicative-functions-counting-primes.md) | Computation/Applied Math, Number Theory/Algebra | Not a single theorem | — |
+| 93 | [An improvement towards bounded gaps between primes](093-an-improvement-towards-bounded-gaps-between-primes.md) | Algebra/Number Theory | Proved (preprint) | ✓ |
+| 94 | [Summing multiplicative functions/counting primes](094-summing-multiplicative-functions-counting-primes.md) | Computation/Applied Math, Algebra/Number Theory | Not a single theorem | — |
 | 95 | [Quasi-Orders For the Lefthanded Lovász Local Lemma](095-quasi-orders-for-the-lefthanded-lovasz-local-lemma.md) | Combinatorics | Not a single theorem | ✓ |
 | 96 | [Counterexamples to polynomial removal for ordered binary matrices](096-counterexamples-to-polynomial-removal-for-ordered-binary.md) | Combinatorics | Disproved (preprint) | ✓ |
 | 97 | [Model Completeness of the Real Exponential Field](097-model-completeness-of-the-real-exponential-field.md) | Team's choice | Proved | ✓ |
 | 98 | [An Elementary Proof of the Deligne–Sullivan Theorem and Virtual Stable Parallelizability of Compact Hyperbolic Manifolds](098-an-elementary-proof-of-the-delignesullivan-theorem-and.md) | Geometry | Proved | ✓ |
 | 99 | [Towards a combinatorial proof of Schur positivity for LLT polynomials of unit interval graphs](099-towards-a-combinatorial-proof-of-schur-positivity-for-llt.md) | Combinatorics | Partly solved | ✓ |
-| 100 | [Hironaka’s Resolution of Singularity: Understanding the Algorithm and Its Later Simplifications](100-hironakas-resolution-of-singularity-understanding-the.md) | Number Theory/Algebra, Geometry | Proved | ✓ |
+| 100 | [Hironaka’s Resolution of Singularity: Understanding the Algorithm and Its Later Simplifications](100-hironakas-resolution-of-singularity-understanding-the.md) | Algebra/Number Theory, Geometry | Proved | ✓ |
 | 101 | [Unraveling Preiss' Geometry of Measures](101-unraveling-preiss-geometry-of-measures.md) | Geometry, Analysis | Proved | ✓ |
 | 102 | [Log Sobolev inequality for sine Gordon](102-log-sobolev-inequality-for-sine-gordon.md) | Analysis | Proved (preprint) | ✓ |
 | 103 | [Rethinking Special Relativity: Axiomatizations and Underlying Mathematical Structures](103-rethinking-special-relativity-axiomatizations-and.md) | Computation/Applied Math | Not a single theorem | — |
@@ -117,30 +117,30 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 | 105 | [Where is the topology hiding, which is missing from a Newton polygon?](105-where-is-the-topology-hiding-which-is-missing-from-a-newton.md) | Geometry | Open | — |
 | 106 | [Game-theoretic probability](106-game-theoretic-probability.md) | Computation/Applied Math, Analysis | Proved | ✓ |
 | 107 | [Why regular polygons have the fewest distances: an illustrated guide to Altman's theorem](107-why-regular-polygons-have-the-fewest-distances-an.md) | Geometry, Combinatorics | Proved | ✓ |
-| 108 | [Generalizing the zeta(5) irrationality argument](108-generalizing-the-zeta-5-irrationality-argument.md) | Number Theory/Algebra | Open | ✓ |
-| 109 | [Tightening the commutator-scaling Trotter error bound at fourth order](109-tightening-the-commutator-scaling-trotter-error-bound-at.md) | Computation/Applied Mathematics | Open | — |
+| 108 | [Generalizing the zeta(5) irrationality argument](108-generalizing-the-zeta-5-irrationality-argument.md) | Algebra/Number Theory | Open | ✓ |
+| 109 | [Tightening the commutator-scaling Trotter error bound at fourth order](109-tightening-the-commutator-scaling-trotter-error-bound-at.md) | Computation/Applied Math | Open | — |
 | 110 | [Statistical learning theory and neural network generalization bounds](110-statistical-learning-theory-and-neural-network.md) | Analysis, Computation/Applied Math | Proved | ✓ |
 | 114 | [Obstruction theory in Lean](114-obstruction-theory-in-lean.md) | Geometry | Proved | — |
 | 115 | [Exotic spheres](115-exotic-spheres.md) | Geometry | Proved | ✓ |
-| 118 | [Formalizing the AKLT spectral gap](118-formalizing-the-aklt-spectral-gap.md) | Computation/Applied mathematics | Proved (preprint) | ✓ |
+| 118 | [Formalizing the AKLT spectral gap](118-formalizing-the-aklt-spectral-gap.md) | Computation/Applied Math | Proved (preprint) | ✓ |
 | 120 | [Characterizations and identities for probability distributions](120-characterizations-and-identities-for-probability.md) | Analysis | Not a single theorem | ✓ |
 | 121 | [Carleson's Theorem on convergence of Fourier series](121-carleson-theorem-on-convergence-of-fourier-series.md) | Analysis | Proved | ✓ |
-| 122 | [Efficient Verification of Lean Proofs via Interaction](122-efficient-verification-of-lean-proofs-via-interaction.md) | Computation/Applied Mathematics | Not a single theorem | — |
+| 122 | [Efficient Verification of Lean Proofs via Interaction](122-efficient-verification-of-lean-proofs-via-interaction.md) | Computation/Applied Math | Not a single theorem | — |
 | 123 | [Schur Number Five](123-schur-number-five.md) | Combinatorics | Proved | ✓ |
 | 124 | [Mutually unbiased bases in dimension 6, applied to a 6-dimensional quantum system](124-mutually-unbiased-bases-in-dimension-6-applied-to-a-6.md) | Computation/Applied Math | Partly solved | ✓ |
 | 125 | [Enumeration of totally symmetric plane partitions](125-enumeration-of-totally-symmetric-plane-partitions.md) | Combinatorics | Proved | ✓ |
-| 126 | [Creative Mathematical Thought Partners](126-creative-mathematical-thought-partners.md) | Computation/Applied Mathematics | Not a single theorem | — |
+| 126 | [Creative Mathematical Thought Partners](126-creative-mathematical-thought-partners.md) | Computation/Applied Math | Not a single theorem | — |
 | 127 | [Rogers Ramanujan Identity](127-rogers-ramanujan-identity.md) | Combinatorics | Proved | ✓ |
-| 128 | [Why Do Random Sorting Networks Draw Sine Curves?](128-why-do-random-sorting-networks-draw-sine-curves.md) | Computation/Applied Mathematics | Proved | ✓ |
+| 128 | [Why Do Random Sorting Networks Draw Sine Curves?](128-why-do-random-sorting-networks-draw-sine-curves.md) | Computation/Applied Math | Proved | ✓ |
 | 129 | [Termination of flips for fourfolds](129-termination-of-flips-for-fourfolds.md) | Geometry | Proved (preprint) | — |
-| 131 | [Irrationality of ζ(3) (Apery's Theorem)](131-irrationality-of-3-aperys-theorem.md) | Number Theory/Algebra | Proved | ✓ |
-| 132 | [An Interactive Computational Laboratory for Spatial Stochastic Processes and Scaling Limits](132-an-interactive-computational-laboratory-for-spatial.md) | Computation/Applied Mathematics, Analysis | Not a single theorem | — |
-| 133 | [Simpson's conjecture](133-simpsons-conjecture.md) | Number Theory/Algebra | Partly solved | — |
-| 134 | [Understanding of the relation between Spin structure and K-theory and possible generalization to higher height.](134-understanding-of-the-relation-between-spin-structure-and-k.md) | Computation/Applied Mathematics | Not a single theorem | — |
-| 135 | [The Theorem That Secretly Needed Choice](135-the-theorem-that-secretly-needed-choice.md) | Number Theory/Algebra | Proved | — |
-| 136 | [The Aaronson–Ambainis Conjecture: From Influential Variables to Quantum Simulation](136-the-aaronsonambainis-conjecture-from-influential-variables.md) | Computation/Applied Mathematics | Proved (preprint) | ✓ |
-| 137 | [Tree Symmetries and the p-Adic Valuations of Fuss–Catalan Numbers](137-tree-symmetries-and-the-p-adic-valuations-of-fusscatalan.md) | Combinatorics, Number Theory/Algebra | Open | ✓ |
-| 138 | [Koszulness and higher syzygies of generalized matroid Chow rings](138-koszulness-and-higher-syzygies-of-generalized-matroid-chow.md) | Number Theory/Algebra | Open | — |
+| 131 | [Irrationality of ζ(3) (Apery's Theorem)](131-irrationality-of-3-aperys-theorem.md) | Algebra/Number Theory | Proved | ✓ |
+| 132 | [An Interactive Computational Laboratory for Spatial Stochastic Processes and Scaling Limits](132-an-interactive-computational-laboratory-for-spatial.md) | Computation/Applied Math, Analysis | Not a single theorem | — |
+| 133 | [Simpson's conjecture](133-simpsons-conjecture.md) | Algebra/Number Theory | Partly solved | — |
+| 134 | [Understanding of the relation between Spin structure and K-theory and possible generalization to higher height.](134-understanding-of-the-relation-between-spin-structure-and-k.md) | Computation/Applied Math | Not a single theorem | — |
+| 135 | [The Theorem That Secretly Needed Choice](135-the-theorem-that-secretly-needed-choice.md) | Algebra/Number Theory | Proved | — |
+| 136 | [The Aaronson–Ambainis Conjecture: From Influential Variables to Quantum Simulation](136-the-aaronsonambainis-conjecture-from-influential-variables.md) | Computation/Applied Math | Proved (preprint) | ✓ |
+| 137 | [Tree Symmetries and the p-Adic Valuations of Fuss–Catalan Numbers](137-tree-symmetries-and-the-p-adic-valuations-of-fusscatalan.md) | Combinatorics, Algebra/Number Theory | Open | ✓ |
+| 138 | [Koszulness and higher syzygies of generalized matroid Chow rings](138-koszulness-and-higher-syzygies-of-generalized-matroid-chow.md) | Algebra/Number Theory | Open | — |
 | 139 | [Critical scales in periodic transport homogenization](139-critical-scales-in-periodic-transport-homogenization.md) | Geometry, Analysis | Not a single theorem | — |
 | 140 | [A combinatorial proof of unimodality for (1+q)(1+q^2)...(1+q^n)](140-a-combinatorial-proof-of-unimodality-for-1-q-1-q-2-1-q-n.md) | Combinatorics | Open | ✓ |
 <!-- problem-index:end -->

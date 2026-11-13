@@ -3,7 +3,7 @@
 ## From the proposer
 
 - **Area:** Probability, statistical mechanics, and scientific computing
-- **Tracks:** Computation/Applied Mathematics, Analysis
+- **Tracks:** Computation/Applied Math, Analysis
 
 ### Description
 

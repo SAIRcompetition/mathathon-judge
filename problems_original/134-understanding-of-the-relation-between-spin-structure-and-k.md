@@ -18,7 +18,7 @@ Algebraic topology
 
 ## Proposed Tracks
 
-Computation/Applied Mathematics
+Computation/Applied Math
 
 ## Reference/source material
 
