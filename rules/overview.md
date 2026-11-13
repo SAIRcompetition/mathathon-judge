@@ -43,47 +43,86 @@ We treat AI as one of many tools available to mathematicians. Proprietary models
 
 ## Co-organized by
 
-- [![Caltech](https://media.sair.foundation/images/mathathon-logos/caltech.jpg)](https://www.caltech.edu/)
-- [![SAIR](https://media.sair.foundation/images/mathathon-logos/sair.jpg)](https://sair.foundation/)
+<table>
+<tr>
+<td align="center" width="50%"><a href="https://www.caltech.edu/"><img src="https://media.sair.foundation/images/mathathon-logos/caltech.jpg" alt="Caltech" width="277" height="72"></a><br><sub>Caltech</sub></td>
+<td align="center" width="50%"><a href="https://sair.foundation/"><img src="https://media.sair.foundation/images/mathathon-logos/sair.jpg" alt="SAIR" width="221" height="72"></a><br><sub>SAIR</sub></td>
+</tr>
+</table>
 
 ## Lead donor
 
-- [![XTX Markets](https://media.sair.foundation/images/mathathon-logos/xtx-markets.jpg)](https://www.xtxmarkets.com/)
+<table>
+<tr>
+<td align="center" width="100%"><a href="https://www.xtxmarkets.com/"><img src="https://media.sair.foundation/images/mathathon-logos/xtx-markets.jpg" alt="XTX Markets" width="136" height="72"></a><br><sub>XTX Markets</sub></td>
+</tr>
+</table>
 
 ## Compute Partner
 
-- [![National Compute](https://media.sair.foundation/images/mathathon-logos/national_compute.jpeg)](https://nationalcompute.com/)
+<table>
+<tr>
+<td align="center" width="100%"><a href="https://nationalcompute.com/"><img src="https://media.sair.foundation/images/mathathon-logos/national_compute.jpeg" alt="National Compute" width="149" height="72"></a><br><sub>National Compute</sub></td>
+</tr>
+</table>
+
 ## Supported by
 
-- [![Cognition](https://media.sair.foundation/images/mathathon-logos/cognition.svg)](https://cognition.ai/)
-- [![Conway](https://media.sair.foundation/images/mathathon-logos/conway.png)](https://conway.tech/)
-- [![Cloudflare](https://media.sair.foundation/images/mathathon-logos/cloudflare.svg)](https://www.cloudflare.com/)
-- [![HUD](https://media.sair.foundation/images/mathathon-logos/hud.svg)](https://www.hud.ai/)
-- [![Oratomic](https://media.sair.foundation/images/mathathon-logos/oratomic.svg)](https://oratomic.com/)
-- [![Midas](https://media.sair.foundation/images/mathathon-logos/midas.png)](https://mi.inc/)
-- [![Annapurna Labs](https://media.sair.foundation/images/mathathon-logos/annapurna.png)](https://amazon.jobs/content/en/teams/annapurna-labs)
-- [![Hugging Face](https://media.sair.foundation/images/mathathon-logos/huggingface.png)](https://huggingface.co/)
+<table>
+<tr>
+<td align="center" width="33%"><a href="https://cognition.ai/"><img src="https://media.sair.foundation/images/mathathon-logos/cognition.svg" alt="Cognition" width="48" height="48"></a><br><sub>Cognition</sub></td>
+<td align="center" width="33%"><a href="https://conway.tech/"><img src="https://media.sair.foundation/images/mathathon-logos/conway.png" alt="Conway" width="251" height="32"></a><br><sub>Conway</sub></td>
+<td align="center" width="33%"><a href="https://www.cloudflare.com/"><img src="https://media.sair.foundation/images/mathathon-logos/cloudflare.svg" alt="Cloudflare" width="105" height="48"></a><br><sub>Cloudflare</sub></td>
+</tr>
+<tr>
+<td align="center" width="33%"><a href="https://www.hud.ai/"><img src="https://media.sair.foundation/images/mathathon-logos/hud.svg" alt="HUD" width="107" height="48"></a><br><sub>HUD</sub></td>
+<td align="center" width="33%"><a href="https://oratomic.com/"><img src="https://media.sair.foundation/images/mathathon-logos/oratomic.svg" alt="Oratomic" width="47" height="48"></a><br><sub>Oratomic</sub></td>
+<td align="center" width="33%"><a href="https://mi.inc/"><img src="https://media.sair.foundation/images/mathathon-logos/midas.png" alt="Midas" width="31" height="48"></a><br><sub>Midas</sub></td>
+</tr>
+<tr>
+<td align="center" width="33%"><a href="https://amazon.jobs/content/en/teams/annapurna-labs"><img src="https://media.sair.foundation/images/mathathon-logos/annapurna.png" alt="Annapurna Labs" width="246" height="48"></a><br><sub>Annapurna Labs</sub></td>
+<td align="center" width="33%"><a href="https://huggingface.co/"><img src="https://media.sair.foundation/images/mathathon-logos/huggingface.png" alt="Hugging Face" width="48" height="48"></a><br><sub>Hugging Face</sub></td>
+</tr>
+</table>
 
-+ [![Modal](https://media.sair.foundation/images/mathathon-logos/modal.svg)](https://modal.com/)
-+ [![Mercor](https://media.sair.foundation/images/mathathon-logos/mercor.png)](https://mercor.com/)
-+ [![dmodel](https://media.sair.foundation/images/mathathon-logos/dmodel.png)](https://dmodel.ai/)
-+ [![Prime Intellect](https://media.sair.foundation/images/mathathon-logos/primeintellect.svg)](https://www.primeintellect.ai/)
-+ [![a16z](https://media.sair.foundation/images/mathathon-logos/a16z.png)](https://a16z.com/)
-+ [![SF Compute](https://media.sair.foundation/images/mathathon-logos/sfcompute.svg)](https://sfcompute.com/)
+<table>
+<tr>
+<td align="center" width="25%"><a href="https://modal.com/"><img src="https://media.sair.foundation/images/mathathon-logos/modal.svg" alt="Modal" width="36" height="36"></a><br><sub>Modal</sub></td>
+<td align="center" width="25%"><a href="https://mercor.com/"><img src="https://media.sair.foundation/images/mathathon-logos/mercor.png" alt="Mercor" width="41" height="36"></a><br><sub>Mercor</sub></td>
+<td align="center" width="25%"><a href="https://dmodel.ai/"><img src="https://media.sair.foundation/images/mathathon-logos/dmodel.png" alt="dmodel" width="99" height="36"></a><br><sub>dmodel</sub></td>
+<td align="center" width="25%"><a href="https://www.primeintellect.ai/"><img src="https://media.sair.foundation/images/mathathon-logos/primeintellect.svg" alt="Prime Intellect" width="178" height="30"></a><br><sub>Prime Intellect</sub></td>
+</tr>
+<tr>
+<td align="center" width="25%"><a href="https://a16z.com/"><img src="https://media.sair.foundation/images/mathathon-logos/a16z.png" alt="a16z" width="74" height="36"></a><br><sub>a16z</sub></td>
+<td align="center" width="25%"><a href="https://sfcompute.com/"><img src="https://media.sair.foundation/images/mathathon-logos/sfcompute.svg" alt="SF Compute" width="178" height="30"></a><br><sub>SF Compute</sub></td>
+</tr>
+</table>
 
-- [![Architect Labs](https://media.sair.foundation/images/mathathon-logos/architectlabs.png)](https://architectlabs.com/)
-- [![Emergence Capital](https://media.sair.foundation/images/mathathon-logos/emcap.svg)](https://emcap.com/)
-- [![8VC](https://media.sair.foundation/images/mathathon-logos/8vc.png)](https://8vc.com/)
-- [![Base10](https://media.sair.foundation/images/mathathon-logos/base10.svg)](https://base10.vc/)
-- [![Factory](https://media.sair.foundation/images/mathathon-logos/factory.svg)](https://factory.ai/)
-- [![Extropic](https://media.sair.foundation/images/mathathon-logos/extropic.png)](https://extropic.ai/)
-- [![Formation VC](https://media.sair.foundation/images/mathathon-logos/formation.svg)](https://www.formationvc.com/)
+<table>
+<tr>
+<td align="center" width="25%"><a href="https://architectlabs.com/"><img src="https://media.sair.foundation/images/mathathon-logos/architectlabs.png" alt="Architect Labs" width="27" height="28"></a><br><sub>Architect Labs</sub></td>
+<td align="center" width="25%"><a href="https://emcap.com/"><img src="https://media.sair.foundation/images/mathathon-logos/emcap.svg" alt="Emergence Capital" width="106" height="28"></a><br><sub>Emergence Capital</sub></td>
+<td align="center" width="25%"><a href="https://8vc.com/"><img src="https://media.sair.foundation/images/mathathon-logos/8vc.png" alt="8VC" width="75" height="28"></a><br><sub>8VC</sub></td>
+<td align="center" width="25%"><a href="https://base10.vc/"><img src="https://media.sair.foundation/images/mathathon-logos/base10.svg" alt="Base10" width="119" height="28"></a><br><sub>Base10</sub></td>
+</tr>
+<tr>
+<td align="center" width="25%"><a href="https://factory.ai/"><img src="https://media.sair.foundation/images/mathathon-logos/factory.svg" alt="Factory" width="178" height="27"></a><br><sub>Factory</sub></td>
+<td align="center" width="25%"><a href="https://extropic.ai/"><img src="https://media.sair.foundation/images/mathathon-logos/extropic.png" alt="Extropic" width="178" height="17"></a><br><sub>Extropic</sub></td>
+<td align="center" width="25%"><a href="https://www.formationvc.com/"><img src="https://media.sair.foundation/images/mathathon-logos/formation.svg" alt="Formation VC" width="178" height="22"></a><br><sub>Formation VC</sub></td>
+</tr>
+</table>
 
-+ [![Normal](https://media.sair.foundation/images/mathathon-logos/normal.png)](https://normal.ai/)
-+ [![Extraordinary](https://media.sair.foundation/images/mathathon-logos/extraordinary.png)](https://extraordinary.com/)
-+ [![1517 Fund](https://media.sair.foundation/images/mathathon-logos/1517.svg)](https://www.1517fund.com/)
-+ [![Indent](https://media.sair.foundation/images/mathathon-logos/indent.svg)](https://indent.com/)
-+ [![Diode](https://media.sair.foundation/images/mathathon-logos/diode.svg)](https://www.diode.computer/)
-+ [![Pareto](https://media.sair.foundation/images/mathathon-logos/pareto.png)](https://pareto20.com/)
-+ [![Terac](https://media.sair.foundation/images/mathathon-logos/terac.svg)](https://terac.com/)
-+ [![Droneforge](https://media.sair.foundation/images/mathathon-logos/droneforge.png)](https://thedroneforge.com/)
+<table>
+<tr>
+<td align="center" width="25%"><a href="https://normal.ai/"><img src="https://media.sair.foundation/images/mathathon-logos/normal.png" alt="Normal" width="20" height="22"></a><br><sub>Normal</sub></td>
+<td align="center" width="25%"><a href="https://extraordinary.com/"><img src="https://media.sair.foundation/images/mathathon-logos/extraordinary.png" alt="Extraordinary" width="178" height="17"></a><br><sub>Extraordinary</sub></td>
+<td align="center" width="25%"><a href="https://www.1517fund.com/"><img src="https://media.sair.foundation/images/mathathon-logos/1517.svg" alt="1517 Fund" width="53" height="22"></a><br><sub>1517 Fund</sub></td>
+<td align="center" width="25%"><a href="https://indent.com/"><img src="https://media.sair.foundation/images/mathathon-logos/indent.svg" alt="Indent" width="109" height="22"></a><br><sub>Indent</sub></td>
+</tr>
+<tr>
+<td align="center" width="25%"><a href="https://www.diode.computer/"><img src="https://media.sair.foundation/images/mathathon-logos/diode.svg" alt="Diode" width="22" height="22"></a><br><sub>Diode</sub></td>
+<td align="center" width="25%"><a href="https://pareto20.com/"><img src="https://media.sair.foundation/images/mathathon-logos/pareto.png" alt="Pareto" width="148" height="22"></a><br><sub>Pareto</sub></td>
+<td align="center" width="25%"><a href="https://terac.com/"><img src="https://media.sair.foundation/images/mathathon-logos/terac.svg" alt="Terac" width="69" height="22"></a><br><sub>Terac</sub></td>
+<td align="center" width="25%"><a href="https://thedroneforge.com/"><img src="https://media.sair.foundation/images/mathathon-logos/droneforge.png" alt="Droneforge" width="22" height="22"></a><br><sub>Droneforge</sub></td>
+</tr>
+</table>
