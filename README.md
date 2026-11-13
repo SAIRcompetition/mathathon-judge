@@ -1,6 +1,6 @@
-# Caltech Mathathon: Judging Design
+# Caltech x SAIR Mathathon: Rules and Judging
 
-This repository holds the Round 1 rules, the judging guidelines and rubric, and the problem list for the [Caltech Mathathon](https://mathathonchallenge.com/), whose theme is *Old Problems, New Proofs*. The Mathathon has two rounds:
+This repository holds the Round 1 rules, the judging guidelines and rubric, and the problem list for the [Caltech x SAIR Mathathon](https://mathathonchallenge.com/), whose theme is *Old Problems, New Proofs*. The Mathathon has two rounds:
 
 - **Round 1** is an onsite event at Caltech (Nov 13–15) with about 100 teams and 40 hours of work.
 - **Round 2** is a two-month project with a mentor.
@@ -23,8 +23,8 @@ The Round 1 problem list has 126 problems and comes from the organizers' final p
 
 | File | What it is | Audience |
 |---|---|---|
-| [`problems_original/README.md`](problems_original/README.md) | The problem sheet copied verbatim: one file per problem with the proposer's title, short description, area, tracks, references and desired outcome, plus the sheet exports. Nothing in it is AI-generated or edited. | Everyone |
-| [`problems_ai/README.md`](problems_ai/README.md) | The problem list for reading: one page per problem with the proposer's text (wording unchanged) followed by clearly labelled AI-generated notes, which may contain errors, on what is known, how known proofs work, where to start, references with links, and the Lean status | Everyone |
+| [`problems_original/README.md`](problems_original/README.md) | The problem sheet: one file per problem with the proposer's title, short description, area, tracks, references and desired outcome, with obvious errors corrected (each listed in `corrections.json`). Nothing in it is AI-generated. | Everyone |
+| [`problems_ai/README.md`](problems_ai/README.md) | The problem list for reading: one page per problem with the proposer's text (as in `problems_original`) followed by clearly labelled AI-generated notes, which may contain errors, on what is known, how known proofs work, where to start, references with links, and the Lean status | Everyone |
 | [`problems_ai/lean/README.md`](problems_ai/lean/README.md) | The official Lean statements of 82 problems, as a Lean project for Lean v4.35.0 and Mathlib `v4.35.0` (configuration files and statements only). Prepared by AI, either written for Mathathon or adapted from cited formalizations, and may contain errors. | Participants, LLM operator |
 
 The overview reproduces the Mathathon website.
@@ -35,11 +35,6 @@ The overview reproduces the Mathathon website.
 - **A panel of five AI models** reviews each written report on the same four dimensions plus Attribution and Novelty.
 - **Lean is optional.** An automated check builds each Lean project and records what each declared result depends on. A Lean result is evidence for Correctness, and only for the claims it verifies.
 - **The judges decide the winners.**
-
-## Not included
-
-- **The Terms of Service and the Privacy Policy.** Participants accept both before submitting. They are drafted separately.
-- **Software.** The repository has no Lean tooling and no LLM pipeline code. The documents state rules and process steps only. The only scripts are two small Python scripts that copy the problem sheet into `problems_original/` and `problems_ai/`.
 
 ## License
 
