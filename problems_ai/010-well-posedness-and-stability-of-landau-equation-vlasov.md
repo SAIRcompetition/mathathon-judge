@@ -61,7 +61,7 @@ Prerequisites: multivariable calculus and integration by parts, convexity of the
 - C. Imbert, L. Silvestre, and C. Villani, "On the monotonicity of the Fisher information for the Boltzmann equation," Invent. Math. 243(1) (2025), 127–179. <https://doi.org/10.1007/s00222-025-01376-3>
 - C. Villani, "Fisher information in kinetic theory," arXiv:2501.00925 (2025). <https://arxiv.org/abs/2501.00925>
 - Y. Guo, "The Landau equation in a periodic box," Comm. Math. Phys. 231(3) (2002), 391–434. <https://doi.org/10.1007/s00220-002-0729-9>
-- S. Ji, "Bounds for the optimal constant of the Bakry–Émery Γ2 criterion inequality on RP^{d−1}," arXiv:2408.13954 (2024). <https://arxiv.org/abs/2408.13954>
+- S. Ji, "Bounds for the optimal constant of the Bakry–Émery Γ<sub>2</sub> criterion inequality on ℝP<sup>d−1</sup>," arXiv:2408.13954 (2024). <https://arxiv.org/abs/2408.13954>
 
 ### Lean
 

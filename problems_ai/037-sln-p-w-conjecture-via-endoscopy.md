@@ -11,7 +11,7 @@ The celebrated P=W Conjecture is one of the deepest conjectures in Non Abelian H
 
 ### Desired outcome
 
-A proof of the SLn P=W Conjecture without using \mathcal{H}_2. Instead, it should use global Springer theory and endoscopic decomposition.
+A proof of the SLn P=W Conjecture without using $\mathcal{H}_2$. Instead, it should use global Springer theory and endoscopic decomposition.
 
 ### References
 

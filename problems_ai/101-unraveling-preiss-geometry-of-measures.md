@@ -15,7 +15,7 @@ A carefully checked, interactive exposition that helps readers explain why the o
 
 ### References
 
-David Preiss, “Geometry of measures in (\mathbb R^n): Distribution, rectifiability, and densities,” Annals of Mathematics 125 (1987), 537–643. 
+David Preiss, “Geometry of measures in ℝⁿ: Distribution, rectifiability, and densities,” Annals of Mathematics 125 (1987), 537–643. 
 
 Camillo De Lellis, Rectifiable Sets, Densities, and Tangent Measures, Zürich Lectures in Advanced Mathematics, EMS, 2008
 

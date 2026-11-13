@@ -15,7 +15,7 @@ A human-readable account of the blowup construction that identifies the mechanis
 
 ### References
 
-(1) OpenAI, NavierStokesAndEuler: Lean 4 formalization of finite-time blowup for the forced Navier–Stokes equations on R^3 and the periodic torus, https://github.com/openai/NavierStokesAndEuler (2026). (2) D. Córdoba, L. Martínez-Zoroa and F. Zheng, "Finite time blow-up for the hypodissipative Navier Stokes equations with a force in L^1_t C^{1,ε}_x ∩ L^∞_t L^2_x", arXiv:2407.06776 (2024). (3) L. Caffarelli, R. Kohn and L. Nirenberg, "Partial regularity of suitable weak solutions of the Navier–Stokes equations", Comm. Pure Appl. Math. 35 (1982), 771–831.
+(1) OpenAI, NavierStokesAndEuler: Lean 4 formalization of finite-time blowup for the forced Navier–Stokes equations on ℝ³ and the periodic torus, https://github.com/openai/NavierStokesAndEuler (2026). (2) D. Córdoba, L. Martínez-Zoroa and F. Zheng, "Finite time blow-up for the hypodissipative Navier Stokes equations with a force in L<sup>1</sup><sub>t</sub>C<sup>1,ε</sup><sub>x</sub> ∩ L<sup>∞</sup><sub>t</sub>L<sup>2</sup><sub>x</sub>", arXiv:2407.06776 (2024). (3) L. Caffarelli, R. Kohn and L. Nirenberg, "Partial regularity of suitable weak solutions of the Navier–Stokes equations", Comm. Pure Appl. Math. 35 (1982), 771–831.
 
 ## AI-generated notes
 
@@ -63,7 +63,7 @@ Prerequisites: incompressible Navier–Stokes theory, axisymmetric flows, WKB-ty
 ### References, with links
 
 - OpenAI, NavierStokesAndEuler: Lean 4 formalization of finite-time blowup for the forced Navier–Stokes equations on R^3 and the periodic torus, <https://github.com/openai/NavierStokesAndEuler> (2026).
-- D. Córdoba, L. Martínez-Zoroa, and F. Zheng, “Finite time blow-up for the hypodissipative Navier Stokes equations with a force in L^1_t C^{1,ε}_x ∩ L^∞_t L^2_x,” arXiv:2407.06776 (2024). <https://arxiv.org/abs/2407.06776>
+- D. Córdoba, L. Martínez-Zoroa, and F. Zheng, “Finite time blow-up for the hypodissipative Navier Stokes equations with a force in L<sup>1</sup><sub>t</sub>C<sup>1,ε</sup><sub>x</sub> ∩ L<sup>∞</sup><sub>t</sub>L<sup>2</sup><sub>x</sub>,” arXiv:2407.06776 (2024). <https://arxiv.org/abs/2407.06776>
 - L. Caffarelli, R. Kohn, and L. Nirenberg, “Partial regularity of suitable weak solutions of the Navier–Stokes equations,” Comm. Pure Appl. Math. 35 (1982), 771–831. <https://doi.org/10.1002/cpa.3160350604>
 
 ### Further references
@@ -71,7 +71,7 @@ Prerequisites: incompressible Navier–Stokes theory, axisymmetric flows, WKB-ty
 - OpenAI, "Finite time blowup for Navier–Stokes" (2026). <https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf>
 - Z. Lei and X. Ren, "Finite-time blowup for Navier–Stokes with smooth forcing, Part I: Construction of self-similar solutions with admissible stress and flat remainder," arXiv:2609.35406 (2026). <https://arxiv.org/abs/2609.35406>
 - Z. Lei and X. Ren, "Finite-time blowup for Navier–Stokes with smooth forcing, Part II: Residual correction via oscillatory pulses," arXiv:2611.06869 (2026). <https://arxiv.org/abs/2611.06869>
-- L. Escauriaza, G. Seregin, and V. Šverák, "L_{3,∞}-solutions of the Navier–Stokes equations and backward uniqueness," Russian Math. Surveys 58(2) (2003), 211–250. <https://doi.org/10.1070/RM2003v058n02ABEH000609>
+- L. Escauriaza, G. Seregin, and V. Šverák, "L<sub>3,∞</sub>-solutions of the Navier–Stokes equations and backward uniqueness," Russian Math. Surveys 58(2) (2003), 211–250. <https://doi.org/10.1070/RM2003v058n02ABEH000609>
 - T. Tao, "Finite time blowup for an averaged three-dimensional Navier–Stokes equation," J. Amer. Math. Soc. 29(3) (2016), 601–674. <https://arxiv.org/abs/1402.0290>
 
 ### Lean

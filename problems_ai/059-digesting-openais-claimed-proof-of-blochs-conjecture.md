@@ -7,7 +7,7 @@
 
 ### Description
 
-Bloch's conjecture predicts that for a smooth connected projective complex surface X with geometric genus p_g(X) = 0, the Albanese homomorphism on degree-zero zero-cycles CH_0(X)_{deg=0} -> Alb(X) is an isomorphism.
+Bloch's conjecture predicts that for a smooth connected projective complex surface X with geometric genus $p_g(X)=0$, the Albanese homomorphism on degree-zero zero-cycles $\mathrm{CH} _ 0(X) _ {\deg=0}\to\mathrm{Alb}(X)$ is an isomorphism.
 
 ### Desired outcome
 

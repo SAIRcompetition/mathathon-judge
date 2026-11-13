@@ -7,7 +7,7 @@
 
 ### Description
 
-Let \lambda(n)=(-1)^{Omega(n)}, where \Omega(n) counts prime factors with multiplicity. The estimate \sum_{n\le x}\lambda(n)=o(x) is equivalent to the famous prime number theorem. The two-point Chowla conjecture asserts that \sum_{n\le x}\lambda(n)\lambda(n+h)=o(x) for every fixed positive integer h. So the parities of the numbers of prime factors of n and n+h are asymptotically uncorrelated. These type of question, while still very difficult, serve as a simpler model for questions about correlations of primes, including the twin prime conjecture. OpenAI recently announced a proof.
+Let $\lambda(n)=(-1)^{\Omega(n)}$, where $\Omega(n)$ counts prime factors with multiplicity. The estimate $\sum_{n\le x}\lambda(n)=o(x)$ is equivalent to the famous prime number theorem. The two-point Chowla conjecture asserts that $\sum_{n\le x}\lambda(n)\lambda(n+h)=o(x)$ for every fixed positive integer h. So the parities of the numbers of prime factors of n and n+h are asymptotically uncorrelated. These type of question, while still very difficult, serve as a simpler model for questions about correlations of primes, including the twin prime conjecture. OpenAI recently announced a proof.
 
 ### Desired outcome
 

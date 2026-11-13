@@ -68,7 +68,7 @@ bit operations, which refutes ETH, SETH and Gap-ETH. The official Lean statement
 
 - [Some exposition of “The Exponential Time Hypothesis Is False”](https://www.cs.cmu.edu/~odonnell/some_eth_false_exposition.pdf), R. O'Donnell, 2026: OpenAI's argument recast as computing permanents of sparse matrices by interpolation, in 20 pages.
 - [The Exponential Time Hypothesis is False](https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf), OpenAI, 2026: Section 2 is a 15-page overview.
-- [A 2^{o(n)} time algorithm for 3-SAT](https://github.com/anthropics/formal-math/blob/main/eth/paper.pdf), Anthropic, 2026: Section 2 outlines the proof of Theorem 2 in six steps.
+- [A 2<sup>o(n)</sup> time algorithm for 3-SAT](https://github.com/anthropics/formal-math/blob/main/eth/paper.pdf), Anthropic, 2026: Section 2 outlines the proof of Theorem 2 in six steps.
 - [ETH Refutation: Examination and Discussion](https://ethdiscussion.blog/2026/10/26/eth-refutation-examination-and-discussion/), R. Impagliazzo, R. Paturi, R. Williams, 2026: the community examination effort.
 
 Prerequisites: sparsification lemma, polynomial interpolation, basic exact exponential algorithms, tensor-network contraction.
@@ -76,7 +76,7 @@ Prerequisites: sparsification lemma, polynomial interpolation, basic exact expon
 ### References, with links
 
 - OpenAI, “The Exponential Time Hypothesis is False”, preprint, 17 October 2026, revised 25 October 2026. <https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf>
-- Anthropic (Claude), “A 2^{o(n)} Time Algorithm for 3-SAT”, preprint, 26 October 2026. <https://github.com/anthropics/formal-math/blob/main/eth/paper.pdf>
+- Anthropic (Claude), “A 2<sup>o(n)</sup> Time Algorithm for 3-SAT”, preprint, 26 October 2026. <https://github.com/anthropics/formal-math/blob/main/eth/paper.pdf>
 
 ### Further references
 

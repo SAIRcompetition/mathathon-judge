@@ -7,7 +7,7 @@
 
 ### Description
 
-Product (Trotter–Suzuki) formulas simulate e^{−it(A+B)} by alternating evolutions under A and B. The standard error bound (Childs et al., 2021) scales as t^{p+1} times a sum of nested-commutator norms, with an explicit prefactor that every resource estimate for Hamiltonian simulation uses. In numerical tests the true error is often 10 to 1000 times smaller. The prefactor is inflated because the proof sums absolute values over many commutator terms that largely cancel. Problem: for two bounded terms and the fourth-order Suzuki formula, prove a rigorous finite-step-size bound with a strictly smaller prefactor, via the exact leading error term and a controlled remainder.
+Product (Trotter–Suzuki) formulas simulate $e^{−it(A+B)}$ by alternating evolutions under A and B. The standard error bound (Childs et al., 2021) scales as $t^{p+1}$ times a sum of nested-commutator norms, with an explicit prefactor that every resource estimate for Hamiltonian simulation uses. In numerical tests the true error is often 10 to 1000 times smaller. The prefactor is inflated because the proof sums absolute values over many commutator terms that largely cancel. Problem: for two bounded terms and the fourth-order Suzuki formula, prove a rigorous finite-step-size bound with a strictly smaller prefactor, via the exact leading error term and a controlled remainder.
 
 ### Desired outcome
 

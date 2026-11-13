@@ -16,12 +16,28 @@
   "why": "typo"
  },
  {
+  "id": 4,
+  "field": "Desired outcome",
+  "old": "maybe n<=10^{10^10} with",
+  "new": "maybe $n\\le10^{10^{10}}$ with",
+  "count": 1,
+  "why": "plain-text TeX shown raw on GitHub"
+ },
+ {
   "id": 8,
   "field": "Short description of problem (100 words or less)",
   "old": "shorted re-write",
   "new": "shortened re-write",
   "count": 1,
   "why": "typo"
+ },
+ {
+  "id": 13,
+  "field": "Reference/source material",
+  "old": "components of C_{d₁} ∩ C_{d₂})",
+  "new": "components of C<sub>d₁</sub> ∩ C<sub>d₂</sub>)",
+  "count": 1,
+  "why": "plain-text TeX shown raw on GitHub"
  },
  {
   "id": 14,
@@ -54,6 +70,22 @@
   "new": "Brito-Dumitriu-Harris",
   "count": 1,
   "why": "wrong author name (arXiv:1804.07808)"
+ },
+ {
+  "id": 23,
+  "field": "Reference/source material",
+  "old": "equations on R^3 and",
+  "new": "equations on ℝ³ and",
+  "count": 1,
+  "why": "plain-text TeX shown raw on GitHub"
+ },
+ {
+  "id": 23,
+  "field": "Reference/source material",
+  "old": "force in L^1_t C^{1,ε}_x ∩ L^∞_t L^2_x",
+  "new": "force in L<sup>1</sup><sub>t</sub>C<sup>1,ε</sup><sub>x</sub> ∩ L<sup>∞</sup><sub>t</sub>L<sup>2</sup><sub>x</sub>",
+  "count": 1,
+  "why": "plain-text TeX shown raw on GitHub"
  },
  {
   "id": 28,
@@ -104,6 +136,54 @@
   "why": "typo"
  },
  {
+  "id": 35,
+  "field": "Short description of problem (100 words or less)",
+  "old": "\\(",
+  "new": "$",
+  "count": 5,
+  "why": "the formula did not render on GitHub (LaTeX without dollar signs, or \\( \\) and \\[ \\] delimiters, which GitHub does not support)"
+ },
+ {
+  "id": 35,
+  "field": "Desired outcome",
+  "old": "\\(",
+  "new": "$",
+  "count": 3,
+  "why": "the formula did not render on GitHub (LaTeX without dollar signs, or \\( \\) and \\[ \\] delimiters, which GitHub does not support)"
+ },
+ {
+  "id": 35,
+  "field": "Short description of problem (100 words or less)",
+  "old": "\\)",
+  "new": "$",
+  "count": 5,
+  "why": "the formula did not render on GitHub (LaTeX without dollar signs, or \\( \\) and \\[ \\] delimiters, which GitHub does not support)"
+ },
+ {
+  "id": 35,
+  "field": "Desired outcome",
+  "old": "\\)",
+  "new": "$",
+  "count": 3,
+  "why": "the formula did not render on GitHub (LaTeX without dollar signs, or \\( \\) and \\[ \\] delimiters, which GitHub does not support)"
+ },
+ {
+  "id": 35,
+  "field": "Short description of problem (100 words or less)",
+  "old": "\\[\n",
+  "new": "$$",
+  "count": 1,
+  "why": "the formula did not render on GitHub (LaTeX without dollar signs, or \\( \\) and \\[ \\] delimiters, which GitHub does not support)"
+ },
+ {
+  "id": 35,
+  "field": "Short description of problem (100 words or less)",
+  "old": "\n\\]",
+  "new": "$$",
+  "count": 1,
+  "why": "the formula did not render on GitHub (LaTeX without dollar signs, or \\( \\) and \\[ \\] delimiters, which GitHub does not support)"
+ },
+ {
   "id": 37,
   "field": "Short description of problem (100 words or less)",
   "old": "one of the deepest conjecture in",
@@ -128,12 +208,84 @@
   "why": "as written the formulas do not render on GitHub (spaces inside the dollar signs, a quote before a formula)"
  },
  {
+  "id": 37,
+  "field": "Desired outcome",
+  "old": "without using \\mathcal{H}_2.",
+  "new": "without using $\\mathcal{H}_2$.",
+  "count": 1,
+  "why": "the formula did not render on GitHub (LaTeX without dollar signs, or \\( \\) and \\[ \\] delimiters, which GitHub does not support)"
+ },
+ {
+  "id": 45,
+  "field": "Short description of problem (100 words or less)",
+  "old": "in (\\mathbb{R}^7), without",
+  "new": "in $\\mathbb{R}^7$, without",
+  "count": 1,
+  "why": "the formula did not render on GitHub (LaTeX without dollar signs, or \\( \\) and \\[ \\] delimiters, which GitHub does not support)"
+ },
+ {
+  "id": 45,
+  "field": "Reference/source material",
+  "old": "*The stable Bernstein theorem in \\(\\mathbb{R}^{7}\\)*",
+  "new": "*The stable Bernstein theorem in ℝ⁷*",
+  "count": 1,
+  "why": "a formula inside italics does not render on GitHub"
+ },
+ {
+  "id": 45,
+  "field": "Reference/source material",
+  "old": "*Stable minimal hypersurfaces in \\(\\mathbb{R}^{6}\\)*",
+  "new": "*Stable minimal hypersurfaces in ℝ⁶*",
+  "count": 1,
+  "why": "a formula inside italics does not render on GitHub"
+ },
+ {
+  "id": 45,
+  "field": "Reference/source material",
+  "old": "*Stable anisotropic minimal hypersurfaces in \\(\\mathbb{R}^{4}\\)*",
+  "new": "*Stable anisotropic minimal hypersurfaces in ℝ⁴*",
+  "count": 1,
+  "why": "a formula inside italics does not render on GitHub"
+ },
+ {
+  "id": 45,
+  "field": "Reference/source material",
+  "old": "\\(",
+  "new": "$",
+  "count": 5,
+  "why": "the formula did not render on GitHub (LaTeX without dollar signs, or \\( \\) and \\[ \\] delimiters, which GitHub does not support)"
+ },
+ {
+  "id": 45,
+  "field": "Reference/source material",
+  "old": "\\)",
+  "new": "$",
+  "count": 5,
+  "why": "the formula did not render on GitHub (LaTeX without dollar signs, or \\( \\) and \\[ \\] delimiters, which GitHub does not support)"
+ },
+ {
   "id": 46,
   "field": "Short description of problem (100 words or less)",
   "old": "Its also a proof by contradiction",
   "new": "It's also a proof by contradiction",
   "count": 1,
   "why": "typo ('its' for 'it's')"
+ },
+ {
+  "id": 49,
+  "field": "Short description of problem (100 words or less)",
+  "old": "of O(d^{2.5}\\sqrt{n}),",
+  "new": "of $O(d^{2.5}\\sqrt{n})$,",
+  "count": 1,
+  "why": "the formula did not render on GitHub (LaTeX without dollar signs, or \\( \\) and \\[ \\] delimiters, which GitHub does not support)"
+ },
+ {
+  "id": 49,
+  "field": "Short description of problem (100 words or less)",
+  "old": "of \\Omega(d^{4/3}\\sqrt{n}) was",
+  "new": "of $\\Omega(d^{4/3}\\sqrt{n})$ was",
+  "count": 1,
+  "why": "the formula did not render on GitHub (LaTeX without dollar signs, or \\( \\) and \\[ \\] delimiters, which GitHub does not support)"
  },
  {
   "id": 53,
@@ -168,6 +320,22 @@
   "why": "typo (subject-verb agreement)"
  },
  {
+  "id": 59,
+  "field": "Short description of problem (100 words or less)",
+  "old": "geometric genus p_g(X) = 0, the",
+  "new": "geometric genus $p_g(X)=0$, the",
+  "count": 1,
+  "why": "plain-text TeX shown raw on GitHub"
+ },
+ {
+  "id": 59,
+  "field": "Short description of problem (100 words or less)",
+  "old": "zero-cycles CH_0(X)_{deg=0} -> Alb(X) is",
+  "new": "zero-cycles $\\mathrm{CH} _ 0(X) _ {\\deg=0}\\to\\mathrm{Alb}(X)$ is",
+  "count": 1,
+  "why": "plain-text TeX shown raw on GitHub"
+ },
+ {
   "id": 68,
   "field": "Desired outcome",
   "old": "more general that all",
@@ -198,6 +366,30 @@
   "new": "how argument developed",
   "count": 1,
   "why": "typo"
+ },
+ {
+  "id": 81,
+  "field": "Short description of problem (100 words or less)",
+  "old": "Let \\lambda(n)=(-1)^{Omega(n)}, where \\Omega(n) counts",
+  "new": "Let $\\lambda(n)=(-1)^{\\Omega(n)}$, where $\\Omega(n)$ counts",
+  "count": 1,
+  "why": "the formulas did not render on GitHub (LaTeX without dollar signs), and \\Omega lacked its backslash"
+ },
+ {
+  "id": 81,
+  "field": "Short description of problem (100 words or less)",
+  "old": "The estimate \\sum_{n\\le x}\\lambda(n)=o(x) is",
+  "new": "The estimate $\\sum_{n\\le x}\\lambda(n)=o(x)$ is",
+  "count": 1,
+  "why": "the formula did not render on GitHub (LaTeX without dollar signs, or \\( \\) and \\[ \\] delimiters, which GitHub does not support)"
+ },
+ {
+  "id": 81,
+  "field": "Short description of problem (100 words or less)",
+  "old": "asserts that \\sum_{n\\le x}\\lambda(n)\\lambda(n+h)=o(x) for",
+  "new": "asserts that $\\sum_{n\\le x}\\lambda(n)\\lambda(n+h)=o(x)$ for",
+  "count": 1,
+  "why": "the formula did not render on GitHub (LaTeX without dollar signs, or \\( \\) and \\[ \\] delimiters, which GitHub does not support)"
  },
  {
   "id": 84,
@@ -248,6 +440,38 @@
   "why": "the sheet leaves the field unfilled; the organizers set it on 2026-11-12"
  },
  {
+  "id": 97,
+  "field": "Short description of problem (100 words or less)",
+  "old": "\\(\\mathbb{R}_{\\exp}=(\\mathbb{R};0,1,+,-,\\cdot,<,\\exp)\\)",
+  "new": "$\\mathbb{R}_{\\exp}=(\\mathbb{R};0,1,+,-,\\cdot,\\lt,\\exp)$",
+  "count": 1,
+  "why": "the formula did not render on GitHub (LaTeX without dollar signs, or \\( \\) and \\[ \\] delimiters, which GitHub does not support)"
+ },
+ {
+  "id": 101,
+  "field": "Reference/source material",
+  "old": "Geometry of measures in (\\mathbb R^n): Distribution",
+  "new": "Geometry of measures in ℝⁿ: Distribution",
+  "count": 1,
+  "why": "the formula did not render on GitHub (LaTeX without dollar signs, or \\( \\) and \\[ \\] delimiters, which GitHub does not support)"
+ },
+ {
+  "id": 109,
+  "field": "Short description of problem (100 words or less)",
+  "old": "simulate e^{−it(A+B)} by",
+  "new": "simulate $e^{−it(A+B)}$ by",
+  "count": 1,
+  "why": "plain-text TeX (e^{...}, t^{...}) shown raw on GitHub"
+ },
+ {
+  "id": 109,
+  "field": "Short description of problem (100 words or less)",
+  "old": "scales as t^{p+1} times",
+  "new": "scales as $t^{p+1}$ times",
+  "count": 1,
+  "why": "plain-text TeX (e^{...}, t^{...}) shown raw on GitHub"
+ },
+ {
   "id": 121,
   "field": "Title/name of problem",
   "old": "Carleson' Theorem",
@@ -270,6 +494,14 @@
   "new": "Computation/Applied Math",
   "count": 1,
   "why": "typo (track name)"
+ },
+ {
+  "id": 126,
+  "field": "Reference/source material",
+  "old": "Every Prime (p\\equiv1\\pmod4) Is",
+  "new": "Every Prime $p\\equiv1\\pmod4$ Is",
+  "count": 1,
+  "why": "the formula did not render on GitHub (LaTeX without dollar signs, or \\( \\) and \\[ \\] delimiters, which GitHub does not support)"
  },
  {
   "id": 128,

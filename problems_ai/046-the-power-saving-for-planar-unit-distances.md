@@ -91,7 +91,7 @@ A Lean proof of this statement already exists: <https://github.com/openai/math/b
 
 #### Related Lean formalizations
 
-- [`unit_distance_upper_bound` in lean-eval](https://github.com/leanprover/lean-eval/blob/85a88c37f80170d9f08651dc63ce6b81a8a48cb9/generated/unit_distance_upper_bound/Challenge.lean): a Lean statement of the Spencer–Szemerédi–Trotter bound u(n) = O(n^{4/3}) (statement only).
+- [`unit_distance_upper_bound` in lean-eval](https://github.com/leanprover/lean-eval/blob/85a88c37f80170d9f08651dc63ce6b81a8a48cb9/generated/unit_distance_upper_bound/Challenge.lean): a Lean statement of the Spencer–Szemerédi–Trotter bound $u(n)=O(n^{4/3})$ (statement only).
 
 Projects outside the Palomar registry are described as their authors describe them; their proofs have not been checked.
 
