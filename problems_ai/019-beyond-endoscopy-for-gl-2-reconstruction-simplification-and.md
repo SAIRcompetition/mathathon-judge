@@ -35,16 +35,16 @@ A comprehensive, self-contained, and accessible exposition of the existing proof
 
 ### The result
 
-Beyond Endoscopy (Langlands 2004) proposes to detect functorial transfers through poles of partial $L$-functions $L^S(s,\pi,\rho)$ in $\operatorname{Re}s\ge1$, by studying with the trace formula the averages $\sum' _ {n\lt X}\operatorname{tr}R_{\rm disc}(f_Sf^{n,\rho})$ as $X\to\infty$. For $G=\mathrm{GL}(2)$ over $\mathbb Q$, $S=\lbrace\infty\rbrace$, $\rho$ the standard representation and holomorphic weight $k\ge3$, Altuğ (Part III, Theorem 1.1) proved, with $T_k(n)$ the normalized Hecke operators on cusp forms,
+Beyond Endoscopy (Langlands 2004) proposes to detect functorial transfers through poles of partial $L$-functions $L^S(s,\pi,\rho)$ in $\mathop{\mathrm{Re}}s\ge1$, by studying with the trace formula the averages $\sum' _ {n\lt X}\mathop{\mathrm{tr}}R_{\rm disc}(f_Sf^{n,\rho})$ as $X\to\infty$. For $G=\mathrm{GL}(2)$ over $\mathbb Q$, $S=\lbrace\infty\rbrace$, $\rho$ the standard representation and holomorphic weight $k\ge3$, Altuğ (Part III, Theorem 1.1) proved, with $T_k(n)$ the normalized Hecke operators on cusp forms,
 
-$$\sum_{n\lt X}\operatorname{tr}T_k(n)=O_{k,\epsilon}\big(X^{31/32+\epsilon}\big),$$
+$$\sum_{n\lt X}\mathop{\mathrm{tr}}T_k(n)=O_{k,\epsilon}\big(X^{31/32+\epsilon}\big),$$
 
 the first case carried out with the Arthur–Selberg trace formula. Part I applies an approximate functional equation and Poisson summation to the elliptic terms, isolating the special representations; Part II expands the resulting Fourier transforms of orbital integrals; Part III combines them. The proposer wants one checked account of this work and Venkatesh's.
 
 ### Background
 
 - Venkatesh (thesis 2002; *Crelle* 577, 2004) gave the first example: the pole at $s=1$ of the symmetric-square $L$-function detects dihedral forms, using the Petersson–Kuznetsov formula instead of the Arthur–Selberg trace formula.
-- Part II recovers Kuznetsov's bound $\operatorname{tr}T(p)\ll p^{1/4}$; Part III gives a new proof of the analytic continuation of $L(s,\Delta)$.
+- Part II recovers Kuznetsov's bound $\mathop{\mathrm{tr}}T(p)\ll p^{1/4}$; Part III gives a new proof of the analytic continuation of $L(s,\Delta)$.
 - Expositions: Arthur's "Problems beyond endoscopy" (motivation from endoscopy, open problems suggested by Altuğ's work); Altuğ's survey "Beyond Endoscopy and the Trace Formula" (*On the Langlands Program*, 2024); Sarnak's 2001 comments on Langlands' lecture.
 - Extensions of Part I: to a class of totally real fields (Emory, Espinosa-Lara, Kundu, Wong, arXiv:2404.10139) and to GL(2) over $\mathbb Q$ with ramification (Cheng, arXiv:2505.18967). Kwan and Leung treat functional equations with the Petersson formula (arXiv:2410.16921).
 
@@ -85,7 +85,7 @@ theorem altug_sum_trace_hecke (k : ℤ) (hk : 3 ≤ k) (ε : ℝ) (hε : 0 < ε)
       =O[atTop] (fun X : ℝ => X ^ ((31 : ℝ) / 32 + ε))
 ```
 
-This is Theorem 1.1 of Altuğ's Part III, $\sum_{n\lt X}\operatorname{tr}T_k(n)=O_{k,\epsilon}(X^{31/32+\epsilon})$ for the Hecke operators on cusp forms of weight $k\ge3$ for $\mathrm{SL}(2,\mathbb Z)$, normalized so that the Ramanujan conjecture reads $\operatorname{tr}T_k(n)=O(n^\epsilon)$; Venkatesh's theorem on the symmetric square is not stated. Mathlib has no Hecke operators, so $T(n)$ is defined on all functions $\mathbb H\to\mathbb C$ with the slash action and cut down to cusp forms with a left inverse of the inclusion. As Altuğ stresses, the bound also follows from Hecke's analytic continuation of $L(s,f)$; the content of his work is the proof by the trace formula.
+This is Theorem 1.1 of Altuğ's Part III, $\sum_{n\lt X}\mathop{\mathrm{tr}}T_k(n)=O_{k,\epsilon}(X^{31/32+\epsilon})$ for the Hecke operators on cusp forms of weight $k\ge3$ for $\mathrm{SL}(2,\mathbb Z)$, normalized so that the Ramanujan conjecture reads $\mathop{\mathrm{tr}}T_k(n)=O(n^\epsilon)$; Venkatesh's theorem on the symmetric square is not stated. Mathlib has no Hecke operators, so $T(n)$ is defined on all functions $\mathbb H\to\mathbb C$ with the slash action and cut down to cusp forms with a left inverse of the inclusion. As Altuğ stresses, the bound also follows from Hecke's analytic continuation of $L(s,f)$; the content of his work is the proof by the trace formula.
 
 Source: written by AI for Mathathon; not taken from an existing formalization.
 

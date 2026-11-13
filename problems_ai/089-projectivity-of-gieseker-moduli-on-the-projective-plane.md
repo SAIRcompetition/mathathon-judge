@@ -36,7 +36,7 @@ Pieter Belmans, Chiara Damiolini, Hans Franzen, Victoria Hoskins, Svetlana Makar
 
 ### The result
 
-Let $k$ be algebraically closed of characteristic 0, as AHLH's existence theorems (Theorem A, Theorem 7.27) require. For a torsion-free sheaf $E$ on $\mathbb P^2$ of rank $r\gt0$, Riemann–Roch shows that $(r,c_1,c_2)$ fixes the Hilbert polynomial $P_E(m)=\chi(E(m))$. $E$ is Gieseker semistable if $\chi(F(m))/\operatorname{rk}F\le P_E(m)/r$ for $m\gg0$ and all $0\ne F\subset E$. These sheaves form an algebraic stack $\mathcal M$ of finite type, and AHLH (Theorem 7.27, Example 7.28) give a proper good moduli space $\mathcal M\to M$, an algebraic space. The claim to prove without GIT is that $M$ is a projective scheme.
+Let $k$ be algebraically closed of characteristic 0, as AHLH's existence theorems (Theorem A, Theorem 7.27) require. For a torsion-free sheaf $E$ on $\mathbb P^2$ of rank $r\gt0$, Riemann–Roch shows that $(r,c_1,c_2)$ fixes the Hilbert polynomial $P_E(m)=\chi(E(m))$. $E$ is Gieseker semistable if $\chi(F(m))/\mathop{\mathrm{rk}}F\le P_E(m)/r$ for $m\gg0$ and all $0\ne F\subset E$. These sheaves form an algebraic stack $\mathcal M$ of finite type, and AHLH (Theorem 7.27, Example 7.28) give a proper good moduli space $\mathcal M\to M$, an algebraic space. The claim to prove without GIT is that $M$ is a projective scheme.
 
 For $m\gg n\gg0$, Álvarez-Cónsul and King (ACK) send $E$ to the Kronecker module
 

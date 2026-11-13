@@ -44,7 +44,7 @@ Prove the monstrous moonshine theorem in Lean, including the constructions and i
 
 ### The result
 
-Frenkel, Lepowsky and Meurman (1988) constructed a graded representation $V^\natural=\bigoplus_n V_n$ of the Monster $\mathbb M$ with $\sum_n\dim V_n\thinspace q^n=j(\tau)-744=q^{-1}+196884q+\cdots$. For $g\in\mathbb M$ the Thompson (McKay–Thompson) series is $T_g(q)=\sum_n\operatorname{Tr}(g\mid V_n)q^n$. Borcherds' Theorem 1.1: every $T_g$ is a Hauptmodul for a genus-zero subgroup of $\mathrm{SL} _ 2(\mathbb R)$, namely the one listed by Conway and Norton. A central identity is the denominator formula of the Monster Lie algebra, with $c(n)$ the coefficients of $j-744$:
+Frenkel, Lepowsky and Meurman (1988) constructed a graded representation $V^\natural=\bigoplus_n V_n$ of the Monster $\mathbb M$ with $\sum_n\dim V_n\thinspace q^n=j(\tau)-744=q^{-1}+196884q+\cdots$. For $g\in\mathbb M$ the Thompson (McKay–Thompson) series is $T_g(q)=\sum_n\mathop{\mathrm{Tr}}(g\mid V_n)q^n$. Borcherds' Theorem 1.1: every $T_g$ is a Hauptmodul for a genus-zero subgroup of $\mathrm{SL} _ 2(\mathbb R)$, namely the one listed by Conway and Norton. A central identity is the denominator formula of the Monster Lie algebra, with $c(n)$ the coefficients of $j-744$:
 
 $$p^{-1}\prod_{m\gt0,\thinspace n\in\mathbb Z}(1-p^mq^n)^{c(mn)}=j(p)-j(q).$$
 

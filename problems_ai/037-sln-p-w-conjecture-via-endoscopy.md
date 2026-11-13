@@ -37,11 +37,11 @@ OpenAI. "P=W in composite rank for fixed determinant." OpenAI Math Release prepr
 
 ### The result
 
-Let $C$ be a smooth projective curve of genus $g\ge 2$, $\gcd(n,d)=1$, $L\in\operatorname{Pic}^d(C)$. Let $M_{\rm Dol}$ be the moduli of stable $\text{rank-}n$ Higgs bundles with $\det E\simeq L$, $\operatorname{tr}\theta=0$, and $M_B$ the twisted $\mathrm{SL} _ n$ character variety; nonabelian Hodge theory identifies their cohomology. P = W states that the perverse filtration $P$ of the Hitchin map equals the weight filtration $W$ of $M_B$:
+Let $C$ be a smooth projective curve of genus $g\ge 2$, $\gcd(n,d)=1$, $L\in\mathop{\mathrm{Pic}}\nolimits^d(C)$. Let $M_{\rm Dol}$ be the moduli of stable $\text{rank-}n$ Higgs bundles with $\det E\simeq L$, $\mathop{\mathrm{tr}}\theta=0$, and $M_B$ the twisted $\mathrm{SL} _ n$ character variety; nonabelian Hodge theory identifies their cohomology. P = W states that the perverse filtration $P$ of the Hitchin map equals the weight filtration $W$ of $M_B$:
 
 $$P_kH^m(M_B,\mathbb Q)=W_{2k}H^m=W_{2k+1}H^m\quad\text{for all }m,k,$$
 
-including the variant part (nontrivial characters of $\Gamma=\operatorname{Pic}^0(C)[n]$). For $\mathrm{GL} _ n$ it was proved by Maulik–Shen (Annals 2024), Hausel–Mellit–Minets–Schiffmann (arXiv 2022) and Maulik–Shen–Yin (Acta 2025).
+including the variant part (nontrivial characters of $\Gamma=\mathop{\mathrm{Pic}}\nolimits^0(C)[n]$). For $\mathrm{GL} _ n$ it was proved by Maulik–Shen (Annals 2024), Hausel–Mellit–Minets–Schiffmann (arXiv 2022) and Maulik–Shen–Yin (Acta 2025).
 
 ### How the known proof works
 

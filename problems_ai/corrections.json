@@ -240,6 +240,14 @@
   "why": "typo (repeated word)"
  },
  {
+  "id": 97,
+  "field": "Proposed Tracks",
+  "old": "?????",
+  "new": "Team's choice",
+  "count": 1,
+  "why": "the sheet leaves the field unfilled; the organizers set it on 2026-11-12"
+ },
+ {
   "id": 121,
   "field": "Title/name of problem",
   "old": "Carleson' Theorem",

@@ -45,7 +45,7 @@ $$\Sigma=\Delta(0)+2\thinspace\mathrm{Sym}\sum_{n\ge1}\Delta(n),\qquad A=\mathrm
 
 The time-reversed sequence has correlations $\Delta(n)^{\top}$: same $\Sigma$, area correction $-A$.
 
-Example (Lopusanschi–Simon §1.3): $X_n=\sum_{k\lt n}e^{2\pi ik/L}U_k$ in $\mathbb C\cong\mathbb R^2$ ($L\ge3$, $U_k$ i.i.d. real, hidden chain $n\bmod L$) has $\Sigma=\tfrac12\operatorname{Var}(U)\thinspace I$ and $|\Gamma^{12}|=\frac{\cos(\pi/L)}{4\sin(\pi/L)}(\mathbb EU)^2$.
+Example (Lopusanschi–Simon §1.3): $X_n=\sum_{k\lt n}e^{2\pi ik/L}U_k$ in $\mathbb C\cong\mathbb R^2$ ($L\ge3$, $U_k$ i.i.d. real, hidden chain $n\bmod L$) has $\Sigma=\tfrac12\mathop{\mathrm{Var}}(U)\thinspace I$ and $|\Gamma^{12}|=\frac{\cos(\pi/L)}{4\sin(\pi/L)}(\mathbb EU)^2$.
 
 By continuity of the Itô–Lyons map, solutions of $dY^N=f(Y^N)\thinspace dX^N$ (columns $f_\beta\in C^3_b$) converge to the solution of
 

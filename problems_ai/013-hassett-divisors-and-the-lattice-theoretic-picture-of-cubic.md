@@ -37,7 +37,7 @@ An open-source implementation of the algorithm for the irreducible components of
 
 ### The result
 
-For a smooth cubic fourfold $X$, the algebraic lattice $A(X)=H^4(X,\mathbb Z)\cap H^{2,2}(X)$ is positive definite and contains $h^2$. $X$ is special of discriminant $d$ if $A(X)$ has a rank-2 primitive sublattice $K_d\ni h^2$ with $\operatorname{disc}K_d=d$. Hassett (Compositio 2000) proved that these cubics form an irreducible divisor $\mathcal C_d$ of the 20-dimensional moduli space, nonempty if and only if
+For a smooth cubic fourfold $X$, the algebraic lattice $A(X)=H^4(X,\mathbb Z)\cap H^{2,2}(X)$ is positive definite and contains $h^2$. $X$ is special of discriminant $d$ if $A(X)$ has a rank-2 primitive sublattice $K_d\ni h^2$ with $\mathop{\mathrm{disc}}K_d=d$. Hassett (Compositio 2000) proved that these cubics form an irreducible divisor $\mathcal C_d$ of the 20-dimensional moduli space, nonempty if and only if
 
 $$d\gt6,\qquad d\equiv 0,2 \pmod 6,$$
 

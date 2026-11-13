@@ -41,7 +41,7 @@ both satisfy
 
 $$(n+1)^3u_{n+1}-(34n^3+51n^2+27n+5)\thinspace u_n+n^3u_{n-1}=0,$$
 
-with $b_0=1,b_1=5$ and $a_0=0,a_1=6$. The characteristic roots are $(1\pm\sqrt2)^4$, so $b_n$ grows like $(1+\sqrt2)^{4n}$ while $b_n\zeta(3)-a_n=O\big((\sqrt2-1)^{4n}\big)$ and is nonzero. Moreover $2d_n^3a_n\in\mathbb Z$ with $d_n=\operatorname{lcm}(1,\dots,n)=e^{n(1+o(1))}$, and $e^3(\sqrt2-1)^4\lt1$. If $\zeta(3)=p/q$, then $2q\thinspace d_n^3(b_n\zeta(3)-a_n)$ would be a nonzero integer tending to 0. The argument also gives the irrationality measure $\mu(\zeta(3))\le13.42$; Rhin and Viola (2001) lowered it to $5.513891$.
+with $b_0=1,b_1=5$ and $a_0=0,a_1=6$. The characteristic roots are $(1\pm\sqrt2)^4$, so $b_n$ grows like $(1+\sqrt2)^{4n}$ while $b_n\zeta(3)-a_n=O\big((\sqrt2-1)^{4n}\big)$ and is nonzero. Moreover $2d_n^3a_n\in\mathbb Z$ with $d_n=\mathop{\mathrm{lcm}}(1,\dots,n)=e^{n(1+o(1))}$, and $e^3(\sqrt2-1)^4\lt1$. If $\zeta(3)=p/q$, then $2q\thinspace d_n^3(b_n\zeta(3)-a_n)$ would be a nonzero integer tending to 0. The argument also gives the irrationality measure $\mu(\zeta(3))\le13.42$; Rhin and Viola (2001) lowered it to $5.513891$.
 
 ### How the known proof works
 
@@ -65,7 +65,7 @@ with $b_0=1,b_1=5$ and $a_0=0,a_1=6$. The characteristic roots are $(1\pm\sqrt2)
 - [Irrationalité de valeurs de zêta](https://www.numdam.org/item/SB_2002-2003__45__27_0/), S. Fischler, Séminaire Bourbaki 2002/03 (in French): the hypergeometric, integral and Padé viewpoints side by side, leading to Rivoal's theorem.
 - [Irrationality proofs using modular forms](https://www.numdam.org/item/AST_1987__147-148__271_0/), F. Beukers, 1987: the modular explanation of Apéry's numbers.
 
-Prerequisites: partial fractions, hypergeometric series and creative telescoping, linear recurrences, the prime number theorem (or a bound $d_n\lt3^n$) for $\operatorname{lcm}(1,\dots,n)$; modular forms for the geometric viewpoint.
+Prerequisites: partial fractions, hypergeometric series and creative telescoping, linear recurrences, the prime number theorem (or a bound $d_n\lt3^n$) for $\mathop{\mathrm{lcm}}(1,\dots,n)$; modular forms for the geometric viewpoint.
 
 ### References, with links
 
@@ -108,4 +108,4 @@ Projects outside the Palomar registry are described as their authors describe th
 
 #### Mathlib
 
-Mathlib has `Irrational`, `irrational_pi`, `riemannZeta` with `zeta_nat_eq_tsum_of_gt_one` and the even values `riemannZeta_two_mul_nat`, shifted Legendre polynomials (`Polynomial.shiftedLegendre`, Rodrigues' formula `Polynomial.factorial_mul_shiftedLegendre_eq`), $\operatorname{lcm}(1,\dots,n)$ as `Chebyshev.lcmUpto` with `Chebyshev.psi_eq_log_lcmUpto`, and the Gauss hypergeometric function `ordinaryHypergeometric`. Its Chebyshev bound `Chebyshev.psi_le` gives only $d_n\le4^{n(1+o(1))}$, too weak here since $4^3(\sqrt2-1)^4\gt1$; it lacks the prime number theorem, Apéry's theorem, creative telescoping and Padé approximation.
+Mathlib has `Irrational`, `irrational_pi`, `riemannZeta` with `zeta_nat_eq_tsum_of_gt_one` and the even values `riemannZeta_two_mul_nat`, shifted Legendre polynomials (`Polynomial.shiftedLegendre`, Rodrigues' formula `Polynomial.factorial_mul_shiftedLegendre_eq`), $\mathop{\mathrm{lcm}}(1,\dots,n)$ as `Chebyshev.lcmUpto` with `Chebyshev.psi_eq_log_lcmUpto`, and the Gauss hypergeometric function `ordinaryHypergeometric`. Its Chebyshev bound `Chebyshev.psi_le` gives only $d_n\le4^{n(1+o(1))}$, too weak here since $4^3(\sqrt2-1)^4\gt1$; it lacks the prime number theorem, Apéry's theorem, creative telescoping and Padé approximation.

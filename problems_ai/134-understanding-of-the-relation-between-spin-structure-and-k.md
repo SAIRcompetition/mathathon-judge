@@ -34,9 +34,9 @@ I would like to write an expository starting from the algebraic topological pers
 
 ### The result
 
-Let $M$ be a closed manifold and $D$ an elliptic differential operator on $M$. Then $D$ is Fredholm, and Atiyah–Singer (1968) show that its analytic index $\dim\ker D-\dim\operatorname{coker}D$ equals a topological index computed from the symbol class $[\sigma(D)]\in K(T^{\ast}M)$ by a push-forward in K-theory; the Gauss–Bonnet–Chern, Hirzebruch signature and Hirzebruch–Riemann–Roch theorems are special cases. For a closed spin manifold $M$ of dimension $4k$ and a Hermitian vector bundle $E$, the Dirac operator twisted by $E$ satisfies
+Let $M$ be a closed manifold and $D$ an elliptic differential operator on $M$. Then $D$ is Fredholm, and Atiyah–Singer (1968) show that its analytic index $\dim\ker D-\dim\mathop{\mathrm{coker}}D$ equals a topological index computed from the symbol class $[\sigma(D)]\in K(T^{\ast}M)$ by a push-forward in K-theory; the Gauss–Bonnet–Chern, Hirzebruch signature and Hirzebruch–Riemann–Roch theorems are special cases. For a closed spin manifold $M$ of dimension $4k$ and a Hermitian vector bundle $E$, the Dirac operator twisted by $E$ satisfies
 
-$$\operatorname{ind}D^+ _ E=\int_M \hat A(TM)\thinspace\mathrm{ch}(E).$$
+$$\mathop{\mathrm{ind}}D^+ _ E=\int_M \hat A(TM)\thinspace\mathrm{ch}(E).$$
 
 Atiyah, Bott and Shapiro (1964) showed that spin vector bundles are oriented for real K-theory $KO$; the resulting genus $\pi_{\ast}MSpin\to\pi_{\ast}KO$ sends a spin manifold to the index of its Dirac operator, which after complexification is $\hat A(M)$ in dimension $4k$.
 
@@ -49,8 +49,8 @@ formally the index of the Dirac operator on the free loop space, and argued phys
 ### How the known proof works
 
 - K-theory (Atiyah–Singer I): analytic and topological index are both homomorphisms $K(T^{\ast}M)\to\mathbb Z$ compatible with push-forward along embeddings and normalized on a point; these properties characterize the topological index, defined by embedding $M$ in $\mathbb R^N$ and using the Thom isomorphism and Bott periodicity.
-- Heat kernel: $\operatorname{ind}D^+=\operatorname{Tr}e^{-tD^-D^+}-\operatorname{Tr}e^{-tD^+D^-}$ for every $t\gt0$ (McKean–Singer); as $t\to0$, Getzler's rescaling of Clifford variables turns the local supertrace into $\hat A(TM)\thinspace\mathrm{ch}(E)$.
-- Physics: the index is the Witten index $\operatorname{Tr}(-1)^Fe^{-tH}$ of supersymmetric quantum mechanics on $M$ with $H=D^2$, and the path integral localizes on constant loops (Alvarez-Gaumé 1983; Friedan–Windey 1984). Fine and Sawin (2018) make the path integral rigorous; reference [1] uses the canonical formalism instead.
+- Heat kernel: $\mathop{\mathrm{ind}}D^+=\mathop{\mathrm{Tr}}e^{-tD^-D^+}-\mathop{\mathrm{Tr}}e^{-tD^+D^-}$ for every $t\gt0$ (McKean–Singer); as $t\to0$, Getzler's rescaling of Clifford variables turns the local supertrace into $\hat A(TM)\thinspace\mathrm{ch}(E)$.
+- Physics: the index is the Witten index $\mathop{\mathrm{Tr}}(-1)^Fe^{-tH}$ of supersymmetric quantum mechanics on $M$ with $H=D^2$, and the path integral localizes on constant loops (Alvarez-Gaumé 1983; Friedan–Windey 1984). Fine and Sawin (2018) make the path integral rigorous; reference [1] uses the canonical formalism instead.
 
 ### Background
 

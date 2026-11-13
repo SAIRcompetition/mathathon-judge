@@ -106,7 +106,7 @@ Status: Proved · Proved (preprint) · Disproved · Disproved (preprint) · Open
 | 94 | [Summing multiplicative functions/counting primes](094-summing-multiplicative-functions-counting-primes.md) | Computation/Applied Math, Number Theory/Algebra | Not a single theorem | — |
 | 95 | [Quasi-Orders For the Lefthanded Lovász Local Lemma](095-quasi-orders-for-the-lefthanded-lovasz-local-lemma.md) | Combinatorics | Not a single theorem | ✓ |
 | 96 | [Counterexamples to polynomial removal for ordered binary matrices](096-counterexamples-to-polynomial-removal-for-ordered-binary.md) | Combinatorics | Disproved (preprint) | ✓ |
-| 97 | [Model Completeness of the Real Exponential Field](097-model-completeness-of-the-real-exponential-field.md) | ????? | Proved | ✓ |
+| 97 | [Model Completeness of the Real Exponential Field](097-model-completeness-of-the-real-exponential-field.md) | Team's choice | Proved | ✓ |
 | 98 | [An Elementary Proof of the Deligne–Sullivan Theorem and Virtual Stable Parallelizability of Compact Hyperbolic Manifolds](098-an-elementary-proof-of-the-delignesullivan-theorem-and.md) | Geometry | Proved | ✓ |
 | 99 | [Towards a combinatorial proof of Schur positivity for LLT polynomials of unit interval graphs](099-towards-a-combinatorial-proof-of-schur-positivity-for-llt.md) | Combinatorics | Partly solved | ✓ |
 | 100 | [Hironaka’s Resolution of Singularity: Understanding the Algorithm and Its Later Simplifications](100-hironakas-resolution-of-singularity-understanding-the.md) | Number Theory/Algebra, Geometry | Proved | ✓ |
@@ -165,9 +165,10 @@ When the sheet changes:
 2. Run `python3 problems_ai/refresh_proposer_text.py`. It rewrites the **From the proposer** part of every page and the table above, applies [`corrections.json`](corrections.json), checks the text against the sheet, adds a placeholder page for any new problem, and never changes the notes. Pages of problems that are no longer in the sheet are not removed; delete them, their Lean statements and their entries in [`corrections.json`](corrections.json) and in [`lean/README.md`](lean/README.md) by hand.
 3. Review the notes of every problem whose text changed, and write notes for the placeholders.
 
-Formulas in the notes are rendered by GitHub, which applies Markdown before MathJax. Tested on 2026-11-12, a formula renders only if it follows these rules:
+Formulas in the notes are rendered by GitHub, which applies Markdown before MathJax 3.2.0 and refuses some macros. Tested on 2026-11-12, a formula renders only if it follows these rules:
 
-- Write `\lt`, `\gt`, `\lbrace`, `\rbrace`, `\Vert`, `\thinspace`, `\negthinspace`, `\ast` and `\sharp` for `<`, `>`, `\{`, `\}`, `\|`, `\,`, `\!`, `*` and `\#`. Markdown removes the backslash in `\{`, `\}`, `\|`, `\,`, `\;`, `\!`, `\#`, `\%`, `\\` and similar pairs, escapes `<` and `>` twice, and reads `*` as emphasis.
+- Do not use `\operatorname` (GitHub shows "The following macros are not allowed: operatorname"); write `\mathop{\mathrm{rad}}`, with `\nolimits` before a subscript. GitHub also refuses `\phantom`, `\hphantom`, `\vphantom`, `\DeclareMathOperator`, `\colorbox`, `\fcolorbox`, `\definecolor`, `\mathchoice`, `\unicode` and `\newcommand`.
+- Write `\lbrace`, `\rbrace`, `\Vert`, `\thinspace`, `\negthinspace`, `\sharp` and `\cr` for `\{`, `\}`, `\|`, `\,`, `\!`, `\#` and `\\`: Markdown removes the backslash in these and similar pairs (`\;`, `\%`). Write `\ast` for `*`, which Markdown reads as emphasis, and `\lt`, `\gt` for `<`, `>`, which can be read as an HTML tag.
 - Put `$$...$$` on a line of its own, as a paragraph of its own (indented by four spaces inside a list item). A display with `&` or a row break (written `\cr`) must be at top level, not in a list.
 - An inline formula must start after a space, a line start or `(`, not after a letter, digit, hyphen, dash, quote or bracket; write `$\text{rank-}k$` rather than `rank-$k$`. Avoid `)$)`; write `){}$)`.
 - Do not put formulas in link text or in `*italic*` text; use Unicode there (ℝ⁷, S⁴).

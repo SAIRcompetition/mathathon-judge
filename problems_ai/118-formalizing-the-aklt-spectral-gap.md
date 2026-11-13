@@ -35,7 +35,7 @@ Lemm, Sandvik and Wang, Existence of a Spectral Gap in the Affleck-Kennedy-Lieb-
 
 ### The result
 
-On the hexagonal lattice wrapped on an $m_1\times m_2$ torus, put a spin $3/2$ ($\mathbb C^4$) at each vertex and let $H=\sum_{\text{edges }jk}P^{(3)} _ {jk}$, where $P^{(3)} _ {jk}$ projects onto total spin $3$ of the two spins at the ends of the edge. $H\ge0$ is frustration-free (the AKLT valence-bond state lies in its kernel); its gap is $\gamma=\inf(\operatorname{spec}H\setminus\lbrace0\rbrace)$.
+On the hexagonal lattice wrapped on an $m_1\times m_2$ torus, put a spin $3/2$ ($\mathbb C^4$) at each vertex and let $H=\sum_{\text{edges }jk}P^{(3)} _ {jk}$, where $P^{(3)} _ {jk}$ projects onto total spin $3$ of the two spins at the ends of the edge. $H\ge0$ is frustration-free (the AKLT valence-bond state lies in its kernel); its gap is $\gamma=\inf(\mathop{\mathrm{spec}}H\setminus\lbrace0\rbrace)$.
 
 Lemm–Sandvik–Wang: $\gamma\ge0.00646$ for all $m_1,m_2\ge12$. This follows from the finite-size criterion, valid for every $a\ge1$,
 

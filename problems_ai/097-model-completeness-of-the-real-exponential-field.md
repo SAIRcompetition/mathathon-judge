@@ -34,7 +34,7 @@ This is an established but technically challenging theorem, making it suitable f
 
 ### Notes
 
-- The "Proposed Tracks" field of the sheet is unfilled ("?????").
+- The sheet leaves "Proposed Tracks" unfilled ("?????"); the organizers set it to "Team's choice".
 - Section 6 of the 2012 lecture notes proves only that solutions are bounded by elements of the smaller model; Wilkie defers the remaining step to his 1989 paper (the proposer's third reference).
 
 ### The result

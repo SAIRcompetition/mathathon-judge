@@ -50,9 +50,9 @@ Hauser also discusses what goes wrong in positive characteristic (someone only r
 ### The result
 
 **Theorem (Hironaka 1964, embedded form).** Let $X$ be a closed subvariety of a smooth variety $M$ over a field of characteristic zero. There is a finite sequence of blowups with smooth centres, with composite $\sigma:M'\to M$, such that
-1. $\sigma$ is an isomorphism over $M\setminus\operatorname{Sing}X$;
+1. $\sigma$ is an isomorphism over $M\setminus\mathop{\mathrm{Sing}}X$;
 2. the strict transform $X'$ of $X$ is smooth;
-3. $X'$ and the exceptional divisor $E'=\sigma^{-1}(\operatorname{Sing}X)$ simultaneously have only normal crossings: locally $X'$ is a coordinate subspace and $E'$ a union of coordinate hyperplanes.
+3. $X'$ and the exceptional divisor $E'=\sigma^{-1}(\mathop{\mathrm{Sing}}X)$ simultaneously have only normal crossings: locally $X'$ is a coordinate subspace and $E'$ a union of coordinate hyperplanes.
 
 (Formulation from Bierstone–Milman 1999, §1.4.) In particular every variety in characteristic zero has a proper birational resolution by a smooth variety. Later proofs make the centres canonical: they are determined by a local invariant, independent of choices.
 

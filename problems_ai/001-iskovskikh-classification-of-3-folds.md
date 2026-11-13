@@ -17,10 +17,6 @@ The problem is to learn what Fano means, understand classification in Dimensions
 
 https://doi.org/10.1070/IM1977v011n03ABEH001733
 
-### Reference links
-
-- <https://doi.org/10.1070/IM1977v011n03ABEH001733>
-
 ## From the judges
 
 There is some recent progress in dimension 4 due to Enrico Fatinghenti and collaborators, they created a webpage: https://sites.google.com/view/enricofatighenti/home 

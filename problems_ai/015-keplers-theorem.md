@@ -42,7 +42,7 @@ The hexagonal close packing and other layered packings reach the same density. H
 
 Dimensions 8 and 24 were solved (Viazovska; Cohn, Kumar, Miller, Radchenko and Viazovska; Ann. of Math. 185, 2017) with the Cohn–Elkies bound: if a Schwartz function $f$ on $\mathbb R^n$ has $f(0)=\hat f(0)\gt0$, $\hat f\ge 0$ and $f(x)\le 0$ for $|x|\ge r$, then every packing has density
 
-$$\Delta\le \operatorname{vol}B^n_{r/2}.$$
+$$\Delta\le \mathop{\mathrm{vol}}B^n_{r/2}.$$
 
 ### How the known proof works
 

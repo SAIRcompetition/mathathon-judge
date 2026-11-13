@@ -39,7 +39,7 @@ Tollmien–Schlichting waves are the unstable normal modes of the linearized Nav
 
 $$\frac{1}{i\alpha R}\thinspace(\partial_z^2-\alpha^2)^2\phi=(U-c)(\partial_z^2-\alpha^2)\phi-U''\phi.$$
 
-Grenier, Guo and Nguyen prove that every analytic channel profile symmetric about the centreline, with $U'(0)\gt0$ at the wall (e.g. plane Poiseuille flow), has, for $R\ge R_c$ and $\alpha$ between marginal curves $\alpha_{\rm low}\approx R^{-1/7}$ and $\alpha_{\rm up}\approx R^{-1/11}$, an unstable mode with growth rate $\alpha\operatorname{Im}c\approx(\alpha R)^{-1/2}$. The proposer asks for perturbation equations, energy estimates in $R$ and amplitude, and a comparison with observed transition.
+Grenier, Guo and Nguyen prove that every analytic channel profile symmetric about the centreline, with $U'(0)\gt0$ at the wall (e.g. plane Poiseuille flow), has, for $R\ge R_c$ and $\alpha$ between marginal curves $\alpha_{\rm low}\approx R^{-1/7}$ and $\alpha_{\rm up}\approx R^{-1/11}$, an unstable mode with growth rate $\alpha\mathop{\mathrm{Im}}c\approx(\alpha R)^{-1/2}$. The proposer asks for perturbation equations, energy estimates in $R$ and amplitude, and a comparison with observed transition.
 
 ### Background
 

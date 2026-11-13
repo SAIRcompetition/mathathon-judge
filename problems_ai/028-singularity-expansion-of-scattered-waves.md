@@ -35,16 +35,16 @@ The mathematical theory of scattering resonances by Zworski and Dyatlov. Chapter
 
 Let $P$ be a non-trapping black-box Hamiltonian on $\mathbb R^n$, $n$ odd, e.g. the Dirichlet Laplacian outside a non-trapping obstacle. If $(\partial_t^2+P)w=0$ with compactly supported data, then for every $A\gt0$, locally in space,
 
-$$w(t)=\sum_{\operatorname{Im}\lambda_j\gt-A}\ \sum_{\ell=0}^{m_R(\lambda_j)-1}t^\ell e^{-i\lambda_j t}f_{j,\ell}+E_A(t),\qquad \Vert E_A(t)\Vert\le C e^{-At}\ (t\ge T).$$
+$$w(t)=\sum_{\mathop{\mathrm{Im}}\lambda_j\gt-A}\ \sum_{\ell=0}^{m_R(\lambda_j)-1}t^\ell e^{-i\lambda_j t}f_{j,\ell}+E_A(t),\qquad \Vert E_A(t)\Vert\le C e^{-At}\ (t\ge T).$$
 
-The sum is finite, the $\lambda_j$ are the resonances (poles of the continued resolvent $R(\lambda)=(P-\lambda^2)^{-1}$), and the $f_{j,\ell}$ are residues of $R(\lambda)$ applied to the data (Dyatlov–Zworski, Theorem 4.44). Under strong trapping (Theorem 7.20) the sum is truncated at $|\operatorname{Re}\lambda|\lt c(t)\sim t^{\varepsilon}$ and the remainder is only $O(t^{-\varepsilon(L-K_0)})$ for data in $H^L$.
+The sum is finite, the $\lambda_j$ are the resonances (poles of the continued resolvent $R(\lambda)=(P-\lambda^2)^{-1}$), and the $f_{j,\ell}$ are residues of $R(\lambda)$ applied to the data (Dyatlov–Zworski, Theorem 4.44). Under strong trapping (Theorem 7.20) the sum is truncated at $|\mathop{\mathrm{Re}}\lambda|\lt c(t)\sim t^{\varepsilon}$ and the remainder is only $O(t^{-\varepsilon(L-K_0)})$ for data in $H^L$.
 
 ### How the known proof works
 
 - Write $w(t)$ with the spectral theorem and Stone's formula as $\frac1{2\pi}\int_{\mathbb R}e^{-i\lambda t}(R(\lambda)-R(-\lambda))\thinspace d\lambda$ applied to the data (proof of Theorem 2.9).
 - Continue the cut-off resolvent $\chi R(\lambda)\chi$ meromorphically to $\mathbb C$ (§4.2).
-- The deep step (Theorem 4.43): $\Vert\chi R(\lambda)\chi\Vert\le C|\lambda|^{-1}e^{T(\operatorname{Im}\lambda) _ -}$ for $\operatorname{Im}\lambda\gt-M\log|\lambda|$, deduced by Vainberg's method from non-trapping, which for obstacles rests on propagation of singularities for boundary problems.
-- Deform the contour to $\operatorname{Im}\lambda=-A-\delta\log\langle\lambda\rangle$, collect the residues crossed, and bound the remainder by the resolvent estimate.
+- The deep step (Theorem 4.43): $\Vert\chi R(\lambda)\chi\Vert\le C|\lambda|^{-1}e^{T(\mathop{\mathrm{Im}}\lambda) _ -}$ for $\mathop{\mathrm{Im}}\lambda\gt-M\log|\lambda|$, deduced by Vainberg's method from non-trapping, which for obstacles rests on propagation of singularities for boundary problems.
+- Deform the contour to $\mathop{\mathrm{Im}}\lambda=-A-\delta\log\langle\lambda\rangle$, collect the residues crossed, and bound the remainder by the resolvent estimate.
 - Under trapping (Theorem 7.20) the resolvent is only $O(e^{A|\zeta|^n\log|\zeta|})$ off resonances, so the contours are placed using resonance-counting bounds.
 
 ### Background

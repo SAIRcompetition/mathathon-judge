@@ -32,16 +32,16 @@ https://en.wikipedia.org/wiki/Abc_conjecture
 
 ### The result
 
-For coprime positive integers $a+b=c$, let $\operatorname{rad}(abc)$ be the product of the distinct primes dividing $abc$. The conjecture states that for every $\varepsilon\gt0$ only finitely many such triples satisfy
+For coprime positive integers $a+b=c$, let $\mathop{\mathrm{rad}}(abc)$ be the product of the distinct primes dividing $abc$. The conjecture states that for every $\varepsilon\gt0$ only finitely many such triples satisfy
 
-$$c\gt\operatorname{rad}(abc)^{1+\varepsilon}.$$
+$$c\gt\mathop{\mathrm{rad}}(abc)^{1+\varepsilon}.$$
 
-With $R=\operatorname{rad}(abc)$, the strongest unconditional bound in Waldschmidt's survey is $\log c\le\kappa R^{1/3}(\log R)^3$ for an absolute constant $\kappa$ (Stewart and Yu, *Duke Math. J.* 2001), proved with linear forms in logarithms. The exponent $1+\varepsilon$ cannot be replaced by $1$: Stewart and Tijdeman (1986) gave infinitely many triples with $c\gt R\exp\big((4-\delta)(\log R)^{1/2}/\log\log R\big)$. The analogue for polynomials (Mason–Stothers theorem) is proved.
+With $R=\mathop{\mathrm{rad}}(abc)$, the strongest unconditional bound in Waldschmidt's survey is $\log c\le\kappa R^{1/3}(\log R)^3$ for an absolute constant $\kappa$ (Stewart and Yu, *Duke Math. J.* 2001), proved with linear forms in logarithms. The exponent $1+\varepsilon$ cannot be replaced by $1$: Stewart and Tijdeman (1986) gave infinitely many triples with $c\gt R\exp\big((4-\delta)(\log R)^{1/2}/\log\log R\big)$. The analogue for polynomials (Mason–Stothers theorem) is proved.
 
 ### Background
 
 - Earlier unconditional bounds: $\log c\le\kappa R^{15}$ (Stewart–Tijdeman 1986) and $\log c\le\kappa(\varepsilon)R^{2/3+\varepsilon}$ (Stewart–Yu 1991).
-- Pasten (arXiv 2017; *J. Number Theory* 254, 2024) used Shimura curves to bound the product $\prod_{p\mid abc}v_p(abc)$ by $K_\varepsilon\operatorname{rad}(abc)^{8/3+\varepsilon}$, an estimate he says seems beyond the reach of linear forms in logarithms.
+- Pasten (arXiv 2017; *J. Number Theory* 254, 2024) used Shimura curves to bound the product $\prod_{p\mid abc}v_p(abc)$ by $K_\varepsilon\mathop{\mathrm{rad}}(abc)^{8/3+\varepsilon}$, an estimate he says seems beyond the reach of linear forms in logarithms.
 - The conjecture is the case of $\mathbb P^1$ minus three points of Vojta's height inequality. Through Belyi maps, the uniform Vojta inequality for curves reduces to a Szpiro-type inequality for elliptic curves; IUT aims at such an inequality (Scholze–Stix, §1).
 - Waldschmidt's lecture lists many consequences of the conjecture.
 

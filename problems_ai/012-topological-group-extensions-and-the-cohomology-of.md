@@ -47,9 +47,9 @@ Jain, P., Joshi, R., Spallone, S. (2026). Central Extensions and Cohomology. arX
 
 For a discrete group $G$ and a $G$-module $A$, classically
 
-$$H^n(G;A)=\operatorname{Ext}^n_{\mathbb ZG}(\mathbb Z,A)\cong H^n(BG;A)\quad\text{(local coefficients)},$$
+$$H^n(G;A)=\mathop{\mathrm{Ext}}\nolimits^n_{\mathbb ZG}(\mathbb Z,A)\cong H^n(BG;A)\quad\text{(local coefficients)},$$
 
-where $\operatorname{Ext}^n$ is the group of Yoneda extensions $0\to A\to E_n\to\cdots\to E_1\to\mathbb Z\to0$ of $G$-modules under Baer sum, and $H^2(G;A)$ classifies the extensions of $G$ by $A$; for trivial action these form the group $E(G,A)$ of central extensions.
+where $\mathop{\mathrm{Ext}}\nolimits^n$ is the group of Yoneda extensions $0\to A\to E_n\to\cdots\to E_1\to\mathbb Z\to0$ of $G$-modules under Baer sum, and $H^2(G;A)$ classifies the extensions of $G$ by $A$; for trivial action these form the group $E(G,A)$ of central extensions.
 
 Now let $G$ be a Hausdorff topological group that is a CW complex (for example a Lie group) and $A$ a discrete abelian group, so that a central extension of $G$ by $A$ is an $A$-sheeted cover of $G$. Jain, Joshi and Spallone use Milgram–Steenrod classifying spaces to define a natural homomorphism
 
@@ -63,7 +63,7 @@ For non-discrete $A$ (thesis), $\alpha$ is still defined but is in general neith
 
 Discrete $A$ (Jain–Joshi–Spallone):
 - Applying the Milgram–Steenrod functor to $A\to E\to G$ gives a $BA$-bundle $BE\to BG$. Since $B(BA)$ is a $K(A,2)$, such bundles over $BG$ correspond to $[BG,K(A,2)]=H^2(BG;A)$; this defines $\alpha_G$ (§§6.4, 10, 11.1).
-- Connected $G$: the homotopy exact sequence of $EG\to BG$ gives $\pi_2(BG)\cong\pi_1(G)$; Hurewicz and universal coefficients give $H^2(BG;A)\cong\operatorname{Hom}(\pi_1(G),A)$, which covering theory identifies with $E(G,A)$, and $\alpha_G$ is minus this bijection (§7, Proposition 11.7).
+- Connected $G$: the homotopy exact sequence of $EG\to BG$ gives $\pi_2(BG)\cong\pi_1(G)$; Hurewicz and universal coefficients give $H^2(BG;A)\cong\mathop{\mathrm{Hom}}(\pi_1(G),A)$, which covering theory identifies with $E(G,A)$, and $\alpha_G$ is minus this bijection (§7, Proposition 11.7).
 - Discrete $G$: $\pi_1$ of the total space recovers the extension, so $\alpha_G$ is injective, and matching cellular cochains of $BG$ with inhomogeneous cochains shows that $\alpha_G$ is the classical map (§§7.3, 11.3).
 - General $G$: the exact sequences $0\to E(\pi_0,A)\to E(G,A)\to E(G^\circ,A)^{\pi_0}$ and $0\to H^2(B\pi_0;A)\to H^2(BG;A)\to H^2(BG^\circ;A)^{\pi_0}$ and the five lemma give injectivity, and bijectivity when restriction to $G^\circ$ is onto, as for semidirect products (§§3.4, 9, 11.5).
 
@@ -110,4 +110,4 @@ This problem has no official Lean statement: its theorems (Jain, Joshi and Spall
 
 #### Mathlib
 
-Mathlib has group cohomology of discrete groups (`groupCohomology`, with `groupCohomologyIsoExt` identifying $H^n(G,A)$ with $\operatorname{Ext}^n(k,A)$, and low-degree cocycles up to `groupCohomology.H2`), group extensions (`GroupExtension`), continuous cohomology of topological groups by homogeneous cochains (`continuousCohomology`), the simplicial universal cover of a discrete group (`classifyingSpaceUniversalCover`), covering maps (`IsCoveringMap`), fibre bundles (`FiberBundle`), homotopy groups (`HomotopyGroup`), singular homology (`singularHomologyFunctor`) and geometric realization (`SSet.toTop`). It has no classifying spaces of topological groups, no singular cohomology or Eilenberg–MacLane spaces, no principal bundles and no Yoneda description of $\operatorname{Ext}^n$; the relation between `H2` and group extensions is listed as a TODO even for discrete groups (`Mathlib/RepresentationTheory/Homological/GroupCohomology/LowDegree.lean`).
+Mathlib has group cohomology of discrete groups (`groupCohomology`, with `groupCohomologyIsoExt` identifying $H^n(G,A)$ with $\mathop{\mathrm{Ext}}\nolimits^n(k,A)$, and low-degree cocycles up to `groupCohomology.H2`), group extensions (`GroupExtension`), continuous cohomology of topological groups by homogeneous cochains (`continuousCohomology`), the simplicial universal cover of a discrete group (`classifyingSpaceUniversalCover`), covering maps (`IsCoveringMap`), fibre bundles (`FiberBundle`), homotopy groups (`HomotopyGroup`), singular homology (`singularHomologyFunctor`) and geometric realization (`SSet.toTop`). It has no classifying spaces of topological groups, no singular cohomology or Eilenberg–MacLane spaces, no principal bundles and no Yoneda description of $\mathop{\mathrm{Ext}}\nolimits^n$; the relation between `H2` and group extensions is listed as a TODO even for discrete groups (`Mathlib/RepresentationTheory/Homological/GroupCohomology/LowDegree.lean`).

@@ -48,7 +48,7 @@ Marstrand proved that $\alpha$ must be an integer; Preiss proved rectifiability.
 ### How the known proof works
 
 Following De Lellis, Chapters 3 and 5–9:
-- Tangent measures: weak-* limits of the blow-ups $r_i^{-k}\mu_{x,r_i}$ as $r_i\to0$. Where the density exists, every tangent measure is a multiple of a $k$-uniform measure: $\nu(B_r(y))=\omega_kr^k$ for all $y\in\operatorname{supp}\nu$ and $r\gt0$ (Proposition 3.4).
+- Tangent measures: weak-* limits of the blow-ups $r_i^{-k}\mu_{x,r_i}$ as $r_i\to0$. Where the density exists, every tangent measure is a multiple of a $k$-uniform measure: $\nu(B_r(y))=\omega_kr^k$ for all $y\in\mathop{\mathrm{supp}}\nu$ and $r\gt0$ (Proposition 3.4).
 - If all tangent measures were flat, i.e. of the form $\mathcal H^k\llcorner V$ for a $k$-plane $V$, the Marstrand–Mattila rectifiability criterion would finish the proof. For $k\le2$ every $k$-uniform measure is flat, which needs real work for $k=2$. For $k=3$ the Kowalski–Preiss cone $\lbrace x_4^2=x_1^2+x_2^2+x_3^2\rbrace\subset\mathbb R^4$ carries a $3$-uniform measure that is not flat.
 - Part A: at a.e. point, tangent measures of tangent measures are again tangent measures (Lemma 6.6). With Marstrand's argument this gives a flat tangent measure at a.e. point (Theorem 6.8).
 - Part B: if one tangent measure at $x$ is flat, all are (Theorem 6.10). Three steps: a $k$-uniform measure has a unique tangent measure at infinity, its blow-down, and it is a cone (Proposition 6.16, by expanding moments). If that cone is within $\varepsilon(k,n)$ of a plane in an $L^2$ sense on $B_1$, it is flat (Proposition 6.18). A uniform measure that is flat at infinity is flat (Proposition 6.19).

@@ -45,7 +45,7 @@ and for $\Vert M\Vert$ itself nonnegative scalar curvature suffices. The OpenAI 
 - Gromov's mapping theorem: $\Vert M\Vert$ equals the simplicial norm of $c_{\ast}[M]$ in $B\Gamma$, $\Gamma=\pi_1M$, so it suffices to represent $c_{\ast}[M]$ by group-homology cycles of arbitrarily small $\ell^1$-norm.
 - “Epsilon homology” (Ma–Yu 2025) interpolates between $H_{\ast}(M)$ and $H_{\ast}(\Gamma)$.
 - A quantitative higher index theorem, refining Connes–Moscovici, writes $c_{\ast}(\hat A_{[m-k]}\cap[M])$ through finite-propagation kernels $I_\varepsilon$ of the Dirac operator on $\widetilde M$; spin is needed here.
-- The simplicial norm is at most $C\operatorname{Vol}(M)$ times norms of $I_\varepsilon$; positive scalar curvature (Lichnerowicz formula, heat-kernel estimates) makes this tend to $0$ as $\varepsilon\to\infty$.
+- The simplicial norm is at most $C\mathop{\mathrm{Vol}}(M)$ times norms of $I_\varepsilon$; positive scalar curvature (Lichnerowicz formula, heat-kernel estimates) makes this tend to $0$ as $\varepsilon\to\infty$.
 - Nonnegative scalar curvature: either a conformal change gives positive scalar curvature, or the metric is Ricci-flat, $\pi_1$ is virtually abelian and $\Vert M\Vert=0$.
 
 ### Background

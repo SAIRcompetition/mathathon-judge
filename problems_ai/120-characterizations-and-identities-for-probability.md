@@ -53,8 +53,8 @@ One example for each other direction the proposer names:
 
 ### How the known proof works
 
-- Marcinkiewicz: a characteristic function that agrees near $0$ with an analytic function is analytic in a strip and equals $\mathbb E\thinspace e^{izX}$ there (see Lukacs, *Characteristic Functions*). As $e^P$ is entire, $\mathbb E\thinspace e^{sX}\lt\infty$ for all real $s$ and $|\varphi(t+is)|\le\varphi(is)$, so $\operatorname{Re}P(re^{i\theta})\le P(ir\sin\theta)$ for all $r,\theta$.
-- If $\deg P=n\ge3$, compare leading terms at one of the $n$ directions where $\operatorname{Re}(a_ne^{in\theta})=|a_n|$ and $|\sin\theta|\lt1$: contradiction. Hence $P(t)=imt-\sigma^2t^2/2$.
+- Marcinkiewicz: a characteristic function that agrees near $0$ with an analytic function is analytic in a strip and equals $\mathbb E\thinspace e^{izX}$ there (see Lukacs, *Characteristic Functions*). As $e^P$ is entire, $\mathbb E\thinspace e^{sX}\lt\infty$ for all real $s$ and $|\varphi(t+is)|\le\varphi(is)$, so $\mathop{\mathrm{Re}}P(re^{i\theta})\le P(ir\sin\theta)$ for all $r,\theta$.
+- If $\deg P=n\ge3$, compare leading terms at one of the $n$ directions where $\mathop{\mathrm{Re}}(a_ne^{in\theta})=|a_n|$ and $|\sin\theta|\lt1$: contradiction. Hence $P(t)=imt-\sigma^2t^2/2$.
 - Dufresne, structure (Lamperti): $e^{B_t-\mu t}$ is a Bessel process of index $-\mu$ started at $1$, time-changed by $A_t=\int_0^te^{2(B_s-\mu s)}ds$; so $A_\infty$ is the time that Bessel process hits $0$ (Matsumoto–Yor (2.1); Salminen–Yor (2)).
 - Dufresne, analytic proof (Matsumoto–Yor, Theorem 6.2): a Laplace transform of the perpetuity solves an ODE that becomes the modified Bessel equation, giving $\mathbb E\exp(-\tfrac{\alpha^2}{2}A_\infty)=\frac{2}{\Gamma(\mu)}(\alpha/2)^\mu K_\mu(\alpha)$; an integral formula for $K_\mu$ identifies the law of $1/(2\gamma_\mu)$.
 

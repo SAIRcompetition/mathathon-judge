@@ -51,13 +51,13 @@ https://eprint.iacr.org/2020/1589.pdf
 
 ### The result
 
-For $p:\mathbb R^N\to\mathbb R$ write $\mathrm{Inf} _ i[p]=\mathbb E_X[(p(X)-p(X^i))^2]$, with $X$ uniform on $\lbrace0,1\rbrace^N$ and $X^i$ equal to $X$ with bit $i$ flipped. Aaronson–Ambainis conjecture (arXiv version, Conjecture 6): if $p$ has degree $d$, $0\le p\le1$ on $\lbrace0,1\rbrace^N$ and $\operatorname{Var}[p]\ge\varepsilon$, then some $i$ has $\mathrm{Inf} _ i[p]\ge(\varepsilon/d)^{O(1)}$.
+For $p:\mathbb R^N\to\mathbb R$ write $\mathrm{Inf} _ i[p]=\mathbb E_X[(p(X)-p(X^i))^2]$, with $X$ uniform on $\lbrace0,1\rbrace^N$ and $X^i$ equal to $X$ with bit $i$ flipped. Aaronson–Ambainis conjecture (arXiv version, Conjecture 6): if $p$ has degree $d$, $0\le p\le1$ on $\lbrace0,1\rbrace^N$ and $\mathop{\mathrm{Var}}[p]\ge\varepsilon$, then some $i$ has $\mathrm{Inf} _ i[p]\ge(\varepsilon/d)^{O(1)}$.
 
 Turturean, Theorem 1.1: for $n,d\ge1$ and every $f:\lbrace-1,1\rbrace^n\to[-1,1]$ of degree at most $d$ there is a coordinate $j$ with
 
-$$\mathrm{Inf} _ j(f)\ge\frac{\sqrt{15}}{500\pi^4}\cdot\frac{\operatorname{Var}(f)^{5/2}}{d^6},\qquad \mathrm{Inf} _ j(f)=\mathbb E_x\Big[\Big(\tfrac{f(x)-f(x^j)}{2}\Big)^2\Big].$$
+$$\mathrm{Inf} _ j(f)\ge\frac{\sqrt{15}}{500\pi^4}\cdot\frac{\mathop{\mathrm{Var}}(f)^{5/2}}{d^6},\qquad \mathrm{Inf} _ j(f)=\mathbb E_x\Big[\Big(\tfrac{f(x)-f(x^j)}{2}\Big)^2\Big].$$
 
-Corollary 1.2 restates this as $\mathrm{Inf} _ i[p]\ge\frac{8\sqrt{15}}{125\pi^4}\operatorname{Var}[p]^{5/2}/d^6\ge(\operatorname{Var}[p]/d)^7$ in the original normalization.
+Corollary 1.2 restates this as $\mathrm{Inf} _ i[p]\ge\frac{8\sqrt{15}}{125\pi^4}\mathop{\mathrm{Var}}[p]^{5/2}/d^6\ge(\mathop{\mathrm{Var}}[p]/d)^7$ in the original normalization.
 
 Consequences proved by Aaronson and Ambainis under the conjecture (arXiv Theorem 7): (i) a $T$-query quantum algorithm's acceptance probability can be approximated within $\varepsilon$ on a $1-\delta$ fraction of inputs by a deterministic classical algorithm with $\mathrm{poly}(T,1/\varepsilon,1/\delta)$ queries (Theorem 22; Turturean's §1.3 gets at most $(4T)^8\varepsilon^{-14}\delta^{-8}$); (ii) $D_{\varepsilon+\delta}(f)\le(Q_\varepsilon(f)/\delta)^{O(1)}$ for all Boolean $f$; (iii) if $\mathsf P=\mathsf P^{\sharp\mathsf P}$, then $\mathsf{BQP}^A\subset\mathsf{AvgP}^A$ for a random oracle $A$ with probability 1. The simulation queries a variable of large influence of the polynomial that remains after fixing the bits queried so far, as long as its variance exceeds $\varepsilon^2\delta/2$.
 
@@ -67,8 +67,8 @@ Steps as summarized in Turturean's §1.5 and the repository README:
 
 - A *row* (fractional certificate) of $f$ at $x$ is a weight vector $a\ge0$ with $|f(x)-f(x^S)|\le\sum_{i\in S}a_i$ for all sets $S$ of coordinates. A function into $[-1,1]$ of degree at most $d$ has rows of cost at most $\pi^2d^2$ at every point (Agarwal–Ben-David, with a better constant; reproved with Markov's inequality for polynomials, Chebyshev polynomials and LP duality), and $\sum_j\mathbb E|f(x)-f(x^j)|\le4d^2$.
 - Boolean functions $g$: a bijection theorem on $g^{-1}(1)$, proved through the lowest-degree terms of a determinant of monomials and related to Reimer's Butterfly Lemma, gives a determinant inequality, then an inequality for antipodal pairs, then, summed over subcubes, an "all-pairs inequality" bounding $\sum_{g(x)=1,\thinspace g(y)=0}\big(\sum_{j:x_j\ne y_j}w_j\lambda^x_j\lambda^y_j\big)^{-1}$ by influences.
-- Real $f$: the all-pairs inequality is applied to every level set $\lbrace f\gt t\rbrace$, using the rows $a^x/|f(x)-t|$, and integrated over $t$. With Cauchy–Schwarz this gives a third-moment inequality, and at a median a coordinate with $\mathbb E|f(x)-f(x^j)|\ge\operatorname{Var}(f)^{3/2}/(6K^2)$, where $K$ bounds the row costs.
-- Averaging $f$ over coordinates of small influence turns this into $\mathrm{Inf} _ j(f)\ge\frac{\sqrt{15}}{125}\operatorname{Var}(f)^{5/2}/(L(f)K^2)$, where $L(f)=\sum_j\mathbb E|f(x)-f(x^j)|$; with $K=\pi^2d^2$ and $L(f)\le4d^2$ this is Theorem 1.1.
+- Real $f$: the all-pairs inequality is applied to every level set $\lbrace f\gt t\rbrace$, using the rows $a^x/|f(x)-t|$, and integrated over $t$. With Cauchy–Schwarz this gives a third-moment inequality, and at a median a coordinate with $\mathbb E|f(x)-f(x^j)|\ge\mathop{\mathrm{Var}}(f)^{3/2}/(6K^2)$, where $K$ bounds the row costs.
+- Averaging $f$ over coordinates of small influence turns this into $\mathrm{Inf} _ j(f)\ge\frac{\sqrt{15}}{125}\mathop{\mathrm{Var}}(f)^{5/2}/(L(f)K^2)$, where $L(f)=\sum_j\mathbb E|f(x)-f(x^j)|$; with $K=\pi^2d^2$ and $L(f)\le4d^2$ this is Theorem 1.1.
 - The passage through level sets follows a plan of Lovett and Zhang (ITCS 2023); the all-pairs inequality replaces their Conjecture 37, which Turturean shows is false as stated (tribes functions, §9.1).
 
 ### Background

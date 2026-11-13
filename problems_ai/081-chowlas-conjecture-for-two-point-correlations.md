@@ -26,6 +26,8 @@ Averaged variant of the conjecture was proved by Matomaki-Radziwiłł-Tao
 Best known bound for the logarithmic variant of the conjecture:
 Cédric Pilatte. "Improved bounds for the two-point logarithmic Chowla conjecture." Journal of the American Mathematical Society DOI: 10.1090/jams/1084
 
+
+
 ## AI-generated notes
 
 <!-- status: Proved (preprint) -->
@@ -46,7 +48,7 @@ Let $\lambda(n)=(-1)^{\Omega(n)}$, where $\Omega(n)$ counts prime factors with m
 
 $$\Big|\sum_{1\le n\le X}\lambda(a_1n+b_1)\lambda(a_2n+b_2)\Big|\le C_{a_1,a_2,b_1,b_2}\thinspace\frac{X}{(\log X)^{c}}\qquad(X\ge3).$$
 
-Theorem 1.2 (binary corrected Elliott conjecture): $\frac1N\sum_{n\le N}f_1(n+h_1)f_2(n+h_2)\to0$ for distinct $h_1,h_2\ge0$ and multiplicative $f_1,f_2$ with $|f_i|\le1$, one of them uniformly nonpretentious: $\inf_{|t|\le N}D(f,\chi n^{it};N)\to\infty$ for every Dirichlet character $\chi$, where $D(f,g;N)^2=\sum_{p\le N}(1-\operatorname{Re}f(p)\overline{g(p)})/p$.
+Theorem 1.2 (binary corrected Elliott conjecture): $\frac1N\sum_{n\le N}f_1(n+h_1)f_2(n+h_2)\to0$ for distinct $h_1,h_2\ge0$ and multiplicative $f_1,f_2$ with $|f_i|\le1$, one of them uniformly nonpretentious: $\inf_{|t|\le N}D(f,\chi n^{it};N)\to\infty$ for every Dirichlet character $\chi$, where $D(f,g;N)^2=\sum_{p\le N}(1-\mathop{\mathrm{Re}}f(p)\overline{g(p)})/p$.
 
 ### How the known proof works
 

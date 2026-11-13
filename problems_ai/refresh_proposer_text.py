@@ -12,7 +12,7 @@ references unchanged (checked), except for the typos and wrong bibliographic det
 listed in corrections.json (problems_original/ keeps the sheet text as it is). Each
 correction states how often its text occurs; the script stops if the sheet no longer
 matches. Where the sheet has judge suggestions, a "From the judges" section follows with
-their text unchanged. Its "AI-generated notes" section is kept exactly as it is; a new
+their text unchanged. Hyperlinks attached to cells are listed only in problems_original/. Its "AI-generated notes" section is kept exactly as it is; a new
 problem gets a placeholder. The problem table in README.md (between the problem-index
 markers) is rebuilt. Pages of problems that are no longer in problems_original/ are not
 touched; delete them by hand.
@@ -32,7 +32,6 @@ import split_sheet  # noqa: E402  (HEADER, parse_back, LINKS_HEADING)
 
 NOTES_HEADING = "## AI-generated notes"
 JUDGES_HEADING = "## From the judges"
-JUDGE_LINKS_SUBHEADING = "### Links in the judge suggestions"
 PLACEHOLDER = (f"{NOTES_HEADING}\n\n<!-- status: — -->\n\n"
                "> No AI notes have been written for this problem yet.\n")
 INDEX_START = "<!-- problem-index:start -->"
@@ -70,13 +69,13 @@ def load_original():
 
 
 def judges_block(judge, judge_links):
-    """The 'From the judges' section, or '' when the sheet has no judge suggestions."""
+    """The 'From the judges' section, or '' when the sheet has no judge suggestions.
+    Hyperlinks attached to sheet cells are listed only in problems_original/ (on 2026-11-12
+    the organizers removed them from these pages: they repeat URLs of the text, and the
+    hidden ones of problems 81 and 83 point to unrelated works)."""
     if not judge:
         return ""
-    block = f"\n{JUDGES_HEADING}\n\n{judge}\n"
-    if judge_links:
-        block += f"\n{JUDGE_LINKS_SUBHEADING}\n\n{judge_links}\n"
-    return block
+    return f"\n{JUDGES_HEADING}\n\n{judge}\n"
 
 
 # Long sections of the page: (heading, index of the sheet field), in page order.
@@ -92,8 +91,6 @@ def render_page(pid, fname, fields, links, judge, judge_links, notes):
     ]
     for name, i in SECTIONS:
         parts.append(f"\n### {name}\n\n{fields[i]}\n")
-    if links:
-        parts.append(f"\n### {split_sheet.LINKS_HEADING}\n\n{links}\n")
     parts.append(judges_block(judge, judge_links))
     parts.append("\n" + notes.rstrip("\n") + "\n")
     return "".join(parts)
