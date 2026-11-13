@@ -15,7 +15,7 @@ Contact: [mathathon@caltech.edu](mailto:mathathon@caltech.edu)
 
 Official GitHub repository: [SAIRcompetition/mathathon-judge](https://github.com/SAIRcompetition/mathathon-judge)
 
-Open Math OS: every Mathathon team can apply for a team edition at [openmathmodel.org](https://www.openmathmodel.org/) (Apply for a team).
+Open Math OS: every Mathathon team can apply for a team edition at [openmathmodel.org](https://www.openmathmodel.org/) (Apply for a team). You can then use open frontier models, with agents that explore a problem in parallel, and a cloud machine for each project that runs 24/7 with more than 100 preinstalled tools, such as Lean with Mathlib, SageMath and Python, all in projects shared with your team.
 
 ## FAQ
 
