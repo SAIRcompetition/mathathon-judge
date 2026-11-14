@@ -39,7 +39,7 @@ Yes. But you’ll miss out on a lot of fun :(
 
 ### Will my travel be covered?
 
-We are covering the cost of flights for all participants and judges. Participants can stay at the venue overnight and work with their teams for the duration of the event. They are expected to find their own lodging. We are also covering hotel accommodations for judges.
+We are covering the cost of flights for all participants and judges. Participants are expected to find their own lodging. We are also covering hotel accommodations for judges.
 
 ### What is your position on AI?
 
